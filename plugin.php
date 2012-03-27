@@ -3,7 +3,7 @@
  * Plugin Name: Genesis eNews Extended
  * Plugin URI: http://www.brandonkraft.com/contrib/plugins/genesis-enews-extended/
  * Description: Replaces the Genesis eNews Widget to allow easier use of additional mailing services.
- * Version: 0.1
+ * Version: 0.2-alpha1
  * Author: Brandon Kraft
  * Author URI: http://www.brandonkraft.com
  *
@@ -15,7 +15,7 @@
  * even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  *
  * @package BJGK_Genesis_enews_extended
- * @version 0.1
+ * @version 0.2-alpha1
  * @author Brandon Kraft <bk@kraft.im>
  * @copyright Copyright (c) 2012, Brandon Kraft
  * @link http://www.brandonkraft.com
@@ -75,6 +75,8 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 
 			if ( ! empty( $instance['action'] ) ) : ?>
 			<form id="subscribe" action="<?php echo esc_js( $instance['action'] ); ?>" method="post" target="_blank">
+				<input type="text" value="First Name" name="<?php echo esc_js( $instance['fname-field'] ); ?>" />
+				<input type="text" value="Last Name" name="<?php echo esc_js( $instance['lname-field'] ); ?>" />
 				<input type="text" value="<?php echo esc_attr( $instance['input_text'] ); ?>" id="subbox" onfocus="if ( this.value == '<?php echo esc_js( $instance['input_text'] ); ?>') { this.value = ''; }" onblur="if ( this.value == '' ) { this.value = '<?php echo esc_js( $instance['input_text'] ); ?>'; }" name="<?php echo esc_js( $instance['email-field'] ); ?>" />
 				<input type="hidden" name="uri" value="<?php echo esc_attr( $instance['id'] ); ?>" />
 				<input type="hidden" name="loc" value="<?php echo esc_attr( get_locale() ); ?>" />
@@ -134,6 +136,16 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 		<p>
 			<label for="<?php echo $this->get_field_id( 'email-field' ); ?>"><?php _e( 'E-Mail Field', 'genesis' ); ?>:</label>
 			<input type="text" id="<?php echo $this->get_field_id( 'email-field' ); ?>" name="<?php echo $this->get_field_name( 'email-field' ); ?>" value="<?php echo esc_attr( $instance['email-field'] ); ?>" class="widefat" />
+		</p>
+		
+		<p>
+			<label for="<?php echo $this->get_field_id( 'fname-field' ); ?>"><?php _e( 'First Name Field', 'genesis' ); ?>:</label>
+			<input type="text" id="<?php echo $this->get_field_id( 'fname-field' ); ?>" name="<?php echo $this->get_field_name( 'fname-field' ); ?>" value="<?php echo esc_attr( $instance['fname-field'] ); ?>" class="widefat" />
+		</p>
+		
+		<p>
+			<label for="<?php echo $this->get_field_id( 'lname-field' ); ?>"><?php _e( 'Last Name Field', 'genesis' ); ?>:</label>
+			<input type="text" id="<?php echo $this->get_field_id( 'lname-field' ); ?>" name="<?php echo $this->get_field_name( 'lname-field' ); ?>" value="<?php echo esc_attr( $instance['lname-field'] ); ?>" class="widefat" />
 		</p>
 
 		<p>
