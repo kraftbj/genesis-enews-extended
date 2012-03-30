@@ -30,6 +30,9 @@ I've only tested this with MailChimp. If you have tested this with other service
 = 0.1 =
 * Inital release.
 
+= 0.2 =
+* In progres to add name fields.
+
 == Upgrade Notice ==
 
 = 0.1 =
