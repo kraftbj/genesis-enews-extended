@@ -3,7 +3,7 @@
  * Plugin Name: Genesis eNews Extended
  * Plugin URI: http://www.brandonkraft.com/contrib/plugins/genesis-enews-extended/
  * Description: Replaces the Genesis eNews Widget to allow easier use of additional mailing services.
- * Version: 0.2-alpha2
+ * Version: 0.2-alpha3
  * Author: Brandon Kraft
  * Author URI: http://www.brandonkraft.com
  *
@@ -15,7 +15,7 @@
  * even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  *
  * @package BJGK_Genesis_enews_extended
- * @version 0.2-alpha2
+ * @version 0.2-alpha3
  * @author Brandon Kraft <bk@kraft.im>
  * @copyright Copyright (c) 2012, Brandon Kraft
  * @link http://www.brandonkraft.com
@@ -37,11 +37,12 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 	function __construct() {
 
 		$this->defaults = array(
-			'title'       => '',
-			'text'        => '',
-			'id'          => '',
-			'input_text'  => '',
-			'button_text' => '',
+			'title'			=> '',
+			'text'			=> '',
+			'hidden_fields'	=> '',
+			'input_text'	=> '',
+			'button_text'	=> '',
+			'action'	=> '',
 		);
 
 		$widget_ops = array(
@@ -78,8 +79,7 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 				<?php if ( ! empty($instance['fname-field'] ) ) : ?><input type="text" id="subbox1" value="First Name" name="<?php echo esc_js( $instance['fname-field'] ); ?>" /><?php endif ?>
 				<?php if ( ! empty($instance['lname-field'] ) ) : ?><input type="text" id="subbox2" value="Last Name" name="<?php echo esc_js( $instance['lname-field'] ); ?>" /><?php endif ?>
 				<input type="text" value="<?php echo esc_attr( $instance['input_text'] ); ?>" id="subbox" onfocus="if ( this.value == '<?php echo esc_js( $instance['input_text'] ); ?>') { this.value = ''; }" onblur="if ( this.value == '' ) { this.value = '<?php echo esc_js( $instance['input_text'] ); ?>'; }" name="<?php echo esc_js( $instance['email-field'] ); ?>" />
-				<input type="hidden" name="uri" value="<?php echo esc_attr( $instance['id'] ); ?>" />
-				<input type="hidden" name="loc" value="<?php echo esc_attr( get_locale() ); ?>" />
+				<?php echo $instance['hidden_fields']; ?>
 				<input type="submit" value="<?php echo esc_attr( $instance['button_text'] ); ?>" id="subbutton" />
 			</form>
 			<?php endif;
@@ -103,6 +103,7 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 
 		$new_instance['title'] = strip_tags( $new_instance['title'] );
 		$new_instance['text']  = wp_kses( $new_instance['text'], genesis_formatting_allowedtags() );
+		/** $new_instance['hidden_fields'] = strip_tags( $new_instance['hidden_fields'], "input" ); */
 		return $new_instance;
 
 	}
@@ -148,6 +149,12 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 			<input type="text" id="<?php echo $this->get_field_id( 'lname-field' ); ?>" name="<?php echo $this->get_field_name( 'lname-field' ); ?>" value="<?php echo esc_attr( $instance['lname-field'] ); ?>" class="widefat" />
 		</p>
 
+		<p>
+			<label for="<?php echo $this->get_field_id( 'hidden_fields' ); ?>"><?php _e( 'Hidden Fields', 'genesis' ); ?>:</label>
+			<textarea id="<?php echo $this->get_field_id( 'hidden_fields' ); ?>" name="<?php echo $this->get_field_name( 'hidden_fields' ); ?>" class="widefat"><?php echo esc_attr( $instance['hidden_fields'] ); ?></textarea>
+			<br><small>Not all services use hidden fields.</small>
+		</p>
+		
 		<p>
 			<?php $input_text = empty( $instance['input_text'] ) ? __( 'Enter your email address...', 'genesis' ) : $instance['input_text']; ?>
 			<label for="<?php echo $this->get_field_id( 'id' ); ?>"><?php _e( 'Input Text', 'genesis' ); ?>:</label>
