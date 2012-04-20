@@ -3,7 +3,7 @@ Contributors: kraftbj
 Tags: genesis
 Requires at least: 3.0
 Tested up to: 3.4-beta1
-Stable tag: 0.1.1
+Stable tag: 0.1.2
 
 Creates a new widget to replace the Genesis eNews Widget to allow easier use of non-Feedburner mailing lists.
 
@@ -33,6 +33,9 @@ I've only tested this with MailChimp, but should work with most mailing list ser
 = 0.1.1 =
 * Adds "Hidden Fields" widget setting to make widget compatible with more mailing services.
 
+= 0.1.2 =
+* Modifies class name to work with more StudioPress themes.
+
 == Upgrade Notice ==
 
 = 0.1 =
@@ -40,3 +43,6 @@ Initial stable release. Please update from alpha now.
 
 = 0.1.1 =
 * Adds "Hidden Fields" widget setting to make widget compatible with more mailing services. Upgrade if you want to use AWeber or other services that require one or more hidden fields.
+
+= 0.1.2 =
+* Expands widget's usefulness to more StudioPress themes (Balance, etc).
