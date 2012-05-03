@@ -15,7 +15,7 @@
  * even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  *
  * @package BJGK_Genesis_enews_extended
- * @version 0.2-alpha3
+ * @version 0.2-beta1
  * @author Brandon Kraft <bk@kraft.im>
  * @copyright Copyright (c) 2012, Brandon Kraft
  * @link http://www.brandonkraft.com
@@ -46,7 +46,7 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 		);
 
 		$widget_ops = array(
-			'classname'   => 'enews-extended-widget',
+			'classname'   => 'enews-widget',
 			'description' => __( 'Displays subscribe form', 'genesis' ),
 		);
 
