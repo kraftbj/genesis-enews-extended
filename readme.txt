@@ -31,6 +31,10 @@ Feedburner, MailChimp, Aweber and Constant Contact are confirmed to work, but it
 
 Questions can be asked at the [WordPress.org Support Forum](http://wordpress.org/support/plugin/genesis-enews-extended) for this plugin.
 
+== Screenshots ==
+1. Example of the plugin in use on a site running Streamline 2.0.
+2. Widget setting screen.
+
 == Changelog ==
 
 = 0.1.3 =
