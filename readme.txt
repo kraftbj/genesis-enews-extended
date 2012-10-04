@@ -23,8 +23,6 @@ Creates a new widget to easily add mailing lists to a Genesis website. Contiuati
 
 = What services work with this plugin? =
 
-= What services work with this plugin? =
-
 Feedburner, MailChimp, Aweber and Constant Contact are confirmed to work, but it should work with almost all services. If you have tested this with other services, please [contact me](http://brandonkraft.com/contact/)
 
 = I need help! Where I can get it? =
