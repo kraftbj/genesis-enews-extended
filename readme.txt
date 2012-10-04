@@ -2,14 +2,14 @@
 Contributors: kraftbj
 Tags: genesis
 Requires at least: 3.0
-Tested up to: 3.4-beta1
-Stable tag: 0.1.2
+Tested up to: 3.5-beta1
+Stable tag: 0.1.3
 
-Creates a new widget to replace the Genesis eNews Widget to allow easier use of non-Feedburner mailing lists.
+Creates a new widget to easily add mailing lists to a Genesis website. Contiuation of Genesis eNews Wiget removed in 1.9.
 
 == Description ==
 
-Creates a new widget to replace the Genesis eNews Widget to allow easier use of non-Feedburner mailing lists. The widget allows the site administrator to set the form action, e-mail form field and hidden fields to mimic the subscribe form of other mailing list services.
+Creates a new widget to easily add mailing lists to a Genesis website. Contiuation of Genesis eNews Wiget removed in 1.9. The widget allows the site administrator to set the either the Feedburner ID or form action, e-mail form field and hidden fields to mimic the subscribe form of other mailing list services.
 
 == Installation ==
 
@@ -23,18 +23,30 @@ Creates a new widget to replace the Genesis eNews Widget to allow easier use of 
 
 = What services work with this plugin? =
 
-I've only tested this with MailChimp, but should work with most mailing list services. If you have tested this with other services, please [contact me](http://brandonkraft.com/contact/)
+= What services work with this plugin? =
+
+Feedburner, MailChimp, Aweber and Constant Contact are confirmed to work, but it should work with almost all services. If you have tested this with other services, please [contact me](http://brandonkraft.com/contact/)
+
+= I need help! Where I can get it? =
+
+"Official" tutorials will be maintained on the [plugin's website](http://www.brandonkraft.com/contrib/plugins/genesis-enews-extended/).
+
+Questions can be asked at the [WordPress.org Support Forum](http://wordpress.org/support/plugin/genesis-enews-extended) for this plugin.
 
 == Changelog ==
 
-= 0.1 =
-* Inital release.
+= 0.1.3 =
+* Adds Feedburner support in anticipation of Genesis 1.9
+* Security and translation updates
+
+= 0.1.2 =
+* Modifies class name to work with more StudioPress themes.
 
 = 0.1.1 =
 * Adds "Hidden Fields" widget setting to make widget compatible with more mailing services.
 
-= 0.1.2 =
-* Modifies class name to work with more StudioPress themes.
+= 0.1 =
+* Inital release.
 
 == Upgrade Notice ==
 
@@ -42,7 +54,10 @@ I've only tested this with MailChimp, but should work with most mailing list ser
 Initial stable release. Please update from alpha now.
 
 = 0.1.1 =
-* Adds "Hidden Fields" widget setting to make widget compatible with more mailing services. Upgrade if you want to use AWeber or other services that require one or more hidden fields.
+Adds "Hidden Fields" widget setting to make widget compatible with more mailing services. Upgrade if you want to use AWeber or other services that require one or more hidden fields.
 
 = 0.1.2 =
-* Expands widget's usefulness to more StudioPress themes (Balance, etc).
+Expands widget's usefulness to more StudioPress themes (Balance, etc).
+
+= 0.1.3 =
+Security update and adds Feedburner support natively. 
