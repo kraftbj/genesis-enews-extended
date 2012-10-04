@@ -14,6 +14,8 @@
  * This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without 
  * even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  *
+ * Code based on original eNews Widget in the Genesis Framework by StudioPress - http://www.studiopress.com
+ *
  * @package BJGK_Genesis_enews_extended
  * @version 0.1.3
  * @author Brandon Kraft <bk@kraft.im>
