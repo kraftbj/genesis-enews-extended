@@ -3,7 +3,7 @@
  * Plugin Name: Genesis eNews Extended
  * Plugin URI: http://www.brandonkraft.com/contrib/plugins/genesis-enews-extended/
  * Description: Replaces the Genesis eNews Widget to allow easier use of additional mailing services.
- * Version: 0.2-alpha3
+ * Version: 0.2-alpha5
  * Author: Brandon Kraft
  * Author URI: http://www.brandonkraft.com
  *
@@ -76,8 +76,8 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 
 			if ( ! empty( $instance['action'] ) ) : ?>
 			<form id="subscribe" action="<?php echo esc_js( $instance['action'] ); ?>" method="post" target="_blank">
-				<?php if ( ! empty($instance['fname-field'] ) ) : ?><input type="text" id="subbox1" value="First Name" name="<?php echo esc_js( $instance['fname-field'] ); ?>" /><?php endif ?>
-				<?php if ( ! empty($instance['lname-field'] ) ) : ?><input type="text" id="subbox2" value="Last Name" name="<?php echo esc_js( $instance['lname-field'] ); ?>" /><?php endif ?>
+				<?php if ( ! empty($instance['fname-field'] ) ) : ?><input type="text" id="subbox1" value="First Name" onfocus="if ( this.value == 'First Name') { this.value = ''; }" onblur="if ( this.value == '' ) { this.value = 'First Name'; }" name="<?php echo esc_js( $instance['fname-field'] ); ?>" /><?php endif ?>
+				<?php if ( ! empty($instance['lname-field'] ) ) : ?><input type="text" id="subbox2" value="Last Name" onfocus="if ( this.value == 'Last Name') { this.value = ''; }" onblur="if ( this.value == '' ) { this.value = 'Last Name'; }" name="<?php echo esc_js( $instance['lname-field'] ); ?>" /><?php endif ?>
 				<input type="text" value="<?php echo esc_attr( $instance['input_text'] ); ?>" id="subbox" onfocus="if ( this.value == '<?php echo esc_js( $instance['input_text'] ); ?>') { this.value = ''; }" onblur="if ( this.value == '' ) { this.value = '<?php echo esc_js( $instance['input_text'] ); ?>'; }" name="<?php echo esc_js( $instance['email-field'] ); ?>" />
 				<?php echo $instance['hidden_fields']; ?>
 				<input type="submit" value="<?php echo esc_attr( $instance['button_text'] ); ?>" id="subbutton" />
