@@ -64,7 +64,7 @@ function bjgk_genesis_enews_load_translations() {
 			'description' => __( 'Displays subscribe form', 'genesis-enews-extended' ),
 		);
 
-		$this->WP_Widget( 'genesis-enews-extended', __( 'Genesis - eNews Extended', 'genesis-enews-extended' ), $widget_ops );
+		$this->WP_Widget( 'enews-ext', __( 'Genesis - eNews Extended', 'genesis-enews-extended' ), $widget_ops );
 
 	}
 
