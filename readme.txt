@@ -2,8 +2,8 @@
 Contributors: kraftbj
 Tags: genesis
 Requires at least: 3.0
-Tested up to: 3.5-beta1
-Stable tag: 0.1.3
+Tested up to: 3.5-beta2
+Stable tag: 0.1.4
 
 Creates a new widget to easily add mailing lists integration to a Genesis website. Works with FeedBurner, MailChimp, AWeber, FeedBlitz and more.
 
@@ -37,6 +37,10 @@ Questions can be asked at the [WordPress.org Support Forum](http://wordpress.org
 
 == Changelog ==
 
+= 0.1.4 =
+* Adds l18n support for other languages (thanks David Decker!)
+* Adds German translation (thanks David Decker!)
+
 = 0.1.3 =
 * Adds Feedburner support in anticipation of Genesis 1.9
 * Security and translation updates
@@ -63,3 +67,6 @@ Expands widget's usefulness to more StudioPress themes (Balance, etc).
 
 = 0.1.3 =
 Security update and adds Feedburner support natively. 
+
+= 0.1.4 =
+Adds translation support and adds German translation.
