@@ -3,7 +3,7 @@
  * Plugin Name: Genesis eNews Extended
  * Plugin URI: http://www.brandonkraft.com/contrib/plugins/genesis-enews-extended/
  * Description: Replaces the Genesis eNews Widget to allow easier use of additional mailing services.
- * Version: 0.1.4
+ * Version: 0.1.5-beta1
  * Author: Brandon Kraft
  * Author URI: http://www.brandonkraft.com
  *
@@ -17,7 +17,7 @@
  * Code based on original eNews Widget in the Genesis Framework by StudioPress - http://www.studiopress.com
  *
  * @package BJGK_Genesis_enews_extended
- * @version 0.1.4
+ * @version 0.1.5
  * @author Brandon Kraft <bk@kraft.im>
  * @copyright Copyright (c) 2012, Brandon Kraft
  * @link http://www.brandonkraft.com
@@ -53,6 +53,7 @@ function bjgk_genesis_enews_load_translations() {
 		$this->defaults = array(
 			'title'			=> '',
 			'text'			=> '',
+			'open_same_window'     => 0,
 			'hidden_fields'	=> '',
 			'input_text'	=> '',
 			'button_text'	=> '',
@@ -147,6 +148,12 @@ function bjgk_genesis_enews_load_translations() {
 			<label for="<?php echo $this->get_field_id( 'text' ); ?>"><?php _e( 'Text To Show', 'genesis-enews-extended' ); ?>:</label><br />
 			<textarea id="<?php echo $this->get_field_id( 'text' ); ?>" name="<?php echo $this->get_field_name( 'text' ); ?>" class="widefat" rows="6" cols="4"><?php echo htmlspecialchars( $instance['text'] ); ?></textarea>
 		</p>
+
+		<p>
+			<input id="<?php echo $this->get_field_id( 'open_same_window' ); ?>" type="checkbox" name="<?php echo $this->get_field_name( 'open_same_window' ); ?>" value="1" <?php checked( $instance['open_same_window'] ); ?>/>
+			<label for="<?php echo $this->get_field_id( 'open_same_window' ); ?>"><?php _e( 'Open confirmation page in same window?', 'genesis-enews-extended' ); ?></label>
+		</p>
+
 		<hr style="background: #ccc; border: 0; height: 1px; margin: 20px 0;">
 		<p>
 			<label for="<?php echo $this->get_field_id( 'id' ); ?>"><?php _e( 'Google/Feedburner ID', 'genesis-enews-extended' ); ?>:</label>
