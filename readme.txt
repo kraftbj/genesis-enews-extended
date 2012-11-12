@@ -37,6 +37,9 @@ Questions can be asked at the [WordPress.org Support Forum](http://wordpress.org
 
 == Changelog ==
 
+= 0.1.5 =
+* Adds preference on to open confirmation in new window/tab (default) or same window/tab.
+
 = 0.1.4 =
 * Adds l18n support for other languages (thanks David Decker!)
 * Adds German translation (thanks David Decker!)
@@ -70,3 +73,6 @@ Security update and adds Feedburner support natively.
 
 = 0.1.4 =
 Adds translation support and adds German translation.
+
+= 0.1.5 =
+Adds a preference to open confirmation in new window/tab or same windows/tab.
