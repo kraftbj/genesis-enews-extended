@@ -2,8 +2,8 @@
 Contributors: kraftbj
 Tags: genesis
 Requires at least: 3.0
-Tested up to: 3.5-beta2
-Stable tag: 0.1.4
+Tested up to: 3.5-beta3
+Stable tag: 0.1.5
 
 Creates a new widget to easily add mailing lists integration to a Genesis website. Works with FeedBurner, MailChimp, AWeber, FeedBlitz and more.
 
@@ -18,13 +18,16 @@ Creates a new widget to easily add mailing lists to a Genesis website. Recommend
 1. In Appearance->Widgerts, add Genesis eNews Extended widget to any sidebar.
 1. Using the mailing list contact form code provided by your vendor, add the form action URL, the form field ID for the e-mail field and any hidden fields (not all services use them) into the widget options.
 1. Verify it works!
-1. If first/last name fields are added, modifying styles.css may be required.
 
 == Frequently Asked Questions ==
 
 = What services work with this plugin? =
 
 Feedburner, MailChimp, Aweber, FeedBlitz and Constant Contact are confirmed to work, but it should work with almost all services. If you have tested this with other services, please [contact me](http://brandonkraft.com/contact/)
+
+= The "Opens in Same Tab" option doesn't work with FeedBurner. What's wrong? =
+
+That is intentional. You don't want to knock people off your site and leave them on FeedBurner's.
 
 = I need help! Where I can get it? =
 
@@ -38,8 +41,8 @@ Questions can be asked at the [WordPress.org Support Forum](http://wordpress.org
 
 == Changelog ==
 
-= 0.2 =
-* Adds first and last name field support
+= 0.1.5 =
+* Adds option to open confirmation window in same tab.
 
 = 0.1.4 =
 * Adds l18n support for other languages (thanks David Decker!)
@@ -75,5 +78,5 @@ Security update and adds Feedburner support natively.
 = 0.1.4 =
 Adds translation support and adds German translation.
 
-= 0.2 =
-Adds first and last name field support.
+= 0.1.5 =
+Adds option to open confirmation screen in same tab.

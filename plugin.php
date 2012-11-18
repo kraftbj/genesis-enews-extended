@@ -3,7 +3,7 @@
  * Plugin Name: Genesis eNews Extended
  * Plugin URI: http://www.brandonkraft.com/contrib/plugins/genesis-enews-extended/
  * Description: Replaces the Genesis eNews Widget to allow easier use of additional mailing services.
- * Version: 0.2-alpha6
+ * Version: 0.1.5
  * Author: Brandon Kraft
  * Author URI: http://www.brandonkraft.com
  *
@@ -17,7 +17,7 @@
  * Code based on original eNews Widget in the Genesis Framework by StudioPress - http://www.studiopress.com
  *
  * @package BJGK_Genesis_enews_extended
- * @version 0.2
+ * @version 0.1.5
  * @author Brandon Kraft <bk@kraft.im>
  * @copyright Copyright (c) 2012, Brandon Kraft
  * @link http://www.brandonkraft.com
@@ -54,6 +54,9 @@ function bjgk_genesis_enews_load_translations() {
 			'title'			=> '',
 			'text'			=> '',
 			'hidden_fields'	=> '',
+			'open_same_window'     => 0,
+			'fname-field' => '',
+			'lname-field' => '',
 			'input_text'	=> '',
 			'button_text'	=> '',
 			'action'	=> '',
@@ -96,9 +99,9 @@ function bjgk_genesis_enews_load_translations() {
 				<input type="submit" value="<?php echo esc_attr( $instance['button_text'] ); ?>" id="subbutton" />
 			</form>
 			<?php elseif ( ! empty( $instance['action'] ) ) : ?>
-			<form id="subscribe" action="<?php echo esc_js( $instance['action'] ); ?>" method="post" target="_blank">
-				<?php if ( ! empty($instance['fname-field'] ) ) : ?><input type="text" id="subbox1" value="First Name" onfocus="if ( this.value == 'First Name') { this.value = ''; }" onblur="if ( this.value == '' ) { this.value = 'First Name'; }" name="<?php echo esc_js( $instance['fname-field'] ); ?>" /><?php endif ?>
-				<?php if ( ! empty($instance['lname-field'] ) ) : ?><input type="text" id="subbox2" value="Last Name" onfocus="if ( this.value == 'Last Name') { this.value = ''; }" onblur="if ( this.value == '' ) { this.value = 'Last Name'; }" name="<?php echo esc_js( $instance['lname-field'] ); ?>" /><?php endif ?>
+			<form id="subscribe" action="<?php echo esc_js( $instance['action'] ); ?>" method="post" <?php if ($instance['open_same_window'] == 0 ) : ?> target="_blank"<?php endif; ?>>
+			<!--	<?php if ( ! empty($instance['fname-field'] ) ) : ?><input type="text" id="subbox1" value="First Name" onfocus="if ( this.value == 'First Name') { this.value = ''; }" onblur="if ( this.value == '' ) { this.value = 'First Name'; }" name="<?php echo esc_js( $instance['fname-field'] ); ?>" /><?php endif ?>
+				<?php if ( ! empty($instance['lname-field'] ) ) : ?><input type="text" id="subbox2" value="Last Name" onfocus="if ( this.value == 'Last Name') { this.value = ''; }" onblur="if ( this.value == '' ) { this.value = 'Last Name'; }" name="<?php echo esc_js( $instance['lname-field'] ); ?>" /><?php endif ?> -->
 				<input type="text" value="<?php echo esc_attr( $instance['input_text'] ); ?>" id="subbox" onfocus="if ( this.value == '<?php echo esc_js( $instance['input_text'] ); ?>') { this.value = ''; }" onblur="if ( this.value == '' ) { this.value = '<?php echo esc_js( $instance['input_text'] ); ?>'; }" name="<?php echo esc_js( $instance['email-field'] ); ?>" />
 				<?php echo $instance['hidden_fields']; ?>
 				<input type="submit" value="<?php echo esc_attr( $instance['button_text'] ); ?>" id="subbutton" />
@@ -166,7 +169,7 @@ function bjgk_genesis_enews_load_translations() {
 			<input type="text" id="<?php echo $this->get_field_id( 'email-field' ); ?>" name="<?php echo $this->get_field_name( 'email-field' ); ?>" value="<?php echo esc_attr( $instance['email-field'] ); ?>" class="widefat" />
 		</p>
 		
-		<p>
+		<!-- <p>
 			<label for="<?php echo $this->get_field_id( 'fname-field' ); ?>"><?php _e( 'First Name Field', 'genesis-enews-extended' ); ?>:</label>
 			<input type="text" id="<?php echo $this->get_field_id( 'fname-field' ); ?>" name="<?php echo $this->get_field_name( 'fname-field' ); ?>" value="<?php echo esc_attr( $instance['fname-field'] ); ?>" class="widefat" />
 		</p>
@@ -174,12 +177,17 @@ function bjgk_genesis_enews_load_translations() {
 		<p>
 			<label for="<?php echo $this->get_field_id( 'lname-field' ); ?>"><?php _e( 'Last Name Field', 'genesis-enews-extended' ); ?>:</label>
 			<input type="text" id="<?php echo $this->get_field_id( 'lname-field' ); ?>" name="<?php echo $this->get_field_name( 'lname-field' ); ?>" value="<?php echo esc_attr( $instance['lname-field'] ); ?>" class="widefat" />
-		</p>
+		</p> -->
 		
 		<p>
 			<label for="<?php echo $this->get_field_id( 'hidden_fields' ); ?>"><?php _e( 'Hidden Fields', 'genesis-enews-extended' ); ?>:</label>
 			<textarea id="<?php echo $this->get_field_id( 'hidden_fields' ); ?>" name="<?php echo $this->get_field_name( 'hidden_fields' ); ?>" class="widefat"><?php echo esc_attr( $instance['hidden_fields'] ); ?></textarea>
 			<br><small><?php _e( 'Not all services use hidden fields.', 'genesis-enews-extended'); ?></small>
+		</p>
+
+		<p>
+			<input id="<?php echo $this->get_field_id( 'open_same_window' ); ?>" type="checkbox" name="<?php echo $this->get_field_name( 'open_same_window' ); ?>" value="1" <?php checked( $instance['open_same_window'] ); ?>/>
+			<label for="<?php echo $this->get_field_id( 'open_same_window' ); ?>"><?php _e( 'Open confirmation page in same window?', 'genesis-enews-extended' ); ?></label>
 		</p>
 		<hr style="background: #ccc; border: 0; height: 1px; margin: 20px 0;">
 		<p>
