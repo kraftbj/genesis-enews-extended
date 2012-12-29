@@ -1,5 +1,6 @@
 === Genesis eNews Extended ===
 Contributors: kraftbj
+Donate link: http://www.brandonkraft.com/donate/
 Tags: genesis
 Requires at least: 3.0
 Tested up to: 3.5
