@@ -1,5 +1,5 @@
 === Genesis eNews Extended ===
-Contributors: kraftbj
+Contributors: kraftbj, coffeaweb
 Donate link: http://www.brandonkraft.com/donate/
 Tags: genesis
 Requires at least: 3.0
