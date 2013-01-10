@@ -4,7 +4,7 @@ Donate link: http://www.brandonkraft.com/donate/
 Tags: genesis
 Requires at least: 3.0
 Tested up to: 3.5
-Stable tag: 0.1.5
+Stable tag: 0.1.6
 
 Creates a new widget to easily add mailing lists integration to a Genesis website. Works with FeedBurner, MailChimp, AWeber, FeedBlitz and more.
 
@@ -18,6 +18,7 @@ Creates a new widget to easily add mailing lists to a Genesis website. Recommend
 1. Activate the plugin through the 'Plugins' menu in WordPress
 1. In Appearance->Widgerts, add Genesis eNews Extended widget to any sidebar.
 1. Using the mailing list contact form code provided by your vendor, add the form action URL, the form field ID for the e-mail field and any hidden fields (not all services use them) into the widget options.
+1. If using name fields, read the [plugin's tutorial website](http://www.brandonkraft.com/contrib/plugins/genesis-enews-extended/tutorials).
 1. Verify it works!
 
 == Frequently Asked Questions ==
@@ -30,6 +31,14 @@ Feedburner, MailChimp, Aweber, FeedBlitz and Constant Contact are confirmed to w
 
 That is intentional. You don't want to knock people off your site and leave them on FeedBurner's.
 
+= I'm using Minimum 2.0. Where's the submit button? =
+
+That is a feature of the theme. If you want the button back, remove ".enews #subbutton," on line 1236 of style.css.
+
+= The first and last name fields look funky. =
+
+Read more on the [plugin's tutorial website](http://www.brandonkraft.com/contrib/plugins/genesis-enews-extended/tutorials).
+
 = I need help! Where I can get it? =
 
 "Official" tutorials will be maintained on the [plugin's website](http://www.brandonkraft.com/contrib/plugins/genesis-enews-extended/).
@@ -41,6 +50,9 @@ Questions can be asked at the [WordPress.org Support Forum](http://wordpress.org
 2. Widget setting screen.
 
 == Changelog ==
+
+= 0.1.6 =
+* Makes available first and last name fields.
 
 = 0.1.5 =
 * Adds option to open confirmation window in same tab.
@@ -81,3 +93,6 @@ Adds translation support and adds German translation.
 
 = 0.1.5 =
 Adds option to open confirmation screen in same tab.
+
+= 0.1.6 =
+Adds first and last name fields. Check instructions before usage.
