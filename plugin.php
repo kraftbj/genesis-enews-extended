@@ -1,12 +1,27 @@
 <?php
 /**
+ * Genesis eNews Extended
+ * 
+ * @package BJGK\Genesis_enews_extended
+ * @version 0.1.6.1
+ * @author Brandon Kraft <bk@kraft.im>
+ * @copyright Copyright (c) 2012, Brandon Kraft
+ * @link http://www.brandonkraft.com/
+ * @license GPL-2.0+
+ * 
+ * @wordpress-plugin
  * Plugin Name: Genesis eNews Extended
  * Plugin URI: http://www.brandonkraft.com/contrib/plugins/genesis-enews-extended/
  * Description: Replaces the Genesis eNews Widget to allow easier use of additional mailing services.
  * Version: 0.1.6.1
  * Author: Brandon Kraft
  * Author URI: http://www.brandonkraft.com
- *
+ * License: GPL-2.0+
+ * License URI: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+ * Text Domain: genesis-enews-extended
+ * Domain Path: /languages/
+ */
+ /*
  * This program is free software; you can redistribute it and/or modify it under the terms of the GNU 
  * General Public License version 2, as published by the Free Software Foundation.  You may NOT assume 
  * that you can use any other version of the GPL.
@@ -15,28 +30,25 @@
  * even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  *
  * Code based on original eNews Widget in the Genesis Framework by StudioPress - http://www.studiopress.com
- *
- * @package BJGK_Genesis_enews_extended
- * @version 0.1.6
- * @author Brandon Kraft <bk@kraft.im>
- * @copyright Copyright (c) 2012, Brandon Kraft
- * @link http://www.brandonkraft.com
- * @license http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  */
 
 add_action( 'init', 'bjgk_genesis_enews_load_translations', 1 );
 /**
- * Load the textdomain/ translations for the plugin.
+ * Load the textdomain / translations for the plugin.
  *
- * @uses load_plugin_textdomain()
+ * @since 0.1.4
  */
 function bjgk_genesis_enews_load_translations() {
-
 	load_plugin_textdomain( 'genesis-enews-extended', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
-
 }
- 
- class BJGK_Genesis_eNews_Extended extends WP_Widget {
+
+/**
+ * Main plugin class.
+ * 
+ * @package BJGK\Genesis_enews_extended
+ * @author Brandon Kraft <bk@kraft.im>
+ */
+class BJGK_Genesis_eNews_Extended extends WP_Widget {
 
 	/**
 	 * Holds widget settings defaults, populated in constructor.
@@ -47,19 +59,20 @@ function bjgk_genesis_enews_load_translations() {
 
 	/**
 	 * Constructor. Set the default widget options and create widget.
+	 * 
+	 * @since 0.1.0
 	 */
 	function __construct() {
-
 		$this->defaults = array(
-			'title'			=> '',
-			'text'			=> '',
-			'hidden_fields'	=> '',
-			'open_same_window'     => 0,
-			'fname-field' => '',
-			'lname-field' => '',
-			'input_text'	=> '',
-			'button_text'	=> '',
-			'action'	=> '',
+			'title'            => '',
+			'text'             => '',
+			'hidden_fields'    => '',
+			'open_same_window' => 0,
+			'fname-field'      => '',
+			'lname-field'      => '',
+			'input_text'       => '',
+			'button_text'      => '',
+			'action'           => '',
 		);
 
 		$widget_ops = array(
@@ -68,20 +81,20 @@ function bjgk_genesis_enews_load_translations() {
 		);
 
 		$this->WP_Widget( 'enews-ext', __( 'Genesis - eNews Extended', 'genesis-enews-extended' ), $widget_ops );
-
 	}
 
 	/**
 	 * Echo the widget content.
+	 * 
+	 * @since 0.1.0
 	 *
-	 * @param array $args Display arguments including before_title, after_title, before_widget, and after_widget.
-	 * @param array $instance The settings for the particular instance of the widget
+	 * @param array $args     Display arguments including before_title, after_title, before_widget, and after_widget.
+	 * @param array $instance The settings for the particular instance of the widget.
 	 */
 	function widget( $args, $instance ) {
-
 		extract( $args );
 
-		/** Merge with defaults */
+		// Merge with defaults
 		$instance = wp_parse_args( (array) $instance, $this->defaults );
 
 		echo $before_widget . '<div class="enews">';
@@ -109,7 +122,6 @@ function bjgk_genesis_enews_load_translations() {
 			<?php endif;
 
 		echo '</div>' . $after_widget;
-
 	}
 
 	/**
@@ -117,32 +129,33 @@ function bjgk_genesis_enews_load_translations() {
 	 *
 	 * This function should check that $new_instance is set correctly.
 	 * The newly calculated value of $instance should be returned.
-	 * If "false" is returned, the instance won't be saved/updated.
+	 * If false is returned, the instance won't be saved / updated.
+	 * 
+	 * @since 0.1.0
 	 *
-	 * @param array $new_instance New settings for this instance as input by the user via form()
-	 * @param array $old_instance Old settings for this instance
+	 * @param array $new_instance New settings for this instance as input by the user via form().
+	 * @param array $old_instance Old settings for this instance.
+	 *
 	 * @return array Settings to save or bool false to cancel saving
 	 */
 	function update( $new_instance, $old_instance ) {
-
-		$new_instance['title'] = strip_tags( $new_instance['title'] );
-		$new_instance['text']  = wp_kses( $new_instance['text'], genesis_formatting_allowedtags() );
+		$new_instance['title']         = strip_tags( $new_instance['title'] );
+		$new_instance['text']          = wp_kses( $new_instance['text'], genesis_formatting_allowedtags() );
 		$new_instance['hidden_fields'] = strip_tags( $new_instance['hidden_fields'], "<input>" );
 		return $new_instance;
-
 	}
 
 	/**
 	 * Echo the settings update form.
+	 * 
+	 * @since 0.1.0
 	 *
-	 * @param array $instance Current settings
+	 * @param array $instance Current settings.
 	 */
 	function form( $instance ) {
-
-		/** Merge with defaults */
+		// Merge with defaults
 		$instance = wp_parse_args( (array) $instance, $this->defaults );
-
-?>
+		?>
 		<p>
 			<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title', 'genesis-enews-extended' ); ?>:</label><br />
 			<input type="text" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" value="<?php echo esc_attr( $instance['title'] ); ?>" class="widefat" />
@@ -206,10 +219,13 @@ function bjgk_genesis_enews_load_translations() {
 	}
 
 }
+
 add_action( 'widgets_init', 'bjgk_genesis_enews_load_widgets' );
-
+/**
+ * Register widget.
+ * 
+ * @since 0.1.0
+ */
 function bjgk_genesis_enews_load_widgets() {
-
 	register_widget( 'BJGK_Genesis_eNews_Extended' );
-
 }
