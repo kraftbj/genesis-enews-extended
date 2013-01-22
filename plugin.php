@@ -32,13 +32,17 @@
  * Code based on original eNews Widget in the Genesis Framework by StudioPress - http://www.studiopress.com
  */
 
-add_action( 'init', 'bjgk_genesis_enews_load_translations', 1 );
+add_action( 'init', 'bjgk_genesis_enews_load_translations' );
 /**
  * Load the textdomain / translations for the plugin.
  *
  * @since 0.1.4
  */
 function bjgk_genesis_enews_load_translations() {
+	$domain = 'genesis-enews-extended';
+	// The "plugin_locale" filter is also used in load_plugin_textdomain()
+	$locale = apply_filters( 'plugin_locale', get_locale(), $domain );
+	load_textdomain( 'genesis-enews-extended', WP_LANG_DIR . '/genesis-enews-extended/' . $domain . '-' . $locale . '.mo' );
 	load_plugin_textdomain( 'genesis-enews-extended', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 }
 
