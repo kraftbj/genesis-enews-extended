@@ -3,8 +3,8 @@
  * Genesis eNews Extended
  * 
  * @package BJGK\Genesis_enews_extended
- * @version 0.1.6.1
- * @author Brandon Kraft <bk@kraft.im>
+ * @version 0.1.7
+ * @author Brandon Kraft <public@brandonkraft.com>
  * @copyright Copyright (c) 2012, Brandon Kraft
  * @link http://www.brandonkraft.com/
  * @license GPL-2.0+
@@ -13,7 +13,7 @@
  * Plugin Name: Genesis eNews Extended
  * Plugin URI: http://www.brandonkraft.com/contrib/plugins/genesis-enews-extended/
  * Description: Replaces the Genesis eNews Widget to allow easier use of additional mailing services.
- * Version: 0.1.6.1
+ * Version: 0.1.7
  * Author: Brandon Kraft
  * Author URI: http://www.brandonkraft.com
  * License: GPL-2.0+
@@ -50,7 +50,7 @@ function bjgk_genesis_enews_load_translations() {
  * Main plugin class.
  * 
  * @package BJGK\Genesis_enews_extended
- * @author Brandon Kraft <bk@kraft.im>
+ * @author Brandon Kraft <public@brandonkraft.com>
  */
 class BJGK_Genesis_eNews_Extended extends WP_Widget {
 
