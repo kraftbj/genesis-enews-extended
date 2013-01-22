@@ -84,7 +84,7 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 			'description' => __( 'Displays subscribe form', 'genesis-enews-extended' ),
 		);
 
-		$this->WP_Widget( 'enews-ext', __( 'Genesis - eNews Extended', 'genesis-enews-extended' ), $widget_ops );
+		parent::__construct( 'enews-ext', __( 'Genesis - eNews Extended', 'genesis-enews-extended' ), $widget_ops );
 	}
 
 	/**

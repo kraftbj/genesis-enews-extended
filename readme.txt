@@ -52,6 +52,7 @@ Questions can be asked at the [WordPress.org Support Forum](http://wordpress.org
 == Changelog ==
 
 = 0.1.7 =
+* Various code enhancements to improve performance and adhere better to WP standards (props to [Gary Jones](http://garyjones.co.uk/)) 
 * Adds Spanish translation (props to [Ryan Sullivan](http://www.wpsitecare.com/))
 * Adds Italian translation (props to [Marco Galasso](http://neatandplain.com/))
 * Adds Slovak translation (props to [Branco Radenovich](http://webhostinggeeks.com/user-reviews/))
@@ -103,4 +104,4 @@ Adds option to open confirmation screen in same tab.
 Adds first and last name fields. Check instructions before usage.
 
 = 0.1.7 =
-Adds Spanish, Italian, and Slovak translations in addition to the first and last name fields from 0.1.6.
+Code enhancements and adds Spanish, Italian, and Slovak translations.
