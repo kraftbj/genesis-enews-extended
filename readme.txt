@@ -51,7 +51,7 @@ Questions can be asked at the [WordPress.org Support Forum](http://wordpress.org
 
 == Changelog ==
 
-= 0.2 =
+= 0.2.0 =
 * Various code enhancements to improve performance and adhere better to WP standards (props to [Gary Jones](http://garyjones.co.uk/)) 
 * Adds Spanish translation (props to [Ryan Sullivan](http://www.wpsitecare.com/))
 * Adds Italian translation (props to [Marco Galasso](http://neatandplain.com/))
