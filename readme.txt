@@ -103,5 +103,5 @@ Adds option to open confirmation screen in same tab.
 = 0.1.6 =
 Adds first and last name fields. Check instructions before usage.
 
-= 0.2 =
+= 0.2.0 =
 Code enhancements and adds Spanish, Italian, and Slovak translations.
