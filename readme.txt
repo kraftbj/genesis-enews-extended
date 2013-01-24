@@ -52,7 +52,7 @@ Questions can be asked at the [WordPress.org Support Forum](http://wordpress.org
 == Changelog ==
 
 = 0.2.0 =
-* Various code enhancements to improve performance and adhere better to WP standards (props to [Gary Jones](http://garyjones.co.uk/)) 
+* Various code enhancements to improve performance and adhere better to WP standards (props to [Gary Jones](http://garyjones.co.uk/))
 * Adds Spanish translation (props to [Ryan Sullivan](http://www.wpsitecare.com/))
 * Adds Italian translation (props to [Marco Galasso](http://neatandplain.com/))
 * Adds Slovak translation (props to [Branco Radenovich](http://webhostinggeeks.com/user-reviews/))
@@ -92,7 +92,7 @@ Adds "Hidden Fields" widget setting to make widget compatible with more mailing 
 Expands widget's usefulness to more StudioPress themes (Balance, etc).
 
 = 0.1.3 =
-Security update and adds Feedburner support natively. 
+Security update and adds Feedburner support natively.
 
 = 0.1.4 =
 Adds translation support and adds German translation.
