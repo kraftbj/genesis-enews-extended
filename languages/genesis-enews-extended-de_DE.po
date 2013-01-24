@@ -8,7 +8,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2013-01-21 21:45-0600\n"
+"PO-Revision-Date: 2013-01-21 21:48-0600\n"
 "Last-Translator: Brandon Kraft <public@brandonkraft.com>\n"
 "Language-Team: Brandon Kraft <public@brandonkraft.com>\n"
 "X-Generator: Poedit 1.5.4\n"
@@ -16,69 +16,71 @@ msgstr ""
 
 #: plugin.php:67
 msgid "Displays subscribe form"
-msgstr "
-"
+msgstr "Anzeige abonnieren Form"
+
 #: plugin.php:70
 msgid "Genesis - eNews Extended"
-msgstr ""
+msgstr "Genesis - eNews Extended"
 
 #: plugin.php:147
 msgid "Title"
-msgstr ""
+msgstr "Titel"
 
 #: plugin.php:152
 msgid "Text To Show"
-msgstr ""
+msgstr "Anzuzeigender Text"
 
 #: plugin.php:157
 msgid "Google/Feedburner ID"
-msgstr ""
+msgstr "Google/ Feedburner ID"
 
 #: plugin.php:159
 msgid ""
 "Entering your Feedburner ID here will deactivate the custom options below."
 msgstr ""
+"Wird hier eine Feedburner-ID eingetragen, werden die Optionen für "
+"benutzerdefinierte Dienste/ Formulare unten wirkungslos!"
 
 #: plugin.php:163
 msgid "Form Action"
-msgstr ""
+msgstr "Formular-Aktion (Form Action)"
 
 #: plugin.php:168
 msgid "E-Mail Field"
-msgstr ""
+msgstr "E-Mail-Feld"
 
 #: plugin.php:173
 msgid "First Name Field"
-msgstr ""
+msgstr "Vorname Feld"
 
 #: plugin.php:178
 msgid "Last Name Field"
-msgstr ""
+msgstr "Nachname Feld"
 
 #: plugin.php:183
 msgid "Hidden Fields"
-msgstr ""
+msgstr "Verborgene Felder (Hidden Fields)"
 
 #: plugin.php:185
 msgid "Not all services use hidden fields."
-msgstr ""
+msgstr "Nicht alle Dienste verwenden verborgene Felder (Hidden Fields)."
 
 #: plugin.php:190
 msgid "Open confirmation page in same window?"
-msgstr ""
+msgstr "Ã–ffnen Sie BestÃ¤tigungs-Seite im gleichen Fenster?"
 
 #: plugin.php:194
 msgid "Enter your email address..."
-msgstr ""
+msgstr "E-Mail eingeben ..."
 
 #: plugin.php:195
 msgid "Input Text"
-msgstr ""
+msgstr "Eingabe"
 
 #: plugin.php:200
 msgid "Go"
-msgstr ""
+msgstr "Start"
 
 #: plugin.php:201
 msgid "Button Text"
-msgstr ""
+msgstr "Text der Schaltfläche"
