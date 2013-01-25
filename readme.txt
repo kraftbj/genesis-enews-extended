@@ -3,7 +3,7 @@ Contributors: kraftbj, coffeaweb
 Donate link: http://www.brandonkraft.com/donate/
 Tags: genesis
 Requires at least: 3.0
-Tested up to: 3.5
+Tested up to: 3.5.1
 Stable tag: 0.2.0
 
 Creates a new widget to easily add mailing lists integration to a Genesis website. Works with FeedBurner, MailChimp, AWeber, FeedBlitz and more.
