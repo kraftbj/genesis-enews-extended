@@ -105,6 +105,14 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 
 		echo $before_widget . '<div class="enews">';
 
+		// Set default fname_text, lname_text for backwards compat for installs upgraded from 0.1.6+ to 0.3.0+
+		if (empty($instance['fname_text'])) {
+			$instance['fname_text'] = "First Name";
+		}
+		if (empty($instance['lname_text'])) {
+			$instance['lname_text'] = "Last Name";
+		}
+
 			if ( ! empty( $instance['title'] ) )
 				echo $before_title . apply_filters( 'widget_title', $instance['title'], $instance, $this->id_base ) . $after_title;
 
