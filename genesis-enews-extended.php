@@ -3,7 +3,7 @@
  * Genesis eNews Extended
  *
  * @package BJGK\Genesis_enews_extended
- * @version 0.2.0
+ * @version 0.3.0
  * @author Brandon Kraft <public@brandonkraft.com>
  * @copyright Copyright (c) 2012, Brandon Kraft
  * @link http://www.brandonkraft.com/
@@ -13,7 +13,7 @@
  * Plugin Name: Genesis eNews Extended
  * Plugin URI: http://www.brandonkraft.com/contrib/plugins/genesis-enews-extended/
  * Description: Replaces the Genesis eNews Widget to allow easier use of additional mailing services.
- * Version: 0.2.0
+ * Version: 0.3.0
  * Author: Brandon Kraft
  * Author URI: http://www.brandonkraft.com
  * License: GPL-2.0+
@@ -105,7 +105,7 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 
 		echo $before_widget . '<div class="enews">';
 
-		// Set default fname_text, lname_text for backwards compat for installs upgraded from 0.1.6+ to 0.3.0+
+	 	// Set default fname_text, lname_text for backwards compat for installs upgraded from 0.1.6+ to 0.3.0+
 		if (empty($instance['fname_text'])) {
 			$instance['fname_text'] = "First Name";
 		}
