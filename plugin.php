@@ -68,17 +68,17 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 	 */
 	function __construct() {
 		$this->defaults = array(
-			'title'            => '',
-			'text'             => '',
-			'hidden_fields'    => '',
-			'open_same_window' => 0,
-			'fname-field'      => '',
-			'lname-field'      => '',
-			'input_text'       => '',
-			'fname_text'      => '',
-			'lname_text'      => '',
-			'button_text'      => '',
-			'action'           => '',
+			'title'				=> '',
+			'text'				=> '',
+			'hidden_fields'		=> '',
+			'open_same_window'	=> 0,
+			'fname-field'		=> '',
+			'lname-field'		=> '',
+			'input_text'		=> '',
+			'fname_text'		=> '',
+			'lname_text'		=> '',
+			'button_text'		=> '',
+			'action'			=> '',
 		);
 
 		$widget_ops = array(
@@ -119,7 +119,7 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 			</form>
 			<?php elseif ( ! empty( $instance['action'] ) ) : ?>
 			<form id="subscribe" action="<?php echo esc_js( $instance['action'] ); ?>" method="post" <?php if ($instance['open_same_window'] == 0 ) : ?> target="_blank"<?php endif; ?>>
-			<?php if ( ! empty($instance['fname-field'] ) ) : ?><input type="text" id="subbox1" class="enews-subbox" value="<?php echo esc_attr( $instance['fname_text'] ); ?>" onfocus="if ( this.value == '<?php echo esc_attr( $instance['fname_text'] ); ?>') { this.value = ''; }" onblur="if ( this.value == '' ) { this.value = '<?php echo esc_attr( $instance['fname_text'] ); ?>'; }" name="<?php echo esc_js( $instance['fname-field'] ); ?>" /><?php endif ?>
+				<?php if ( ! empty($instance['fname-field'] ) ) : ?><input type="text" id="subbox1" class="enews-subbox" value="<?php echo esc_attr( $instance['fname_text'] ); ?>" onfocus="if ( this.value == '<?php echo esc_attr( $instance['fname_text'] ); ?>') { this.value = ''; }" onblur="if ( this.value == '' ) { this.value = '<?php echo esc_attr( $instance['fname_text'] ); ?>'; }" name="<?php echo esc_js( $instance['fname-field'] ); ?>" /><?php endif ?>
 				<?php if ( ! empty($instance['lname-field'] ) ) : ?><input type="text" id="subbox2" class="enews-subbox" value="<?php echo esc_attr( $instance['lname_text'] ); ?>" onfocus="if ( this.value == '<?php echo esc_attr( $instance['lname_text'] ); ?>') { this.value = ''; }" onblur="if ( this.value == '' ) { this.value = '<?php echo esc_attr( $instance['lname_text'] ); ?>'; }" name="<?php echo esc_js( $instance['lname-field'] ); ?>" /><?php endif ?>
 				<input type="text" value="<?php echo esc_attr( $instance['input_text'] ); ?>" id="subbox" onfocus="if ( this.value == '<?php echo esc_js( $instance['input_text'] ); ?>') { this.value = ''; }" onblur="if ( this.value == '' ) { this.value = '<?php echo esc_js( $instance['input_text'] ); ?>'; }" name="<?php echo esc_js( $instance['email-field'] ); ?>" />
 				<?php echo $instance['hidden_fields']; ?>
@@ -215,7 +215,7 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 			<input type="text" id="<?php echo $this->get_field_id( 'fname_text' ); ?>" name="<?php echo $this->get_field_name( 'fname_text' ); ?>" value="<?php echo esc_attr( $fname_text ); ?>" class="widefat" />
 		</p>
 		<p>
-			<?php $input_text = empty( $instance['lname_text'] ) ? __( 'Last Name...', 'genesis-enews-extended' ) : $instance['lname_text']; ?>
+			<?php $lname_text = empty( $instance['lname_text'] ) ? __( 'Last Name...', 'genesis-enews-extended' ) : $instance['lname_text']; ?>
 			<label for="<?php echo $this->get_field_id( 'lname_text' ); ?>"><?php _e( 'Last Name Input Text', 'genesis-enews-extended' ); ?>:</label>
 			<input type="text" id="<?php echo $this->get_field_id( 'lname_text' ); ?>" name="<?php echo $this->get_field_name( 'lname_text' ); ?>" value="<?php echo esc_attr( $lname_text ); ?>" class="widefat" />
 		</p>
