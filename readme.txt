@@ -54,6 +54,7 @@ Questions can be asked at the [WordPress.org Support Forum](http://wordpress.org
 = 1.0.0 =
 * Adds ability to edit "First Name" and "Last Name" displayed on front-end.
 * Moves class function out of primary plugin file, renames primary plugin file, and other code cleanup.
+* Security update.
 * Version numbering now using semver.org rationale.
 
 = 0.2.0 =
