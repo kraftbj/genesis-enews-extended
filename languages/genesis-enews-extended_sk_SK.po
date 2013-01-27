@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Genesis eNews Extended v0.1.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-26 17:54-0600\n"
-"PO-Revision-Date: 2013-01-27 13:09-0600\n"
+"POT-Creation-Date: 2013-01-27 13:12-0600\n"
+"PO-Revision-Date: 2013-01-27 13:12-0600\n"
 "Last-Translator: Brandon Kraft <public@brandonkraft.com>\n"
 "Language-Team: Brandon Kraft <public@brandonkraft.com>\n"
 "Language: Slovak\n"
@@ -17,102 +17,102 @@ msgstr ""
 "X-Poedit-SearchPath-0: ..\n"
 
 # @ genesis-enews-extended
-#: ../genesis-enews-extended.php:86
+#: ../class-bjgk-genesis-enews-extended.php:39
 msgid "Displays subscribe form"
 msgstr "Zobrazí sa prihlásiť formulár"
 
 # @ genesis-enews-extended
-#: ../genesis-enews-extended.php:89
+#: ../class-bjgk-genesis-enews-extended.php:42
 msgid "Genesis - eNews Extended"
 msgstr "Genesis - eNews Extended"
 
 # @ genesis-enews-extended
-#: ../genesis-enews-extended.php:174
+#: ../class-bjgk-genesis-enews-extended.php:127
 msgid "Title"
 msgstr "Názov"
 
 # @ genesis-enews-extended
-#: ../genesis-enews-extended.php:179
+#: ../class-bjgk-genesis-enews-extended.php:132
 msgid "Text To Show"
 msgstr "Text, ktorý chcete zobraziť"
 
 # @ genesis-enews-extended
-#: ../genesis-enews-extended.php:184
+#: ../class-bjgk-genesis-enews-extended.php:137
 msgid "Google/Feedburner ID"
 msgstr "Google/Feedburner ID"
 
 # @ genesis-enews-extended
-#: ../genesis-enews-extended.php:186
+#: ../class-bjgk-genesis-enews-extended.php:139
 msgid ""
 "Entering your Feedburner ID here will deactivate the custom options below."
 msgstr ""
 "Zadanie vaše Feedburner ID tu bude deaktivovať vlastné možnosti nižšie."
 
 # @ genesis-enews-extended
-#: ../genesis-enews-extended.php:190
+#: ../class-bjgk-genesis-enews-extended.php:143
 msgid "Form Action"
 msgstr "Akcia formulára"
 
 # @ genesis-enews-extended
-#: ../genesis-enews-extended.php:195
+#: ../class-bjgk-genesis-enews-extended.php:148
 msgid "E-Mail Field"
 msgstr "Pole e-Mail"
 
-#: ../genesis-enews-extended.php:200
+#: ../class-bjgk-genesis-enews-extended.php:153
 msgid "First Name Field"
 msgstr "Krstné meno pole"
 
-#: ../genesis-enews-extended.php:205
+#: ../class-bjgk-genesis-enews-extended.php:158
 msgid "Last Name Field"
 msgstr "Poľa pre priezvisko"
 
 # @ genesis-enews-extended
-#: ../genesis-enews-extended.php:210
+#: ../class-bjgk-genesis-enews-extended.php:163
 msgid "Hidden Fields"
 msgstr "Skryté polia"
 
 # @ genesis-enews-extended
-#: ../genesis-enews-extended.php:212
+#: ../class-bjgk-genesis-enews-extended.php:165
 msgid "Not all services use hidden fields."
 msgstr "Nie všetky služby zneužiť skryté polia."
 
-#: ../genesis-enews-extended.php:217
+#: ../class-bjgk-genesis-enews-extended.php:170
 msgid "Open confirmation page in same window?"
 msgstr "Otvorené potvrdzovací stránku v rovnakom okne?"
 
-#: ../genesis-enews-extended.php:221
+#: ../class-bjgk-genesis-enews-extended.php:174
 msgid "First Name..."
 msgstr "Meno…"
 
-#: ../genesis-enews-extended.php:222
+#: ../class-bjgk-genesis-enews-extended.php:175
 msgid "First Name Input Text"
 msgstr "Meno vstupný textové"
 
-#: ../genesis-enews-extended.php:226
+#: ../class-bjgk-genesis-enews-extended.php:179
 msgid "Last Name..."
 msgstr "Priezvisko…"
 
 # @ genesis-enews-extended
-#: ../genesis-enews-extended.php:227
+#: ../class-bjgk-genesis-enews-extended.php:180
 msgid "Last Name Input Text"
 msgstr "Priezvisko vstupný textové"
 
 # @ genesis-enews-extended
-#: ../genesis-enews-extended.php:231
+#: ../class-bjgk-genesis-enews-extended.php:184
 msgid "Enter your email address..."
 msgstr "Zadajte vašu emailovú adresu..."
 
 # @ genesis-enews-extended
-#: ../genesis-enews-extended.php:232
+#: ../class-bjgk-genesis-enews-extended.php:185
 msgid "E-Mail Input Text"
 msgstr "e-Mail vstupný textové"
 
 # @ genesis-enews-extended
-#: ../genesis-enews-extended.php:237
+#: ../class-bjgk-genesis-enews-extended.php:190
 msgid "Go"
 msgstr "Ísť"
 
 # @ genesis-enews-extended
-#: ../genesis-enews-extended.php:238
+#: ../class-bjgk-genesis-enews-extended.php:191
 msgid "Button Text"
 msgstr "Tlačidlo Text"
