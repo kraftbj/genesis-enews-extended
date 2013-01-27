@@ -46,7 +46,7 @@ function bjgk_genesis_enews_load_translations() {
 	load_plugin_textdomain( 'genesis-enews-extended', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 }
 
-include_once 'class-bjgk-genesis-enews-extended.php';
+include 'class-bjgk-genesis-enews-extended.php';
 
 add_action( 'widgets_init', 'bjgk_genesis_enews_load_widgets' );
 /**
