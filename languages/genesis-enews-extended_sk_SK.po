@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Genesis eNews Extended v0.1.7\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-01-26 17:54-0600\n"
-"PO-Revision-Date: 2013-01-27 01:21-0600\n"
+"PO-Revision-Date: 2013-01-27 13:09-0600\n"
 "Last-Translator: Brandon Kraft <public@brandonkraft.com>\n"
 "Language-Team: Brandon Kraft <public@brandonkraft.com>\n"
 "Language: Slovak\n"
@@ -81,25 +81,21 @@ msgid "Open confirmation page in same window?"
 msgstr "Otvorené potvrdzovací stránku v rovnakom okne?"
 
 #: ../genesis-enews-extended.php:221
-#, fuzzy
 msgid "First Name..."
-msgstr "Krstné meno pole"
+msgstr "Meno…"
 
 #: ../genesis-enews-extended.php:222
-#, fuzzy
 msgid "First Name Input Text"
-msgstr "Krstné meno pole"
+msgstr "Meno vstupný textové"
 
 #: ../genesis-enews-extended.php:226
-#, fuzzy
 msgid "Last Name..."
-msgstr "Poľa pre priezvisko"
+msgstr "Priezvisko…"
 
 # @ genesis-enews-extended
 #: ../genesis-enews-extended.php:227
-#, fuzzy
 msgid "Last Name Input Text"
-msgstr "Vstupné textové"
+msgstr "Priezvisko vstupný textové"
 
 # @ genesis-enews-extended
 #: ../genesis-enews-extended.php:231
@@ -108,9 +104,8 @@ msgstr "Zadajte vašu emailovú adresu..."
 
 # @ genesis-enews-extended
 #: ../genesis-enews-extended.php:232
-#, fuzzy
 msgid "E-Mail Input Text"
-msgstr "Vstupné textové"
+msgstr "e-Mail vstupný textové"
 
 # @ genesis-enews-extended
 #: ../genesis-enews-extended.php:237
