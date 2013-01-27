@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: Genesis eNews Extended\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/genesis-enews-extended\n"
 "POT-Creation-Date: 2013-01-27 13:12-0600\n"
-"PO-Revision-Date: 2013-01-27 13:12-0600\n"
+"PO-Revision-Date: 2013-01-27 13:17-0600\n"
 "Last-Translator: Brandon Kraft <public@brandonkraft.com>\n"
 "Language-Team: \n"
 "Language: Italiano\n"
@@ -71,33 +71,28 @@ msgid "Open confirmation page in same window?"
 msgstr "Apri la pagina di conferma nella stessa finestra?"
 
 #: ../class-bjgk-genesis-enews-extended.php:174
-#, fuzzy
 msgid "First Name..."
-msgstr "Campo Nome"
+msgstr "Nome…"
 
 #: ../class-bjgk-genesis-enews-extended.php:175
-#, fuzzy
 msgid "First Name Input Text"
-msgstr "Campo Nome"
+msgstr "Nome di testo di input"
 
 #: ../class-bjgk-genesis-enews-extended.php:179
-#, fuzzy
 msgid "Last Name..."
-msgstr "Campo Cognome"
+msgstr "Cognome…"
 
 #: ../class-bjgk-genesis-enews-extended.php:180
-#, fuzzy
 msgid "Last Name Input Text"
-msgstr "Testo per l'input"
+msgstr "Cognome di testo di input"
 
 #: ../class-bjgk-genesis-enews-extended.php:184
 msgid "Enter your email address..."
 msgstr "Inserisci il tuo indirizzo email…"
 
 #: ../class-bjgk-genesis-enews-extended.php:185
-#, fuzzy
 msgid "E-Mail Input Text"
-msgstr "Testo per l'input"
+msgstr "E-Mail di testo di input"
 
 #: ../class-bjgk-genesis-enews-extended.php:190
 msgid "Go"
