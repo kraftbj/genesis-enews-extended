@@ -4,7 +4,7 @@ Donate link: http://www.brandonkraft.com/donate/
 Tags: genesis
 Requires at least: 3.0
 Tested up to: 3.5.1
-Stable tag: 0.3.0
+Stable tag: 1.0.0
 
 Creates a new widget to easily add mailing lists integration to a Genesis website. Works with FeedBurner, MailChimp, AWeber, FeedBlitz and more.
 
@@ -51,8 +51,10 @@ Questions can be asked at the [WordPress.org Support Forum](http://wordpress.org
 
 == Changelog ==
 
-= 0.3.0 =
+= 1.0.0 =
 * Adds ability to edit "First Name" and "Last Name" displayed on front-end.
+* Moves class function out of primary plugin file, renames primary plugin file, and other code cleanup.
+* Version numbering now using semver.org rationale.
 
 = 0.2.0 =
 * Various code enhancements to improve performance and adhere better to WP standards (props to [Gary Jones](http://garyjones.co.uk/))
@@ -109,5 +111,5 @@ Adds first and last name fields. Check instructions before usage.
 = 0.2.0 =
 Code enhancements and adds Spanish, Italian, and Slovak translations.
 
-= 0.3.0 =
+= 1.0.0 =
 Enable changes to first name and last name text displayed on site.
