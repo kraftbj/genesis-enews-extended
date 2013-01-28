@@ -6,7 +6,7 @@
  * @version 1.0.0
  * @author Brandon Kraft <public@brandonkraft.com>
  * @copyright Copyright (c) 2012, Brandon Kraft
- * @link http://www.brandonkraft.com/
+ * @link http://www.brandonkraft.com/contrib/plugins/genesis-enews-extended/
  * @license GPL-2.0+
  *
  * @wordpress-plugin

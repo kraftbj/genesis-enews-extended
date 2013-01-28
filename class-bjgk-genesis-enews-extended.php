@@ -5,7 +5,7 @@
  * @package   BJGK\Genesis_enews_extended
  * @version   1.0.0
  * @author    Brandon Kraft <public@brandonkraft.com>
- * @link      http://www.brandonkraft.com/
+ * @link      http://www.brandonkraft.com/contrib/plugins/genesis-enews-extended/
  * @copyright Copyright (c) 2012, Brandon Kraft
  * @license   GPL-2.0+
  */
