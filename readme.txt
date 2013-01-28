@@ -4,7 +4,7 @@ Donate link: http://www.brandonkraft.com/donate/
 Tags: genesis
 Requires at least: 3.0
 Tested up to: 3.5.1
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 
 Creates a new widget to easily add mailing lists integration to a Genesis website. Works with FeedBurner, MailChimp, AWeber, FeedBlitz and more.
 
@@ -50,6 +50,9 @@ Questions can be asked at the [WordPress.org Support Forum](http://wordpress.org
 2. Widget setting screen.
 
 == Changelog ==
+
+= 1.0.2 =
+* Corrected i10n issues regarding 1.0.1 fix.
 
 = 1.0.1 =
 * Fixed issue resulting in deactivation on upgrade.
@@ -117,3 +120,9 @@ Code enhancements and adds Spanish, Italian, and Slovak translations.
 
 = 1.0.0 =
 Enable changes to first name and last name text displayed on site.
+
+= 1.0.1 =
+Verify plugin is active after update.
+
+= 1.0.2 =
+Verify plugin is active after update.
