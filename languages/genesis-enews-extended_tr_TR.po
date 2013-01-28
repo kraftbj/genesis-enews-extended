@@ -1,0 +1,1404 @@
+# Translation of Genesis 1.8 in Turkish
+# This file is distributed under the same license as the Genesis 1.8 package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Genesis eNews Extended\n"
+"POT-Creation-Date: 2013-01-27 23:11-0600\n"
+"PO-Revision-Date: 2013-01-27 23:11-0600\n"
+"Last-Translator: Brandon Kraft <public@brandonkraft.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../class-bjgk-genesis-enews-extended.php:50
+#, fuzzy
+msgid "Displays subscribe form"
+msgstr "Feedburner e-postayla izleme formunu gösterir"
+
+#: ../class-bjgk-genesis-enews-extended.php:53
+#, fuzzy
+msgid "Genesis - eNews Extended"
+msgstr "Genesis- eHaber ve Güncellemeler"
+
+#: ../class-bjgk-genesis-enews-extended.php:138
+msgid "Title"
+msgstr "Başlık"
+
+#: ../class-bjgk-genesis-enews-extended.php:143
+msgid "Text To Show"
+msgstr "Gösterilen yazı"
+
+#: ../class-bjgk-genesis-enews-extended.php:148
+msgid "Google/Feedburner ID"
+msgstr "Google/Feedburner ID"
+
+#: ../class-bjgk-genesis-enews-extended.php:150
+msgid ""
+"Entering your Feedburner ID here will deactivate the custom options below."
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:154
+#, fuzzy
+msgid "Form Action"
+msgstr "Bilgilendirme"
+
+#: ../class-bjgk-genesis-enews-extended.php:159
+msgid "E-Mail Field"
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:164
+msgid "First Name Field"
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:169
+msgid "Last Name Field"
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:174
+msgid "Hidden Fields"
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:176
+msgid "Not all services use hidden fields."
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:181
+msgid "Open confirmation page in same window?"
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:185
+msgid "First Name..."
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:186
+#, fuzzy
+msgid "First Name Input Text"
+msgstr "Yazı Gir"
+
+#: ../class-bjgk-genesis-enews-extended.php:190
+msgid "Last Name..."
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:191
+#, fuzzy
+msgid "Last Name Input Text"
+msgstr "Yazı Gir"
+
+#: ../class-bjgk-genesis-enews-extended.php:195
+msgid "Enter your email address..."
+msgstr "E-posta adresinizi giriniz..."
+
+#: ../class-bjgk-genesis-enews-extended.php:196
+#, fuzzy
+msgid "E-Mail Input Text"
+msgstr "Yazı Gir"
+
+#: ../class-bjgk-genesis-enews-extended.php:201
+msgid "Go"
+msgstr "Git"
+
+#: ../class-bjgk-genesis-enews-extended.php:202
+msgid "Button Text"
+msgstr "Buton Yazısı"
+
+#~ msgid "Not Found, Error 404"
+#~ msgstr "Bulunamadı, Hata 404"
+
+#~ msgid ""
+#~ "The page you are looking for no longer exists. Perhaps you can return "
+#~ "back to the site's <a href=\"%s\">homepage</a> and see if you can find "
+#~ "what you are looking for. Or, you can try finding it with the information "
+#~ "below."
+#~ msgstr ""
+#~ "Görüntülemeye çalıştığınız sayfa bulunamadı. <a href=\"%s\">Anasayfa</"
+#~ "a>ya geri dönebilirsiniz"
+
+#~ msgid "Pages:"
+#~ msgstr "Sayfalar:"
+
+#~ msgid "Categories:"
+#~ msgstr "Kategoriler:"
+
+#~ msgid "Authors:"
+#~ msgstr "Yazarlar:"
+
+#~ msgid "Monthly:"
+#~ msgstr "Aylık:"
+
+#~ msgid "Recent Posts:"
+#~ msgstr "Yeni Yazılar:"
+
+#~ msgid ""
+#~ "This post is password protected. Enter the password to view comments."
+#~ msgstr "Bu yazı şifre korumalıdır. Yorumları görmek için parolanızı girin."
+
+#~ msgid "Primary Navigation Menu"
+#~ msgstr "Birincil Navigasyon Menüsü"
+
+#~ msgid "Secondary Navigation Menu"
+#~ msgstr "İkincil Navigasyon Menüsü"
+
+#~ msgid "Genesis - Import/Export"
+#~ msgstr "Genesis - İçe Aktar/Dışa Aktar"
+
+#~ msgid "Import/Export"
+#~ msgstr "İçe Aktar/Dışa Aktar"
+
+#~ msgid "Import Genesis Settings File"
+#~ msgstr "Genesis Ayarlar Dosyasını İçe Aktar"
+
+#~ msgid ""
+#~ "Upload the data file (<code>.json</code>) from your computer and we'll "
+#~ "import your settings."
+#~ msgstr ""
+#~ "(<code>.Json</code>) veri dosyasını bilgisayarınızdan yükleyin, biz de "
+#~ "ayarlarınızı aktaracağız. "
+
+#~ msgid ""
+#~ "Choose the file from your computer and click \"Upload file and Import\""
+#~ msgstr ""
+#~ "Dosyayı bilgisayarınızdan seçin ve \"Dosyayı Yükle ve İçe Aktar\" "
+#~ "düğmesine tıklayın"
+
+#~ msgid "Upload File: (Maximum Size: %s)"
+#~ msgstr "Dosya Yükle: (Maksimum Boyut: %s)"
+
+#~ msgid "Upload File and Import"
+#~ msgstr "Dosyayı Yükle ve İçe Aktar"
+
+#~ msgid "Export Genesis Settings File"
+#~ msgstr "Genesis Ayarlar Dosyasını Dışa Aktar"
+
+#~ msgid ""
+#~ "When you click the button below, Genesis will generate a data file "
+#~ "(<code>.json</code>) for you to save to your computer."
+#~ msgstr ""
+#~ "Aşağıdaki butona tıkladığınızda, bilgisayarınıza kaydetmeniz için, bir "
+#~ "veri dosyası (<code>.json</code>) oluşturacak."
+
+#~ msgid ""
+#~ "Once you have saved the download file, you can use the import function on "
+#~ "another site to import this data."
+#~ msgstr ""
+#~ "İndirdiğiniz dosyayı kaydettiyseniz, başka bir sitedeki İçe Aktar "
+#~ "fonksiyonunu kullanarak bu veriyi içe aktarabilirsiniz."
+
+#~ msgid "Download Export File"
+#~ msgstr "Dışa Aktarma Dosyasını İndir"
+
+#~ msgid "Settings successfully imported."
+#~ msgstr "Ayarlar başarıyla içe aktarıldı."
+
+#~ msgid "There was a problem importing your settings. Please try again."
+#~ msgstr "Ayarlarınızı içe aktarırken bir hata oluştu. Lütfen tekrar deneyin."
+
+#~ msgid "Theme Settings"
+#~ msgstr "Tema Ayarları"
+
+#~ msgid "SEO Settings"
+#~ msgstr "SEO Ayarları"
+
+#~ msgid "No export options available."
+#~ msgstr "Dışa aktarma seçeneği mevcut değildir."
+
+#~ msgid "Theme SEO Settings"
+#~ msgstr "Tema SEO Ayarları"
+
+#~ msgid "Custom Document Title"
+#~ msgstr "Özel Belge Başlığı"
+
+#~ msgid "Characters Used: %s"
+#~ msgstr "Kullanılan Karakterler:%s"
+
+#~ msgid "Custom Post/Page Meta Description"
+#~ msgstr "Özel Yazı/Sayfa Meta Açıklaması"
+
+#~ msgid "Custom Post/Page Meta Keywords, comma separated"
+#~ msgstr "Özel Yazı/Sayfa Meta Anahtar Kelimeleri, virgülle ayrılmış"
+
+#~ msgid "Custom Canonical URI"
+#~ msgstr "Özel Kanonik URI"
+
+#~ msgid "Custom Redirect URI"
+#~ msgstr "Özel URI Yönlendirme"
+
+#~ msgid "Robots Meta Settings"
+#~ msgstr "Robots Meta Ayarları"
+
+#~ msgid "Apply %s to this post/page"
+#~ msgstr "Bu yazıya/sayfaya %s uygulayın"
+
+#~ msgid "Custom Tracking/Conversion Code"
+#~ msgstr "Özel İzleme/Dönüşüm Kodu"
+
+#~ msgid "Layout Settings"
+#~ msgstr "Ana Düzen Ayarları"
+
+#~ msgid "Default Layout set in <a href=\"%s\">Theme Settings</a>"
+#~ msgstr "<a href=\"%s\">Theme Settings</a> daki geçerli layout ayarı"
+
+#~ msgid "Custom Body Class"
+#~ msgstr "Özel Gövde Sınıfı"
+
+#~ msgid "Custom Post Class"
+#~ msgstr "Özel Yazı Sınıfı"
+
+#~ msgid "README"
+#~ msgstr "Oku Bunu"
+
+#~ msgid "The %s file was not found in the child theme, or it was empty."
+#~ msgstr "%s dosyası tema içinde bulunamadı, ya da bulundu ama boştu."
+
+#~ msgid "Genesis - SEO Settings"
+#~ msgstr "Genesis - SEO Ayarları"
+
+#~ msgid "Save Settings"
+#~ msgstr "Ayarları Kaydet"
+
+#~ msgid "Reset Settings"
+#~ msgstr "Ayarları Sıfırla"
+
+#~ msgid "Settings saved."
+#~ msgstr "Değişiklikler Kaydedildi"
+
+#~ msgid "Settings reset."
+#~ msgstr "Ayarlar sıfırlandı."
+
+#~ msgid "Error saving settings."
+#~ msgstr "Ayarlar kaydedilrken bir hata oluştu."
+
+#~ msgid "Doctitle Settings"
+#~ msgstr "Döküman Başlık Ayarları"
+
+#~ msgid "Homepage Settings"
+#~ msgstr "Ana Sayfa Ayarları"
+
+#~ msgid "Document Head Settings"
+#~ msgstr "Döküman Balık Ayarları"
+
+#~ msgid "Archives Settings"
+#~ msgstr "Arşiv Ayarları"
+
+#~ msgid ""
+#~ "The Document Title is the single most important SEO tag in your document "
+#~ "source. It succinctly informs search engines of what information is "
+#~ "contained in the document. The doctitle changes from page to page, but "
+#~ "these options will help you control what it looks by default."
+#~ msgstr ""
+#~ "Belge Başlığı, belge kaynağınızdaki tek ve en önemli SEO etiketidir. "
+#~ "Belgede bulunan bilgileri arama motorlarına bildirir. Doctitle (Belge "
+#~ "Başlığı) sayfadan sayfaya değişiklik gösterir, ancak bu seçenekler, "
+#~ "varsayılan götüntüyü kontrol etmenize yardımcı olacaktır."
+
+#~ msgid ""
+#~ "<b>By default</b>, the homepage doctitle will contain the site title, the "
+#~ "single post and page doctitle will contain the post/page title, archive "
+#~ "pages will contain the archive type, etc."
+#~ msgstr ""
+#~ "<b>Varsayılan olarak</b>, anasayfadaki doctitle (Belge Başlığı) site "
+#~ "başlığını, tek bir yazıyı içerir; sayfadaki doctitle (Belge Başlığı) yazı/"
+#~ "sayfa başlığını içerir, arşiv sayfaları arşiv türünü içerir, vb."
+
+#~ msgid "Append Site Description to Doctitle on homepage?"
+#~ msgstr "Site Açıklamasını DocTitle (Belge Başlığı) olarak değiştir?"
+
+#~ msgid "Append Site Name to Doctitle on inner pages?"
+#~ msgstr "Site Adını iç sayfalarda DocTitle (Belge Başlığı) olarak değiştir?"
+
+#~ msgid "Doctitle (%s) Append Location:"
+#~ msgstr "DocTitle (Belge Başlığı) (%s) Hangi Tarafa Eklensin:"
+
+#~ msgid "Determines what side the appended doctitle text will go on."
+#~ msgstr ""
+#~ "Değiştirilen DocTitle (Belge Başlığı) metninin gideceği yönü belirler."
+
+#~ msgid "Left"
+#~ msgstr "Sol"
+
+#~ msgid "Right"
+#~ msgstr "Sağ"
+
+#~ msgid "Doctitle (<code>&lt;title&gt;</code>) Separator:"
+#~ msgstr "DocTitle (Belge Başlığı) (<code>&lt;title&gt;</code>) Ayraçı:"
+
+#~ msgid ""
+#~ "If the doctitle consists of two parts (Title &amp; Appended Text), then "
+#~ "the Doctitle Separator will go between them."
+#~ msgstr ""
+#~ "DocTitle (Belge Başlığı) iki bölümden (Başlık &amp; Değiştirilen Yazı) "
+#~ "oluşuyorsa, o zaman DocTitle (Belge Başlığı) Ayırıcı aralarına girecek."
+
+#~ msgid "Which text would you like to be wrapped in %s tags?"
+#~ msgstr "%s etiketlerinde hangi metnin bölünmesini istersiniz?"
+
+#~ msgid ""
+#~ "The %s tag is, arguably, the second most important SEO tag in the "
+#~ "document source. Choose wisely."
+#~ msgstr ""
+#~ "%s etiketi, muhtemelen, belge kaynağında yer alan ikinci en önemli SEO "
+#~ "etiketidir. Akıllıca seçin."
+
+#~ msgid "Site Title"
+#~ msgstr "Site Başlığı"
+
+#~ msgid "Site Description"
+#~ msgstr "Site Açıklaması"
+
+#~ msgid "Neither. I'll manually wrap my own text on the homepage"
+#~ msgstr "İkisi de değil. anasayfada  metnimi kendim böleceğim."
+
+#~ msgid "Home Doctitle:"
+#~ msgstr "Başlangıç Sayfası DocTitle (Belge Başlığı):"
+
+#~ msgid ""
+#~ "If you leave the doctitle field blank, your site&rsquo;s title will be "
+#~ "used instead."
+#~ msgstr ""
+#~ "DocTitle (Belge Başlığı) alanını boş bırakırsanız, yerine your "
+#~ "sitenizin&rsquo; başlığı kullanılacaktır."
+
+#~ msgid "Home META Description:"
+#~ msgstr "Başlangıç Sayfası META Tanım:"
+
+#~ msgid ""
+#~ "The META Description can be used to determine the text used under the "
+#~ "title on search engine results pages."
+#~ msgstr ""
+#~ "META Açıklaması, arama motoru sonuç sayfalarında başlık altında "
+#~ "kullanılan metni belirlemek için kullanılabilir."
+
+#~ msgid "Home META Keywords (comma separated):"
+#~ msgstr "Başlangıç Sayfası META Anahtar Kelimeler (virgülle ayrılmış)"
+
+#~ msgid "Keywords are generally ignored by Search Engines."
+#~ msgstr ""
+#~ "Anahtar Kelimeler, genellikle Arama Motorları tarafından göz ardı edilir."
+
+#~ msgid "Homepage Robots Meta Tags:"
+#~ msgstr "Ana Sayfa Robots Meta Etiketleri:"
+
+#~ msgid "Apply %s to the homepage?"
+#~ msgstr "%s anasayfaya gitmesini onaylıyor musun? "
+
+#~ msgid ""
+#~ "By default, WordPress places several tags in your document %1$s. Most of "
+#~ "these tags are completely unnecessary, and provide no SEO value "
+#~ "whatsoever. They just make your site slower to load. Choose which tags "
+#~ "you would like included in your document %1$s. If you do not know what "
+#~ "something is, leave it unchecked."
+#~ msgstr ""
+#~ "Öntanımlı olarak dökümanınıza WordPress %1$s bazı etiketler yerleştirir. "
+#~ "Bu etiketlerin çoğunluğu gereksizdir ve SEO değerleri yoktur. Sadece "
+#~ "sitenizin yüklenmesini yavaşlatırlar. Dökümanınızda yer alacak etiketleri "
+#~ "seçiniz %1$s. Ne olduğunu bilmiyorsanız seçimi yapmayınız. "
+
+#~ msgid "Relationship Link Tags:"
+#~ msgstr "Sponsorlu Bağlantılar"
+
+#~ msgid "Adjacent Posts %s link tags"
+#~ msgstr "Yazıları %s link etiketlerini bitiştir. "
+
+#~ msgid "Windows Live Writer Support:"
+#~ msgstr "Windows Live Writer Desteği:"
+
+#~ msgid "Include Windows Live Writer Support Tag?"
+#~ msgstr "Windows Live Writer etiket desteği içersin mi?"
+
+#~ msgid "Shortlink Tag:"
+#~ msgstr "Etiket Kısayolu:"
+
+#~ msgid "Include Shortlink tag?"
+#~ msgstr "Kısa link etiiketi içersin mi?"
+
+#~ msgid ""
+#~ "The shortlink tag might have some use for 3rd party service "
+#~ "discoverability, but it has no SEO value whatsoever."
+#~ msgstr ""
+#~ "Kısa yol etiketi 3üncü parti servisleri için kullanılır, fakat SEO değeri "
+#~ "yoktur."
+
+#~ msgid ""
+#~ "Depending on your situation, you may or may not want the following "
+#~ "archive pages to be indexed by search engines. Only you can make that "
+#~ "determination."
+#~ msgstr ""
+#~ "Durumunuza göre arşiv sayfalarının arama motorları tarafından "
+#~ "indekslenmesini ister veya istemeyebilirsiniz.  Sadece kararınızı verin."
+
+#~ msgid "Apply %s to Category Archives?"
+#~ msgstr "%s Arşivler Kategorisine Uygula?"
+
+#~ msgid "Apply %s to Tag Archives?"
+#~ msgstr "%s Etiket Arşivlerine Uygula? "
+
+#~ msgid "Apply %s to Author Archives?"
+#~ msgstr "Yazar Arşivleri için %s uygula?"
+
+#~ msgid "Apply %s to Date Archives?"
+#~ msgstr "%s Günlük Arşivlerine Uygula? "
+
+#~ msgid "Apply %s to Search Archives?"
+#~ msgstr "%s Arama Arşivlerine Uygula? "
+
+#~ msgid ""
+#~ "Some search engines will cache pages in your site (e.g Google Cache). The "
+#~ "%1$s tag will prevent them from doing so. Choose what archives you want "
+#~ "to %1$s."
+#~ msgstr ""
+#~ "Bazı arama motorları sitenizin sayfalarını hafızalar (Google Cahce gibi). "
+#~ "%1$s etiketi bunu engelleyecektir. Hangi %1$s arşivler olacağını seçiniz."
+
+#~ msgid "Apply %s to Entire Site?"
+#~ msgstr "%s Tüm Siteye Uygula?"
+
+#~ msgid ""
+#~ "Occasionally, search engines use resources like the Open Directory "
+#~ "Project and the Yahoo! Directory to find titles and descriptions for your "
+#~ "content. Generally, you will not want them to do this. The %s and %s tags "
+#~ "prevent them from doing so."
+#~ msgstr ""
+#~ "Bazen arama motorları kaynak olarak Open Directory Project ve Yahoo yu "
+#~ "kullanır! İçeriğinizin başlık ve açıklamalarını dizinlemek için bulur. "
+#~ "Genelde bu işlemin yapılmasını istemezsiniz. %s ve %s tags bunun "
+#~ "yapılmasını engeller."
+
+#~ msgid "Apply %s to your site?"
+#~ msgstr "Sitenize %s uygula?"
+
+#~ msgid "Canonical Paginated Archives"
+#~ msgstr "Kanonik Sayfalanmış Arşivler"
+
+#~ msgid ""
+#~ "This option points search engines to the first page of an archive, if "
+#~ "viewing a paginated page. If you do not know what this means, leave it on."
+#~ msgstr ""
+#~ "Bu opsiyon arama motorlarını sayfalara bölünmüş bir arşivin ilk sayfasına "
+#~ "yönelendirir. Bu size bir anlam ifade etmediyse bırakın açık kalsın."
+
+#~ msgid "Archive Settings"
+#~ msgstr "Arşiv Ayarları"
+
+#~ msgid "Archive Headline"
+#~ msgstr "Arşiv Başlığı"
+
+#~ msgid "Leave empty if you do not want to display a headline."
+#~ msgstr "Başlık görünsün istemiyorsanız boş bırakın"
+
+#~ msgid "Archive Intro Text"
+#~ msgstr "Arşiv Giriş Metni"
+
+#~ msgid "Leave empty if you do not want to display any intro text."
+#~ msgstr "Giriş metni görünsün istemiyorsanız boş bırakın"
+
+#~ msgid "Custom Document %s"
+#~ msgstr "Özel Döküman %s"
+
+#~ msgid "%s Description"
+#~ msgstr "%s Açıklama"
+
+#~ msgid "%s Keywords"
+#~ msgstr "%s Anahtar kelimeler"
+
+#~ msgid "Comma separated list"
+#~ msgstr "Virgülle ayırılmış liste"
+
+#~ msgid "Robots Meta"
+#~ msgstr "Robots Meta"
+
+#~ msgid "Apply %s to this archive?"
+#~ msgstr "Bu arşive %s uygula ?"
+
+#~ msgid "Choose Layout"
+#~ msgstr "Düzen Seçiniz"
+
+#~ msgid "Follow me on Twitter"
+#~ msgstr "Twitter'da takip et"
+
+#~ msgid "Color Style"
+#~ msgstr "Renk Stili"
+
+#~ msgid "Custom Feeds"
+#~ msgstr "Özel Beslemeler"
+
+#~ msgid "Default Layout"
+#~ msgstr "Varsayılan Düzen"
+
+#~ msgid "Header Settings"
+#~ msgstr "Başlık Ayarları"
+
+#~ msgid "Navigation Settings"
+#~ msgstr "Navigasyon Ayarları"
+
+#~ msgid "Breadcrumbs"
+#~ msgstr "Yolak"
+
+#~ msgid "Comments and Trackbacks"
+#~ msgstr "Yorumlar ve Geri bildirimler"
+
+#~ msgid "Content Archives"
+#~ msgstr "Arşiv İçeriği"
+
+#~ msgid "Blog Page"
+#~ msgstr "Blog Sayfası"
+
+#~ msgid "Header and Footer Scripts"
+#~ msgstr "Header ve Footer Scriptleri"
+
+#~ msgid "Version:"
+#~ msgstr "Versiyon:"
+
+#~ msgid "Released:"
+#~ msgstr "Sürüm:"
+
+#~ msgid "Display Theme Information in your document source"
+#~ msgstr "Döküman kaynağınızda Tema açıklaması gösterilsin"
+
+#~ msgid ""
+#~ "This can be helpful for diagnosing problems with your theme when seeking "
+#~ "assistance in the <a href=\"%s\" target=\"_blank\">support forums</a>."
+#~ msgstr ""
+#~ "<a href=\"%s\" target=\"_blank\">support forums</a> da temanızdaki "
+#~ "problemleri teşhis etmek için yardım aradığınızda bu işinize yarayabilir."
+
+#~ msgid "Enable Automatic Updates"
+#~ msgstr "Otomatik Güncellemeleri Aktifle"
+
+#~ msgid "Notify"
+#~ msgstr "Bildir"
+
+#~ msgid "when updates are available"
+#~ msgstr "Güncellemeler kullanılabilir olduğu zaman"
+
+#~ msgid ""
+#~ "If you provide an email address above, your blog can email you when a new "
+#~ "version of Genesis is available."
+#~ msgstr ""
+#~ "E-mail adresinizi aşağı yazdığınız takdirde, Genesis'in yeni versiyonu "
+#~ "mailinize gelecektir."
+
+#~ msgid "Color Style:"
+#~ msgstr "Renk Stili:"
+
+#~ msgid "Default"
+#~ msgstr "Standart"
+
+#~ msgid ""
+#~ "Please select the color style from the drop down list and save your "
+#~ "settings."
+#~ msgstr "Lütfen listeden rengi seçin ve ayarlarınızı kaydedin."
+
+#~ msgid "Use for blog title/logo:"
+#~ msgstr "Blog başlığı/logosu olarak kullan"
+
+#~ msgid "Dynamic text"
+#~ msgstr "Dinamik yazı"
+
+#~ msgid "Image logo"
+#~ msgstr "Logo görseli"
+
+#~ msgid "Primary Navigation"
+#~ msgstr "Birincil Navigasyon"
+
+#~ msgid "Include Primary Navigation Menu?"
+#~ msgstr "Birincil Navigasyon Menüsünü İçersin mi?"
+
+#~ msgid "Enable Fancy Dropdowns?"
+#~ msgstr "Fancy Dropdown'ları Aktifle?"
+
+#~ msgid "Enable Extras on Right Side?"
+#~ msgstr "Sağ taraftaki ekstraları Aktifle?"
+
+#~ msgid "Display the following:"
+#~ msgstr "Sonrakini Göster?"
+
+#~ msgid "Today's date"
+#~ msgstr "Bugünün tarihi"
+
+#~ msgid "RSS feed links"
+#~ msgstr "RSS feed linkleri"
+
+#~ msgid "Search form"
+#~ msgstr "Arama formu"
+
+#~ msgid "Twitter link"
+#~ msgstr "Twitter linki"
+
+#~ msgid "Enter Twitter ID:"
+#~ msgstr "Twitter ID'ni gir"
+
+#~ msgid "Twitter Link Text:"
+#~ msgstr "Twitter Link Yazısı:"
+
+#~ msgid "Secondary Navigation"
+#~ msgstr "İkincil Navigasyon"
+
+#~ msgid "Include Secondary Navigation Menu?"
+#~ msgstr "İkincil Navigasyon Menüsünü içersin mi?"
+
+#~ msgid ""
+#~ "In order to use the navigation menus, you must build a <a href=\"%s"
+#~ "\">custom menu</a>, then assign it to the proper Menu Location."
+#~ msgstr ""
+#~ "Navigasyon menülerini kullanmak için  önce bir <a href=\"%s\">özel menü</"
+#~ "a> yaratmalı, sonra onu ilgili menü lokasyonuna atamalısınız. "
+
+#~ msgid "Enter your custom feed URI:"
+#~ msgstr "Kendi besleme URL niz :"
+
+#~ msgid "Redirect Feed?"
+#~ msgstr "Feed Yönlendir?"
+
+#~ msgid "Enter your custom comments feed URI:"
+#~ msgstr "Kendi yorumlar besleme URL niz :"
+
+#~ msgid ""
+#~ "If your custom feed(s) are not handled by Feedburner, we do not recommend "
+#~ "that you use the redirect options."
+#~ msgstr ""
+#~ "Eğer özel beslemeniz Feedburner tarafından yapılmıyorsa bu yönlendirme "
+#~ "opsiyonunu kullanmanızı tavsiye etmiyoruz."
+
+#~ msgid "Enable Comments"
+#~ msgstr "Yorumları etkinleştir"
+
+#~ msgid "on posts?"
+#~ msgstr "yazılarda?"
+
+#~ msgid "on pages?"
+#~ msgstr "sayfalarda?"
+
+#~ msgid "Enable Trackbacks"
+#~ msgstr "Geribildirimleri Aktifle"
+
+#~ msgid ""
+#~ "Comments and Trackbacks can also be disabled on a per post/page basis "
+#~ "when creating/editing posts/pages."
+#~ msgstr ""
+#~ "Yazı/sayfa oluşturulurken/düzenlenirken her bir yazı/sayfa için ayrıca "
+#~ "yorum ve geri bildirimlerde inaktif yapılabilir."
+
+#~ msgid "Enable on:"
+#~ msgstr "Etkinleştir"
+
+#~ msgid "Front Page"
+#~ msgstr "Ön Sayfa"
+
+#~ msgid "Posts"
+#~ msgstr "Yazılar"
+
+#~ msgid "Pages"
+#~ msgstr "Sayfalar"
+
+#~ msgid "Archives"
+#~ msgstr "Arşiv"
+
+#~ msgid "404 Page"
+#~ msgstr "404 hata sayfası"
+
+#~ msgid "Attachment Page"
+#~ msgstr "Eklentiler Sayfası:"
+
+#~ msgid ""
+#~ "Breadcrumbs are a great way of letting your visitors find out where they "
+#~ "are on your site with just a glance. You can enable/disable them on "
+#~ "certain areas of your site."
+#~ msgstr ""
+#~ "Breadcrumbs ziyaretçilern bir bakışta sitenizin neresinde olduklarını "
+#~ "anlamalarına imkan veren en iyi yollardan biridir.  Sitenizin herhangi "
+#~ "bir bölümünde onları aktif/inaktif yapabilirsiniz."
+
+#~ msgid "Select one of the following:"
+#~ msgstr "Aşağıdakilerden birini seçin:"
+
+#~ msgid "Display post content"
+#~ msgstr "Mesaj içeriğini göster"
+
+#~ msgid "Display post excerpts"
+#~ msgstr "Mesaj özetini göster"
+
+#~ msgid "Limit content to"
+#~ msgstr "İçeriği sınırlandır"
+
+#~ msgid "characters"
+#~ msgstr "karakterler"
+
+#~ msgid ""
+#~ "Using this option will limit the text and strip all formatting from the "
+#~ "text displayed. To use this option, choose \"Display post content\" in "
+#~ "the select box above."
+#~ msgstr ""
+#~ "Bu seçeneğin kullanılması görüntülenen yazı formatının  yazı ve şeritini "
+#~ "kısıtlar."
+
+#~ msgid "Include the Featured Image?"
+#~ msgstr "Önce çıkarılan görsel dahil edilsin mi?"
+
+#~ msgid "Image Size:"
+#~ msgstr "Resim Büyüklüğü:"
+
+#~ msgid "Select Post Navigation Technique:"
+#~ msgstr "Yazı Gezinme Tekniğini Belirle:"
+
+#~ msgid "Older / Newer"
+#~ msgstr "Eski/Yeni"
+
+#~ msgid "Previous / Next"
+#~ msgstr "Önceki/Sonraki"
+
+#~ msgid "Numeric"
+#~ msgstr "Numerik"
+
+#~ msgid ""
+#~ "These options will affect any blog listings page, including archive, "
+#~ "author, blog, category, search, and tag pages."
+#~ msgstr ""
+#~ "Bu seçenek tüm blog sayfalarını,arşivi, yazarı, blogu,kategori,arama ve "
+#~ "etiket sayfalarını etkileyecek."
+
+#~ msgid "Display which category:"
+#~ msgstr "Gösterilen Kategori"
+
+#~ msgid "All Categories"
+#~ msgstr "Tüm Kategoriler"
+
+#~ msgid "Exclude the following Category IDs:"
+#~ msgstr "Hariç tutulacak Kategori ID leri:"
+
+#~ msgid "Comma separated - 1,2,3 for example"
+#~ msgstr "Virgülle ayırın- örnek: 1,2,3"
+
+#~ msgid "Number of Posts to Show:"
+#~ msgstr "Gösterilecek yazı sayısı"
+
+#~ msgid "Enter scripts or code you would like output to %s:"
+#~ msgstr "%s a çıkmasını istediğiniz script yada kodu girin"
+
+#~ msgid ""
+#~ "The %1$s hook executes immediately before the closing %2$s tag in the "
+#~ "document source."
+#~ msgstr ""
+#~ "%1$s çapası döküman kaynağındaki %2$s etiketini kapatmadan hemen önce "
+#~ "sonlandırır."
+
+#~ msgid "User Permissions"
+#~ msgstr "Kullanıcı İzinleri"
+
+#~ msgid "Genesis Admin Menus"
+#~ msgstr "Genesis Yönetici menüleri"
+
+#~ msgid "Enable Genesis Admin Menu?"
+#~ msgstr "Genesis Yönetici Menüsü etkinleştirilsin mi?"
+
+#~ msgid "Enable SEO Settings Submenu?"
+#~ msgstr "SEO Ayarları Alt menüsünü Aktifle?"
+
+#~ msgid "Enable Import/Export Submenu?"
+#~ msgstr "İçe/Dışa aktar Alt menüsünü Aktifle?"
+
+#~ msgid "Author Archive Settings"
+#~ msgstr "Yazar Arşiv Ayarları"
+
+#~ msgid "These settings apply to this author's archive pages."
+#~ msgstr "Bu ayarları bu yazarın arşiv sayfalarında uygula."
+
+#~ msgid "Custom Archive Headline"
+#~ msgstr "Özel Arşiv Başlığı"
+
+#~ msgid "Will display in the %s tag at the top of the first page"
+#~ msgstr "İlk sayfanın en üstünde %s etiketi gösterilecek"
+
+#~ msgid "Custom Description Text"
+#~ msgstr "Özel Açıklama Yazısı"
+
+#~ msgid "This text will be the first paragraph, and display on the first page"
+#~ msgstr "Bu yazı ilk paragraf olacak, ve ilk sayfada gösterilecek"
+
+#~ msgid "Author Box"
+#~ msgstr "Yazar Kutusu"
+
+#~ msgid "Enable Author Box on this User's Posts?"
+#~ msgstr "Bu kullanıcının yazılarında Yazar Kutusunu Aktifle?"
+
+#~ msgid "Enable Author Box on this User's Archives?"
+#~ msgstr "Bu kullanıcın Arşivlerinde Yazar kutusunu Aktifle?"
+
+#~ msgid ""
+#~ "You cannot use %s to create two menus in the same subclass. Please use "
+#~ "separate subclasses for each menu."
+#~ msgstr ""
+#~ "Aynı alt sınıf içerisinde iki menü oluşturmak için %s kullanamazsınız. "
+#~ "Lütfen her bir menü için farklı alt sınıf kullanınız. "
+
+#~ msgid "Are you sure you want to reset?"
+#~ msgstr "Sıfırlamak istediğinize eminmisiniz ?"
+
+#~ msgid "Home"
+#~ msgstr "Ana Sayfa"
+
+#~ msgid "You are here: "
+#~ msgstr "Buradasınız : "
+
+#~ msgid "Archives for "
+#~ msgstr "Arşivleri"
+
+#~ msgid "Search for "
+#~ msgstr "Arama yap"
+
+#~ msgid "Not found: "
+#~ msgstr "Bulunamadı:"
+
+#~ msgid "View %s"
+#~ msgstr "Görünüm %s"
+
+#~ msgid "(Edit)"
+#~ msgstr "(Düzenle)"
+
+#~ msgid "View archives for %s"
+#~ msgstr "%s için arşivi görüntüle"
+
+#~ msgid "View archives for %s %s"
+#~ msgstr "%s %s için arşivi görüntüle"
+
+#~ msgid "View all posts in %s"
+#~ msgstr "%s indeki tüm yazıları gör"
+
+#~ msgid "View all %s"
+#~ msgstr "%s 'nın tümünü gör"
+
+#~ msgid "View all items in %s"
+#~ msgstr "%s içindeki tüm parçaları göster?"
+
+#~ msgid "This file no longer needs to be included."
+#~ msgstr "Artık bu dosyanın dahil edilmesine gerek yok."
+
+#~ msgid "seconds"
+#~ msgstr "saniyeler"
+
+#~ msgid "and"
+#~ msgstr "ve"
+
+#~ msgid "Content-Sidebar"
+#~ msgstr "İçerik - Yan Sütun"
+
+#~ msgid "Sidebar-Content"
+#~ msgstr "Kenar Çubuğu - İçerik"
+
+#~ msgid "Content-Sidebar-Sidebar"
+#~ msgstr "İçerik- Kenar Çubuğu- Kenar Çubuğu"
+
+#~ msgid "Sidebar-Sidebar-Content"
+#~ msgstr "Kenar Çubuğu- Kenar Çubuğu- İçerik"
+
+#~ msgid "Sidebar-Content-Sidebar"
+#~ msgstr "Kenar Çubuğu - İçerik - Kenar Çubuğu"
+
+#~ msgid "Full Width Content"
+#~ msgstr "Tam sayfa içerik"
+
+#~ msgid "No Label Selected"
+#~ msgstr "Seçilmiş etiket yok"
+
+#~ msgid ""
+#~ "The argument, \"context\", has been replaced with \"theme_location\" in "
+#~ "the $args array."
+#~ msgstr ""
+#~ "\"context\" argümanı, in the $args array daki  \"theme_location\" ile "
+#~ "değiştirildi"
+
+#~ msgid ""
+#~ "Have you tried our Scribe SEO software? Do keyword research, content "
+#~ "optimization, and link building without leaving WordPress. <b>Genesis "
+#~ "owners save over 50&#37; using the promo code FIRST when you sign up</b>. "
+#~ "<a href=\"%s\" target=\"_blank\">Click here for more info</a>."
+#~ msgstr ""
+#~ "Scribe SEO yazılımını denediniz mi? Wordpress den ayrılmadan \n"
+#~ "anahtar kelime araması, içerik optimizasyonu ve link yapılandırma "
+#~ "yapabilirsiniz.<b>Genesis kullanıcıları üye olurken FIRST promosyon "
+#~ "kodunu kullanarak 50&#37 nin üzerinde indirim alabilirler.</b>. <a href="
+#~ "\"%s\" target=\"_blank\">Daha fazla bilgi için tıklayın</a>. "
+
+#~ msgid "Dismiss"
+#~ msgstr "İptal Et"
+
+#~ msgid "Congratulations! You are now rocking Genesis %s"
+#~ msgstr "Tebrikler..! Genesis %s ile Rock yapıyorsunuz."
+
+#~ msgid "Click here to complete the upgrade"
+#~ msgstr "Güncellemeyi tamamlamak için buraya tıklayınız"
+
+#~ msgid ""
+#~ "Genesis %s is available. <a href=\"%s\" class=\"thickbox thickbox-preview"
+#~ "\">Check out what's new</a> or <a href=\"%s\" onclick=\"return "
+#~ "genesis_confirm('%s');\">update now</a>."
+#~ msgstr ""
+#~ "Genesis %s yayımlandı. <a href=\"%s\" class=\"thickbox thickbox-preview"
+#~ "\">Neler Yeni Bak</a> veya <a href=\"%s\" onclick=\"return genesis_confirm"
+#~ "('%s');\">Hemen Güncelle</a>."
+
+#~ msgid ""
+#~ "Upgrading Genesis will overwrite the current installed version of "
+#~ "Genesis. Are you sure you want to upgrade?. \"Cancel\" to stop, \"OK\" to "
+#~ "upgrade."
+#~ msgstr ""
+#~ "Güncelleme dosyası şuan ki Genesis kurulumuzun üzerine yazılacak. "
+#~ "Güncellemek istediğinize eminmisiniz?  Durdurmak için \"Cancel\", "
+#~ "Güncelleme için \"OK\""
+
+#~ msgid "Genesis %s is available for %s"
+#~ msgstr "Genesis %s %s için uygun"
+
+#~ msgid ""
+#~ "Genesis %s is now available. We have provided 1-click updates for this "
+#~ "theme, so please log into your dashboard and update at your earliest "
+#~ "convenience."
+#~ msgstr ""
+#~ "Genesis %s yayında. Bu tema için 1 tıklama ile güncelleme sunuyoruz, "
+#~ "rahatınız için Başlangıç ve Güncellemeler bölümünüzden biran önce "
+#~ "güncelleme yapınız."
+
+#~ msgid "Header Left"
+#~ msgstr "Sol Başlık"
+
+#~ msgid "Header Right"
+#~ msgstr "Sağ başlık"
+
+#~ msgid "This is the widget area in the header."
+#~ msgstr "Üst kısım bileşen alanı"
+
+#~ msgid "Primary Sidebar"
+#~ msgstr "Birincil kenar çubuğu"
+
+#~ msgid ""
+#~ "This is the primary sidebar if you are using a two or three column site "
+#~ "layout option."
+#~ msgstr "İki veya üç sütunlu tema kullananlar için birincil kenar çubuğu"
+
+#~ msgid "Secondary Sidebar"
+#~ msgstr "İkincil kenar çubuğu"
+
+#~ msgid ""
+#~ "This is the secondary sidebar if you are using a three column site layout "
+#~ "option."
+#~ msgstr "İki veya üç sütunlu tema kullananlar için ikincil kenar çubuğu "
+
+#~ msgid "Footer %d"
+#~ msgstr "Alt kısım %d"
+
+#~ msgid "Select / Deselect All"
+#~ msgstr "Hepsini Seç/ Seçimi Kaldır"
+
+#~ msgid "Return to top of page"
+#~ msgstr "Sayfa başına git"
+
+#~ msgid "by "
+#~ msgstr "tarafından"
+
+#~ msgid "Log in"
+#~ msgstr "Giriş"
+
+#~ msgid "Log out"
+#~ msgstr "Çıkış"
+
+#~ msgid "ago"
+#~ msgstr "Önce"
+
+#~ msgid "Visit %s&#8217;s website"
+#~ msgstr "%s&#8217;nın websayfasını ziyaret et"
+
+#~ msgid "% Comments"
+#~ msgstr "% Yorum"
+
+#~ msgid "1 Comment"
+#~ msgstr "1 Yorum"
+
+#~ msgid "Leave a Comment"
+#~ msgstr "Yorum yapın"
+
+#~ msgid "Tagged With: "
+#~ msgstr "Etiket"
+
+#~ msgid "Filed Under: "
+#~ msgstr "Kategori:"
+
+#~ msgid "<h3>Comments</h3>"
+#~ msgstr "<h3>Yorumlar</h3>"
+
+#~ msgid "<h3>Trackbacks</h3>"
+#~ msgstr "<h3>Geribildirimler</h3>"
+
+#~ msgid "<cite class=\"fn\">%s</cite> <span class=\"says\">%s:</span>"
+#~ msgstr "<cite class=\"fn\">%s</cite> <span class=\"says\">%s:</span>"
+
+#~ msgid "says"
+#~ msgstr "der ki"
+
+#~ msgid "%1$s at %2$s"
+#~ msgstr "%1$s ile %2$s"
+
+#~ msgid "Edit"
+#~ msgstr "Düzenle"
+
+#~ msgid "Your comment is awaiting moderation."
+#~ msgstr "Yorumunuz onay bekliyor."
+
+#~ msgid "Name"
+#~ msgstr "İsim"
+
+#~ msgid "Email"
+#~ msgstr "E-posta"
+
+#~ msgid "Website"
+#~ msgstr "Websitesi"
+
+#~ msgid "Speak Your Mind"
+#~ msgstr "Fikrini söyle"
+
+#~ msgid "Copyright"
+#~ msgstr "Tüm hakları saklıdır"
+
+#~ msgid "on"
+#~ msgstr "da"
+
+#~ msgid "You are using invalid arguments with the %s function."
+#~ msgstr "%s fonksiyonu için geçersiz değer kullandınız."
+
+#~ msgid "Comments"
+#~ msgstr "Yorumlar"
+
+#~ msgid "[Read more...]"
+#~ msgstr "[Devamını oku...]"
+
+#~ msgid "Sorry, no posts matched your criteria."
+#~ msgstr "Üzgünüz, sizin aradığınız kriterlere uygun yazı yok."
+
+#~ msgid "By"
+#~ msgstr "Yazıyı giren"
+
+#~ msgid "About"
+#~ msgstr "Hakkımda"
+
+#~ msgid "Older Posts"
+#~ msgstr "Önceki Kayıtlar"
+
+#~ msgid "Newer Posts"
+#~ msgstr "Yeni Kayıtlar"
+
+#~ msgid "Previous Page"
+#~ msgstr "Önceki Sayfa"
+
+#~ msgid "Next Page"
+#~ msgstr "Sonraki Sayfa"
+
+#~ msgid "Search this website %s"
+#~ msgstr "Bu sitede ara %s"
+
+#~ msgid "Search"
+#~ msgstr "Ara"
+
+#~ msgid "Primary Sidebar Widget Area"
+#~ msgstr "Birincil Kenar Çubuğu Eklenti Alanı"
+
+#~ msgid ""
+#~ "This is the Primary Sidebar Widget Area. You can add content to this area "
+#~ "by visiting your <a href=\"%s\">Widgets Panel</a> and adding new widgets "
+#~ "to this area."
+#~ msgstr ""
+#~ "Burası Birinci Sidebar Widget Bölümü. Bu alana <a href=\"%s\">Widgets "
+#~ "Panel</a> i ziyaret ederek içerik ekleyebilirsiniz ve bu alana yeni "
+#~ "widget ler de ekleyebilirsiniz."
+
+#~ msgid "Secondary Sidebar Widget Area"
+#~ msgstr "İkincil Kenar Çubuğu Çalışma Alanı"
+
+#~ msgid ""
+#~ "This is the Secondary Sidebar Widget Area. You can add content to this "
+#~ "area by visiting your <a href=\"%s\">Widgets Panel</a> and adding new "
+#~ "widgets to this area."
+#~ msgstr ""
+#~ "Burası İkinci Sidebar Widget Bölümü. Bu alana <a href=\"%s\">Widgets "
+#~ "Panel</a> i ziyaret ederek içerik ekleyebilirsiniz ve bu alana yeni "
+#~ "widget ler de ekleyebilirsiniz. "
+
+#~ msgid "Single Post Template"
+#~ msgstr "Tek yazı şablonu"
+
+#~ msgid "Post Template"
+#~ msgstr "Yazı Şablonu"
+
+#~ msgid "Displays featured page with thumbnails"
+#~ msgstr "Sayfayı thumbnail le görüntüle"
+
+#~ msgid "Genesis - Featured Page"
+#~ msgstr "Genesis- Öne çıkan sayfalar"
+
+#~ msgid "by"
+#~ msgstr "tarafından"
+
+#~ msgid "Page"
+#~ msgstr "Sayfa"
+
+#~ msgid "Show Featured Image"
+#~ msgstr "Öne çıkan görselleri göster"
+
+#~ msgid "Image Size"
+#~ msgstr "Resim Boyutu"
+
+#~ msgid "Image Alignment"
+#~ msgstr "Görsel hizalama"
+
+#~ msgid "None"
+#~ msgstr "Şimdiki"
+
+#~ msgid "Show Page Title"
+#~ msgstr "Sayfa başlığını göster"
+
+#~ msgid "Show Page Byline"
+#~ msgstr "Çizgiye göre Sayfa Göster"
+
+#~ msgid "Show Page Content"
+#~ msgstr "Sayfa içeriğini göster"
+
+#~ msgid "Content Character Limit"
+#~ msgstr "İçerik karakter limiti"
+
+#~ msgid "More Text"
+#~ msgstr "Yazının devamı"
+
+#~ msgid "[Read More...]"
+#~ msgstr "[Devamı ...]"
+
+#~ msgid "More Posts from this Category"
+#~ msgstr "Bu kategoriden daha fazla yazı "
+
+#~ msgid "Displays featured posts with thumbnails"
+#~ msgstr "Yazıyı thumbnail le görüntüle "
+
+#~ msgid "Genesis - Featured Posts"
+#~ msgstr "Genesis- Öne çıkan yazılar"
+
+#~ msgid "Category"
+#~ msgstr "Kategori"
+
+#~ msgid "Number of Posts to Show"
+#~ msgstr "Gösterilecek yazı sayısı"
+
+#~ msgid "Number of Posts to Offset"
+#~ msgstr "Ofset için yazı sayısı"
+
+#~ msgid "Order By"
+#~ msgstr "Sırala"
+
+#~ msgid "Date"
+#~ msgstr "Tarih"
+
+#~ msgid "Parent"
+#~ msgstr "Ana (Ebeveyn)"
+
+#~ msgid "ID"
+#~ msgstr "ID"
+
+#~ msgid "Comment Count"
+#~ msgstr "Yorum sayısı"
+
+#~ msgid "Random"
+#~ msgstr "Rastgele"
+
+#~ msgid "Sort Order"
+#~ msgstr "Sıralama Şekli"
+
+#~ msgid "Descending (3, 2, 1)"
+#~ msgstr "Azalarak (3,2,1)"
+
+#~ msgid "Ascending (1, 2, 3)"
+#~ msgstr "Artarak (1,2,3)"
+
+#~ msgid "Show Author Gravatar"
+#~ msgstr "Yazar Avatarını Göster"
+
+#~ msgid "Gravatar Size"
+#~ msgstr "Avatar Boyutu"
+
+#~ msgid "Small (45px)"
+#~ msgstr "Küçük (45px)"
+
+#~ msgid "Medium (65px)"
+#~ msgstr "Orta (65px)"
+
+#~ msgid "Large (85px)"
+#~ msgstr "Geniş (85px)"
+
+#~ msgid "Extra Large (125px)"
+#~ msgstr "Ekstra Büyük (125px) "
+
+#~ msgid "Gravatar Alignment"
+#~ msgstr "Avatar Hizalama"
+
+#~ msgid "Show Post Title"
+#~ msgstr "Mesaj Başlığı"
+
+#~ msgid "Show Post Info"
+#~ msgstr "Mesaj Bilgisi"
+
+#~ msgid "Content Type"
+#~ msgstr "İçerik Türü"
+
+#~ msgid "Show Content"
+#~ msgstr "İçeriği göster"
+
+#~ msgid "Show Excerpt"
+#~ msgstr "Alıntı göster"
+
+#~ msgid "Show Content Limit"
+#~ msgstr "İçeriği Sınırlı Göster"
+
+#~ msgid "No Content"
+#~ msgstr "İçerik yok"
+
+#~ msgid "More Text (if applicable)"
+#~ msgstr "Devamı Yazısı (uygulanabilir ise)"
+
+#~ msgid ""
+#~ "To display an unordered list of more posts from this category, please "
+#~ "fill out the information below"
+#~ msgstr ""
+#~ "Bu kategoriden daha fazla sıralanmamış yazılar göstermek için, aşağıdaki "
+#~ "açıklamayı doldurun "
+
+#~ msgid "Show Category Archive Link"
+#~ msgstr "Arşiv Linkten Kategori Göster"
+
+#~ msgid "Link Text"
+#~ msgstr "Bağlantı Metni"
+
+#~ msgid "Genesis - Latest Tweets"
+#~ msgstr "Genesis - Güncel Tweet'ler"
+
+#~ msgid ""
+#~ "The Twitter API is taking too long to respond. Please try again later."
+#~ msgstr "Twitter API geç cevap veriyor. Lütfen daha sonra tekrar deneyin."
+
+#~ msgid ""
+#~ "There was an error while attempting to contact the Twitter API. Please "
+#~ "try again."
+#~ msgstr ""
+#~ "Twitter API ile bağlantı sırasında bir hata oluştu. Lütfen daha sonra "
+#~ "tekrar deneyin."
+
+#~ msgid ""
+#~ "The Twitter API returned an error while processing your request. Please "
+#~ "try again."
+#~ msgstr ""
+#~ "İsteğinizi gerçekleştirirken Twitter API ile bir hata oluştu. Lütfen daha "
+#~ "sonra tekrar deneyin."
+
+#~ msgid "about %s ago"
+#~ msgstr "Yaklaşık %s önce"
+
+#~ msgid "Twitter Username"
+#~ msgstr "Twitter Kullanıcı Adı"
+
+#~ msgid "Number of Tweets to Show"
+#~ msgstr "Gösterilen Tweet Sayısı"
+
+#~ msgid "Hide @ Replies"
+#~ msgstr "Gizle @ Cevaplar"
+
+#~ msgid "Load new Tweets every"
+#~ msgstr "Her yeni Tweet i yükle"
+
+#~ msgid "5 Min."
+#~ msgstr "5 Dakika"
+
+#~ msgid "15 Minutes"
+#~ msgstr "15 Dakika"
+
+#~ msgid "30 Minutes"
+#~ msgstr "30 Dakika"
+
+#~ msgid "1 Hour"
+#~ msgstr "1 Saat"
+
+#~ msgid "2 Hours"
+#~ msgstr "2 Saat"
+
+#~ msgid "4 Hours"
+#~ msgstr "4 Saat"
+
+#~ msgid "12 Hours"
+#~ msgstr "12 Saat"
+
+#~ msgid "24 Hours"
+#~ msgstr "24 Saat"
+
+#~ msgid "Include link to twitter page?"
+#~ msgstr "Twitter sayfasına bağlantı eklensin mi?"
+
+#~ msgid "Link Text (required)"
+#~ msgstr "Yazı linki (gerekli)"
+
+#~ msgid "Genesis - Category Menu"
+#~ msgstr "Genesis - Kategori menüsü"
+
+#~ msgid "Genesis - Page Menu"
+#~ msgstr "Genesis - Sayfa Menüsü"
+
+#~ msgid "[Read More %s]"
+#~ msgstr "[Devamını oku %s]"
+
+#~ msgid "Displays user profile block with Gravatar"
+#~ msgstr "Kullanıcı profilini Gravatar ile görüntüle"
+
+#~ msgid "Genesis - User Profile"
+#~ msgstr "Genesis- Kullanıcı Profili"
+
+#~ msgid "View My Blog Posts"
+#~ msgstr "Blog Yazılarım"
+
+#~ msgid ""
+#~ "Select a user. The email address for this account will be used to pull "
+#~ "the Gravatar image."
+#~ msgstr ""
+#~ "Kullanıcı seç. Bu hesap için eposta adresi Gravatar resmi için "
+#~ "kullanılacak."
+
+#~ msgid "Small"
+#~ msgstr "Küçük"
+
+#~ msgid "Medium"
+#~ msgstr "Orta"
+
+#~ msgid "Large"
+#~ msgstr "Büyük"
+
+#~ msgid "Extra Large"
+#~ msgstr "Ekstra Büyük"
+
+#~ msgid "Select which text you would like to use as the author description"
+#~ msgstr ""
+#~ "Yazar tanıtımı sırasında kullanacağınız yazıyı seçin.\n"
+#~ "\n"
+
+#~ msgid "Author Bio"
+#~ msgstr "Yazar Hakkında"
+
+#~ msgid "Custom Text (below)"
+#~ msgstr "Özel yazı (aşağıda)"
+
+#~ msgid "Custom Text Content"
+#~ msgstr "Özel Yazı İçeriği"
+
+#~ msgid ""
+#~ "Choose your extended \"About Me\" page from the list below. This will be "
+#~ "the page linked to at the end of the about me section."
+#~ msgstr ""
+#~ "Aşağıdaki listeden genişletilmiş \"Hakkımda\" sayfasını seç. Bu en altta "
+#~ "bulunan hakkımda sayfasına linklenecektir."
+
+#~ msgid "Show Author Archive Link?"
+#~ msgstr "Yazarın Arşivini Göster?"

@@ -1,0 +1,1450 @@
+# Translation of Genesis 1.8 in Norwegian
+# This file is distributed under the same license as the Genesis 1.8 package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Genesis eNews Extended\n"
+"POT-Creation-Date: 2013-01-27 23:07-0600\n"
+"PO-Revision-Date: 2013-01-27 23:07-0600\n"
+"Last-Translator: Brandon Kraft <public@brandonkraft.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../class-bjgk-genesis-enews-extended.php:50
+#, fuzzy
+msgid "Displays subscribe form"
+msgstr "Viser epostabonnementsskjema for Feedburner"
+
+#: ../class-bjgk-genesis-enews-extended.php:53
+#, fuzzy
+msgid "Genesis - eNews Extended"
+msgstr "Genesis - eNyheter og oppdateringer"
+
+#: ../class-bjgk-genesis-enews-extended.php:138
+msgid "Title"
+msgstr "Tittel"
+
+#: ../class-bjgk-genesis-enews-extended.php:143
+msgid "Text To Show"
+msgstr "Tekst å vise"
+
+#: ../class-bjgk-genesis-enews-extended.php:148
+msgid "Google/Feedburner ID"
+msgstr "Google/Feedburner ID"
+
+#: ../class-bjgk-genesis-enews-extended.php:150
+msgid ""
+"Entering your Feedburner ID here will deactivate the custom options below."
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:154
+#, fuzzy
+msgid "Form Action"
+msgstr "Informasjon"
+
+#: ../class-bjgk-genesis-enews-extended.php:159
+msgid "E-Mail Field"
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:164
+msgid "First Name Field"
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:169
+msgid "Last Name Field"
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:174
+msgid "Hidden Fields"
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:176
+msgid "Not all services use hidden fields."
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:181
+msgid "Open confirmation page in same window?"
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:185
+msgid "First Name..."
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:186
+#, fuzzy
+msgid "First Name Input Text"
+msgstr "Skriv inn tekst"
+
+#: ../class-bjgk-genesis-enews-extended.php:190
+msgid "Last Name..."
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:191
+#, fuzzy
+msgid "Last Name Input Text"
+msgstr "Skriv inn tekst"
+
+#: ../class-bjgk-genesis-enews-extended.php:195
+msgid "Enter your email address..."
+msgstr "Skriv inn epost-adressen din..."
+
+#: ../class-bjgk-genesis-enews-extended.php:196
+#, fuzzy
+msgid "E-Mail Input Text"
+msgstr "Skriv inn tekst"
+
+#: ../class-bjgk-genesis-enews-extended.php:201
+msgid "Go"
+msgstr "Gå"
+
+#: ../class-bjgk-genesis-enews-extended.php:202
+msgid "Button Text"
+msgstr "Knappetekst"
+
+#~ msgid "Not Found, Error 404"
+#~ msgstr "Ikke funnet, feil 404"
+
+#~ msgid ""
+#~ "The page you are looking for no longer exists. Perhaps you can return "
+#~ "back to the site's <a href=\"%s\">homepage</a> and see if you can find "
+#~ "what you are looking for. Or, you can try finding it with the information "
+#~ "below."
+#~ msgstr ""
+#~ "Siden du leter etter finnes ikke lenger. Du vil kanskje returnere til "
+#~ "nettstedets <a href=\"%s\">hjemmeside</a> og se om du kan finne det du "
+#~ "leter etter der. Du kan også forsøke å finne det med informasjonen "
+#~ "nedenfor."
+
+#~ msgid "Pages:"
+#~ msgstr "Sider:"
+
+#~ msgid "Categories:"
+#~ msgstr "Kategorier:"
+
+#~ msgid "Authors:"
+#~ msgstr "Forfattere:"
+
+#~ msgid "Monthly:"
+#~ msgstr "Månedlig:"
+
+#~ msgid "Recent Posts:"
+#~ msgstr "Siste innlegg:"
+
+#~ msgid ""
+#~ "This post is password protected. Enter the password to view comments."
+#~ msgstr ""
+#~ "Dette innlegget er passordbeskyttet. Skriv inn passordet for å se "
+#~ "kommentarene."
+
+#~ msgid "Primary Navigation Menu"
+#~ msgstr "Primær navigasjonsmeny"
+
+#~ msgid "Secondary Navigation Menu"
+#~ msgstr "Sekundær navigasjonsmeny"
+
+#~ msgid "Genesis - Import/Export"
+#~ msgstr "Genesis - import/eksport"
+
+#~ msgid "Import/Export"
+#~ msgstr "Importér/Eksportér"
+
+#~ msgid "Import Genesis Settings File"
+#~ msgstr "Importér Genesis innstillingsfil"
+
+#~ msgid ""
+#~ "Upload the data file (<code>.json</code>) from your computer and we'll "
+#~ "import your settings."
+#~ msgstr ""
+#~ "Last opp datafilen (<code>.json</code>) fra maskinen din og vi vil "
+#~ "importere innstillingene dine."
+
+#~ msgid ""
+#~ "Choose the file from your computer and click \"Upload file and Import\""
+#~ msgstr ""
+#~ "Velg filen du vil laste opp fra din datamaskin og klikk \"Last opp fil og "
+#~ "importér\""
+
+#~ msgid "Upload File: (Maximum Size: %s)"
+#~ msgstr "Last opp fil: (Max. størrelse: %s)"
+
+#~ msgid "Upload File and Import"
+#~ msgstr "Last opp fil og importér"
+
+#~ msgid "Export Genesis Settings File"
+#~ msgstr "Eksportér Genesis innstillingsfil"
+
+#~ msgid ""
+#~ "When you click the button below, Genesis will generate a data file "
+#~ "(<code>.json</code>) for you to save to your computer."
+#~ msgstr ""
+#~ "Når du klikker på knappen under, vil Genesis generere en datafil (<code>."
+#~ "json</code>) som du kan lagre på maskinen din."
+
+#~ msgid ""
+#~ "Once you have saved the download file, you can use the import function on "
+#~ "another site to import this data."
+#~ msgstr ""
+#~ "Når du har lagret den nedlastede filen kan du bruke importfunksjonen på "
+#~ "et annet nettsted for å importere disse dataene."
+
+#~ msgid "Download Export File"
+#~ msgstr "Last ned eksportfil"
+
+#~ msgid "Settings successfully imported."
+#~ msgstr "Innstillingene ble importert."
+
+#~ msgid "There was a problem importing your settings. Please try again."
+#~ msgstr "Et problem oppsto ved import av innstillingene dine. Prøv igjen."
+
+#~ msgid "Theme Settings"
+#~ msgstr "Temainnstillinger"
+
+#~ msgid "SEO Settings"
+#~ msgstr "SEO-innstillinger"
+
+#~ msgid "No export options available."
+#~ msgstr "Ingen eksportalternativer er tilgjengelige."
+
+#~ msgid "Theme SEO Settings"
+#~ msgstr "Tema SEO-innstillinger"
+
+#~ msgid "Custom Document Title"
+#~ msgstr "Tilpasset dokumenttittel"
+
+#~ msgid "Characters Used: %s"
+#~ msgstr "Tegn brukt : %s"
+
+#~ msgid "Custom Post/Page Meta Description"
+#~ msgstr "Tilpasset innlegg/Meta beskrivelse for side"
+
+#~ msgid "Custom Post/Page Meta Keywords, comma separated"
+#~ msgstr "Tilpasset innlegg/Nøkkelord for siden, kommaseparert"
+
+#~ msgid "Custom Canonical URI"
+#~ msgstr "Tilpasset kanonisk URI"
+
+#~ msgid "Custom Redirect URI"
+#~ msgstr "Tilpasset omdirigerings-URI"
+
+#~ msgid "Robots Meta Settings"
+#~ msgstr "Meta-innstillinger for roboter"
+
+#~ msgid "Apply %s to this post/page"
+#~ msgstr "Legg til %s i dette innlegget/denne siden"
+
+#~ msgid "Custom Tracking/Conversion Code"
+#~ msgstr "Tilpasset sporing/konverteringskode"
+
+#~ msgid "Layout Settings"
+#~ msgstr "Layout-innstillinger"
+
+#~ msgid "Default Layout set in <a href=\"%s\">Theme Settings</a>"
+#~ msgstr "Standard layout-sett i <a href=\"%s\">Temainnstillinger</a>"
+
+#~ msgid "Custom Body Class"
+#~ msgstr "Tilpasset Body Class"
+
+#~ msgid "Custom Post Class"
+#~ msgstr "Tilpasset innleggsklasse"
+
+#~ msgid "README"
+#~ msgstr "LES MEG"
+
+#~ msgid "The %s file was not found in the child theme, or it was empty."
+#~ msgstr "%s filen ble ikke funnet i Child-temaet, eller den var tom."
+
+#~ msgid "Genesis - SEO Settings"
+#~ msgstr "Genesis - SEO-innstillinger"
+
+#~ msgid "Save Settings"
+#~ msgstr "Lagre innstillinger"
+
+#~ msgid "Reset Settings"
+#~ msgstr "Nullstill innstillinger"
+
+#~ msgid "Settings saved."
+#~ msgstr "Innstillinger lagret."
+
+#~ msgid "Settings reset."
+#~ msgstr "Innstillinger nullstilt."
+
+#~ msgid "Error saving settings."
+#~ msgstr "Feil ved lagring av innstillinger."
+
+#~ msgid "Doctitle Settings"
+#~ msgstr "Innstillinger for doc-tittel"
+
+#~ msgid "Homepage Settings"
+#~ msgstr "Nettstedsinnstillinger"
+
+#~ msgid "Document Head Settings"
+#~ msgstr "Dokument Head-innstillinger"
+
+#~ msgid "Archives Settings"
+#~ msgstr "Arkivinnstillinger"
+
+#~ msgid ""
+#~ "The Document Title is the single most important SEO tag in your document "
+#~ "source. It succinctly informs search engines of what information is "
+#~ "contained in the document. The doctitle changes from page to page, but "
+#~ "these options will help you control what it looks by default."
+#~ msgstr ""
+#~ "Dokument tittelen er den viktigste SEO tag i din dokument kilde. Den "
+#~ "informerer konsist søkemotorene om hvilken informasjon som finnes i "
+#~ "dokumentet. Dokumenttittelen endrer seg fra side til side, men disse "
+#~ "alternativene vil hjelpe deg til å kontrollere hvordan den ser ut som "
+#~ "standard."
+
+#~ msgid ""
+#~ "<b>By default</b>, the homepage doctitle will contain the site title, the "
+#~ "single post and page doctitle will contain the post/page title, archive "
+#~ "pages will contain the archive type, etc."
+#~ msgstr ""
+#~ "Hjemmesidens dokumenttittel vil inneholde sidetittelen <b>som standard</"
+#~ "b>. Det enkelte innlegg og sidens dokumenttittel vil inneholde innlegg-/"
+#~ "sidetittel, arkivsider vil inneholde arkivtype etc"
+
+#~ msgid "Append Site Description to Doctitle on homepage?"
+#~ msgstr "Tilføy sidebeskrivelse til dokumenttittel på hjemmesiden?"
+
+#~ msgid "Append Site Name to Doctitle on inner pages?"
+#~ msgstr "Tilføy hjemmesidens navn til dokumenttittel på indre sider?"
+
+#~ msgid "Doctitle (%s) Append Location:"
+#~ msgstr "Plassering for tilføying av dokumenttittel (%s):"
+
+#~ msgid "Determines what side the appended doctitle text will go on."
+#~ msgstr ""
+#~ "Avgjør hvilken side den tilføyde dokumenttittelteksten skal plasseres på."
+
+#~ msgid "Left"
+#~ msgstr "Venstre"
+
+#~ msgid "Right"
+#~ msgstr "Høyre"
+
+#~ msgid "Doctitle (<code>&lt;title&gt;</code>) Separator:"
+#~ msgstr "Dokumenttittel (<code>&lt;title&gt;</code>) separator:"
+
+#~ msgid ""
+#~ "If the doctitle consists of two parts (Title &amp; Appended Text), then "
+#~ "the Doctitle Separator will go between them."
+#~ msgstr ""
+#~ "Hvis dokumenttittelen består av to deler (tittel &amp; tilføyd tekst), "
+#~ "vil dokumenttittelseparatoren bli plassert mellom dem."
+
+#~ msgid "Which text would you like to be wrapped in %s tags?"
+#~ msgstr "Hvilken tekst foretrekker du blir plassert i %s tags?"
+
+#~ msgid ""
+#~ "The %s tag is, arguably, the second most important SEO tag in the "
+#~ "document source. Choose wisely."
+#~ msgstr ""
+#~ "%s tagen er trolig den nest viktigste SEO tagen i dokumentkilden. Velg "
+#~ "klokt."
+
+#~ msgid "Site Title"
+#~ msgstr "Tittel for nettsted"
+
+#~ msgid "Site Description"
+#~ msgstr "Beskrivelse av nettsted"
+
+#~ msgid "Neither. I'll manually wrap my own text on the homepage"
+#~ msgstr ""
+#~ "Ingen av dem. Jeg vil manuelt plassere min egen tekst på hjemmesiden"
+
+#~ msgid "Home Doctitle:"
+#~ msgstr "Hjem dokumenttittel:"
+
+#~ msgid ""
+#~ "If you leave the doctitle field blank, your site&rsquo;s title will be "
+#~ "used instead."
+#~ msgstr ""
+#~ "Hvis du lar dokumenttittelfeltet være blankt, vil din side&rsquo;s "
+#~ "tittelen din ble benyttet i stedet."
+
+#~ msgid "Home META Description:"
+#~ msgstr "HJEM metabeskrivelse:"
+
+#~ msgid ""
+#~ "The META Description can be used to determine the text used under the "
+#~ "title on search engine results pages."
+#~ msgstr ""
+#~ "META beskrivelsen kan brukes til å bestemme teksten under tittelen på "
+#~ "søkemotorers resultatsider."
+
+#~ msgid "Home META Keywords (comma separated):"
+#~ msgstr "Meta nøkkelord for Hjem (kommadelt):"
+
+#~ msgid "Keywords are generally ignored by Search Engines."
+#~ msgstr "Nøkkelord blir vanligvis ignorert av søkemotorer."
+
+#~ msgid "Homepage Robots Meta Tags:"
+#~ msgstr "Meta tagger for hjemmesideroboter:"
+
+#~ msgid "Apply %s to the homepage?"
+#~ msgstr "Tilføy %s til hjemmesiden?"
+
+#~ msgid ""
+#~ "By default, WordPress places several tags in your document %1$s. Most of "
+#~ "these tags are completely unnecessary, and provide no SEO value "
+#~ "whatsoever. They just make your site slower to load. Choose which tags "
+#~ "you would like included in your document %1$s. If you do not know what "
+#~ "something is, leave it unchecked."
+#~ msgstr ""
+#~ "Som standard legger Wordpress til flere tagger i ditt dokument %1$s. De "
+#~ "fleste av disse taggene er unødvendige, og har ingen SEO verdi. De gjør "
+#~ "at siden din laster tregere. Velg hvilke tagger som du ønsker skal være "
+#~ "inkludert i ditt dokument %1$s. Hvis du ikke skjønner dette lar du boksen "
+#~ "være uten avkryssing.  "
+
+#~ msgid "Relationship Link Tags:"
+#~ msgstr "Forhold linktagger:"
+
+#~ msgid "Adjacent Posts %s link tags"
+#~ msgstr "Tilstøtende innlegg %s linktagger"
+
+#~ msgid "Windows Live Writer Support:"
+#~ msgstr "Windows Live Writer støtte:"
+
+#~ msgid "Include Windows Live Writer Support Tag?"
+#~ msgstr "Inkludér Windows Live Writer supporttag?"
+
+#~ msgid "Shortlink Tag:"
+#~ msgstr "shortlink tag:"
+
+#~ msgid "Include Shortlink tag?"
+#~ msgstr "Inkludér Shortlink tag?"
+
+#~ msgid ""
+#~ "The shortlink tag might have some use for 3rd party service "
+#~ "discoverability, but it has no SEO value whatsoever."
+#~ msgstr ""
+#~ "Shortlinktaggen kan brukes av noen tredjerpartstjenester, men har ingen "
+#~ "SEO verdi i det hele tatt."
+
+#~ msgid ""
+#~ "Depending on your situation, you may or may not want the following "
+#~ "archive pages to be indexed by search engines. Only you can make that "
+#~ "determination."
+#~ msgstr ""
+#~ "Avhengig av din situasjon, ønsker du/ønsker du ikke følgende arkivsider "
+#~ "indeksert av søkemotorer. Bare du kan ta den avgjørelsen."
+
+#~ msgid "Apply %s to Category Archives?"
+#~ msgstr "Legg %s til Kategoriarkiver?"
+
+#~ msgid "Apply %s to Tag Archives?"
+#~ msgstr "Legg %s til Tagarkiver?"
+
+#~ msgid "Apply %s to Author Archives?"
+#~ msgstr "Legg %s til Forfatterarkiver?"
+
+#~ msgid "Apply %s to Date Archives?"
+#~ msgstr "Legg %s til Datoarkiver?"
+
+#~ msgid "Apply %s to Search Archives?"
+#~ msgstr "Legg %s til Søkearkiver?"
+
+#~ msgid ""
+#~ "Some search engines will cache pages in your site (e.g Google Cache). The "
+#~ "%1$s tag will prevent them from doing so. Choose what archives you want "
+#~ "to %1$s."
+#~ msgstr ""
+#~ "Noen søkemotorer vil cache sidene til nettstedet ditt (f.eks. Google "
+#~ "Cache). %1$s taggen vil forhindre dem i å gjøre det. Velg hvilke arkiver "
+#~ "du ønsker å %1$s."
+
+#~ msgid "Apply %s to Entire Site?"
+#~ msgstr "Legg %s til hele nettstedet?"
+
+#~ msgid ""
+#~ "Occasionally, search engines use resources like the Open Directory "
+#~ "Project and the Yahoo! Directory to find titles and descriptions for your "
+#~ "content. Generally, you will not want them to do this. The %s and %s tags "
+#~ "prevent them from doing so."
+#~ msgstr ""
+#~ "Iblant benytter søkemotorer ressurser som Open Directory Project og "
+#~ "Yahoo! Directory for å finne tittler og beskrivelser av innholdet ditt. "
+#~ "Du vil vanligvis ikke ønske at skal gjøre dette. %s og %s tagger "
+#~ "forhindrer dem i dette."
+
+#~ msgid "Apply %s to your site?"
+#~ msgstr "Legg %s til nettstedet ditt?"
+
+#~ msgid "Canonical Paginated Archives"
+#~ msgstr "Kanonisk sidenummererte arkiver"
+
+#~ msgid ""
+#~ "This option points search engines to the first page of an archive, if "
+#~ "viewing a paginated page. If you do not know what this means, leave it on."
+#~ msgstr ""
+#~ "Dette alternativet sender søkemotorer til den første siden i et arkiv, "
+#~ "dersom den ser på en nummerert side. Dersom du ikke vet hva dette betyr "
+#~ "så la det være valgt."
+
+#~ msgid "Archive Settings"
+#~ msgstr "Arkivinnstillinger."
+
+#~ msgid "Archive Headline"
+#~ msgstr "Arkivtittel"
+
+#~ msgid "Leave empty if you do not want to display a headline."
+#~ msgstr "La være tomt dersom du ikke ønsker å vise en tittel."
+
+#~ msgid "Archive Intro Text"
+#~ msgstr "Introtekst for arkiv"
+
+#~ msgid "Leave empty if you do not want to display any intro text."
+#~ msgstr "La stå tomt hvis du ikke vil vise noen introtekst."
+
+#~ msgid "Custom Document %s"
+#~ msgstr "Tilpasset dokument %s"
+
+#~ msgid "%s Description"
+#~ msgstr "%s beskrivelse"
+
+#~ msgid "%s Keywords"
+#~ msgstr "%s nøkkelord"
+
+#~ msgid "Comma separated list"
+#~ msgstr "Kommaseparert liste"
+
+#~ msgid "Robots Meta"
+#~ msgstr "Roboter Meta"
+
+#~ msgid "Apply %s to this archive?"
+#~ msgstr "Legg %s til dette arkivet?"
+
+#~ msgid "Choose Layout"
+#~ msgstr "Velg layout"
+
+#~ msgid "Follow me on Twitter"
+#~ msgstr "Følg meg på Twitter"
+
+#~ msgid "Color Style"
+#~ msgstr "Fargestil"
+
+#~ msgid "Custom Feeds"
+#~ msgstr "Tilpassede feeder"
+
+#~ msgid "Default Layout"
+#~ msgstr "Standard layout"
+
+#~ msgid "Header Settings"
+#~ msgstr "Header-innstillinger"
+
+#~ msgid "Navigation Settings"
+#~ msgstr "Navigasjonsinnstillinger"
+
+#~ msgid "Breadcrumbs"
+#~ msgstr "Brødsmuler/navigasjonsstier"
+
+#~ msgid "Comments and Trackbacks"
+#~ msgstr "Kommentarer og tilbakesporing"
+
+#~ msgid "Content Archives"
+#~ msgstr "Innholdsarkiver"
+
+#~ msgid "Blog Page"
+#~ msgstr "Bloggside"
+
+#~ msgid "Header and Footer Scripts"
+#~ msgstr "Header og Footer skript"
+
+#~ msgid "Version:"
+#~ msgstr "Versjon"
+
+#~ msgid "Released:"
+#~ msgstr "Utgitt:"
+
+#~ msgid "Display Theme Information in your document source"
+#~ msgstr "Vis temainformasjon i kildekoden din"
+
+#~ msgid ""
+#~ "This can be helpful for diagnosing problems with your theme when seeking "
+#~ "assistance in the <a href=\"%s\" target=\"_blank\">support forums</a>."
+#~ msgstr ""
+#~ "Dette kan være til hjelp ved diagnostisering av problemer med temaet ditt "
+#~ "når du søker hjelp i <a href=\"%s\" target=\"_blank\">støtteforaene</a>."
+
+#~ msgid "Enable Automatic Updates"
+#~ msgstr "Aktivér automatiske oppdateringer "
+
+#~ msgid "Notify"
+#~ msgstr "Varsle"
+
+#~ msgid "when updates are available"
+#~ msgstr "når oppdateringer er tilgjengelige"
+
+#~ msgid ""
+#~ "If you provide an email address above, your blog can email you when a new "
+#~ "version of Genesis is available."
+#~ msgstr ""
+#~ "Hvis du oppgir en epost-adresse ovenfor, kan bloggen din sende deg en "
+#~ "epost når en ny versjon av Genesis er tilgjengelig."
+
+#~ msgid "Color Style:"
+#~ msgstr "Fargestil:"
+
+#~ msgid "Default"
+#~ msgstr "Standard"
+
+#~ msgid ""
+#~ "Please select the color style from the drop down list and save your "
+#~ "settings."
+#~ msgstr "Velg fargestilen fra nedtrekkslisten og lagre innstillingene dine."
+
+#~ msgid "Use for blog title/logo:"
+#~ msgstr "Bruk for blogtittel/logo: "
+
+#~ msgid "Dynamic text"
+#~ msgstr "dynamisk tekst"
+
+#~ msgid "Image logo"
+#~ msgstr "Bildelogo"
+
+#~ msgid "Primary Navigation"
+#~ msgstr "Primær navigasjon"
+
+#~ msgid "Include Primary Navigation Menu?"
+#~ msgstr "Inkludér primær navigasjonsmeny?"
+
+#~ msgid "Enable Fancy Dropdowns?"
+#~ msgstr "Aktivér stilig nedtrekksmeny? "
+
+#~ msgid "Enable Extras on Right Side?"
+#~ msgstr "Aktivér tillegg på høyre side?"
+
+#~ msgid "Display the following:"
+#~ msgstr "Vis følgende:"
+
+#~ msgid "Today's date"
+#~ msgstr "Dagens dato"
+
+#~ msgid "RSS feed links"
+#~ msgstr "RSS feed linker"
+
+#~ msgid "Search form"
+#~ msgstr "Søkeskjema"
+
+#~ msgid "Twitter link"
+#~ msgstr "Twitter link"
+
+#~ msgid "Enter Twitter ID:"
+#~ msgstr "Skriv inn Twitter ID:"
+
+#~ msgid "Twitter Link Text:"
+#~ msgstr "Twitter Link tekst"
+
+#~ msgid "Secondary Navigation"
+#~ msgstr "Sekundær navigasjon"
+
+#~ msgid "Include Secondary Navigation Menu?"
+#~ msgstr "Inkludér sekundær navigasjonsmeny?"
+
+#~ msgid ""
+#~ "In order to use the navigation menus, you must build a <a href=\"%s"
+#~ "\">custom menu</a>, then assign it to the proper Menu Location."
+#~ msgstr ""
+#~ "For å benytte navigasjonsmenyer må du opprette en <a href=\"%s"
+#~ "\">tilpasset meny</a> og så legge den til i den korrekte menyplasseringen."
+
+#~ msgid "Enter your custom feed URI:"
+#~ msgstr "Skriv inn din tilpassede feed URI:"
+
+#~ msgid "Redirect Feed?"
+#~ msgstr "Omdirigér feed?"
+
+#~ msgid "Enter your custom comments feed URI:"
+#~ msgstr "Skriv inn din tilpassede kommentarfeed URI:"
+
+#~ msgid ""
+#~ "If your custom feed(s) are not handled by Feedburner, we do not recommend "
+#~ "that you use the redirect options."
+#~ msgstr ""
+#~ "Hvis din(e) tilpassede feed(er) ikke håndteres av Feedburner, anbefaler "
+#~ "vi ikke at du benytter omdirigeringsalternativene."
+
+#~ msgid "Enable Comments"
+#~ msgstr "Aktivér kommentarer"
+
+#~ msgid "on posts?"
+#~ msgstr "i innlegg?"
+
+#~ msgid "on pages?"
+#~ msgstr "på sider?"
+
+#~ msgid "Enable Trackbacks"
+#~ msgstr "Aktivér tilbakesporing"
+
+#~ msgid ""
+#~ "Comments and Trackbacks can also be disabled on a per post/page basis "
+#~ "when creating/editing posts/pages."
+#~ msgstr ""
+#~ "Kommentarer og tilbakesporing kan også deaktiveres på per innlegg/per "
+#~ "side basis ved oppretting/redigering av innlegg/sider."
+
+#~ msgid "Enable on:"
+#~ msgstr "Aktivér på:"
+
+#~ msgid "Front Page"
+#~ msgstr "Forsiden"
+
+#~ msgid "Posts"
+#~ msgstr "Innlegg"
+
+#~ msgid "Pages"
+#~ msgstr "Sider"
+
+#~ msgid "Archives"
+#~ msgstr "Arkiver"
+
+#~ msgid "404 Page"
+#~ msgstr "404-siide"
+
+#~ msgid "Attachment Page"
+#~ msgstr "Vedleggsside"
+
+#~ msgid ""
+#~ "Breadcrumbs are a great way of letting your visitors find out where they "
+#~ "are on your site with just a glance. You can enable/disable them on "
+#~ "certain areas of your site."
+#~ msgstr ""
+#~ "Brødsmuler/navigasjonssti er en fin måte å la dine besøkende finne ut "
+#~ "hvor de er på ditt nettsted med bare et øyekast. Du kan aktivere/"
+#~ "deaktivere dem på visse områder på nettstedet ditt."
+
+#~ msgid "Select one of the following:"
+#~ msgstr "Velg en av de følgende:"
+
+#~ msgid "Display post content"
+#~ msgstr "Vis innleggsinnhold"
+
+#~ msgid "Display post excerpts"
+#~ msgstr "Vis innleggsutdrag"
+
+#~ msgid "Limit content to"
+#~ msgstr "Begrens innhold til"
+
+#~ msgid "characters"
+#~ msgstr "tegn"
+
+#~ msgid ""
+#~ "Using this option will limit the text and strip all formatting from the "
+#~ "text displayed. To use this option, choose \"Display post content\" in "
+#~ "the select box above."
+#~ msgstr ""
+#~ "Dersom du bruker dette alternativet vil det begrense og fjerne all "
+#~ "formattering fra den viste teksten. For å benytte dette valget, velg "
+#~ "\"Vis inlegg innhold\" i boksen over."
+
+#~ msgid "Include the Featured Image?"
+#~ msgstr "Inkludér det fremhevede bildet?"
+
+#~ msgid "Image Size:"
+#~ msgstr "Bildestørrelse"
+
+#~ msgid "Select Post Navigation Technique:"
+#~ msgstr "Velg Innleggsnavigeringsteknikk:"
+
+#~ msgid "Older / Newer"
+#~ msgstr "Eldre/nyere"
+
+#~ msgid "Previous / Next"
+#~ msgstr "Forrige/neste"
+
+#~ msgid "Numeric"
+#~ msgstr "Numerisk"
+
+#~ msgid ""
+#~ "These options will affect any blog listings page, including archive, "
+#~ "author, blog, category, search, and tag pages."
+#~ msgstr ""
+#~ "Disse valgene får innvirkning på alle blogglistesider, inkludert arkiv-, "
+#~ "forfatter-, blogg-, kategori-, søke- og taggsider."
+
+#~ msgid "Display which category:"
+#~ msgstr "Vis hvilken kategori:"
+
+#~ msgid "All Categories"
+#~ msgstr "Alle kaegorier"
+
+#~ msgid "Exclude the following Category IDs:"
+#~ msgstr "Ekskludér følgende kategori IDer:"
+
+#~ msgid "Comma separated - 1,2,3 for example"
+#~ msgstr "Kommaseparert - for eksempel 1,2,3"
+
+#~ msgid "Number of Posts to Show:"
+#~ msgstr "Antall innlegg å vise"
+
+#~ msgid "Enter scripts or code you would like output to %s:"
+#~ msgstr "Skriv inn skript eller kode du vil kjøre til %s:"
+
+#~ msgid ""
+#~ "The %1$s hook executes immediately before the closing %2$s tag in the "
+#~ "document source."
+#~ msgstr ""
+#~ "%1$s hooken kjører umiddelbart før lukking av %2$s taggen i "
+#~ "dokumentkilden."
+
+#~ msgid "User Permissions"
+#~ msgstr "Brukertillatelser"
+
+#~ msgid "Genesis Admin Menus"
+#~ msgstr "Genesis admin menyer"
+
+#~ msgid "Enable Genesis Admin Menu?"
+#~ msgstr "Aktivér Genesis admin meny?"
+
+#~ msgid "Enable SEO Settings Submenu?"
+#~ msgstr "Aktivér undermeny for SEO-innstillinger?"
+
+#~ msgid "Enable Import/Export Submenu?"
+#~ msgstr "Aktivér undermeny for Import/Eksport?"
+
+#~ msgid "Author Archive Settings"
+#~ msgstr "Innstillinger for forfatterarkiv"
+
+#~ msgid "These settings apply to this author's archive pages."
+#~ msgstr "Disse instillingene gjelder for denne forfatterens arkivsider."
+
+#~ msgid "Custom Archive Headline"
+#~ msgstr "Tilpasset arkivtittel"
+
+#~ msgid "Will display in the %s tag at the top of the first page"
+#~ msgstr "Vil vises i %s taggen øverst på den første siden"
+
+#~ msgid "Custom Description Text"
+#~ msgstr "Tilpasset beskrivelsestekst"
+
+#~ msgid "This text will be the first paragraph, and display on the first page"
+#~ msgstr ""
+#~ "Denne teksten vil være det første avsnittet, og vises på den første siden"
+
+#~ msgid "Author Box"
+#~ msgstr "Forfatterboks"
+
+#~ msgid "Enable Author Box on this User's Posts?"
+#~ msgstr "Aktivr forfatterboks for denne brukerens innlegg?"
+
+#~ msgid "Enable Author Box on this User's Archives?"
+#~ msgstr "Aktivér forfatterboks for denne brukerens arkiv?"
+
+#~ msgid ""
+#~ "You cannot use %s to create two menus in the same subclass. Please use "
+#~ "separate subclasses for each menu."
+#~ msgstr ""
+#~ "Du kan ikke bruke %s for å opprette to menyer i samme underklasse. Bruk "
+#~ "separate underklasser for hver meny."
+
+#~ msgid "Are you sure you want to reset?"
+#~ msgstr "Er du sikker på at du vil nullstille?"
+
+#~ msgid "Home"
+#~ msgstr "Hjem"
+
+#~ msgid "You are here: "
+#~ msgstr "Du er her:"
+
+#~ msgid "Archives for "
+#~ msgstr "Arkiver for"
+
+#~ msgid "Search for "
+#~ msgstr "Søk etter"
+
+#~ msgid "Not found: "
+#~ msgstr "Ikke funnet:"
+
+#~ msgid "View %s"
+#~ msgstr "Vis %s"
+
+#~ msgid "(Edit)"
+#~ msgstr "(Redigér)"
+
+#~ msgid "View archives for %s"
+#~ msgstr "Se i arkiver etter %s"
+
+#~ msgid "View archives for %s %s"
+#~ msgstr "Se i arkiver for %s %s"
+
+#~ msgid "View all posts in %s"
+#~ msgstr "Se alle inlegg i %s"
+
+#~ msgid "View all %s"
+#~ msgstr "Se alle %s"
+
+#~ msgid "View all items in %s"
+#~ msgstr "Vis alle enheter i %s"
+
+#~ msgid "This file no longer needs to be included."
+#~ msgstr "Det er ikke lenger nødvendig å inkludere denne filen."
+
+#~ msgid "seconds"
+#~ msgstr "sekunder"
+
+#~ msgid "and"
+#~ msgstr "og"
+
+#~ msgid "Content-Sidebar"
+#~ msgstr "Innhold-Sidefelt"
+
+#~ msgid "Sidebar-Content"
+#~ msgstr "Sidefelt-Innhold"
+
+#~ msgid "Content-Sidebar-Sidebar"
+#~ msgstr "Innhold-Sidefelt-Sidefelt"
+
+#~ msgid "Sidebar-Sidebar-Content"
+#~ msgstr "Sidefelt-Sidefelt-Innhold"
+
+#~ msgid "Sidebar-Content-Sidebar"
+#~ msgstr "Sidefelt-Innhold-Sidefelt"
+
+#~ msgid "Full Width Content"
+#~ msgstr "Full bredde innhold"
+
+#~ msgid "No Label Selected"
+#~ msgstr "Ingen Label valgt"
+
+#~ msgid ""
+#~ "The argument, \"context\", has been replaced with \"theme_location\" in "
+#~ "the $args array."
+#~ msgstr ""
+#~ "Argument \"context\" er byttet ut med \"theme_location\" i $args array."
+
+#~ msgid ""
+#~ "Have you tried our Scribe SEO software? Do keyword research, content "
+#~ "optimization, and link building without leaving WordPress. <b>Genesis "
+#~ "owners save over 50&#37; using the promo code FIRST when you sign up</b>. "
+#~ "<a href=\"%s\" target=\"_blank\">Click here for more info</a>."
+#~ msgstr ""
+#~ "Har du prøvd vårt Scribe SEO program? Gjør nøkkelord research, "
+#~ "innholdsoptimalisering og linkbygging uten å forlate WordPress. <b>Eiere "
+#~ "av Genesis sparer over 50&#37; ved å benyttet rabattkoden FIRST når du "
+#~ "bestiller.</b>. <a href=\"%s\" target=\"_blank\">Klikk her for mer info</"
+#~ "a>."
+
+#~ msgid "Dismiss"
+#~ msgstr "Se bort fra"
+
+#~ msgid "Congratulations! You are now rocking Genesis %s"
+#~ msgstr "Gratulerer! Du kjører nå Genesis %s"
+
+#~ msgid "Click here to complete the upgrade"
+#~ msgstr "Klikk her for å fullføre oppgraderingen"
+
+#~ msgid ""
+#~ "Genesis %s is available. <a href=\"%s\" class=\"thickbox thickbox-preview"
+#~ "\">Check out what's new</a> or <a href=\"%s\" onclick=\"return "
+#~ "genesis_confirm('%s');\">update now</a>."
+#~ msgstr ""
+#~ "Genesis %s er tilgjengelig. <a href=\"%s\" class=\"thickbox thickbox-"
+#~ "preview\">Finn ut hva som er nytt</a> eller <a href=\"%s\" onclick="
+#~ "\"return genesis_confirm('%s');\">oppdatér nå</a>."
+
+#~ msgid ""
+#~ "Upgrading Genesis will overwrite the current installed version of "
+#~ "Genesis. Are you sure you want to upgrade?. \"Cancel\" to stop, \"OK\" to "
+#~ "upgrade."
+#~ msgstr ""
+#~ "Oppgradering av Genesis vil overskrive gjeldende innstallerte versjon av "
+#~ "Genesis. Er du sikker på at du vil oppgradere. \"Cancel\" for å stoppe, "
+#~ "\"OK\" for å oppgradere."
+
+#~ msgid "Genesis %s is available for %s"
+#~ msgstr "Genesis %s er tilgjengelig for %s"
+
+#~ msgid ""
+#~ "Genesis %s is now available. We have provided 1-click updates for this "
+#~ "theme, so please log into your dashboard and update at your earliest "
+#~ "convenience."
+#~ msgstr ""
+#~ "Genesis %s er nå tilgjengelig. Vi tilbyr 1-klikk oppdateringer for dette "
+#~ "temaet, så logg inn i kontrollpanelet ditt og oppdatér så snart som mulig"
+
+#~ msgid "Header Left"
+#~ msgstr "Header venstre"
+
+#~ msgid "Header Right"
+#~ msgstr "Header høyre"
+
+#~ msgid "This is the widget area in the header."
+#~ msgstr "Dette er widgetområdet i header'en."
+
+#~ msgid "Primary Sidebar"
+#~ msgstr "Primært sidefelt"
+
+#~ msgid ""
+#~ "This is the primary sidebar if you are using a two or three column site "
+#~ "layout option."
+#~ msgstr ""
+#~ "Dette er det primære sidefeltet dersom du bruker to eller tre kolonners "
+#~ "layout."
+
+#~ msgid "Secondary Sidebar"
+#~ msgstr "Sekundært sidefelt"
+
+#~ msgid ""
+#~ "This is the secondary sidebar if you are using a three column site layout "
+#~ "option."
+#~ msgstr ""
+#~ "Dette er det sekundære sidefeltet dersom du bruker to eller tre kolonners "
+#~ "layout. "
+
+#~ msgid "Footer %d"
+#~ msgstr "Footer %d"
+
+#~ msgid "Footer %d widget area."
+#~ msgstr "Footer %d widgetområde."
+
+#~ msgid "Select / Deselect All"
+#~ msgstr "Velg / Forkast alle"
+
+#~ msgid "Return to top of page"
+#~ msgstr "Gå til toppen av siden"
+
+#~ msgid "by "
+#~ msgstr "av"
+
+#~ msgid "Log in"
+#~ msgstr "Logg inn"
+
+#~ msgid "Log out"
+#~ msgstr "Logg ut"
+
+#~ msgid "ago"
+#~ msgstr "siden"
+
+#~ msgid "Visit %s&#8217;s website"
+#~ msgstr "Besøk %s&#8217;s nettsted"
+
+#~ msgid "% Comments"
+#~ msgstr "% Kommentarer"
+
+#~ msgid "1 Comment"
+#~ msgstr "1 kommentar"
+
+#~ msgid "Leave a Comment"
+#~ msgstr "Legg igjen en kommentar"
+
+#~ msgid "Tagged With: "
+#~ msgstr "Tagget med:"
+
+#~ msgid "Filed Under: "
+#~ msgstr "Lagret under"
+
+#~ msgid "<h3>Comments</h3>"
+#~ msgstr "<h3>Kommentarer</h3>"
+
+#~ msgid "<h3>Trackbacks</h3>"
+#~ msgstr "<h3>Tilbakesporinger</h3>"
+
+#~ msgid "<cite class=\"fn\">%s</cite> <span class=\"says\">%s:</span>"
+#~ msgstr "<cite class=\"fn\">%s</cite> <span class=\"says\">%s:</span>"
+
+#~ msgid "says"
+#~ msgstr "sier"
+
+#~ msgid "%1$s at %2$s"
+#~ msgstr "%1$s ved %2$s"
+
+#~ msgid "Edit"
+#~ msgstr "Redigér"
+
+#~ msgid "Your comment is awaiting moderation."
+#~ msgstr "Kommentaren din venter på moderering."
+
+#~ msgid "Name"
+#~ msgstr "Navn"
+
+#~ msgid "Email"
+#~ msgstr "Epost-adresse"
+
+#~ msgid "Website"
+#~ msgstr "Nettsted"
+
+#~ msgid "Speak Your Mind"
+#~ msgstr "Si det du mener"
+
+#~ msgid "Copyright"
+#~ msgstr "Kopirett"
+
+#~ msgid "on"
+#~ msgstr "på"
+
+#~ msgid "Read more&hellip;"
+#~ msgstr "Les mer&hellip;"
+
+#~ msgid "You are using invalid arguments with the %s function."
+#~ msgstr "Du bruker ugyldige argumenter med %s funksjonen."
+
+#~ msgid "Comments"
+#~ msgstr "Kommentarer"
+
+#~ msgid "[Read more...]"
+#~ msgstr "[Les mer...]"
+
+#~ msgid "Sorry, no posts matched your criteria."
+#~ msgstr "Beklager, ingen innlegg matchet dine kriterier."
+
+#~ msgid "By"
+#~ msgstr "Av"
+
+#~ msgid "About"
+#~ msgstr "Om"
+
+#~ msgid "Older Posts"
+#~ msgstr "Eldre innlegg"
+
+#~ msgid "Newer Posts"
+#~ msgstr "Nyere innlegg"
+
+#~ msgid "Previous Page"
+#~ msgstr "Forrige side"
+
+#~ msgid "Next Page"
+#~ msgstr "Neste side"
+
+#~ msgid "Search this website %s"
+#~ msgstr "Søk på dette nettstedet %s"
+
+#~ msgid "Search"
+#~ msgstr "Søk"
+
+#~ msgid "Primary Sidebar Widget Area"
+#~ msgstr "Widgetområde i primært sidefelt"
+
+#~ msgid ""
+#~ "This is the Primary Sidebar Widget Area. You can add content to this area "
+#~ "by visiting your <a href=\"%s\">Widgets Panel</a> and adding new widgets "
+#~ "to this area."
+#~ msgstr ""
+#~ "Dette er widgetområdet i primært sidefelt. Du kan legge til innhold på "
+#~ "dette området ved å gå til <a href=\"%s\">Widgetpanelet</a> ditt og legge "
+#~ "til nye widgeter på dette området."
+
+#~ msgid "Secondary Sidebar Widget Area"
+#~ msgstr "Widgetområde i sekundært sidefelt"
+
+#~ msgid ""
+#~ "This is the Secondary Sidebar Widget Area. You can add content to this "
+#~ "area by visiting your <a href=\"%s\">Widgets Panel</a> and adding new "
+#~ "widgets to this area."
+#~ msgstr ""
+#~ "Dette er widgetområdet i sekundært sidefelt. Du kan legge til innhold på "
+#~ "dette området ved å gå til <a href=\"%s\">Widgetpanelet</a> ditt og legge "
+#~ "til nye widgeter på dette området. \t"
+
+#~ msgid "Single Post Template"
+#~ msgstr "Mal for enkeltinnlegg"
+
+#~ msgid "Post Template"
+#~ msgstr "Innleggsmal"
+
+#~ msgid ""
+#~ "Some themes have custom templates you can use for single posts that might "
+#~ "have additional features or custom layouts. If so, you will see them "
+#~ "above."
+#~ msgstr ""
+#~ "Noen temaer har tilpassede maler du kan benytte til enkeltinnlegg som "
+#~ "kanskje har tilleggsegenskaper eller justert layout. Hvis det er "
+#~ "tilfellet, vil du se dem ovenfor."
+
+#~ msgid "Displays featured page with thumbnails"
+#~ msgstr "Viser fremhevet side med miniatyrbilder"
+
+#~ msgid "Genesis - Featured Page"
+#~ msgstr "Genesis - fremhevet side"
+
+#~ msgid "by"
+#~ msgstr "av"
+
+#~ msgid "Page"
+#~ msgstr "Side"
+
+#~ msgid "Show Featured Image"
+#~ msgstr "Vis fremhevet bilde"
+
+#~ msgid "Image Size"
+#~ msgstr "Bildestørrelse"
+
+#~ msgid "Image Alignment"
+#~ msgstr "Bildeplassering"
+
+#~ msgid "None"
+#~ msgstr "Ingen"
+
+#~ msgid "Show Page Title"
+#~ msgstr "Vis sidetittel"
+
+#~ msgid "Show Page Byline"
+#~ msgstr "Vis side byline"
+
+#~ msgid "Show Page Content"
+#~ msgstr "Vis sideinnhold"
+
+#~ msgid "Content Character Limit"
+#~ msgstr "Tegnbegrensning i innhold"
+
+#~ msgid "More Text"
+#~ msgstr "Mer tekst"
+
+#~ msgid "[Read More...]"
+#~ msgstr "[Les mer...]"
+
+#~ msgid "More Posts from this Category"
+#~ msgstr "Flere innlegg fra denne kategorien"
+
+#~ msgid "Displays featured posts with thumbnails"
+#~ msgstr "Viser fremhevde innlegg med miniatyrbilder"
+
+#~ msgid "Genesis - Featured Posts"
+#~ msgstr "Genesis - fremhevede innlegg"
+
+#~ msgid "Category"
+#~ msgstr "Kategori"
+
+#~ msgid "Number of Posts to Show"
+#~ msgstr "Antall innlegg å vise"
+
+#~ msgid "Number of Posts to Offset"
+#~ msgstr "Antall innlegg å skjule"
+
+#~ msgid "Order By"
+#~ msgstr "Sortér etter"
+
+#~ msgid "Date"
+#~ msgstr "Dato"
+
+#~ msgid "Parent"
+#~ msgstr "Forelder"
+
+#~ msgid "ID"
+#~ msgstr "ID"
+
+#~ msgid "Comment Count"
+#~ msgstr "Kommentartelling"
+
+#~ msgid "Random"
+#~ msgstr "Tilfeldig"
+
+#~ msgid "Sort Order"
+#~ msgstr "Sorteringsrekkefølge"
+
+#~ msgid "Descending (3, 2, 1)"
+#~ msgstr "Synkende"
+
+#~ msgid "Ascending (1, 2, 3)"
+#~ msgstr "Stigende"
+
+#~ msgid "Show Author Gravatar"
+#~ msgstr "Vis forfatter Gravatar"
+
+#~ msgid "Gravatar Size"
+#~ msgstr "Gravatar størrelse"
+
+#~ msgid "Small (45px)"
+#~ msgstr "Lite (45px)"
+
+#~ msgid "Medium (65px)"
+#~ msgstr "Middels (65px)"
+
+#~ msgid "Large (85px)"
+#~ msgstr "Stort (85px)"
+
+#~ msgid "Extra Large (125px)"
+#~ msgstr "Ekstra stort (125px)"
+
+#~ msgid "Gravatar Alignment"
+#~ msgstr "Gravatar plassering"
+
+#~ msgid "Show Post Title"
+#~ msgstr "Vis innleggstittel"
+
+#~ msgid "Show Post Info"
+#~ msgstr "Vis innleggsinfo"
+
+#~ msgid "Content Type"
+#~ msgstr "Innholdstype"
+
+#~ msgid "Show Content"
+#~ msgstr "Vis innhold"
+
+#~ msgid "Show Excerpt"
+#~ msgstr "Vis utdrag"
+
+#~ msgid "Show Content Limit"
+#~ msgstr "Vis innholdsbegrensning"
+
+#~ msgid "No Content"
+#~ msgstr "Intet innhold"
+
+#~ msgid "More Text (if applicable)"
+#~ msgstr "Mer tekst (hvis aktuelt)"
+
+#~ msgid ""
+#~ "To display an unordered list of more posts from this category, please "
+#~ "fill out the information below"
+#~ msgstr ""
+#~ "Fyll ut informasjonen nedenfor for å vise en usortert liste over "
+#~ "ytterligere innlegg i denne kategorien"
+
+#~ msgid "Show Category Archive Link"
+#~ msgstr "Vis link for kategoriarkiv"
+
+#~ msgid "Link Text"
+#~ msgstr "Lenketekst"
+
+#~ msgid "Display a list of your latest tweets."
+#~ msgstr "Vis en liste over dine siste tweeter."
+
+#~ msgid "Genesis - Latest Tweets"
+#~ msgstr "Genesis - siste tweeter"
+
+#~ msgid ""
+#~ "The Twitter API is taking too long to respond. Please try again later."
+#~ msgstr "Twitter API bruker for lang tid på å svare. Prøv igjen seinere."
+
+#~ msgid ""
+#~ "There was an error while attempting to contact the Twitter API. Please "
+#~ "try again."
+#~ msgstr ""
+#~ "Det oppsto en feil ved forsøk på å kontakte Twitter API. Prøv igjen."
+
+#~ msgid ""
+#~ "The Twitter API returned an error while processing your request. Please "
+#~ "try again."
+#~ msgstr ""
+#~ "Twitter API returnerte en feilmelding under behandling av anmodningen "
+#~ "din. Prøv igjen"
+
+#~ msgid "about %s ago"
+#~ msgstr "for %s siden"
+
+#~ msgid "Twitter Username"
+#~ msgstr "Twitter brukernavn"
+
+#~ msgid "Number of Tweets to Show"
+#~ msgstr "Antall tweeter å vise"
+
+#~ msgid "Hide @ Replies"
+#~ msgstr "Skjul @ svar"
+
+#~ msgid "Load new Tweets every"
+#~ msgstr "Last nye tweeter hver(t)"
+
+#~ msgid "5 Min."
+#~ msgstr "5. minutt"
+
+#~ msgid "15 Minutes"
+#~ msgstr "15. minutt"
+
+#~ msgid "30 Minutes"
+#~ msgstr "halvtime"
+
+#~ msgid "1 Hour"
+#~ msgstr "time"
+
+#~ msgid "2 Hours"
+#~ msgstr "2. time"
+
+#~ msgid "4 Hours"
+#~ msgstr "4. time"
+
+#~ msgid "12 Hours"
+#~ msgstr "12. time"
+
+#~ msgid "24 Hours"
+#~ msgstr "24. time"
+
+#~ msgid "Include link to twitter page?"
+#~ msgstr "Inkludér link til twittersiden?"
+
+#~ msgid "Link Text (required)"
+#~ msgstr "Link tekst (påkrevd)"
+
+#~ msgid ""
+#~ "This widget has been deprecated, and will eventually be removed. DO NOT "
+#~ "use it. You have been warned."
+#~ msgstr ""
+#~ "Denne widget'en er ikke lenger godkjent og vil bli fjernet. IKKE bruk "
+#~ "den. Du er herved advart."
+
+#~ msgid "Genesis - Category Menu"
+#~ msgstr "Genesis - kategorimeny"
+
+#~ msgid ""
+#~ "This widget has been deprecated, and will eventually be removed. We "
+#~ "suggest that you <a href=\"%s\">create a menu</a> and use the \"Custom "
+#~ "Menu\" widget instead."
+#~ msgstr ""
+#~ "Denne widget'en er ikke lenger godkjent og vil bli fjernet. Vi foreslår "
+#~ "at du <a href=\"%s\">oppretter en meny</a> og benytter \"Custom Menu\"-"
+#~ "widgeten i stedet."
+
+#~ msgid "Genesis - Page Menu"
+#~ msgstr "Genesis - sidemeny"
+
+#~ msgid "[Read More %s]"
+#~ msgstr "[Les mer %s]"
+
+#~ msgid "Displays user profile block with Gravatar"
+#~ msgstr "Viser brukers profilblokk med Gravatar"
+
+#~ msgid "Genesis - User Profile"
+#~ msgstr "Genesis - brukerprofil"
+
+#~ msgid "View My Blog Posts"
+#~ msgstr "Vis mine bloginnlegg"
+
+#~ msgid ""
+#~ "Select a user. The email address for this account will be used to pull "
+#~ "the Gravatar image."
+#~ msgstr ""
+#~ "Velg en bruker. Epost-adressen til denne kontoen vil benyttes for å dra "
+#~ "inn Gravatarbildet."
+
+#~ msgid "Small"
+#~ msgstr "Lite"
+
+#~ msgid "Medium"
+#~ msgstr "Middels"
+
+#~ msgid "Large"
+#~ msgstr "Stort"
+
+#~ msgid "Extra Large"
+#~ msgstr "Ekstra stort"
+
+#~ msgid "Select which text you would like to use as the author description"
+#~ msgstr "Velg hvilken tekst du ønsker åbenyttet som forfatterbeskrivelsen."
+
+#~ msgid "Author Bio"
+#~ msgstr "Forfatterbiografi"
+
+#~ msgid "Custom Text (below)"
+#~ msgstr "Tilpasset tekst (nedenfor)"
+
+#~ msgid "Custom Text Content"
+#~ msgstr "Tilpasset tekstinnhold"
+
+#~ msgid ""
+#~ "Choose your extended \"About Me\" page from the list below. This will be "
+#~ "the page linked to at the end of the about me section."
+#~ msgstr ""
+#~ "Velg den utvidede \"Om meg\"-siden fra listen nedenfor. Dette vil være "
+#~ "den siden det linkes til på slutten av \"Om meg\"-seksjonen."
+
+#~ msgid "Extended page link text"
+#~ msgstr "Linktekst på utvidet side."
+
+#~ msgid "Show Author Archive Link?"
+#~ msgstr "Vis link til forfatterarkiv?"

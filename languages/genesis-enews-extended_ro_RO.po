@@ -1,0 +1,1459 @@
+# Translation of Genesis 1.8 in Romanian
+# This file is distributed under the same license as the Genesis 1.8 package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Genesis eNews Extended\n"
+"POT-Creation-Date: 2013-01-27 23:09-0600\n"
+"PO-Revision-Date: 2013-01-27 23:10-0600\n"
+"Last-Translator: Brandon Kraft <public@brandonkraft.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
+"20)) ? 1 : 2);;\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../class-bjgk-genesis-enews-extended.php:50
+#, fuzzy
+msgid "Displays subscribe form"
+msgstr "Afișează formularul de abonare pe e-mail la FeedBurner "
+
+#: ../class-bjgk-genesis-enews-extended.php:53
+#, fuzzy
+msgid "Genesis - eNews Extended"
+msgstr "Genesis - eNews şi Actualizări"
+
+#: ../class-bjgk-genesis-enews-extended.php:138
+msgid "Title"
+msgstr "Titlu"
+
+#: ../class-bjgk-genesis-enews-extended.php:143
+msgid "Text To Show"
+msgstr "Text pentru afișare"
+
+#: ../class-bjgk-genesis-enews-extended.php:148
+msgid "Google/Feedburner ID"
+msgstr "ID Google/ Feedburner"
+
+#: ../class-bjgk-genesis-enews-extended.php:150
+msgid ""
+"Entering your Feedburner ID here will deactivate the custom options below."
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:154
+#, fuzzy
+msgid "Form Action"
+msgstr "Informaţii"
+
+#: ../class-bjgk-genesis-enews-extended.php:159
+msgid "E-Mail Field"
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:164
+msgid "First Name Field"
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:169
+msgid "Last Name Field"
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:174
+msgid "Hidden Fields"
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:176
+msgid "Not all services use hidden fields."
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:181
+msgid "Open confirmation page in same window?"
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:185
+msgid "First Name..."
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:186
+#, fuzzy
+msgid "First Name Input Text"
+msgstr "Text de inserat"
+
+#: ../class-bjgk-genesis-enews-extended.php:190
+msgid "Last Name..."
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:191
+#, fuzzy
+msgid "Last Name Input Text"
+msgstr "Text de inserat"
+
+#: ../class-bjgk-genesis-enews-extended.php:195
+msgid "Enter your email address..."
+msgstr "Introduceți adresa de e-mail ..."
+
+#: ../class-bjgk-genesis-enews-extended.php:196
+#, fuzzy
+msgid "E-Mail Input Text"
+msgstr "Text de inserat"
+
+#: ../class-bjgk-genesis-enews-extended.php:201
+msgid "Go"
+msgstr "Du-te"
+
+#: ../class-bjgk-genesis-enews-extended.php:202
+msgid "Button Text"
+msgstr "Buton Text"
+
+#~ msgid "Not Found, Error 404"
+#~ msgstr "Nu poate fi găsit, Eroare 404"
+
+#~ msgid ""
+#~ "The page you are looking for no longer exists. Perhaps you can return "
+#~ "back to the site's <a href=\"%s\">homepage</a> and see if you can find "
+#~ "what you are looking for. Or, you can try finding it with the information "
+#~ "below."
+#~ msgstr ""
+#~ "Pagina pe care o cautați nu mai există. Vă puteți întoarce la <a href=\"%s"
+#~ "\"> pagina de pornire </a> pentru a vedea dacă puteți găsi ceea ce "
+#~ "cautați. Sau puteţi încerca să o cautați folosind informaţiile de mai jos."
+
+#~ msgid "Pages:"
+#~ msgstr "Pagini:"
+
+#~ msgid "Categories:"
+#~ msgstr "Categorii:"
+
+#~ msgid "Authors:"
+#~ msgstr "Autori:"
+
+#~ msgid "Monthly:"
+#~ msgstr "Lunar:"
+
+#~ msgid "Recent Posts:"
+#~ msgstr "Postări recente:"
+
+#~ msgid ""
+#~ "This post is password protected. Enter the password to view comments."
+#~ msgstr ""
+#~ "Această postare este protejată cu o parolă. Introduceţi parola pentru a "
+#~ "vizualiza comentariile."
+
+#~ msgid "Primary Navigation Menu"
+#~ msgstr "Meniu de navigare principal"
+
+#~ msgid "Secondary Navigation Menu"
+#~ msgstr "Meniu de navigare secundar"
+
+#~ msgid "Genesis - Import/Export"
+#~ msgstr "Genesis - Import / Export"
+
+#~ msgid "Import/Export"
+#~ msgstr "Import / Export"
+
+#~ msgid "Import Genesis Settings File"
+#~ msgstr "Import setări fișiere Genesis"
+
+#~ msgid ""
+#~ "Upload the data file (<code>.json</code>) from your computer and we'll "
+#~ "import your settings."
+#~ msgstr ""
+#~ "Incarca fisierul data  (<code>.json</code>) din calculatorul tau si noi "
+#~ "vom importa setarile tale."
+
+#~ msgid ""
+#~ "Choose the file from your computer and click \"Upload file and Import\""
+#~ msgstr ""
+#~ "Selecteaza fisierul din calculatorul tau si da click pe \" Incarca fisier "
+#~ "si importa\". "
+
+#~ msgid "Upload File: (Maximum Size: %s)"
+#~ msgstr "Încărcare fișier: (Dimensiune maximă: %s)"
+
+#~ msgid "Upload File and Import"
+#~ msgstr "Incarca fisier si importa. "
+
+#~ msgid "Export Genesis Settings File"
+#~ msgstr "Fișier setări export Genesis"
+
+#~ msgid ""
+#~ "When you click the button below, Genesis will generate a data file "
+#~ "(<code>.json</code>) for you to save to your computer."
+#~ msgstr ""
+#~ "Apasa butonul de mai jos si Genesis va genera un fisier date (<code>."
+#~ "json</code>) pe care tu trebuie sa il salvezi pe calculatorul tau. "
+
+#~ msgid ""
+#~ "Once you have saved the download file, you can use the import function on "
+#~ "another site to import this data."
+#~ msgstr ""
+#~ "După ce aţi salvat fişierul descărcat, puteţi utiliza funcţia de import "
+#~ "pe un alt site pentru a importa aceste date."
+
+#~ msgid "Download Export File"
+#~ msgstr "Fișier export descărcare "
+
+#~ msgid "Settings successfully imported."
+#~ msgstr "Setari importate cu succes."
+
+#~ msgid "There was a problem importing your settings. Please try again."
+#~ msgstr ""
+#~ "A apărut o problemă la importul setărilor dvs. Vă rugăm să încercaţi din "
+#~ "nou."
+
+#~ msgid "Theme Settings"
+#~ msgstr "Setări temă"
+
+#~ msgid "SEO Settings"
+#~ msgstr "Setări SEO"
+
+#~ msgid "No export options available."
+#~ msgstr "Nu există opţiuni de export."
+
+#~ msgid "Theme SEO Settings"
+#~ msgstr "Tema setari SEO."
+
+#~ msgid "Custom Document Title"
+#~ msgstr "Titlul personalizat al documentului"
+
+#~ msgid "Characters Used: %s"
+#~ msgstr "Caractere folosite: %s"
+
+#~ msgid "Custom Post/Page Meta Description"
+#~ msgstr "Postare personalizata / Descriere Meta Page"
+
+#~ msgid "Custom Post/Page Meta Keywords, comma separated"
+#~ msgstr ""
+#~ "Postare personalizată/ Meta Cuvinte cheie pentru pagină, separate\n"
+#~ " prin virgulă"
+
+#~ msgid "Custom Canonical URI"
+#~ msgstr "URI Generice"
+
+#~ msgid "Custom Redirect URI"
+#~ msgstr "URI personalizat redirecționare"
+
+#~ msgid "Robots Meta Settings"
+#~ msgstr "Robots Meta Setări"
+
+#~ msgid "Apply %s to this post/page"
+#~ msgstr "Aplicaţi %s la acest post / pagină"
+
+#~ msgid "Custom Tracking/Conversion Code"
+#~ msgstr "Urmărire personalizată / Cod de conversie"
+
+#~ msgid "Layout Settings"
+#~ msgstr "Setari layout. "
+
+#~ msgid "Default Layout set in <a href=\"%s\">Theme Settings</a>"
+#~ msgstr "Layout stabilit implicit în <a href=\"%s\"> Setări temă </a>"
+
+#~ msgid "Custom Body Class"
+#~ msgstr "Clasa corp personalizata"
+
+#~ msgid "Custom Post Class"
+#~ msgstr "Clasa post personalizata"
+
+#~ msgid "README"
+#~ msgstr "README"
+
+#~ msgid "The %s file was not found in the child theme, or it was empty."
+#~ msgstr ""
+#~ "%s fisierul nu a fost gasit in tema inrudita, ori aceasta era goala."
+
+#~ msgid "Genesis - SEO Settings"
+#~ msgstr "Genesis - Setări SEO"
+
+#~ msgid "Save Settings"
+#~ msgstr "Salvaţi setările"
+
+#~ msgid "Reset Settings"
+#~ msgstr "Resetați setările"
+
+#~ msgid "Settings saved."
+#~ msgstr "Setari salvate."
+
+#~ msgid "Settings reset."
+#~ msgstr "Setari resetate."
+
+#~ msgid "Error saving settings."
+#~ msgstr "Eroare salvare setari."
+
+#~ msgid "Doctitle Settings"
+#~ msgstr "Setări Titlu document"
+
+#~ msgid "Homepage Settings"
+#~ msgstr "Setări Pagină de pornire"
+
+#~ msgid "Document Head Settings"
+#~ msgstr "Setări Header document"
+
+#~ msgid "Archives Settings"
+#~ msgstr "Setări Arhive"
+
+#~ msgid ""
+#~ "The Document Title is the single most important SEO tag in your document "
+#~ "source. It succinctly informs search engines of what information is "
+#~ "contained in the document. The doctitle changes from page to page, but "
+#~ "these options will help you control what it looks by default."
+#~ msgstr ""
+#~ "Titlul documentului este cea mai importanta eticheta SEO  din documentul "
+#~ "sursa. Acesta informează succint motoarele de căutare asupra "
+#~ "informațiilor din document. Titlul se modifică de la o pagină la alta, "
+#~ "dar aceste opțiuni vă vor ajuta să controlați ceea ce se caută în mod "
+#~ "implicit."
+
+#~ msgid ""
+#~ "<b>By default</b>, the homepage doctitle will contain the site title, the "
+#~ "single post and page doctitle will contain the post/page title, archive "
+#~ "pages will contain the archive type, etc."
+#~ msgstr ""
+#~ "<b> În mod implicit </b>, titlul paginii de pornire va contine titlul "
+#~ "site-ului, titlul postării unice şi paginii va conține titlul postării/ "
+#~ "paginii, paginile de arhivă vor conţine tipul de arhivă, etc"
+
+#~ msgid "Append Site Description to Doctitle on homepage?"
+#~ msgstr "Adăugați descrierea site-ului la titlul din pagina de pornire?"
+
+#~ msgid "Append Site Name to Doctitle on inner pages?"
+#~ msgstr "Adăugați numele site-ului la titlul din paginile interioare?"
+
+#~ msgid "Doctitle (%s) Append Location:"
+#~ msgstr "Locatie adaugare titlu (%s):"
+
+#~ msgid "Determines what side the appended doctitle text will go on."
+#~ msgstr "Determina unde se afiseaza titlu."
+
+#~ msgid "Left"
+#~ msgstr "Stânga"
+
+#~ msgid "Right"
+#~ msgstr "Dreapta"
+
+#~ msgid "Doctitle (<code>&lt;title&gt;</code>) Separator:"
+#~ msgstr "(<code>&lt;title&gt;</code>) separator titlu:"
+
+#~ msgid ""
+#~ "If the doctitle consists of two parts (Title &amp; Appended Text), then "
+#~ "the Doctitle Separator will go between them."
+#~ msgstr ""
+#~ "Daca titlul este format din doua parti (Title &amp; Appended Text), "
+#~ "atunci separatorul de titlu va fi inserat intre cele doua parti."
+
+#~ msgid "Which text would you like to be wrapped in %s tags?"
+#~ msgstr "Ce text doriţi să marcaţi cu etichetele %s ?"
+
+#~ msgid ""
+#~ "The %s tag is, arguably, the second most important SEO tag in the "
+#~ "document source. Choose wisely."
+#~ msgstr ""
+#~ "Eticheta %s este, probabil, a doua etichetă SEO ca importanţă din "
+#~ "documentul sursă. Alege cu înţelepciune."
+
+#~ msgid "Site Title"
+#~ msgstr "Titlul site-ului"
+
+#~ msgid "Site Description"
+#~ msgstr "Descrierea site-ului"
+
+#~ msgid "Neither. I'll manually wrap my own text on the homepage"
+#~ msgstr "Niciuna. Voi integra manual propriul text în pagina de pornire."
+
+#~ msgid "Home Doctitle:"
+#~ msgstr "Titlu homepage."
+
+#~ msgid ""
+#~ "If you leave the doctitle field blank, your site&rsquo;s title will be "
+#~ "used instead."
+#~ msgstr ""
+#~ "Daca nu completezi campul de titlu, va fi preluat automat titlul "
+#~ "site&rsquo;s ."
+
+#~ msgid "Home META Description:"
+#~ msgstr "Descriere Meta Home."
+
+#~ msgid ""
+#~ "The META Description can be used to determine the text used under the "
+#~ "title on search engine results pages."
+#~ msgstr ""
+#~ "Descrierea Meta e utilizata pentru a determina textul ce va aparea sub "
+#~ "titlu in listele de rezultate din motoarele de cautare. "
+
+#~ msgid "Home META Keywords (comma separated):"
+#~ msgstr "Cuvinte cheie Meta Home (separate de virgula)."
+
+#~ msgid "Keywords are generally ignored by Search Engines."
+#~ msgstr "Cuvintele cheie sunt in general ignorate de motoarele de cautare. "
+
+#~ msgid "Homepage Robots Meta Tags:"
+#~ msgstr "Meta Etichete pagină de pornire"
+
+#~ msgid "Apply %s to the homepage?"
+#~ msgstr "Aplicaţi %s la pagina de pornire?"
+
+#~ msgid ""
+#~ "By default, WordPress places several tags in your document %1$s. Most of "
+#~ "these tags are completely unnecessary, and provide no SEO value "
+#~ "whatsoever. They just make your site slower to load. Choose which tags "
+#~ "you would like included in your document %1$s. If you do not know what "
+#~ "something is, leave it unchecked."
+#~ msgstr ""
+#~ "În mod implicit, WordPress include mai multe etichete în document %1$s . "
+#~ "Cele mai multe dintre aceste etichete sunt complet inutile şi nu aduc "
+#~ "nicio valoare SEO. Ele fac doar ca site-ul să se încarce mai lent . "
+#~ "Alegeţi etichetele pe care vreţi să le includeţi în document %1$s . Dacă "
+#~ "nu ştiţi ce înseamna ceva, lăsaţi-l nebifat."
+
+#~ msgid "Relationship Link Tags:"
+#~ msgstr "Etichete linkuri de legătură "
+
+#~ msgid "Adjacent Posts %s link tags"
+#~ msgstr "Etichete posturi invecinate %s "
+
+#~ msgid "Windows Live Writer Support:"
+#~ msgstr "Suport Windows Live Writer:"
+
+#~ msgid "Include Windows Live Writer Support Tag?"
+#~ msgstr "Includeți Windows Live Writer Tag?"
+
+#~ msgid "Shortlink Tag:"
+#~ msgstr "Etichetă Shortlink:"
+
+#~ msgid "Include Shortlink tag?"
+#~ msgstr "Includeţi eticheta Shortlink?"
+
+#~ msgid ""
+#~ "The shortlink tag might have some use for 3rd party service "
+#~ "discoverability, but it has no SEO value whatsoever."
+#~ msgstr ""
+#~ "E posibil ca eticheta shortlink sa fie utila, dar nu are nicio valoare "
+#~ "SEO."
+
+#~ msgid ""
+#~ "Depending on your situation, you may or may not want the following "
+#~ "archive pages to be indexed by search engines. Only you can make that "
+#~ "determination."
+#~ msgstr ""
+#~ "În funcţie de situaţia dvs., puteți dori sau nu ca următoarele pagini de "
+#~ "arhivă să fie indexate de către motoarele de căutare. Doar dvs. puteți "
+#~ "lua această decizie."
+
+#~ msgid "Apply %s to Category Archives?"
+#~ msgstr "Aplicați %s la arhiva de categorii?"
+
+#~ msgid "Apply %s to Tag Archives?"
+#~ msgstr "Aplicaţi %s la arhivele de etichete?"
+
+#~ msgid "Apply %s to Author Archives?"
+#~ msgstr "Aplicaţi %s la Arhivele Autor?"
+
+#~ msgid "Apply %s to Date Archives?"
+#~ msgstr "Aplicaţi %s la Arhivele Data?"
+
+#~ msgid "Apply %s to Search Archives?"
+#~ msgstr "Aplicaţi %s la arhivele de căutări?"
+
+#~ msgid ""
+#~ "Some search engines will cache pages in your site (e.g Google Cache). The "
+#~ "%1$s tag will prevent them from doing so. Choose what archives you want "
+#~ "to %1$s."
+#~ msgstr ""
+#~ "Unele motoare de căutare vor păstra paginile site-ului dvs. în cache (de "
+#~ "exemplu, Google Cache). Eticheta %1$s le va împiedica să facă acest "
+#~ "lucru. Alegeți ce arhive vreți să %1$s."
+
+#~ msgid "Apply %s to Entire Site?"
+#~ msgstr "Aplicaţi %s la tot site-ul?"
+
+#~ msgid ""
+#~ "Occasionally, search engines use resources like the Open Directory "
+#~ "Project and the Yahoo! Directory to find titles and descriptions for your "
+#~ "content. Generally, you will not want them to do this. The %s and %s tags "
+#~ "prevent them from doing so."
+#~ msgstr ""
+#~ "Ocazional, motoarele de căutare utilizează resurse precum Open Directory "
+#~ "Project şi Yahoo Directory pentru a găsi titluri şi descrieri pentru "
+#~ "conţinutul dvs.. În general, nu veți dori acest lucru. Etichetele %s şi "
+#~ "%s le împiedică să facă acest lucru."
+
+#~ msgid "Apply %s to your site?"
+#~ msgstr "Aplicaţi %s site-ului dvs.?"
+
+#~ msgid "Canonical Paginated Archives"
+#~ msgstr "Arhive numerotate generale"
+
+#~ msgid ""
+#~ "This option points search engines to the first page of an archive, if "
+#~ "viewing a paginated page. If you do not know what this means, leave it on."
+#~ msgstr ""
+#~ "Această opțiune îndreaptă motoarele de căutare spre prima pagină a unei "
+#~ "arhive, în cazul unei pagini formatate. Dacă nu ştiţi ce înseamnă acest "
+#~ "lucru, treceți mai departe fără a modifica."
+
+#~ msgid "Archive Settings"
+#~ msgstr "Setari arhiva."
+
+#~ msgid "Archive Headline"
+#~ msgstr "Titlu arhiva."
+
+#~ msgid "Leave empty if you do not want to display a headline."
+#~ msgstr "Lasa liber daca nu vrei sa afisezi un titlu."
+
+#~ msgid "Archive Intro Text"
+#~ msgstr "Text intro arhiva."
+
+#~ msgid "Leave empty if you do not want to display any intro text."
+#~ msgstr "Lasa liber daca nu vrei sa afisezi un text."
+
+#~ msgid "Custom Document %s"
+#~ msgstr "Document personalizat %s"
+
+#~ msgid "%s Description"
+#~ msgstr "%s Descriere"
+
+#~ msgid "%s Keywords"
+#~ msgstr "Cuvinte cheie %s"
+
+#~ msgid "Comma separated list"
+#~ msgstr "Listă separată prin virgulă"
+
+#~ msgid "Robots Meta"
+#~ msgstr "Robots Meta"
+
+#~ msgid "Apply %s to this archive?"
+#~ msgstr "Aplicaţi %s la această arhivă?"
+
+#~ msgid "Choose Layout"
+#~ msgstr "Alege format"
+
+#~ msgid "Follow me on Twitter"
+#~ msgstr "Urmareste-ma pe Twitter."
+
+#~ msgid "Color Style"
+#~ msgstr "Stil culoare"
+
+#~ msgid "Custom Feeds"
+#~ msgstr "Feed-uri personalizate"
+
+#~ msgid "Default Layout"
+#~ msgstr "Layout presetat."
+
+#~ msgid "Header Settings"
+#~ msgstr "Setari Header."
+
+#~ msgid "Navigation Settings"
+#~ msgstr "Setari navigare."
+
+#~ msgid "Breadcrumbs"
+#~ msgstr "Căi"
+
+#~ msgid "Comments and Trackbacks"
+#~ msgstr "Comentarii si notificari."
+
+#~ msgid "Content Archives"
+#~ msgstr "Arhive de conținut "
+
+#~ msgid "Blog Page"
+#~ msgstr "Pagina blog"
+
+#~ msgid "Header and Footer Scripts"
+#~ msgstr "Scripturi Header si Footer."
+
+#~ msgid "Version:"
+#~ msgstr "Versiune:"
+
+#~ msgid "Released:"
+#~ msgstr "Lansat:"
+
+#~ msgid "Display Theme Information in your document source"
+#~ msgstr "Afișează Informații tema în documentul sursă"
+
+#~ msgid ""
+#~ "This can be helpful for diagnosing problems with your theme when seeking "
+#~ "assistance in the <a href=\"%s\" target=\"_blank\">support forums</a>."
+#~ msgstr ""
+#~ "Aceasta optiune poate fi utila pentru rezolvarea problemelor legate de "
+#~ "teme cand cauti solutii  <a href=\"%s\" target=\"_blank\">pe forumuri</a>."
+
+#~ msgid "Enable Automatic Updates"
+#~ msgstr "Activează actualizările automate"
+
+#~ msgid "Notify"
+#~ msgstr "Notifică"
+
+#~ msgid "when updates are available"
+#~ msgstr "atunci când sunt disponibile actualizări"
+
+#~ msgid ""
+#~ "If you provide an email address above, your blog can email you when a new "
+#~ "version of Genesis is available."
+#~ msgstr ""
+#~ "Daca ne lasi o adresa de email, te vom anunta cand este disponibila o "
+#~ "noua versiune Genesis."
+
+#~ msgid "Color Style:"
+#~ msgstr "Stil culoare."
+
+#~ msgid "Default"
+#~ msgstr "Implicit"
+
+#~ msgid ""
+#~ "Please select the color style from the drop down list and save your "
+#~ "settings."
+#~ msgstr ""
+#~ "Te rugam sa selectezi stilul de culoare din lista defilanta si sa salvezi "
+#~ "setarile."
+
+#~ msgid "Use for blog title/logo:"
+#~ msgstr "Utilizați pentru titlu blog/ logo:"
+
+#~ msgid "Dynamic text"
+#~ msgstr "Text dinamic"
+
+#~ msgid "Image logo"
+#~ msgstr "Imagine logo"
+
+#~ msgid "Primary Navigation"
+#~ msgstr "Navigare principala"
+
+#~ msgid "Include Primary Navigation Menu?"
+#~ msgstr "Include Meniu de navigare principal?"
+
+#~ msgid "Enable Fancy Dropdowns?"
+#~ msgstr "Activează liste de defilare speciale?"
+
+#~ msgid "Enable Extras on Right Side?"
+#~ msgstr "Activează opțiunile suplimentare în partea dreaptă?"
+
+#~ msgid "Display the following:"
+#~ msgstr "Afişează următoarele:"
+
+#~ msgid "Today's date"
+#~ msgstr "Data de azi"
+
+#~ msgid "RSS feed links"
+#~ msgstr "RSS feed link-uri"
+
+#~ msgid "Search form"
+#~ msgstr "Formular de căutare"
+
+#~ msgid "Twitter link"
+#~ msgstr "Link Twitter"
+
+#~ msgid "Enter Twitter ID:"
+#~ msgstr "Introduceţi ID-ul Twitter:"
+
+#~ msgid "Twitter Link Text:"
+#~ msgstr "Twitter Link Text:"
+
+#~ msgid "Secondary Navigation"
+#~ msgstr "Navigare secundară"
+
+#~ msgid "Include Secondary Navigation Menu?"
+#~ msgstr "Includeţi Meniu de navigare secundar?"
+
+#~ msgid ""
+#~ "In order to use the navigation menus, you must build a <a href=\"%s"
+#~ "\">custom menu</a>, then assign it to the proper Menu Location."
+#~ msgstr ""
+#~ "Pentru a putea utiliza meniurile de navigare, trebuie sa creezi un <a "
+#~ "href=\"%s\">custom menu</a>, apoi sa il atribui in locatia corecta din "
+#~ "meniu."
+
+#~ msgid "Enter your custom feed URI:"
+#~ msgstr "Introduceţi feed personalizat URI:"
+
+#~ msgid "Redirect Feed?"
+#~ msgstr "Redirecționați Feed?"
+
+#~ msgid "Enter your custom comments feed URI:"
+#~ msgstr "Enter your custom comments feed URI:"
+
+#~ msgid ""
+#~ "If your custom feed(s) are not handled by Feedburner, we do not recommend "
+#~ "that you use the redirect options."
+#~ msgstr ""
+#~ "Daca feedurile personalizate nu sunt gestionate de Feedburner, nu "
+#~ "recomandam utilizarea optiunilor de redirectionare. "
+
+#~ msgid "Enable Comments"
+#~ msgstr "Activează Comentarii"
+
+#~ msgid "on posts?"
+#~ msgstr "la postări?"
+
+#~ msgid "on pages?"
+#~ msgstr "pe pagini?"
+
+#~ msgid "Enable Trackbacks"
+#~ msgstr "Activează Urmăritori"
+
+#~ msgid ""
+#~ "Comments and Trackbacks can also be disabled on a per post/page basis "
+#~ "when creating/editing posts/pages."
+#~ msgstr ""
+#~ "Comentariile si urmaritorii pot fi dezactivate per post/ pagina cand se "
+#~ "creaza/ editeaza posturile/ paginile. "
+
+#~ msgid "Enable on:"
+#~ msgstr "Activeaza pe:"
+
+#~ msgid "Front Page"
+#~ msgstr "Front page"
+
+#~ msgid "Posts"
+#~ msgstr "Postări"
+
+#~ msgid "Pages"
+#~ msgstr "Pagini"
+
+#~ msgid "Archives"
+#~ msgstr "Arhive"
+
+#~ msgid "404 Page"
+#~ msgstr "Pagina 404"
+
+#~ msgid "Attachment Page"
+#~ msgstr "Atasare pagina"
+
+#~ msgid ""
+#~ "Breadcrumbs are a great way of letting your visitors find out where they "
+#~ "are on your site with just a glance. You can enable/disable them on "
+#~ "certain areas of your site."
+#~ msgstr ""
+#~ "Caile sunt o modalitate excelenta de a informa vizitatorii unde se afla "
+#~ "in site. Le poti activa/ dezactiva pe anumite zone ale siteului. "
+
+#~ msgid "Select one of the following:"
+#~ msgstr "Selectaţi una din următoarele:"
+
+#~ msgid "Display post content"
+#~ msgstr "Afișează conținutul postării"
+
+#~ msgid "Display post excerpts"
+#~ msgstr "Afișează fragmente din postare"
+
+#~ msgid "Limit content to"
+#~ msgstr "Limitează conținutul la"
+
+#~ msgid "characters"
+#~ msgstr "caractere"
+
+#~ msgid ""
+#~ "Using this option will limit the text and strip all formatting from the "
+#~ "text displayed. To use this option, choose \"Display post content\" in "
+#~ "the select box above."
+#~ msgstr ""
+#~ "Folosind aceasta optiuni, vei limita textul si anula formatarile pe "
+#~ "textul afisat. Pentru a utiliza optiunea, alege \"Afiseaza continut "
+#~ "postare\" din lista de deasupra. "
+
+#~ msgid "Include the Featured Image?"
+#~ msgstr "Includeți imaginea recomandată?"
+
+#~ msgid "Image Size:"
+#~ msgstr "Dimensiune imagine:"
+
+#~ msgid "Select Post Navigation Technique:"
+#~ msgstr "Selectați modalitatea de navigare în postare:"
+
+#~ msgid "Older / Newer"
+#~ msgstr "Mai vechi / mai noi"
+
+#~ msgid "Previous / Next"
+#~ msgstr "Anterioară / următoare"
+
+#~ msgid "Numeric"
+#~ msgstr "Numeric"
+
+#~ msgid ""
+#~ "These options will affect any blog listings page, including archive, "
+#~ "author, blog, category, search, and tag pages."
+#~ msgstr ""
+#~ "Aceste optiuni se vor aplica tuturor paginilor de listare, inclusiv "
+#~ "arhive, autor, blog, categorie, cautare si etichete."
+
+#~ msgid "Display which category:"
+#~ msgstr "Afișează ce categorie:"
+
+#~ msgid "All Categories"
+#~ msgstr "Toate categoriile"
+
+#~ msgid "Exclude the following Category IDs:"
+#~ msgstr "Exclude următoarele ID-uri de categorie:"
+
+#~ msgid "Comma separated - 1,2,3 for example"
+#~ msgstr "Separate prin virgulă - de exemplu 1,2,3"
+
+#~ msgid "Number of Posts to Show:"
+#~ msgstr "Numarul de postari afisate:"
+
+#~ msgid "Enter scripts or code you would like output to %s:"
+#~ msgstr "Introdu scriptul sau codul pe care vrei sa il integrezi in %s:"
+
+#~ msgid ""
+#~ "The %1$s hook executes immediately before the closing %2$s tag in the "
+#~ "document source."
+#~ msgstr ""
+#~ "%1$s carligul este executat imediat inaintea inchiderii %2$s etichetei in "
+#~ "documentul sursa."
+
+#~ msgid "User Permissions"
+#~ msgstr "Permisiuni Utilizator."
+
+#~ msgid "Genesis Admin Menus"
+#~ msgstr "Meniuri Admin Genesis"
+
+#~ msgid "Enable Genesis Admin Menu?"
+#~ msgstr "Activează meniul Admin Genesis?"
+
+#~ msgid "Enable SEO Settings Submenu?"
+#~ msgstr "Activează Submeniul Setări SEO?"
+
+#~ msgid "Enable Import/Export Submenu?"
+#~ msgstr "Activează Import / Export Submeniu?"
+
+#~ msgid "Author Archive Settings"
+#~ msgstr "Setari arhiva autor."
+
+#~ msgid "These settings apply to this author's archive pages."
+#~ msgstr "Aceste setări se aplică la arhiva de pagini a acestui autor."
+
+#~ msgid "Custom Archive Headline"
+#~ msgstr "Denumire arhivă personalizată"
+
+#~ msgid "Will display in the %s tag at the top of the first page"
+#~ msgstr "Va afișa eticheta %s în partea de sus a primei pagini"
+
+#~ msgid "Custom Description Text"
+#~ msgstr "Text descriere personalizată"
+
+#~ msgid "This text will be the first paragraph, and display on the first page"
+#~ msgstr "Acest text va fi primul paragraf  şi va fi afișat pe prima pagină"
+
+#~ msgid "Author Box"
+#~ msgstr "Caseta Autor"
+
+#~ msgid "Enable Author Box on this User's Posts?"
+#~ msgstr "Activează Caseta Autor în postările acestui utilizator?"
+
+#~ msgid "Enable Author Box on this User's Archives?"
+#~ msgstr "Activează Caseta Autor în arhivele acest utilizator?"
+
+#~ msgid ""
+#~ "You cannot use %s to create two menus in the same subclass. Please use "
+#~ "separate subclasses for each menu."
+#~ msgstr ""
+#~ "Nu poti utiliza %s pentru a crea doua meniuri in aceeasi subclasa. Te "
+#~ "rugam sa folosesti subclase separate pentru fiecare meniu."
+
+#~ msgid "Are you sure you want to reset?"
+#~ msgstr "Sunteţi sigur că doriţi să resetaţi?"
+
+#~ msgid "Home"
+#~ msgstr "Acasa"
+
+#~ msgid "You are here: "
+#~ msgstr "Sunteţi aici: "
+
+#~ msgid "Archives for "
+#~ msgstr "Arhive pentru "
+
+#~ msgid "Search for "
+#~ msgstr "Caută"
+
+#~ msgid "Not found: "
+#~ msgstr "Nu a fost găsit:"
+
+#~ msgid "View %s"
+#~ msgstr "Vezi %s"
+
+#~ msgid "(Edit)"
+#~ msgstr "(Editează)"
+
+#~ msgid "View archives for %s"
+#~ msgstr "Vezi arhivele pentru %s"
+
+#~ msgid "View archives for %s %s"
+#~ msgstr "Vezi arhivele pentru %s %s"
+
+#~ msgid "View all posts in %s"
+#~ msgstr "Vezi toate postările din %s"
+
+#~ msgid "View all %s"
+#~ msgstr "Vezi toate %s"
+
+#~ msgid "View all items in %s"
+#~ msgstr "Vezi toate elementele din %s"
+
+#~ msgid "This file no longer needs to be included."
+#~ msgstr "Nu este nevoie sa mai incluzi acest document."
+
+#~ msgid "seconds"
+#~ msgstr "Secunde"
+
+#~ msgid "and"
+#~ msgstr "si"
+
+#~ msgid "Content-Sidebar"
+#~ msgstr "Continut-Bara."
+
+#~ msgid "Sidebar-Content"
+#~ msgstr "Bara-Continut. "
+
+#~ msgid "Content-Sidebar-Sidebar"
+#~ msgstr "Continut-Bara-Bara."
+
+#~ msgid "Sidebar-Sidebar-Content"
+#~ msgstr "Bara-Bara-Continut."
+
+#~ msgid "Sidebar-Content-Sidebar"
+#~ msgstr "Bara-Continut-Bara."
+
+#~ msgid "Full Width Content"
+#~ msgstr "Lățime maximă de conținut"
+
+#~ msgid "No Label Selected"
+#~ msgstr "Nu au fost selectate etichete"
+
+#~ msgid ""
+#~ "The argument, \"context\", has been replaced with \"theme_location\" in "
+#~ "the $args array."
+#~ msgstr ""
+#~ "Argumentul \"context\" a fost inlocuit cu \"theme_location\" in sirul "
+#~ "$args."
+
+#~ msgid ""
+#~ "Have you tried our Scribe SEO software? Do keyword research, content "
+#~ "optimization, and link building without leaving WordPress. <b>Genesis "
+#~ "owners save over 50&#37; using the promo code FIRST when you sign up</b>. "
+#~ "<a href=\"%s\" target=\"_blank\">Click here for more info</a>."
+#~ msgstr ""
+#~ "Ai incercat softul nostru Scribe SEO? Cauta cuvinte cheie, optimizeaza "
+#~ "continutul si fa link building fara sa iesi din Wordpress. <b> Clientii "
+#~ "Genesis pot economisi pana la 50&#37; utilizand codul promo FIRST la "
+#~ "inregistrare</b>. <a href=\"%s\" target=\"_blank\">Click pentru mai multe "
+#~ "detalii</a>."
+
+#~ msgid "Dismiss"
+#~ msgstr "Renunta"
+
+#~ msgid "Congratulations! You are now rocking Genesis %s"
+#~ msgstr "Felicitări! Aveți la degetul mic Genesis %s"
+
+#~ msgid "Click here to complete the upgrade"
+#~ msgstr "Click aici pentru a finaliza actualizarea"
+
+#~ msgid ""
+#~ "Genesis %s is available. <a href=\"%s\" class=\"thickbox thickbox-preview"
+#~ "\">Check out what's new</a> or <a href=\"%s\" onclick=\"return "
+#~ "genesis_confirm('%s');\">update now</a>."
+#~ msgstr ""
+#~ "Genesis %s este disponibil. <a href=\"%s\" class=\"thickbox thickbox-"
+#~ "preview\"> Vezi noutățile </a> or <a href=\"%s\" onclick=\"return "
+#~ "genesis_confirm('%s');\"> actualizează acum </a>."
+
+#~ msgid ""
+#~ "Upgrading Genesis will overwrite the current installed version of "
+#~ "Genesis. Are you sure you want to upgrade?. \"Cancel\" to stop, \"OK\" to "
+#~ "upgrade."
+#~ msgstr ""
+#~ "Actualizarea Genesis va înlocui setările actuale ale Genesis. Eşti sigur "
+#~ "că dorești să faci această actualizare?  Apasă \"Cancel\" pentru a opri, "
+#~ "\"OK\" pentru a actualiza."
+
+#~ msgid "Genesis %s is available for %s"
+#~ msgstr "Genesis %s este disponibil pentru %s"
+
+#~ msgid ""
+#~ "Genesis %s is now available. We have provided 1-click updates for this "
+#~ "theme, so please log into your dashboard and update at your earliest "
+#~ "convenience."
+#~ msgstr ""
+#~ "Genesis %s este acum disponibil. Am furnizat actualizări rapide pentru "
+#~ "această temă, vă rugăm să vă conectați și să realizați actualizarea cât "
+#~ "mai curând posibil."
+
+#~ msgid "Header Left"
+#~ msgstr "Antet stanga"
+
+#~ msgid "Header Right"
+#~ msgstr "Antet dreapta"
+
+#~ msgid "This is the widget area in the header."
+#~ msgstr "Aceasta este zona widget din antet."
+
+#~ msgid "Primary Sidebar"
+#~ msgstr "Bara principală"
+
+#~ msgid ""
+#~ "This is the primary sidebar if you are using a two or three column site "
+#~ "layout option."
+#~ msgstr ""
+#~ "Aceasta este bara principala daca utilizezi layoutul cu doua sau trei "
+#~ "coloane."
+
+#~ msgid "Secondary Sidebar"
+#~ msgstr "Bara secundară"
+
+#~ msgid ""
+#~ "This is the secondary sidebar if you are using a three column site layout "
+#~ "option."
+#~ msgstr ""
+#~ "Aceasta este bara secundara in cazul in care utilizezi layoutul cu trei "
+#~ "coloane."
+
+#~ msgid "Footer %d"
+#~ msgstr "Subsol %d"
+
+#~ msgid "Footer %d widget area."
+#~ msgstr "Zona widget in Footer %d."
+
+#~ msgid "Select / Deselect All"
+#~ msgstr "Selectează / Deselectează Toate"
+
+#~ msgid "Return to top of page"
+#~ msgstr "Revenire la partea de sus a paginii"
+
+#~ msgid "by "
+#~ msgstr "de"
+
+#~ msgid "Log in"
+#~ msgstr "Autentificare"
+
+#~ msgid "Log out"
+#~ msgstr "Ieșire din cont"
+
+#~ msgid "ago"
+#~ msgstr "în urmă"
+
+#~ msgid "Visit %s&#8217;s website"
+#~ msgstr "Vizitaţi site-ul %s&#8217;"
+
+#~ msgid "% Comments"
+#~ msgstr "% Comentarii"
+
+#~ msgid "1 Comment"
+#~ msgstr "1 Comentariu"
+
+#~ msgid "Leave a Comment"
+#~ msgstr "Lăsaţi un comentariu"
+
+#~ msgid "Tagged With: "
+#~ msgstr "Etichetate cu:"
+
+#~ msgid "Filed Under: "
+#~ msgstr "Arhivate la:"
+
+#~ msgid "<h3>Comments</h3>"
+#~ msgstr "<h3> Comentarii  </h3>"
+
+#~ msgid "<h3>Trackbacks</h3>"
+#~ msgstr " <h3> Urmăritori </h3>"
+
+#~ msgid "<cite class=\"fn\">%s</cite> <span class=\"says\">%s:</span>"
+#~ msgstr "<cite class=\"fn\">%s </cite> <span class=\"says\">%s:</span>"
+
+#~ msgid "says"
+#~ msgstr "spune"
+
+#~ msgid "%1$s at %2$s"
+#~ msgstr "%1$s la %2$s"
+
+#~ msgid "Edit"
+#~ msgstr "Editare"
+
+#~ msgid "Your comment is awaiting moderation."
+#~ msgstr "Comentariul dvs. așteaptă validarea moderatorului."
+
+#~ msgid "Name"
+#~ msgstr "Nume"
+
+#~ msgid "Email"
+#~ msgstr "E-mail"
+
+#~ msgid "Website"
+#~ msgstr "Website"
+
+#~ msgid "Speak Your Mind"
+#~ msgstr "Spune-ți părerea"
+
+#~ msgid "Copyright"
+#~ msgstr "Drepturi de autor"
+
+#~ msgid "on"
+#~ msgstr "pe"
+
+#~ msgid "Read more&hellip;"
+#~ msgstr "Citește mai mult &hellip;"
+
+#~ msgid "You are using invalid arguments with the %s function."
+#~ msgstr "Folosiți argumente invalide cu funcția %s."
+
+#~ msgid "Comments"
+#~ msgstr "Comentarii"
+
+#~ msgid "[Read more...]"
+#~ msgstr "[Citeşte mai mult ...]"
+
+#~ msgid "Sorry, no posts matched your criteria."
+#~ msgstr "Ne pare rău, nu există postări pentru această căutare."
+
+#~ msgid "By"
+#~ msgstr "De"
+
+#~ msgid "About"
+#~ msgstr "Despre"
+
+#~ msgid "Older Posts"
+#~ msgstr "Postări mai vechi"
+
+#~ msgid "Newer Posts"
+#~ msgstr "Postări mai noi"
+
+#~ msgid "Previous Page"
+#~ msgstr "Pagina anterioară"
+
+#~ msgid "Next Page"
+#~ msgstr "Pagina următoare"
+
+#~ msgid "Search this website %s"
+#~ msgstr "Caută în site %s"
+
+#~ msgid "Search"
+#~ msgstr "Căutare"
+
+#~ msgid "Primary Sidebar Widget Area"
+#~ msgstr "Bara principală de Widgeturi"
+
+#~ msgid ""
+#~ "This is the Primary Sidebar Widget Area. You can add content to this area "
+#~ "by visiting your <a href=\"%s\">Widgets Panel</a> and adding new widgets "
+#~ "to this area."
+#~ msgstr ""
+#~ "Aceasta este coloana laterala principala pentru widget-uri. Puteţi adăuga "
+#~ "conţinut în această zonă vizitând <a href=\"%s\"> Widgets Panel </a> şi "
+#~ "adăugând noi widget-uri."
+
+#~ msgid "Secondary Sidebar Widget Area"
+#~ msgstr "Secondary Sidebar Widget Area"
+
+#~ msgid ""
+#~ "This is the Secondary Sidebar Widget Area. You can add content to this "
+#~ "area by visiting your <a href=\"%s\">Widgets Panel</a> and adding new "
+#~ "widgets to this area."
+#~ msgstr ""
+#~ "Aceasta este coloana laterala secundara pentru widget-uri. Puteţi adăuga "
+#~ "conţinut în această zonă vizitând <a href=\"%s\"> Widgets Panel </a> şi "
+#~ "adăugând noi widget-uri. "
+
+#~ msgid "Single Post Template"
+#~ msgstr "Șablon postare unică"
+
+#~ msgid "Post Template"
+#~ msgstr "Șablon postare"
+
+#~ msgid ""
+#~ "Some themes have custom templates you can use for single posts that might "
+#~ "have additional features or custom layouts. If so, you will see them "
+#~ "above."
+#~ msgstr ""
+#~ "Unele teme au șabloane personalizate pe care le puteţi folosi pentru "
+#~ "postările unice care ar putea avea caracteristici suplimentare sau "
+#~ "machete personalizate. Dacă doriți, le veți vedea mai sus."
+
+#~ msgid "Displays featured page with thumbnails"
+#~ msgstr "Afişează miniatura imagine pentru pagina speciala"
+
+#~ msgid "Genesis - Featured Page"
+#~ msgstr "Genesis - Pagină recomandată"
+
+#~ msgid "by"
+#~ msgstr "de"
+
+#~ msgid "Page"
+#~ msgstr "Pagină"
+
+#~ msgid "Show Featured Image"
+#~ msgstr "Arată imaginea recomandată"
+
+#~ msgid "Image Size"
+#~ msgstr "Dimensiune imagine"
+
+#~ msgid "Image Alignment"
+#~ msgstr "Aliniere imagine"
+
+#~ msgid "None"
+#~ msgstr "Niciunul"
+
+#~ msgid "Show Page Title"
+#~ msgstr "Afișează titlul paginii"
+
+#~ msgid "Show Page Byline"
+#~ msgstr "Afișează numele paginii"
+
+#~ msgid "Show Page Content"
+#~ msgstr "Afișează conținutul paginii"
+
+#~ msgid "Content Character Limit"
+#~ msgstr "Limită caractere conținut"
+
+#~ msgid "More Text"
+#~ msgstr "Mai mult text"
+
+#~ msgid "[Read More...]"
+#~ msgstr "[Citește mai mult ...]"
+
+#~ msgid "More Posts from this Category"
+#~ msgstr "Mai multe postări din această categorie"
+
+#~ msgid "Displays featured posts with thumbnails"
+#~ msgstr "Afișează miniatură imagine pentru postările speciale"
+
+#~ msgid "Genesis - Featured Posts"
+#~ msgstr "Genesis - Postări recomandate"
+
+#~ msgid "Category"
+#~ msgstr "Categorie"
+
+#~ msgid "Number of Posts to Show"
+#~ msgstr "Numărul de postări afișate"
+
+#~ msgid "Number of Posts to Offset"
+#~ msgstr "Numărul de postări la offset"
+
+#~ msgid "Order By"
+#~ msgstr "Ordonează după"
+
+#~ msgid "Date"
+#~ msgstr "Dată"
+
+#~ msgid "Parent"
+#~ msgstr "Parent"
+
+#~ msgid "ID"
+#~ msgstr "ID"
+
+#~ msgid "Comment Count"
+#~ msgstr "Total comentarii"
+
+#~ msgid "Random"
+#~ msgstr "La întâmplare"
+
+#~ msgid "Sort Order"
+#~ msgstr "Ordine de sortare"
+
+#~ msgid "Descending (3, 2, 1)"
+#~ msgstr "Descrescătoare (3, 2, 1)"
+
+#~ msgid "Ascending (1, 2, 3)"
+#~ msgstr "Crescătoare (1, 2, 3)"
+
+#~ msgid "Show Author Gravatar"
+#~ msgstr "Afișează Gravatar-ul autorului"
+
+#~ msgid "Gravatar Size"
+#~ msgstr "Dimensiune Gravatar"
+
+#~ msgid "Small (45px)"
+#~ msgstr "Mic (45pixeli)"
+
+#~ msgid "Medium (65px)"
+#~ msgstr "Mediu (65pixeli)"
+
+#~ msgid "Large (85px)"
+#~ msgstr "Mare (85pixeli)"
+
+#~ msgid "Extra Large (125px)"
+#~ msgstr "Foarte mare (125pixeli)"
+
+#~ msgid "Gravatar Alignment"
+#~ msgstr "Aliniere Gravatar "
+
+#~ msgid "Show Post Title"
+#~ msgstr "Afișează titlu postare "
+
+#~ msgid "Show Post Info"
+#~ msgstr "Arată Info postare"
+
+#~ msgid "Content Type"
+#~ msgstr "Tip conţinut"
+
+#~ msgid "Show Content"
+#~ msgstr "Arată conținut"
+
+#~ msgid "Show Excerpt"
+#~ msgstr "Arată fragment"
+
+#~ msgid "Show Content Limit"
+#~ msgstr "Arată limita de conținut"
+
+#~ msgid "No Content"
+#~ msgstr "Niciun conţinut"
+
+#~ msgid "More Text (if applicable)"
+#~ msgstr "Mai mult text (dacă este cazul)"
+
+#~ msgid ""
+#~ "To display an unordered list of more posts from this category, please "
+#~ "fill out the information below"
+#~ msgstr ""
+#~ "Pentru a afişa o listă neordonată cu mai multe postări din această "
+#~ "categorie, vă rugăm să completaţi informaţiile de mai jos"
+
+#~ msgid "Show Category Archive Link"
+#~ msgstr "Arată linkul către arhiva de categorie"
+
+#~ msgid "Link Text"
+#~ msgstr "Text Link"
+
+#~ msgid "Display a list of your latest tweets."
+#~ msgstr "Afiseaza o lista cu cele mai recente tweets. "
+
+#~ msgid "Genesis - Latest Tweets"
+#~ msgstr "Genesis - Ultimele Tweets"
+
+#~ msgid ""
+#~ "The Twitter API is taking too long to respond. Please try again later."
+#~ msgstr ""
+#~ "API-ul Twitter se încarcă foarte greu. Vă rugăm să încercaţi din nou mai "
+#~ "târziu."
+
+#~ msgid ""
+#~ "There was an error while attempting to contact the Twitter API. Please "
+#~ "try again."
+#~ msgstr ""
+#~ "A apărut o eroare în timp ce încercam conectarea cu API Twitter. Vă rugăm "
+#~ "să încercaţi din nou."
+
+#~ msgid ""
+#~ "The Twitter API returned an error while processing your request. Please "
+#~ "try again."
+#~ msgstr ""
+#~ "API-ul Twitter a returnat o eroare în timpul procesării cererii "
+#~ "dumneavoastră. Vă rugăm să încercaţi din nou."
+
+#~ msgid "about %s ago"
+#~ msgstr "aproximativ %s în urmă"
+
+#~ msgid "Twitter Username"
+#~ msgstr "Nume de utilizator Twitter"
+
+#~ msgid "Number of Tweets to Show"
+#~ msgstr "Numărul de Tweets afișate"
+
+#~ msgid "Hide @ Replies"
+#~ msgstr "Ascunde @ Raspunsuri"
+
+#~ msgid "Load new Tweets every"
+#~ msgstr "Încărcați Tweets noi la fiecare"
+
+#~ msgid "5 Min."
+#~ msgstr "5 min."
+
+#~ msgid "15 Minutes"
+#~ msgstr "15 min."
+
+#~ msgid "30 Minutes"
+#~ msgstr "30 minute."
+
+#~ msgid "1 Hour"
+#~ msgstr "1 ora."
+
+#~ msgid "2 Hours"
+#~ msgstr "2 ore."
+
+#~ msgid "4 Hours"
+#~ msgstr "4 ore."
+
+#~ msgid "12 Hours"
+#~ msgstr "12 ore"
+
+#~ msgid "24 Hours"
+#~ msgstr "24 ore"
+
+#~ msgid "Include link to twitter page?"
+#~ msgstr "Includeți link către pagina de Twitter?"
+
+#~ msgid "Link Text (required)"
+#~ msgstr "Text Link (necesar)"
+
+#~ msgid ""
+#~ "This widget has been deprecated, and will eventually be removed. DO NOT "
+#~ "use it. You have been warned."
+#~ msgstr ""
+#~ "Acest widget este depasit si va fi suprimat. NU IL UTILIZA. Te-am "
+#~ "avertizat."
+
+#~ msgid "Genesis - Category Menu"
+#~ msgstr "Genesis - Meniu categorie"
+
+#~ msgid ""
+#~ "This widget has been deprecated, and will eventually be removed. We "
+#~ "suggest that you <a href=\"%s\">create a menu</a> and use the \"Custom "
+#~ "Menu\" widget instead."
+#~ msgstr ""
+#~ "Acest widget este depasit si va fi suprimat. Iti sugeram sa <a href=\"%s"
+#~ "\">create a menu</a> si sa utilizezi widgetul Meniu Personalizat."
+
+#~ msgid "Genesis - Page Menu"
+#~ msgstr "Genesis - Meniu Pagina"
+
+#~ msgid "[Read More %s]"
+#~ msgstr "[Citește mai mult %s]"
+
+#~ msgid "Displays user profile block with Gravatar"
+#~ msgstr "Afişează profilul utilizatorului cu Gravatar"
+
+#~ msgid "Genesis - User Profile"
+#~ msgstr "Genesis - Profil utilizator"
+
+#~ msgid "View My Blog Posts"
+#~ msgstr "Arată postările din blogul meu"
+
+#~ msgid ""
+#~ "Select a user. The email address for this account will be used to pull "
+#~ "the Gravatar image."
+#~ msgstr ""
+#~ "Selectaţi un utilizator. Adresa de e-mail pentru acest cont va fi atașată "
+#~ "pentru imaginea Gravatar."
+
+#~ msgid "Small"
+#~ msgstr "Mic"
+
+#~ msgid "Medium"
+#~ msgstr "Mediu"
+
+#~ msgid "Large"
+#~ msgstr "Mare"
+
+#~ msgid "Extra Large"
+#~ msgstr "Foarte mare"
+
+#~ msgid "Select which text you would like to use as the author description"
+#~ msgstr "Selectați textul pe care doriţi să îl utilizaţi ca descrierea autor"
+
+#~ msgid "Author Bio"
+#~ msgstr "Biografie autor"
+
+#~ msgid "Custom Text (below)"
+#~ msgstr "Text personalizat (mai jos)"
+
+#~ msgid "Custom Text Content"
+#~ msgstr "Continut personalizat"
+
+#~ msgid ""
+#~ "Choose your extended \"About Me\" page from the list below. This will be "
+#~ "the page linked to at the end of the about me section."
+#~ msgstr ""
+#~ "Alegeți pagina extinsă \"Despre mine\" din lista de mai jos. Aceasta "
+#~ "pagină va fi inserată la finalul secțiunii \"despre mine\". "
+
+#~ msgid "Extended page link text"
+#~ msgstr "Text pagina extinsa"
+
+#~ msgid "Show Author Archive Link?"
+#~ msgstr "Afișează linkul către arhiva de autor?"

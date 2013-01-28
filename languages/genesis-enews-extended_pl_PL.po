@@ -1,0 +1,1204 @@
+# Translation of Genesis 1.8 in Polish
+# This file is distributed under the same license as the Genesis 1.8 package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Genesis eNews Extended\n"
+"POT-Creation-Date: 2013-01-27 23:07-0600\n"
+"PO-Revision-Date: 2013-01-27 23:07-0600\n"
+"Last-Translator: Brandon Kraft <public@brandonkraft.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2);\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../class-bjgk-genesis-enews-extended.php:50
+msgid "Displays subscribe form"
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:53
+#, fuzzy
+msgid "Genesis - eNews Extended"
+msgstr "Genesis - eNews'y i aktualizacje"
+
+#: ../class-bjgk-genesis-enews-extended.php:138
+msgid "Title"
+msgstr "Tytuł"
+
+#: ../class-bjgk-genesis-enews-extended.php:143
+msgid "Text To Show"
+msgstr "Tekst do pokazania"
+
+#: ../class-bjgk-genesis-enews-extended.php:148
+msgid "Google/Feedburner ID"
+msgstr "Google/Feedburner ID"
+
+#: ../class-bjgk-genesis-enews-extended.php:150
+msgid ""
+"Entering your Feedburner ID here will deactivate the custom options below."
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:154
+#, fuzzy
+msgid "Form Action"
+msgstr "Informacja"
+
+#: ../class-bjgk-genesis-enews-extended.php:159
+msgid "E-Mail Field"
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:164
+msgid "First Name Field"
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:169
+msgid "Last Name Field"
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:174
+msgid "Hidden Fields"
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:176
+msgid "Not all services use hidden fields."
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:181
+msgid "Open confirmation page in same window?"
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:185
+msgid "First Name..."
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:186
+#, fuzzy
+msgid "First Name Input Text"
+msgstr "Wprowadzanie tekstu"
+
+#: ../class-bjgk-genesis-enews-extended.php:190
+msgid "Last Name..."
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:191
+#, fuzzy
+msgid "Last Name Input Text"
+msgstr "Wprowadzanie tekstu"
+
+#: ../class-bjgk-genesis-enews-extended.php:195
+msgid "Enter your email address..."
+msgstr "Wpisz swój adres e-mail ..."
+
+#: ../class-bjgk-genesis-enews-extended.php:196
+#, fuzzy
+msgid "E-Mail Input Text"
+msgstr "Wprowadzanie tekstu"
+
+#: ../class-bjgk-genesis-enews-extended.php:201
+msgid "Go"
+msgstr "Idź"
+
+#: ../class-bjgk-genesis-enews-extended.php:202
+msgid "Button Text"
+msgstr "Tekst przycisku"
+
+#~ msgid "Not Found, Error 404"
+#~ msgstr "Błąd 404. Nie znaleziono."
+
+#~ msgid "Pages:"
+#~ msgstr "Strony:"
+
+#~ msgid "Categories:"
+#~ msgstr "Kategorie:"
+
+#~ msgid "Authors:"
+#~ msgstr "Autorzy:"
+
+#~ msgid "Monthly:"
+#~ msgstr "Miesiące:"
+
+#~ msgid "Recent Posts:"
+#~ msgstr "Ostatnie wiadomości:"
+
+#~ msgid ""
+#~ "This post is password protected. Enter the password to view comments."
+#~ msgstr ""
+#~ "Ten post jest chroniony hasłem. Podaj hasło, aby zobaczyć komentarze."
+
+#~ msgid "Primary Navigation Menu"
+#~ msgstr "Pierwsze menu nawigacji"
+
+#~ msgid "Secondary Navigation Menu"
+#~ msgstr "Drugie menu nawigacyjne"
+
+#~ msgid "Genesis - Import/Export"
+#~ msgstr "Genesis - Import / Eksport"
+
+#~ msgid "Import/Export"
+#~ msgstr "Import/Eksport"
+
+#~ msgid "Import Genesis Settings File"
+#~ msgstr "Importuj pliki ustawień Genesis"
+
+#~ msgid ""
+#~ "Upload the data file (<code>.json</code>) from your computer and we'll "
+#~ "import your settings."
+#~ msgstr ""
+#~ "Prześlij plik danych (<code>.json</code>) z komputera, a my zaimportujemy "
+#~ "Twoje ustawienia."
+
+#~ msgid ""
+#~ "Choose the file from your computer and click \"Upload file and Import\""
+#~ msgstr ""
+#~ "Wybierz plik z komputera i kliknij przycisk \"Prześlij plik i Import\""
+
+#~ msgid "Upload File: (Maximum Size: %s)"
+#~ msgstr "Prześlij plik: (Maksymalny rozmiar: %s)"
+
+#~ msgid "Upload File and Import"
+#~ msgstr "Prześlij plik i importuj"
+
+#~ msgid "Export Genesis Settings File"
+#~ msgstr "Eksport plików ustawień Genesis"
+
+#~ msgid ""
+#~ "When you click the button below, Genesis will generate a data file "
+#~ "(<code>.json</code>) for you to save to your computer."
+#~ msgstr ""
+#~ "Po kliknięciu na poniższy przycisk, Genesis wygeneruje plik danych "
+#~ "(<code>.json</code>), aby zapisać na go komputerze."
+
+#~ msgid ""
+#~ "Once you have saved the download file, you can use the import function on "
+#~ "another site to import this data."
+#~ msgstr ""
+#~ "Po zapisaniu pliku, możesz użyć funkcji importu w celu przywrócenia "
+#~ "ustawień."
+
+#~ msgid "Download Export File"
+#~ msgstr "Pobierz plik eksportu"
+
+#~ msgid "Settings successfully imported."
+#~ msgstr "Ustawienia zostały pomyślnie zaimportowane."
+
+#~ msgid "There was a problem importing your settings. Please try again."
+#~ msgstr ""
+#~ "Wystąpił problem podczas importowania ustawień. Prosimy spróbować "
+#~ "ponownie."
+
+#~ msgid "Theme Settings"
+#~ msgstr "Ustawienia motywu"
+
+#~ msgid "SEO Settings"
+#~ msgstr "Ustawienia SEO"
+
+#~ msgid "No export options available."
+#~ msgstr "Brak dostępnych opcji eksportu."
+
+#~ msgid "Custom Document Title"
+#~ msgstr "Własny tytuł dokumentu"
+
+#~ msgid "Characters Used: %s"
+#~ msgstr "Użyte znaki: %s"
+
+#~ msgid "Custom Post/Page Meta Description"
+#~ msgstr "Własny opis Meta postu / strony"
+
+#~ msgid "Custom Post/Page Meta Keywords, comma separated"
+#~ msgstr "Własne słowa kluczowe postu / strony (oddzielone przecinkiem)"
+
+#~ msgid "Custom Canonical URI"
+#~ msgstr "Własny kanoniczny URI"
+
+#~ msgid "Custom Redirect URI"
+#~ msgstr "Własne przekierowanie URI"
+
+#~ msgid "Robots Meta Settings"
+#~ msgstr "Ustawienia Robotów"
+
+#~ msgid "Apply %s to this post/page"
+#~ msgstr "Zastosuj %s do tego postu / strony"
+
+#~ msgid "Custom Tracking/Conversion Code"
+#~ msgstr "Własne kod śledzenia/konwersji"
+
+#~ msgid "Default Layout set in <a href=\"%s\">Theme Settings</a>"
+#~ msgstr "Domyślny szablon ustaw w <a href=\"%s\">ustawieniach motywu</a>"
+
+#~ msgid "Custom Body Class"
+#~ msgstr "Własna klasa Body"
+
+#~ msgid "Custom Post Class"
+#~ msgstr "Własna klasa postu"
+
+#~ msgid "README"
+#~ msgstr "README"
+
+#~ msgid "Genesis - SEO Settings"
+#~ msgstr "Genesis - ustawienia SEO"
+
+#~ msgid "Save Settings"
+#~ msgstr "Zapisz ustawienia"
+
+#~ msgid "Reset Settings"
+#~ msgstr "Resetuj ustawienia"
+
+#~ msgid "Settings saved."
+#~ msgstr "Ustawienia zapisane."
+
+#~ msgid "Settings reset."
+#~ msgstr "Reset ustawień."
+
+#~ msgid "Doctitle Settings"
+#~ msgstr "Ustawienia Doctitle"
+
+#~ msgid "Homepage Settings"
+#~ msgstr "Ustawienia strony głównej"
+
+#~ msgid "Document Head Settings"
+#~ msgstr "Ustawienia nagłówka dokumentu"
+
+#~ msgid "Archives Settings"
+#~ msgstr "Ustawienia archiwum"
+
+#~ msgid ""
+#~ "The Document Title is the single most important SEO tag in your document "
+#~ "source. It succinctly informs search engines of what information is "
+#~ "contained in the document. The doctitle changes from page to page, but "
+#~ "these options will help you control what it looks by default."
+#~ msgstr ""
+#~ "Tytuł dokumentu jest jednym z najważniejszych tagów SEO w źródle "
+#~ "dokumentu. To on zwięźle informuje wyszukiwarki, jakie informacje są "
+#~ "zawarte w dokumencie. Tytuł dokumentu zmienia się automatycznie, ale te "
+#~ "opcje pozwala ustawić go ręcznie."
+
+#~ msgid ""
+#~ "<b>By default</b>, the homepage doctitle will contain the site title, the "
+#~ "single post and page doctitle will contain the post/page title, archive "
+#~ "pages will contain the archive type, etc."
+#~ msgstr ""
+#~ "<b> Domyślnie</b>, tytuł dokumentu stronie będzie zawierać tytuł strony i "
+#~ "strona będzie zawierać tytuł postu/strony, strony archiwum będzie "
+#~ "zawierać typ archiwum itp."
+
+#~ msgid "Append Site Description to Doctitle on homepage?"
+#~ msgstr "Dołączyć opis strony do tytułu na stronie głównej?"
+
+#~ msgid "Append Site Name to Doctitle on inner pages?"
+#~ msgstr "Dołączyć nazwę witryny do Doctitle na wewnętrzne strony?"
+
+#~ msgid "Left"
+#~ msgstr "Lewo"
+
+#~ msgid "Right"
+#~ msgstr "Prawo"
+
+#~ msgid ""
+#~ "If the doctitle consists of two parts (Title &amp; Appended Text), then "
+#~ "the Doctitle Separator will go between them."
+#~ msgstr ""
+#~ "Jeśli doctitle składa się z dwóch części (tytuł i dołączanego tekstu), "
+#~ "wtedy separator Doctitle będzie między nimi."
+
+#~ msgid "Which text would you like to be wrapped in %s tags?"
+#~ msgstr "Który tekst chcesz wstawić w tagi %s ?"
+
+#~ msgid ""
+#~ "The %s tag is, arguably, the second most important SEO tag in the "
+#~ "document source. Choose wisely."
+#~ msgstr ""
+#~ "Tag %s jest prawdopodobnie drugim najważniejszym tagiem SEO w źródle "
+#~ "dokumentu. Wybierz mądrze."
+
+#~ msgid "Site Title"
+#~ msgstr "Tytuł strony"
+
+#~ msgid "Site Description"
+#~ msgstr "Opis strony"
+
+#~ msgid ""
+#~ "If you leave the doctitle field blank, your site&rsquo;s title will be "
+#~ "used instead."
+#~ msgstr ""
+#~ "Jeśli zostawisz to pole puste,  zostanie użyty tytuł Twojej witryny."
+
+#~ msgid ""
+#~ "The META Description can be used to determine the text used under the "
+#~ "title on search engine results pages."
+#~ msgstr ""
+#~ "Opis META może być stosowany do określenia tekstu pod tytułem w wynikach "
+#~ "wyszukiwania stron."
+
+#~ msgid "Keywords are generally ignored by Search Engines."
+#~ msgstr "Słowa kluczowe są zazwyczaj ignorowane przez wyszukiwarki."
+
+#~ msgid "Homepage Robots Meta Tags:"
+#~ msgstr "Tagi Meta Robots Strona głównej:"
+
+#~ msgid "Apply %s to the homepage?"
+#~ msgstr "Zastosować %s do strony głównej?"
+
+#~ msgid ""
+#~ "By default, WordPress places several tags in your document %1$s. Most of "
+#~ "these tags are completely unnecessary, and provide no SEO value "
+#~ "whatsoever. They just make your site slower to load. Choose which tags "
+#~ "you would like included in your document %1$s. If you do not know what "
+#~ "something is, leave it unchecked."
+#~ msgstr ""
+#~ "Domyślnie WordPress umieszcza kilka znaczników w dokumencie %1$s. "
+#~ "Większość z tych tagów jest zupełnie niepotrzebna, nie ma żadnej wartości "
+#~ "dla SEO. Jedynie, Twoja strona wolnej się ładuje. Wybierz które tagi "
+#~ "chcesz dołączyć do dokumentu %1$s. Jeśli nie wiesz, pozostaw to pole "
+#~ "puste."
+
+#~ msgid "Relationship Link Tags:"
+#~ msgstr "Związki linku tagów:"
+
+#~ msgid "Windows Live Writer Support:"
+#~ msgstr "Obsługa systemu Windows Live:"
+
+#~ msgid "Include Windows Live Writer Support Tag?"
+#~ msgstr "Dołączyć Windows Live Writer Support Tag?"
+
+#~ msgid "Shortlink Tag:"
+#~ msgstr "Tag dla skróconego odnośnika:"
+
+#~ msgid "Include Shortlink tag?"
+#~ msgstr "Załączyć tag skróconego odnośnika?"
+
+#~ msgid ""
+#~ "The shortlink tag might have some use for 3rd party service "
+#~ "discoverability, but it has no SEO value whatsoever."
+#~ msgstr ""
+#~ "Tag skróconego odnośnika może mieć pewne zastosowanie dla trzeciej części "
+#~ "usługi, ale nie ma żadnych wartości SEO."
+
+#~ msgid "Apply %s to Category Archives?"
+#~ msgstr "Zastosować %s dla archiwum kategorii?"
+
+#~ msgid "Apply %s to Tag Archives?"
+#~ msgstr "Zastosować %s dla archiwum tagów?"
+
+#~ msgid "Apply %s to Author Archives?"
+#~ msgstr "Zastosować %s dla archiwum autorów?"
+
+#~ msgid "Apply %s to Date Archives?"
+#~ msgstr "Zastosować %s dla archiwum dat?"
+
+#~ msgid "Apply %s to Search Archives?"
+#~ msgstr "Zastosować %s dla archiwum wyszukiwania?"
+
+#~ msgid ""
+#~ "Some search engines will cache pages in your site (e.g Google Cache). The "
+#~ "%1$s tag will prevent them from doing so. Choose what archives you want "
+#~ "to %1$s."
+#~ msgstr ""
+#~ "Niektóre wyszukiwarki cache'ują strony (np. Google Cache). %1$s tag "
+#~ "będzie temu zapobiegał. Wybierz jakie archiwa chcesz dla %1$s."
+
+#~ msgid "Apply %s to Entire Site?"
+#~ msgstr "Zastosować %s dla całej strony?"
+
+#~ msgid "Apply %s to your site?"
+#~ msgstr "Zastosować %s dla Twojej strony?"
+
+#~ msgid "Custom Document %s"
+#~ msgstr "Własny dokument %s"
+
+#~ msgid "%s Description"
+#~ msgstr "%s opis"
+
+#~ msgid "%s Keywords"
+#~ msgstr "%s słowa kluczowe"
+
+#~ msgid "Comma separated list"
+#~ msgstr "Lista oddzielona przecinkami"
+
+#~ msgid "Robots Meta"
+#~ msgstr "Meta robotów"
+
+#~ msgid "Apply %s to this archive?"
+#~ msgstr "Zastosować %s da tego archiwum?"
+
+#~ msgid "Choose Layout"
+#~ msgstr "Wybierz motyw"
+
+#~ msgid "Custom Feeds"
+#~ msgstr "Własne kanały"
+
+#~ msgid "Default Layout"
+#~ msgstr "Domyślny styl"
+
+#~ msgid "Header Settings"
+#~ msgstr "Ustawienia nagłówka"
+
+#~ msgid "Navigation Settings"
+#~ msgstr "Ustawienia nawigacji"
+
+#~ msgid "Breadcrumbs"
+#~ msgstr "Breadcrumb"
+
+#~ msgid "Comments and Trackbacks"
+#~ msgstr "Komentarze i Trackback'i"
+
+#~ msgid "Content Archives"
+#~ msgstr "Archiwum treści"
+
+#~ msgid "Blog Page"
+#~ msgstr "Strona blogu"
+
+#~ msgid "Header and Footer Scripts"
+#~ msgstr "Skrypty w nagłówku i stopce"
+
+#~ msgid "Version:"
+#~ msgstr "Wersja:"
+
+#~ msgid "Released:"
+#~ msgstr "Wydany:"
+
+#~ msgid "Display Theme Information in your document source"
+#~ msgstr "Informacje motywu wyświetlane w źródle dokumentu"
+
+#~ msgid ""
+#~ "This can be helpful for diagnosing problems with your theme when seeking "
+#~ "assistance in the <a href=\"%s\" target=\"_blank\">support forums</a>."
+#~ msgstr ""
+#~ "To może być pomocne podczas diagnozowania problemów z Twoją skórką - <a "
+#~ "href=\"%s\" target=\"_blank\">forum dyskusyjne</a>."
+
+#~ msgid "Enable Automatic Updates"
+#~ msgstr "Włączenie aktualizacji automatycznych"
+
+#~ msgid "Notify"
+#~ msgstr "Informuj"
+
+#~ msgid "when updates are available"
+#~ msgstr "kiedy aktualizacje są dostępne"
+
+#~ msgid ""
+#~ "If you provide an email address above, your blog can email you when a new "
+#~ "version of Genesis is available."
+#~ msgstr ""
+#~ "Jeśli podasz swój adres e-mail powyżej, blog poinformuje Cię o nowej "
+#~ "wersji Genesis."
+
+#~ msgid "Default"
+#~ msgstr "Domyślnie"
+
+#~ msgid "Use for blog title/logo:"
+#~ msgstr "Użyj na blogu w tytule/logo:"
+
+#~ msgid "Dynamic text"
+#~ msgstr "Tekst dynamiczny"
+
+#~ msgid "Image logo"
+#~ msgstr "Obraz logo"
+
+#~ msgid "Primary Navigation"
+#~ msgstr "Podstawowa nawigacja"
+
+#~ msgid "Include Primary Navigation Menu?"
+#~ msgstr "Dołączyć menu podstawowej nawigacji?"
+
+#~ msgid "Enable Fancy Dropdowns?"
+#~ msgstr "Włączyć listę rozwijaną?"
+
+#~ msgid "Enable Extras on Right Side?"
+#~ msgstr "Włączyć dodatki z prawej strony?"
+
+#~ msgid "Display the following:"
+#~ msgstr "Wyświetla następujące:"
+
+#~ msgid "Today's date"
+#~ msgstr "Dzisiejsza data"
+
+#~ msgid "RSS feed links"
+#~ msgstr "Link kanału RSS"
+
+#~ msgid "Search form"
+#~ msgstr "Formularz wyszukiwania"
+
+#~ msgid "Twitter link"
+#~ msgstr "Link Twitter"
+
+#~ msgid "Enter Twitter ID:"
+#~ msgstr "Wpisz Twitter ID:"
+
+#~ msgid "Twitter Link Text:"
+#~ msgstr "Link Text Twitter:"
+
+#~ msgid "Secondary Navigation"
+#~ msgstr "Drugorzędna nawigacja"
+
+#~ msgid "Include Secondary Navigation Menu?"
+#~ msgstr "Dołączyć menu drugorzędnej nawigacji?"
+
+#~ msgid ""
+#~ "In order to use the navigation menus, you must build a <a href=\"%s"
+#~ "\">custom menu</a>, then assign it to the proper Menu Location."
+#~ msgstr ""
+#~ "W celu korzystania z menu nawigacji, trzeba zbudować <a href=\"%s"
+#~ "\">niestandardowe menu </a>, a następnie przypisać go do odpowiedniej "
+#~ "lokalizacji Menu."
+
+#~ msgid "Enter your custom feed URI:"
+#~ msgstr "Wprowadź niestandardowy adres URI:"
+
+#~ msgid "Redirect Feed?"
+#~ msgstr "Przekierowanie RSS?"
+
+#~ msgid "Enter your custom comments feed URI:"
+#~ msgstr "Wpisz niestandardowe kanały komentarzy URI:"
+
+#~ msgid ""
+#~ "If your custom feed(s) are not handled by Feedburner, we do not recommend "
+#~ "that you use the redirect options."
+#~ msgstr ""
+#~ "Jeśli niestandardowe kanały(y) nie są obsługiwane przez Feedburner, nie "
+#~ "zaleca się korzystania z opcji przekierowania."
+
+#~ msgid "Enable Comments"
+#~ msgstr "Włącz komentarze"
+
+#~ msgid "on posts?"
+#~ msgstr "w postach?"
+
+#~ msgid "on pages?"
+#~ msgstr "na stronach?"
+
+#~ msgid "Enable Trackbacks"
+#~ msgstr "Włącz Trackbacks"
+
+#~ msgid ""
+#~ "Comments and Trackbacks can also be disabled on a per post/page basis "
+#~ "when creating/editing posts/pages."
+#~ msgstr ""
+#~ "Komentarze i Trackback'i może być wyłączona na poście/stronie podstawę do "
+#~ "tworzenia/edytowania postów/stron."
+
+#~ msgid "Enable on:"
+#~ msgstr "Włącz:"
+
+#~ msgid "Front Page"
+#~ msgstr "Front Page"
+
+#~ msgid "Posts"
+#~ msgstr "Wiadomości"
+
+#~ msgid "Pages"
+#~ msgstr "Strony"
+
+#~ msgid "Archives"
+#~ msgstr "Archiwum"
+
+#~ msgid "404 Page"
+#~ msgstr "Strona 404"
+
+#~ msgid ""
+#~ "Breadcrumbs are a great way of letting your visitors find out where they "
+#~ "are on your site with just a glance. You can enable/disable them on "
+#~ "certain areas of your site."
+#~ msgstr ""
+#~ "Breadcrumb to świetny sposób, z pozwoleniem odwiedzających dowiedzieć "
+#~ "się, gdzie znajdują się na Twoje stronie, wystarczy rzut oka. Można "
+#~ "włączyć/wyłączyć je na pewnych obszarach witryny."
+
+#~ msgid "Select one of the following:"
+#~ msgstr "Wybierz jedną z następujących czynności:"
+
+#~ msgid "Display post content"
+#~ msgstr "Wyświetlanie treści postu"
+
+#~ msgid "Display post excerpts"
+#~ msgstr "Wyświetl fragmenty postu"
+
+#~ msgid "Limit content to"
+#~ msgstr "Limit zawartości"
+
+#~ msgid "characters"
+#~ msgstr "znaków"
+
+#~ msgid ""
+#~ "Using this option will limit the text and strip all formatting from the "
+#~ "text displayed. To use this option, choose \"Display post content\" in "
+#~ "the select box above."
+#~ msgstr ""
+#~ "Użycie tej opcji spowoduje ograniczenie tekstu i jego formatowanie. Aby "
+#~ "skorzystać z tej opcji, wybierz \"pokaż treści postu\" w oknie powyżej."
+
+#~ msgid "Include the Featured Image?"
+#~ msgstr "Dołączyć polecany obraz?"
+
+#~ msgid "Select Post Navigation Technique:"
+#~ msgstr "Wybierz technikę nawigacji w wiadomościach"
+
+#~ msgid "Older / Newer"
+#~ msgstr "Starsze / Nowsze"
+
+#~ msgid "Previous / Next"
+#~ msgstr "Poprzedni / Następny"
+
+#~ msgid "Numeric"
+#~ msgstr "Numeryczne"
+
+#~ msgid ""
+#~ "These options will affect any blog listings page, including archive, "
+#~ "author, blog, category, search, and tag pages."
+#~ msgstr ""
+#~ "Opcje te wpłyną na dowolnej stronie blogu, jak i w tym archiwum, autora, "
+#~ "blogu, kategorii, wyszukiwania i tagów."
+
+#~ msgid "Display which category:"
+#~ msgstr "Wyświetl z kategoriami:"
+
+#~ msgid "All Categories"
+#~ msgstr "Wszystkie kategorie"
+
+#~ msgid "Exclude the following Category IDs:"
+#~ msgstr "Wyklucz następujące ID kategorii"
+
+#~ msgid "Comma separated - 1,2,3 for example"
+#~ msgstr "oddzielone przecinkiem, na przykład 1,2,3"
+
+#~ msgid "Genesis Admin Menus"
+#~ msgstr "Genesis - Menu administratora"
+
+#~ msgid "Enable Genesis Admin Menu?"
+#~ msgstr "Włączyć menu administratora Genesis?"
+
+#~ msgid "Enable SEO Settings Submenu?"
+#~ msgstr "Włączyć menu ustawień SEO?"
+
+#~ msgid "Enable Import/Export Submenu?"
+#~ msgstr "Włączyć menu importu/eksportu?"
+
+#~ msgid "These settings apply to this author's archive pages."
+#~ msgstr "Ustawienia te dotyczą autora strony archiwum."
+
+#~ msgid "Custom Archive Headline"
+#~ msgstr "Niestandardowy nagłówek archiwum"
+
+#~ msgid "Will display in the %s tag at the top of the first page"
+#~ msgstr "Będzie wyświetlany w %s tagu na górze pierwszej strony"
+
+#~ msgid "Custom Description Text"
+#~ msgstr "Niestandardowy opis tekstu"
+
+#~ msgid "This text will be the first paragraph, and display on the first page"
+#~ msgstr ""
+#~ "Ten tekst będzie w pierwszym akapicie, i będzie wyświetlać się na "
+#~ "pierwszej stronie"
+
+#~ msgid "Author Box"
+#~ msgstr "Box autora"
+
+#~ msgid "Enable Author Box on this User's Posts?"
+#~ msgstr "Włączyć box autora na stronie użytkownika?"
+
+#~ msgid "Enable Author Box on this User's Archives?"
+#~ msgstr "Włączyć box autora na stronie archiwum użytkownika?"
+
+#~ msgid "Are you sure you want to reset?"
+#~ msgstr "Czy na pewno chcesz zresetować?"
+
+#~ msgid "Home"
+#~ msgstr "Strona główna"
+
+#~ msgid "You are here: "
+#~ msgstr "Jesteś tutaj:"
+
+#~ msgid "Archives for "
+#~ msgstr "Archiwum dla"
+
+#~ msgid "Search for "
+#~ msgstr "Wyszukiwanie dla"
+
+#~ msgid "Not found: "
+#~ msgstr "Nie znaleziono:"
+
+#~ msgid "View %s"
+#~ msgstr "Zobacz %s"
+
+#~ msgid "(Edit)"
+#~ msgstr "(edytuj)"
+
+#~ msgid "View archives for %s"
+#~ msgstr "Zobacz archiwum dla %s"
+
+#~ msgid "View archives for %s %s"
+#~ msgstr "Zobacz archiwum dla %s %s"
+
+#~ msgid "View all posts in %s"
+#~ msgstr "Pokaż wszystkie posty z %s"
+
+#~ msgid "View all %s"
+#~ msgstr "Zobacz wszystkie %s"
+
+#~ msgid "View all items in %s"
+#~ msgstr "Zobacz wszystkie przedmioty w %s"
+
+#~ msgid "seconds"
+#~ msgstr "sekund"
+
+#~ msgid "and"
+#~ msgstr "i"
+
+#~ msgid "Content-Sidebar"
+#~ msgstr "treść-sidebar"
+
+#~ msgid "Sidebar-Content"
+#~ msgstr "sidebar-treść"
+
+#~ msgid "Content-Sidebar-Sidebar"
+#~ msgstr "treść-sidebar-sidebar"
+
+#~ msgid "Sidebar-Sidebar-Content"
+#~ msgstr "sidebar-sidebar-treść"
+
+#~ msgid "Sidebar-Content-Sidebar"
+#~ msgstr "sidebar-treść-sidebar"
+
+#~ msgid "Full Width Content"
+#~ msgstr "Pełna zawartość tekstu"
+
+#~ msgid "No Label Selected"
+#~ msgstr "Nie wybrano etykiet"
+
+#~ msgid "Congratulations! You are now rocking Genesis %s"
+#~ msgstr "Gratulacje! Jesteś teraz na biegunach Genesis %s"
+
+#~ msgid "Click here to complete the upgrade"
+#~ msgstr "Kliknij tutaj, aby dokończyć uaktualnienie"
+
+#~ msgid ""
+#~ "Genesis %s is available. <a href=\"%s\" class=\"thickbox thickbox-preview"
+#~ "\">Check out what's new</a> or <a href=\"%s\" onclick=\"return "
+#~ "genesis_confirm('%s');\">update now</a>."
+#~ msgstr ""
+#~ "%s Genesis jest dostępny. <a href=\"%s\" class=\"thickbox thickbox-preview"
+#~ "\">Sprawdź co nowego</a> lub <a href=\"%s\" onclick=\"return "
+#~ "genesis_confirm('%s');\">uaktualnij teraz</a>."
+
+#~ msgid ""
+#~ "Upgrading Genesis will overwrite the current installed version of "
+#~ "Genesis. Are you sure you want to upgrade?. \"Cancel\" to stop, \"OK\" to "
+#~ "upgrade."
+#~ msgstr ""
+#~ "Aktualizacja Genesis nadpisuje aktualnie zainstalowaną wersji Genesis. "
+#~ "Czy na pewno chcesz uaktualnić?. \"Anuluj\", aby zatrzymać, \"OK\", aby "
+#~ "przejść do aktualizacji."
+
+#~ msgid "Genesis %s is available for %s"
+#~ msgstr "Genesis %s jest dostępny dla %s"
+
+#~ msgid "Header Right"
+#~ msgstr "Prawy nagłówek"
+
+#~ msgid "Primary Sidebar"
+#~ msgstr "Pierwszy Sidebar"
+
+#~ msgid "Secondary Sidebar"
+#~ msgstr "Drugi sidebar"
+
+#~ msgid "Footer %d"
+#~ msgstr "Stopka %d"
+
+#~ msgid "Select / Deselect All"
+#~ msgstr "Zaznacz/Odznacz wszystko"
+
+#~ msgid "Return to top of page"
+#~ msgstr "Powrót na górę strony"
+
+#~ msgid "by "
+#~ msgstr "przez"
+
+#~ msgid "Log in"
+#~ msgstr "Zaloguj się"
+
+#~ msgid "Log out"
+#~ msgstr "Wyloguj się"
+
+#~ msgid "ago"
+#~ msgstr "temu"
+
+#~ msgid "Visit %s&#8217;s website"
+#~ msgstr "Odwiedź %s&#8217;s stronę"
+
+#~ msgid "% Comments"
+#~ msgstr "% komentarzy"
+
+#~ msgid "1 Comment"
+#~ msgstr "1 komentarz"
+
+#~ msgid "Leave a Comment"
+#~ msgstr "Zostaw komentarz"
+
+#~ msgid "Tagged With: "
+#~ msgstr "Tagi:"
+
+#~ msgid "Filed Under: "
+#~ msgstr "W kategorii:"
+
+#~ msgid "<h3>Comments</h3>"
+#~ msgstr "<h3>Komentarze</h3>"
+
+#~ msgid "<h3>Trackbacks</h3>"
+#~ msgstr "<h3>Trackbacks</h3>"
+
+#~ msgid "<cite class=\"fn\">%s</cite> <span class=\"says\">%s:</span>"
+#~ msgstr "<cite class=\"fn\">%s</cite> <span class=\"says\">%s:</span>"
+
+#~ msgid "says"
+#~ msgstr "napisał"
+
+#~ msgid "%1$s at %2$s"
+#~ msgstr "%1$s o %2$s"
+
+#~ msgid "Edit"
+#~ msgstr "Edytuj"
+
+#~ msgid "Your comment is awaiting moderation."
+#~ msgstr "Twój komentarz czeka na moderację."
+
+#~ msgid "Name"
+#~ msgstr "Imię"
+
+#~ msgid "Email"
+#~ msgstr "e-mail"
+
+#~ msgid "Website"
+#~ msgstr "Strona WWW"
+
+#~ msgid "Speak Your Mind"
+#~ msgstr "Co myślisz?"
+
+#~ msgid "Copyright"
+#~ msgstr "Prawo autorskie"
+
+#~ msgid "on"
+#~ msgstr "na"
+
+#~ msgid "Read more&hellip;"
+#~ msgstr "Przeczytaj więcej&hellip;"
+
+#~ msgid "You are using invalid arguments with the %s function."
+#~ msgstr "Używasz nieprawidłowe argumenty z funkcji %s."
+
+#~ msgid "Comments"
+#~ msgstr "Komentarze"
+
+#~ msgid "[Read more...]"
+#~ msgstr "[Więcej ...]"
+
+#~ msgid "Sorry, no posts matched your criteria."
+#~ msgstr "Nie ma wpisów spełniających podane kryteria."
+
+#~ msgid "By"
+#~ msgstr "Przez"
+
+#~ msgid "About"
+#~ msgstr "O "
+
+#~ msgid "Older Posts"
+#~ msgstr "Starsze posty"
+
+#~ msgid "Newer Posts"
+#~ msgstr "Nowszy post"
+
+#~ msgid "Previous Page"
+#~ msgstr "Poprzednia strona"
+
+#~ msgid "Next Page"
+#~ msgstr "Następna strona"
+
+#~ msgid "Search this website %s"
+#~ msgstr "Wyszukaj na stronie %s"
+
+#~ msgid "Search"
+#~ msgstr "Szukaj"
+
+#~ msgid "Primary Sidebar Widget Area"
+#~ msgstr "Podstawowy obszar widget'ów"
+
+#~ msgid ""
+#~ "This is the Primary Sidebar Widget Area. You can add content to this area "
+#~ "by visiting your <a href=\"%s\">Widgets Panel</a> and adding new widgets "
+#~ "to this area."
+#~ msgstr ""
+#~ "To jest główny obszar widget'ów. Zawartość można dodawać do tego obszaru "
+#~ "odwiedzając Widgety w <a href=\"%s\">panelu</a>."
+
+#~ msgid "Secondary Sidebar Widget Area"
+#~ msgstr "Drugorzędny obszar widgetów"
+
+#~ msgid ""
+#~ "This is the Secondary Sidebar Widget Area. You can add content to this "
+#~ "area by visiting your <a href=\"%s\">Widgets Panel</a> and adding new "
+#~ "widgets to this area."
+#~ msgstr ""
+#~ "Jest to drugi obszar widget Sidebar. Zawartość można dodawać do tego "
+#~ "obszaru odwiedzając Widgety w <a href=\"%s\">panelu</a>."
+
+#~ msgid "Single Post Template"
+#~ msgstr "Szablon pojedynczego postu"
+
+#~ msgid "Post Template"
+#~ msgstr "Szablon postu"
+
+#~ msgid ""
+#~ "Some themes have custom templates you can use for single posts that might "
+#~ "have additional features or custom layouts. If so, you will see them "
+#~ "above."
+#~ msgstr ""
+#~ "Niektóre motywy mają własne szablony, które można użyć. Mogą mieć "
+#~ "dodatkowe cechy lub niestandardowy układ. Jeśli tak, to zobaczysz je "
+#~ "powyżej."
+
+#~ msgid "Displays featured page with thumbnails"
+#~ msgstr "Wyświetla ciekawe strony z miniaturami"
+
+#~ msgid "Genesis - Featured Page"
+#~ msgstr "Genesis - Polecane strony"
+
+#~ msgid "by"
+#~ msgstr "przez"
+
+#~ msgid "Page"
+#~ msgstr "Strona"
+
+#~ msgid "Show Featured Image"
+#~ msgstr "Pokaż polecany obrazek"
+
+#~ msgid "Image Size"
+#~ msgstr "Wielkość obrazu"
+
+#~ msgid "Image Alignment"
+#~ msgstr "Wyrównanie obrazu"
+
+#~ msgid "None"
+#~ msgstr "Brak"
+
+#~ msgid "Show Page Title"
+#~ msgstr "Pokaż tytuł strony"
+
+#~ msgid "Show Page Content"
+#~ msgstr "Pokaż treści strony"
+
+#~ msgid "Content Character Limit"
+#~ msgstr "Limit znaków w treści"
+
+#~ msgid "More Text"
+#~ msgstr "Więcej tekstu"
+
+#~ msgid "[Read More...]"
+#~ msgstr "[Czytaj więcej ...]"
+
+#~ msgid "More Posts from this Category"
+#~ msgstr "Więcej wiadomości z tej kategorii"
+
+#~ msgid "Displays featured posts with thumbnails"
+#~ msgstr "Wyświetla polecane posty z miniaturami"
+
+#~ msgid "Genesis - Featured Posts"
+#~ msgstr "Genesis - polecane posty"
+
+#~ msgid "Category"
+#~ msgstr "Kategoria"
+
+#~ msgid "Number of Posts to Show"
+#~ msgstr "Liczba wyświetlanych postów"
+
+#~ msgid "Number of Posts to Offset"
+#~ msgstr "Liczba postów na offset"
+
+#~ msgid "Order By"
+#~ msgstr "Sortuj wg"
+
+#~ msgid "Date"
+#~ msgstr "Data"
+
+#~ msgid "Parent"
+#~ msgstr "Rodzic"
+
+#~ msgid "ID"
+#~ msgstr "ID"
+
+#~ msgid "Comment Count"
+#~ msgstr "Licznik komentarzy"
+
+#~ msgid "Random"
+#~ msgstr "Przypadkowy"
+
+#~ msgid "Sort Order"
+#~ msgstr "Porządek sortowania"
+
+#~ msgid "Descending (3, 2, 1)"
+#~ msgstr "Malejąco (3, 2, 1)"
+
+#~ msgid "Ascending (1, 2, 3)"
+#~ msgstr "Rosnąco (1, 2, 3)"
+
+#~ msgid "Show Author Gravatar"
+#~ msgstr "Pokaż Gravatar autora"
+
+#~ msgid "Gravatar Size"
+#~ msgstr "Rozmiar Gravatar"
+
+#~ msgid "Small (45px)"
+#~ msgstr "Mały (45px)"
+
+#~ msgid "Medium (65px)"
+#~ msgstr "Średni (65PX)"
+
+#~ msgid "Large (85px)"
+#~ msgstr "Duży (85px)"
+
+#~ msgid "Extra Large (125px)"
+#~ msgstr "Bardzo duży (125px)"
+
+#~ msgid "Gravatar Alignment"
+#~ msgstr "Wyrównanie Gravatar'u"
+
+#~ msgid "Show Post Title"
+#~ msgstr "Pokaż tytuł postu"
+
+#~ msgid "Show Post Info"
+#~ msgstr "Pokaż informacje o poście"
+
+#~ msgid "Content Type"
+#~ msgstr "Typ zawartości"
+
+#~ msgid "Show Content"
+#~ msgstr "Pokaż zawartość"
+
+#~ msgid "Show Excerpt"
+#~ msgstr "Pokaż Fragment"
+
+#~ msgid "Show Content Limit"
+#~ msgstr "Pokaz limit zawartości"
+
+#~ msgid "No Content"
+#~ msgstr "Brak zawartości"
+
+#~ msgid "More Text (if applicable)"
+#~ msgstr "Więcej tekstu (jeśli dotyczy)"
+
+#~ msgid ""
+#~ "To display an unordered list of more posts from this category, please "
+#~ "fill out the information below"
+#~ msgstr ""
+#~ "Aby wyświetlić listę nieuporządkowaną z tej kategorii, proszę wypełnić "
+#~ "poniższe informacje"
+
+#~ msgid "Show Category Archive Link"
+#~ msgstr "Pokaż link archiwum kategorii"
+
+#~ msgid "Link Text"
+#~ msgstr "Tekst linku"
+
+#~ msgid "Genesis - Latest Tweets"
+#~ msgstr "Genesis - ostatnie Tweet'y"
+
+#~ msgid ""
+#~ "The Twitter API is taking too long to respond. Please try again later."
+#~ msgstr "Twitter API zbyt długo odpowiada. Spróbuj ponownie później."
+
+#~ msgid "about %s ago"
+#~ msgstr "o %s temu"
+
+#~ msgid "Twitter Username"
+#~ msgstr "Twitter Login"
+
+#~ msgid "Number of Tweets to Show"
+#~ msgstr "Liczba Tweets do pokazania"
+
+#~ msgid "Hide @ Replies"
+#~ msgstr "Ukryj @ Odpowiedzi"
+
+#~ msgid "Load new Tweets every"
+#~ msgstr "Załaduj nowy Tweet co"
+
+#~ msgid "5 Min."
+#~ msgstr "5 min."
+
+#~ msgid "15 Minutes"
+#~ msgstr "15 minut"
+
+#~ msgid "30 Minutes"
+#~ msgstr "30 minut"
+
+#~ msgid "1 Hour"
+#~ msgstr "1 Godzina"
+
+#~ msgid "2 Hours"
+#~ msgstr "2 godziny"
+
+#~ msgid "4 Hours"
+#~ msgstr "4 godziny"
+
+#~ msgid "12 Hours"
+#~ msgstr "12 godzin"
+
+#~ msgid "24 Hours"
+#~ msgstr "24 godzin"
+
+#~ msgid "Include link to twitter page?"
+#~ msgstr "Zawierać link do strony twitter?"
+
+#~ msgid "Link Text (required)"
+#~ msgstr "Tekst linku (wymagane)"
+
+#~ msgid "[Read More %s]"
+#~ msgstr "[Więcej %s]"
+
+#~ msgid "Displays user profile block with Gravatar"
+#~ msgstr "Wyświetla box użytkownika z Gravatar'em"
+
+#~ msgid "Genesis - User Profile"
+#~ msgstr "Genesis - profil użytkownika"
+
+#~ msgid "View My Blog Posts"
+#~ msgstr "Zobacz moje posty"
+
+#~ msgid ""
+#~ "Select a user. The email address for this account will be used to pull "
+#~ "the Gravatar image."
+#~ msgstr ""
+#~ "Wybierz użytkownika. Adres e-mail dla tego konta będą wykorzystywane do "
+#~ "ściągnięcia obrazu Gravatar."
+
+#~ msgid "Small"
+#~ msgstr "Mały"
+
+#~ msgid "Medium"
+#~ msgstr "Średni"
+
+#~ msgid "Large"
+#~ msgstr "Duży"
+
+#~ msgid "Extra Large"
+#~ msgstr "Bardzo duży"
+
+#~ msgid "Select which text you would like to use as the author description"
+#~ msgstr "Wybierz tekst, który chcesz użyć jako opis autora"
+
+#~ msgid "Author Bio"
+#~ msgstr "Biografia"
+
+#~ msgid "Custom Text (below)"
+#~ msgstr "Tekst niestandardowy (poniżej)"
+
+#~ msgid ""
+#~ "Choose your extended \"About Me\" page from the list below. This will be "
+#~ "the page linked to at the end of the about me section."
+#~ msgstr ""
+#~ "Wybierz rozszerzone \"O mnie\" z poniższej listy. Będzie to strona "
+#~ "umieszczona na końcu sekcji o mnie."
+
+#~ msgid "Show Author Archive Link?"
+#~ msgstr "Pokazać link do archiwum autora?"

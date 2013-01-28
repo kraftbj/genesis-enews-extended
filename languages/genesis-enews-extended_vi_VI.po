@@ -1,0 +1,1444 @@
+# Translation of Genesis 1.8 in Vietnamese
+# This file is distributed under the same license as the Genesis 1.8 package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Genesis eNews Extended\n"
+"POT-Creation-Date: 2013-01-27 23:12-0600\n"
+"PO-Revision-Date: 2013-01-27 23:12-0600\n"
+"Last-Translator: Brandon Kraft <public@brandonkraft.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../class-bjgk-genesis-enews-extended.php:50
+#, fuzzy
+msgid "Displays subscribe form"
+msgstr "Hiển thị mẫu nhập email Feedburner "
+
+#: ../class-bjgk-genesis-enews-extended.php:53
+#, fuzzy
+msgid "Genesis - eNews Extended"
+msgstr "Genesis - eNews và Cập nhật"
+
+#: ../class-bjgk-genesis-enews-extended.php:138
+msgid "Title"
+msgstr "Tiêu đề"
+
+#: ../class-bjgk-genesis-enews-extended.php:143
+msgid "Text To Show"
+msgstr "Chữ để hiển thị"
+
+#: ../class-bjgk-genesis-enews-extended.php:148
+msgid "Google/Feedburner ID"
+msgstr "Google/Feedburner ID"
+
+#: ../class-bjgk-genesis-enews-extended.php:150
+msgid ""
+"Entering your Feedburner ID here will deactivate the custom options below."
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:154
+#, fuzzy
+msgid "Form Action"
+msgstr "Thông tin"
+
+#: ../class-bjgk-genesis-enews-extended.php:159
+msgid "E-Mail Field"
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:164
+msgid "First Name Field"
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:169
+msgid "Last Name Field"
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:174
+msgid "Hidden Fields"
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:176
+msgid "Not all services use hidden fields."
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:181
+msgid "Open confirmation page in same window?"
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:185
+msgid "First Name..."
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:186
+#, fuzzy
+msgid "First Name Input Text"
+msgstr "Nhập chữ"
+
+#: ../class-bjgk-genesis-enews-extended.php:190
+msgid "Last Name..."
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:191
+#, fuzzy
+msgid "Last Name Input Text"
+msgstr "Nhập chữ"
+
+#: ../class-bjgk-genesis-enews-extended.php:195
+msgid "Enter your email address..."
+msgstr "Hãy nhập địa chỉ email của bạn..."
+
+#: ../class-bjgk-genesis-enews-extended.php:196
+#, fuzzy
+msgid "E-Mail Input Text"
+msgstr "Nhập chữ"
+
+#: ../class-bjgk-genesis-enews-extended.php:201
+msgid "Go"
+msgstr "Đi"
+
+#: ../class-bjgk-genesis-enews-extended.php:202
+msgid "Button Text"
+msgstr "Nút chữ"
+
+#~ msgid "Not Found, Error 404"
+#~ msgstr "Không tìm thấy, Lỗi 404"
+
+#~ msgid ""
+#~ "The page you are looking for no longer exists. Perhaps you can return "
+#~ "back to the site's <a href=\"%s\">homepage</a> and see if you can find "
+#~ "what you are looking for. Or, you can try finding it with the information "
+#~ "below."
+#~ msgstr ""
+#~ "Trang mà bạn đang tìm kiếm không còn tồn tại. Có lẽ bạn nên trở về <a "
+#~ "href=\"%s\">trang chủ</a> và tìm kiếm biết đâu bạn có thể tìm được cái "
+#~ "bạn đang cần. Hoặc bạn có thể thử tìm kiếm với thông tin bên dưới."
+
+#~ msgid "Pages:"
+#~ msgstr "Trang:"
+
+#~ msgid "Categories:"
+#~ msgstr "Chủ đề:"
+
+#~ msgid "Authors:"
+#~ msgstr "Tác giả:"
+
+#~ msgid "Monthly:"
+#~ msgstr "Hàng tháng:"
+
+#~ msgid "Recent Posts:"
+#~ msgstr "Bài viết gần đây:"
+
+#~ msgid ""
+#~ "This post is password protected. Enter the password to view comments."
+#~ msgstr ""
+#~ "Bài này đã bị đặt mật khẩu bảo vệ. Hãy nhập mật khẩu để xem các bình luận."
+
+#~ msgid "Primary Navigation Menu"
+#~ msgstr "Menu truy cập chính"
+
+#~ msgid "Secondary Navigation Menu"
+#~ msgstr "Menu truy cập thứ hai"
+
+#~ msgid "Genesis - Import/Export"
+#~ msgstr "Genesis - Nhập vào/Xuất ra"
+
+#~ msgid "Import/Export"
+#~ msgstr "Nhập vào/Xuất ra"
+
+#~ msgid "Import Genesis Settings File"
+#~ msgstr "Nhập vào tập tin thiết lập Genesis"
+
+#~ msgid ""
+#~ "Upload the data file (<code>.json</code>) from your computer and we'll "
+#~ "import your settings."
+#~ msgstr ""
+#~ "Tải lên tập tin (<code>.json</code>) từ máy tính của bạn và nhập vào phần "
+#~ "thiết lập"
+
+#~ msgid ""
+#~ "Choose the file from your computer and click \"Upload file and Import\""
+#~ msgstr ""
+#~ "Hãy chọn tập tin từ máy tính của bạn và nhấn vào \"Tải tập tin lên và "
+#~ "Nhập vào\""
+
+#~ msgid "Upload File: (Maximum Size: %s)"
+#~ msgstr "Tải lên tập tin: (Kích cỡ tối đa: %s)"
+
+#~ msgid "Upload File and Import"
+#~ msgstr "Tải tập tin lên và Nhập vào"
+
+#~ msgid "Export Genesis Settings File"
+#~ msgstr "Xuất ra tập tin thiết lập Genesis"
+
+#~ msgid ""
+#~ "When you click the button below, Genesis will generate a data file "
+#~ "(<code>.json</code>) for you to save to your computer."
+#~ msgstr ""
+#~ "Khi bạn nhấn vào nút bên dưới, Genesis sẽ tạo ra một tập tin dữ liệu "
+#~ "(<code>.json</code>) cho phép bạn lưu xuống máy tính."
+
+#~ msgid ""
+#~ "Once you have saved the download file, you can use the import function on "
+#~ "another site to import this data."
+#~ msgstr ""
+#~ "Khi bạn đã lưu lại tập tin tải về, bạn có thể dùng chức năng nhập vào có "
+#~ "trên các website khác để nhập vào dữ liệu này."
+
+#~ msgid "Download Export File"
+#~ msgstr "Tải Xuất ra tập tin về "
+
+#~ msgid "Settings successfully imported."
+#~ msgstr "Thiết lập đã được nhập vào thành công."
+
+#~ msgid "There was a problem importing your settings. Please try again."
+#~ msgstr "Có lỗi trong quá trình nhập vào thiết lập của bạn. Xin hãy thử lại."
+
+#~ msgid "Theme Settings"
+#~ msgstr "Thiết lập Giao diện"
+
+#~ msgid "SEO Settings"
+#~ msgstr "Thiết lập SEO"
+
+#~ msgid "No export options available."
+#~ msgstr "Không có lựa chọn xuất ra nào hữu dụng"
+
+#~ msgid "Theme SEO Settings"
+#~ msgstr "Thiết lập SEO Giao diện"
+
+#~ msgid "Custom Document Title"
+#~ msgstr "Tùy chỉnh Tiêu đề Tài liệu"
+
+#~ msgid "Characters Used: %s"
+#~ msgstr "Ký tự được dùng: %s"
+
+#~ msgid "Custom Post/Page Meta Description"
+#~ msgstr "Tùy chỉnh thẻ Mô tả Bài Viết/Trang"
+
+#~ msgid "Custom Post/Page Meta Keywords, comma separated"
+#~ msgstr "Tùy chỉnh meta từ khóa của bài viết/trang, phân cách bởi dấu phẩy"
+
+#~ msgid "Custom Canonical URI"
+#~ msgstr "Tùy chỉnh Canonical URI"
+
+#~ msgid "Custom Redirect URI"
+#~ msgstr "Tùy chỉnh URI chuyển hướng"
+
+#~ msgid "Robots Meta Settings"
+#~ msgstr "Thiếp lập meta Robot"
+
+#~ msgid "Apply %s to this post/page"
+#~ msgstr "Áp dụng %s cho bài viết/trang này"
+
+#~ msgid "Custom Tracking/Conversion Code"
+#~ msgstr "Tùy chỉnh mã Track/Chuyển đổi"
+
+#~ msgid "Layout Settings"
+#~ msgstr "Thiết lập kiểu mẫu"
+
+#~ msgid "Default Layout set in <a href=\"%s\">Theme Settings</a>"
+#~ msgstr ""
+#~ "Kiểu mẫu mặc định đặt trong phần <a href=\"%s\">Thiết lập giao diện</a>"
+
+#~ msgid "Custom Body Class"
+#~ msgstr "Tùy chỉnh Body Class"
+
+#~ msgid "Custom Post Class"
+#~ msgstr "Tùy chỉnh Class bài viết"
+
+#~ msgid "README"
+#~ msgstr "README"
+
+#~ msgid "The %s file was not found in the child theme, or it was empty."
+#~ msgstr "Tập tin %s không tìm thấy trong giao diện con, hoặc nó rỗng"
+
+#~ msgid "Genesis - SEO Settings"
+#~ msgstr "Genesis - Thiết lập SEO"
+
+#~ msgid "Save Settings"
+#~ msgstr "Lưu thiết lập"
+
+#~ msgid "Reset Settings"
+#~ msgstr "Thiết lập lại"
+
+#~ msgid "Settings saved."
+#~ msgstr "Thiết lập đã lưu"
+
+#~ msgid "Settings reset."
+#~ msgstr "Làm lại thiết lập"
+
+#~ msgid "Error saving settings."
+#~ msgstr "Lỗi lưu thiết lập"
+
+#~ msgid "Doctitle Settings"
+#~ msgstr "Thiết lập tiêu đề tài liệu"
+
+#~ msgid "Homepage Settings"
+#~ msgstr "Thiết lập trang chủ"
+
+#~ msgid "Document Head Settings"
+#~ msgstr "Thiết lập phần đầu tài liệu"
+
+#~ msgid "Archives Settings"
+#~ msgstr "Thiết lập lưu trữ"
+
+#~ msgid ""
+#~ "The Document Title is the single most important SEO tag in your document "
+#~ "source. It succinctly informs search engines of what information is "
+#~ "contained in the document. The doctitle changes from page to page, but "
+#~ "these options will help you control what it looks by default."
+#~ msgstr ""
+#~ "Tiêu đề tài liệu là một phần quan trọng hầu hết đối với SEO tag của nguồn "
+#~ "tài liệu. Nó ngắn gọn thông báo cho bộ máy tìm kiếm thông tin nào được "
+#~ "chứa trong tài liệu. Tiêu đề tài liệu thay đổi từ trang này sang trang "
+#~ "khác nhưng những lựa chọn sẽ giúp bạn điều khiển nó giống như mặc định"
+
+#~ msgid ""
+#~ "<b>By default</b>, the homepage doctitle will contain the site title, the "
+#~ "single post and page doctitle will contain the post/page title, archive "
+#~ "pages will contain the archive type, etc."
+#~ msgstr ""
+#~ "<b>Mặc định</b>, tiêu đề tài liệu tại trang chủ sẽ chứa tiêu đề website, "
+#~ "tiêu đề tài liệu bài viết đơn và trang sẽ chứa tiêu đề bài viết/trang, "
+#~ "trang lưu trữ sẽ chứa dạng lưu trữ,...vv"
+
+#~ msgid "Append Site Description to Doctitle on homepage?"
+#~ msgstr "Thêm mô tả website vào phần tiêu đề tài liệu trên trang chủ?"
+
+#~ msgid "Append Site Name to Doctitle on inner pages?"
+#~ msgstr "Thêm tên website vào tiêu đề tài liệu trên các trang trong ?"
+
+#~ msgid "Doctitle (%s) Append Location:"
+#~ msgstr "Tiêu đề tài liệu (%s) thêm vào vị trí:"
+
+#~ msgid "Determines what side the appended doctitle text will go on."
+#~ msgstr "Xác định phía nào được thêm chữ tiêu đề tài liệu sẽ tiếp tục."
+
+#~ msgid "Left"
+#~ msgstr "Trái"
+
+#~ msgid "Right"
+#~ msgstr "Phải"
+
+#~ msgid "Doctitle (<code>&lt;title&gt;</code>) Separator:"
+#~ msgstr "Tiêu đề tài liệu (<code>&lt;title&gt;</code>) Phân cách:"
+
+#~ msgid ""
+#~ "If the doctitle consists of two parts (Title &amp; Appended Text), then "
+#~ "the Doctitle Separator will go between them."
+#~ msgstr ""
+#~ "Nếu tiêu đề tài liệu chứa 2 phần (Tiêu đề &amp; chữ được thêm), thì phân "
+#~ "cách tiêu đề tài liệu sẽ được thêm vào giữa chúng"
+
+#~ msgid "Which text would you like to be wrapped in %s tags?"
+#~ msgstr "Chữ nào mà bạn muốn sẽ được gói trong %s tag ?"
+
+#~ msgid ""
+#~ "The %s tag is, arguably, the second most important SEO tag in the "
+#~ "document source. Choose wisely."
+#~ msgstr ""
+#~ "%s tag được cho là quan trọng thứ 2 nhất của SEO tag trong nguồn tài "
+#~ "liệu. Vì thế hãy chọn thật khéo léo."
+
+#~ msgid "Site Title"
+#~ msgstr "Tiêu đề website"
+
+#~ msgid "Site Description"
+#~ msgstr "Mô tả website"
+
+#~ msgid "Neither. I'll manually wrap my own text on the homepage"
+#~ msgstr "Không. Tôi sẽ tự gói chữ riêng cảu tôi trên trang chủ"
+
+#~ msgid "Home Doctitle:"
+#~ msgstr "Tiêu đề tài liệu trang chủ:"
+
+#~ msgid ""
+#~ "If you leave the doctitle field blank, your site&rsquo;s title will be "
+#~ "used instead."
+#~ msgstr ""
+#~ "Nếu bạn bỏ phần tiêu đề tài liệu trống, tiêu đề website của bạn sẽ được "
+#~ "sử dụng thay thế."
+
+#~ msgid "Home META Description:"
+#~ msgstr "META mô tả trang chủ"
+
+#~ msgid ""
+#~ "The META Description can be used to determine the text used under the "
+#~ "title on search engine results pages."
+#~ msgstr ""
+#~ "META mô tả có thể được dùng để chỉ định chữ dùng dưới tiêu đề trên trang "
+#~ "kết quả của bộ máy tìm kiếm"
+
+#~ msgid "Home META Keywords (comma separated):"
+#~ msgstr "META từ khóa trang chủ (phân cách bởi dấu phẩy):"
+
+#~ msgid "Keywords are generally ignored by Search Engines."
+#~ msgstr "Từ khóa thường bị bỏ qua bởi bộ máy tìm kiếm"
+
+#~ msgid "Homepage Robots Meta Tags:"
+#~ msgstr "Tag Meta Robot trang chủ:"
+
+#~ msgid "Apply %s to the homepage?"
+#~ msgstr "Áp dụng %s cho trang chủ?"
+
+#~ msgid ""
+#~ "By default, WordPress places several tags in your document %1$s. Most of "
+#~ "these tags are completely unnecessary, and provide no SEO value "
+#~ "whatsoever. They just make your site slower to load. Choose which tags "
+#~ "you would like included in your document %1$s. If you do not know what "
+#~ "something is, leave it unchecked."
+#~ msgstr ""
+#~ "Mặc định Wordpress đặt một vài tag bên trong tài liệu %1$s của bạn. Hầu "
+#~ "hết các tag đó là không cần thiết và vì thế không có giá trị cho SEO. "
+#~ "Chúng chỉ làm cho website tải chậm hơn. Hãy chọn tag nào mà bạn muốn thêm "
+#~ "vào tài liệu %1$s của bạn. Nếu bạn không biết gì về chúng hãy để trống "
+#~ "không tích vào chúng."
+
+#~ msgid "Relationship Link Tags:"
+#~ msgstr "Tag liên kết quan hệ:"
+
+#~ msgid "Adjacent Posts %s link tags"
+#~ msgstr "Tag liên kết %s bài viết liền kề"
+
+#~ msgid "Windows Live Writer Support:"
+#~ msgstr "Hỗ trợ Windows Live Writer:"
+
+#~ msgid "Include Windows Live Writer Support Tag?"
+#~ msgstr "Bao gồm tag hỗ trợ Windows Live Writer ?"
+
+#~ msgid "Shortlink Tag:"
+#~ msgstr "Shortlink Tag:"
+
+#~ msgid "Include Shortlink tag?"
+#~ msgstr "Bao gồm Shortlink Tag?"
+
+#~ msgid ""
+#~ "The shortlink tag might have some use for 3rd party service "
+#~ "discoverability, but it has no SEO value whatsoever."
+#~ msgstr ""
+#~ "Shortlink Tag có thể có một vài dịch vụ 3rd party khám phá, nhưng nó "
+#~ "không có giá trị SEO nào."
+
+#~ msgid ""
+#~ "Depending on your situation, you may or may not want the following "
+#~ "archive pages to be indexed by search engines. Only you can make that "
+#~ "determination."
+#~ msgstr ""
+#~ "Dựa vào tình hình của bạn, bạn có thể hoặc không muốn các trang lưu trữ "
+#~ "sau đây để index bởi máy tìm kiếm. Chỉ có bạn mới có thể làm việc chỉ "
+#~ "định đó."
+
+#~ msgid "Apply %s to Category Archives?"
+#~ msgstr "Áp dụng %s cho Chủ đề Lưu trữ?"
+
+#~ msgid "Apply %s to Tag Archives?"
+#~ msgstr "Áp dụng %s cho Tag Lưu trữ?"
+
+#~ msgid "Apply %s to Author Archives?"
+#~ msgstr "Áp dụng %s cho Tác giả Lưu trữ?"
+
+#~ msgid "Apply %s to Date Archives?"
+#~ msgstr "Áp dụng %s cho Ngày tháng Lưu trữ?"
+
+#~ msgid "Apply %s to Search Archives?"
+#~ msgstr "Áp dụng %s cho Tìm kiếm Lưu trữ?"
+
+#~ msgid ""
+#~ "Some search engines will cache pages in your site (e.g Google Cache). The "
+#~ "%1$s tag will prevent them from doing so. Choose what archives you want "
+#~ "to %1$s."
+#~ msgstr ""
+#~ "Một vài máy tìm kiếm sẽ lưu cache trang trên website của bạn (ví dụ "
+#~ "Google Cache). %1$s tag sẽ ngăn chúng làm điều đó. Hãy chọn dạng lưu trữ "
+#~ "mà bạn muốn %1$s."
+
+#~ msgid "Apply %s to Entire Site?"
+#~ msgstr "Áp dụng %s cho toàn bộ website?"
+
+#~ msgid ""
+#~ "Occasionally, search engines use resources like the Open Directory "
+#~ "Project and the Yahoo! Directory to find titles and descriptions for your "
+#~ "content. Generally, you will not want them to do this. The %s and %s tags "
+#~ "prevent them from doing so."
+#~ msgstr ""
+#~ "Thỉnh thoảng, máy tìm kiếm dùng các nguồn như Open Directory Project và "
+#~ "Yahoo! Directory để tìm tiêu đề và mô tả cho nội dung của bạn. Thông "
+#~ "thường, bạn sẽ không muốn chúng làm điều này. %s và %s tag sẽ ngăn chúng "
+#~ "làm điều này."
+
+#~ msgid "Apply %s to your site?"
+#~ msgstr "Áp dụng %s cho website của bạn?"
+
+#~ msgid "Canonical Paginated Archives"
+#~ msgstr "Canonical được đánh số trang lưu trữ"
+
+#~ msgid ""
+#~ "This option points search engines to the first page of an archive, if "
+#~ "viewing a paginated page. If you do not know what this means, leave it on."
+#~ msgstr ""
+#~ "Lựa chọn này sẽ chỉ máy tìm kiếm đến trang đầu tiên của trang lưu trữ khi "
+#~ "xem một trang đã đánh số. Nếu bạn không biết nó nghĩa là gì hãy để nó bật."
+
+#~ msgid "Archive Settings"
+#~ msgstr "Thiết lập lưu trữ"
+
+#~ msgid "Archive Headline"
+#~ msgstr "Tiêu đề lưu trữ"
+
+#~ msgid "Leave empty if you do not want to display a headline."
+#~ msgstr "Để trống nếu bạn không muốn hiển thị một tiêu đề"
+
+#~ msgid "Archive Intro Text"
+#~ msgstr "Chữ giới thiệu lưu trữ"
+
+#~ msgid "Leave empty if you do not want to display any intro text."
+#~ msgstr "Để trống nếu bạn không muốn hiển thị bất kỳ chữ giới thiệu nào"
+
+#~ msgid "Custom Document %s"
+#~ msgstr "Tùy chỉnh tài liệu %s"
+
+#~ msgid "%s Description"
+#~ msgstr "%s Mô tả"
+
+#~ msgid "%s Keywords"
+#~ msgstr "%s Từ khóa"
+
+#~ msgid "Comma separated list"
+#~ msgstr "Dấu phẩy phân cách danh sách"
+
+#~ msgid "Robots Meta"
+#~ msgstr "Robots Meta"
+
+#~ msgid "Apply %s to this archive?"
+#~ msgstr "Áp dụng %s cho lưu trữ này ?"
+
+#~ msgid "Choose Layout"
+#~ msgstr "Chọn kiểu mẫu"
+
+#~ msgid "Follow me on Twitter"
+#~ msgstr "Theo tôi trên Twitter"
+
+#~ msgid "Color Style"
+#~ msgstr "Mẫu màu"
+
+#~ msgid "Custom Feeds"
+#~ msgstr "Tùy chỉnh Feed"
+
+#~ msgid "Default Layout"
+#~ msgstr "Kiểu mẫu mặc định"
+
+#~ msgid "Header Settings"
+#~ msgstr "Thiết lập phần đầu"
+
+#~ msgid "Navigation Settings"
+#~ msgstr "Thiết lập chuyển hướng"
+
+#~ msgid "Breadcrumbs"
+#~ msgstr "Breadcrumbs"
+
+#~ msgid "Comments and Trackbacks"
+#~ msgstr "Bình luận và Trackback"
+
+#~ msgid "Content Archives"
+#~ msgstr "Nội dung lưu trữ"
+
+#~ msgid "Blog Page"
+#~ msgstr "Trang blog"
+
+#~ msgid "Header and Footer Scripts"
+#~ msgstr "Script Phần đầu và phần cuối"
+
+#~ msgid "Version:"
+#~ msgstr "Phiên bản:"
+
+#~ msgid "Released:"
+#~ msgstr "Phát hành:"
+
+#~ msgid "Display Theme Information in your document source"
+#~ msgstr "Hiển thị thông tin giao diện trong phần nguồn tài liệu"
+
+#~ msgid ""
+#~ "This can be helpful for diagnosing problems with your theme when seeking "
+#~ "assistance in the <a href=\"%s\" target=\"_blank\">support forums</a>."
+#~ msgstr ""
+#~ "Điều này có thể hữu ích cho việc phân tích vấn đề với giao diện của bạn "
+#~ "trong khi tìm kiếm sự hỗ trợ trong <a href=\"%s\" target=\"_blank\">diễn "
+#~ "đàn hỗ trợ</a>"
+
+#~ msgid "Enable Automatic Updates"
+#~ msgstr "Bật tự động cập nhật"
+
+#~ msgid "Notify"
+#~ msgstr "Thông báo"
+
+#~ msgid "when updates are available"
+#~ msgstr "khi cập nhật có sẵn"
+
+#~ msgid ""
+#~ "If you provide an email address above, your blog can email you when a new "
+#~ "version of Genesis is available."
+#~ msgstr ""
+#~ "Nếu bạn cung cấp địa chỉ email bên trên, blog của bạn có thể email cho "
+#~ "bạn khi có phiên bản Genesis mới phát hành."
+
+#~ msgid "Color Style:"
+#~ msgstr "Mẫu màu:"
+
+#~ msgid "Default"
+#~ msgstr "Mặc định"
+
+#~ msgid ""
+#~ "Please select the color style from the drop down list and save your "
+#~ "settings."
+#~ msgstr "Hãy chọn mẫu màu từ hộp danh sách bên dưới và lưu thiết lập của bạn"
+
+#~ msgid "Use for blog title/logo:"
+#~ msgstr "Sử dụng chọ blog tiêu đề/logo"
+
+#~ msgid "Dynamic text"
+#~ msgstr "Chữ động"
+
+#~ msgid "Image logo"
+#~ msgstr "Ảnh logo"
+
+#~ msgid "Primary Navigation"
+#~ msgstr "Chuyển hướng chính"
+
+#~ msgid "Include Primary Navigation Menu?"
+#~ msgstr "Bao gồm cả Menu chuyển hướng chính?"
+
+#~ msgid "Enable Fancy Dropdowns?"
+#~ msgstr "Bật Fancy Dropdown?"
+
+#~ msgid "Enable Extras on Right Side?"
+#~ msgstr "Bật mở rộng phía bên phải"
+
+#~ msgid "Display the following:"
+#~ msgstr "Hiển thị sau đây:"
+
+#~ msgid "Today's date"
+#~ msgstr "Ngày hôm nay"
+
+#~ msgid "RSS feed links"
+#~ msgstr "Liên kết RSS feed"
+
+#~ msgid "Search form"
+#~ msgstr "Form tìm kiếm"
+
+#~ msgid "Twitter link"
+#~ msgstr "Liên kết Twitter"
+
+#~ msgid "Enter Twitter ID:"
+#~ msgstr "Nhập Twitter ID:"
+
+#~ msgid "Twitter Link Text:"
+#~ msgstr "Chữ liên kết Twitter"
+
+#~ msgid "Secondary Navigation"
+#~ msgstr "Chuyển hướng thứ hai"
+
+#~ msgid "Include Secondary Navigation Menu?"
+#~ msgstr "Bao gồm cả Menu chuyển hướng thứ hai?"
+
+#~ msgid ""
+#~ "In order to use the navigation menus, you must build a <a href=\"%s"
+#~ "\">custom menu</a>, then assign it to the proper Menu Location."
+#~ msgstr ""
+#~ "Để sử dụng menu chuyển hướng, bạn phải tạo <a href=\"%s\">menu tùy chỉnh</"
+#~ "a> sau đó gán nó vào vị trí menu thích hợp."
+
+#~ msgid "Enter your custom feed URI:"
+#~ msgstr "Nhập Feed URI tùy chỉnh của bạn:"
+
+#~ msgid "Redirect Feed?"
+#~ msgstr "Chuyển hướng Feed?"
+
+#~ msgid "Enter your custom comments feed URI:"
+#~ msgstr "Hãy nhập tùy chỉnh bình luận Feed URI :"
+
+#~ msgid ""
+#~ "If your custom feed(s) are not handled by Feedburner, we do not recommend "
+#~ "that you use the redirect options."
+#~ msgstr ""
+#~ "Nếu tùy chỉnh feed của bạn không được xử lý bởi Feedburner, chúng tôi "
+#~ "không khuyến cáo bạn sử dụng lựa chọn chuyển hướng"
+
+#~ msgid "Enable Comments"
+#~ msgstr "Bật bình luận"
+
+#~ msgid "on posts?"
+#~ msgstr "trên bài viết?"
+
+#~ msgid "on pages?"
+#~ msgstr "trên trang?"
+
+#~ msgid "Enable Trackbacks"
+#~ msgstr "Bật Trackback"
+
+#~ msgid ""
+#~ "Comments and Trackbacks can also be disabled on a per post/page basis "
+#~ "when creating/editing posts/pages."
+#~ msgstr ""
+#~ "Bình luận và Trackback có thể vẫn bị tắt trên mỗi bài viết/trang cơ bản "
+#~ "khi tạo/sửa bài viết/trang"
+
+#~ msgid "Enable on:"
+#~ msgstr "Bật trên:"
+
+#~ msgid "Front Page"
+#~ msgstr "Trang đầu"
+
+#~ msgid "Posts"
+#~ msgstr "Bài viết"
+
+#~ msgid "Pages"
+#~ msgstr "Trang"
+
+#~ msgid "Archives"
+#~ msgstr "Lưu trữ"
+
+#~ msgid "404 Page"
+#~ msgstr "Trang 404"
+
+#~ msgid "Attachment Page"
+#~ msgstr "Trang đính kèm"
+
+#~ msgid ""
+#~ "Breadcrumbs are a great way of letting your visitors find out where they "
+#~ "are on your site with just a glance. You can enable/disable them on "
+#~ "certain areas of your site."
+#~ msgstr ""
+#~ "Breadcumb là cách tốt nhất về việc cho phép người truy cập biết nơi mà họ "
+#~ "đang truy cập trên website mà họ vừa lướt qua. Bạn có thể bật/tắt chúng "
+#~ "trên từng phần của website"
+
+#~ msgid "Select one of the following:"
+#~ msgstr "Chọn một trong những cái sau đây:"
+
+#~ msgid "Display post content"
+#~ msgstr "Hiển thị nội dung bài viết"
+
+#~ msgid "Display post excerpts"
+#~ msgstr "Hiển thị đoạn trích bài viết"
+
+#~ msgid "Limit content to"
+#~ msgstr "Giới hạn nội dung đến"
+
+#~ msgid "characters"
+#~ msgstr "ký tự"
+
+#~ msgid ""
+#~ "Using this option will limit the text and strip all formatting from the "
+#~ "text displayed. To use this option, choose \"Display post content\" in "
+#~ "the select box above."
+#~ msgstr ""
+#~ "Sử dụng lựa chọn này sẽ giới hạn chữ và loại bỏ tất cả các định dạng từ "
+#~ "chữ được hiển thị. Để dùng lựa chọn này, hãy chọn \"Hiển thị nội dung bài "
+#~ "viết\" trong hộp lựa chọn bên trên"
+
+#~ msgid "Include the Featured Image?"
+#~ msgstr "Kèm theo Ảnh đặc trưng ?"
+
+#~ msgid "Image Size:"
+#~ msgstr "Kích cỡ ảnh:"
+
+#~ msgid "Select Post Navigation Technique:"
+#~ msgstr "Hãy chọn kỹ thuật chuyển hướng bài viết"
+
+#~ msgid "Older / Newer"
+#~ msgstr "Cũ hơn/ Mới hơn"
+
+#~ msgid "Previous / Next"
+#~ msgstr "Trước / Sau"
+
+#~ msgid "Numeric"
+#~ msgstr "Dạng số"
+
+#~ msgid ""
+#~ "These options will affect any blog listings page, including archive, "
+#~ "author, blog, category, search, and tag pages."
+#~ msgstr ""
+#~ "Những lựa chọn này sẽ ảnh hưởng đến trang blog dạng liệt kê, bao gồm các "
+#~ "trang lưu trữ, tác giả, blog, chủ đề, tìm kiếm và tag"
+
+#~ msgid "Display which category:"
+#~ msgstr "Hiển thị chủ đề nào:"
+
+#~ msgid "All Categories"
+#~ msgstr "Tất cả chủ đề"
+
+#~ msgid "Exclude the following Category IDs:"
+#~ msgstr "Bỏ những ID chủ đề sau:"
+
+#~ msgid "Comma separated - 1,2,3 for example"
+#~ msgstr "Phân cách bởi dấu phẩy - ví dụ 1,2,3 "
+
+#~ msgid "Number of Posts to Show:"
+#~ msgstr "Số lượng bài viết để hiển thị:"
+
+#~ msgid "Enter scripts or code you would like output to %s:"
+#~ msgstr "Hãy nhập script hoặc code mà bạn muốn xuất ra cho %s:"
+
+#~ msgid ""
+#~ "The %1$s hook executes immediately before the closing %2$s tag in the "
+#~ "document source."
+#~ msgstr ""
+#~ "%1$s hook thực hiện ngay lập tức trước khi kết thúc %2$s tag trong mã "
+#~ "nguồn tài liệu."
+
+#~ msgid "User Permissions"
+#~ msgstr "Quyền hạn thành viên"
+
+#~ msgid "Genesis Admin Menus"
+#~ msgstr "Menu Quản trị Genesis"
+
+#~ msgid "Enable Genesis Admin Menu?"
+#~ msgstr "Bật menu quản trị Genesis"
+
+#~ msgid "Enable SEO Settings Submenu?"
+#~ msgstr "Bật menu con của thiết lập SEO?"
+
+#~ msgid "Enable Import/Export Submenu?"
+#~ msgstr "Bật menu con của Nhập vào/Xuất ra?"
+
+#~ msgid "Author Archive Settings"
+#~ msgstr "Thiết lập lưu trữ tác giả"
+
+#~ msgid "These settings apply to this author's archive pages."
+#~ msgstr "Những thiết lập này áp dụng cho trang lưu trữ tác giả này"
+
+#~ msgid "Custom Archive Headline"
+#~ msgstr "Tiêu đề lưu trữ tùy chỉnh"
+
+#~ msgid "Will display in the %s tag at the top of the first page"
+#~ msgstr "Sẽ hiển thị trong %s tag ở phần đầu tiên của trang đầu tiên"
+
+#~ msgid "Custom Description Text"
+#~ msgstr "Tùy chỉnh chữ mô tả"
+
+#~ msgid "This text will be the first paragraph, and display on the first page"
+#~ msgstr "Chữ này sẽ là đoạn văn đầu tiên, và hiển thị ở phần đầu của trang"
+
+#~ msgid "Author Box"
+#~ msgstr "Khung tác giả"
+
+#~ msgid "Enable Author Box on this User's Posts?"
+#~ msgstr "Bật Khung tác giả trên bài viết của thành viên này"
+
+#~ msgid "Enable Author Box on this User's Archives?"
+#~ msgstr "Bật Khung tác giả trên khu vực lưu trữ của thành viên này"
+
+#~ msgid ""
+#~ "You cannot use %s to create two menus in the same subclass. Please use "
+#~ "separate subclasses for each menu."
+#~ msgstr ""
+#~ "Bạn không thể dùng %s để tạo ra 2 menu trong cùng một lớp con. Hãy sử "
+#~ "dùng những lớp con riêng biệt cho mỗi menu"
+
+#~ msgid "Are you sure you want to reset?"
+#~ msgstr "Bạn có chắc bạn muốn thiết lập lại ?"
+
+#~ msgid "Home"
+#~ msgstr "Trang chủ"
+
+#~ msgid "You are here: "
+#~ msgstr "Bạn đang ở:"
+
+#~ msgid "Archives for "
+#~ msgstr "Lưu trữ cho"
+
+#~ msgid "Search for "
+#~ msgstr "Tìm kiếm cho"
+
+#~ msgid "Not found: "
+#~ msgstr "Không tìm thấy: "
+
+#~ msgid "View %s"
+#~ msgstr "Xem %s"
+
+#~ msgid "(Edit)"
+#~ msgstr "(Sửa)"
+
+#~ msgid "View archives for %s"
+#~ msgstr "Xem lưu trữ cho %s"
+
+#~ msgid "View archives for %s %s"
+#~ msgstr "Xem lưu trữ cho %s %s"
+
+#~ msgid "View all posts in %s"
+#~ msgstr "Xem tất cả bài viết trong %s"
+
+#~ msgid "View all %s"
+#~ msgstr "Xem tất cả %s"
+
+#~ msgid "View all items in %s"
+#~ msgstr "Xem tất cả các mục trong %s"
+
+#~ msgid "This file no longer needs to be included."
+#~ msgstr "Tập tin này không còn cần thiết để nhập vào."
+
+#~ msgid "seconds"
+#~ msgstr "giây"
+
+#~ msgid "and"
+#~ msgstr "và"
+
+#~ msgid "Content-Sidebar"
+#~ msgstr "Nội dung-Sidebar"
+
+#~ msgid "Sidebar-Content"
+#~ msgstr "Sidebar-Nội dung"
+
+#~ msgid "Content-Sidebar-Sidebar"
+#~ msgstr "Nội dung-Sidebar-Sidebar"
+
+#~ msgid "Sidebar-Sidebar-Content"
+#~ msgstr "Sidebar-Sidebar-Nội dung"
+
+#~ msgid "Sidebar-Content-Sidebar"
+#~ msgstr "Sidebar-Nội dung-Sidebar"
+
+#~ msgid "Full Width Content"
+#~ msgstr "Nội dung toàn trang"
+
+#~ msgid "No Label Selected"
+#~ msgstr "Không có nhãn nào được chọn"
+
+#~ msgid ""
+#~ "The argument, \"context\", has been replaced with \"theme_location\" in "
+#~ "the $args array."
+#~ msgstr ""
+#~ "Tham số, \"context\" đã được thay thế bằng \"theme_location\" trong biến "
+#~ "chứ mảng $args"
+
+#~ msgid ""
+#~ "Have you tried our Scribe SEO software? Do keyword research, content "
+#~ "optimization, and link building without leaving WordPress. <b>Genesis "
+#~ "owners save over 50&#37; using the promo code FIRST when you sign up</b>. "
+#~ "<a href=\"%s\" target=\"_blank\">Click here for more info</a>."
+#~ msgstr ""
+#~ "Bạn đã từng thử phần mềm Scribe SEO của chúng tôi ? Nghiên cứu từ khóa, "
+#~ "tối ưu hóa nội dung, và xây dựng liên kết mà không ra ngoài Wordpress. "
+#~ "<b>Người sở hữu Genesis có thể tiết kiệm 50&#37; nếu sử dụng mã giảm giá "
+#~ "FIRST khi đăng ký</b>. <a href=\"%s\" target=\"_blank\">Nhấn vào đây để "
+#~ "biết thêm thông tin</a>."
+
+#~ msgid "Dismiss"
+#~ msgstr "Tắt đi"
+
+#~ msgid "Congratulations! You are now rocking Genesis %s"
+#~ msgstr "Chúc mừng ! Bạn đang sử dụng Genesis %s"
+
+#~ msgid "Click here to complete the upgrade"
+#~ msgstr "Nhấn vào đây để hoàn thành việc nâng cấp."
+
+#~ msgid ""
+#~ "Genesis %s is available. <a href=\"%s\" class=\"thickbox thickbox-preview"
+#~ "\">Check out what's new</a> or <a href=\"%s\" onclick=\"return "
+#~ "genesis_confirm('%s');\">update now</a>."
+#~ msgstr ""
+#~ "Genesis %s đã có sẵn. <a href=\"%s\" class=\"thickbox thickbox-preview"
+#~ "\">Hãy xem có gì mới</a> hoặc <a href=\"%s\" onclick=\"return "
+#~ "genesis_confirm('%s');\">cập nhật ngay bây giờ</a>."
+
+#~ msgid ""
+#~ "Upgrading Genesis will overwrite the current installed version of "
+#~ "Genesis. Are you sure you want to upgrade?. \"Cancel\" to stop, \"OK\" to "
+#~ "upgrade."
+#~ msgstr ""
+#~ "Việc nâng cấp Genesis sẽ ghi đè vào phiên bản đã cài đặt của Genesis hiện "
+#~ "tại. Bạn có chắc muốn nâng cấp ?. \"Bỏ qua\" để dừng lại, \"OK\" để nâng "
+#~ "cấp."
+
+#~ msgid "Genesis %s is available for %s"
+#~ msgstr "Genesis %s đã có sẵn để %s"
+
+#~ msgid ""
+#~ "Genesis %s is now available. We have provided 1-click updates for this "
+#~ "theme, so please log into your dashboard and update at your earliest "
+#~ "convenience."
+#~ msgstr ""
+#~ "Genesis %s đã có sẵn. Chúng tôi cung cấp chức năng cập nhật chỉ bằng 1-cú "
+#~ "nhấn chuột cho giao diện, vì thế hãy đăng nhập vào bảng điều khiển và cập "
+#~ "nhật sớm nhất vào thời điểm thuận tiện của bạn"
+
+#~ msgid "Header Left"
+#~ msgstr "Phần đầu bên trái"
+
+#~ msgid "Header Right"
+#~ msgstr "Phần đầu bên phải"
+
+#~ msgid "This is the widget area in the header."
+#~ msgstr "Đây là khu vực widget bên trong phần đầu"
+
+#~ msgid "Primary Sidebar"
+#~ msgstr "Sidebar chính"
+
+#~ msgid ""
+#~ "This is the primary sidebar if you are using a two or three column site "
+#~ "layout option."
+#~ msgstr ""
+#~ "Đây là sidebar chính nếu bạn đang sử dụng lựa chọn mẫu 2 hoặc 3 cột."
+
+#~ msgid "Secondary Sidebar"
+#~ msgstr "Sidebar thứ hai"
+
+#~ msgid ""
+#~ "This is the secondary sidebar if you are using a three column site layout "
+#~ "option."
+#~ msgstr "Đây là sidebar thứ hai nếu bạn đang sử dụng lựa chọn mẫu 3 cột. "
+
+#~ msgid "Footer %d"
+#~ msgstr "Phần cuối %d"
+
+#~ msgid "Footer %d widget area."
+#~ msgstr "Khu vực widget phần cuối %d "
+
+#~ msgid "Select / Deselect All"
+#~ msgstr "Chọn/Bỏ chọn Tất cả"
+
+#~ msgid "Return to top of page"
+#~ msgstr "Trở về đầu trang"
+
+#~ msgid "by "
+#~ msgstr "bởi"
+
+#~ msgid "Log in"
+#~ msgstr "Đăng nhập"
+
+#~ msgid "Log out"
+#~ msgstr "Đăng xuất"
+
+#~ msgid "ago"
+#~ msgstr "trước"
+
+#~ msgid "Visit %s&#8217;s website"
+#~ msgstr "Ghé thăm %s&#8217;s website"
+
+#~ msgid "% Comments"
+#~ msgstr "% Bình luận"
+
+#~ msgid "1 Comment"
+#~ msgstr "1 Bình luận"
+
+#~ msgid "Leave a Comment"
+#~ msgstr "Để lại bình luận"
+
+#~ msgid "Tagged With: "
+#~ msgstr "Tag với:"
+
+#~ msgid "Filed Under: "
+#~ msgstr "Thuộc chủ đề:"
+
+#~ msgid "<h3>Comments</h3>"
+#~ msgstr "<h3>Bình luận</h3>"
+
+#~ msgid "<h3>Trackbacks</h3>"
+#~ msgstr "<h3>Theo dõi Trackback</h3>"
+
+#~ msgid "<cite class=\"fn\">%s</cite> <span class=\"says\">%s:</span>"
+#~ msgstr "<cite class=\"fn\">%s</cite> <span class=\"says\">%s:</span>"
+
+#~ msgid "says"
+#~ msgstr "viết"
+
+#~ msgid "%1$s at %2$s"
+#~ msgstr "%1$s lúc %2$s"
+
+#~ msgid "Edit"
+#~ msgstr "Sửa"
+
+#~ msgid "Your comment is awaiting moderation."
+#~ msgstr "Bình luận của bạn đang chờ để xét duyệt"
+
+#~ msgid "Name"
+#~ msgstr "Tên"
+
+#~ msgid "Email"
+#~ msgstr "Địa chỉ Email"
+
+#~ msgid "Website"
+#~ msgstr "Địa chỉ website"
+
+#~ msgid "Speak Your Mind"
+#~ msgstr "Hãy để lại ý kiến"
+
+#~ msgid "Copyright"
+#~ msgstr "Bản quyền"
+
+#~ msgid "on"
+#~ msgstr "trên"
+
+#~ msgid "Read more&hellip;"
+#~ msgstr "Đọc thêm&hellip;"
+
+#~ msgid "You are using invalid arguments with the %s function."
+#~ msgstr "Bạn đang sử dụng tham số không hợp lệ với hàm %s"
+
+#~ msgid "Comments"
+#~ msgstr "Bình luận"
+
+#~ msgid "[Read more...]"
+#~ msgstr "[Đọc thêm...]"
+
+#~ msgid "Sorry, no posts matched your criteria."
+#~ msgstr "Xin lỗi, không có bài viết nào phù hợp với chỉ định của bạn"
+
+#~ msgid "By"
+#~ msgstr "Bởi"
+
+#~ msgid "About"
+#~ msgstr "Nói về"
+
+#~ msgid "Older Posts"
+#~ msgstr "Bài viết cũ hơn"
+
+#~ msgid "Newer Posts"
+#~ msgstr "Bài viết mới hơn"
+
+#~ msgid "Previous Page"
+#~ msgstr "Trang trước"
+
+#~ msgid "Next Page"
+#~ msgstr "Trang sau"
+
+#~ msgid "Search this website %s"
+#~ msgstr "Tìm kiếm trên website %s"
+
+#~ msgid "Search"
+#~ msgstr "Tìm kiếm"
+
+#~ msgid "Primary Sidebar Widget Area"
+#~ msgstr "Khu vực Sidebar Widget chính"
+
+#~ msgid ""
+#~ "This is the Primary Sidebar Widget Area. You can add content to this area "
+#~ "by visiting your <a href=\"%s\">Widgets Panel</a> and adding new widgets "
+#~ "to this area."
+#~ msgstr ""
+#~ "Đây là Khu vực Sidebar Widget chính. Bạn có thể thêm nội dung vào khu vực "
+#~ "này bằng cách vào <a href=\"%s\">Kênh Widget</a> và thêm widget mới vào "
+#~ "khu vực này"
+
+#~ msgid "Secondary Sidebar Widget Area"
+#~ msgstr "Khu vực Sidebar Widget thứ hai"
+
+#~ msgid ""
+#~ "This is the Secondary Sidebar Widget Area. You can add content to this "
+#~ "area by visiting your <a href=\"%s\">Widgets Panel</a> and adding new "
+#~ "widgets to this area."
+#~ msgstr ""
+#~ "Đây là Khu vực Sidebar Widget thứ hai. Bạn có thể thêm nội dung vào khu "
+#~ "vực này bằng cách vào <a href=\"%s\">Kênh Widget</a> và thêm widget mới "
+#~ "vào khu vực này "
+
+#~ msgid "Single Post Template"
+#~ msgstr "Giao diện Bài viết đơn"
+
+#~ msgid "Post Template"
+#~ msgstr "Giao diện bài viết"
+
+#~ msgid ""
+#~ "Some themes have custom templates you can use for single posts that might "
+#~ "have additional features or custom layouts. If so, you will see them "
+#~ "above."
+#~ msgstr ""
+#~ "Một vài giao diện có các mẫu tùy chỉnh mà bạn có thể dùng cho bài viết "
+#~ "đơn vì có các chức năng phụ trợ hoặc các kiểu giao diện tùy chỉnh. Nếu "
+#~ "có, bạn sẽ thấy chúng ở phía bên trên"
+
+#~ msgid "Displays featured page with thumbnails"
+#~ msgstr "Hiển thị trang đặc trưng kèm theo hình đại diện"
+
+#~ msgid "Genesis - Featured Page"
+#~ msgstr "Genesis - Trang đặc trưng"
+
+#~ msgid "by"
+#~ msgstr "bởi"
+
+#~ msgid "Page"
+#~ msgstr "Trang"
+
+#~ msgid "Show Featured Image"
+#~ msgstr "Hiển thị Ảnh đặc trưng"
+
+#~ msgid "Image Size"
+#~ msgstr "Kích cỡ Ảnh"
+
+#~ msgid "Image Alignment"
+#~ msgstr "Canh chỉnh Ảnh"
+
+#~ msgid "None"
+#~ msgstr "Không"
+
+#~ msgid "Show Page Title"
+#~ msgstr "Hiển thị tiêu đề trang"
+
+#~ msgid "Show Page Byline"
+#~ msgstr "Hiển thị trang theo dòng"
+
+#~ msgid "Show Page Content"
+#~ msgstr "Hiển thị nội dung trang"
+
+#~ msgid "Content Character Limit"
+#~ msgstr "Giới hạn ký tự nội dung"
+
+#~ msgid "More Text"
+#~ msgstr "Chữ Thêm"
+
+#~ msgid "[Read More...]"
+#~ msgstr "[Đọc thêm...]"
+
+#~ msgid "More Posts from this Category"
+#~ msgstr "Thêm bài viết từ chủ đề này"
+
+#~ msgid "Displays featured posts with thumbnails"
+#~ msgstr "Hiển thị các bài viết nổi bật kèm theo ảnh đại diện"
+
+#~ msgid "Genesis - Featured Posts"
+#~ msgstr "Genesis - Bài viết Nổi bật"
+
+#~ msgid "Category"
+#~ msgstr "Chủ đề"
+
+#~ msgid "Number of Posts to Show"
+#~ msgstr "Số bài viết để hiển thị"
+
+#~ msgid "Number of Posts to Offset"
+#~ msgstr "Số bài viết đến vị trí"
+
+#~ msgid "Order By"
+#~ msgstr "Sắp xếp theo"
+
+#~ msgid "Date"
+#~ msgstr "Ngày tháng"
+
+#~ msgid "Parent"
+#~ msgstr "Cha"
+
+#~ msgid "ID"
+#~ msgstr "ID"
+
+#~ msgid "Comment Count"
+#~ msgstr "Đếm bình luận"
+
+#~ msgid "Random"
+#~ msgstr "Ngẫu nhiên"
+
+#~ msgid "Sort Order"
+#~ msgstr "Sắp xếp thứ tự"
+
+#~ msgid "Descending (3, 2, 1)"
+#~ msgstr "Giảm dần (3,2,1)"
+
+#~ msgid "Ascending (1, 2, 3)"
+#~ msgstr "Tăng dần (1,2,3)"
+
+#~ msgid "Show Author Gravatar"
+#~ msgstr "Hiển thị Gravatar tác giả"
+
+#~ msgid "Gravatar Size"
+#~ msgstr "Kích cỡ Gravatar"
+
+#~ msgid "Small (45px)"
+#~ msgstr "Nhỏ (45px)"
+
+#~ msgid "Medium (65px)"
+#~ msgstr "Trung bình (65px)"
+
+#~ msgid "Large (85px)"
+#~ msgstr "Lớn (85px)"
+
+#~ msgid "Extra Large (125px)"
+#~ msgstr "Rất lớn (125px)"
+
+#~ msgid "Gravatar Alignment"
+#~ msgstr "Canh chỉnh Gravatar"
+
+#~ msgid "Show Post Title"
+#~ msgstr "Hiện tiêu đề bài viết"
+
+#~ msgid "Show Post Info"
+#~ msgstr "Hiện thông tin bài viết"
+
+#~ msgid "Content Type"
+#~ msgstr "Kiểu nội dung"
+
+#~ msgid "Show Content"
+#~ msgstr "Hiển thị nội dung"
+
+#~ msgid "Show Excerpt"
+#~ msgstr "Hiển thị đoạn trích"
+
+#~ msgid "Show Content Limit"
+#~ msgstr "Hiển thị giới hạn nội dung"
+
+#~ msgid "No Content"
+#~ msgstr "Không có nội dung"
+
+#~ msgid "More Text (if applicable)"
+#~ msgstr "Thêm chữ (nếu muốn)"
+
+#~ msgid ""
+#~ "To display an unordered list of more posts from this category, please "
+#~ "fill out the information below"
+#~ msgstr ""
+#~ "Để hiển thị danh sách chưa được sắp xếp của các bài viết trong chủ đề "
+#~ "này, hãy điền thông tin vào bên dưới."
+
+#~ msgid "Show Category Archive Link"
+#~ msgstr "Hiển thị liên kết đến phần lưu trữ chủ đề"
+
+#~ msgid "Link Text"
+#~ msgstr "Chữ liên kết"
+
+#~ msgid "Display a list of your latest tweets."
+#~ msgstr "Hiển thị danh sách tweet gần đây nhất của bạn"
+
+#~ msgid "Genesis - Latest Tweets"
+#~ msgstr "Genesis - Tweet gần đây nhất"
+
+#~ msgid ""
+#~ "The Twitter API is taking too long to respond. Please try again later."
+#~ msgstr "Twitter API đã xử lý quá lâu không có phản hồi. Hãy thử lại sau."
+
+#~ msgid ""
+#~ "There was an error while attempting to contact the Twitter API. Please "
+#~ "try again."
+#~ msgstr "Có lỗi trong quá trình thử liên hệ đến Twitter API. Hãy thử lại sau"
+
+#~ msgid ""
+#~ "The Twitter API returned an error while processing your request. Please "
+#~ "try again."
+#~ msgstr ""
+#~ "Twitter API trả về một lỗi trong quá trình xử lý yêu cầu của bạn. Hãy thử "
+#~ "lại."
+
+#~ msgid "about %s ago"
+#~ msgstr "khoảng %s trước"
+
+#~ msgid "Twitter Username"
+#~ msgstr "Tên tài khoản Twitter"
+
+#~ msgid "Number of Tweets to Show"
+#~ msgstr "Số Tweet muốn hiển thị"
+
+#~ msgid "Hide @ Replies"
+#~ msgstr "Ẩn phần @ Replies"
+
+#~ msgid "Load new Tweets every"
+#~ msgstr "Lấy những Tweet mới mỗi"
+
+#~ msgid "5 Min."
+#~ msgstr "5 phút."
+
+#~ msgid "15 Minutes"
+#~ msgstr "15 phút."
+
+#~ msgid "30 Minutes"
+#~ msgstr "30 phút."
+
+#~ msgid "1 Hour"
+#~ msgstr "1 giờ"
+
+#~ msgid "2 Hours"
+#~ msgstr "2 giờ"
+
+#~ msgid "4 Hours"
+#~ msgstr "4 giờ"
+
+#~ msgid "12 Hours"
+#~ msgstr "12 giờ"
+
+#~ msgid "24 Hours"
+#~ msgstr "24 giờ"
+
+#~ msgid "Include link to twitter page?"
+#~ msgstr "Kèm theo liên kết đến trang Twitter?"
+
+#~ msgid "Link Text (required)"
+#~ msgstr "Chữ liên kết (bắt buộc)"
+
+#~ msgid ""
+#~ "This widget has been deprecated, and will eventually be removed. DO NOT "
+#~ "use it. You have been warned."
+#~ msgstr ""
+#~ "Widget này đã bị hạn chế, và sẽ bị loại bỏ dần. KHÔNG NÊN dùng nó. Bạn đã "
+#~ "được cảnh báo."
+
+#~ msgid "Genesis - Category Menu"
+#~ msgstr "Genesis - Menu Chủ đề"
+
+#~ msgid ""
+#~ "This widget has been deprecated, and will eventually be removed. We "
+#~ "suggest that you <a href=\"%s\">create a menu</a> and use the \"Custom "
+#~ "Menu\" widget instead."
+#~ msgstr ""
+#~ "Widget này đã bị hạn chế, và sẽ bị loại bỏ dần. Chúng tôi khuyên bạn <a "
+#~ "href=\"%s\">tạo một menu</a> và sử dụng widget \"Menu tùy chỉnh\" để thay "
+#~ "thế."
+
+#~ msgid "Genesis - Page Menu"
+#~ msgstr "Genesis - Menu trang"
+
+#~ msgid "[Read More %s]"
+#~ msgstr "[Đọc thêm %s]"
+
+#~ msgid "Displays user profile block with Gravatar"
+#~ msgstr "Hiển thị khối thông tin thành viên với Gravatar"
+
+#~ msgid "Genesis - User Profile"
+#~ msgstr "Genesis - Hồ sơ thành viên"
+
+#~ msgid "View My Blog Posts"
+#~ msgstr "Xem các bài viết Blog của tôi"
+
+#~ msgid ""
+#~ "Select a user. The email address for this account will be used to pull "
+#~ "the Gravatar image."
+#~ msgstr ""
+#~ "Chọn một thành viên. Địa chỉ email của tài khoản này sẽ được sử dụng để "
+#~ "lấy hình ảnh từ Gravatar"
+
+#~ msgid "Small"
+#~ msgstr "Nhỏ"
+
+#~ msgid "Medium"
+#~ msgstr "Vừa"
+
+#~ msgid "Large"
+#~ msgstr "Lớn"
+
+#~ msgid "Extra Large"
+#~ msgstr "Rất lớn"
+
+#~ msgid "Select which text you would like to use as the author description"
+#~ msgstr "Hãy chọn chữ mà bạn muốn dùng cho phần mô tả về tác giả"
+
+#~ msgid "Author Bio"
+#~ msgstr "Tiểu sử Tác giả"
+
+#~ msgid "Custom Text (below)"
+#~ msgstr "Tùy chỉnh chữ (bên dưới)"
+
+#~ msgid "Custom Text Content"
+#~ msgstr "Tùy chỉnh chữ Nội dung"
+
+#~ msgid ""
+#~ "Choose your extended \"About Me\" page from the list below. This will be "
+#~ "the page linked to at the end of the about me section."
+#~ msgstr ""
+#~ "Hãy chọn trang mở rộng \"Về Tôi\" từ danh sách bên dưới. Điều này sẽ tạo "
+#~ "ra trang gắn kết vào phần cuối của mục giới thiệu về tôi"
+
+#~ msgid "Extended page link text"
+#~ msgstr "Chữ liên kết trang mở rộng"
+
+#~ msgid "Show Author Archive Link?"
+#~ msgstr "Hiện liên kết đến trang Tác giả"

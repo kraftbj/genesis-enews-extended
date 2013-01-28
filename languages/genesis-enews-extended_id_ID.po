@@ -1,0 +1,1455 @@
+# Translation of Genesis 1.8 in Indonesian
+# This file is distributed under the same license as the Genesis 1.8 package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Genesis eNews Extended\n"
+"POT-Creation-Date: 2013-01-27 23:04-0600\n"
+"PO-Revision-Date: 2013-01-27 23:05-0600\n"
+"Last-Translator: Brandon Kraft <public@brandonkraft.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../class-bjgk-genesis-enews-extended.php:50
+#, fuzzy
+msgid "Displays subscribe form"
+msgstr "Tampilkan form email berlangganan Feedburner"
+
+#: ../class-bjgk-genesis-enews-extended.php:53
+#, fuzzy
+msgid "Genesis - eNews Extended"
+msgstr "Genesis - eNews dan Pembaruan"
+
+#: ../class-bjgk-genesis-enews-extended.php:138
+msgid "Title"
+msgstr "Judul"
+
+#: ../class-bjgk-genesis-enews-extended.php:143
+msgid "Text To Show"
+msgstr "Teks Untuk Ditampilkan"
+
+#: ../class-bjgk-genesis-enews-extended.php:148
+msgid "Google/Feedburner ID"
+msgstr "ID Google / Feedburner"
+
+#: ../class-bjgk-genesis-enews-extended.php:150
+msgid ""
+"Entering your Feedburner ID here will deactivate the custom options below."
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:154
+#, fuzzy
+msgid "Form Action"
+msgstr "Informasi"
+
+#: ../class-bjgk-genesis-enews-extended.php:159
+msgid "E-Mail Field"
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:164
+msgid "First Name Field"
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:169
+msgid "Last Name Field"
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:174
+msgid "Hidden Fields"
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:176
+msgid "Not all services use hidden fields."
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:181
+msgid "Open confirmation page in same window?"
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:185
+msgid "First Name..."
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:186
+#, fuzzy
+msgid "First Name Input Text"
+msgstr "Input Teks"
+
+#: ../class-bjgk-genesis-enews-extended.php:190
+msgid "Last Name..."
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:191
+#, fuzzy
+msgid "Last Name Input Text"
+msgstr "Input Teks"
+
+#: ../class-bjgk-genesis-enews-extended.php:195
+msgid "Enter your email address..."
+msgstr "Masukkan alamat email Anda ..."
+
+#: ../class-bjgk-genesis-enews-extended.php:196
+#, fuzzy
+msgid "E-Mail Input Text"
+msgstr "Input Teks"
+
+#: ../class-bjgk-genesis-enews-extended.php:201
+msgid "Go"
+msgstr "Lanjutkan"
+
+#: ../class-bjgk-genesis-enews-extended.php:202
+msgid "Button Text"
+msgstr "Teks Tombol"
+
+#~ msgid "Not Found, Error 404"
+#~ msgstr "Tidak Ditemukan, Galat 404"
+
+#~ msgid ""
+#~ "The page you are looking for no longer exists. Perhaps you can return "
+#~ "back to the site's <a href=\"%s\">homepage</a> and see if you can find "
+#~ "what you are looking for. Or, you can try finding it with the information "
+#~ "below."
+#~ msgstr ""
+#~ "Halaman yang sedang Anda cari tidak ada lagi. Mungkin Anda dapat kembali "
+#~ "ke <a href=\"%s\">halaman depan</a> dan melihat jika Anda dapat menemukan "
+#~ "apa yang sedang Anda cari. Atau, Anda dapat mencoba mencarinya melalui "
+#~ "informasi di bawah ini."
+
+#~ msgid "Pages:"
+#~ msgstr "Halaman:"
+
+#~ msgid "Categories:"
+#~ msgstr "Kategori:"
+
+#~ msgid "Authors:"
+#~ msgstr "Penulis:"
+
+#~ msgid "Monthly:"
+#~ msgstr "Bulanan:"
+
+#~ msgid "Recent Posts:"
+#~ msgstr "Tulisan Terakhir:"
+
+#~ msgid ""
+#~ "This post is password protected. Enter the password to view comments."
+#~ msgstr ""
+#~ "Tulisan ini dilindungi oleh kata sandi. Masukkan kata sandi untuk melihat "
+#~ "komentar."
+
+#~ msgid "Primary Navigation Menu"
+#~ msgstr "Menu Navigasi Utama"
+
+#~ msgid "Secondary Navigation Menu"
+#~ msgstr "Menu Navigasi Kedua"
+
+#~ msgid "Genesis - Import/Export"
+#~ msgstr "Genesis - Impor/Ekspor"
+
+#~ msgid "Import/Export"
+#~ msgstr "Impor/Ekspor"
+
+#~ msgid "Import Genesis Settings File"
+#~ msgstr "Impor Berkas Pengaturan Genesis"
+
+#~ msgid ""
+#~ "Upload the data file (<code>.json</code>) from your computer and we'll "
+#~ "import your settings."
+#~ msgstr ""
+#~ "Unggah berkas data (<code>.json</code>) dari komputer Anda dan kami akan "
+#~ "mengimpor pengaturan Anda."
+
+#~ msgid ""
+#~ "Choose the file from your computer and click \"Upload file and Import\""
+#~ msgstr ""
+#~ "Pilih berkas dari komputer Anda lalu klik \"Unggah berkas dan Impor\""
+
+#~ msgid "Upload File: (Maximum Size: %s)"
+#~ msgstr "Unggah Berkas: (Ukuran Maksimum: %s)"
+
+#~ msgid "Upload File and Import"
+#~ msgstr "Unggah Berkas dan Impor"
+
+#~ msgid "Export Genesis Settings File"
+#~ msgstr "Ekspor Berkas Pengaturan Genesis"
+
+#~ msgid ""
+#~ "When you click the button below, Genesis will generate a data file "
+#~ "(<code>.json</code>) for you to save to your computer."
+#~ msgstr ""
+#~ "Ketika Anda mengklik tombol di bawah, Genesis akan membangkitkan sebuah "
+#~ "berkas data (<code>.json</code>) buat Anda untuk disimpan ke komputer "
+#~ "Anda."
+
+#~ msgid ""
+#~ "Once you have saved the download file, you can use the import function on "
+#~ "another site to import this data."
+#~ msgstr ""
+#~ "Setelah Anda menyimpan berkas yang sudah diunduh, Anda dapat menggunakan "
+#~ "fungsi impor pada situs lainnya untuk mengimpor data ini."
+
+#~ msgid "Download Export File"
+#~ msgstr "Unduh Berkas Ekspor"
+
+#~ msgid "Settings successfully imported."
+#~ msgstr "Pengaturan berhasil diimpor."
+
+#~ msgid "There was a problem importing your settings. Please try again."
+#~ msgstr "Ada masalah saat mengimpor pengaturan Anda. Cobalah lagi."
+
+#~ msgid "Theme Settings"
+#~ msgstr "Pengaturan Tema"
+
+#~ msgid "SEO Settings"
+#~ msgstr "Pengaturan SEO"
+
+#~ msgid "No export options available."
+#~ msgstr "Tidak ada pilihan ekspor tersedia."
+
+#~ msgid "Theme SEO Settings"
+#~ msgstr "Pengaturan SEO Tema"
+
+#~ msgid "Custom Document Title"
+#~ msgstr "Judul Dokumen Kostum"
+
+#~ msgid "Characters Used: %s"
+#~ msgstr "Karakter yang Digunakan: %s"
+
+#~ msgid "Custom Post/Page Meta Description"
+#~ msgstr "Deskripsi Meta Halaman/Tulisan Kostum"
+
+#~ msgid "Custom Post/Page Meta Keywords, comma separated"
+#~ msgstr "Kata kunci Meta Halaman/Tulisan Kostum, dipisahkan koma"
+
+#~ msgid "Custom Canonical URI"
+#~ msgstr "Canonical URI Kostum"
+
+#~ msgid "Custom Redirect URI"
+#~ msgstr "Redirect URI Kostum"
+
+#~ msgid "Robots Meta Settings"
+#~ msgstr "Pengaturan Meta Robots"
+
+#~ msgid "Apply %s to this post/page"
+#~ msgstr "Terapkan %s ke tulisan/halaman ini"
+
+#~ msgid "Custom Tracking/Conversion Code"
+#~ msgstr "Pelacakan Kostum/Kode Konversi"
+
+#~ msgid "Layout Settings"
+#~ msgstr "Pengaturan Layout"
+
+#~ msgid "Default Layout set in <a href=\"%s\">Theme Settings</a>"
+#~ msgstr "Layout Standar diset dalam <a href=\"%s\">Pengaturan Tema</a>"
+
+#~ msgid "Custom Body Class"
+#~ msgstr "Body Class Kostum"
+
+#~ msgid "Custom Post Class"
+#~ msgstr "Post Class Kostum"
+
+#~ msgid "README"
+#~ msgstr "BACASAYA"
+
+#~ msgid "The %s file was not found in the child theme, or it was empty."
+#~ msgstr "Berkas %s tidak ditemukan di tema anak, atau dia kosong."
+
+#~ msgid "Genesis - SEO Settings"
+#~ msgstr "Pengaturan SEO - Genesis"
+
+#~ msgid "Save Settings"
+#~ msgstr "Simpan Pengaturan"
+
+#~ msgid "Reset Settings"
+#~ msgstr "Reset Pengaturan"
+
+#~ msgid "Settings saved."
+#~ msgstr "Pengaturan telah disimpan."
+
+#~ msgid "Settings reset."
+#~ msgstr "Pengaturan direset."
+
+#~ msgid "Error saving settings."
+#~ msgstr "Galat ketika menyiman perubahan."
+
+#~ msgid "Doctitle Settings"
+#~ msgstr "Pengaturan Juduldokumen"
+
+#~ msgid "Homepage Settings"
+#~ msgstr "Pengaturan Halaman depan"
+
+#~ msgid "Document Head Settings"
+#~ msgstr "Pengaturan Head Dokumen"
+
+#~ msgid "Archives Settings"
+#~ msgstr "Pengaturan Arsip"
+
+#~ msgid ""
+#~ "The Document Title is the single most important SEO tag in your document "
+#~ "source. It succinctly informs search engines of what information is "
+#~ "contained in the document. The doctitle changes from page to page, but "
+#~ "these options will help you control what it looks by default."
+#~ msgstr ""
+#~ "Judul Dokumen adalah tag SEO tunggal yang paling penting di sumber "
+#~ "dokumen Anda. Dia memberitahukan mesin pencarian dengan ringkas dan jelas "
+#~ "mengenai informasi apa yang dikandung di dalam dokumen. Perubahan "
+#~ "juduldokumen dari halaman ke halaman, tapi pilihan-pilihan ini akan "
+#~ "membantu Anda mengawasi bagaimana dia kelihatannya secara standar."
+
+#~ msgid ""
+#~ "<b>By default</b>, the homepage doctitle will contain the site title, the "
+#~ "single post and page doctitle will contain the post/page title, archive "
+#~ "pages will contain the archive type, etc."
+#~ msgstr ""
+#~ "<b>Secara standar</b>, juduldokumen halaman depan akan mengandung judul "
+#~ "situs, tulisan tunggal, dan juduldokumen halaman akan mengandung judul "
+#~ "halaman/tulisan, halaman arsip akan mengandung tipe arsip, dst."
+
+#~ msgid "Append Site Description to Doctitle on homepage?"
+#~ msgstr "Tambahkan Deskripsi Situs ke Juduldokumen pada halaman depan?"
+
+#~ msgid "Append Site Name to Doctitle on inner pages?"
+#~ msgstr "Tambahkan Nama Situs ke Juduldokumen pada halaman yang lebih dalam?"
+
+#~ msgid "Doctitle (%s) Append Location:"
+#~ msgstr "Lokasi Tambahan Doctitle (%s):"
+
+#~ msgid "Determines what side the appended doctitle text will go on."
+#~ msgstr ""
+#~ "Menentukan di sebelah mana teks doctitle yang ditambahkan akan berada."
+
+#~ msgid "Left"
+#~ msgstr "Kiri"
+
+#~ msgid "Right"
+#~ msgstr "Kanan"
+
+#~ msgid "Doctitle (<code>&lt;title&gt;</code>) Separator:"
+#~ msgstr "Pemisah Doctitle (<code>&lt;title&gt;</code>):"
+
+#~ msgid ""
+#~ "If the doctitle consists of two parts (Title &amp; Appended Text), then "
+#~ "the Doctitle Separator will go between them."
+#~ msgstr ""
+#~ "Jika doctitle mengandung dua bagian (Judul &amp; Teks yang Ditambahkan), "
+#~ "maka Pemisah Doctitle akan berada di antaranya."
+
+#~ msgid "Which text would you like to be wrapped in %s tags?"
+#~ msgstr "Teks yang mana ingin Anda bungkus di dalam tag %s?"
+
+#~ msgid ""
+#~ "The %s tag is, arguably, the second most important SEO tag in the "
+#~ "document source. Choose wisely."
+#~ msgstr ""
+#~ "Tag %s adalah, yang dapat dibantah, tag SEO kedua yang paling penting di "
+#~ "sumber dokumen. Pilih dengan bijak."
+
+#~ msgid "Site Title"
+#~ msgstr "Judul Situs"
+
+#~ msgid "Site Description"
+#~ msgstr "Deskripsi Situs"
+
+#~ msgid "Neither. I'll manually wrap my own text on the homepage"
+#~ msgstr ""
+#~ "Tidak satupun. Saya akan membungkus teks saya sendiri secara manual pada "
+#~ "halaman depan"
+
+#~ msgid "Home Doctitle:"
+#~ msgstr "Beranda Doctitle:"
+
+#~ msgid ""
+#~ "If you leave the doctitle field blank, your site&rsquo;s title will be "
+#~ "used instead."
+#~ msgstr ""
+#~ "Jika Anda membiarkan ruas doctitle kosong, judul situs Anda yang akan "
+#~ "digunakan."
+
+#~ msgid "Home META Description:"
+#~ msgstr "Deskripsi META Beranda: "
+
+#~ msgid ""
+#~ "The META Description can be used to determine the text used under the "
+#~ "title on search engine results pages."
+#~ msgstr ""
+#~ "Deskripsi META dapat digunakan untuk menentukan teks yang digunakan di "
+#~ "bawah judul pada hasil pencarian oleh mesin pencarian."
+
+#~ msgid "Home META Keywords (comma separated):"
+#~ msgstr "Kata kunci META beranda (dipisahkan koma):"
+
+#~ msgid "Keywords are generally ignored by Search Engines."
+#~ msgstr "Kata kunci biasanya diabaikan oleh Mesin Pencarian."
+
+#~ msgid "Homepage Robots Meta Tags:"
+#~ msgstr "Tag Meta Robots Halaman depan:"
+
+#~ msgid "Apply %s to the homepage?"
+#~ msgstr "Terapkan %s ke halaman depan?"
+
+#~ msgid ""
+#~ "By default, WordPress places several tags in your document %1$s. Most of "
+#~ "these tags are completely unnecessary, and provide no SEO value "
+#~ "whatsoever. They just make your site slower to load. Choose which tags "
+#~ "you would like included in your document %1$s. If you do not know what "
+#~ "something is, leave it unchecked."
+#~ msgstr ""
+#~ "Secara standar, WordPress menempatkan beberapa tag di dokumen %1$s Anda. "
+#~ "Kebanyakan tag ini tidak perlu, dan tidak menyediakan nilai SEO apapun. "
+#~ "Mereka hanya membuat situs Anda lebih lambat untuk memuatnya. Pilih tag "
+#~ "yang akan Anda sertakan di dokumen %1$s Anda. Jika Anda tidak tahu "
+#~ "apapun, biarkan dia tidak dicentang."
+
+#~ msgid "Relationship Link Tags:"
+#~ msgstr "Tag Tautan Hubungan:"
+
+#~ msgid "Adjacent Posts %s link tags"
+#~ msgstr "Tag tautan %s Tulisan yang Berdekatan"
+
+#~ msgid "Windows Live Writer Support:"
+#~ msgstr "Dukungan Penulis Langsung Windows"
+
+#~ msgid "Include Windows Live Writer Support Tag?"
+#~ msgstr "Sertakan Tag Dukungan Penulis Langsung Windows?"
+
+#~ msgid "Shortlink Tag:"
+#~ msgstr "Tag Tautan singkat:"
+
+#~ msgid "Include Shortlink tag?"
+#~ msgstr "Sertakan tag Tautan singkat?"
+
+#~ msgid ""
+#~ "The shortlink tag might have some use for 3rd party service "
+#~ "discoverability, but it has no SEO value whatsoever."
+#~ msgstr ""
+#~ "Tag shortlink mungkin beberapa digunakan untuk kemampuan pencarian "
+#~ "layanan pihak ke-3, tetapi tidak memiliki nilai SEO apapun"
+
+#~ msgid ""
+#~ "Depending on your situation, you may or may not want the following "
+#~ "archive pages to be indexed by search engines. Only you can make that "
+#~ "determination."
+#~ msgstr ""
+#~ "Tergantung pada situasi, Anda dapat atau tidak ingin halaman arsip "
+#~ "berikut diindeks oleh mesin pencarian. Hanya Anda yang dapat membuat "
+#~ "tekad itu."
+
+#~ msgid "Apply %s to Category Archives?"
+#~ msgstr "Terapkan %s ke Arsip Kategori?"
+
+#~ msgid "Apply %s to Tag Archives?"
+#~ msgstr "Terapkan %s ke Arsip Tag?"
+
+#~ msgid "Apply %s to Author Archives?"
+#~ msgstr "Terapkan %s ke Arsip Penulis?"
+
+#~ msgid "Apply %s to Date Archives?"
+#~ msgstr "Terapkan %s ke Arsip Tanggal?"
+
+#~ msgid "Apply %s to Search Archives?"
+#~ msgstr "Terapkan %s ke Arsip Pencarian?"
+
+#~ msgid ""
+#~ "Some search engines will cache pages in your site (e.g Google Cache). The "
+#~ "%1$s tag will prevent them from doing so. Choose what archives you want "
+#~ "to %1$s."
+#~ msgstr ""
+#~ "Beberapa mesin pencarian akan men-cache halaman di situs Anda (misalnya "
+#~ "Google Cache). Tag 1%$s akan mencegah mereka melakukannya. Pilih arsip "
+#~ "apa yang Anda ingin %1$s."
+
+#~ msgid "Apply %s to Entire Site?"
+#~ msgstr "Terapkan%s ke Situs Keseluruhan?"
+
+#~ msgid ""
+#~ "Occasionally, search engines use resources like the Open Directory "
+#~ "Project and the Yahoo! Directory to find titles and descriptions for your "
+#~ "content. Generally, you will not want them to do this. The %s and %s tags "
+#~ "prevent them from doing so."
+#~ msgstr ""
+#~ "Kadang-kadang, mesin pencarian menggunakan sumber daya seperti Open "
+#~ "Directory Project dan Yahoo! Directory untuk menemukan judul dan "
+#~ "deskripsi untuk konten Anda. Umumnya, Anda tidak ingin mereka melakukan "
+#~ "hal ini. Tag %s dan%s mencegah mereka melakukannya."
+
+#~ msgid "Apply %s to your site?"
+#~ msgstr "Terapkan%s ke situs Anda?"
+
+#~ msgid "Canonical Paginated Archives"
+#~ msgstr "Arsip Halaman Canonical"
+
+#~ msgid ""
+#~ "This option points search engines to the first page of an archive, if "
+#~ "viewing a paginated page. If you do not know what this means, leave it on."
+#~ msgstr ""
+#~ "Pilihan ini mengarahkan mesin pencarian ke halaman pertama dari arsip, "
+#~ "jika melihat halaman paginasi. Jika Anda tidak tahu apa artinya ini, "
+#~ "biarkan saja."
+
+#~ msgid "Archive Settings"
+#~ msgstr "Pengaturan Arsip"
+
+#~ msgid "Archive Headline"
+#~ msgstr "Judul Atas Arsip"
+
+#~ msgid "Leave empty if you do not want to display a headline."
+#~ msgstr "Biarkan kosong jika Anda tidak ingin menampilkan judul atas."
+
+#~ msgid "Archive Intro Text"
+#~ msgstr "Teks Pendahuluan Arsip"
+
+#~ msgid "Leave empty if you do not want to display any intro text."
+#~ msgstr ""
+#~ "Biarkan kosong jika Anda tidak ingin menampilkan teks pendahuluan apapun."
+
+#~ msgid "Custom Document %s"
+#~ msgstr "Dokumen kostum %s"
+
+#~ msgid "%s Description"
+#~ msgstr "Deskripsi %s"
+
+#~ msgid "%s Keywords"
+#~ msgstr "Kata kunci %s"
+
+#~ msgid "Comma separated list"
+#~ msgstr "Daftar dipisahkan koma"
+
+#~ msgid "Robots Meta"
+#~ msgstr "Meta Robot"
+
+#~ msgid "Apply %s to this archive?"
+#~ msgstr "Terapkan %s ke arsip ini?"
+
+#~ msgid "Choose Layout"
+#~ msgstr "Pilih Layout"
+
+#~ msgid "Follow me on Twitter"
+#~ msgstr "Ikuti saya di Twitter"
+
+#~ msgid "Color Style"
+#~ msgstr "Gaya Warna"
+
+#~ msgid "Custom Feeds"
+#~ msgstr "Umpan Kostum"
+
+#~ msgid "Default Layout"
+#~ msgstr "Layout Standar"
+
+#~ msgid "Header Settings"
+#~ msgstr "Pengaturan Header"
+
+#~ msgid "Navigation Settings"
+#~ msgstr "Pengaturan Navigasi"
+
+#~ msgid "Breadcrumbs"
+#~ msgstr "Potongan alamat"
+
+#~ msgid "Comments and Trackbacks"
+#~ msgstr "Komentar dan Lacakbalik"
+
+#~ msgid "Content Archives"
+#~ msgstr "Arsip Konten"
+
+#~ msgid "Blog Page"
+#~ msgstr "Halaman Blog"
+
+#~ msgid "Header and Footer Scripts"
+#~ msgstr "Skrip Header dan Footer"
+
+#~ msgid "Version:"
+#~ msgstr "Versi:"
+
+#~ msgid "Released:"
+#~ msgstr "Dirilis:"
+
+#~ msgid "Display Theme Information in your document source"
+#~ msgstr "Tampilkan Informasi Tema di sumber dokumen Anda"
+
+#~ msgid ""
+#~ "This can be helpful for diagnosing problems with your theme when seeking "
+#~ "assistance in the <a href=\"%s\" target=\"_blank\">support forums</a>."
+#~ msgstr ""
+#~ "Ini dapat membantu untuk mendiagnosis masalah dengan tema Anda ketika "
+#~ "mencari bantuan dalam <a href=\"%s\" target=\"_blank\"> dukungan forum </"
+#~ "a>."
+
+#~ msgid "Enable Automatic Updates"
+#~ msgstr "Aktifkan Pembaruan Otomatis"
+
+#~ msgid "Notify"
+#~ msgstr "Beritahukan"
+
+#~ msgid "when updates are available"
+#~ msgstr "ketika pembaruan tersedia"
+
+#~ msgid ""
+#~ "If you provide an email address above, your blog can email you when a new "
+#~ "version of Genesis is available."
+#~ msgstr ""
+#~ "Jika Anda memberikan alamat email di atas, blog Anda dapat mengirimkan "
+#~ "email Anda ketika versi baru Genesis tersedia."
+
+#~ msgid "Color Style:"
+#~ msgstr "Gaya Warna: "
+
+#~ msgid "Default"
+#~ msgstr "Standar"
+
+#~ msgid ""
+#~ "Please select the color style from the drop down list and save your "
+#~ "settings."
+#~ msgstr "Pilih gaya warna dari senarai pilihan dan simpan perubahan Anda."
+
+#~ msgid "Use for blog title/logo:"
+#~ msgstr "Gunakan untuk judul blog/logo:"
+
+#~ msgid "Dynamic text"
+#~ msgstr "Teks dinamis"
+
+#~ msgid "Image logo"
+#~ msgstr "Gambar logo"
+
+#~ msgid "Primary Navigation"
+#~ msgstr "Navigasi Utama"
+
+#~ msgid "Include Primary Navigation Menu?"
+#~ msgstr "Sertakan Navigation Menu Utama?"
+
+#~ msgid "Enable Fancy Dropdowns?"
+#~ msgstr "Aktifkan dropdown Fancy?"
+
+#~ msgid "Enable Extras on Right Side?"
+#~ msgstr "Aktifkan Ekstra di Sisi Kanan?"
+
+#~ msgid "Display the following:"
+#~ msgstr "Tampilan berikut:"
+
+#~ msgid "Today's date"
+#~ msgstr "Tanggal hari ini"
+
+#~ msgid "RSS feed links"
+#~ msgstr "Tautan umpan RSS"
+
+#~ msgid "Search form"
+#~ msgstr "Form pencarian"
+
+#~ msgid "Twitter link"
+#~ msgstr "Tautan Twitter"
+
+#~ msgid "Enter Twitter ID:"
+#~ msgstr "Masukkan ID Twitter:"
+
+#~ msgid "Twitter Link Text:"
+#~ msgstr "Teks Tautan Twitter:"
+
+#~ msgid "Secondary Navigation"
+#~ msgstr "Navigasi Kedua"
+
+#~ msgid "Include Secondary Navigation Menu?"
+#~ msgstr "Sertakan Navigation Menu Sekunder?"
+
+#~ msgid ""
+#~ "In order to use the navigation menus, you must build a <a href=\"%s"
+#~ "\">custom menu</a>, then assign it to the proper Menu Location."
+#~ msgstr ""
+#~ "Untuk menggunakan menu navigasi, Anda harus membangun <a href=\"%s\">Menu "
+#~ "kustom</a>, kemudian menugaskannya ke Lokasi Menu yang tepat. "
+
+#~ msgid "Enter your custom feed URI:"
+#~ msgstr "Masukkan umpan URI kostum Anda:"
+
+#~ msgid "Redirect Feed?"
+#~ msgstr "Umpan Redirect?"
+
+#~ msgid "Enter your custom comments feed URI:"
+#~ msgstr "Masukkan umpan URI komentar kostum Anda:"
+
+#~ msgid ""
+#~ "If your custom feed(s) are not handled by Feedburner, we do not recommend "
+#~ "that you use the redirect options."
+#~ msgstr ""
+#~ "Jika umpan kostum Anda tidak ditangani oleh Feedburner, kami tidak "
+#~ "menyarankan bahwa Anda menggunakan redirect pilihan."
+
+#~ msgid "Enable Comments"
+#~ msgstr "Aktifkan Komentar"
+
+#~ msgid "on posts?"
+#~ msgstr "pada tulisan?"
+
+#~ msgid "on pages?"
+#~ msgstr "pada halaman?"
+
+#~ msgid "Enable Trackbacks"
+#~ msgstr "Aktifkan Trackbacks"
+
+#~ msgid ""
+#~ "Comments and Trackbacks can also be disabled on a per post/page basis "
+#~ "when creating/editing posts/pages."
+#~ msgstr ""
+#~ "Komentar dan Trackbacks juga dapat dinonaktifkan berdasarkan posting / "
+#~ "halaman per saat membuat / mengedit posting / halaman."
+
+#~ msgid "Enable on:"
+#~ msgstr "Aktifkan pada:"
+
+#~ msgid "Front Page"
+#~ msgstr "Halaman depan"
+
+#~ msgid "Posts"
+#~ msgstr "Tulisan"
+
+#~ msgid "Pages"
+#~ msgstr "Halaman"
+
+#~ msgid "Archives"
+#~ msgstr "Arsip"
+
+#~ msgid "404 Page"
+#~ msgstr "Halaman 404"
+
+#~ msgid "Attachment Page"
+#~ msgstr "Halaman Lampiran"
+
+#~ msgid ""
+#~ "Breadcrumbs are a great way of letting your visitors find out where they "
+#~ "are on your site with just a glance. You can enable/disable them on "
+#~ "certain areas of your site."
+#~ msgstr ""
+#~ "Breadcrumbs adalah cara yang bagus untuk membiarkan pengunjung Anda "
+#~ "mencari tahu di mana mereka berada di situs Anda dengan hanya sekilas. "
+#~ "Anda dapat mengaktifkan / menonaktifkan mereka pada area tertentu dari "
+#~ "situs Anda."
+
+#~ msgid "Select one of the following:"
+#~ msgstr "Pilih salah satu dari berikut:"
+
+#~ msgid "Display post content"
+#~ msgstr "Tampilkan isi posting"
+
+#~ msgid "Display post excerpts"
+#~ msgstr "Tampilkan kutipan tulisan"
+
+#~ msgid "Limit content to"
+#~ msgstr "Batasi konten sampai"
+
+#~ msgid "characters"
+#~ msgstr "karakter"
+
+#~ msgid ""
+#~ "Using this option will limit the text and strip all formatting from the "
+#~ "text displayed. To use this option, choose \"Display post content\" in "
+#~ "the select box above."
+#~ msgstr ""
+#~ "Menggunakan opsi ini akan membatasi teks dan menghapus semua format dari "
+#~ "teks yang ditampilkan. Untuk menggunakan opsi ini, pilih \"Tampilkan isi "
+#~ "tulisan\" di kotak pilihan atas."
+
+#~ msgid "Include the Featured Image?"
+#~ msgstr "Sertakan Gambar yang ditampilkan?"
+
+#~ msgid "Image Size:"
+#~ msgstr "Ukuran Gambar: "
+
+#~ msgid "Select Post Navigation Technique:"
+#~ msgstr "Pilih Teknik Navigasi Tulisan:"
+
+#~ msgid "Older / Newer"
+#~ msgstr "Lebih Lama / Lebih Baru"
+
+#~ msgid "Previous / Next"
+#~ msgstr "Sebelumnya / Berikutnya"
+
+#~ msgid "Numeric"
+#~ msgstr "Numerik"
+
+#~ msgid ""
+#~ "These options will affect any blog listings page, including archive, "
+#~ "author, blog, category, search, and tag pages."
+#~ msgstr ""
+#~ "Pilihan ini akan mempengaruhi setiap daftar halaman blog, termasuk arsip, "
+#~ "penulis, blog, kategori, pencarian, dan halaman tag."
+
+#~ msgid "Display which category:"
+#~ msgstr "Tampilkan kategori yang mana:"
+
+#~ msgid "All Categories"
+#~ msgstr "Semua Kategori"
+
+#~ msgid "Exclude the following Category IDs:"
+#~ msgstr "Kecualikan ID Kategori berikut:"
+
+#~ msgid "Comma separated - 1,2,3 for example"
+#~ msgstr "Dipisahkan koma - 1,2,3 misalnya"
+
+#~ msgid "Number of Posts to Show:"
+#~ msgstr "Jumlah Tulisan yang Ditampilkan: "
+
+#~ msgid "Enter scripts or code you would like output to %s:"
+#~ msgstr "Masukkan skrip atau kode yang ingin Anda tampilkan ke %s: "
+
+#~ msgid ""
+#~ "The %1$s hook executes immediately before the closing %2$s tag in the "
+#~ "document source."
+#~ msgstr ""
+#~ "Hook %1$s mengeksekusi tepat sebelum tag penutup %2$s di dokumen sumber."
+
+#~ msgid "User Permissions"
+#~ msgstr "Hak Akses Pengguna"
+
+#~ msgid "Genesis Admin Menus"
+#~ msgstr "Menu Admin Genesis"
+
+#~ msgid "Enable Genesis Admin Menu?"
+#~ msgstr "Aktifkan Menu Admin Genesis?"
+
+#~ msgid "Enable SEO Settings Submenu?"
+#~ msgstr "Aktifkan Submenu Pengaturan SEO?"
+
+#~ msgid "Enable Import/Export Submenu?"
+#~ msgstr "Aktifkan Submenu Impor/Ekspor?"
+
+#~ msgid "Author Archive Settings"
+#~ msgstr "Pengaturan Arsip Penulis"
+
+#~ msgid "These settings apply to this author's archive pages."
+#~ msgstr "Pengaturan ini berlaku untuk halaman arsip penulis ini."
+
+#~ msgid "Custom Archive Headline"
+#~ msgstr "Headline Arsip Kostum"
+
+#~ msgid "Will display in the %s tag at the top of the first page"
+#~ msgstr "Akan menampilkan dalam tag%s di bagian atas halaman pertama"
+
+#~ msgid "Custom Description Text"
+#~ msgstr "Teks Deskripsi Kostum"
+
+#~ msgid "This text will be the first paragraph, and display on the first page"
+#~ msgstr ""
+#~ "Teks ini akan menjadi paragraf pertama, dan ditampilkan di halaman pertama"
+
+#~ msgid "Author Box"
+#~ msgstr "Kotak Pengarang"
+
+#~ msgid "Enable Author Box on this User's Posts?"
+#~ msgstr "Aktifkan Kotak Penulis pada Tulisan Pengguna ini?"
+
+#~ msgid "Enable Author Box on this User's Archives?"
+#~ msgstr "Aktifkan Kotak Penulis pada Arsip Pengguna ini?"
+
+#~ msgid ""
+#~ "You cannot use %s to create two menus in the same subclass. Please use "
+#~ "separate subclasses for each menu."
+#~ msgstr ""
+#~ "Anda tidak dapat menggunakan %s untuk membuat dua menu di subclass yang "
+#~ "sama. Silahkan gunakan subclass yang terpisah untuk setiap menu."
+
+#~ msgid "Are you sure you want to reset?"
+#~ msgstr "Anda yakin ingin mereset?"
+
+#~ msgid "Home"
+#~ msgstr "Beranda"
+
+#~ msgid "You are here: "
+#~ msgstr "Anda di sini: "
+
+#~ msgid "Archives for "
+#~ msgstr "Arsip untuk"
+
+#~ msgid "Search for "
+#~ msgstr "Pencarian untuk"
+
+#~ msgid "Not found: "
+#~ msgstr "Tidak ditemukan:"
+
+#~ msgid "View %s"
+#~ msgstr "Tampilkan %s"
+
+#~ msgid "(Edit)"
+#~ msgstr "(Sunting)"
+
+#~ msgid "View archives for %s"
+#~ msgstr "Tampilkan arsip untuk %s"
+
+#~ msgid "View archives for %s %s"
+#~ msgstr "Tampilkan arsip untuk %s %s"
+
+#~ msgid "View all posts in %s"
+#~ msgstr "Tampilkan semua tulisan dalam %s"
+
+#~ msgid "View all %s"
+#~ msgstr "Lihat semua %s"
+
+#~ msgid "View all items in %s"
+#~ msgstr "Lihat semua item dalam %s"
+
+#~ msgid "This file no longer needs to be included."
+#~ msgstr "Berkas ini tidak lagi perlu disertakan."
+
+#~ msgid "seconds"
+#~ msgstr "detik"
+
+#~ msgid "and"
+#~ msgstr "dan"
+
+#~ msgid "Content-Sidebar"
+#~ msgstr "Konten-Sidebar"
+
+#~ msgid "Sidebar-Content"
+#~ msgstr "Sidebar-Konten"
+
+#~ msgid "Content-Sidebar-Sidebar"
+#~ msgstr "Konten-Sidebar-Sidebar"
+
+#~ msgid "Sidebar-Sidebar-Content"
+#~ msgstr "Sidebar-Sidebar-Konten"
+
+#~ msgid "Sidebar-Content-Sidebar"
+#~ msgstr "Sidebar-Konten-Sidebar"
+
+#~ msgid "Full Width Content"
+#~ msgstr "Konten Lebar Penuh"
+
+#~ msgid "No Label Selected"
+#~ msgstr "Tidak ada Label Terpilih"
+
+#~ msgid ""
+#~ "The argument, \"context\", has been replaced with \"theme_location\" in "
+#~ "the $args array."
+#~ msgstr ""
+#~ "Argumen, \"context\", telah diganti dengan \"theme_location\" di array "
+#~ "$args."
+
+#~ msgid ""
+#~ "Have you tried our Scribe SEO software? Do keyword research, content "
+#~ "optimization, and link building without leaving WordPress. <b>Genesis "
+#~ "owners save over 50&#37; using the promo code FIRST when you sign up</b>. "
+#~ "<a href=\"%s\" target=\"_blank\">Click here for more info</a>."
+#~ msgstr ""
+#~ "Apakah Anda sudah mencoba piranti Scribe SEO? Lakukan riset kata kunci, "
+#~ "optimasi konten, dan pembangunan tautan tanpa meninggalkan WordPress. "
+#~ "<b>Pemilik Genesis akan menghemat lebih 50&#37; dengan menggunakan kode "
+#~ "promo FIRST ketika Anda mendaftar akun Anda</b>. <a href=\"%s\" target="
+#~ "\"_blank\">Klik di sini untuk info lebih lanjut</a>."
+
+#~ msgid "Congratulations! You are now rocking Genesis %s"
+#~ msgstr "Selamat! Anda sekarang sedang memainkan Genesis %s"
+
+#~ msgid "Click here to complete the upgrade"
+#~ msgstr "Klik di sini untuk menyelesaikan pembaruan"
+
+#~ msgid ""
+#~ "Genesis %s is available. <a href=\"%s\" class=\"thickbox thickbox-preview"
+#~ "\">Check out what's new</a> or <a href=\"%s\" onclick=\"return "
+#~ "genesis_confirm('%s');\">update now</a>."
+#~ msgstr ""
+#~ "Genesis %s tersedia. <a href=\"%s\" class=\"thickbox thickbox-preview"
+#~ "\">Cek apa saja yang baru </a> atau <a href=\"%s\" onclick=\"return "
+#~ "genesis_confirm('%s');\">perbarui sekarang</a>."
+
+#~ msgid ""
+#~ "Upgrading Genesis will overwrite the current installed version of "
+#~ "Genesis. Are you sure you want to upgrade?. \"Cancel\" to stop, \"OK\" to "
+#~ "upgrade."
+#~ msgstr ""
+#~ "Pembaruan Genesis akan menimpa versi Genesis yang diinstal. Apakah Anda "
+#~ "yakin ingin memperbarui?. \"Batal\" untuk berhenti, \"OK\" untuk "
+#~ "memperbarui."
+
+#~ msgid "Genesis %s is available for %s"
+#~ msgstr "Genesis %s tersedia untuk %s"
+
+#~ msgid ""
+#~ "Genesis %s is now available. We have provided 1-click updates for this "
+#~ "theme, so please log into your dashboard and update at your earliest "
+#~ "convenience."
+#~ msgstr ""
+#~ "Genesis %s sekarang tersedia. Kami telah menyediakan 1-klik update untuk "
+#~ "tema ini, jadi harap login ke dasbor Anda dan perbarui demi kenyamanan "
+#~ "Anda yang lebih awal."
+
+#~ msgid "Header Left"
+#~ msgstr "Header Kiri"
+
+#~ msgid "Header Right"
+#~ msgstr "Header Kanan"
+
+#~ msgid "This is the widget area in the header."
+#~ msgstr "Ini merupakan area widget di header."
+
+#~ msgid "Primary Sidebar"
+#~ msgstr "Sidebar Utama"
+
+#~ msgid ""
+#~ "This is the primary sidebar if you are using a two or three column site "
+#~ "layout option."
+#~ msgstr ""
+#~ "Ini merupakan bar samping utama jika Anda menggunakan pilihan layout dua "
+#~ "atau tiga kolom."
+
+#~ msgid "Secondary Sidebar"
+#~ msgstr "Sidebar Kedua"
+
+#~ msgid ""
+#~ "This is the secondary sidebar if you are using a three column site layout "
+#~ "option."
+#~ msgstr ""
+#~ "Ini merupakan bar samping kedua jika Anda menggunakan pilihan layout tiga "
+#~ "kolom."
+
+#~ msgid "Footer %d"
+#~ msgstr "Footer %d"
+
+#~ msgid "Footer %d widget area."
+#~ msgstr "Area widget %d footer."
+
+#~ msgid "Select / Deselect All"
+#~ msgstr "Pilih / Batalkan Semua"
+
+#~ msgid "Return to top of page"
+#~ msgstr "Kembali ke atas halaman"
+
+#~ msgid "by "
+#~ msgstr "oleh"
+
+#~ msgid "Log in"
+#~ msgstr "Catat masuk"
+
+#~ msgid "Log out"
+#~ msgstr "Catat keluar"
+
+#~ msgid "ago"
+#~ msgstr "lalu"
+
+#~ msgid "Visit %s&#8217;s website"
+#~ msgstr "Kunjungi %s&#8217;s situs"
+
+#~ msgid "% Comments"
+#~ msgstr "% Komentar"
+
+#~ msgid "1 Comment"
+#~ msgstr "1 Komentar"
+
+#~ msgid "Leave a Comment"
+#~ msgstr "Tinggalkan Komentar"
+
+#~ msgid "Tagged With: "
+#~ msgstr "Ditag dengan:"
+
+#~ msgid "Filed Under: "
+#~ msgstr "Ditempatkan di bawah:"
+
+#~ msgid "<h3>Comments</h3>"
+#~ msgstr "<h3>Komentar</h3>"
+
+#~ msgid "<h3>Trackbacks</h3>"
+#~ msgstr "<h3>Lacakbalik</h3>"
+
+#~ msgid "<cite class=\"fn\">%s</cite> <span class=\"says\">%s:</span>"
+#~ msgstr "<cite class=\"fn\">%s </cite> <span class=\"says\">%s:</span>"
+
+#~ msgid "says"
+#~ msgstr "mengatakan"
+
+#~ msgid "%1$s at %2$s"
+#~ msgstr "%1$s pada %2$s"
+
+#~ msgid "Edit"
+#~ msgstr "Sunting"
+
+#~ msgid "Your comment is awaiting moderation."
+#~ msgstr "Komentar Anda sedang menunggu persetujuan."
+
+#~ msgid "Name"
+#~ msgstr "Nama"
+
+#~ msgid "Email"
+#~ msgstr "Email"
+
+#~ msgid "Website"
+#~ msgstr "Situs"
+
+#~ msgid "Speak Your Mind"
+#~ msgstr "Utarakan Pikiran Anda"
+
+#~ msgid "Copyright"
+#~ msgstr "Hak Cipta"
+
+#~ msgid "on"
+#~ msgstr "pada"
+
+#~ msgid "Read more&hellip;"
+#~ msgstr "Baca selengkapnya &hellip;"
+
+#~ msgid "You are using invalid arguments with the %s function."
+#~ msgstr "Anda menggunakan argumen yang tidak valid dengan fungsi %s."
+
+#~ msgid "Comments"
+#~ msgstr "Komentar"
+
+#~ msgid "[Read more...]"
+#~ msgstr "[Selengkapnya ...]"
+
+#~ msgid "Sorry, no posts matched your criteria."
+#~ msgstr "Maaf, tidak ada tulisan yang memenuhi kriteria Anda."
+
+#~ msgid "By"
+#~ msgstr "Oleh"
+
+#~ msgid "About"
+#~ msgstr "Tentang"
+
+#~ msgid "Older Posts"
+#~ msgstr "Posting Lebih Lama"
+
+#~ msgid "Newer Posts"
+#~ msgstr "Posting Lebih Baru"
+
+#~ msgid "Previous Page"
+#~ msgstr "Halaman Sebelumnya"
+
+#~ msgid "Next Page"
+#~ msgstr "Halaman Berikutnya"
+
+#~ msgid "Search this website %s"
+#~ msgstr "Cari di situs ini %s"
+
+#~ msgid "Search"
+#~ msgstr "Cari"
+
+#~ msgid "Primary Sidebar Widget Area"
+#~ msgstr "Area Widget Sidebar Utama"
+
+#~ msgid ""
+#~ "This is the Primary Sidebar Widget Area. You can add content to this area "
+#~ "by visiting your <a href=\"%s\">Widgets Panel</a> and adding new widgets "
+#~ "to this area."
+#~ msgstr ""
+#~ "Ini adalah Area Widget Sidebar Utama. Anda dapat menambahkan konten ke "
+#~ "daerah ini dengan mengunjungi <a href=\"%s\">Panel Widget </a> anda dan "
+#~ "menambahkan widget baru untuk daerah ini."
+
+#~ msgid "Secondary Sidebar Widget Area"
+#~ msgstr "Area Widget Sidebar Kedua"
+
+#~ msgid ""
+#~ "This is the Secondary Sidebar Widget Area. You can add content to this "
+#~ "area by visiting your <a href=\"%s\">Widgets Panel</a> and adding new "
+#~ "widgets to this area."
+#~ msgstr ""
+#~ "Ini adalah Area Widget Sidebar Kedua. Anda dapat menambahkan konten ke "
+#~ "daerah ini dengan mengunjungi <a href=\"%s\">Panel Widget</a> Anda dan "
+#~ "menambahkan widget baru untuk daerah ini."
+
+#~ msgid "Single Post Template"
+#~ msgstr "Templat Halaman Tunggal"
+
+#~ msgid "Post Template"
+#~ msgstr "Templat Tulisan"
+
+#~ msgid ""
+#~ "Some themes have custom templates you can use for single posts that might "
+#~ "have additional features or custom layouts. If so, you will see them "
+#~ "above."
+#~ msgstr ""
+#~ "Beberapa tema memiliki template kostum yang dapat Anda gunakan untuk "
+#~ "tulisan tunggal yang mungkin memiliki fitur tambahan atau tata letak yang "
+#~ "kostum. Jika demikian, Anda akan melihat mereka di atas."
+
+#~ msgid "Displays featured page with thumbnails"
+#~ msgstr "Tampilkan thumbnail dengan halaman yang ditampilkan"
+
+#~ msgid "Genesis - Featured Page"
+#~ msgstr "Genesis - Halaman yang ditampilkan"
+
+#~ msgid "by"
+#~ msgstr "oleh"
+
+#~ msgid "Page"
+#~ msgstr "Halaman"
+
+#~ msgid "Show Featured Image"
+#~ msgstr "Tampilkan Gambar yang Ditampilkan"
+
+#~ msgid "Image Size"
+#~ msgstr "Ukuran Gambar"
+
+#~ msgid "Image Alignment"
+#~ msgstr "Perataan Gambar"
+
+#~ msgid "None"
+#~ msgstr "Tidak ada"
+
+#~ msgid "Show Page Title"
+#~ msgstr "Tampilkan Judul Halaman"
+
+#~ msgid "Show Page Byline"
+#~ msgstr "Tampilkan Halaman dalam Baris"
+
+#~ msgid "Show Page Content"
+#~ msgstr "Tampilkan Konten Halaman"
+
+#~ msgid "Content Character Limit"
+#~ msgstr "Batas Karakter di Konten"
+
+#~ msgid "More Text"
+#~ msgstr "Teks Lainnya"
+
+#~ msgid "[Read More...]"
+#~ msgstr "[Baca selengkapnya ...]"
+
+#~ msgid "More Posts from this Category"
+#~ msgstr "Tulisan Lainnya dari Kategori ini"
+
+#~ msgid "Displays featured posts with thumbnails"
+#~ msgstr "Tampilkan fitur posting dengan thumbnail"
+
+#~ msgid "Genesis - Featured Posts"
+#~ msgstr "Genesis - Tulisan yang Ditampilkan"
+
+#~ msgid "Category"
+#~ msgstr "Kategori"
+
+#~ msgid "Number of Posts to Show"
+#~ msgstr "Jumlah posting yang Ditampilkan"
+
+#~ msgid "Number of Posts to Offset"
+#~ msgstr "Jumlah posting untuk Offset"
+
+#~ msgid "Order By"
+#~ msgstr "Diurut berdasarkan"
+
+#~ msgid "Date"
+#~ msgstr "Tanggal"
+
+#~ msgid "Parent"
+#~ msgstr "Induk"
+
+#~ msgid "ID"
+#~ msgstr "ID"
+
+#~ msgid "Comment Count"
+#~ msgstr "Jumlah Komentar"
+
+#~ msgid "Random"
+#~ msgstr "Acak"
+
+#~ msgid "Sort Order"
+#~ msgstr "Urutan Daftar"
+
+#~ msgid "Descending (3, 2, 1)"
+#~ msgstr "Menurun (3, 2, 1)"
+
+#~ msgid "Ascending (1, 2, 3)"
+#~ msgstr "Menaik (1, 2, 3)"
+
+#~ msgid "Show Author Gravatar"
+#~ msgstr "Tampilkan Gravatar Penulis"
+
+#~ msgid "Gravatar Size"
+#~ msgstr "Ukuran Gravatar"
+
+#~ msgid "Small (45px)"
+#~ msgstr "Kecil (45px)"
+
+#~ msgid "Medium (65px)"
+#~ msgstr "Menengah (65px)"
+
+#~ msgid "Large (85px)"
+#~ msgstr "Besar (85px)"
+
+#~ msgid "Extra Large (125px)"
+#~ msgstr "Ekstra Besar (125px)"
+
+#~ msgid "Gravatar Alignment"
+#~ msgstr "Perataan Gravatar"
+
+#~ msgid "Show Post Title"
+#~ msgstr "Tampilkan Judul Tulisan"
+
+#~ msgid "Show Post Info"
+#~ msgstr "Tampilkan Info Tulisan"
+
+#~ msgid "Content Type"
+#~ msgstr "Tipe Konten"
+
+#~ msgid "Show Content"
+#~ msgstr "Tampilkan Konten"
+
+#~ msgid "Show Excerpt"
+#~ msgstr "Tampilkan Ringkasan"
+
+#~ msgid "Show Content Limit"
+#~ msgstr "Tampilkan Batas Konten"
+
+#~ msgid "No Content"
+#~ msgstr "Tanpa Konten"
+
+#~ msgid "More Text (if applicable)"
+#~ msgstr "Teks Selengkapnya (jika diterapkan)"
+
+#~ msgid ""
+#~ "To display an unordered list of more posts from this category, please "
+#~ "fill out the information below"
+#~ msgstr ""
+#~ "Untuk menampilkan daftar tulisan yang tidak diurutkan lainnya dari "
+#~ "kategori ini, silahkan isi informasi di bawah ini"
+
+#~ msgid "Show Category Archive Link"
+#~ msgstr "Tampilkan Tautan Kategori Arsip"
+
+#~ msgid "Link Text"
+#~ msgstr "Teks Tautan"
+
+#~ msgid "Display a list of your latest tweets."
+#~ msgstr "Menampilkan senarai dari tweet terakhir Anda."
+
+#~ msgid "Genesis - Latest Tweets"
+#~ msgstr "Genesis - Tweet Terakhir"
+
+#~ msgid ""
+#~ "The Twitter API is taking too long to respond. Please try again later."
+#~ msgstr "Twitter API terlalu lama merespon. Silakan coba lagi nanti."
+
+#~ msgid ""
+#~ "There was an error while attempting to contact the Twitter API. Please "
+#~ "try again."
+#~ msgstr ""
+#~ "Ada kesalahan ketika mencoba untuk menghubungi API Twitter. Silakan coba "
+#~ "lagi."
+
+#~ msgid ""
+#~ "The Twitter API returned an error while processing your request. Please "
+#~ "try again."
+#~ msgstr ""
+#~ "API Twitter mengembalikan kesalahan saat memproses permintaan Anda. "
+#~ "Silakan coba lagi."
+
+#~ msgid "about %s ago"
+#~ msgstr "sekitar %s lalu"
+
+#~ msgid "Twitter Username"
+#~ msgstr "Username Twitter"
+
+#~ msgid "Number of Tweets to Show"
+#~ msgstr "Jumlah Tweets yang Ditampilkan"
+
+#~ msgid "Hide @ Replies"
+#~ msgstr "Sembunyikan @ Balasan"
+
+#~ msgid "Load new Tweets every"
+#~ msgstr "Muat Tweets baru setiap"
+
+#~ msgid "5 Min."
+#~ msgstr "5 Menit"
+
+#~ msgid "15 Minutes"
+#~ msgstr "15 Menit"
+
+#~ msgid "30 Minutes"
+#~ msgstr "30 Menit"
+
+#~ msgid "1 Hour"
+#~ msgstr "1 Jam"
+
+#~ msgid "2 Hours"
+#~ msgstr "2 Jam"
+
+#~ msgid "4 Hours"
+#~ msgstr "4 Jam"
+
+#~ msgid "12 Hours"
+#~ msgstr "12 Jam"
+
+#~ msgid "24 Hours"
+#~ msgstr "24 Jam"
+
+#~ msgid "Include link to twitter page?"
+#~ msgstr "Sertakan tautan ke halaman twitter?"
+
+#~ msgid "Link Text (required)"
+#~ msgstr "Teks Tautan (diperlukan)"
+
+#~ msgid ""
+#~ "This widget has been deprecated, and will eventually be removed. DO NOT "
+#~ "use it. You have been warned."
+#~ msgstr ""
+#~ "Widget ini telah ditinggalkan, dan akan dihapus. JANGAN menggunakannya. "
+#~ "Anda telah diperingati."
+
+#~ msgid "Genesis - Category Menu"
+#~ msgstr "Genesis - Menu Kategori"
+
+#~ msgid ""
+#~ "This widget has been deprecated, and will eventually be removed. We "
+#~ "suggest that you <a href=\"%s\">create a menu</a> and use the \"Custom "
+#~ "Menu\" widget instead."
+#~ msgstr ""
+#~ "Widget ini telah ditinggalkan, dan akan dihapus. Kami menyarankan agar "
+#~ "Anda <a href=\"%s\">membuat menu</a> dan menggunakan widget \"Menu Kostum"
+#~ "\" sebagai penggantinya."
+
+#~ msgid "Genesis - Page Menu"
+#~ msgstr "Genesis - Menu Halaman"
+
+#~ msgid "[Read More %s]"
+#~ msgstr "[Baca Selengkapnya %s]"
+
+#~ msgid "Displays user profile block with Gravatar"
+#~ msgstr "Tampilkan blok profil pengguna dengan Gravatar"
+
+#~ msgid "Genesis - User Profile"
+#~ msgstr "Genesis - Profil Pengguna"
+
+#~ msgid "View My Blog Posts"
+#~ msgstr "Tampilkan Tulisan Blog Saya"
+
+#~ msgid ""
+#~ "Select a user. The email address for this account will be used to pull "
+#~ "the Gravatar image."
+#~ msgstr ""
+#~ "Pilih pengguna. Alamat email untuk akun ini akan digunakan untuk menarik "
+#~ "gambar Gravatar."
+
+#~ msgid "Small"
+#~ msgstr "Kecil"
+
+#~ msgid "Medium"
+#~ msgstr "Menengah"
+
+#~ msgid "Large"
+#~ msgstr "Besar"
+
+#~ msgid "Extra Large"
+#~ msgstr "Ekstra besar"
+
+#~ msgid "Select which text you would like to use as the author description"
+#~ msgstr "Pilih teks yang ingin Anda gunakan sebagai deskripsi penulis"
+
+#~ msgid "Author Bio"
+#~ msgstr "Biografi Penulis"
+
+#~ msgid "Custom Text (below)"
+#~ msgstr "Teks Kostum (di bawah)"
+
+#~ msgid "Custom Text Content"
+#~ msgstr "Teks Kostum (di bawah)"
+
+#~ msgid ""
+#~ "Choose your extended \"About Me\" page from the list below. This will be "
+#~ "the page linked to at the end of the about me section."
+#~ msgstr ""
+#~ "Pilih halaman \"Tentang Saya\" yang ditambahkan dari dari daftar di bawah "
+#~ "ini. Ini akan menjadi halaman yang dikaitkan terakhir pada bagian tentang "
+#~ "saya."
+
+#~ msgid "Extended page link text"
+#~ msgstr "Teks tautan halaman yang diperluas"
+
+#~ msgid "Show Author Archive Link?"
+#~ msgstr "Tampilkan tautan Arsip Penulis?"

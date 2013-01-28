@@ -1,0 +1,1606 @@
+# Translation of Genesis 1.9 in Hebrew
+# This file is distributed under the same license as the Genesis 1.9 package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Genesis eNews Extended\n"
+"POT-Creation-Date: 2013-01-27 23:03-0600\n"
+"PO-Revision-Date: 2013-01-27 23:03-0600\n"
+"Last-Translator: Brandon Kraft <public@brandonkraft.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../class-bjgk-genesis-enews-extended.php:50
+#, fuzzy
+msgid "Displays subscribe form"
+msgstr "מציג את טופס הרשמת אימייל לפידברנר"
+
+#: ../class-bjgk-genesis-enews-extended.php:53
+#, fuzzy
+msgid "Genesis - eNews Extended"
+msgstr "ג'נסיס - חדשות ועדכונים"
+
+#: ../class-bjgk-genesis-enews-extended.php:138
+msgid "Title"
+msgstr "כותרת"
+
+#: ../class-bjgk-genesis-enews-extended.php:143
+msgid "Text To Show"
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:148
+msgid "Google/Feedburner ID"
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:150
+msgid ""
+"Entering your Feedburner ID here will deactivate the custom options below."
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:154
+#, fuzzy
+msgid "Form Action"
+msgstr "מידע"
+
+#: ../class-bjgk-genesis-enews-extended.php:159
+msgid "E-Mail Field"
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:164
+msgid "First Name Field"
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:169
+msgid "Last Name Field"
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:174
+msgid "Hidden Fields"
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:176
+msgid "Not all services use hidden fields."
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:181
+msgid "Open confirmation page in same window?"
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:185
+msgid "First Name..."
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:186
+msgid "First Name Input Text"
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:190
+msgid "Last Name..."
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:191
+msgid "Last Name Input Text"
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:195
+#, fuzzy
+msgid "Enter your email address..."
+msgstr "הכנס/י כתובת אימייל..."
+
+#: ../class-bjgk-genesis-enews-extended.php:196
+msgid "E-Mail Input Text"
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:201
+msgid "Go"
+msgstr "התחל"
+
+#: ../class-bjgk-genesis-enews-extended.php:202
+#, fuzzy
+msgid "Button Text"
+msgstr "טקסט \"עוד\""
+
+#~ msgid ""
+#~ "You may notice that the default Genesis style sheet is a bit shorter, and "
+#~ "on the front end looks different. We've updated the default design and "
+#~ "extended the width of the layout to 1152px. Now you've got more real "
+#~ "estate to showcase your content."
+#~ msgstr ""
+#~ "כפי ששמת לב קובץ העיצוב של גנסיס קצר יותר ונראה שונה. עדכנו את העיצוב "
+#~ "הבסיסי והרוחב כעת הוא 1152 פיקסלים. כעת יש לך יותר מקום להצגת התכנים."
+
+#~ msgid "Not Found, Error 404"
+#~ msgstr "שגיאת 404, העמוד לא נמצא"
+
+#~ msgid ""
+#~ "The page you are looking for no longer exists. Perhaps you can return "
+#~ "back to the site's <a href=\"%s\">homepage</a> and see if you can find "
+#~ "what you are looking for. Or, you can try finding it with the information "
+#~ "below."
+#~ msgstr ""
+#~ "הדף שאתה מחפש אינו קיים עוד. אולי אתה יכול לחזור חזרה <a href=\"%s"
+#~ "\">לעמוד הבית </a>  של האתר  ולראות אם אתה יכול למצוא את מה שאתה מחפש. "
+#~ "לחלופין, אתה יכול לנסות למצוא אותו עם הפרטים שלהלן."
+
+#~ msgid "Pages:"
+#~ msgstr "עמודים:"
+
+#~ msgid "Categories:"
+#~ msgstr "קטגוריות:"
+
+#~ msgid "Authors:"
+#~ msgstr "כותבים:"
+
+#~ msgid "Monthly:"
+#~ msgstr "חודשי:"
+
+#~ msgid "Recent Posts:"
+#~ msgstr "פוסטים אחרונים:"
+
+#~ msgid ""
+#~ "This post is password protected. Enter the password to view comments."
+#~ msgstr "הפוסט מוגן בסיסמה. הזן את הסיסמה כדי לצפייה בתגובות."
+
+#~ msgid "Genesis - Import/Export"
+#~ msgstr "ג'נסיס - ייבוא ​​/ ייצוא"
+
+#~ msgid "Import/Export"
+#~ msgstr "ייבא/ייצא"
+
+#~ msgid "Import Genesis Settings File"
+#~ msgstr "יייבוא קובץ הגדרות של ג'נסיס"
+
+#~ msgid ""
+#~ "Upload the data file (<code>.json</code>) from your computer and we'll "
+#~ "import your settings."
+#~ msgstr ""
+#~ "טען את קובץ הנתונים (<code>.json</code>) מהמחשב שלך ואנחנו נייבא את "
+#~ "ההגדרות שלך."
+
+#~ msgid ""
+#~ "Choose the file from your computer and click \"Upload file and Import\""
+#~ msgstr "בחר את הקובץ מהמחשב ולחץ על \"ייבוא קובץ\""
+
+#~ msgid "Upload File: (Maximum Size: %s)"
+#~ msgstr "העלאת קובץ: (גודל מירבי: %s)"
+
+#~ msgid "Upload File and Import"
+#~ msgstr "ייבוא קובץ"
+
+#~ msgid "Export Genesis Settings File"
+#~ msgstr "יייצוא קובץ הגדרות של ג'נסיס"
+
+#~ msgid ""
+#~ "When you click the button below, Genesis will generate a data file "
+#~ "(<code>.json</code>) for you to save to your computer."
+#~ msgstr ""
+#~ "בלחיצה על הכפתור למטה, ג'נסיס תיצור קובץ נתונים (<code>. Json </code>) "
+#~ "כדי שתוכל לשמור אותו על המחשב שלך."
+
+#~ msgid ""
+#~ "Once you have saved the download file, you can use the import function on "
+#~ "another site to import this data."
+#~ msgstr ""
+#~ "לאחר שמירת קובץ ההורדה, ניתן להשתמש בפונקציה \"יבוא\" כדי לייבא נתונים "
+#~ "אלה."
+
+#~ msgid "Download Export File"
+#~ msgstr "הורדת קובץ ייצוא"
+
+#~ msgid "Settings successfully imported."
+#~ msgstr "הגדרות יובאו בהצלחה."
+
+#~ msgid "There was a problem importing your settings. Please try again."
+#~ msgstr "היתה בעיה לייבא את ההגדרות שלך. אנא נסה שוב."
+
+#~ msgid "Theme Settings"
+#~ msgstr "הגדרות תבנית"
+
+#~ msgid "SEO Settings"
+#~ msgstr "הגדרות SEO"
+
+#~ msgid "No export options available."
+#~ msgstr "אפשרויות ייצוא אינן זמינות"
+
+#~ msgid "Theme SEO Settings"
+#~ msgstr "הגדרות SEO"
+
+#~ msgid "Custom Document Title"
+#~ msgstr "כותרת מסמך (Title) מותאמת אישית"
+
+#~ msgid "Characters Used: %s"
+#~ msgstr "תווים בשימוש:-%s"
+
+#~ msgid "Custom Post/Page Meta Description"
+#~ msgstr "Meta Description לעמוד \\ פוסט"
+
+#~ msgid "Custom Post/Page Meta Keywords, comma separated"
+#~ msgstr "Meta Keywords לעמוד \\ פוסט  (מופרדים בפסיק)"
+
+#~ msgid "Custom Canonical URI"
+#~ msgstr "URI קנוני מותאם אישית"
+
+#~ msgid "Custom Redirect URI"
+#~ msgstr "URI להפנייה מותאם אישית"
+
+#~ msgid "Robots Meta Settings"
+#~ msgstr "הגדרות Robots Meta"
+
+#~ msgid "Apply %s to this post/page"
+#~ msgstr "החל %s על פוסט/ עמוד זה"
+
+#~ msgid "Custom Tracking/Conversion Code"
+#~ msgstr "קוד מעקב/המרה מותאם אישית"
+
+#~ msgid "Layout Settings"
+#~ msgstr "הגדרות מערך תצוגה"
+
+#~ msgid "Default Layout set in <a href=\"%s\">Theme Settings</a>"
+#~ msgstr "אפשר לקבוע  פריסת ברירת מחדל ב <a href=\"%s\">הגדרות תבנית</a>\n"
+
+#~ msgid "Custom Body Class"
+#~ msgstr "Body Class מותאם אישית"
+
+#~ msgid "Custom Post Class"
+#~ msgstr "Post Class מותאם אישית"
+
+#~ msgid "README"
+#~ msgstr "קרא אותי!"
+
+#~ msgid "The %s file was not found in the child theme, or it was empty."
+#~ msgstr "הקובץ %s לא נמצא בערכת העיצוב הבת או שהקובץ ריק."
+
+#~ msgid "Genesis - SEO Settings"
+#~ msgstr "SEO ג'נסיס-הגדרות"
+
+#~ msgid "Save Settings"
+#~ msgstr "שמור הגדרות"
+
+#~ msgid "Reset Settings"
+#~ msgstr "איפוס הגדרות"
+
+#~ msgid "Settings saved."
+#~ msgstr "הגדרות נשמרו"
+
+#~ msgid "Settings reset."
+#~ msgstr "איפוס הגדרות."
+
+#~ msgid "Error saving settings."
+#~ msgstr "שגיאה בשמירת הגדרות."
+
+#~ msgid "Document Title Settings"
+#~ msgstr "הגדרות כותרת עמוד (Document Title)"
+
+#~ msgid "Homepage Settings"
+#~ msgstr "הגדרות עמוד הבית"
+
+#~ msgid "Document Head Settings"
+#~ msgstr "הגדרות ראש המסמך "
+
+#~ msgid "Archives Settings"
+#~ msgstr "הגדרות ארכיונים"
+
+#~ msgid ""
+#~ "The document title (%s) is the single most important element in your "
+#~ "document source for <abbr title=\"Search engine optimization\">SEO</"
+#~ "abbr>. It succinctly informs search engines of what information is "
+#~ "contained in the document. The title can, and should, be different on "
+#~ "each page, but these options will help you control what it will look like "
+#~ "by default."
+#~ msgstr ""
+#~ "כותרת העמוד %s היא האלמנט החשוב במסמך מבחינת אופטימזציה מנועי חיפוש <abbr "
+#~ "title=\"Search engine optimization\">SEO</abbr>. הכותרת מעבירה בצורה "
+#~ "תמציתית איזה מידע יש במסמך. הכותרת יכולה וצריכה להיות שונה עבור כל עמוד "
+#~ "אבל הגדרות אלה יסייעו בהגדרות ברירת המחדל."
+
+#~ msgid ""
+#~ "<strong>By default</strong>, the home page document title will contain "
+#~ "the site title, the single post and page document titles will contain the "
+#~ "post or page title, the archive pages will contain the archive type, etc."
+#~ msgstr ""
+#~ "<strong>כברירת מחדל</strong>, כותרת העמוד של דף הבית מכילה את כותרת האתר, "
+#~ "עבור עמוד או פוסט זו כותרת העמוד או הפוסט, עבור דפי ארכיון הכותרת היא סוג "
+#~ "הארכיב וכו'."
+
+#~ msgid "Add site description (tagline) to %s on home page?"
+#~ msgstr "הוספת תיאור אתר (תגית) ל %s בדף הבית ?"
+
+#~ msgid "Add site name to %s on inner pages?"
+#~ msgstr "הוספת שם אתר ל %s בדפים פנימיים ?"
+
+#~ msgid "Document Title Additions Location:"
+#~ msgstr "מיקום תוספות כותרת עמוד:"
+
+#~ msgid "Determines which side the added title text will go on."
+#~ msgstr "קובע באיזה צד יהיה הטקסט הנוסף של הכותרת."
+
+#~ msgid "Left"
+#~ msgstr "שמאל"
+
+#~ msgid "Right"
+#~ msgstr "ימין"
+
+#~ msgid "Document Title Separator:"
+#~ msgstr "התו המפריד עבור כותרת העמוד:"
+
+#~ msgid ""
+#~ "If the title consists of two parts (original title and optional "
+#~ "addition), then the separator will go in between them."
+#~ msgstr ""
+#~ "אם כותרת העמוד בנויה משני חלקים (כותרת מקורית וכותרת אופציונלית), אזי התו "
+#~ "המפריד יהיה בין שתיהן."
+
+#~ msgid "Which text would you like to be wrapped in %s tags?"
+#~ msgstr "איזה טקסט אתה רוצה לעטוף בתגיות%s?"
+
+#~ msgid ""
+#~ "The %s tag is, arguably, the second most important <abbr title=\"Search "
+#~ "engine optimization\">SEO</abbr> tag in the document source. Choose "
+#~ "wisely."
+#~ msgstr ""
+#~ "התגית %s היא, שלא בהסכמה מלאה, שניה בחשיבותה עבור אופטימיציה עבור מנועי "
+#~ "חיפוש <abbr title=\"Search engine optimization\">SEO</abbr> בקוד העמוד, "
+#~ "בחר בחוכמה."
+
+#~ msgid "Site Title"
+#~ msgstr "כותרת אתר"
+
+#~ msgid "Site Description (Tagline)"
+#~ msgstr "תיאור אתר (תגית)"
+
+#~ msgid "Neither. I'll manually wrap my own text on the homepage"
+#~ msgstr "לא ולא. ברצוניי לתייג טקסט בדף הבית ידנית"
+
+#~ msgid "Homepage Document Title:"
+#~ msgstr "כותרת עמוד דף הבית"
+
+#~ msgid ""
+#~ "If you leave the document title field blank, your site&#8217;s title will "
+#~ "be used instead."
+#~ msgstr "אם כותרת העמוד נשארת ריקה אזי כותרת האתר תיהיה בשימוש."
+
+#~ msgid "Home Meta Description:"
+#~ msgstr "תיאור מפורט עבור דף הבית (Meta Description)"
+
+#~ msgid ""
+#~ "The meta description can be used to determine the text used under the "
+#~ "title on search engine results pages."
+#~ msgstr ""
+#~ "התיאור המפורט יכול לשמש כטקסט שיופיע מתחת לכותרת בתוצאות החיפוש של מנוע "
+#~ "החיפוש."
+
+#~ msgid "Home Meta Keywords (comma separated):"
+#~ msgstr "מילות מפתח עבור דף הבית (Meta Keywords) מופרדות בפסיקים:"
+
+#~ msgid "Keywords are generally ignored by Search Engines."
+#~ msgstr "מנועי חיפוש בדרך כלל מתעלמיםממילות מפתח."
+
+#~ msgid "Homepage Robots Meta Tags:"
+#~ msgstr " Robots Meta Tags - דף הבית."
+
+#~ msgid "Apply %s to the homepage?"
+#~ msgstr "להחחל %s על דף הבית?"
+
+#~ msgid "Homepage Author"
+#~ msgstr "מחבר דף הבית"
+
+#~ msgid ""
+#~ "Select the user that you would like to be used as the %s for the "
+#~ "homepage. Be sure the user you select has entered their Google+ profile "
+#~ "address on the profile edit screen."
+#~ msgstr ""
+#~ "בחר את המשתמש לשימוש %s עבור דף הבית. יש לודא כי המשתמש שבחרת הזין את "
+#~ "כתובת פרופיל הגוגל+ שלו במסך עריכת פרופיל משתמש."
+
+#~ msgid "Select User"
+#~ msgstr "בחר משתמש"
+
+#~ msgid ""
+#~ "By default, WordPress places several tags in your document %1$s. Most of "
+#~ "these tags are completely unnecessary, and provide no <abbr title="
+#~ "\"Search engine optimization\">SEO</abbr> value whatsoever; they just "
+#~ "make your site slower to load. Choose which tags you would like included "
+#~ "in your document %1$s. If you do not know what something is, leave it "
+#~ "unchecked."
+#~ msgstr ""
+#~ "כברירת מחדש וורדפרס מכניס מספר תגיות בעמוד %1$s. רוב תגיות אלה לחלוטין "
+#~ "אינן נדרשות ואין להן ערך מבחינת אופטימיזציה למנועי חיפוש <abbr title="
+#~ "\"Search engine optimization\">SEO</abbr>; הן רק מאיטות את זמן טעינת "
+#~ "האתר. בחר אלו תגיות לכלול בעמוד %1$s. אם אינך יודע, השאר לא מסומן."
+
+#~ msgid "Relationship Link Tags:"
+#~ msgstr "תגיות קישורי יחסים (Relationship Link)"
+
+#~ msgid "Adjacent Posts %s link tags"
+#~ msgstr "תגיות לינק %s פוסטים קשורים"
+
+#~ msgid "Windows Live Writer Support:"
+#~ msgstr "Windows Live Writer תמיכת:"
+
+#~ msgid "Include Windows Live Writer Support Tag?"
+#~ msgstr "לכלול  תג Windows Live Writer Support?"
+
+#~ msgid "Shortlink Tag:"
+#~ msgstr "תגית של קישור מקוצר (Shortlink):"
+
+#~ msgid "Include Shortlink tag?"
+#~ msgstr "לכלול תגיות Shortlink?"
+
+#~ msgid ""
+#~ "<span class=\"genesis-admin-note\">Note:</span> The shortlink tag might "
+#~ "have some use for 3rd party service discoverability, but it has no <abbr "
+#~ "title=\"Search engine optimization\">SEO</abbr> value whatsoever."
+#~ msgstr ""
+#~ "<span class=\"genesis-admin-note\">הערה:</span> תגית השורט לינק יכולה "
+#~ "להיות בשימוש על ידי שירותים של צד שלישי אבל אין לה שום ערך מבחינת "
+#~ "אופטימיזציה למנועי חיפוש <abbr title=\"Search engine optimization\">SEO</"
+#~ "abbr>"
+
+#~ msgid ""
+#~ "Depending on your situation, you may or may not want the following "
+#~ "archive pages to be indexed by search engines. Only you can make that "
+#~ "determination."
+#~ msgstr ""
+#~ "אתה אולי לא רוצה את דפי הארכיון להיות באינדקס של מנועי החיפוש. רק אתה "
+#~ "יכול לקבוע זאת."
+
+#~ msgid "Apply %s to Category Archives?"
+#~ msgstr "החל%s לקטגוריה?"
+
+#~ msgid "Apply %s to Tag Archives?"
+#~ msgstr "החל%s לתג?"
+
+#~ msgid "Apply %s to Author Archives?"
+#~ msgstr "החל%s למחבר?"
+
+#~ msgid "Apply %s to Date Archives?"
+#~ msgstr "החל%s להיסטוריה?"
+
+#~ msgid "Apply %s to Search Archives?"
+#~ msgstr "החל%s לחיפוש?"
+
+#~ msgid ""
+#~ "Some search engines will cache pages in your site (e.g. Google Cache). "
+#~ "The %1$s tag will prevent them from doing so. Choose which archives you "
+#~ "want %1$s applied to."
+#~ msgstr ""
+#~ "מספר מנועי חיפוש ישמרו דפים שלך במטמון. תגית ה %1$s תמנע זאת ממנועי "
+#~ "החיפוש. בחר על אלו ארכיונים תרצה %1$s לקבוע זאת."
+
+#~ msgid "Apply %s to Entire Site?"
+#~ msgstr "החל%s לכל האתר?"
+
+#~ msgid ""
+#~ "Occasionally, search engines use resources like the Open Directory "
+#~ "Project and the Yahoo! Directory to find titles and descriptions for your "
+#~ "content. Generally, you will not want them to do this. The %s and %s tags "
+#~ "prevent them from doing so."
+#~ msgstr ""
+#~ "מפעם לפעם, מנועי חיפוש להשתמש במשאבים כמו Open Directory Project ואת "
+#~ "Yahoo Directoryכדי למצוא כותרות ותיאורים עבור התוכן שלך. באופן כללי, אתה "
+#~ "לא רוצה שהם יעשו זאת. התגים%s%s מונעים מהם לעשות זאת."
+
+#~ msgid "Apply %s to your site?"
+#~ msgstr "החל%s לאתר שלך?"
+
+#~ msgid "Canonical Paginated Archives"
+#~ msgstr "גנסיס %s קיימת ל %s"
+
+#~ msgid ""
+#~ "This option points search engines to the first page of an archive, if "
+#~ "viewing a paginated page. If you do not know what this means, leave it on."
+#~ msgstr ""
+#~ "אפשרות זו מואה למנועי החיפוש להסתכל על עמוד התוצאות הראשון של דפי חיפוש. "
+#~ "אם אינך יודע מה המשמעותשל זה, השאר את ברירת המחדל."
+
+#~ msgid "Archive Settings"
+#~ msgstr "הגדרות ארכיון"
+
+#~ msgid "Archive Headline"
+#~ msgstr "כותרת ארכיון"
+
+#~ msgid "Leave empty if you do not want to display a headline."
+#~ msgstr "השאר ריק אם אינך רוצה להציג כותרת"
+
+#~ msgid "Archive Intro Text"
+#~ msgstr "טקסט מקדים לארכיון"
+
+#~ msgid "Leave empty if you do not want to display any intro text."
+#~ msgstr "השאר ריק אם אינך רוצה להציג טקסט מקדים לארכיון"
+
+#~ msgid "Custom Document %s"
+#~ msgstr "מסמך מותאם אישית %s"
+
+#~ msgid "%s Description"
+#~ msgstr "תיאור %s"
+
+#~ msgid "%s Keywords"
+#~ msgstr "מילות מפתח %s"
+
+#~ msgid "Comma separated list"
+#~ msgstr "רשימה מופרדת באמצעות פסיקים"
+
+#~ msgid "Robots Meta"
+#~ msgstr "Robots Meta"
+
+#~ msgid "Apply %s to this archive?"
+#~ msgstr "להחיל %s לארכיון הזה?"
+
+#~ msgid "Choose Layout"
+#~ msgstr "בחר פרישה"
+
+#~ msgid "Follow me on Twitter"
+#~ msgstr "עקבו אחרי בטוויטר"
+
+#~ msgid "Color Style"
+#~ msgstr "צבע"
+
+#~ msgid "Custom Feeds"
+#~ msgstr "פידים מותאמים אישית"
+
+#~ msgid "Default Layout"
+#~ msgstr "פריסת ברירת מחדל"
+
+#~ msgid "Header"
+#~ msgstr "כותרת"
+
+#~ msgid "Navigation"
+#~ msgstr "ניווט"
+
+#~ msgid "Breadcrumbs"
+#~ msgstr "פירורי לחם"
+
+#~ msgid "Comments and Trackbacks"
+#~ msgstr "הערות וטראקבקים"
+
+#~ msgid "Content Archives"
+#~ msgstr "ארכיוני תוכן"
+
+#~ msgid "Blog Page Template"
+#~ msgstr "תבנית עמוד בלוג"
+
+#~ msgid "Header and Footer Scripts"
+#~ msgstr "סקריפטים ל Header ו Footer"
+
+#~ msgid "Version:"
+#~ msgstr "גירסה:"
+
+#~ msgid "Released:"
+#~ msgstr "שוחרה:"
+
+#~ msgid "Display Theme Information in your document source"
+#~ msgstr "הצג מידע על ערכת העיצוב בקוד"
+
+#~ msgid ""
+#~ "This can be helpful for diagnosing problems with your theme when seeking "
+#~ "assistance in the <a href=\"%s\" target=\"_blank\">support forums</a>."
+#~ msgstr ""
+#~ "זה יכול להיות מועיל לאבחון בעיות עם הנושא שלך כאשר המבקשים סיוע ב <a href="
+#~ "\"%s\" target=\"_blank\"> תמיכה בפורומים </a>."
+
+#~ msgid "Enable Automatic Updates"
+#~ msgstr "אפשר עידכונים אוטומטים"
+
+#~ msgid "Notify"
+#~ msgstr "להודיע"
+
+#~ msgid "when updates are available"
+#~ msgstr "כאשר עדכונים זמינים"
+
+#~ msgid ""
+#~ "If you provide an email address above, your blog can email you when a new "
+#~ "version of Genesis is available."
+#~ msgstr ""
+#~ "אם אתה מספק את כתובת הדוא\"ל לעיל, הבלוג שלך יכול לשלוח לך אימייל כאשר "
+#~ "גרסה חדשה של ג'נסיס זמינה."
+
+#~ msgid "Color Style:"
+#~ msgstr "צבע: "
+
+#~ msgid "Default"
+#~ msgstr "ברירת מחדל"
+
+#~ msgid ""
+#~ "Please select the color style from the drop down list and save your "
+#~ "settings."
+#~ msgstr "אנא בחר את הצבע מהתפריט הנפתח ושמור את ההגדרות"
+
+#~ msgid "Use for site title/logo:"
+#~ msgstr "לשימוש עבור כותרת או לוגו האתר: "
+
+#~ msgid "Dynamic text"
+#~ msgstr "טקסט דינמי"
+
+#~ msgid "Image logo"
+#~ msgstr "תמונת לוגו"
+
+#~ msgid ""
+#~ "In order to use the navigation menus, you must build a <a href=\"%s"
+#~ "\">custom menu</a>, then assign it to the proper Menu Location."
+#~ msgstr ""
+#~ "על מנת להשתמש בתפריטי הניווט, עליך לבנות <a href=\"%s\">תפריט מותאם "
+#~ "אישית</a>, ולאחר מכן להקצות אותו למיקום התפריט המתאים."
+
+#~ msgid "Primary Navigation"
+#~ msgstr "ניווט ראשי"
+
+#~ msgid "Enable Fancy Dropdowns?"
+#~ msgstr "לאפשר פתיחת תפריטים מפוארת?"
+
+#~ msgid "Enable Extras on Right Side?"
+#~ msgstr "אפשר תוספות בצד?"
+
+#~ msgid "Display the following:"
+#~ msgstr "להציג את הדברים הבאים:"
+
+#~ msgid "Today's date"
+#~ msgstr "תאריך"
+
+#~ msgid "RSS feed links"
+#~ msgstr "קישורי RSS"
+
+#~ msgid "Search form"
+#~ msgstr "טופס חיפוש"
+
+#~ msgid "Twitter link"
+#~ msgstr "קישור לטוויטר"
+
+#~ msgid "Enter Twitter ID:"
+#~ msgstr "הזן Twitter ID:"
+
+#~ msgid "Twitter Link Text:"
+#~ msgstr "טקטס הקישור לטוויטר"
+
+#~ msgid "Secondary Navigation"
+#~ msgstr "ניווט משני "
+
+#~ msgid "Enter your custom feed URI:"
+#~ msgstr "הזן URI לפייד שלך:"
+
+#~ msgid "Redirect Feed?"
+#~ msgstr "הפנית פייד?"
+
+#~ msgid "Enter your custom comments feed URI:"
+#~ msgstr "הזן URI לתגובות שלך:"
+
+#~ msgid ""
+#~ "If your custom feed(s) are not handled by Feedburner, we do not recommend "
+#~ "that you use the redirect options."
+#~ msgstr ""
+#~ "אם הפידים שלך אינם מטופלים על ידי Feedburner, אנחנו לא ממליצים להשתמש "
+#~ "באפשרות ההפניה."
+
+#~ msgid "Enable Comments"
+#~ msgstr "אפשר תגובות"
+
+#~ msgid "on posts?"
+#~ msgstr "על פוסטים?"
+
+#~ msgid "on pages?"
+#~ msgstr "על עמודים?"
+
+#~ msgid "Enable Trackbacks"
+#~ msgstr "אפשר טראקבקים"
+
+#~ msgid ""
+#~ "Comments and Trackbacks can also be disabled on a per post/page basis "
+#~ "when creating/editing posts/pages."
+#~ msgstr ""
+#~ "תגובות וטראקבקים ניתן גם לכבות אותו בכל הודעה / עמוד בעת יצירת / עריכת "
+#~ "הודעות / עמודים."
+
+#~ msgid "Enable on:"
+#~ msgstr "אפשר על:"
+
+#~ msgid "Front Page"
+#~ msgstr "דך הבית"
+
+#~ msgid "Posts Page"
+#~ msgstr "עמוד הפוסטים"
+
+#~ msgid "Homepage"
+#~ msgstr "דף הבית"
+
+#~ msgid "Posts"
+#~ msgstr "פוסטים"
+
+#~ msgid "Pages"
+#~ msgstr "עמודים"
+
+#~ msgid "Archives"
+#~ msgstr "ארכיונים"
+
+#~ msgid "404 Page"
+#~ msgstr "עמוד 404"
+
+#~ msgid "Attachment Page"
+#~ msgstr "עמוד קובץ מצורף"
+
+#~ msgid ""
+#~ "Breadcrumbs are a great way of letting your visitors find out where they "
+#~ "are on your site with just a glance. You can enable/disable them on "
+#~ "certain areas of your site."
+#~ msgstr ""
+#~ "פירורי לחם הם דרך מצוינת לעזור למבקרים שלך להתמצות באתר שלך במבט פשוט. "
+#~ "אתה יכול לאפשר / לבטל אותם על אזורים מסוימים של האתר שלך."
+
+#~ msgid "Select one of the following:"
+#~ msgstr "בחר אחת מהבאים:"
+
+#~ msgid "Display post content"
+#~ msgstr "להציג תוכן הפוסט"
+
+#~ msgid "Display post excerpts"
+#~ msgstr "להציג תקציר הפוסט"
+
+#~ msgid "Limit content to"
+#~ msgstr "להגביל תוכן ל"
+
+#~ msgid "characters"
+#~ msgstr "תוים"
+
+#~ msgid ""
+#~ "Using this option will limit the text and strip all formatting from the "
+#~ "text displayed. To use this option, choose \"Display post content\" in "
+#~ "the select box above."
+#~ msgstr ""
+#~ "שימוש באפשרות זו יפשיט  את כח העיצוב מהטקסט במקור. כדי להשתמש באפשרות זו, "
+#~ "בחר \"להציג תוכן הפוסט\" בתיבת בחירה למעלה."
+
+#~ msgid "Include the Featured Image?"
+#~ msgstr "לכלול תמונה ראשית?"
+
+#~ msgid "Image Size:"
+#~ msgstr "גודל תמונה: "
+
+#~ msgid "Select Post Navigation Technique:"
+#~ msgstr "בחר שיטת ניווט:"
+
+#~ msgid "Older / Newer"
+#~ msgstr "ישן יותר / חדש יותר"
+
+#~ msgid "Previous / Next"
+#~ msgstr "הקודם / הבא"
+
+#~ msgid "Numeric"
+#~ msgstr "ממוספר"
+
+#~ msgid ""
+#~ "These options will affect any blog listings page, including archive, "
+#~ "author, blog, category, search, and tag pages."
+#~ msgstr ""
+#~ "אפשרויות אלה ישפיעו על כל דפי הרשימות באתר, כולל ארכיון, המחבר, בלוג, "
+#~ "קטגוריה, חיפוש ודפי תג."
+
+#~ msgid ""
+#~ "These settings apply to any page given the \"Blog\" page template, not "
+#~ "the homepage or post archive pages."
+#~ msgstr ""
+#~ "הגדרות אלו פועלות על כל עמוד שמוגדרת עבורו תבנית של \"פוסט\", ולא על דפים "
+#~ "אחרים כגון דף הבית או על ארכיון פוסט."
+
+#~ msgid "Display which category:"
+#~ msgstr "איזו קטגוריה להציג:"
+
+#~ msgid "All Categories"
+#~ msgstr "כל הקטגוריות"
+
+#~ msgid "Exclude the following Category IDs:"
+#~ msgstr "הוצא מהכלל אתהקטגוריות הבאות ( לפי ID )"
+
+#~ msgid "Comma separated - 1,2,3 for example"
+#~ msgstr "מופרדים בפסיקים - 1,2,3 למשל"
+
+#~ msgid "Number of Posts to Show:"
+#~ msgstr "מספר פוסטים להצגה: "
+
+#~ msgid "Enter scripts or code you would like output to %s:"
+#~ msgstr "הכנס סקריפט או קוד שתרצה לייצא ל %s"
+
+#~ msgid ""
+#~ "The %1$s hook executes immediately before the closing %2$s tag in the "
+#~ "document source."
+#~ msgstr "ה %1$s הוק (hook) מבוצע מיד לפני התג %2$s הסוגר בקוד של הדף."
+
+#~ msgid "Google+"
+#~ msgstr "גוגל+"
+
+#~ msgid "User Permissions"
+#~ msgstr "הרשאות משתמש"
+
+#~ msgid "Genesis Admin Menus"
+#~ msgstr "ג'נסיס - תפריטי אדמין"
+
+#~ msgid "Enable Genesis Admin Menu?"
+#~ msgstr "אפשר תפריטי אדמין של ג'נסיס"
+
+#~ msgid "Enable SEO Settings Submenu?"
+#~ msgstr "אפשר תפריט הגדרות SEO?"
+
+#~ msgid "Enable Import/Export Submenu?"
+#~ msgstr "אפשר ייבוא ​​/ ייצוא תת-תפריט?"
+
+#~ msgid "Author Archive Settings"
+#~ msgstr "הגדרות ארכיון משתמש"
+
+#~ msgid "These settings apply to this author's archive pages."
+#~ msgstr "הגדרות אלה חלות על דפי הארכיון של המחבר."
+
+#~ msgid "Custom Archive Headline"
+#~ msgstr "כותרת אישית לארכיון"
+
+#~ msgid "Will display in the %s tag at the top of the first page"
+#~ msgstr "יציג את התג %s בחלק העליון של העמוד הראשון"
+
+#~ msgid "Custom Description Text"
+#~ msgstr "תיאור טקסט מותאם אישית"
+
+#~ msgid "This text will be the first paragraph, and display on the first page"
+#~ msgstr "טקסט זה יוצג בפסקה הראשונה, בדף הראשון."
+
+#~ msgid "Author Box"
+#~ msgstr "תיבת המחבר"
+
+#~ msgid "Enable Author Box on this User's Posts?"
+#~ msgstr "לאפשר תיבת המחבר בפוסטים של המחבר הזה?"
+
+#~ msgid "Enable Author Box on this User's Archives?"
+#~ msgstr "לאפשר תיבת המחבר בארכיון של המחבר הזה?"
+
+#~ msgid "Welcome to Genesis %s"
+#~ msgstr "ברוכים הבאים לג'נסיס %s"
+
+#~ msgid ""
+#~ "Thank you for updating to the latest version! Using Genesis %s will give "
+#~ "you more options than you've ever had and your website will continue to "
+#~ "purr like a kitten."
+#~ msgstr ""
+#~ "תודה לך על העדכון לגרסה האחרונה! על ידי שימוש בג'נסיס %s יש לך יותר "
+#~ "אפשרויות מאי פעם והאתר שלך יגרגר כמו חתול :)"
+
+#~ msgid "What&#8217;s New"
+#~ msgstr "מה חדש"
+
+#~ msgid "Updated Design and Wider Layout"
+#~ msgstr "עדכון עיצוב ופרישה רחבה יותר"
+
+#~ msgid "Updated Security Audit"
+#~ msgstr "עדכון בדיקות אבטחה"
+
+#~ msgid ""
+#~ "It's very important to us that we provide you the absolute best framework "
+#~ "possible, so once again we hired WordPress Lead Developer Mark Jaquith to "
+#~ "perform a full review of code for security as he's done in the past."
+#~ msgstr ""
+#~ "זה מאוד חשוב לנו לספק לך את התבנית הטובה ביותר האפשרית, כך ששוב אנו שכרנו "
+#~ "את Mark Jaquith , מפתח ורדפרס מוביל, לבצע סקירה אבטחה מלאה של הקוד כמו "
+#~ "שהוא עשה בעבר."
+
+#~ msgid "Google Author Highlights"
+#~ msgstr "דגשים עבור מחבר גוגל"
+
+#~ msgid ""
+#~ "Genesis now offers support for author highlighting. This allows Google to "
+#~ "associate your content with your Google+ content. Just edit your profile, "
+#~ "find the field where you can enter your Google+ account URL, and save. "
+#~ "Genesis does the rest. And if you want to associate an author with the "
+#~ "homepage, you can do that in SEO Settings."
+#~ msgstr ""
+#~ "ג'נסיס מציע כעת תמיכה בהדגשות מחבר. זה מאפשר לגוגל לשייך את התוכן שלך עם "
+#~ "תוכן הגוגל+ שלך. פשוט ערוך את הפרופיל שלך, מצא את השדה בו ניתן להזין "
+#~ "כתובת חשבון גוגל+ שלך, ושמור. ג'נסיס יעשה את כל השאר. ואם אתה רוצה לשייך "
+#~ "את המחבר לעמוד הבית, אתה יכול לעשות את זה בהגדרות SEO."
+
+#~ msgid "Deprecating Widgets"
+#~ msgstr "וידגטים שיצאו משימוש"
+
+#~ msgid ""
+#~ "Genesis has always included some useful widgets to help you build your "
+#~ "sites faster and easier. But lately, we realized that some of these "
+#~ "widgets should really be plugins, so authors can push out updates more "
+#~ "frequently, and you get more up to date code. So, the  \"eNews & Updates"
+#~ "\" and \"Latest Tweets\" widgets are being ported to plugins, and will "
+#~ "eventually be removed from Genesis."
+#~ msgstr ""
+#~ "בג'נסיס תמיד כללנו כמה וידג'טים שימושיים שיעזרו לך לבנות את האתרים שלך "
+#~ "מהירים וקלים יותר. אבל בזמן אחרון, הבנו שחלק מהוידג'טים הללו צריכים להיות "
+#~ "תוספים, כך מחברים יכולים לשלוח את העדכונים בתדירות גבוהה יותר, ואתה מקבל "
+#~ "קוד יותר מעודכן. אז, הווידג'טים \"eNews & Updates\" ו \"ציוצים אחרונים\" "
+#~ "מועברים לתוספים, וסופו של דבר ימחקו מג'נסיס."
+
+#~ msgid "Genesis Category/Page Menu Widgets Removed"
+#~ msgstr "וידג'טים - ג'נסיס תפריט קטגוריה/עמוד הוסרו"
+
+#~ msgid ""
+#~ "We deprecated the Category and Page menu widgets a few releases ago, and "
+#~ "as of this release, we've completely removed them from the framework. If "
+#~ "you were still using either of these widgets, you will notice that your "
+#~ "menu is no longer showing."
+#~ msgstr ""
+#~ "וידג'טים של תפריט קטגוריה ועמוד אינם נתמכים מלפני כמה מהדורות, והחל "
+#~ "ממהדורה זו, הסרנו אותם לגמרי מג'נסיס. אם אתם עדיין משתמשים באחד "
+#~ "מהוידג'טים הללו, תוכלו להבחין כי התפריט שלכם אינו מוצג."
+
+#~ msgid ""
+#~ "You will need to build a <a href=\"%s\">custom menu</a> and add the "
+#~ "custom menu widget to the Header Right widget area."
+#~ msgstr ""
+#~ "אתה צריך לבנות תפריט מותאם אישית <a href=\"%s\">תפריט מותאם אישית</a> "
+#~ "ולהוסיף את וידג'ט תפריט מותאם אישית לאזור הוידג'ט בכותרת הימנית."
+
+#~ msgid "Other Geeky Stuff"
+#~ msgstr "דברים נוספים"
+
+#~ msgid ""
+#~ "We also fixed a lot of little bugs, improved some things, and generally "
+#~ "made the framework a more solid foundation for you to use. We hope you "
+#~ "enjoy this latest release!"
+#~ msgstr ""
+#~ "תיקנו הרבה באגים קטנים, שיפרנו כמה דברים, ובאופן כללי עשינו את ג'נסיס טוב "
+#~ "יותר. אנו מקווים שאתה נהנה מהמהדורה האחרונה!"
+
+#~ msgid "Genesis 2.0 Roadmap"
+#~ msgstr "מפת הדרכים עבור ג'נסיס 2.0"
+
+#~ msgid "Support for HTML5 Markup"
+#~ msgstr "תמיכה ב HTML5"
+
+#~ msgid ""
+#~ "We have big plans for a new markup structure in Genesis 2.0, all built "
+#~ "with HTML5."
+#~ msgstr "יש לנו תוכניות גדולות למבנה הפנימי של ג'נסיס 2.0, הכל בעזרת HTML5."
+
+#~ msgid "A New Mobile Strategy"
+#~ msgstr "אסטרטגיה חדשה עבור מכשירים ניידים"
+
+#~ msgid ""
+#~ "In case you can't tell, we're big fans of designing for mobile devices "
+#~ "around here. So, we're going to be doing some things that will make it a "
+#~ "whole lot easier to get your site mobile ready with Genesis in 2.0."
+#~ msgstr ""
+#~ "במקרה שלא הבחנת, אנחנו מעריצים גדולים של עיצוב למכשירים ניידים. לכן, "
+#~ "אנחנו הולכים לעשות כמה דברים שיגרמו לאתר שלך להיות מוכן למכשירים ניידים "
+#~ "עם ג'נסיס 2.0."
+
+#~ msgid "Project Leads"
+#~ msgstr "מובילי הפרויקט"
+
+#~ msgid "Lead Developer"
+#~ msgstr "מפתחים מובילים"
+
+#~ msgid "Contributors"
+#~ msgstr "תורמים"
+
+#~ msgid "Contributor"
+#~ msgstr "תורם"
+
+#~ msgid "Go to Theme Settings &rarr;"
+#~ msgstr "להגדרות תבנית &rarr;"
+
+#~ msgid "Go to SEO Settings &rarr;"
+#~ msgstr "להגדרות אופטימיזציה למנועי חיפוש SEO &rarr;"
+
+#~ msgid ""
+#~ "You cannot use %s to create two menus in the same subclass. Please use "
+#~ "separate subclasses for each menu."
+#~ msgstr ""
+#~ "לא ניתן להשתמש ב %s על מנת ליצור שני תפריטים באותה תת מחלקה. יש להשתמש "
+#~ "בתתי מחלקות נפרדות עבור כל תפריט."
+
+#~ msgid "Are you sure you want to reset?"
+#~ msgstr "האם אתה בטוח שברצונך לאפס?"
+
+#~ msgid "Home"
+#~ msgstr "בית"
+
+#~ msgid "You are here: "
+#~ msgstr "אתה נמצא כאן:"
+
+#~ msgid "Archives for "
+#~ msgstr " ארכיון של"
+
+#~ msgid "Search for "
+#~ msgstr "חיפוש עבור"
+
+#~ msgid "Not found: "
+#~ msgstr "לא נמצא:"
+
+#~ msgid "View %s"
+#~ msgstr "הצג %s"
+
+#~ msgid "View all posts in %s"
+#~ msgstr "הצג את כל הפוסטים שנכתבו על%s"
+
+#~ msgid "View all %s"
+#~ msgstr "הצג את כל%s"
+
+#~ msgid "View archives for %s"
+#~ msgstr "צפייה בארכיון עבור%s"
+
+#~ msgid "View archives for %s %s"
+#~ msgstr "צפייה בארכיון עבור%s%s"
+
+#~ msgid "View all items in %s"
+#~ msgstr " הצג את כל הפריטים ב%s"
+
+#~ msgid "This file no longer needs to be included."
+#~ msgstr "הקובץ אינו נדרש יותר ולא צריך לכלול אותו."
+
+#~ msgctxt "time difference"
+#~ msgid "seconds"
+#~ msgstr "שניות"
+
+#~ msgctxt "time difference"
+#~ msgid "%s year"
+#~ msgid_plural "%s years"
+#~ msgstr[0] "%s שנה"
+#~ msgstr[1] "%s שנים"
+
+#~ msgctxt "time difference"
+#~ msgid "%s month"
+#~ msgid_plural "%s months"
+#~ msgstr[0] "%s חודש"
+#~ msgstr[1] "%s חודשים"
+
+#~ msgctxt "time difference"
+#~ msgid "%s week"
+#~ msgid_plural "%s weeks"
+#~ msgstr[0] "%s שבוע"
+#~ msgstr[1] "%s שבועות"
+
+#~ msgctxt "time difference"
+#~ msgid "%s day"
+#~ msgid_plural "%s days"
+#~ msgstr[0] "%s יום"
+#~ msgstr[1] "%s ימים"
+
+#~ msgctxt "time difference"
+#~ msgid "%s hour"
+#~ msgid_plural "%s hours"
+#~ msgstr[0] "%s שעה"
+#~ msgstr[1] "%s שעות"
+
+#~ msgctxt "time difference"
+#~ msgid "%s minute"
+#~ msgid_plural "%s minutes"
+#~ msgstr[0] "%s דקה"
+#~ msgstr[1] "%s דקות"
+
+#~ msgctxt "time difference"
+#~ msgid "%s second"
+#~ msgid_plural "%s seconds"
+#~ msgstr[0] "%s שניה"
+#~ msgstr[1] "%s שניות"
+
+#~ msgctxt "separator in time difference"
+#~ msgid "and"
+#~ msgstr "וגם"
+
+#~ msgid "Content-Sidebar"
+#~ msgstr "תוכן - סרגל "
+
+#~ msgid "Sidebar-Content"
+#~ msgstr "סרגל - תוכן"
+
+#~ msgid "Content-Sidebar-Sidebar"
+#~ msgstr "תוכן - סרגל - סרגל"
+
+#~ msgid "Sidebar-Sidebar-Content"
+#~ msgstr "סרגל - סרגל - תוכן"
+
+#~ msgid "Sidebar-Content-Sidebar"
+#~ msgstr "סרגל - תוכן -סרגל"
+
+#~ msgid "Full Width Content"
+#~ msgstr "תוכן ברוחב מלא"
+
+#~ msgid "No Label Selected"
+#~ msgstr "לא נבחרה תוית"
+
+#~ msgid ""
+#~ "The argument, \"context\", has been replaced with \"theme_location\" in "
+#~ "the $args array."
+#~ msgstr ""
+#~ "The argument, \"context\", has been replaced with \"theme_location\" in "
+#~ "the $args array."
+
+#~ msgid ""
+#~ "Have you tried our Scribe content marketing software? Do research, "
+#~ "content and website optimization, and relationship building without "
+#~ "leaving WordPress. <b>Genesis owners save big when using the special link "
+#~ "on the special page we've created just for you</b>. <a href=\"%s\" target="
+#~ "\"_blank\">Click here for more info</a>."
+#~ msgstr ""
+#~ "Have you tried our Scribe content marketing software? Do research, "
+#~ "content and website optimization, and relationship building without "
+#~ "leaving WordPress. <b>Genesis owners save big when using the special link "
+#~ "on the special page we've created just for you</b>. <a href=\"%s\" target="
+#~ "\"_blank\">Click here for more info</a>."
+
+#~ msgid "Dismiss"
+#~ msgstr "לשחרר"
+
+#~ msgid "Congratulations! You are now rocking Genesis %s"
+#~ msgstr "מזל טוב! ג'נסיס %s חיה ובועטת"
+
+#~ msgid "Click here to complete the upgrade"
+#~ msgstr "לחץ כאן כדי להשלים את השדרוג"
+
+#~ msgid ""
+#~ "Genesis %s is available. <a href=\"%s\" class=\"thickbox thickbox-preview"
+#~ "\">Check out what's new</a> or <a href=\"%s\" onclick=\"return "
+#~ "genesis_confirm('%s');\">update now</a>."
+#~ msgstr ""
+#~ "ג'נסיס %s זמין כעת. <a href=\"%s\" class=\"thickbox thickbox-preview"
+#~ "\">בדוק מה חדש</a> או <a href=\"%s\" onclick=\"return genesis_confirm"
+#~ "('%s');\">עדכן עכשיו</a>."
+
+#~ msgid ""
+#~ "Upgrading Genesis will overwrite the current installed version of "
+#~ "Genesis. Are you sure you want to upgrade?. \"Cancel\" to stop, \"OK\" to "
+#~ "upgrade."
+#~ msgstr ""
+#~ "שדרוג ג'נסיס יחליף את הגירסה המותקנת הנוכחית. האם אתה בטוח שאתה רוצה "
+#~ "לשדרג?.  לחץ \"ביטול\" כדי להפסיק, \"אישור\" כדי לשדרג."
+
+#~ msgid "Genesis %s is available for %s"
+#~ msgstr "גנסיס %s זמין עבור %s"
+
+#~ msgid ""
+#~ "Genesis %s is now available. We have provided 1-click updates for this "
+#~ "theme, so please log into your dashboard and update at your earliest "
+#~ "convenience."
+#~ msgstr ""
+#~ "ג'נסיס %s זמינה עכשיו. סיפקנו עדכון בקליק בודד לתמה הזו, אז בבקשה התחברו "
+#~ "לממשק הניהול שלכם ועדכנו בהקדם האפשרי."
+
+#~ msgid "Header Left"
+#~ msgstr "שמאל הכותרת"
+
+#~ msgid "Header Right"
+#~ msgstr "ימין הכותרת"
+
+#~ msgid "This is the widget area in the header."
+#~ msgstr "זהו אזור הוידגט בכותרת"
+
+#~ msgid "Primary Sidebar"
+#~ msgstr "סרגל צדדי ראשי"
+
+#~ msgid ""
+#~ "This is the primary sidebar if you are using a two or three column site "
+#~ "layout option."
+#~ msgstr ""
+#~ "זהו התפריט הצדדי הראשי אם אתה משתמש באפשרות פרישה של שתיים או שלוש עמודות."
+
+#~ msgid "Secondary Sidebar"
+#~ msgstr "סרגל צדדי משני"
+
+#~ msgid ""
+#~ "This is the secondary sidebar if you are using a three column site layout "
+#~ "option."
+#~ msgstr "זהו התפריט הצדדי המשני אם אתה משתמש באפשרות פרישה של שלוש עמודות."
+
+#~ msgid "Footer %d"
+#~ msgstr "פוטר %d"
+
+#~ msgid "Footer %d widget area."
+#~ msgstr "אזור וידגט %d תחתון"
+
+#~ msgid "Primary Navigation Menu"
+#~ msgstr "תפריט ניווט ראשי"
+
+#~ msgid "Secondary Navigation Menu"
+#~ msgstr "תפריט ניווט משני"
+
+#~ msgid "Select / Deselect All"
+#~ msgstr "בחר / בטל הכל"
+
+#~ msgid "Return to top of page"
+#~ msgstr "חזרה לראש העמוד"
+
+#~ msgid "by "
+#~ msgstr "על ידי"
+
+#~ msgid "Log in"
+#~ msgstr "התחבר"
+
+#~ msgid "Log out"
+#~ msgstr "התנתק"
+
+#~ msgid "ago"
+#~ msgstr "לפני"
+
+#~ msgid "Visit %s&#x02019;s website"
+#~ msgstr "בקרו באתר %s"
+
+#~ msgid "% Comments"
+#~ msgstr "% תגובות"
+
+#~ msgid "1 Comment"
+#~ msgstr "תגובה אחת"
+
+#~ msgid "Leave a Comment"
+#~ msgstr "כתוב תגובה"
+
+#~ msgid "Tagged With: "
+#~ msgstr "מתוייג כ:"
+
+#~ msgid "Filed Under: "
+#~ msgstr "מתוייק תחת: "
+
+#~ msgid "(Edit)"
+#~ msgstr "(עריכה)"
+
+#~ msgid "<h3>Comments</h3>"
+#~ msgstr "<h3> תגובות</h3>"
+
+#~ msgid "<h3>Trackbacks</h3>"
+#~ msgstr "<h3> טראקבקים</h3>"
+
+#~ msgid "<cite class=\"fn\">%s</cite> <span class=\"says\">%s:</span>"
+#~ msgstr "<cite class=\"fn\">%s</cite> <span class=\"says\">%s:</span>"
+
+#~ msgid "says"
+#~ msgstr "אומר "
+
+#~ msgid "%1$s at %2$s"
+#~ msgstr "%1$s אל%2$s"
+
+#~ msgid "Your comment is awaiting moderation."
+#~ msgstr "התגובה שלך ממתינה לאישור."
+
+#~ msgid "Name"
+#~ msgstr "שם"
+
+#~ msgid "Email"
+#~ msgstr "אימייל"
+
+#~ msgid "Website"
+#~ msgstr "אתר אינטרנט"
+
+#~ msgid "Speak Your Mind"
+#~ msgstr "להשמיע את דעתך"
+
+#~ msgid "Copyright"
+#~ msgstr "זכויות יוצרים"
+
+#~ msgid "on"
+#~ msgstr "על"
+
+#~ msgid "Read more"
+#~ msgstr "קרא עוד"
+
+#~ msgid "Comments"
+#~ msgstr "תגובות"
+
+#~ msgid "[Read more...]"
+#~ msgstr "[קרא עוד ...]"
+
+#~ msgid "Sorry, no posts matched your criteria."
+#~ msgstr "מצטערים, לא נמצאו פוסטים שתאמו את הקריטריונים שלך."
+
+#~ msgid "by"
+#~ msgstr "על ידי"
+
+#~ msgid "About"
+#~ msgstr "על"
+
+#~ msgid "Older Posts"
+#~ msgstr "פוסטים ישנים יותר"
+
+#~ msgid "Newer Posts"
+#~ msgstr "פוסטים חדשים יותר"
+
+#~ msgid "Previous Page"
+#~ msgstr "הקודם"
+
+#~ msgid "Next Page"
+#~ msgstr "הבא"
+
+#~ msgid "Search this website"
+#~ msgstr "חיפוש באתר"
+
+#~ msgid "Search"
+#~ msgstr "לחפש"
+
+#~ msgid "Primary Sidebar Widget Area"
+#~ msgstr "אזור ווידג'טים ראשי"
+
+#~ msgid ""
+#~ "This is the Primary Sidebar Widget Area. You can add content to this area "
+#~ "by visiting your <a href=\"%s\">Widgets Panel</a> and adding new widgets "
+#~ "to this area."
+#~ msgstr ""
+#~ "זהו אזור הווידג'טים הראשי . ניתן להוסיף תוכן באזור זה על ידי ביקור ב  <a "
+#~ "href=\"%s\">ניהול ווידג'טים</a> והוספת ווידג'טים לאזור הזה "
+
+#~ msgid "Secondary Sidebar Widget Area"
+#~ msgstr "אזור ווידג'טים משני"
+
+#~ msgid ""
+#~ "This is the Secondary Sidebar Widget Area. You can add content to this "
+#~ "area by visiting your <a href=\"%s\">Widgets Panel</a> and adding new "
+#~ "widgets to this area."
+#~ msgstr ""
+#~ "זהו אזור הווידג'טים המשני. ניתן להוסיף תוכן באזור זה על ידי ביקור ב  <a "
+#~ "href=\"%s\">ניהול ווידג'טים</a> והוספת ווידג'טים לאזור הזה "
+
+#~ msgid "Single Post Template"
+#~ msgstr "תבנית פוסט יחיד"
+
+#~ msgid "Post Template"
+#~ msgstr "תבנית פוסט"
+
+#~ msgid ""
+#~ "Some themes have custom templates you can use for single posts that might "
+#~ "have additional features or custom layouts. If so, you will see them "
+#~ "above."
+#~ msgstr ""
+#~ "לחלק מערכות נושא יש תבניות מותאמות אישית  אשר ניתן להשתמש בהן עבור פוסטים "
+#~ "עם תכונות נוספות או פריסות מותאמות אישית. אם כן, תוכלו לראות אותם כאן."
+
+#~ msgid "This widget has been deprecated, and should no longer be used."
+#~ msgstr "הוידגט הזה אינו נתמך יותר ואין להשתמש בו."
+
+#~ msgid ""
+#~ "If you would like to continue to use the eNews widget functionality, "
+#~ "please have a site administrator <a href=\"%s\" target=\"_blank\">install "
+#~ "this plugin</a> and replace this widget with the Genesis eNews Extended "
+#~ "widget."
+#~ msgstr ""
+#~ "אם תרצה להמשיך להשתמש בפונקציונליות של הוידג'ט eNews, אנא תן "
+#~ "לאדמיניסטרטור <a href=\"%s\" target=\"_blank\">להתקין את התוסף</a> "
+#~ "ולהחליף את הוידג'ט הזה בוידג'ט Genesis eNews Extended."
+
+#~ msgid ""
+#~ "If you would like to continue to use the eNews widget functionality, "
+#~ "please <a href=\"%s\" class=\"thickbox\" title=\"Install Genesis eNews "
+#~ "Extended\">install this plugin</a> and replace this widget with the "
+#~ "Genesis eNews Extended widget."
+#~ msgstr ""
+#~ "אם תרצה להמשיך להשתמש בפונקציונליות של הוידג'ט eNews, אנא <a href=\"%s\" "
+#~ "class=\"thickbox\" title=\"Install Genesis eNews Extended\">התקן את "
+#~ "התוסף</a> והחלף את הוידג'ט הזה בוידג'ט Genesis eNews Extended."
+
+#~ msgid "Displays featured page with thumbnails"
+#~ msgstr "הצגת עמודים עם תמונה"
+
+#~ msgid "Genesis - Featured Page"
+#~ msgstr "ג'נסיס - הצגת עמוד"
+
+#~ msgid "Page"
+#~ msgstr "עמוד"
+
+#~ msgid "Show Featured Image"
+#~ msgstr "הצג תמונה ראשית"
+
+#~ msgid "Image Size"
+#~ msgstr "גודל תמונה"
+
+#~ msgid "Image Alignment"
+#~ msgstr "יישור תמונה"
+
+#~ msgid "None"
+#~ msgstr "ללא"
+
+#~ msgid "Show Page Title"
+#~ msgstr "הצג כותרת עמוד"
+
+#~ msgid "Show Page Byline"
+#~ msgstr "הצג שורת מחבר לעמוד"
+
+#~ msgid "Show Page Content"
+#~ msgstr "הצג תוכן עמוד"
+
+#~ msgid "Content Character Limit"
+#~ msgstr "הגבלת תווים לתוכן"
+
+#~ msgid "By"
+#~ msgstr "על ידי "
+
+#~ msgid "[Read More...]"
+#~ msgstr "[קרא עוד...]"
+
+#~ msgid "More Posts from this Category"
+#~ msgstr "עוד פוסטים מקטגוריה זו"
+
+#~ msgid "Displays featured posts with thumbnails"
+#~ msgstr "מציג פוסט נבחר עם תמונה ראשית"
+
+#~ msgid "Genesis - Featured Posts"
+#~ msgstr "ג'נסיס  - הצגת פוסטים"
+
+#~ msgid "Category"
+#~ msgstr "קטגוריה"
+
+#~ msgid "Number of Posts to Show"
+#~ msgstr "להציג מספר פוסטים "
+
+#~ msgid "Number of Posts to Offset"
+#~ msgstr "מספר הודעות הסט"
+
+#~ msgid "Order By"
+#~ msgstr "לסדר לפי"
+
+#~ msgid "Date"
+#~ msgstr "תאריך"
+
+#~ msgid "Parent"
+#~ msgstr "הורה"
+
+#~ msgid "ID"
+#~ msgstr "ID"
+
+#~ msgid "Comment Count"
+#~ msgstr "ספירת תגובות"
+
+#~ msgid "Random"
+#~ msgstr "אקראי"
+
+#~ msgid "Sort Order"
+#~ msgstr "סדר לפי"
+
+#~ msgid "Descending (3, 2, 1)"
+#~ msgstr "יורד ( 3,2,1)"
+
+#~ msgid "Ascending (1, 2, 3)"
+#~ msgstr "עולה ( 1,2,3)"
+
+#~ msgid "Show Author Gravatar"
+#~ msgstr "הצג Gravatar של המחבר"
+
+#~ msgid "Gravatar Size"
+#~ msgstr "Gravatar גודל"
+
+#~ msgid "Small (45px)"
+#~ msgstr "קטן (45px)"
+
+#~ msgid "Medium (65px)"
+#~ msgstr "בינוני (65px)"
+
+#~ msgid "Large (85px)"
+#~ msgstr "גדול (85px)"
+
+#~ msgid "Extra Large (125px)"
+#~ msgstr "גדול מאוד (125px)"
+
+#~ msgid "Gravatar Alignment"
+#~ msgstr "Gravatar יישור"
+
+#~ msgid "Show Post Title"
+#~ msgstr "הצג את כותרת הפוסט"
+
+#~ msgid "Show Post Info"
+#~ msgstr "הצג מידע על הפוסט"
+
+#~ msgid "Content Type"
+#~ msgstr "סוג תוכן"
+
+#~ msgid "Show Content"
+#~ msgstr "להציג תוכן"
+
+#~ msgid "Show Excerpt"
+#~ msgstr "להציג תקציר"
+
+#~ msgid "Show Content Limit"
+#~ msgstr "הצג מגבלת תוכן"
+
+#~ msgid "No Content"
+#~ msgstr "ללא תוכן"
+
+#~ msgid "More Text (if applicable)"
+#~ msgstr "טקסט \"עוד\""
+
+#~ msgid ""
+#~ "To display an unordered list of more posts from this category, please "
+#~ "fill out the information below"
+#~ msgstr ""
+#~ "כדי להציג רשימה של פוסטים נוספים מקטגוריה זו, אנא מלאו את הפרטים להלן"
+
+#~ msgid "Show Category Archive Link"
+#~ msgstr "הצג קישור לארכיב הקטגוריה"
+
+#~ msgid "Link Text"
+#~ msgstr "כיתוב קישור"
+
+#~ msgid "Display a list of your latest tweets."
+#~ msgstr "מציג רשימה של ציוצים אחרונים"
+
+#~ msgid "Genesis - Latest Tweets"
+#~ msgstr "ג'נסיס - ציוצים אחרונים"
+
+#~ msgid ""
+#~ "The Twitter API is taking too long to respond. Please try again later."
+#~ msgstr "ל API של טוויטר לוקח יותר מדי זמן להגיב. נא נסה שוב מאוחר יותר."
+
+#~ msgid ""
+#~ "There was an error while attempting to contact the Twitter API. Please "
+#~ "try again."
+#~ msgstr "אירעה שגיאה בעת ניסיון ליצור קשר עם ה-API של טוויטר. נא נסה שוב."
+
+#~ msgid ""
+#~ "The Twitter API returned an error while processing your request. Please "
+#~ "try again."
+#~ msgstr "API של טוויטר החזיר שגיאה בעת עיבוד הבקשה שלך. אנא נסה שוב."
+
+#~ msgid "about %s ago"
+#~ msgstr "לפני כ%s"
+
+#~ msgid ""
+#~ "If you would like to continue to use the Latest Tweets widget "
+#~ "functionality, please have a site administrator <a href=\"%s\" target="
+#~ "\"_blank\">install this plugin</a>."
+#~ msgstr ""
+#~ "אם תרצה להמשיך להשתמש בפונקציונליות של הוידג'ט ציוצים אחרונים, אנא תן "
+#~ "לאדמיניסטרטור <a href=\"%s\" target=\"_blank\">להתקין את התוסף</a>"
+
+#~ msgid ""
+#~ "If you would like to continue to use the Latest Tweets widget "
+#~ "functionality, please <a href=\"%s\" class=\"thickbox\" title=\"Install "
+#~ "Genesis Latest Tweets\">install this plugin</a>."
+#~ msgstr ""
+#~ "אם תרצה להמשיך להשתמש בפונקציונליות של הוידג'ט ציוצים אחרונים, אנא <a "
+#~ "href=\"%s\" class=\"thickbox\" title=\"Install Genesis Latest Tweets"
+#~ "\">התקן את התוסף</a>"
+
+#~ msgid "Read More"
+#~ msgstr "קרא עוד"
+
+#~ msgid "Displays user profile block with Gravatar"
+#~ msgstr "הצגת פרופיל המשתמש עם Gravatar"
+
+#~ msgid "Genesis - User Profile"
+#~ msgstr "ג'נסיס - פרטי משתמש"
+
+#~ msgid "View My Blog Posts"
+#~ msgstr "הצג את הפוסטים שלי"
+
+#~ msgid ""
+#~ "Select a user. The email address for this account will be used to pull "
+#~ "the Gravatar image."
+#~ msgstr ""
+#~ "בחר משתמש. כתובת דוא\"ל עבור חשבון זה ישמש כדי למשוך את תמונת ה- Gravatar."
+
+#~ msgid "Small"
+#~ msgstr "קטן"
+
+#~ msgid "Medium"
+#~ msgstr "בינוני"
+
+#~ msgid "Large"
+#~ msgstr "גדול"
+
+#~ msgid "Extra Large"
+#~ msgstr "גדול מאוד"
+
+#~ msgid "Select which text you would like to use as the author description"
+#~ msgstr "בחר את הטקסט שאתה רוצה להשתמש  בו כתיאור המחבר"
+
+#~ msgid "Author Bio"
+#~ msgstr "על המחבר"
+
+#~ msgid "Custom Text (below)"
+#~ msgstr "טקסט מותאם אישית"
+
+#~ msgid "Custom Text Content"
+#~ msgstr "תוכן של טקסט מותאם אישית"
+
+#~ msgid ""
+#~ "Choose your extended \"About Me\" page from the list below. This will be "
+#~ "the page linked to at the end of the about me section."
+#~ msgstr "בחר את העמוד \"אודותיי\" מהרשימה. זה יהיה הדף המקושר בסוף הקטע."
+
+#~ msgid "Extended page link text"
+#~ msgstr "תיאור מורחב עבור לינק לעמוד"
+
+#~ msgid "Show Author Archive Link?"
+#~ msgstr "הצג קישור לארכיון המחבר?"
+
+#~ msgid "Search Results for:"
+#~ msgstr "תוצאות חיפוש עבור: "

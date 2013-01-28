@@ -1,0 +1,1448 @@
+# Translation of Genesis 1.8 in Danish
+# This file is distributed under the same license as the Genesis 1.8 package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Genesis eNews Extended\n"
+"POT-Creation-Date: 2013-01-27 23:00-0600\n"
+"PO-Revision-Date: 2013-01-27 23:00-0600\n"
+"Last-Translator: Brandon Kraft <public@brandonkraft.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../class-bjgk-genesis-enews-extended.php:50
+#, fuzzy
+msgid "Displays subscribe form"
+msgstr "Vis Feedburners e-mail abonnements formular"
+
+#: ../class-bjgk-genesis-enews-extended.php:53
+#, fuzzy
+msgid "Genesis - eNews Extended"
+msgstr "Genesis - eNews og Updates"
+
+#: ../class-bjgk-genesis-enews-extended.php:138
+msgid "Title"
+msgstr "Titel"
+
+#: ../class-bjgk-genesis-enews-extended.php:143
+msgid "Text To Show"
+msgstr "Vis denne tekst"
+
+#: ../class-bjgk-genesis-enews-extended.php:148
+msgid "Google/Feedburner ID"
+msgstr "Google/Feedburner ID"
+
+#: ../class-bjgk-genesis-enews-extended.php:150
+msgid ""
+"Entering your Feedburner ID here will deactivate the custom options below."
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:154
+#, fuzzy
+msgid "Form Action"
+msgstr "Information"
+
+#: ../class-bjgk-genesis-enews-extended.php:159
+msgid "E-Mail Field"
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:164
+msgid "First Name Field"
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:169
+msgid "Last Name Field"
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:174
+msgid "Hidden Fields"
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:176
+msgid "Not all services use hidden fields."
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:181
+msgid "Open confirmation page in same window?"
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:185
+msgid "First Name..."
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:186
+#, fuzzy
+msgid "First Name Input Text"
+msgstr "Input tekst"
+
+#: ../class-bjgk-genesis-enews-extended.php:190
+msgid "Last Name..."
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:191
+#, fuzzy
+msgid "Last Name Input Text"
+msgstr "Input tekst"
+
+#: ../class-bjgk-genesis-enews-extended.php:195
+msgid "Enter your email address..."
+msgstr "Skriv din e-mail-adresse ..."
+
+#: ../class-bjgk-genesis-enews-extended.php:196
+#, fuzzy
+msgid "E-Mail Input Text"
+msgstr "Input tekst"
+
+#: ../class-bjgk-genesis-enews-extended.php:201
+msgid "Go"
+msgstr "Send"
+
+#: ../class-bjgk-genesis-enews-extended.php:202
+msgid "Button Text"
+msgstr "Knappens tekst"
+
+#~ msgid "Not Found, Error 404"
+#~ msgstr "Ikke fundet, fejl 404"
+
+#~ msgid ""
+#~ "The page you are looking for no longer exists. Perhaps you can return "
+#~ "back to the site's <a href=\"%s\">homepage</a> and see if you can find "
+#~ "what you are looking for. Or, you can try finding it with the information "
+#~ "below."
+#~ msgstr ""
+#~ "Den side, du kigger efter, eksisterer ikke længere. Måske kan det hjælpe, "
+#~ "hvis du besøger <a href=\"%s\">forsiden</a> og ser, om du kan finde det, "
+#~ "du søger. Du kan også bruge søgefunktionen eller den nedenstående "
+#~ "oversigt over hjemmesidens indhold. "
+
+#~ msgid "Pages:"
+#~ msgstr "Sider:"
+
+#~ msgid "Categories:"
+#~ msgstr "Kategorier:"
+
+#~ msgid "Authors:"
+#~ msgstr "Forfattere:"
+
+#~ msgid "Monthly:"
+#~ msgstr "Måneder:"
+
+#~ msgid "Recent Posts:"
+#~ msgstr "Seneste indlæg:"
+
+#~ msgid ""
+#~ "This post is password protected. Enter the password to view comments."
+#~ msgstr ""
+#~ "Dette indlæg er beskyttet med et kodeord. Skriv kodeordet for at se "
+#~ "kommentarer."
+
+#~ msgid "Primary Navigation Menu"
+#~ msgstr "Primary Navigation Menu"
+
+#~ msgid "Secondary Navigation Menu"
+#~ msgstr "Secondary Navigation Menu"
+
+#~ msgid "Genesis - Import/Export"
+#~ msgstr "Genesis - Import/Export"
+
+#~ msgid "Import/Export"
+#~ msgstr "Importer/Exporter"
+
+#~ msgid "Import Genesis Settings File"
+#~ msgstr "Importer Genesis Indstillingsfil"
+
+#~ msgid ""
+#~ "Upload the data file (<code>.json</code>) from your computer and we'll "
+#~ "import your settings."
+#~ msgstr ""
+#~ "Upload data filen fra din computer (. json) og vi vil importere dine "
+#~ "indstillinger."
+
+#~ msgid ""
+#~ "Choose the file from your computer and click \"Upload file and Import\""
+#~ msgstr "Vælg filen fra din computer og klik på \"Upload og Importer\""
+
+#~ msgid "Upload File: (Maximum Size: %s)"
+#~ msgstr "Upload fil: (Maksimal størrelse: %s)"
+
+#~ msgid "Upload File and Import"
+#~ msgstr "Upload fil og importer"
+
+#~ msgid "Export Genesis Settings File"
+#~ msgstr "Eksporter Genesis Indstillingsfil"
+
+#~ msgid ""
+#~ "When you click the button below, Genesis will generate a data file "
+#~ "(<code>.json</code>) for you to save to your computer."
+#~ msgstr ""
+#~ "Når du klikker på knappen nedenfor, vil Genesis generere en JSON fil, som "
+#~ "du kan gemme på din computer."
+
+#~ msgid ""
+#~ "Once you have saved the download file, you can use the import function on "
+#~ "another site to import this data."
+#~ msgstr ""
+#~ "Når du har downloadet filen og gemt den, kan du importere den på et andet "
+#~ "site ved hjælp af importfunktionen. "
+
+#~ msgid "Download Export File"
+#~ msgstr "Download Eksport fil"
+
+#~ msgid "Settings successfully imported."
+#~ msgstr "Indstillingerne er blevet importeret!"
+
+#~ msgid "There was a problem importing your settings. Please try again."
+#~ msgstr ""
+#~ "Der opstod et problem ved import af dine indstillinger. Prøv venligst "
+#~ "igen."
+
+#~ msgid "Theme Settings"
+#~ msgstr "Tema indstillinger"
+
+#~ msgid "SEO Settings"
+#~ msgstr "SEO indstillinger"
+
+#~ msgid "No export options available."
+#~ msgstr "Der er ingen tilgængelig eksport funktion"
+
+#~ msgid "Theme SEO Settings"
+#~ msgstr "Tema SEO indstillinger"
+
+#~ msgid "Custom Document Title"
+#~ msgstr "Dokumentets titel"
+
+#~ msgid "Characters Used: %s"
+#~ msgstr "Antal anvendte tegn: %s"
+
+#~ msgid "Custom Post/Page Meta Description"
+#~ msgstr "Indstilling Indlæg/Side Meta beskrivelse"
+
+#~ msgid "Custom Post/Page Meta Keywords, comma separated"
+#~ msgstr "Indstilling Indlæg/Side Meta keywords, adskil med komma"
+
+#~ msgid "Custom Canonical URI"
+#~ msgstr "Indstilling Canonical URI"
+
+#~ msgid "Custom Redirect URI"
+#~ msgstr "Custom Redirect URI"
+
+#~ msgid "Robots Meta Settings"
+#~ msgstr "Robot Meta Indstillinger"
+
+#~ msgid "Apply %s to this post/page"
+#~ msgstr "Tilføj %s til dette Indlæg/Side"
+
+#~ msgid "Custom Tracking/Conversion Code"
+#~ msgstr "Indstil Tracking/Conversion kode"
+
+#~ msgid "Layout Settings"
+#~ msgstr "Layout indstillinger"
+
+#~ msgid "Default Layout set in <a href=\"%s\">Theme Settings</a>"
+#~ msgstr "Default Layout set in <a href=\"%s\">Theme indstillinger</a>"
+
+#~ msgid "Custom Body Class"
+#~ msgstr "Custom Body klasse"
+
+#~ msgid "Custom Post Class"
+#~ msgstr "Custom Post klasse"
+
+#~ msgid "README"
+#~ msgstr "README"
+
+#~ msgid "The %s file was not found in the child theme, or it was empty."
+#~ msgstr "%s filen blev ikke fundet i child themet, eller også var den tom."
+
+#~ msgid "Genesis - SEO Settings"
+#~ msgstr "Genesis - SEO indstillinger"
+
+#~ msgid "Save Settings"
+#~ msgstr "Gem indstillingerne"
+
+#~ msgid "Reset Settings"
+#~ msgstr "Nulstil indstillingerne"
+
+#~ msgid "Settings saved."
+#~ msgstr "SEO indstillingerne er gemt"
+
+#~ msgid "Settings reset."
+#~ msgstr "SEO indstillinger nulstillet"
+
+#~ msgid "Error saving settings."
+#~ msgstr "Problem med at gemme indstillingerne"
+
+#~ msgid "Doctitle Settings"
+#~ msgstr "Doctitle indstillinger"
+
+#~ msgid "Homepage Settings"
+#~ msgstr "Startside indstillinger"
+
+#~ msgid "Document Head Settings"
+#~ msgstr "Dokument Head indstillinger"
+
+#~ msgid "Archives Settings"
+#~ msgstr "Arkiv indstillinger"
+
+#~ msgid ""
+#~ "The Document Title is the single most important SEO tag in your document "
+#~ "source. It succinctly informs search engines of what information is "
+#~ "contained in the document. The doctitle changes from page to page, but "
+#~ "these options will help you control what it looks by default."
+#~ msgstr "Dokument-titlen er det vigtigste SEO tag i dokumentets kildekode"
+
+#~ msgid ""
+#~ "<b>By default</b>, the homepage doctitle will contain the site title, the "
+#~ "single post and page doctitle will contain the post/page title, archive "
+#~ "pages will contain the archive type, etc."
+#~ msgstr ""
+#~ "<b>Som standard</b>, indeholder startsidens doctitle sitets titel, det "
+#~ "enkelte indlæg og sides doctitle vil indeholde indlæggets/sidens titel, "
+#~ "arkivsiderne vil indeholde arkiv type, osv."
+
+#~ msgid "Append Site Description to Doctitle on homepage?"
+#~ msgstr "Tilføj site beskrivelse til doctitle på startside?"
+
+#~ msgid "Append Site Name to Doctitle on inner pages?"
+#~ msgstr "Tilføj site navn til doctitle på indholds sider?"
+
+#~ msgid "Doctitle (%s) Append Location:"
+#~ msgstr "Doctitle (%s) tilføj Lokation:"
+
+#~ msgid "Determines what side the appended doctitle text will go on."
+#~ msgstr "Bestemmer hvilken side den indsatte doctitle tekst skal vises på"
+
+#~ msgid "Left"
+#~ msgstr "venstre"
+
+#~ msgid "Right"
+#~ msgstr "højre"
+
+#~ msgid "Doctitle (<code>&lt;title&gt;</code>) Separator:"
+#~ msgstr "Doctitle (<code>&lt;title&gt;</code>) deler:"
+
+#~ msgid ""
+#~ "If the doctitle consists of two parts (Title &amp; Appended Text), then "
+#~ "the Doctitle Separator will go between them."
+#~ msgstr ""
+#~ "<b>BEMÆRK:</b> Hvis doctitle består af to dele (titel &amp; tilføjet "
+#~ "tekst), så står doctitle deleren imellem dem."
+
+#~ msgid "Which text would you like to be wrapped in %s tags?"
+#~ msgstr "Hvilken tekst skal pakkes ind i %s tags?"
+
+#~ msgid ""
+#~ "The %s tag is, arguably, the second most important SEO tag in the "
+#~ "document source. Choose wisely."
+#~ msgstr ""
+#~ "Dette tag,  %s, er den næstvigtigste SEO tag i dokumentets kildekode. "
+#~ "Vælg det med omhu"
+
+#~ msgid "Site Title"
+#~ msgstr "Site titel"
+
+#~ msgid "Site Description"
+#~ msgstr "Site beskrivelse, max. 180 tegn"
+
+#~ msgid "Neither. I'll manually wrap my own text on the homepage"
+#~ msgstr "Ingen af delene. Jeg pakker selv teksten manuelt til hjemmesiden"
+
+#~ msgid "Home Doctitle:"
+#~ msgstr "Startside doctitle:"
+
+#~ msgid ""
+#~ "If you leave the doctitle field blank, your site&rsquo;s title will be "
+#~ "used instead."
+#~ msgstr ""
+#~ "<b>BEMÆRK: </b> Hvis du lader doctitle feltet stå tomt, bliver dit "
+#~ "websteds titel anvendt i stedet."
+
+#~ msgid "Home META Description:"
+#~ msgstr "Startside META beskrivelse"
+
+#~ msgid ""
+#~ "The META Description can be used to determine the text used under the "
+#~ "title on search engine results pages."
+#~ msgstr ""
+#~ "<b>BEMÆRK:</b> META Beskrivelse kan bruges til at bestemme den tekst der "
+#~ "vises under titlen på søgemaskiners resultatsider."
+
+#~ msgid "Home META Keywords (comma separated):"
+#~ msgstr "Startside META Søgeord (kommasepareret)"
+
+#~ msgid "Keywords are generally ignored by Search Engines."
+#~ msgstr "<b>BEMÆRK:</b> Keywords bliver generelt ignoreret af søgemaskiner."
+
+#~ msgid "Homepage Robots Meta Tags:"
+#~ msgstr ""
+#~ "Startside META nøgleord (kommasepareret max. 20 ord, skal helst forekomme "
+#~ "på startsiden)"
+
+#~ msgid "Apply %s to the homepage?"
+#~ msgstr "Anvend %s på hjemmesiden?"
+
+#~ msgid ""
+#~ "By default, WordPress places several tags in your document %1$s. Most of "
+#~ "these tags are completely unnecessary, and provide no SEO value "
+#~ "whatsoever. They just make your site slower to load. Choose which tags "
+#~ "you would like included in your document %1$s. If you do not know what "
+#~ "something is, leave it unchecked."
+#~ msgstr ""
+#~ "Som standard, placerer WordPress flere tags i dit dokument %1$s. De "
+#~ "fleste af disse tags er helt unødvendige, og de skaber ingen SEO værdi "
+#~ "overhovedet. De gør bare dit websted langsommere at indlæse. Vælg de tags "
+#~ "som du vil have til at indgå i din dokument %1$s. Hold dig til "
+#~ "standardopsætningen og ændre kun de emner, hvor du kender konsekvensen. "
+
+#~ msgid "Relationship Link Tags:"
+#~ msgstr "Relationship Link Tags"
+
+#~ msgid "Adjacent Posts %s link tags"
+#~ msgstr "Sidestillede indlægs %s link tags"
+
+#~ msgid "Windows Live Writer Support:"
+#~ msgstr "Windows Live Writer Support:"
+
+#~ msgid "Include Windows Live Writer Support Tag?"
+#~ msgstr "Anvend Windows Live Writer Support Tag?"
+
+#~ msgid "Shortlink Tag:"
+#~ msgstr "Shortlink Tag:"
+
+#~ msgid "Include Shortlink tag?"
+#~ msgstr "Anvend Shortlink tag?"
+
+#~ msgid ""
+#~ "The shortlink tag might have some use for 3rd party service "
+#~ "discoverability, but it has no SEO value whatsoever."
+#~ msgstr ""
+#~ "Kortlink tag kan have betydning for at nogle 3. parts services finder dit "
+#~ "inhold, men disse tags har overhovedet ingen SEO-værdi."
+
+#~ msgid ""
+#~ "Depending on your situation, you may or may not want the following "
+#~ "archive pages to be indexed by search engines. Only you can make that "
+#~ "determination."
+#~ msgstr ""
+#~ "Din situation afgør, om du ønsker eller ikke ønsker at de nævnte arkiv-"
+#~ "sider skal indekseres af søgemaskiner. Kun du kan træffe den beslutning."
+
+#~ msgid "Apply %s to Category Archives?"
+#~ msgstr "Anvend %s i Kategori Arkiv?"
+
+#~ msgid "Apply %s to Tag Archives?"
+#~ msgstr "Anvend %s i Tag Arkiv?"
+
+#~ msgid "Apply %s to Author Archives?"
+#~ msgstr "Anvend %s i Forfatter Arkiv?"
+
+#~ msgid "Apply %s to Date Archives?"
+#~ msgstr "Anvend %s i Dato Arkiv?"
+
+#~ msgid "Apply %s to Search Archives?"
+#~ msgstr "Anvend %s i Søge Arkiv?"
+
+#~ msgid ""
+#~ "Some search engines will cache pages in your site (e.g Google Cache). The "
+#~ "%1$s tag will prevent them from doing so. Choose what archives you want "
+#~ "to %1$s."
+#~ msgstr ""
+#~ "Nogle søgemaskiner vil cache sider på dit websted (f.eks Google Cache). "
+#~ "Dette %1$s tag vil forhindre dem i at gøre det. Vælg hvilke arkiver du "
+#~ "vil %1$s."
+
+#~ msgid "Apply %s to Entire Site?"
+#~ msgstr "Tilføj %s til hele Siten?"
+
+#~ msgid ""
+#~ "Occasionally, search engines use resources like the Open Directory "
+#~ "Project and the Yahoo! Directory to find titles and descriptions for your "
+#~ "content. Generally, you will not want them to do this. The %s and %s tags "
+#~ "prevent them from doing so."
+#~ msgstr ""
+#~ "Fra tid til anden bruger søgemaskiner ressourcer som Open Directory "
+#~ "Project og Yahoo! Directory til at finde titler og beskrivelser på dit "
+#~ "indhold. For det meste er det ikke ønskværdigt. Dette %s og %s tags "
+#~ "forhindrer søgemaskinerne i at gøre det. "
+
+#~ msgid "Apply %s to your site?"
+#~ msgstr "Tilføj %s til dit site?"
+
+#~ msgid "Canonical Paginated Archives"
+#~ msgstr "Canonical pagineret Arkiv"
+
+#~ msgid ""
+#~ "This option points search engines to the first page of an archive, if "
+#~ "viewing a paginated page. If you do not know what this means, leave it on."
+#~ msgstr ""
+#~ "Denne indstilling sender søgemaskiner til den første af flere nummererede "
+#~ "sider eller til den primære side for et bestemt emne. Hvis du ikke kender "
+#~ "konsekvensen ved at slå funktionen fra, skal skal du lade den være "
+#~ "aktiveret."
+
+#~ msgid "Archive Settings"
+#~ msgstr "Arkiv indstillinger"
+
+#~ msgid "Archive Headline"
+#~ msgstr "Arkiv overskrift"
+
+#~ msgid "Leave empty if you do not want to display a headline."
+#~ msgstr "Skal være blank hvis der ikke skal vises en overskrift"
+
+#~ msgid "Archive Intro Text"
+#~ msgstr "Arkiv introduktions tekst"
+
+#~ msgid "Leave empty if you do not want to display any intro text."
+#~ msgstr "Skal være blank hvis der ikke skal vises en intro tekst"
+
+#~ msgid "Custom Document %s"
+#~ msgstr "Custom Dokument %s"
+
+#~ msgid "%s Description"
+#~ msgstr "%s Beskrivelse"
+
+#~ msgid "%s Keywords"
+#~ msgstr "%s Keywords"
+
+#~ msgid "Comma separated list"
+#~ msgstr "Kommasepareret liste"
+
+#~ msgid "Robots Meta"
+#~ msgstr "Robot Meta"
+
+#~ msgid "Apply %s to this archive?"
+#~ msgstr "Anvend %s i dette arkiv?"
+
+#~ msgid "Choose Layout"
+#~ msgstr "Vælg Layout"
+
+#~ msgid "Follow me on Twitter"
+#~ msgstr "Følg mig på twitter"
+
+#~ msgid "Color Style"
+#~ msgstr "Farve valg"
+
+#~ msgid "Custom Feeds"
+#~ msgstr "Custom Feeds"
+
+#~ msgid "Default Layout"
+#~ msgstr "Standard layout"
+
+#~ msgid "Header Settings"
+#~ msgstr "Header indstillinger"
+
+#~ msgid "Navigation Settings"
+#~ msgstr "Navigations indstillinger"
+
+#~ msgid "Breadcrumbs"
+#~ msgstr "Brødkrummer"
+
+#~ msgid "Comments and Trackbacks"
+#~ msgstr "Kommentarer og Trackbacks"
+
+#~ msgid "Content Archives"
+#~ msgstr "Præsentation af ældre indhold"
+
+#~ msgid "Blog Page"
+#~ msgstr "Blog Forside"
+
+#~ msgid "Header and Footer Scripts"
+#~ msgstr "Header og Footer Scripts"
+
+#~ msgid "Version:"
+#~ msgstr "Version:"
+
+#~ msgid "Released:"
+#~ msgstr "Released:"
+
+#~ msgid "Display Theme Information in your document source"
+#~ msgstr "Vis oplysninger om dit tema i din kildekode"
+
+#~ msgid ""
+#~ "This can be helpful for diagnosing problems with your theme when seeking "
+#~ "assistance in the <a href=\"%s\" target=\"_blank\">support forums</a>."
+#~ msgstr ""
+#~ "<b>Bemærk:</b> Dette kan være nyttigt til at diagnosticere problemer med "
+#~ "dit tema, når de søger hjælp i <a href=\"%s\" target=\"_blank"
+#~ "\">onlinefora</a>"
+
+#~ msgid "Enable Automatic Updates"
+#~ msgstr "Tillad Automatiske Opdateringer"
+
+#~ msgid "Notify"
+#~ msgstr "Send besked til:"
+
+#~ msgid "when updates are available"
+#~ msgstr "når der er nye opdateringer"
+
+#~ msgid ""
+#~ "If you provide an email address above, your blog can email you when a new "
+#~ "version of Genesis is available."
+#~ msgstr ""
+#~ "Skriver du en e-mail adresse i feltet, får du besked, når en ny version "
+#~ "af Genesis er klar"
+
+#~ msgid "Color Style:"
+#~ msgstr "Farve valg:"
+
+#~ msgid "Default"
+#~ msgstr "Standard"
+
+#~ msgid ""
+#~ "Please select the color style from the drop down list and save your "
+#~ "settings."
+#~ msgstr "Vælg venligst farve i listen og gem dine indstillinger"
+
+#~ msgid "Use for blog title/logo:"
+#~ msgstr "Brug som blog-titel/logo:"
+
+#~ msgid "Dynamic text"
+#~ msgstr "Dynamisk tekst"
+
+#~ msgid "Image logo"
+#~ msgstr "Billed/Grafik logo"
+
+#~ msgid "Primary Navigation"
+#~ msgstr "Primære Navigation"
+
+#~ msgid "Include Primary Navigation Menu?"
+#~ msgstr "Anvend Primary Navigation Menu?"
+
+#~ msgid "Enable Fancy Dropdowns?"
+#~ msgstr "Brug Fancy Dropdowns?"
+
+#~ msgid "Enable Extras on Right Side?"
+#~ msgstr "Vis ekstra funktioner i højre side?"
+
+#~ msgid "Display the following:"
+#~ msgstr "Vis følgende:"
+
+#~ msgid "Today's date"
+#~ msgstr "Dags dato"
+
+#~ msgid "RSS feed links"
+#~ msgstr "RSS feed links"
+
+#~ msgid "Search form"
+#~ msgstr "Søgeformular"
+
+#~ msgid "Twitter link"
+#~ msgstr "Link til Twitter"
+
+#~ msgid "Enter Twitter ID:"
+#~ msgstr "Indtast Twitter ID:"
+
+#~ msgid "Twitter Link Text:"
+#~ msgstr "Tekst til Twitter Link"
+
+#~ msgid "Secondary Navigation"
+#~ msgstr "Sekundær Navigation"
+
+#~ msgid "Include Secondary Navigation Menu?"
+#~ msgstr "Anvend Sekundære Navigation Menu?"
+
+#~ msgid ""
+#~ "In order to use the navigation menus, you must build a <a href=\"%s"
+#~ "\">custom menu</a>, then assign it to the proper Menu Location."
+#~ msgstr ""
+#~ "For at bruge navigationsmenuer skal du først lave en <a href=\"%s"
+#~ "\">brugerdefineret menu</a>, og derefter tilføje den til et menuområde."
+
+#~ msgid "Enter your custom feed URI:"
+#~ msgstr "Angiv den brugerdefinerede feed URI:"
+
+#~ msgid "Redirect Feed?"
+#~ msgstr "Omdiriger Feed?"
+
+#~ msgid "Enter your custom comments feed URI:"
+#~ msgstr "Angiv den brugerdefinerede kommentar feed URI:"
+
+#~ msgid ""
+#~ "If your custom feed(s) are not handled by Feedburner, we do not recommend "
+#~ "that you use the redirect options."
+#~ msgstr ""
+#~ "Hvis dit brugerdefinerede feed(s) ikke kommer fra Feedburner, vil vi ikke "
+#~ "anbefale, at du omdirigerer dit feed. Det vil ikke fungere ordentligt. "
+
+#~ msgid "Enable Comments"
+#~ msgstr "Tillad Kommentarer"
+
+#~ msgid "on posts?"
+#~ msgstr "på indlæg?"
+
+#~ msgid "on pages?"
+#~ msgstr "på sider?"
+
+#~ msgid "Enable Trackbacks"
+#~ msgstr "Tillad Trackbacks"
+
+#~ msgid ""
+#~ "Comments and Trackbacks can also be disabled on a per post/page basis "
+#~ "when creating/editing posts/pages."
+#~ msgstr ""
+#~ "<b>BEMÆRK:</b> Kommentarer og Trackbacks kan også slås fra per indlæg/"
+#~ "side, når du skriver nye, eller ændrer indlæg/sider"
+
+#~ msgid "Enable on:"
+#~ msgstr "Anvend på:"
+
+#~ msgid "Front Page"
+#~ msgstr "Startside"
+
+#~ msgid "Posts"
+#~ msgstr "Indlæg"
+
+#~ msgid "Pages"
+#~ msgstr "Sider"
+
+#~ msgid "Archives"
+#~ msgstr "Arkiver"
+
+#~ msgid "404 Page"
+#~ msgstr "404 fejl side"
+
+#~ msgid "Attachment Page"
+#~ msgstr "Vedhæftnings side"
+
+#~ msgid ""
+#~ "Breadcrumbs are a great way of letting your visitors find out where they "
+#~ "are on your site with just a glance. You can enable/disable them on "
+#~ "certain areas of your site."
+#~ msgstr ""
+#~ "Brødkrummer er gode til hurtigt at vise besøgende, hvor de befinder sig "
+#~ "på dit websted. Du kan aktivere / deaktivere dem på udvalgte dele af dit "
+#~ "site."
+
+#~ msgid "Select one of the following:"
+#~ msgstr "Vælg en af følgende:"
+
+#~ msgid "Display post content"
+#~ msgstr "Vis indlæggets indhold"
+
+#~ msgid "Display post excerpts"
+#~ msgstr "Vis uddrag af indlægget"
+
+#~ msgid "Limit content to"
+#~ msgstr "Længde af uddrag"
+
+#~ msgid "characters"
+#~ msgstr "tegn"
+
+#~ msgid ""
+#~ "Using this option will limit the text and strip all formatting from the "
+#~ "text displayed. To use this option, choose \"Display post content\" in "
+#~ "the select box above."
+#~ msgstr ""
+#~ "Bruger du denne indstilling begrænses teksten og al formatering af "
+#~ "teksten fjernes. Hvis du vil bruge denne mulighed, skal du vælge \" Vis "
+#~ "indlæggets indhold\" i boksen over denne tekst."
+
+#~ msgid "Include the Featured Image?"
+#~ msgstr "Anvend det udvalgte billed?"
+
+#~ msgid "Image Size:"
+#~ msgstr "Billedstørrelse:"
+
+#~ msgid "Select Post Navigation Technique:"
+#~ msgstr "Vælg Indlægs Navigation metode:"
+
+#~ msgid "Older / Newer"
+#~ msgstr "Ældre / Nyere"
+
+#~ msgid "Previous / Next"
+#~ msgstr "Forrige / Næste"
+
+#~ msgid "Numeric"
+#~ msgstr "Numre"
+
+#~ msgid ""
+#~ "These options will affect any blog listings page, including archive, "
+#~ "author, blog, category, search, and tag pages."
+#~ msgstr ""
+#~ "Disse indstillinger vil påvirke enhver blog liste side, herunder arkiver, "
+#~ "forfatter, blog, kategori, søgning og tag sider."
+
+#~ msgid "Display which category:"
+#~ msgstr "Vis disse katagorier:"
+
+#~ msgid "All Categories"
+#~ msgstr "Alle kategorier"
+
+#~ msgid "Exclude the following Category IDs:"
+#~ msgstr "Udelad følgende Kategori ID's:"
+
+#~ msgid "Comma separated - 1,2,3 for example"
+#~ msgstr "Kommasepareret - 1,2,3 for eksempel"
+
+#~ msgid "Number of Posts to Show:"
+#~ msgstr "Antal indlæg som vises:"
+
+#~ msgid "Enter scripts or code you would like output to %s:"
+#~ msgstr "Indtast scripts/code som skal sendes til %s:"
+
+#~ msgid ""
+#~ "The %1$s hook executes immediately before the closing %2$s tag in the "
+#~ "document source."
+#~ msgstr ""
+#~ "<b>Bemærk:</b> %1$s hook udføres umiddelbart før den afsluttende %2$s tag "
+#~ "i dokumentets kildekode."
+
+#~ msgid "User Permissions"
+#~ msgstr "Brugerrettigheder"
+
+#~ msgid "Genesis Admin Menus"
+#~ msgstr "Genesis Admin menuer"
+
+#~ msgid "Enable Genesis Admin Menu?"
+#~ msgstr "Aktiver Genesis Admin menu?"
+
+#~ msgid "Enable SEO Settings Submenu?"
+#~ msgstr "Aktiver SEO undermenuen?"
+
+#~ msgid "Enable Import/Export Submenu?"
+#~ msgstr "Aktiver Import/Export undermenu?"
+
+#~ msgid "Author Archive Settings"
+#~ msgstr "Forfatter arkiv indstillinger"
+
+#~ msgid "These settings apply to this author's archive pages."
+#~ msgstr "Disse indstillinger gælder for denne forfatters arkiv sider."
+
+#~ msgid "Custom Archive Headline"
+#~ msgstr "Custom arkiv overskrift"
+
+#~ msgid "Will display in the %s tag at the top of the first page"
+#~ msgstr "Vises i %s tag i toppen af den første side"
+
+#~ msgid "Custom Description Text"
+#~ msgstr "Custom beskrivelse tekst"
+
+#~ msgid "This text will be the first paragraph, and display on the first page"
+#~ msgstr "Denne tekst vil være det første afsnit og vises på den første side"
+
+#~ msgid "Author Box"
+#~ msgstr "Forfatter boks"
+
+#~ msgid "Enable Author Box on this User's Posts?"
+#~ msgstr "Aktiver forfatter boks på denne brugers indlæg?"
+
+#~ msgid "Enable Author Box on this User's Archives?"
+#~ msgstr "Aktiver forfatter box på denne brugers arkiv?"
+
+#~ msgid ""
+#~ "You cannot use %s to create two menus in the same subclass. Please use "
+#~ "separate subclasses for each menu."
+#~ msgstr ""
+#~ "Du kan ikke bruge %s til at lave to menuer i samme subclass. Brug "
+#~ "venligsts seperate subclasses til hver menu."
+
+#~ msgid "Are you sure you want to reset?"
+#~ msgstr "Er du sikker på, at du vil nulstille?"
+
+#~ msgid "Home"
+#~ msgstr "Startside"
+
+#~ msgid "You are here: "
+#~ msgstr "Du er her: "
+
+#~ msgid "Archives for "
+#~ msgstr "Arkiv for "
+
+#~ msgid "Search for "
+#~ msgstr "Søg efter "
+
+#~ msgid "Not found: "
+#~ msgstr "Ikke fundet: "
+
+#~ msgid "View %s"
+#~ msgstr "Se %s"
+
+#~ msgid "(Edit)"
+#~ msgstr "(rediger)"
+
+#~ msgid "View archives for %s"
+#~ msgstr "Se arkiver for %s"
+
+#~ msgid "View archives for %s %s"
+#~ msgstr "Se arkiver for %s %s"
+
+#~ msgid "View all posts in %s"
+#~ msgstr "Se alle indlæg i %s"
+
+#~ msgid "View all %s"
+#~ msgstr "Se alle %s"
+
+#~ msgid "View all items in %s"
+#~ msgstr "Vis alle elementer i %s"
+
+#~ msgid "This file no longer needs to be included."
+#~ msgstr "Denne fil behøver ikke længere at være inkluderet."
+
+#~ msgid "seconds"
+#~ msgstr "sekunder"
+
+#~ msgid "and"
+#~ msgstr "og"
+
+#~ msgid "Content-Sidebar"
+#~ msgstr "Indhold-Sidebar"
+
+#~ msgid "Sidebar-Content"
+#~ msgstr "Sidebar-Indhold"
+
+#~ msgid "Content-Sidebar-Sidebar"
+#~ msgstr "Indhold-Sidebar-Sidebar"
+
+#~ msgid "Sidebar-Sidebar-Content"
+#~ msgstr "Sidebar-Sidebar-Indhold"
+
+#~ msgid "Sidebar-Content-Sidebar"
+#~ msgstr "Sidebar-Indhold-Sidebar"
+
+#~ msgid "Full Width Content"
+#~ msgstr "Indhold i fuld bredde"
+
+#~ msgid "No Label Selected"
+#~ msgstr "Der ikke valgt nogen label"
+
+#~ msgid ""
+#~ "The argument, \"context\", has been replaced with \"theme_location\" in "
+#~ "the $args array."
+#~ msgstr ""
+#~ "Argumentet \"context\", er blevet erstattet med \"theme_location\" i "
+#~ "$args array'et."
+
+#~ msgid ""
+#~ "Have you tried our Scribe SEO software? Do keyword research, content "
+#~ "optimization, and link building without leaving WordPress. <b>Genesis "
+#~ "owners save over 50&#37; using the promo code FIRST when you sign up</b>. "
+#~ "<a href=\"%s\" target=\"_blank\">Click here for more info</a>."
+#~ msgstr ""
+#~ "Har du prøvet vores Scribe SEO software? Lav keyword research, indholds "
+#~ "optimering, og link-building uden at forlade WordPress. <b>Genesis ejere "
+#~ "sparer over 50&#37; når de bruger promo koden FIRST når de tilmelder sig</"
+#~ "b>. <a href=\"%s\" target=\"_blank\">Klik her for mere information</a>.\n"
+
+#~ msgid "Dismiss"
+#~ msgstr "Afvis"
+
+#~ msgid "Congratulations! You are now rocking Genesis %s"
+#~ msgstr "Tillykke! Du er nu på beatet med Genesis %s"
+
+#~ msgid "Click here to complete the upgrade"
+#~ msgstr "Klik her får at afslutte opdateringen"
+
+#~ msgid ""
+#~ "Genesis %s is available. <a href=\"%s\" class=\"thickbox thickbox-preview"
+#~ "\">Check out what's new</a> or <a href=\"%s\" onclick=\"return "
+#~ "genesis_confirm('%s');\">update now</a>."
+#~ msgstr ""
+#~ "Genesis %s er tilgængelig nu. <a href=\"%s\" class=\"thickbox thickbox-"
+#~ "preview\">Se hvad der er blevet ændret</a> eller <a href=\"%s\" onclick="
+#~ "\"return genesis_confirm('%s');\">opdatere nu</a>."
+
+#~ msgid ""
+#~ "Upgrading Genesis will overwrite the current installed version of "
+#~ "Genesis. Are you sure you want to upgrade?. \"Cancel\" to stop, \"OK\" to "
+#~ "upgrade."
+#~ msgstr ""
+#~ "Hvis du opdaterer Genesis uden at oversætte sprogfilen, bliver Genesis "
+#~ "ændret, dit tema bliver overskrevet, og det er derefter på engelsk. Er du "
+#~ "sikker på at du vil opdatere?. Klik \"Annulere\" for at stoppen nu, \"OK"
+#~ "\" for at opdatere."
+
+#~ msgid "Genesis %s is available for %s"
+#~ msgstr "Genesis %s er tilgængelig til %s"
+
+#~ msgid ""
+#~ "Genesis %s is now available. We have provided 1-click updates for this "
+#~ "theme, so please log into your dashboard and update at your earliest "
+#~ "convenience."
+#~ msgstr ""
+#~ "Genesis %s er tilgængelig. Hvis du ikke bruger et oversættelses-plugin, "
+#~ "så kontakt din webmaster for at få opdateret din sprogfil før, du "
+#~ "opdaterer Genesis"
+
+#~ msgid "Header Left"
+#~ msgstr "Header venstre"
+
+#~ msgid "Header Right"
+#~ msgstr "Header Højre"
+
+#~ msgid "This is the widget area in the header."
+#~ msgstr "Dette er widget området i headeren."
+
+#~ msgid "Primary Sidebar"
+#~ msgstr "Primær Sidebar"
+
+#~ msgid ""
+#~ "This is the primary sidebar if you are using a two or three column site "
+#~ "layout option."
+#~ msgstr ""
+#~ "Dette er den primære Sidebar, hvis du bruger 2 eller 3 spalter som "
+#~ "sitelayout"
+
+#~ msgid "Secondary Sidebar"
+#~ msgstr "Sekundær Sidebar"
+
+#~ msgid ""
+#~ "This is the secondary sidebar if you are using a three column site layout "
+#~ "option."
+#~ msgstr ""
+#~ "Dette er den sekundære sidebar hvis du bruger det 3 spaltede sidelayout"
+
+#~ msgid "Footer %d"
+#~ msgstr "Footer %d"
+
+#~ msgid "Footer %d widget area."
+#~ msgstr "Footer %d widget område."
+
+#~ msgid "Select / Deselect All"
+#~ msgstr "Vælg / fravælg alle"
+
+#~ msgid "Return to top of page"
+#~ msgstr "Til top af side"
+
+#~ msgid "by "
+#~ msgstr "fra"
+
+#~ msgid "Log in"
+#~ msgstr "Log ind"
+
+#~ msgid "Log out"
+#~ msgstr "Log ud"
+
+#~ msgid "ago"
+#~ msgstr "siden"
+
+#~ msgid "Visit %s&#8217;s website"
+#~ msgstr "Besøgt %s&#8217;s hjemmeside"
+
+#~ msgid "% Comments"
+#~ msgstr "% kommentarer"
+
+#~ msgid "1 Comment"
+#~ msgstr "1 kommentar"
+
+#~ msgid "Leave a Comment"
+#~ msgstr "Skriv kommentar"
+
+#~ msgid "Tagged With: "
+#~ msgstr "Tags: "
+
+#~ msgid "Filed Under: "
+#~ msgstr "Skrevet i: "
+
+#~ msgid "<h3>Comments</h3>"
+#~ msgstr "<h3>Kommentarer</h3>"
+
+#~ msgid "<h3>Trackbacks</h3>"
+#~ msgstr "<h3>Trackbacks</h3>"
+
+#~ msgid "<cite class=\"fn\">%s</cite> <span class=\"says\">%s:</span>"
+#~ msgstr "<cite class=\"fn\">%s</cite> <span class=\"says\">%s:</span>"
+
+#~ msgid "says"
+#~ msgstr "siger"
+
+#~ msgid "%1$s at %2$s"
+#~ msgstr "%1$s på %2$s"
+
+#~ msgid "Edit"
+#~ msgstr "Rediger"
+
+#~ msgid "Your comment is awaiting moderation."
+#~ msgstr "Din kommentar venter på at blive godkendt"
+
+#~ msgid "Name"
+#~ msgstr "Navn"
+
+#~ msgid "Email"
+#~ msgstr "E-mail"
+
+#~ msgid "Website"
+#~ msgstr "Websted"
+
+#~ msgid "Speak Your Mind"
+#~ msgstr "Skriv kommentar"
+
+#~ msgid "Copyright"
+#~ msgstr "Copyright"
+
+#~ msgid "on"
+#~ msgstr "til"
+
+#~ msgid "Read more&hellip;"
+#~ msgstr "Læs mere&hellip;"
+
+#~ msgid "You are using invalid arguments with the %s function."
+#~ msgstr "Du bruger ugyldige argumenter til denn %s funktion."
+
+#~ msgid "Comments"
+#~ msgstr "Kommentarer"
+
+#~ msgid "[Read more...]"
+#~ msgstr "[Læs mere...]"
+
+#~ msgid "Sorry, no posts matched your criteria."
+#~ msgstr "Desværre, ingen indlæg passede det, du søgte. "
+
+#~ msgid "By"
+#~ msgstr "Af"
+
+#~ msgid "About"
+#~ msgstr "Om"
+
+#~ msgid "Older Posts"
+#~ msgstr "Ældre indlæg"
+
+#~ msgid "Newer Posts"
+#~ msgstr "Nyere indlæg"
+
+#~ msgid "Previous Page"
+#~ msgstr "Forrige side"
+
+#~ msgid "Next Page"
+#~ msgstr "Næste side"
+
+#~ msgid "Search this website %s"
+#~ msgstr "Søg på dette websted %s"
+
+#~ msgid "Search"
+#~ msgstr "Søg"
+
+#~ msgid "Primary Sidebar Widget Area"
+#~ msgstr "Hover Sidebar Widget område"
+
+#~ msgid ""
+#~ "This is the Primary Sidebar Widget Area. You can add content to this area "
+#~ "by visiting your <a href=\"%s\">Widgets Panel</a> and adding new widgets "
+#~ "to this area."
+#~ msgstr ""
+#~ "Her er hoved Sidebar Widget området. Du kan tilføje indhold ved at besøge "
+#~ "dit <a href=\"%s\">Widgets Panel</a> og tilføje nye widgets til dette "
+#~ "område."
+
+#~ msgid "Secondary Sidebar Widget Area"
+#~ msgstr "Smalle Sidebar Widget område"
+
+#~ msgid ""
+#~ "This is the Secondary Sidebar Widget Area. You can add content to this "
+#~ "area by visiting your <a href=\"%s\">Widgets Panel</a> and adding new "
+#~ "widgets to this area."
+#~ msgstr ""
+#~ "Her er det smalle Sidebar Widget område. Du kan tilføje indhold ved at "
+#~ "besøge dit <a href=\"%s\">Widgets Panel</a> og tilføje nye widgets til "
+#~ "dette område."
+
+#~ msgid "Single Post Template"
+#~ msgstr "Enkelt Indlæg Template"
+
+#~ msgid "Post Template"
+#~ msgstr "Indlæg Template"
+
+#~ msgid ""
+#~ "Some themes have custom templates you can use for single posts that might "
+#~ "have additional features or custom layouts. If so, you will see them "
+#~ "above."
+#~ msgstr ""
+#~ "Nogle temaer har brugerdefinerede skabeloner, du kan bruge til enkelt "
+#~ "indlæg, der måtte have ekstra funktioner eller brugerdefinerede layout. "
+#~ "Hvis dette tema har skabeloner vil du se dem ovenfor."
+
+#~ msgid "Displays featured page with thumbnails"
+#~ msgstr "Vis feature-side med thumbnails"
+
+#~ msgid "Genesis - Featured Page"
+#~ msgstr "Genesis - Fremhævet Side"
+
+#~ msgid "by"
+#~ msgstr "af"
+
+#~ msgid "Page"
+#~ msgstr "Side"
+
+#~ msgid "Show Featured Image"
+#~ msgstr "Vis det udvalgte billed"
+
+#~ msgid "Image Size"
+#~ msgstr "Billedstørrelse"
+
+#~ msgid "Image Alignment"
+#~ msgstr "Billedjustering"
+
+#~ msgid "None"
+#~ msgstr "Ingen"
+
+#~ msgid "Show Page Title"
+#~ msgstr "Vis Sidetitel"
+
+#~ msgid "Show Page Byline"
+#~ msgstr "Vis Side Byline"
+
+#~ msgid "Show Page Content"
+#~ msgstr "Vis Side Indhold"
+
+#~ msgid "Content Character Limit"
+#~ msgstr "Indhold tegngrænsen"
+
+#~ msgid "More Text"
+#~ msgstr "Mere tekst"
+
+#~ msgid "[Read More...]"
+#~ msgstr "[Læs videre...]"
+
+#~ msgid "More Posts from this Category"
+#~ msgstr "Flere indlæg fra denne kategori"
+
+#~ msgid "Displays featured posts with thumbnails"
+#~ msgstr "Vis feature-indlæg med thumbnails"
+
+#~ msgid "Genesis - Featured Posts"
+#~ msgstr "Genesis - Feature Indlæg"
+
+#~ msgid "Category"
+#~ msgstr "Kategori"
+
+#~ msgid "Number of Posts to Show"
+#~ msgstr "Antallet af indlæg som skal vises"
+
+#~ msgid "Number of Posts to Offset"
+#~ msgstr "Antal af indlæg der ikke vises"
+
+#~ msgid "Order By"
+#~ msgstr "Ordnes efter"
+
+#~ msgid "Date"
+#~ msgstr "Dato"
+
+#~ msgid "Parent"
+#~ msgstr "Forældre"
+
+#~ msgid "ID"
+#~ msgstr "ID"
+
+#~ msgid "Comment Count"
+#~ msgstr "Antal kommentarer"
+
+#~ msgid "Random"
+#~ msgstr "Tilfældig"
+
+#~ msgid "Sort Order"
+#~ msgstr "Sorteringsrækkefølge"
+
+#~ msgid "Descending (3, 2, 1)"
+#~ msgstr "Faldende (3, 2, 1)"
+
+#~ msgid "Ascending (1, 2, 3)"
+#~ msgstr "Stigende (1, 2, 3)"
+
+#~ msgid "Show Author Gravatar"
+#~ msgstr "Vis forfatter Gravatar"
+
+#~ msgid "Gravatar Size"
+#~ msgstr "Gravatar størrelse"
+
+#~ msgid "Small (45px)"
+#~ msgstr "Lille (45px)"
+
+#~ msgid "Medium (65px)"
+#~ msgstr "Mellem (65px)"
+
+#~ msgid "Large (85px)"
+#~ msgstr "Stor (85px)"
+
+#~ msgid "Extra Large (125px)"
+#~ msgstr "Ekstra stor (125px)"
+
+#~ msgid "Gravatar Alignment"
+#~ msgstr "Gravatar justering"
+
+#~ msgid "Show Post Title"
+#~ msgstr "Vis Indlæggets Titel"
+
+#~ msgid "Show Post Info"
+#~ msgstr "Vis Post Info"
+
+#~ msgid "Content Type"
+#~ msgstr "Indholdstype"
+
+#~ msgid "Show Content"
+#~ msgstr "Vis indhold"
+
+#~ msgid "Show Excerpt"
+#~ msgstr "Vis uddrag"
+
+#~ msgid "Show Content Limit"
+#~ msgstr "Vis indholds grænse"
+
+#~ msgid "No Content"
+#~ msgstr "Ingen indhold"
+
+#~ msgid "More Text (if applicable)"
+#~ msgstr "Mere Tekst (hvis relevant)"
+
+#~ msgid ""
+#~ "To display an unordered list of more posts from this category, please "
+#~ "fill out the information below"
+#~ msgstr ""
+#~ "For at vise en usorteret liste af indlæg fra denne kategori, bedes du "
+#~ "udfylde nedenstående oplysninger"
+
+#~ msgid "Show Category Archive Link"
+#~ msgstr "Vis Kategori Arkiv Links"
+
+#~ msgid "Link Text"
+#~ msgstr "Link Tekst"
+
+#~ msgid "Display a list of your latest tweets."
+#~ msgstr "Vis en liste af dine seneste tweets"
+
+#~ msgid "Genesis - Latest Tweets"
+#~ msgstr "Genesis - Seneste Tweets"
+
+#~ msgid ""
+#~ "The Twitter API is taking too long to respond. Please try again later."
+#~ msgstr "Twitter API tager for lang tid at svare. Prøv venligst igen senere."
+
+#~ msgid ""
+#~ "There was an error while attempting to contact the Twitter API. Please "
+#~ "try again."
+#~ msgstr ""
+#~ "Der opstod en fejl under forsøget på at kontakte Twitter API. Prøv igen "
+#~ "senere."
+
+#~ msgid ""
+#~ "The Twitter API returned an error while processing your request. Please "
+#~ "try again."
+#~ msgstr ""
+#~ "Twitter API returnerede en fejl under behandlingen af din anmodning. Prøv "
+#~ "venligst igen."
+
+#~ msgid "about %s ago"
+#~ msgstr "for %s siden"
+
+#~ msgid "Twitter Username"
+#~ msgstr "Twitter brugernavn"
+
+#~ msgid "Number of Tweets to Show"
+#~ msgstr "Antal af Tweets der skal vises"
+
+#~ msgid "Hide @ Replies"
+#~ msgstr "Skjul @ Svar"
+
+#~ msgid "Load new Tweets every"
+#~ msgstr "Hent nye Tweets hver"
+
+#~ msgid "5 Min."
+#~ msgstr "5 Min."
+
+#~ msgid "15 Minutes"
+#~ msgstr "15 Minutter"
+
+#~ msgid "30 Minutes"
+#~ msgstr "30 Minutter"
+
+#~ msgid "1 Hour"
+#~ msgstr "1 Time"
+
+#~ msgid "2 Hours"
+#~ msgstr "2 Timer"
+
+#~ msgid "4 Hours"
+#~ msgstr "4 Timer"
+
+#~ msgid "12 Hours"
+#~ msgstr "12 Timer"
+
+#~ msgid "24 Hours"
+#~ msgstr "24 Timer"
+
+#~ msgid "Include link to twitter page?"
+#~ msgstr "Anvend link til twitter side?"
+
+#~ msgid "Link Text (required)"
+#~ msgstr "Link tekst (kræves)"
+
+#~ msgid ""
+#~ "This widget has been deprecated, and will eventually be removed. DO NOT "
+#~ "use it. You have been warned."
+#~ msgstr ""
+#~ "This widget er forældet, og vil med tiden blive fjernet. Brug den IKKE. "
+#~ "Nu er du advaret."
+
+#~ msgid "Genesis - Category Menu"
+#~ msgstr "Genesis - Kategori menu"
+
+#~ msgid ""
+#~ "This widget has been deprecated, and will eventually be removed. We "
+#~ "suggest that you <a href=\"%s\">create a menu</a> and use the \"Custom "
+#~ "Menu\" widget instead."
+#~ msgstr ""
+#~ "This widget er forældet, og vil med tiden blive fjernet. Vi foreslår at "
+#~ "du <a href=\"%s\">laver en menu</a> og bruger \"Brugerdefineret menu\" "
+#~ "widget i stedet."
+
+#~ msgid "Genesis - Page Menu"
+#~ msgstr "Genesis - Side menu"
+
+#~ msgid "[Read More %s]"
+#~ msgstr "[Læs mere %s]"
+
+#~ msgid "Displays user profile block with Gravatar"
+#~ msgstr "Vis bruger profil kasse med Gravatar"
+
+#~ msgid "Genesis - User Profile"
+#~ msgstr "Genesis - Brugerprofil"
+
+#~ msgid "View My Blog Posts"
+#~ msgstr "Se mine blogindlæg"
+
+#~ msgid ""
+#~ "Select a user. The email address for this account will be used to pull "
+#~ "the Gravatar image."
+#~ msgstr ""
+#~ "Vælg en bruger. Kontoens e-mail-adresse vil blive brugt til at tilføje "
+#~ "brugerens Gravatar billede."
+
+#~ msgid "Small"
+#~ msgstr "Lille"
+
+#~ msgid "Medium"
+#~ msgstr "Mellem"
+
+#~ msgid "Large"
+#~ msgstr "Stor"
+
+#~ msgid "Extra Large"
+#~ msgstr "Ekstra Stor"
+
+#~ msgid "Select which text you would like to use as the author description"
+#~ msgstr "Vælg hvilken tekst, du ønsker at bruge som forfatteren beskrivelse"
+
+#~ msgid "Author Bio"
+#~ msgstr "Forfatter Biografi"
+
+#~ msgid "Custom Text (below)"
+#~ msgstr "Standard Tekst (nedenfor)"
+
+#~ msgid "Custom Text Content"
+#~ msgstr "Brugerdefineret indhold"
+
+#~ msgid ""
+#~ "Choose your extended \"About Me\" page from the list below. This will be "
+#~ "the page linked to at the end of the about me section."
+#~ msgstr ""
+#~ "Vælg din udvidede \"Om mig \" side fra listen nedenfor. Den valgte side "
+#~ "bliver linket i bunden af \"Om mig\" siden"
+
+#~ msgid "Extended page link text"
+#~ msgstr "Udvidet sidelinktekst"
+
+#~ msgid "Show Author Archive Link?"
+#~ msgstr "Vis Forfatter Arkiv Link?"
