@@ -1,5 +1,16 @@
 <?php
 /**
+ * Genesis eNews Extended
+ *
+ * @package   BJGK\Genesis_enews_extended
+ * @version   1.0.0
+ * @author    Brandon Kraft <public@brandonkraft.com>
+ * @link      http://www.brandonkraft.com/
+ * @copyright Copyright (c) 2012, Brandon Kraft
+ * @license   GPL-2.0+
+ */
+ 
+/**
  * Main plugin class.
  *
  * @package BJGK\Genesis_enews_extended
