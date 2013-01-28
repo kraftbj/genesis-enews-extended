@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Genesis eNews Extended v0.1.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-27 13:12-0600\n"
-"PO-Revision-Date: 2013-01-27 13:12-0600\n"
+"POT-Creation-Date: 2013-01-27 22:36-0600\n"
+"PO-Revision-Date: 2013-01-27 22:36-0600\n"
 "Last-Translator: Brandon Kraft <public@brandonkraft.com>\n"
 "Language-Team: Brandon Kraft <public@brandonkraft.com>\n"
 "Language: en_US\n"
@@ -17,32 +17,32 @@ msgstr ""
 "X-Poedit-SearchPath-0: ..\n"
 
 # @ genesis-enews-extended
-#: ../class-bjgk-genesis-enews-extended.php:39
+#: ../class-bjgk-genesis-enews-extended.php:50
 msgid "Displays subscribe form"
 msgstr "Muestra formulario de suscripci&#243;n"
 
 # @ genesis-enews-extended
-#: ../class-bjgk-genesis-enews-extended.php:42
+#: ../class-bjgk-genesis-enews-extended.php:53
 msgid "Genesis - eNews Extended"
 msgstr "Genesis - eNews Extended"
 
 # @ genesis-enews-extended
-#: ../class-bjgk-genesis-enews-extended.php:127
+#: ../class-bjgk-genesis-enews-extended.php:138
 msgid "Title"
 msgstr "T&#237;tulo"
 
 # @ genesis-enews-extended
-#: ../class-bjgk-genesis-enews-extended.php:132
+#: ../class-bjgk-genesis-enews-extended.php:143
 msgid "Text To Show"
 msgstr "Texto para mostrar"
 
 # @ genesis-enews-extended
-#: ../class-bjgk-genesis-enews-extended.php:137
+#: ../class-bjgk-genesis-enews-extended.php:148
 msgid "Google/Feedburner ID"
 msgstr "Google/Feedburner ID"
 
 # @ genesis-enews-extended
-#: ../class-bjgk-genesis-enews-extended.php:139
+#: ../class-bjgk-genesis-enews-extended.php:150
 msgid ""
 "Entering your Feedburner ID here will deactivate the custom options below."
 msgstr ""
@@ -50,70 +50,70 @@ msgstr ""
 "debajo."
 
 # @ genesis-enews-extended
-#: ../class-bjgk-genesis-enews-extended.php:143
+#: ../class-bjgk-genesis-enews-extended.php:154
 msgid "Form Action"
 msgstr "Acci&#243;n de formulario (Form Action)"
 
 # @ genesis-enews-extended
-#: ../class-bjgk-genesis-enews-extended.php:148
+#: ../class-bjgk-genesis-enews-extended.php:159
 msgid "E-Mail Field"
 msgstr "Campo de Email"
 
-#: ../class-bjgk-genesis-enews-extended.php:153
+#: ../class-bjgk-genesis-enews-extended.php:164
 msgid "First Name Field"
 msgstr "Campo de Nombre"
 
-#: ../class-bjgk-genesis-enews-extended.php:158
+#: ../class-bjgk-genesis-enews-extended.php:169
 msgid "Last Name Field"
 msgstr "Campo de Apellido"
 
 # @ genesis-enews-extended
-#: ../class-bjgk-genesis-enews-extended.php:163
+#: ../class-bjgk-genesis-enews-extended.php:174
 msgid "Hidden Fields"
 msgstr "Campos escondidos"
 
 # @ genesis-enews-extended
-#: ../class-bjgk-genesis-enews-extended.php:165
+#: ../class-bjgk-genesis-enews-extended.php:176
 msgid "Not all services use hidden fields."
 msgstr "Todos los servicios no usan campos escondidos."
 
-#: ../class-bjgk-genesis-enews-extended.php:170
+#: ../class-bjgk-genesis-enews-extended.php:181
 msgid "Open confirmation page in same window?"
 msgstr "&#191;Abrir la p&#225;gina de confirmaci&#243;n en la misma ventana?"
 
-#: ../class-bjgk-genesis-enews-extended.php:174
+#: ../class-bjgk-genesis-enews-extended.php:185
 msgid "First Name..."
 msgstr "Nombre..."
 
-#: ../class-bjgk-genesis-enews-extended.php:175
+#: ../class-bjgk-genesis-enews-extended.php:186
 msgid "First Name Input Text"
 msgstr "Nombre de entrada de texto"
 
-#: ../class-bjgk-genesis-enews-extended.php:179
+#: ../class-bjgk-genesis-enews-extended.php:190
 msgid "Last Name..."
 msgstr "Apellido..."
 
 # @ genesis-enews-extended
-#: ../class-bjgk-genesis-enews-extended.php:180
+#: ../class-bjgk-genesis-enews-extended.php:191
 msgid "Last Name Input Text"
 msgstr "Apellido de entrada de texto"
 
 # @ genesis-enews-extended
-#: ../class-bjgk-genesis-enews-extended.php:184
+#: ../class-bjgk-genesis-enews-extended.php:195
 msgid "Enter your email address..."
 msgstr "Entra su email"
 
 # @ genesis-enews-extended
-#: ../class-bjgk-genesis-enews-extended.php:185
+#: ../class-bjgk-genesis-enews-extended.php:196
 msgid "E-Mail Input Text"
 msgstr "Email de entrada su texto"
 
 # @ genesis-enews-extended
-#: ../class-bjgk-genesis-enews-extended.php:190
+#: ../class-bjgk-genesis-enews-extended.php:201
 msgid "Go"
 msgstr "Ir"
 
 # @ genesis-enews-extended
-#: ../class-bjgk-genesis-enews-extended.php:191
+#: ../class-bjgk-genesis-enews-extended.php:202
 msgid "Button Text"
 msgstr "Texto de bot&#243;n"
