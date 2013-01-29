@@ -51,6 +51,10 @@ Questions can be asked at the [WordPress.org Support Forum](http://wordpress.org
 
 == Changelog ==
 
+= 1.1.0 =
+* Allows for more HTML tags to be used in Text to Show field (dropped genesis_allowed_tags in favor or wp_kses_post. Props to [John Levandowski](http://wpselect.com/)).
+* eNews Extended now compatible with Catalyst theme.
+
 = 1.0.2 =
 * Corrected i10n issues regarding 1.0.1 fix.
 
