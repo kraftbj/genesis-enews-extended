@@ -1,105 +1,107 @@
-# Copyright (C) 2013 
-# This file is distributed under the same license as the  package.
+# Translation of Genesis 1.9 in Hebrew
+# This file is distributed under the same license as the Genesis 1.9 package.
 msgid ""
 msgstr ""
 "Project-Id-Version: Genesis eNews Extended\n"
-"Report-Msgid-Bugs-To: http://wordpress.org/tag/genesis-enews-extended\n"
 "POT-Creation-Date: 2013-01-27 23:18-0600\n"
-"PO-Revision-Date: 2013-01-27 23:18-0600\n"
+"PO-Revision-Date: 2013-01-27 23:19-0600\n"
 "Last-Translator: Brandon Kraft <public@brandonkraft.com>\n"
-"Language-Team: Brandon Kraft <public@brandonkraft.com>\n"
-"Language: German\n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Poedit 1.5.4\n"
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SearchPath-0: ..\n"
 
 #: ../class-bjgk-genesis-enews-extended.php:50
+#, fuzzy
 msgid "Displays subscribe form"
-msgstr "Anzeige abonnieren Form"
+msgstr "מציג את טופס הרשמת אימייל לפידברנר"
 
 #: ../class-bjgk-genesis-enews-extended.php:53
+#, fuzzy
 msgid "Genesis - eNews Extended"
-msgstr "Genesis - eNews Extended"
+msgstr "ג'נסיס - חדשות ועדכונים"
 
 #: ../class-bjgk-genesis-enews-extended.php:138
 msgid "Title"
-msgstr "Titel"
+msgstr "כותרת"
 
 #: ../class-bjgk-genesis-enews-extended.php:143
 msgid "Text To Show"
-msgstr "Anzuzeigender Text"
+msgstr ""
 
 #: ../class-bjgk-genesis-enews-extended.php:148
 msgid "Google/Feedburner ID"
-msgstr "Google/ Feedburner ID"
+msgstr ""
 
 #: ../class-bjgk-genesis-enews-extended.php:150
 msgid ""
 "Entering your Feedburner ID here will deactivate the custom options below."
 msgstr ""
-"Wird hier eine Feedburner-ID eingetragen, werden die Optionen für "
-"benutzerdefinierte Dienste/ Formulare unten wirkungslos!"
 
 #: ../class-bjgk-genesis-enews-extended.php:154
+#, fuzzy
 msgid "Form Action"
-msgstr "Formular-Aktion (Form Action)"
+msgstr "מידע"
 
 #: ../class-bjgk-genesis-enews-extended.php:159
 msgid "E-Mail Field"
-msgstr "E-Mail-Feld"
+msgstr ""
 
 #: ../class-bjgk-genesis-enews-extended.php:164
 msgid "First Name Field"
-msgstr "Vorname Feld"
+msgstr ""
 
 #: ../class-bjgk-genesis-enews-extended.php:169
 msgid "Last Name Field"
-msgstr "Nachname Feld"
+msgstr ""
 
 #: ../class-bjgk-genesis-enews-extended.php:174
 msgid "Hidden Fields"
-msgstr "Verborgene Felder (Hidden Fields)"
+msgstr ""
 
 #: ../class-bjgk-genesis-enews-extended.php:176
 msgid "Not all services use hidden fields."
-msgstr "Nicht alle Dienste verwenden verborgene Felder (Hidden Fields)."
+msgstr ""
 
 #: ../class-bjgk-genesis-enews-extended.php:181
 msgid "Open confirmation page in same window?"
-msgstr "Ã–ffnen Sie BestÃ¤tigungs-Seite im gleichen Fenster?"
+msgstr ""
 
 #: ../class-bjgk-genesis-enews-extended.php:185
 msgid "First Name..."
-msgstr "Vorname…"
+msgstr ""
 
 #: ../class-bjgk-genesis-enews-extended.php:186
 msgid "First Name Input Text"
-msgstr "Vorname eingabe"
+msgstr ""
 
 #: ../class-bjgk-genesis-enews-extended.php:190
 msgid "Last Name..."
-msgstr "Nachname…"
+msgstr ""
 
 #: ../class-bjgk-genesis-enews-extended.php:191
 msgid "Last Name Input Text"
-msgstr "Nachname eingabe"
+msgstr ""
 
 #: ../class-bjgk-genesis-enews-extended.php:195
+#, fuzzy
 msgid "Enter your email address..."
-msgstr "E-Mail eingeben ..."
+msgstr "הכנס/י כתובת אימייל..."
 
 #: ../class-bjgk-genesis-enews-extended.php:196
 msgid "E-Mail Input Text"
-msgstr "E-Mail eingabe"
+msgstr ""
 
 #: ../class-bjgk-genesis-enews-extended.php:201
 msgid "Go"
-msgstr "Start"
+msgstr "התחל"
 
 #: ../class-bjgk-genesis-enews-extended.php:202
+#, fuzzy
 msgid "Button Text"
-msgstr "Text der Schaltfläche"
+msgstr "טקסט \"עוד\""
