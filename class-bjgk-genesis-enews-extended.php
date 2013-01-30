@@ -119,7 +119,7 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 	function update( $new_instance, $old_instance ) {
 		$new_instance['title']         = strip_tags( $new_instance['title'] );
 		$new_instance['text']          = wp_kses_post( $new_instance['text']);
-		$new_instance['hidden_fields'] = strip_tags( $new_instance['hidden_fields'], "<input>" );
+		$new_instance['hidden_fields'] = strip_tags( $new_instance['hidden_fields'], "<input>, <div>, <label>" );
 		return $new_instance;
 	}
 
