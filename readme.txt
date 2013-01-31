@@ -55,16 +55,9 @@ Questions can be asked at the [WordPress.org Support Forum](http://wordpress.org
 * Allows for more HTML tags to be used in Text to Show field (dropped genesis_allowed_tags in favor or wp_kses_post. Props to [John Levandowski](http://wpselect.com/)).
 * eNews Extended now compatible with Catalyst theme.
 
-= 1.0.2 =
-* Corrected i10n issues regarding 1.0.1 fix.
-
-= 1.0.1 =
-* Fixed issue resulting in deactivation on upgrade.
-
-= 1.0.0 =
+= 1.0.X =
 * Adds ability to edit "First Name" and "Last Name" displayed on front-end.
-* Moves class function out of primary plugin file, renames primary plugin file, and other code cleanup.
-* Security update.
+* Security update and other code cleanup.
 * Version numbering now using semver.org rationale.
 
 = 0.2.0 =
