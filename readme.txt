@@ -4,7 +4,7 @@ Donate link: http://www.brandonkraft.com/donate/
 Tags: genesis
 Requires at least: 3.0
 Tested up to: 3.5.1
-Stable tag: 1.0.2
+Stable tag: 1.1.0
 
 Creates a new widget to easily add mailing lists integration to a Genesis website. Works with FeedBurner, MailChimp, AWeber, FeedBlitz and more.
 
@@ -54,6 +54,7 @@ Questions can be asked at the [WordPress.org Support Forum](http://wordpress.org
 = 1.1.0 =
 * Allows for more HTML tags to be used in Text to Show field (dropped genesis_allowed_tags in favor or wp_kses_post. Props to [John Levandowski](http://wpselect.com/)).
 * eNews Extended now compatible with Catalyst theme (Catalyst not officially supported).
+* Fuzzy translations added for a wide number of langauges based on Genesis 1.8.2 translations of the original eNews Widget.
 
 = 1.0.X =
 * Adds ability to edit "First Name" and "Last Name" displayed on front-end.
@@ -123,3 +124,6 @@ Verify plugin is active after update.
 
 = 1.0.2 =
 Verify plugin is active after update.
+
+= 1.1.0 =
+Allows images in the "Text to Show" area.
