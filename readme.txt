@@ -52,7 +52,7 @@ Questions can be asked at the [WordPress.org Support Forum](http://wordpress.org
 == Changelog ==
 
 = 1.1.0 =
-* Allows for more HTML tags to be used in Text to Show field (dropped genesis_allowed_tags in favor or wp_kses_post. Props to [John Levandowski](http://wpselect.com/)).
+* Allows for more HTML tags to be used in Text to Show field. Dropped genesis_allowed_tags in favor or wp_kses_post. Props to [John Levandowski](http://wpselect.com/).
 * eNews Extended now compatible with Catalyst theme (Catalyst not officially supported).
 * Fuzzy translations added for a wide number of langauges based on Genesis 1.8.2 translations of the original eNews Widget.
 
@@ -62,10 +62,10 @@ Questions can be asked at the [WordPress.org Support Forum](http://wordpress.org
 * Version numbering now using semver.org rationale.
 
 = 0.2.0 =
-* Various code enhancements to improve performance and adhere better to WP standards (props to [Gary Jones](http://garyjones.co.uk/))
-* Adds Spanish translation (props to [Ryan Sullivan](http://www.wpsitecare.com/))
-* Adds Italian translation (props to [Marco Galasso](http://neatandplain.com/))
-* Adds Slovak translation (props to [Branco Radenovich](http://webhostinggeeks.com/user-reviews/))
+* Various code enhancements to improve performance and adhere better to WP standards. Props to [Gary Jones](http://garyjones.co.uk/)
+* Adds Spanish translation. Props to [Ryan Sullivan](http://www.wpsitecare.com/)
+* Adds Italian translation. Props to [Marco Galasso](http://neatandplain.com/)
+* Adds Slovak translation. Props to [Branco Radenovich](http://webhostinggeeks.com/user-reviews/)
 
 = 0.1.6 =
 * Makes available first and last name fields.
