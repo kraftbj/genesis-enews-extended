@@ -17,7 +17,7 @@ Creates a new widget to easily add mailing lists to a Genesis website. Recommend
 1. Upload contents of the directory to /wp-content/plugins/ (or use the automatic installer)
 1. Activate the plugin through the 'Plugins' menu in WordPress
 1. In Appearance->Widgets, add Genesis eNews Extended widget to any sidebar.
-1. Using the mailing list contact form code provided by your vendor, add the form action URL, the form field ID for the e-mail field and any hidden fields (not all services use them) into the widget options.
+1. Using the mailing list contact form code provided by your vendor, add the form action URL, the form field ID for the e-mail field and any hidden fields (not all services use them) into the widget options. See some tips for this on the [plugin's install page](http://www.brandonkraft.com/contrib/plugins/genesis-enews-extended/install).
 1. If using name fields, read the [plugin's tutorial website](http://www.brandonkraft.com/contrib/plugins/genesis-enews-extended/tutorials).
 1. Verify it works!
 
