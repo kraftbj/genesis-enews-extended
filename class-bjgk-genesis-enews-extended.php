@@ -9,7 +9,7 @@
  * @copyright Copyright (c) 2012, Brandon Kraft
  * @license   GPL-2.0+
  */
- 
+
 /**
  * Main plugin class.
  *

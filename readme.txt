@@ -77,8 +77,8 @@ Questions can be asked at the [WordPress.org Support Forum](http://wordpress.org
 * Adds option to open confirmation window in same tab.
 
 = 0.1.4 =
-* Adds l18n support for other languages (thanks David Decker!)
-* Adds German translation (thanks David Decker!)
+* Adds l18n support for other languages, props to [David Decker!](http://deckerweb.de/)
+* Adds German translation , props to [David Decker!](http://deckerweb.de/)
 
 = 0.1.3 =
 * Adds Feedburner support in anticipation of Genesis 1.9
