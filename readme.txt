@@ -51,6 +51,9 @@ Questions can be asked at the [WordPress.org Support Forum](http://wordpress.org
 
 == Changelog ==
 
+= 1.1.2 =
+* New French translation Props to [Paul de Wouters](http://paulwp.com/).
+
 = 1.1.1 =
 * Fixed bug with incorrect escaping function used in first and last name fields.
 * Fixed bug with some translations not working.
