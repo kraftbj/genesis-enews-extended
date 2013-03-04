@@ -133,4 +133,4 @@ Verify plugin is active after update.
 Allows images in the "Text to Show" area.
 
 = 1.1.1 =
-Fixed bug in onclick clearing of first and last name fields.
+Fixed bug in onclick clearing of first and last name fields and translations that were not loading.
