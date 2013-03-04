@@ -53,6 +53,7 @@ Questions can be asked at the [WordPress.org Support Forum](http://wordpress.org
 
 = 1.1.1 =
 * Fixed bug with incorrect escaping function used in first and last name fields.
+* Fixed bug with some translations not working.
 
 = 1.1.0 =
 * Allows for more HTML tags to be used in Text to Show field. Dropped genesis_allowed_tags in favor or wp_kses_post. Props to [John Levandowski](http://wpselect.com/).
