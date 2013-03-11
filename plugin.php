@@ -32,7 +32,7 @@
  * Code based on original eNews Widget in the Genesis Framework by StudioPress - http://www.studiopress.com
  */
 
-add_action( 'init', 'bjgk_genesis_enews_load_translations' );
+add_action( 'init', 'bjgk_genesis_enews_load_translations', 1 );
 /**
  * Load the textdomain / translations for the plugin.
  *
