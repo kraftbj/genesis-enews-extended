@@ -4,7 +4,7 @@ Donate link: http://www.brandonkraft.com/donate/
 Tags: genesis, genesiswp, mailchimp, aweber, studiopress, newsletter, subscribe
 Requires at least: 3.0
 Tested up to: 3.5.1
-Stable tag: 1.1.2
+Stable tag: 1.1.1
 
 Creates a new widget to easily add mailing lists integration to a Genesis website. Works with FeedBurner, MailChimp, AWeber, FeedBlitz and more.
 
@@ -52,7 +52,8 @@ Questions can be asked at the [WordPress.org Support Forum](http://wordpress.org
 == Changelog ==
 
 = 1.1.2 =
-* New French translation Props to [Paul de Wouters](http://paulwp.com/).
+* Improved French translation. Props to [Paul de Wouters](http://paulwp.com/).
+* Improved German translation. Props to [David Decker!](http://deckerweb.de/).
 
 = 1.1.1 =
 * Fixed bug with incorrect escaping function used in first and last name fields.
