@@ -52,7 +52,8 @@ Questions can be asked at the [WordPress.org Support Forum](http://wordpress.org
 == Changelog ==
 
 = 1.1.2 =
-* New French translation Props to [Paul de Wouters](http://paulwp.com/).
+* Improved French translation. Props to [Paul de Wouters](http://paulwp.com/).
+* Improved German translation. Props to [David Decker!](http://deckerweb.de/).
 
 = 1.1.1 =
 * Fixed bug with incorrect escaping function used in first and last name fields.
