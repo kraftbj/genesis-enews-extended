@@ -54,6 +54,7 @@ Questions can be asked at the [WordPress.org Support Forum](http://wordpress.org
 = 1.1.2 =
 * Improved French translation. Props to [Paul de Wouters](http://paulwp.com/).
 * Improved German translation. Props to [David Decker!](http://deckerweb.de/).
+* Enables mail service validation of name fields by clearing default text onsubmit.
 
 = 1.1.1 =
 * Fixed bug with incorrect escaping function used in first and last name fields.
@@ -138,3 +139,6 @@ Allows images in the "Text to Show" area.
 
 = 1.1.1 =
 Fixed bug in onclick clearing of first and last name fields and translations that were not loading.
+
+= 1.1.2 =
+Fixed bug that prevents a mail service's validation to work correctly. Improved translations.
