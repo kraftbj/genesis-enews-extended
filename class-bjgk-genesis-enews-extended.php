@@ -43,6 +43,8 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 			'fname_text'		=> '',
 			'lname_text'		=> '',
 			'button_text'		=> '',
+			'id'				=> '',
+			'email-field'		=> '',
 			'action'			=> '',
 		);
 

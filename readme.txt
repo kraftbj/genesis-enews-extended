@@ -53,6 +53,8 @@ Questions can be asked at the [WordPress.org Support Forum](http://wordpress.org
 
 = 1.2.0 =
 * Adds text space after form. Perfect for a link to a Privacy Statement!
+* Code cleanup. Thanks to [Kim Parsell](http://profiles.wordpress.org/kpdesign/) for reporting.
+* Listing of issues [resolved in this version](https://github.com/kraftbj/genesis-enews-extended/issues?milestone=11&state=closed).
 
 = 1.1.2 =
 * Improved French translation. Props to [Paul de Wouters](http://paulwp.com/).
