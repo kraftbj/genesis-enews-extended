@@ -4,7 +4,7 @@ Donate link: http://www.brandonkraft.com/donate/
 Tags: genesis, genesiswp, mailchimp, aweber, studiopress, newsletter, subscribe
 Requires at least: 3.0
 Tested up to: 3.5.1
-Stable tag: 1.1.2
+Stable tag: 1.2.0
 
 Creates a new widget to easily add mailing lists integration to a Genesis website. Works with FeedBurner, MailChimp, AWeber, FeedBlitz and more.
 
@@ -151,4 +151,4 @@ Fixed bug in onclick clearing of first and last name fields and translations tha
 Fixed bug that prevents a mail service's validation to work correctly. Improved translations.
 
 = 1.2.0 =
-* Adds text space after form. Perfect for a link to a Privacy Statement!
+* Adds text space after form. Perfect for a link to a Privacy Statement! Add screen reader compatability.
