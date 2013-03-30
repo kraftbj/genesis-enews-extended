@@ -57,3 +57,9 @@ add_action( 'widgets_init', 'bjgk_genesis_enews_load_widgets' );
 function bjgk_genesis_enews_load_widgets() {
 	register_widget( 'BJGK_Genesis_eNews_Extended' );
 }
+
+function bjgk_genesis_enews_css() {
+	echo '<style type="text/css"> .enews .screenread { display:none; } </style>';
+}
+
+add_action('wp_head', 'bjgk_genesis_enews_css');
