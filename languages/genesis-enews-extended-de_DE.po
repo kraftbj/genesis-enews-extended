@@ -8,86 +8,60 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Genesis eNews Extended v1.1.1\n"
-"Report-Msgid-Bugs-To: http://deckerweb.de/kontakt/\n"
-"POT-Creation-Date: 2012-10-17 15:31:12+0100\n"
-"PO-Revision-Date: 2013-03-28 11:35-0600\n"
-"Last-Translator: David Decker <deckerweb.mobil@googlemail.com>\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/genesis-enews-extended\n"
+"POT-Creation-Date: 2013-03-30 09:30-0600\n"
+"PO-Revision-Date: 2013-03-30 09:40-0600\n"
+"Last-Translator: Brandon Kraft <public@brandonkraft.com>\n"
 "Language-Team: DECKERWEB <deckerweb.mobil@googlemail.com>\n"
+"Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Poedit 1.5.4\n"
-"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
 "_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
 "X-Textdomain-Support: yes\n"
-"Language: de_DE\n"
+"X-Poedit-Basepath: .\n"
 "X-Poedit-SearchPath-0: .\n"
 
 # @ genesis-enews-extended
-#. translators: plugin header field 'Name'
-#: plugin.php:0
-msgid "Genesis eNews Extended"
-msgstr "Genesis eNews Erweitert"
-
-# @ genesis-enews-extended
-#. translators: plugin header field 'PluginURI'
-#: plugin.php:0
-msgid "http://www.brandonkraft.com/contrib/plugins/genesis-enews-extended/"
-msgstr "http://www.brandonkraft.com/contrib/plugins/genesis-enews-extended/"
-
-# @ genesis-enews-extended
-#. translators: plugin header field 'Description'
-#: plugin.php:0
-msgid ""
-"Replaces the Genesis eNews Widget to allow easier use of additional mailing "
-"services."
-msgstr ""
-"Ersetzt das Genesis eNews &amp; Updates Widget, um auf einfachere und "
-"elegantere Weise verschiedene Mailingdienst-Anbieter zu unterstützen."
-
-# @ genesis-enews-extended
-#. translators: plugin header field 'Author'
-#: plugin.php:0
-msgid "Brandon Kraft"
-msgstr "Brandon Kraft"
-
-# @ genesis-enews-extended
-#. translators: plugin header field 'AuthorURI'
-#: plugin.php:0
-msgid "http://www.brandonkraft.com"
-msgstr "http://www.brandonkraft.com/"
-
-# @ genesis-enews-extended
-#: class-bjgk-genesis-enews-extended.php:50
+#: ../class-bjgk-genesis-enews-extended.php:53
 msgid "Displays subscribe form"
 msgstr ""
 "Präsentiert das E-Mail-Formular zum Abonnieren eines Newsletters, und "
 "unterstützt dabei diverse Newsletter-/ Mailinglisten-Dienstanbieter."
 
 # @ genesis-enews-extended
-#: class-bjgk-genesis-enews-extended.php:53
+#: ../class-bjgk-genesis-enews-extended.php:56
 msgid "Genesis - eNews Extended"
 msgstr "Genesis - eNews Erweitert"
 
 # @ genesis-enews-extended
-#: class-bjgk-genesis-enews-extended.php:138
+#: ../class-bjgk-genesis-enews-extended.php:143
 msgid "Title"
 msgstr "Titel"
 
 # @ genesis-enews-extended
-#: class-bjgk-genesis-enews-extended.php:143
-msgid "Text To Show"
+#: ../class-bjgk-genesis-enews-extended.php:148
+#, fuzzy
+msgid "Text To Show Before Form"
 msgstr "Anzuzeigender Text"
 
 # @ genesis-enews-extended
-#: class-bjgk-genesis-enews-extended.php:148
+#: ../class-bjgk-genesis-enews-extended.php:152
+#, fuzzy
+msgid "Text To Show After Form"
+msgstr "Anzuzeigender Text"
+
+# @ genesis-enews-extended
+#: ../class-bjgk-genesis-enews-extended.php:157
 msgid "Google/Feedburner ID"
 msgstr "Google/ Feedburner ID"
 
 # @ genesis-enews-extended
-#: class-bjgk-genesis-enews-extended.php:150
+#: ../class-bjgk-genesis-enews-extended.php:159
 msgid ""
 "Entering your Feedburner ID here will deactivate the custom options below."
 msgstr ""
@@ -95,82 +69,76 @@ msgstr ""
 "benutzerdefinierte Dienste/ Formulare unten wirkungslos!"
 
 # @ genesis-enews-extended
-#: class-bjgk-genesis-enews-extended.php:154
+#: ../class-bjgk-genesis-enews-extended.php:163
 msgid "Form Action"
 msgstr "Formular-Aktion (Form Action)"
 
 # @ genesis-enews-extended
-#: class-bjgk-genesis-enews-extended.php:159
+#: ../class-bjgk-genesis-enews-extended.php:168
 msgid "E-Mail Field"
 msgstr "E-Mail-Feld"
 
 # @ genesis-enews-extended
-#: class-bjgk-genesis-enews-extended.php:174
-msgid "Hidden Fields"
-msgstr "Verborgene Felder (Hidden Fields)"
-
-# @ genesis-enews-extended
-#: class-bjgk-genesis-enews-extended.php:176
-msgid "Not all services use hidden fields."
-msgstr "Nicht alle Dienste verwenden verborgene Felder (Hidden Fields)."
-
-# @ genesis-enews-extended
-#: class-bjgk-genesis-enews-extended.php:195
-msgid "Enter your email address..."
-msgstr "E-Mail eingeben ..."
-
-# @ genesis-enews-extended
-#: class-bjgk-genesis-enews-extended.php:201
-msgid "Go"
-msgstr "Start"
-
-# @ genesis-enews-extended
-#: class-bjgk-genesis-enews-extended.php:202
-msgid "Button Text"
-msgstr "Text des Buttons"
-
-# @ genesis-enews-extended
-#: class-bjgk-genesis-enews-extended.php:164
+#: ../class-bjgk-genesis-enews-extended.php:173
 msgid "First Name Field"
 msgstr "Vorname-Feld"
 
 # @ genesis-enews-extended
-#: class-bjgk-genesis-enews-extended.php:169
+#: ../class-bjgk-genesis-enews-extended.php:178
 msgid "Last Name Field"
 msgstr "Nachname-Feld"
 
 # @ genesis-enews-extended
-#: class-bjgk-genesis-enews-extended.php:181
+#: ../class-bjgk-genesis-enews-extended.php:183
+msgid "Hidden Fields"
+msgstr "Verborgene Felder (Hidden Fields)"
+
+# @ genesis-enews-extended
+#: ../class-bjgk-genesis-enews-extended.php:185
+msgid "Not all services use hidden fields."
+msgstr "Nicht alle Dienste verwenden verborgene Felder (Hidden Fields)."
+
+# @ genesis-enews-extended
+#: ../class-bjgk-genesis-enews-extended.php:190
 msgid "Open confirmation page in same window?"
 msgstr "Bestätigungsseite im selben Browser-Tab/ -Fenster öffnen?"
 
 # @ genesis-enews-extended
-#: class-bjgk-genesis-enews-extended.php:185
+#: ../class-bjgk-genesis-enews-extended.php:194
 msgid "First Name..."
 msgstr "Vorname..."
 
 # @ genesis-enews-extended
-#: class-bjgk-genesis-enews-extended.php:186
+#: ../class-bjgk-genesis-enews-extended.php:195
 msgid "First Name Input Text"
 msgstr "Vorname Eingabetext"
 
 # @ genesis-enews-extended
-#: class-bjgk-genesis-enews-extended.php:190
+#: ../class-bjgk-genesis-enews-extended.php:199
 msgid "Last Name..."
 msgstr "Nachname..."
 
 # @ genesis-enews-extended
-#: class-bjgk-genesis-enews-extended.php:191
+#: ../class-bjgk-genesis-enews-extended.php:200
 msgid "Last Name Input Text"
 msgstr "Nachname Eingabetext"
 
 # @ genesis-enews-extended
-#: class-bjgk-genesis-enews-extended.php:196
+#: ../class-bjgk-genesis-enews-extended.php:204
+msgid "Enter your email address..."
+msgstr "E-Mail eingeben ..."
+
+# @ genesis-enews-extended
+#: ../class-bjgk-genesis-enews-extended.php:205
 msgid "E-Mail Input Text"
 msgstr "E-Mail Eingabetext"
 
 # @ genesis-enews-extended
-#. translators: plugin header field 'Version'
-#: plugin.php:0
-msgid "1.1.1"
-msgstr "1.1.1"
+#: ../class-bjgk-genesis-enews-extended.php:210
+msgid "Go"
+msgstr "Start"
+
+# @ genesis-enews-extended
+#: ../class-bjgk-genesis-enews-extended.php:211
+msgid "Button Text"
+msgstr "Text des Buttons"
