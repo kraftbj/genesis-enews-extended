@@ -51,6 +51,11 @@ Questions can be asked at the [WordPress.org Support Forum](http://wordpress.org
 
 == Changelog ==
 
+= 1.2.0 =
+* Adds text space after form. Perfect for a link to a Privacy Statement!
+* Code cleanup. Thanks to [Kim Parsell](http://profiles.wordpress.org/kpdesign/) for reporting.
+* Listing of issues [resolved in this version](https://github.com/kraftbj/genesis-enews-extended/issues?milestone=11&state=closed).
+
 = 1.1.2 =
 * Improved French translation. Props to [Paul de Wouters](http://paulwp.com/).
 * Improved German translation. Props to [David Decker!](http://deckerweb.de/).
@@ -142,3 +147,6 @@ Fixed bug in onclick clearing of first and last name fields and translations tha
 
 = 1.1.2 =
 Fixed bug that prevents a mail service's validation to work correctly. Improved translations.
+
+= 1.2.0 =
+* Adds text space after form. Perfect for a link to a Privacy Statement!

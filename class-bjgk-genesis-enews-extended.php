@@ -3,7 +3,7 @@
  * Genesis eNews Extended
  *
  * @package   BJGK\Genesis_enews_extended
- * @version   1.1.2
+ * @version   1.2.0
  * @author    Brandon Kraft <public@brandonkraft.com>
  * @link      http://www.brandonkraft.com/contrib/plugins/genesis-enews-extended/
  * @copyright Copyright (c) 2012, Brandon Kraft
@@ -34,6 +34,7 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 		$this->defaults = array(
 			'title'				=> '',
 			'text'				=> '',
+			'after_text'		=> '',
 			'hidden_fields'		=> '',
 			'open_same_window'	=> 0,
 			'fname-field'		=> '',
@@ -42,6 +43,8 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 			'fname_text'		=> '',
 			'lname_text'		=> '',
 			'button_text'		=> '',
+			'id'				=> '',
+			'email-field'		=> '',
 			'action'			=> '',
 		);
 
@@ -98,6 +101,7 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 				<input type="submit" value="<?php echo esc_attr( $instance['button_text'] ); ?>" id="subbutton" />
 			</form>
 			<?php endif;
+			echo wpautop( $instance['after_text'] ); // We run KSES on update
 
 		echo '</div>' . $after_widget;
 	}
@@ -120,6 +124,7 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 		$new_instance['title']         = strip_tags( $new_instance['title'] );
 		$new_instance['text']          = wp_kses_post( $new_instance['text']);
 		$new_instance['hidden_fields'] = strip_tags( $new_instance['hidden_fields'], "<input>, <div>, <label>" );
+		$new_instance['after_text']    = wp_kses_post( $new_instance['after_text']);
 		return $new_instance;
 	}
 
@@ -140,8 +145,12 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 		</p>
 
 		<p>
-			<label for="<?php echo esc_attr( $this->get_field_id( 'text' ) ); ?>"><?php _e( 'Text To Show', 'genesis-enews-extended' ); ?>:</label><br />
+			<label for="<?php echo esc_attr( $this->get_field_id( 'text' ) ); ?>"><?php _e( 'Text To Show Before Form', 'genesis-enews-extended' ); ?>:</label><br />
 			<textarea id="<?php echo esc_attr( $this->get_field_id( 'text' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'text' ) ); ?>" class="widefat" rows="6" cols="4"><?php echo htmlspecialchars( $instance['text'] ); ?></textarea>
+		</p>
+		<p>
+			<label for="<?php echo esc_attr( $this->get_field_id( 'after_text' ) ); ?>"><?php _e( 'Text To Show After Form', 'genesis-enews-extended' ); ?>:</label><br />
+			<textarea id="<?php echo esc_attr( $this->get_field_id( 'after_text' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'after_text' ) ); ?>" class="widefat" rows="6" cols="4"><?php echo htmlspecialchars( $instance['after_text'] ); ?></textarea>
 		</p>
 		<hr style="background: #ccc; border: 0; height: 1px; margin: 20px 0;">
 		<p>
