@@ -69,16 +69,20 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 
 		// Merge with defaults
 		$instance = wp_parse_args( (array) $instance, $this->defaults );
+		 if (current_theme_supports( 'genesis-html5' )) {
+		 	echo "HTML5!";
+		 }
 
-		echo $before_widget . '<div class="enews">';
+		 else {
+		 	echo $before_widget . '<div class="enews">';
 
-	 	// Set default fname_text, lname_text for backwards compat for installs upgraded from 0.1.6+ to 0.3.0+
-		if (empty($instance['fname_text'])) {
-			$instance['fname_text'] = "First Name";
-		}
-		if (empty($instance['lname_text'])) {
-			$instance['lname_text'] = "Last Name";
-		}
+		 	// Set default fname_text, lname_text for backwards compat for installs upgraded from 0.1.6+ to 0.3.0+
+			if (empty($instance['fname_text'])) {
+				$instance['fname_text'] = "First Name";
+			}
+			if (empty($instance['lname_text'])) {
+				$instance['lname_text'] = "Last Name";
+			}
 
 			if ( ! empty( $instance['title'] ) )
 				echo $before_title . apply_filters( 'widget_title', $instance['title'], $instance, $this->id_base ) . $after_title;
@@ -103,7 +107,10 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 			<?php endif;
 			echo wpautop( $instance['after_text'] ); // We run KSES on update
 
-		echo '</div>' . $after_widget;
+			echo '</div>' . $after_widget;
+		 }
+
+
 	}
 
 	/**
