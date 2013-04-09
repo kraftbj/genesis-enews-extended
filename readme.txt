@@ -51,6 +51,9 @@ Questions can be asked at the [WordPress.org Support Forum](http://wordpress.org
 
 == Changelog ==
 
+= x.x.x =
+* Adds option for HTML5-enhanced forms.
+
 = 1.2.0 =
 * Adds text space after form. Perfect for a link to a Privacy Statement!
 * Code cleanup. Thanks to [Kim Parsell](http://profiles.wordpress.org/kpdesign/) for reporting.
