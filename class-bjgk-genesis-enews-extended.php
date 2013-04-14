@@ -158,6 +158,7 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 		$new_instance['text']          = wp_kses_post( $new_instance['text']);
 		$new_instance['hidden_fields'] = strip_tags( $new_instance['hidden_fields'], "<input>, <div>, <label>" );
 		$new_instance['after_text']    = wp_kses_post( $new_instance['after_text']);
+		$new_instance['id']            = str_replace("http://feeds.feedburner.com/", "", $new_instance['id']);
 		return $new_instance;
 	}
 
