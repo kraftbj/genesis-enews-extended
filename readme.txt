@@ -125,7 +125,7 @@ A special thanks to all who have contributed to Genesis eNews Extended.
 * John Levandowski
 * David Decker
 * Kim Parsell
-* a few other users whom I need to look up in past e-mails!
+* Erick Nelson
 
 = Translations =
 * David Decker (German)
