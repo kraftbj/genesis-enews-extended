@@ -54,6 +54,7 @@ Questions can be asked at the [WordPress.org Support Forum](http://wordpress.org
 = x.x.x =
 * Adds option for HTML5-enhanced forms.
 * Adds error checking for including http://feeds.feedburner.com in the Feedburner ID field.
+* Minor code improvements
 
 = 1.2.0 =
 * Adds text space after form. Perfect for a link to a Privacy Statement!
