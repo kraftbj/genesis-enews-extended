@@ -110,6 +110,36 @@ Questions can be asked at the [WordPress.org Support Forum](http://wordpress.org
 = 0.1 =
 * Inital release.
 
+== Thanks ==
+
+A special thanks to all who have contributed to Genesis eNews Extended.
+
+= Financial Donations =
+* Joe Taylor
+* Dorian Speed
+* Paul Meyers
+* [Maybe You?](http://www.brandonkraft.com/donate/)
+
+= Code Contributions =
+* Gary Jones (many, many times over)
+* John Levandowski
+* David Decker
+* Kim Parsell
+* Erick Nelson
+
+= Translations =
+* David Decker (German)
+* Branco Radenovich (Slovak)
+* Marco Galasso (Italian)
+* Ryan Sullivan (Spanish)
+* Paul de Wouters (French)
+* Diane S (Serbian)
+
+= StudioPress =
+* Special thanks to Brian Gardner and the team at StudioPress who wrote the original code that inspired the plugin.
+
+If you're not listed and think you should be, please drop me a note. Any omission is, in no way, intentional.
+
 == Upgrade Notice ==
 
 = 0.1 =
