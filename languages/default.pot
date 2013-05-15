@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Genesis eNews Extended 0.2.0\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/genesis-enews-extended\n"
-"POT-Creation-Date: 2013-03-30 09:30-0600\n"
-"PO-Revision-Date: 2013-03-30 09:40-0600\n"
+"POT-Creation-Date: 2013-05-15 10:11-0600\n"
+"PO-Revision-Date: 2013-05-15 10:13-0600\n"
 "Last-Translator: Brandon Kraft <public@brandonkraft.com>\n"
 "Language-Team: Brandon Kraft <public@brandonkraft.com>\n"
 "Language: English\n"
@@ -25,83 +25,83 @@ msgstr ""
 msgid "Genesis - eNews Extended"
 msgstr ""
 
-#: ../class-bjgk-genesis-enews-extended.php:143
+#: ../class-bjgk-genesis-enews-extended.php:177
 msgid "Title"
 msgstr ""
 
-#: ../class-bjgk-genesis-enews-extended.php:148
+#: ../class-bjgk-genesis-enews-extended.php:182
 msgid "Text To Show Before Form"
 msgstr ""
 
-#: ../class-bjgk-genesis-enews-extended.php:152
+#: ../class-bjgk-genesis-enews-extended.php:186
 msgid "Text To Show After Form"
 msgstr ""
 
-#: ../class-bjgk-genesis-enews-extended.php:157
+#: ../class-bjgk-genesis-enews-extended.php:191
 msgid "Google/Feedburner ID"
 msgstr ""
 
-#: ../class-bjgk-genesis-enews-extended.php:159
+#: ../class-bjgk-genesis-enews-extended.php:193
 msgid ""
 "Entering your Feedburner ID here will deactivate the custom options below."
 msgstr ""
 
-#: ../class-bjgk-genesis-enews-extended.php:163
+#: ../class-bjgk-genesis-enews-extended.php:197
 msgid "Form Action"
 msgstr ""
 
-#: ../class-bjgk-genesis-enews-extended.php:168
+#: ../class-bjgk-genesis-enews-extended.php:202
 msgid "E-Mail Field"
 msgstr ""
 
-#: ../class-bjgk-genesis-enews-extended.php:173
+#: ../class-bjgk-genesis-enews-extended.php:207
 msgid "First Name Field"
 msgstr ""
 
-#: ../class-bjgk-genesis-enews-extended.php:178
+#: ../class-bjgk-genesis-enews-extended.php:212
 msgid "Last Name Field"
 msgstr ""
 
-#: ../class-bjgk-genesis-enews-extended.php:183
+#: ../class-bjgk-genesis-enews-extended.php:217
 msgid "Hidden Fields"
 msgstr ""
 
-#: ../class-bjgk-genesis-enews-extended.php:185
+#: ../class-bjgk-genesis-enews-extended.php:219
 msgid "Not all services use hidden fields."
 msgstr ""
 
-#: ../class-bjgk-genesis-enews-extended.php:190
+#: ../class-bjgk-genesis-enews-extended.php:224
 msgid "Open confirmation page in same window?"
 msgstr ""
 
-#: ../class-bjgk-genesis-enews-extended.php:194
+#: ../class-bjgk-genesis-enews-extended.php:228
 msgid "First Name..."
 msgstr ""
 
-#: ../class-bjgk-genesis-enews-extended.php:195
+#: ../class-bjgk-genesis-enews-extended.php:229
 msgid "First Name Input Text"
 msgstr ""
 
-#: ../class-bjgk-genesis-enews-extended.php:199
+#: ../class-bjgk-genesis-enews-extended.php:233
 msgid "Last Name..."
 msgstr ""
 
-#: ../class-bjgk-genesis-enews-extended.php:200
+#: ../class-bjgk-genesis-enews-extended.php:234
 msgid "Last Name Input Text"
 msgstr ""
 
-#: ../class-bjgk-genesis-enews-extended.php:204
+#: ../class-bjgk-genesis-enews-extended.php:238
 msgid "Enter your email address..."
 msgstr ""
 
-#: ../class-bjgk-genesis-enews-extended.php:205
+#: ../class-bjgk-genesis-enews-extended.php:239
 msgid "E-Mail Input Text"
 msgstr ""
 
-#: ../class-bjgk-genesis-enews-extended.php:210
+#: ../class-bjgk-genesis-enews-extended.php:244
 msgid "Go"
 msgstr ""
 
-#: ../class-bjgk-genesis-enews-extended.php:211
+#: ../class-bjgk-genesis-enews-extended.php:245
 msgid "Button Text"
 msgstr ""
