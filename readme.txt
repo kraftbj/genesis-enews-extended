@@ -51,7 +51,7 @@ Questions can be asked at the [WordPress.org Support Forum](http://wordpress.org
 
 == Changelog ==
 
-= x.x.x =
+= 1.3.0 =
 * Adds option for HTML5-enhanced forms.
 * Adds error checking for including http://feeds.feedburner.com in the Feedburner ID field.
 * Minor code improvements
@@ -187,3 +187,6 @@ Fixed bug that prevents a mail service's validation to work correctly. Improved 
 
 = 1.2.0 =
 * Adds text space after form. Perfect for a link to a Privacy Statement! Add screen reader compatability.
+
+= 1.3.0 =
+* Enables Genesis 2.0 HTML5 support and other improvements.
