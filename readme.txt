@@ -119,6 +119,7 @@ A special thanks to all who have contributed to Genesis eNews Extended.
 * Joe Taylor
 * Dorian Speed
 * Paul Meyers
+* Joel Runyon
 * [Maybe You?](http://www.brandonkraft.com/donate/)
 
 = Code Contributions =
@@ -137,7 +138,7 @@ A special thanks to all who have contributed to Genesis eNews Extended.
 * Diane S (Serbian)
 
 = StudioPress =
-* Special thanks to Brian Gardner and the team at StudioPress who wrote the original code that inspired the plugin.
+* Special thanks to Brian Gardner and the team at StudioPress who wrote the original code that provided the foundation for the plugin.
 
 If you're not listed and think you should be, please drop me a note. Any omission is, in no way, intentional.
 
