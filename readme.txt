@@ -51,10 +51,14 @@ Questions can be asked at the [WordPress.org Support Forum](http://wordpress.org
 
 == Changelog ==
 
+= x.x.x =
+* Minor code improvements
+
 = 1.3.0 =
 * Adds option for HTML5-enhanced forms.
 * Adds error checking for including http://feeds.feedburner.com in the Feedburner ID field.
 * Minor code improvements
+* Listing of issues [resolved in this version](https://github.com/kraftbj/genesis-enews-extended/issues?milestone=8&state=closed).
 
 = 1.2.0 =
 * Adds text space after form. Perfect for a link to a Privacy Statement!
