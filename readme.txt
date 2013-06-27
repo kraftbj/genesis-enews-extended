@@ -124,6 +124,7 @@ A special thanks to all who have contributed to Genesis eNews Extended.
 * Dorian Speed
 * Paul Meyers
 * Joel Runyon
+* Jennifer Jinright
 * [Maybe You?](http://www.brandonkraft.com/donate/)
 
 = Code Contributions =
