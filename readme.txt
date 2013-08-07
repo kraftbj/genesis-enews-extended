@@ -51,8 +51,9 @@ Questions can be asked at the [WordPress.org Support Forum](http://wordpress.org
 
 == Changelog ==
 
-= x.x.x =
-* Minor code improvements
+= 1.3.1 =
+* Minor code improvements.
+* Updates HTML5 option for late Genesis 2.0 changes.
 
 = 1.3.0 =
 * Adds option for HTML5-enhanced forms.
