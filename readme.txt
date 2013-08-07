@@ -4,13 +4,13 @@ Donate link: http://www.brandonkraft.com/donate/
 Tags: genesis, genesiswp, mailchimp, aweber, studiopress, newsletter, subscribe
 Requires at least: 3.0
 Tested up to: 3.6
-Stable tag: 1.3.0
+Stable tag: 1.3.1
 
 Creates a new widget to easily add mailing lists integration to a Genesis website. Works with FeedBurner, MailChimp, AWeber, FeedBlitz and more.
 
 == Description ==
 
-Creates a new widget to easily add mailing lists to a Genesis website. Recommended plugin to replace the Genesis eNews Widget being depreciated in Genesis 1.9. The widget allows the site administrator to set the either the Feedburner ID or form action, e-mail form field and hidden fields to mimic the subscribe form of other mailing list services.
+Creates a new widget to easily add mailing lists to a Genesis website. Recommended plugin to replace the Genesis eNews Widget removed in Genesis 2.0. The widget allows the site administrator to set the either the Feedburner ID or form action, e-mail form field and hidden fields to mimic the subscribe form of other mailing list services.
 
 == Installation ==
 
@@ -51,8 +51,9 @@ Questions can be asked at the [WordPress.org Support Forum](http://wordpress.org
 
 == Changelog ==
 
-= x.x.x =
-* Minor code improvements
+= 1.3.1 =
+* Minor code improvements.
+* Updates HTML5 option for late Genesis 2.0 changes.
 
 = 1.3.0 =
 * Adds option for HTML5-enhanced forms.
