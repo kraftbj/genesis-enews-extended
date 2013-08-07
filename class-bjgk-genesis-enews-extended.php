@@ -78,7 +78,7 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 			$instance['lname_text'] = "Last Name";
 		}
 
-		 if (current_theme_supports( 'genesis-html5' )) {
+		 if (current_theme_supports( 'html5' )) {
 		 	echo $before_widget . '<div class="enews">';
 
 			if ( ! empty( $instance['title'] ) )
