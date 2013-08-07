@@ -53,7 +53,7 @@ Questions can be asked at the [WordPress.org Support Forum](http://wordpress.org
 
 = 1.3.1 =
 * Minor code improvements.
-* Updates HTML5 option for late Genesis 2.0 changes.
+* Updates HTML5 option for late Genesis 2.0 changes. Props Nick Davis.
 
 = 1.3.0 =
 * Adds option for HTML5-enhanced forms.
@@ -134,6 +134,7 @@ A special thanks to all who have contributed to Genesis eNews Extended.
 * David Decker
 * Kim Parsell
 * Erick Nelson
+* Nick Davis
 
 = Translations =
 * David Decker (German)
@@ -196,4 +197,7 @@ Fixed bug that prevents a mail service's validation to work correctly. Improved 
 * Adds text space after form. Perfect for a link to a Privacy Statement! Add screen reader compatability.
 
 = 1.3.0 =
+* Enables Genesis 2.0 HTML5 support and other improvements.
+
+= 1.3.1 =
 * Enables Genesis 2.0 HTML5 support and other improvements.
