@@ -4,7 +4,7 @@ Donate link: http://www.brandonkraft.com/donate/
 Tags: genesis, genesiswp, mailchimp, aweber, studiopress, newsletter, subscribe
 Requires at least: 3.0
 Tested up to: 3.6
-Stable tag: 1.3.1
+Stable tag: 1.3.2
 
 Creates a new widget to easily add mailing lists integration to a Genesis website. Works with FeedBurner, MailChimp, AWeber, FeedBlitz and more.
 
@@ -51,9 +51,12 @@ Questions can be asked at the [WordPress.org Support Forum](http://wordpress.org
 
 == Changelog ==
 
+= 1.3.2 =
+* Remove type hints to prevent error when strict reporting used in PHP 5.4
+
 = 1.3.1 =
 * Minor code improvements.
-* Updates HTML5 option for late Genesis 2.0 changes.
+* Updates HTML5 option for late Genesis 2.0 changes. Props Nick Davis.
 
 = 1.3.0 =
 * Adds option for HTML5-enhanced forms.
@@ -134,6 +137,7 @@ A special thanks to all who have contributed to Genesis eNews Extended.
 * David Decker
 * Kim Parsell
 * Erick Nelson
+* Nick Davis
 
 = Translations =
 * David Decker (German)
@@ -197,3 +201,9 @@ Fixed bug that prevents a mail service's validation to work correctly. Improved 
 
 = 1.3.0 =
 * Enables Genesis 2.0 HTML5 support and other improvements.
+
+= 1.3.1 =
+* Enables Genesis 2.0 HTML5 support and other improvements.
+
+= 1.3.2 =
+* Updated code to prevent non-critical error message from being displayed in PHP 5.4.

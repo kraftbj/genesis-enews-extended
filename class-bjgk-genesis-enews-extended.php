@@ -3,7 +3,7 @@
  * Genesis eNews Extended
  *
  * @package   BJGK\Genesis_enews_extended
- * @version   1.3.1
+ * @version   1.3.2
  * @author    Brandon Kraft <public@brandonkraft.com>
  * @link      http://www.brandonkraft.com/contrib/plugins/genesis-enews-extended/
  * @copyright Copyright (c) 2012, Brandon Kraft
@@ -64,7 +64,7 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 	 * @param array $args     Display arguments including before_title, after_title, before_widget, and after_widget.
 	 * @param array $instance The settings for the particular instance of the widget.
 	 */
-	function widget( array $args, array $instance ) {
+	function widget( $args, $instance ) {
 		extract( $args );
 
 		// Merge with defaults
@@ -153,7 +153,7 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 	 *
 	 * @return array Settings to save or bool false to cancel saving
 	 */
-	function update( array $new_instance, array $old_instance ) {
+	function update( $new_instance, $old_instance ) {
 		$new_instance['title']         = strip_tags( $new_instance['title'] );
 		$new_instance['text']          = wp_kses_post( $new_instance['text']);
 		$new_instance['hidden_fields'] = strip_tags( $new_instance['hidden_fields'], "<input>, <div>, <label>" );
@@ -169,7 +169,7 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 	 *
 	 * @param array $instance Current settings.
 	 */
-	function form( array $instance ) {
+	function form( $instance ) {
 		// Merge with defaults
 		$instance = wp_parse_args( (array) $instance, $this->defaults );
 		?>
