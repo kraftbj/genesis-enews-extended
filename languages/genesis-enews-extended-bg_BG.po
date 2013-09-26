@@ -3,26 +3,24 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Genesis eNews Extended\n"
-"POT-Creation-Date: 2013-05-15 10:11-0600\n"
-"PO-Revision-Date: 2013-05-15 10:11-0600\n"
+"POT-Creation-Date: 2013-09-26 14:23-0600\n"
+"PO-Revision-Date: 2013-09-26 14:23-0600\n"
 "Last-Translator: Brandon Kraft <public@brandonkraft.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 1.5.7\n"
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SearchPath-0: ..\n"
 
 #: ../class-bjgk-genesis-enews-extended.php:53
-#, fuzzy
 msgid "Displays subscribe form"
-msgstr "Показва Feedburner имейл абонаментна  форма"
+msgstr "Показва абонаментна  форма"
 
 #: ../class-bjgk-genesis-enews-extended.php:56
-#, fuzzy
 msgid "Genesis - eNews Extended"
 msgstr "Генезис- електронните новини и актуализации"
 
@@ -31,14 +29,12 @@ msgid "Title"
 msgstr "Надпис"
 
 #: ../class-bjgk-genesis-enews-extended.php:182
-#, fuzzy
 msgid "Text To Show Before Form"
-msgstr "Текст за показване"
+msgstr "Текст за показване преди формата"
 
 #: ../class-bjgk-genesis-enews-extended.php:186
-#, fuzzy
 msgid "Text To Show After Form"
-msgstr "Текст за показване"
+msgstr "Текст за показване след формата"
 
 #: ../class-bjgk-genesis-enews-extended.php:191
 msgid "Google/Feedburner ID"
@@ -48,62 +44,60 @@ msgstr "Google/Feedburner ID"
 msgid ""
 "Entering your Feedburner ID here will deactivate the custom options below."
 msgstr ""
+"Въвеждането на вашия ID Feedburner  тук ще деактивира клиентските опции по-"
+"долу."
 
 #: ../class-bjgk-genesis-enews-extended.php:197
-#, fuzzy
 msgid "Form Action"
-msgstr "Информация"
+msgstr "Форма за действие"
 
 #: ../class-bjgk-genesis-enews-extended.php:202
 msgid "E-Mail Field"
-msgstr ""
+msgstr "Имейл поле"
 
 #: ../class-bjgk-genesis-enews-extended.php:207
 msgid "First Name Field"
-msgstr ""
+msgstr "Собствено име поле"
 
 #: ../class-bjgk-genesis-enews-extended.php:212
 msgid "Last Name Field"
-msgstr ""
+msgstr "Фамилно име поле"
 
 #: ../class-bjgk-genesis-enews-extended.php:217
 msgid "Hidden Fields"
-msgstr ""
+msgstr "Скрити Полета"
 
 #: ../class-bjgk-genesis-enews-extended.php:219
 msgid "Not all services use hidden fields."
-msgstr ""
+msgstr "Не всички услуги използват скрити полета."
 
 #: ../class-bjgk-genesis-enews-extended.php:224
 msgid "Open confirmation page in same window?"
-msgstr ""
+msgstr "Отворете страницата за потвърждение в същия прозорец?"
 
 #: ../class-bjgk-genesis-enews-extended.php:228
 msgid "First Name..."
-msgstr ""
+msgstr "Собствено име..."
 
 #: ../class-bjgk-genesis-enews-extended.php:229
-#, fuzzy
 msgid "First Name Input Text"
-msgstr "Въвеждане на текст."
+msgstr "Собствено име Въвеждане на текст."
 
 #: ../class-bjgk-genesis-enews-extended.php:233
 msgid "Last Name..."
-msgstr ""
+msgstr "Фамилно име..."
 
 #: ../class-bjgk-genesis-enews-extended.php:234
-#, fuzzy
 msgid "Last Name Input Text"
-msgstr "Въвеждане на текст."
+msgstr "Фамилно Име Въвеждане на текст."
 
 #: ../class-bjgk-genesis-enews-extended.php:238
 msgid "Enter your email address..."
 msgstr "Напишете вашия емайл адрес"
 
 #: ../class-bjgk-genesis-enews-extended.php:239
-#, fuzzy
 msgid "E-Mail Input Text"
-msgstr "Въвеждане на текст."
+msgstr "Имейл въвеждане на текст."
 
 #: ../class-bjgk-genesis-enews-extended.php:244
 msgid "Go"

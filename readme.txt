@@ -51,6 +51,9 @@ Questions can be asked at the [WordPress.org Support Forum](http://wordpress.org
 
 == Changelog ==
 
+= x.x.x =
+* Updated Bulgarian translation. Props [Daniel Bailey](http://scarinessreported.com/).
+
 = 1.3.2 =
 * Remove type hints to prevent error when strict reporting used in PHP 5.4
 
