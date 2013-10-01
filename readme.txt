@@ -210,3 +210,6 @@ Fixed bug that prevents a mail service's validation to work correctly. Improved 
 
 = 1.3.2 =
 * Updated code to prevent non-critical error message from being displayed in PHP 5.4.
+
+= 1.3.3 =
+* Updated Bulgarian Translation
