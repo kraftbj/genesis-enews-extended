@@ -186,13 +186,13 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 			<label for="<?php echo esc_attr( $this->get_field_id( 'after_text' ) ); ?>"><?php _e( 'Text To Show After Form', 'genesis-enews-extended' ); ?>:</label><br />
 			<textarea id="<?php echo esc_attr( $this->get_field_id( 'after_text' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'after_text' ) ); ?>" class="widefat" rows="6" cols="4"><?php echo htmlspecialchars( $instance['after_text'] ); ?></textarea>
 		</p>
-		<hr style="background: #ccc; border: 0; height: 1px; margin: 20px 0;">
+		<hr style="background-color: #ccc; border: 0; height: 1px; margin: 20px 0;">
 		<p>
 			<label for="<?php echo esc_attr( $this->get_field_id( 'id' ) ); ?>"><?php _e( 'Google/Feedburner ID', 'genesis-enews-extended' ); ?>:</label>
 			<input type="text" id="<?php echo esc_attr( $this->get_field_id( 'id' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'id' ) ); ?>" value="<?php echo esc_attr( $instance['id'] ); ?>" class="widefat" /><br />
 			<small><?php _e( 'Entering your Feedburner ID here will deactivate the custom options below.', 'genesis-enews-extended' ); ?></small>
 		</p>
-		<hr style="background: #ccc; border: 0; height: 1px; margin: 20px 0;">
+		<hr style="background-color: #ccc; border: 0; height: 1px; margin: 20px 0;">
 		<p>
 			<label for="<?php echo esc_attr( $this->get_field_id( 'action' ) ); ?>"><?php _e( 'Form Action', 'genesis-enews-extended' ); ?>:</label>
 			<input type="text" id="<?php echo esc_attr( $this->get_field_id( 'action' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'action' ) ); ?>" value="<?php echo esc_attr( $instance['action'] ); ?>" class="widefat" />
@@ -223,7 +223,7 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 			<input id="<?php echo esc_attr( $this->get_field_id( 'open_same_window' ) ); ?>" type="checkbox" name="<?php echo esc_attr( $this->get_field_name( 'open_same_window' ) ); ?>" value="1" <?php checked( $instance['open_same_window'] ); ?>/>
 			<label for="<?php echo esc_attr( $this->get_field_id( 'open_same_window' ) ); ?>"><?php _e( 'Open confirmation page in same window?', 'genesis-enews-extended' ); ?></label>
 		</p>
-		<hr style="background: #ccc; border: 0; height: 1px; margin: 20px 0;">
+		<hr style="background-color: #ccc; border: 0; height: 1px; margin: 20px 0;">
 		<p>
 			<?php $fname_text = empty( $instance['fname_text'] ) ? __( 'First Name...', 'genesis-enews-extended' ) : $instance['fname_text']; ?>
 			<label for="<?php echo esc_attr( $this->get_field_id( 'fname_text' ) ); ?>"><?php _e( 'First Name Input Text', 'genesis-enews-extended' ); ?>:</label>
