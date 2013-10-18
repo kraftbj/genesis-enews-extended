@@ -51,6 +51,9 @@ Questions can be asked at the [WordPress.org Support Forum](http://wordpress.org
 
 == Changelog ==
 
+= x.x.x =
+* Minor code improvements. Props [Gary Jones](http://garyjones.co.uk/).
+
 = 1.3.3 =
 * Updated Bulgarian translation. Props [Daniel Bailey](http://scarinessreported.com/).
 
@@ -149,6 +152,7 @@ A special thanks to all who have contributed to Genesis eNews Extended.
 * Ryan Sullivan (Spanish)
 * Paul de Wouters (French)
 * Diane S (Serbian)
+* Daniel Bailey (Bulgarian)
 
 = StudioPress =
 * Special thanks to Brian Gardner and the team at StudioPress who wrote the original code that provided the foundation for the plugin.
