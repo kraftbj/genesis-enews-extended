@@ -19,7 +19,7 @@
  * License:     GPL-2.0+
  * License URI: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  * Text Domain: genesis-enews-extended
- * Domain Path: /languages/
+ * Domain Path: /languages
  */
  /*
  * This program is free software; you can redistribute it and/or modify it under the terms of the GNU
