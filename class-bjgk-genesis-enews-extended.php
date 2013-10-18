@@ -32,20 +32,20 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 	 */
 	function __construct() {
 		$this->defaults = array(
-			'title'				=> '',
-			'text'				=> '',
-			'after_text'		=> '',
-			'hidden_fields'		=> '',
-			'open_same_window'	=> 0,
-			'fname-field'		=> '',
-			'lname-field'		=> '',
-			'input_text'		=> '',
-			'fname_text'		=> '',
-			'lname_text'		=> '',
-			'button_text'		=> '',
-			'id'				=> '',
-			'email-field'		=> '',
-			'action'			=> '',
+			'title'            => '',
+			'text'             => '',
+			'after_text'       => '',
+			'hidden_fields'    => '',
+			'open_same_window' => 0,
+			'fname-field'      => '',
+			'lname-field'      => '',
+			'input_text'       => '',
+			'fname_text'       => '',
+			'lname_text'       => '',
+			'button_text'      => '',
+			'id'               => '',
+			'email-field'      => '',
+			'action'           => '',
 		);
 
 		$widget_ops = array(
@@ -78,7 +78,7 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 			$instance['lname_text'] = "Last Name";
 		}
 
-		 if (current_theme_supports( 'html5' )) {
+		if (current_theme_supports( 'html5' )) {
 		 	echo $before_widget . '<div class="enews">';
 
 			if ( ! empty( $instance['title'] ) )
