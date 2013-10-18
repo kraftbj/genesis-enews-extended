@@ -40,10 +40,9 @@ add_action( 'init', 'bjgk_genesis_enews_load_translations', 1 );
  */
 function bjgk_genesis_enews_load_translations() {
 	$domain = 'genesis-enews-extended';
-	// The "plugin_locale" filter is also used in load_plugin_textdomain()
 	$locale = apply_filters( 'plugin_locale', get_locale(), $domain );
-	load_textdomain( 'genesis-enews-extended', WP_LANG_DIR . '/genesis-enews-extended/' . $domain . '-' . $locale . '.mo' );
-	load_plugin_textdomain( 'genesis-enews-extended', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
+	load_textdomain( $domain, trailingslashit( WP_LANG_DIR ) . $domain . '/' . $domain . '-' . $locale . '.mo' );
+	load_plugin_textdomain( $domain, false, basename( dirname( __FILE__ ) ) . '/languages' );
 }
 
 include 'class-bjgk-genesis-enews-extended.php';
