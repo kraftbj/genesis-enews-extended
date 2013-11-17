@@ -73,9 +73,9 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 		if ( class_exists( 'WYSIJA' ) && isset( $_POST['submission-type'] ) && 'mailpoet' == $_POST['submission-type'] && ! empty( $instance['mailpoet-list'] ) ) {
 			$subscriber_data = array(
 				'user' => array(
-					'firstname' => isset( $_POST[ $instance['fname-field'] ] ) ? $_POST[ $instance['fname-field'] ] : '',
-					'lastname' => isset( $_POST[ $instance['lname-field'] ] ) ? $_POST[ $instance['lname-field'] ] : '',
-					'email' => isset( $_POST[ $instance['email-field'] ] ) ? $_POST[ $instance['email-field'] ] : $_POST['email'],
+					'firstname' => isset( $_POST['mailpoet-firstname'] ) ? $_POST['mailpoet-firstname'] : '',
+					'lastname' => isset( $_POST['mailpoet-lastname'] ) ? $_POST['mailpoet-lastname'] : '',
+					'email' => isset( $_POST['mailpoet-email'] ) ? $_POST['mailpoet-email'] : '',
 				),
 				'user_list' => array(
 					'list_ids' => array( absint( $instance['mailpoet-list'] ) )
@@ -126,9 +126,9 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 				<?php echo $success_message; ?>
 			</div>
 			<?php endif; ?>
-			<?php if ( ! empty($instance['fname-field'] ) ) : ?><label for="subbox1" class="screenread"><?php echo esc_attr( $instance['fname_text'] ); ?></label><input type="text" id="subbox1" class="enews-subbox" value="<?php echo esc_attr( $instance['fname_text'] ); ?>" onfocus="if ( this.value == '<?php echo esc_js( $instance['fname_text'] ); ?>') { this.value = ''; }" onblur="if ( this.value == '' ) { this.value = '<?php echo esc_js( $instance['fname_text'] ); ?>'; }" name="<?php echo esc_attr( $instance['fname-field'] ); ?>" /><?php endif ?>
-			<?php if ( ! empty($instance['lname-field'] ) ) : ?><label for="subbox2" class="screenread"><?php echo esc_attr( $instance['lname_text'] ); ?></label><input type="text" id="subbox2" class="enews-subbox" value="<?php echo esc_attr( $instance['lname_text'] ); ?>" onfocus="if ( this.value == '<?php echo esc_js( $instance['lname_text'] ); ?>') { this.value = ''; }" onblur="if ( this.value == '' ) { this.value = '<?php echo esc_js( $instance['lname_text'] ); ?>'; }" name="<?php echo esc_attr( $instance['lname-field'] ); ?>" /><?php endif ?>
-			<label for="subbox" class="screenread"><?php echo esc_attr( $instance['input_text'] ); ?></label><input type="<?php echo current_theme_supports( 'html5' ) ? 'email' : 'text'; ?>" value="<?php echo esc_attr( $instance['input_text'] ); ?>" id="subbox" onfocus="if ( this.value == '<?php echo esc_js( $instance['input_text'] ); ?>') { this.value = ''; }" onblur="if ( this.value == '' ) { this.value = '<?php echo esc_js( $instance['input_text'] ); ?>'; }" name="<?php echo ( empty( $instance['email-field'] ) ) ? 'email' : esc_js( $instance['email-field'] ); ?>" <?php if ( current_theme_supports( 'html5' ) ) : ?>required="required"<?php endif; ?> />
+			<?php if ( ! empty($instance['fname-field'] ) ) : ?><label for="subbox1" class="screenread"><?php echo esc_attr( $instance['fname_text'] ); ?></label><input type="text" id="subbox1" class="enews-subbox" value="<?php echo esc_attr( $instance['fname_text'] ); ?>" onfocus="if ( this.value == '<?php echo esc_js( $instance['fname_text'] ); ?>') { this.value = ''; }" onblur="if ( this.value == '' ) { this.value = '<?php echo esc_js( $instance['fname_text'] ); ?>'; }" name="mailpoet-firstname" /><?php endif ?>
+			<?php if ( ! empty($instance['lname-field'] ) ) : ?><label for="subbox2" class="screenread"><?php echo esc_attr( $instance['lname_text'] ); ?></label><input type="text" id="subbox2" class="enews-subbox" value="<?php echo esc_attr( $instance['lname_text'] ); ?>" onfocus="if ( this.value == '<?php echo esc_js( $instance['lname_text'] ); ?>') { this.value = ''; }" onblur="if ( this.value == '' ) { this.value = '<?php echo esc_js( $instance['lname_text'] ); ?>'; }" name="mailpoet-lastname" /><?php endif ?>
+			<label for="subbox" class="screenread"><?php echo esc_attr( $instance['input_text'] ); ?></label><input type="<?php echo current_theme_supports( 'html5' ) ? 'email' : 'text'; ?>" value="<?php echo esc_attr( $instance['input_text'] ); ?>" id="subbox" onfocus="if ( this.value == '<?php echo esc_js( $instance['input_text'] ); ?>') { this.value = ''; }" onblur="if ( this.value == '' ) { this.value = '<?php echo esc_js( $instance['input_text'] ); ?>'; }" name="mailpoet-email" <?php if ( current_theme_supports( 'html5' ) ) : ?>required="required"<?php endif; ?> />
 			<?php echo $instance['hidden_fields']; ?>
 			<input type="hidden" name="submission-type" value="mailpoet" />
 			<input type="submit" value="<?php echo esc_attr( $instance['button_text'] ); ?>" id="subbutton" />
@@ -187,24 +187,29 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 			<label for="<?php echo esc_attr( $this->get_field_id( 'after_text' ) ); ?>"><?php _e( 'Text To Show After Form', 'genesis-enews-extended' ); ?>:</label><br />
 			<textarea id="<?php echo esc_attr( $this->get_field_id( 'after_text' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'after_text' ) ); ?>" class="widefat" rows="6" cols="4"><?php echo htmlspecialchars( $instance['after_text'] ); ?></textarea>
 		</p>
-		<hr style="background-color: #ccc; border: 0; height: 1px; margin: 20px 0;">
 		
+		<hr style="background-color: #ccc; border: 0; height: 1px; margin: 20px 0;">
+		<p>
+			<label for="<?php echo esc_attr( $this->get_field_id( 'mailpoet-list' ) ); ?>"><?php _e( 'MailPoet/Wysija List', 'genesis-enews-extended' ); ?>:</label>
 		<?php if ( class_exists( 'WYSIJA' ) ) :
 			$mp_model_list = WYSIJA::get( 'list','model' );
 			$mp_lists = $mp_model_list->get( array( 'name','list_id' ), array( 
 				'is_enabled' => 1,
 			) );
 		?>
-		<p>
-			<label for="<?php echo esc_attr( $this->get_field_id( 'mailpoet-list' ) ); ?>"><?php _e( 'MailPoet/Wysija List', 'genesis-enews-extended' ); ?>:</label>
 			<select id="<?php echo esc_attr( $this->get_field_id( 'mailpoet-list' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'mailpoet-list' ) ); ?>" class="widefat">
 				<option value="disabled" <?php selected( 'disabled', $instance['mailpoet-list'] ); ?>>-- <?php esc_html_e( 'Do not use MailPoet', 'genesis-enews-extended' ); ?> --</option>
 				<?php foreach ( $mp_lists as $mp_list ) : ?>
 				<option value="<?php echo esc_attr( $mp_list['list_id'] ); ?>" <?php selected( $mp_list['list_id'], $instance['mailpoet-list'] ); ?>><?php echo esc_html( $mp_list['name'] ); ?></option>
 				<?php endforeach; ?>
 			</select>
-		</p>
+
+		<?php else : ?>
+			<br/>
+			<small><?php _e( 'MailPoet is not installed at this moment. Install it first in order to activate this feature.', 'genesis-enews-extended' ); ?></small>
+
 		<?php endif; ?>
+		</p>
 		<hr style="background: #ccc; border: 0; height: 1px; margin: 20px 0;">
 		<p>
 			<label for="<?php echo esc_attr( $this->get_field_id( 'id' ) ); ?>"><?php _e( 'Google/Feedburner ID', 'genesis-enews-extended' ); ?>:</label>
