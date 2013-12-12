@@ -135,6 +135,7 @@ A special thanks to all who have contributed to Genesis eNews Extended.
 * Paul Meyers
 * Joel Runyon
 * Jennifer Jinright
+* Greg Ferro
 * [Maybe You?](http://www.brandonkraft.com/donate/)
 
 = Code Contributions =
