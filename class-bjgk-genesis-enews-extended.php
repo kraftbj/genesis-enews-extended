@@ -199,13 +199,6 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 			) );
 		?>
 			<fieldset>
-				<!--
-				<label>
-					<input type="checkbox" name="<?php echo esc_attr( $this->get_field_name( 'mailpoet-list' ) ); ?>" value="disabled" <?php checked( 'disabled', $instance['mailpoet-list'] ); ?> />
-					<?php esc_html_e( 'Do not use MailPoet', 'genesis-enews-extended' ); ?>
-				</label>
-				-->
-
 				<ul>
 					<?php foreach ( $mp_lists as $mp_list ) : ?>
 					<li>
