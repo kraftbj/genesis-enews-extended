@@ -191,7 +191,7 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 		
 		<hr style="background-color: #ccc; border: 0; height: 1px; margin: 20px 0;">
 		<p>
-			<label for="<?php echo esc_attr( $this->get_field_id( 'mailpoet-list' ) ); ?>"><?php _e( 'MailPoet/Wysija List', 'genesis-enews-extended' ); ?>:</label>
+			<label for="<?php echo esc_attr( $this->get_field_id( 'mailpoet-list' ) ); ?>"><?php _e( 'MailPoet List', 'genesis-enews-extended' ); ?>:</label>
 		<?php if ( class_exists( 'WYSIJA' ) ) :
 			$mp_model_list = WYSIJA::get( 'list','model' );
 			$mp_lists = $mp_model_list->get( array( 'name','list_id' ), array( 
@@ -233,7 +233,7 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 
 		<?php else : ?>
 			<br/>
-			<small><?php _e( 'MailPoet is not installed at this moment. Install it first in order to activate this feature.', 'genesis-enews-extended' ); ?></small>
+			<small><?php printf( __( "MailPoet is not currently activated. eNews Extended works with MailPoet, a free newsletter plugin. See <a href='%s' target='blank'>MailPoet's plugin page on WordPress.org</a>", 'genesis-enews-extended' ), 'http://wordpress.org/plugins/wysija-newsletters' ); ?></small>
 
 		<?php endif; ?>
 		</p>
