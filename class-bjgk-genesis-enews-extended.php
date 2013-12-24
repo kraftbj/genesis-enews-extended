@@ -229,7 +229,7 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 
 		<?php else : ?>
 			<br/>
-			<small><?php printf( __( "MailPoet is not currently activated. eNews Extended works with MailPoet, a free newsletter plugin. See <a href='%s' target='blank'>MailPoet's plugin page on WordPress.org</a>", 'genesis-enews-extended' ), 'http://wordpress.org/plugins/wysija-newsletters' ); ?></small>
+			<small><?php printf( __( "MailPoet is not currently activated. Genesis eNews Extended works with MailPoet, a free newsletter plugin. See <a href='%s' target='blank'>MailPoet's plugin page on WordPress.org</a>", 'genesis-enews-extended' ), 'http://wordpress.org/plugins/wysija-newsletters' ); ?></small>
 
 		<?php endif; ?>
 		</p>
