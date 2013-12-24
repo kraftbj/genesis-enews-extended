@@ -52,6 +52,7 @@ Questions can be asked at the [WordPress.org Support Forum](http://wordpress.org
 == Changelog ==
 
 = x.x.x =
+* Adds MailPoet itegration. Props [Maor Chasen](http://maorchasen.com/).
 * Minor code improvements. Props [Gary Jones](http://garyjones.co.uk/).
 
 = 1.3.3 =
