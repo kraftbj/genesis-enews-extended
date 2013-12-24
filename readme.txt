@@ -1,7 +1,7 @@
 === Genesis eNews Extended ===
 Contributors: kraftbj, coffeaweb
 Donate link: http://www.brandonkraft.com/donate/
-Tags: genesis, genesiswp, mailchimp, aweber, studiopress, newsletter, subscribe
+Tags: genesis, genesiswp, mailchimp, aweber, studiopress, newsletter, subscribe, mailpoet, wysija
 Requires at least: 3.0
 Tested up to: 3.8
 Stable tag: 1.3.3
@@ -10,7 +10,7 @@ Creates a new widget to easily add mailing lists integration to a Genesis websit
 
 == Description ==
 
-Creates a new widget to easily add mailing lists to a Genesis website. Recommended plugin to replace the Genesis eNews Widget removed in Genesis 2.0. The widget allows the site administrator to set the either the Feedburner ID or form action, e-mail form field and hidden fields to mimic the subscribe form of other mailing list services.
+Creates a new widget to easily add mailing lists to a Genesis website. Recommended plugin to replace the Genesis eNews Widget removed in Genesis 2.0. The widget allows the site administrator to set either the Feedburner ID or choose [MailPoet's](http://wordpress.org/plugins/wysija-newsletters) lists or form action, e-mail form field and hidden fields to mimic the subscribe form of other mailing list services.
 
 == Installation ==
 
@@ -52,6 +52,7 @@ Questions can be asked at the [WordPress.org Support Forum](http://wordpress.org
 == Changelog ==
 
 = x.x.x =
+* Adds MailPoet itegration. Props [Maor Chasen](http://maorchasen.com/).
 * Minor code improvements. Props [Gary Jones](http://garyjones.co.uk/).
 
 = 1.3.3 =
@@ -145,6 +146,7 @@ A special thanks to all who have contributed to Genesis eNews Extended.
 * Kim Parsell
 * Erick Nelson
 * Nick Davis
+* Maor Chasen
 
 = Translations =
 * David Decker (German)
