@@ -146,6 +146,7 @@ A special thanks to all who have contributed to Genesis eNews Extended.
 * Kim Parsell
 * Erick Nelson
 * Nick Davis
+* Maor Chasen
 
 = Translations =
 * David Decker (German)
