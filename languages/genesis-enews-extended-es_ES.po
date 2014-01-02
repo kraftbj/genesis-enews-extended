@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Genesis eNews Extended v0.1.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-05-15 10:11-0600\n"
-"PO-Revision-Date: 2013-05-15 10:11-0600\n"
+"POT-Creation-Date: 2014-01-02 15:53-0700\n"
+"PO-Revision-Date: 2014-01-02 16:12-0700\n"
 "Last-Translator: Brandon Kraft <public@brandonkraft.com>\n"
 "Language-Team: Brandon Kraft <public@brandonkraft.com>\n"
 "Language: en_US\n"
@@ -13,7 +13,7 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SourceCharset: utf-8\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 1.6.3\n"
 "X-Poedit-SearchPath-0: ..\n"
 
 # @ genesis-enews-extended
@@ -26,30 +26,64 @@ msgstr "Muestra formulario de suscripci&#243;n"
 msgid "Genesis - eNews Extended"
 msgstr "Genesis - eNews Extended"
 
+#: ../class-bjgk-genesis-enews-extended.php:127
+msgid "Check your inbox now to confirm your subscription."
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:127
+msgid "You've successfully subscribed."
+msgstr ""
+
 # @ genesis-enews-extended
-#: ../class-bjgk-genesis-enews-extended.php:177
+#: ../class-bjgk-genesis-enews-extended.php:182
 msgid "Title"
 msgstr "T&#237;tulo"
 
 # @ genesis-enews-extended
-#: ../class-bjgk-genesis-enews-extended.php:182
+#: ../class-bjgk-genesis-enews-extended.php:187
 #, fuzzy
 msgid "Text To Show Before Form"
 msgstr "Texto para mostrar"
 
 # @ genesis-enews-extended
-#: ../class-bjgk-genesis-enews-extended.php:186
+#: ../class-bjgk-genesis-enews-extended.php:191
 #, fuzzy
 msgid "Text To Show After Form"
 msgstr "Texto para mostrar"
 
+#: ../class-bjgk-genesis-enews-extended.php:197
+msgid "MailPoet List"
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:217
+msgid "Show Fields:"
+msgstr ""
+
+#: ../class-bjgk-genesis-enews-extended.php:220
+#, fuzzy
+msgid "First Name"
+msgstr "Nombre..."
+
+#: ../class-bjgk-genesis-enews-extended.php:224
+#, fuzzy
+msgid "Last Name"
+msgstr "Apellido..."
+
+#: ../class-bjgk-genesis-enews-extended.php:232
+#, php-format
+msgid ""
+"MailPoet is not currently activated. Genesis eNews Extended works with "
+"MailPoet, a free newsletter plugin. See <a href='%s' "
+"target='blank'>MailPoet's plugin page on WordPress.org</a>"
+msgstr ""
+
 # @ genesis-enews-extended
-#: ../class-bjgk-genesis-enews-extended.php:191
+#: ../class-bjgk-genesis-enews-extended.php:238
 msgid "Google/Feedburner ID"
 msgstr "Google/Feedburner ID"
 
 # @ genesis-enews-extended
-#: ../class-bjgk-genesis-enews-extended.php:193
+#: ../class-bjgk-genesis-enews-extended.php:240
 msgid ""
 "Entering your Feedburner ID here will deactivate the custom options below."
 msgstr ""
@@ -57,70 +91,70 @@ msgstr ""
 "debajo."
 
 # @ genesis-enews-extended
-#: ../class-bjgk-genesis-enews-extended.php:197
+#: ../class-bjgk-genesis-enews-extended.php:244
 msgid "Form Action"
 msgstr "Acci&#243;n de formulario (Form Action)"
 
 # @ genesis-enews-extended
-#: ../class-bjgk-genesis-enews-extended.php:202
+#: ../class-bjgk-genesis-enews-extended.php:249
 msgid "E-Mail Field"
 msgstr "Campo de Email"
 
-#: ../class-bjgk-genesis-enews-extended.php:207
+#: ../class-bjgk-genesis-enews-extended.php:254
 msgid "First Name Field"
 msgstr "Campo de Nombre"
 
-#: ../class-bjgk-genesis-enews-extended.php:212
+#: ../class-bjgk-genesis-enews-extended.php:259
 msgid "Last Name Field"
 msgstr "Campo de Apellido"
 
 # @ genesis-enews-extended
-#: ../class-bjgk-genesis-enews-extended.php:217
+#: ../class-bjgk-genesis-enews-extended.php:264
 msgid "Hidden Fields"
 msgstr "Campos escondidos"
 
 # @ genesis-enews-extended
-#: ../class-bjgk-genesis-enews-extended.php:219
+#: ../class-bjgk-genesis-enews-extended.php:266
 msgid "Not all services use hidden fields."
 msgstr "Todos los servicios no usan campos escondidos."
 
-#: ../class-bjgk-genesis-enews-extended.php:224
+#: ../class-bjgk-genesis-enews-extended.php:271
 msgid "Open confirmation page in same window?"
 msgstr "&#191;Abrir la p&#225;gina de confirmaci&#243;n en la misma ventana?"
 
-#: ../class-bjgk-genesis-enews-extended.php:228
+#: ../class-bjgk-genesis-enews-extended.php:275
 msgid "First Name..."
 msgstr "Nombre..."
 
-#: ../class-bjgk-genesis-enews-extended.php:229
+#: ../class-bjgk-genesis-enews-extended.php:276
 msgid "First Name Input Text"
 msgstr "Nombre de entrada de texto"
 
-#: ../class-bjgk-genesis-enews-extended.php:233
+#: ../class-bjgk-genesis-enews-extended.php:280
 msgid "Last Name..."
 msgstr "Apellido..."
 
 # @ genesis-enews-extended
-#: ../class-bjgk-genesis-enews-extended.php:234
+#: ../class-bjgk-genesis-enews-extended.php:281
 msgid "Last Name Input Text"
 msgstr "Apellido de entrada de texto"
 
 # @ genesis-enews-extended
-#: ../class-bjgk-genesis-enews-extended.php:238
+#: ../class-bjgk-genesis-enews-extended.php:285
 msgid "Enter your email address..."
 msgstr "Entra su email"
 
 # @ genesis-enews-extended
-#: ../class-bjgk-genesis-enews-extended.php:239
+#: ../class-bjgk-genesis-enews-extended.php:286
 msgid "E-Mail Input Text"
 msgstr "Email de entrada su texto"
 
 # @ genesis-enews-extended
-#: ../class-bjgk-genesis-enews-extended.php:244
+#: ../class-bjgk-genesis-enews-extended.php:291
 msgid "Go"
 msgstr "Ir"
 
 # @ genesis-enews-extended
-#: ../class-bjgk-genesis-enews-extended.php:245
+#: ../class-bjgk-genesis-enews-extended.php:292
 msgid "Button Text"
 msgstr "Texto de bot&#243;n"
