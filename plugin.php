@@ -13,7 +13,7 @@
  * Plugin Name: Genesis eNews Extended
  * Plugin URI:  http://www.brandonkraft.com/contrib/plugins/genesis-enews-extended/
  * Description: Replaces the Genesis eNews Widget to allow easier use of additional mailing services.
- * Version:     1.4.0-beta-20131223
+ * Version:     1.4.0-rc1
  * Author:      Brandon Kraft
  * Author URI:  http://www.brandonkraft.com
  * License:     GPL-2.0+
