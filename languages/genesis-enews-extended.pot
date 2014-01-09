@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  \n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/genesis-enews-extended\n"
-"POT-Creation-Date: 2014-01-09 02:04:15+00:00\n"
+"POT-Creation-Date: 2014-01-09 20:12:54+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -49,10 +49,12 @@ msgid "Show Fields:"
 msgstr ""
 
 #: class-bjgk-genesis-enews-extended.php:220
+#: class-bjgk-genesis-enews-extended.php:275
 msgid "First Name"
 msgstr ""
 
 #: class-bjgk-genesis-enews-extended.php:224
+#: class-bjgk-genesis-enews-extended.php:280
 msgid "Last Name"
 msgstr ""
 
@@ -100,16 +102,8 @@ msgstr ""
 msgid "Open confirmation page in same window?"
 msgstr ""
 
-#: class-bjgk-genesis-enews-extended.php:275
-msgid "First Name..."
-msgstr ""
-
 #: class-bjgk-genesis-enews-extended.php:276
 msgid "First Name Input Text"
-msgstr ""
-
-#: class-bjgk-genesis-enews-extended.php:280
-msgid "Last Name..."
 msgstr ""
 
 #: class-bjgk-genesis-enews-extended.php:281
@@ -117,7 +111,7 @@ msgid "Last Name Input Text"
 msgstr ""
 
 #: class-bjgk-genesis-enews-extended.php:285
-msgid "Enter your email address..."
+msgid "E-Mail Address"
 msgstr ""
 
 #: class-bjgk-genesis-enews-extended.php:286
