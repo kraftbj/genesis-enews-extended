@@ -51,8 +51,9 @@ Questions can be asked at the [WordPress.org Support Forum](http://wordpress.org
 
 == Changelog ==
 
-= x.x.x =
+= 1.4.0 =
 * Adds MailPoet itegration. Props [Maor Chasen](http://maorchasen.com/).
+* Updated pt_BR translation and added en_UK translation. Props [Fabiana Simões](http://fabianapsimoes.wordpress.com/) and [Gary Jones](http://garyjones.co.uk/).
 * Minor code improvements. Props [Gary Jones](http://garyjones.co.uk/).
 
 = 1.3.3 =
@@ -156,6 +157,8 @@ A special thanks to all who have contributed to Genesis eNews Extended.
 * Paul de Wouters (French)
 * Diane S (Serbian)
 * Daniel Bailey (Bulgarian)
+* Gary Jones (British English)
+* Fabiana Simões (Portuguese-Brazil)
 
 = StudioPress =
 * Special thanks to Brian Gardner and the team at StudioPress who wrote the original code that provided the foundation for the plugin.
@@ -219,4 +222,7 @@ Fixed bug that prevents a mail service's validation to work correctly. Improved 
 * Updated code to prevent non-critical error message from being displayed in PHP 5.4.
 
 = 1.3.3 =
-* Updated Bulgarian Translation
+* Updated Bulgarian Translation.
+
+= 1.4.0 =
+* Added native support for MailPoet and added/improved translations.
