@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Genesis eNews Extended v0.1.7\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-01-02 15:52-0700\n"
-"PO-Revision-Date: 2014-01-02 16:12-0700\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/genesis-enews-extended\n"
+"POT-Creation-Date: 2014-01-09 20:12:54+00:00\n"
+"PO-Revision-Date: 2014-01-14 08:47-0600\n"
 "Last-Translator: Brandon Kraft <public@brandonkraft.com>\n"
 "Language-Team: Brandon Kraft <public@brandonkraft.com>\n"
 "Language: sk\n"
@@ -17,143 +17,146 @@ msgstr ""
 "X-Poedit-SearchPath-0: ..\n"
 
 # @ genesis-enews-extended
-#: ../class-bjgk-genesis-enews-extended.php:53
+#: class-bjgk-genesis-enews-extended.php:53
 msgid "Displays subscribe form"
 msgstr "Zobrazí sa prihlásiť formulár"
 
 # @ genesis-enews-extended
-#: ../class-bjgk-genesis-enews-extended.php:56
+#: class-bjgk-genesis-enews-extended.php:56
 msgid "Genesis - eNews Extended"
 msgstr "Genesis - eNews Extended"
 
-#: ../class-bjgk-genesis-enews-extended.php:127
+#: class-bjgk-genesis-enews-extended.php:127
+#, fuzzy
 msgid "Check your inbox now to confirm your subscription."
-msgstr ""
+msgstr "Zadajte vašu emailovú adresu..."
 
-#: ../class-bjgk-genesis-enews-extended.php:127
+#: class-bjgk-genesis-enews-extended.php:127
 msgid "You've successfully subscribed."
 msgstr ""
 
 # @ genesis-enews-extended
-#: ../class-bjgk-genesis-enews-extended.php:182
+#: class-bjgk-genesis-enews-extended.php:182
 msgid "Title"
 msgstr "Názov"
 
 # @ genesis-enews-extended
-#: ../class-bjgk-genesis-enews-extended.php:187
+#: class-bjgk-genesis-enews-extended.php:187
 #, fuzzy
 msgid "Text To Show Before Form"
-msgstr "Text, ktorý chcete zobraziť"
+msgstr "Akcia formulára"
 
 # @ genesis-enews-extended
-#: ../class-bjgk-genesis-enews-extended.php:191
+#: class-bjgk-genesis-enews-extended.php:191
 #, fuzzy
 msgid "Text To Show After Form"
-msgstr "Text, ktorý chcete zobraziť"
+msgstr "Akcia formulára"
 
-#: ../class-bjgk-genesis-enews-extended.php:197
+#: class-bjgk-genesis-enews-extended.php:197
 msgid "MailPoet List"
 msgstr ""
 
-#: ../class-bjgk-genesis-enews-extended.php:217
+#: class-bjgk-genesis-enews-extended.php:217
+#, fuzzy
 msgid "Show Fields:"
-msgstr ""
+msgstr "Skryté polia"
 
-#: ../class-bjgk-genesis-enews-extended.php:220
+#: class-bjgk-genesis-enews-extended.php:220
+#: class-bjgk-genesis-enews-extended.php:275
 #, fuzzy
 msgid "First Name"
 msgstr "Meno…"
 
-#: ../class-bjgk-genesis-enews-extended.php:224
+#: class-bjgk-genesis-enews-extended.php:224
+#: class-bjgk-genesis-enews-extended.php:280
 #, fuzzy
 msgid "Last Name"
 msgstr "Priezvisko…"
 
-#: ../class-bjgk-genesis-enews-extended.php:232
-#, php-format
+#: class-bjgk-genesis-enews-extended.php:232
+#, fuzzy
 msgid ""
 "MailPoet is not currently activated. Genesis eNews Extended works with "
 "MailPoet, a free newsletter plugin. See <a href='%s' "
 "target='blank'>MailPoet's plugin page on WordPress.org</a>"
-msgstr ""
+msgstr "Genesis - eNews Extended"
 
 # @ genesis-enews-extended
-#: ../class-bjgk-genesis-enews-extended.php:238
+#: class-bjgk-genesis-enews-extended.php:238
 msgid "Google/Feedburner ID"
 msgstr "Google/Feedburner ID"
 
 # @ genesis-enews-extended
-#: ../class-bjgk-genesis-enews-extended.php:240
+#: class-bjgk-genesis-enews-extended.php:240
 msgid ""
 "Entering your Feedburner ID here will deactivate the custom options below."
 msgstr ""
 "Zadanie vaše Feedburner ID tu bude deaktivovať vlastné možnosti nižšie."
 
 # @ genesis-enews-extended
-#: ../class-bjgk-genesis-enews-extended.php:244
+#: class-bjgk-genesis-enews-extended.php:244
 msgid "Form Action"
 msgstr "Akcia formulára"
 
 # @ genesis-enews-extended
-#: ../class-bjgk-genesis-enews-extended.php:249
+#: class-bjgk-genesis-enews-extended.php:249
 msgid "E-Mail Field"
 msgstr "Pole e-Mail"
 
-#: ../class-bjgk-genesis-enews-extended.php:254
+#: class-bjgk-genesis-enews-extended.php:254
 msgid "First Name Field"
 msgstr "Krstné meno pole"
 
-#: ../class-bjgk-genesis-enews-extended.php:259
+#: class-bjgk-genesis-enews-extended.php:259
 msgid "Last Name Field"
 msgstr "Poľa pre priezvisko"
 
 # @ genesis-enews-extended
-#: ../class-bjgk-genesis-enews-extended.php:264
+#: class-bjgk-genesis-enews-extended.php:264
 msgid "Hidden Fields"
 msgstr "Skryté polia"
 
 # @ genesis-enews-extended
-#: ../class-bjgk-genesis-enews-extended.php:266
+#: class-bjgk-genesis-enews-extended.php:266
 msgid "Not all services use hidden fields."
 msgstr "Nie všetky služby zneužiť skryté polia."
 
-#: ../class-bjgk-genesis-enews-extended.php:271
+#: class-bjgk-genesis-enews-extended.php:271
 msgid "Open confirmation page in same window?"
 msgstr "Otvorené potvrdzovací stránku v rovnakom okne?"
 
-#: ../class-bjgk-genesis-enews-extended.php:275
-msgid "First Name..."
-msgstr "Meno…"
-
-#: ../class-bjgk-genesis-enews-extended.php:276
+#: class-bjgk-genesis-enews-extended.php:276
 msgid "First Name Input Text"
 msgstr "Meno vstupný textové"
 
-#: ../class-bjgk-genesis-enews-extended.php:280
-msgid "Last Name..."
-msgstr "Priezvisko…"
-
 # @ genesis-enews-extended
-#: ../class-bjgk-genesis-enews-extended.php:281
+#: class-bjgk-genesis-enews-extended.php:281
 msgid "Last Name Input Text"
 msgstr "Priezvisko vstupný textové"
 
 # @ genesis-enews-extended
-#: ../class-bjgk-genesis-enews-extended.php:285
-msgid "Enter your email address..."
-msgstr "Zadajte vašu emailovú adresu..."
+#: class-bjgk-genesis-enews-extended.php:285
+#, fuzzy
+msgid "E-Mail Address"
+msgstr "Pole e-Mail"
 
 # @ genesis-enews-extended
-#: ../class-bjgk-genesis-enews-extended.php:286
+#: class-bjgk-genesis-enews-extended.php:286
 msgid "E-Mail Input Text"
 msgstr "e-Mail vstupný textové"
 
 # @ genesis-enews-extended
-#: ../class-bjgk-genesis-enews-extended.php:291
+#: class-bjgk-genesis-enews-extended.php:291
 msgid "Go"
 msgstr "Ísť"
 
 # @ genesis-enews-extended
-#: ../class-bjgk-genesis-enews-extended.php:292
+#: class-bjgk-genesis-enews-extended.php:292
 msgid "Button Text"
 msgstr "Tlačidlo Text"
+
+#~ msgid "First Name..."
+#~ msgstr "Meno…"
+
+#~ msgid "Last Name..."
+#~ msgstr "Priezvisko…"
