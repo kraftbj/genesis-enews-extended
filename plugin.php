@@ -58,7 +58,13 @@ function bjgk_genesis_enews_load_widgets() {
 }
 
 function bjgk_genesis_enews_css() {
-	echo '<style type="text/css"> .enews .screenread { display:none; } </style>';
+	echo '<style type="text/css"> .enews .screenread {
+	height: 1px;
+    left: -1000em;
+    overflow: hidden;
+    position: absolute;
+    top: -1000em;
+    width: 1px; } </style>';
 }
 
 add_action('wp_head', 'bjgk_genesis_enews_css');
