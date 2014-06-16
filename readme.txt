@@ -53,7 +53,7 @@ Questions can be asked at the [WordPress.org Support Forum](http://wordpress.org
 
 = 1.4.1 =
 *
-*
+* Update CSS for screenreaders. Props jwenerd.
 * Updated BG transations. Props Daniel Bailey.
 
 = 1.4.0 =
