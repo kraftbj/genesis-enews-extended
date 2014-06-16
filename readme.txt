@@ -3,8 +3,8 @@ Contributors: kraftbj, coffeaweb
 Donate link: http://www.brandonkraft.com/donate/
 Tags: genesis, genesiswp, mailchimp, aweber, studiopress, newsletter, subscribe, mailpoet, wysija
 Requires at least: 3.0
-Tested up to: 3.8
-Stable tag: 1.4.0
+Tested up to: 3.9.1
+Stable tag: 1.4.1
 
 Creates a new widget to easily add mailing lists integration to a Genesis website. Works with FeedBurner, MailChimp, AWeber, FeedBlitz and more.
 
@@ -18,7 +18,7 @@ Creates a new widget to easily add mailing lists to a Genesis website. Recommend
 1. Activate the plugin through the 'Plugins' menu in WordPress
 1. In Appearance->Widgets, add Genesis eNews Extended widget to any sidebar.
 1. Using the mailing list contact form code provided by your vendor, add the form action URL, the form field ID for the e-mail field and any hidden fields (not all services use them) into the widget options. See some tips for this on the [plugin's install page](http://www.brandonkraft.com/contrib/plugins/genesis-enews-extended/install).
-1. If using name fields, read the [plugin's tutorial website](http://www.brandonkraft.com/contrib/plugins/genesis-enews-extended/tutorials).
+1. If using name fields, read the [plugin's tutorial website](http://www.brandonkraft.com/genesis-enews-extended/tutorials).
 1. Verify it works!
 
 == Frequently Asked Questions ==
@@ -37,11 +37,11 @@ That is a feature of the theme. If you want the button back, remove ".enews #sub
 
 = The first and last name fields look funky. =
 
-Read more on the [plugin's tutorial website](http://www.brandonkraft.com/contrib/plugins/genesis-enews-extended/tutorials).
+Read more on the [plugin's tutorial website](http://www.brandonkraft.com/genesis-enews-extended/tutorials).
 
 = I need help! Where I can get it? =
 
-"Official" tutorials will be maintained on the [plugin's website](http://www.brandonkraft.com/contrib/plugins/genesis-enews-extended/).
+"Official" tutorials will be maintained on the [plugin's website](http://www.brandonkraft.com/genesis-enews-extended/).
 
 Questions can be asked at the [WordPress.org Support Forum](http://wordpress.org/support/plugin/genesis-enews-extended) for this plugin.
 
@@ -50,6 +50,11 @@ Questions can be asked at the [WordPress.org Support Forum](http://wordpress.org
 2. Widget setting screen.
 
 == Changelog ==
+
+= 1.4.1 =
+* Add fieldset, legend, option, optgroup, select to allowed HTML for Hidden Fields area.
+* Update CSS for screenreaders. Props jwenerd.
+* Updated BG transations. Props Daniel Bailey.
 
 = 1.4.0 =
 * Adds MailPoet itegration. Props [Maor Chasen](http://maorchasen.com/).
@@ -138,6 +143,7 @@ A special thanks to all who have contributed to Genesis eNews Extended.
 * Joel Runyon
 * Jennifer Jinright
 * Greg Ferro
+* Greg Young
 * [Maybe You?](http://www.brandonkraft.com/donate/)
 
 = Code Contributions =
@@ -166,63 +172,6 @@ A special thanks to all who have contributed to Genesis eNews Extended.
 If you're not listed and think you should be, please drop me a note. Any omission is, in no way, intentional.
 
 == Upgrade Notice ==
-
-= 0.1 =
-Initial stable release. Please update from alpha now.
-
-= 0.1.1 =
-Adds "Hidden Fields" widget setting to make widget compatible with more mailing services. Upgrade if you want to use AWeber or other services that require one or more hidden fields.
-
-= 0.1.2 =
-Expands widget's usefulness to more StudioPress themes (Balance, etc).
-
-= 0.1.3 =
-Security update and adds Feedburner support natively.
-
-= 0.1.4 =
-Adds translation support and adds German translation.
-
-= 0.1.5 =
-Adds option to open confirmation screen in same tab.
-
-= 0.1.6 =
-Adds first and last name fields. Check instructions before usage.
-
-= 0.2.0 =
-Code enhancements and adds Spanish, Italian, and Slovak translations.
-
-= 1.0.0 =
-Enable changes to first name and last name text displayed on site.
-
-= 1.0.1 =
-Verify plugin is active after update.
-
-= 1.0.2 =
-Verify plugin is active after update.
-
-= 1.1.0 =
-Allows images in the "Text to Show" area.
-
-= 1.1.1 =
-Fixed bug in onclick clearing of first and last name fields and translations that were not loading.
-
-= 1.1.2 =
-Fixed bug that prevents a mail service's validation to work correctly. Improved translations.
-
-= 1.2.0 =
-* Adds text space after form. Perfect for a link to a Privacy Statement! Add screen reader compatability.
-
-= 1.3.0 =
-* Enables Genesis 2.0 HTML5 support and other improvements.
-
-= 1.3.1 =
-* Enables Genesis 2.0 HTML5 support and other improvements.
-
-= 1.3.2 =
-* Updated code to prevent non-critical error message from being displayed in PHP 5.4.
-
-= 1.3.3 =
-* Updated Bulgarian Translation.
 
 = 1.4.0 =
 * Added native support for MailPoet and added/improved translations.

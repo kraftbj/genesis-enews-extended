@@ -1,22 +1,18 @@
-# Translation of Genesis 1.8 in Bulgarian
-# This file is distributed under the same license as the Genesis 1.8 package.
+# Translation of Genesis eNews Extended in Bulgarian
+# This file is distributed under the same license as the Genesis eNews Extended package.
 msgid ""
 msgstr ""
-"Project-Id-Version: Genesis eNews Extended\n"
-"Report-Msgid-Bugs-To: http://wordpress.org/tag/genesis-enews-extended\n"
-"POT-Creation-Date: 2014-01-09 20:12:54+00:00\n"
-"PO-Revision-Date: 2014-01-14 08:59-0600\n"
-"Last-Translator: Brandon Kraft <public@brandonkraft.com>\n"
-"Language-Team: \n"
-"Language: bg_BG\n"
+"PO-Revision-Date: 2014-06-16 16:39:12+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Poedit 1.6.3\n"
-"X-Poedit-KeywordsList: __;_e\n"
-"X-Poedit-Basepath: .\n"
-"X-Poedit-SearchPath-0: ..\n"
+"X-Generator: GlotPress/0.1\n"
+"Project-Id-Version: Genesis eNews Extended\n"
+
+#: class-bjgk-genesis-enews-extended.php:285
+msgid "E-Mail Address"
+msgstr "Имейл адрес"
 
 #: class-bjgk-genesis-enews-extended.php:53
 msgid "Displays subscribe form"
@@ -36,7 +32,7 @@ msgstr ""
 
 #: class-bjgk-genesis-enews-extended.php:182
 msgid "Title"
-msgstr "Надпис"
+msgstr "Заглавие"
 
 #: class-bjgk-genesis-enews-extended.php:187
 msgid "Text To Show Before Form"
@@ -51,27 +47,21 @@ msgid "MailPoet List"
 msgstr ""
 
 #: class-bjgk-genesis-enews-extended.php:217
-#, fuzzy
 msgid "Show Fields:"
-msgstr "Текст за показване преди формата"
+msgstr "Покажи полета"
 
 #: class-bjgk-genesis-enews-extended.php:220
 #: class-bjgk-genesis-enews-extended.php:275
-#, fuzzy
 msgid "First Name"
-msgstr "Собствено име..."
+msgstr "Собствено име"
 
 #: class-bjgk-genesis-enews-extended.php:224
 #: class-bjgk-genesis-enews-extended.php:280
-#, fuzzy
 msgid "Last Name"
-msgstr "Фамилно име..."
+msgstr "Фамилия"
 
 #: class-bjgk-genesis-enews-extended.php:232
-msgid ""
-"MailPoet is not currently activated. Genesis eNews Extended works with "
-"MailPoet, a free newsletter plugin. See <a href='%s' "
-"target='blank'>MailPoet's plugin page on WordPress.org</a>"
+msgid "MailPoet is not currently activated. Genesis eNews Extended works with MailPoet, a free newsletter plugin. See <a href='%s' target='blank'>MailPoet's plugin page on WordPress.org</a>"
 msgstr ""
 
 #: class-bjgk-genesis-enews-extended.php:238
@@ -79,11 +69,8 @@ msgid "Google/Feedburner ID"
 msgstr "Google/Feedburner ID"
 
 #: class-bjgk-genesis-enews-extended.php:240
-msgid ""
-"Entering your Feedburner ID here will deactivate the custom options below."
-msgstr ""
-"Въвеждането на вашия ID Feedburner  тук ще деактивира клиентските опции по-"
-"долу."
+msgid "Entering your Feedburner ID here will deactivate the custom options below."
+msgstr "Въвеждането на вашия ID Feedburner  тук ще деактивира клиентските опции по-долу."
 
 #: class-bjgk-genesis-enews-extended.php:244
 msgid "Form Action"
@@ -121,11 +108,6 @@ msgstr "Собствено име Въвеждане на текст."
 msgid "Last Name Input Text"
 msgstr "Фамилно Име Въвеждане на текст."
 
-#: class-bjgk-genesis-enews-extended.php:285
-#, fuzzy
-msgid "E-Mail Address"
-msgstr "Имейл поле"
-
 #: class-bjgk-genesis-enews-extended.php:286
 msgid "E-Mail Input Text"
 msgstr "Имейл въвеждане на текст."
@@ -137,12 +119,3 @@ msgstr "Отиди"
 #: class-bjgk-genesis-enews-extended.php:292
 msgid "Button Text"
 msgstr "Бутон за текст"
-
-#~ msgid "First Name..."
-#~ msgstr "Собствено име..."
-
-#~ msgid "Last Name..."
-#~ msgstr "Фамилно име..."
-
-#~ msgid "Enter your email address..."
-#~ msgstr "Напишете вашия емайл адрес"
