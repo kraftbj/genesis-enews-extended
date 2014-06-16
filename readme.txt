@@ -52,7 +52,7 @@ Questions can be asked at the [WordPress.org Support Forum](http://wordpress.org
 == Changelog ==
 
 = 1.4.1 =
-*
+* Add fieldset, legend, option, optgroup, select to allowed HTML for Hidden Fields area.
 * Update CSS for screenreaders. Props jwenerd.
 * Updated BG transations. Props Daniel Bailey.
 
