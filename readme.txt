@@ -51,6 +51,11 @@ Questions can be asked at the [WordPress.org Support Forum](http://wordpress.org
 
 == Changelog ==
 
+= 1.4.1 =
+*
+*
+* Updated BG transations. Props Daniel Bailey.
+
 = 1.4.0 =
 * Adds MailPoet itegration. Props [Maor Chasen](http://maorchasen.com/).
 * Updated pt_BR translation and added en_UK translation. Props [Fabiana Simões](http://fabianapsimoes.wordpress.com/) and [Gary Jones](http://garyjones.co.uk/).
