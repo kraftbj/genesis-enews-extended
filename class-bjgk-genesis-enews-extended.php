@@ -206,7 +206,7 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 					<?php foreach ( $mp_lists as $mp_list ) : ?>
 					<li>
 						<label>
-							<input type="checkbox" name="<?php echo esc_attr( $this->get_field_name( 'mailpoet-list' ) ); ?>[]" value="<?php echo esc_attr( $mp_list['list_id'] ); ?>" <?php checked( in_array( $mp_list['list_id'], (array) $instance['mailpoet-list'] ) ); ?> />
+							<input type="checkbox" name="<?php echo esc_attr( $this->get_field_name( 'mailpoet-list' ) ); ?>[]" value="<?php echo esc_attr( $mp_list['list_id'] ); ?>" <?php if ( isset( $instance['mailpoet-list'] ) ) { checked( in_array( $mp_list['list_id'], (array) $instance['mailpoet-list'] ) ); } ?> />
 							<?php echo esc_html( $mp_list['name'] ); ?>
 						</label>
 					</li>
