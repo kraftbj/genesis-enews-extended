@@ -46,6 +46,8 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 			'id'               => '',
 			'email-field'      => '',
 			'action'           => '',
+			'mailpoet_check'	=> __( 'Check your inbox now to confirm your subscription.', 'wysija-newsletters' ),
+			'mailpoet_subbed'	=> __( "You've successfully subscribed.", 'wysija-newsletters' ),
 		);
 
 		$widget_ops = array(
@@ -125,7 +127,7 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 			<?php if ( ! empty( $mailpoet_subscriber_id ) && is_int( $mailpoet_subscriber_id ) ) :
 				// confirmation message phrasing depends on whether the user has to verify his subscription or not
 				$mailpoet_needs_confirmation = WYSIJA::get( 'config','model' )->getValue( 'confirm_dbleoptin' ); // bool
-				$success_message = $mailpoet_needs_confirmation ? __( 'Check your inbox now to confirm your subscription.', 'wysija-newsletters' ) : __( "You've successfully subscribed.", 'wysija-newsletters' );
+				$success_message = $mailpoet_needs_confirmation ? $instance['mailpoet_check'] : $instance['mailpoet_subbed'];
 				?>
 			<div class="mailpoet-message mailpoet-success <?php echo $mailpoet_needs_confirmation ? 'mailpoet-needs-confirmation' : 'mailpoet-confirmed'; ?>">
 				<?php echo $success_message; ?>
