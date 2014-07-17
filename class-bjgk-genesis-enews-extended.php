@@ -130,7 +130,7 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 				$success_message = $mailpoet_needs_confirmation ? $instance['mailpoet_check'] : $instance['mailpoet_subbed'];
 				?>
 			<div class="mailpoet-message mailpoet-success <?php echo $mailpoet_needs_confirmation ? 'mailpoet-needs-confirmation' : 'mailpoet-confirmed'; ?>">
-				<?php echo $success_message; ?>
+				<?php echo esc_html( $success_message ); ?>
 			</div>
 			<?php endif; ?>
 			<?php if ( isset( $instance['mailpoet-show-fname'] ) ) : ?><label for="subbox1" class="screenread"><?php echo esc_attr( $instance['fname_text'] ); ?></label><input type="text" id="subbox1" class="enews-subbox" value="<?php echo esc_attr( $instance['fname_text'] ); ?>" onfocus="if ( this.value == '<?php echo esc_js( $instance['fname_text'] ); ?>') { this.value = ''; }" onblur="if ( this.value == '' ) { this.value = '<?php echo esc_js( $instance['fname_text'] ); ?>'; }" name="mailpoet-firstname" /><?php endif ?>
