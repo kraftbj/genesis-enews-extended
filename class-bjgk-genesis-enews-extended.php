@@ -262,11 +262,15 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 		</p>
 
 		<p>
+			<label for="<?php echo esc_attr( $this->get_field_id( 'onclick_text' ) ); ?>"><?php _e( 'onClick', 'genesis-enews-extended' ); ?>:</label>
+			<textarea id="<?php echo esc_attr( $this->get_field_id( 'onclick_text' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'onclick_text' ) ); ?>" class="widefat"><?php echo esc_attr( $instance['onclick_text'] ); ?></textarea>
+                                                                                                                                                                                                                                                               <br><small><?php _e( 'If using Google Analytics\'s event tracking, that goes here.', 'genesis-enews-extended'); ?></small>
+                                                                                                                        </p>
+		<p>
 			<label for="<?php echo esc_attr( $this->get_field_id( 'hidden_fields' ) ); ?>"><?php _e( 'Hidden Fields', 'genesis-enews-extended' ); ?>:</label>
 			<textarea id="<?php echo esc_attr( $this->get_field_id( 'hidden_fields' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'hidden_fields' ) ); ?>" class="widefat"><?php echo esc_attr( $instance['hidden_fields'] ); ?></textarea>
 			<br><small><?php _e( 'Not all services use hidden fields.', 'genesis-enews-extended'); ?></small>
-		</p>
-
+                                                                                                                        </p>
 		<p>
 			<input id="<?php echo esc_attr( $this->get_field_id( 'open_same_window' ) ); ?>" type="checkbox" name="<?php echo esc_attr( $this->get_field_name( 'open_same_window' ) ); ?>" value="1" <?php checked( $instance['open_same_window'] ); ?>/>
 			<label for="<?php echo esc_attr( $this->get_field_id( 'open_same_window' ) ); ?>"><?php _e( 'Open confirmation page in same window?', 'genesis-enews-extended' ); ?></label>
@@ -286,13 +290,7 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 			<?php $input_text = empty( $instance['input_text'] ) ? __( 'E-Mail Address', 'genesis-enews-extended' ) : $instance['input_text']; ?>
 			<label for="<?php echo esc_attr( $this->get_field_id( 'input_text' ) ); ?>"><?php _e( 'E-Mail Input Text', 'genesis-enews-extended' ); ?>:</label>
 			<input type="text" id="<?php echo esc_attr( $this->get_field_id( 'input_text' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'input_text' ) ); ?>" value="<?php echo esc_attr( $input_text ); ?>" class="widefat" />
-                                                                                                                                                                         </p>
-
-		<p>
-			<?php $button_text = empty( $instance['onclick_text'] ) ? __( 'Go', 'genesis-enews-extended' ) : $instance['onclick_text']; ?>
-			<label for="<?php echo esc_attr( $this->get_field_id( 'onclick_text' ) ); ?>"><?php _e( 'OnClick Text', 'genesis-enews-extended' ); ?>:</label>
-			<input type="text" id="<?php echo esc_attr( $this->get_field_id( 'onclick_text' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'onclick_text' ) ); ?>" value="<?php echo esc_attr( $onclick_text ); ?>" class="widefat" />
-		</p>                                                                                                                                                                         
+                                                                                                                                                                         </p>                                                                                                                                                                         
 
 		<p>
 			<?php $button_text = empty( $instance['button_text'] ) ? __( 'Go', 'genesis-enews-extended' ) : $instance['button_text']; ?>
