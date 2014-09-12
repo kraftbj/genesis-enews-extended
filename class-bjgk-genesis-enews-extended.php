@@ -46,6 +46,7 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 			'id'               => '',
 			'email-field'      => '',
 			'action'           => '',
+                        'onclick_text'          => '',
 		);
 
 		$widget_ops = array(
@@ -109,7 +110,7 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 			<label for="subbox" class="screenread"><?php echo esc_attr( $instance['input_text'] ); ?></label><input type="<?php echo current_theme_supports( 'html5' ) ? 'email' : 'text'; ?>" value="<?php echo esc_attr( $instance['input_text'] ); ?>" id="subbox" onfocus="if ( this.value == '<?php echo esc_js( $instance['input_text'] ); ?>') { this.value = ''; }" onblur="if ( this.value == '' ) { this.value = '<?php echo esc_js( $instance['input_text'] ); ?>'; }" name="email" <?php if ( current_theme_supports( 'html5' ) ) : ?>required="required"<?php endif; ?> />
 			<input type="hidden" name="uri" value="<?php echo esc_attr( $instance['id'] ); ?>" />
 			<input type="hidden" name="loc" value="<?php echo esc_attr( get_locale() ); ?>" />
-			<input type="submit" value="<?php echo esc_attr( $instance['button_text'] ); ?>" id="subbutton" />
+                              <input type="submit" value="<?php echo esc_attr( $instance['button_text'] ); ?>" id="subbutton" <?php if ( ! empty( $instance['onclick_text'] ) ) : ?>onClick="<?php echo esc_attr( $instance['onclick_text'] ); ?>"<?php endif; ?>/>
 		</form>
 		<?php elseif ( ! empty( $instance['action'] ) ) : ?>
 		<form id="subscribe" action="<?php echo esc_attr( $instance['action'] ); ?>" method="post" <?php if ($instance['open_same_window'] == 0 ) : ?> target="_blank"<?php endif; ?> onsubmit="if ( subbox1.value == '<?php echo esc_js( $instance['fname_text'] ); ?>') { subbox1.value = ''; } if ( subbox2.value == '<?php echo esc_js( $instance['lname_text'] ); ?>') { subbox2.value = ''; }" name="<?php echo esc_attr( $this->id ); ?>">
@@ -117,7 +118,7 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 			<?php if ( ! empty($instance['lname-field'] ) ) : ?><label for="subbox2" class="screenread"><?php echo esc_attr( $instance['lname_text'] ); ?></label><input type="text" id="subbox2" class="enews-subbox" value="<?php echo esc_attr( $instance['lname_text'] ); ?>" onfocus="if ( this.value == '<?php echo esc_js( $instance['lname_text'] ); ?>') { this.value = ''; }" onblur="if ( this.value == '' ) { this.value = '<?php echo esc_js( $instance['lname_text'] ); ?>'; }" name="<?php echo esc_attr( $instance['lname-field'] ); ?>" /><?php endif ?>
 			<label for="subbox" class="screenread"><?php echo esc_attr( $instance['input_text'] ); ?></label><input type="<?php echo current_theme_supports( 'html5' ) ? 'email' : 'text'; ?>" value="<?php echo esc_attr( $instance['input_text'] ); ?>" id="subbox" onfocus="if ( this.value == '<?php echo esc_js( $instance['input_text'] ); ?>') { this.value = ''; }" onblur="if ( this.value == '' ) { this.value = '<?php echo esc_js( $instance['input_text'] ); ?>'; }" name="<?php echo esc_js( $instance['email-field'] ); ?>" <?php if ( current_theme_supports( 'html5' ) ) : ?>required="required"<?php endif; ?> />
 			<?php echo $instance['hidden_fields']; ?>
-			<input type="submit" value="<?php echo esc_attr( $instance['button_text'] ); ?>" id="subbutton" />
+			<input type="submit" value="<?php echo esc_attr( $instance['button_text'] ); ?>" id="subbutton" <?php if ( ! empty( $instance['onclick_text'] ) ) : ?>onClick="<?php echo esc_attr( $instance['onclick_text'] ); ?>"<?php endif; ?>/>
 		</form>
 		<?php elseif ( ! empty( $instance['mailpoet-list'] ) && 'disabled' != $instance['mailpoet-list'] ) : ?>
 		<form id="subscribe" action="<?php echo $current_url; ?>" method="post" onsubmit="if ( subbox1.value == '<?php echo esc_js( $instance['fname_text'] ); ?>') { subbox1.value = ''; } if ( subbox2.value == '<?php echo esc_js( $instance['lname_text'] ); ?>') { subbox2.value = ''; }" name="<?php echo esc_attr( $this->id ); ?>">
@@ -135,7 +136,7 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 			<label for="subbox" class="screenread"><?php echo esc_attr( $instance['input_text'] ); ?></label><input type="<?php echo current_theme_supports( 'html5' ) ? 'email' : 'text'; ?>" value="<?php echo esc_attr( $instance['input_text'] ); ?>" id="subbox" onfocus="if ( this.value == '<?php echo esc_js( $instance['input_text'] ); ?>') { this.value = ''; }" onblur="if ( this.value == '' ) { this.value = '<?php echo esc_js( $instance['input_text'] ); ?>'; }" name="mailpoet-email" <?php if ( current_theme_supports( 'html5' ) ) : ?>required="required"<?php endif; ?> />
 			<?php echo $instance['hidden_fields']; ?>
 			<input type="hidden" name="submission-type" value="mailpoet" />
-			<input type="submit" value="<?php echo esc_attr( $instance['button_text'] ); ?>" id="subbutton" />
+			<input type="submit" value="<?php echo esc_attr( $instance['button_text'] ); ?>" id="subbutton" <?php if ( ! empty( $instance['onclick_text'] ) ) : ?>onClick="<?php echo esc_attr( $instance['onclick_text'] ); ?>"<?php endif; ?>/>
 		</form>
 		<?php endif;
 		echo wpautop( $instance['after_text'] ); // We run KSES on update
@@ -285,7 +286,13 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 			<?php $input_text = empty( $instance['input_text'] ) ? __( 'E-Mail Address', 'genesis-enews-extended' ) : $instance['input_text']; ?>
 			<label for="<?php echo esc_attr( $this->get_field_id( 'input_text' ) ); ?>"><?php _e( 'E-Mail Input Text', 'genesis-enews-extended' ); ?>:</label>
 			<input type="text" id="<?php echo esc_attr( $this->get_field_id( 'input_text' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'input_text' ) ); ?>" value="<?php echo esc_attr( $input_text ); ?>" class="widefat" />
-		</p>
+                                                                                                                                                                         </p>
+
+		<p>
+			<?php $button_text = empty( $instance['onclick_text'] ) ? __( 'Go', 'genesis-enews-extended' ) : $instance['onclick_text']; ?>
+			<label for="<?php echo esc_attr( $this->get_field_id( 'onclick_text' ) ); ?>"><?php _e( 'OnClick Text', 'genesis-enews-extended' ); ?>:</label>
+			<input type="text" id="<?php echo esc_attr( $this->get_field_id( 'onclick_text' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'onclick_text' ) ); ?>" value="<?php echo esc_attr( $onclick_text ); ?>" class="widefat" />
+		</p>                                                                                                                                                                         
 
 		<p>
 			<?php $button_text = empty( $instance['button_text'] ) ? __( 'Go', 'genesis-enews-extended' ) : $instance['button_text']; ?>
