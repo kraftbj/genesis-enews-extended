@@ -264,7 +264,7 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 		<p>
 			<label for="<?php echo esc_attr( $this->get_field_id( 'onclick_text' ) ); ?>"><?php _e( 'onClick', 'genesis-enews-extended' ); ?>:</label>
 			<textarea id="<?php echo esc_attr( $this->get_field_id( 'onclick_text' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'onclick_text' ) ); ?>" class="widefat"><?php echo esc_attr( $instance['onclick_text'] ); ?></textarea>
-                                                                                                                                                                                                                                                               <br><small><?php _e( 'If using Google Analytics\'s event tracking, that goes here.', 'genesis-enews-extended'); ?></small>
+                                                                                                                                                                                                                                                               <br><small><?php _e( 'If you\'re using Google Analytics\'s event tracking to track button presses, that code goes here.', 'genesis-enews-extended'); ?></small>
                                                                                                                         </p>
 		<p>
 			<label for="<?php echo esc_attr( $this->get_field_id( 'hidden_fields' ) ); ?>"><?php _e( 'Hidden Fields', 'genesis-enews-extended' ); ?>:</label>
