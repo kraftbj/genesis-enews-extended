@@ -105,7 +105,7 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 		echo wpautop( apply_filters( 'gee_text', $instance['text'] ) ); // We run KSES on update
 
 		if ( ! empty( $instance['id'] ) ) : ?>
-		<form id="subscribe" action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open( 'http://feedburner.google.com/fb/a/mailverify?uri=<?php echo esc_js( $instance['id'] ); ?>', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true" name="<?php echo esc_attr( $this->id ); ?>">
+		<form id="subscribe" action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open( 'http://feedburner.google.com/fb/a/mailverify?uri=<?php echo esc_js( $instance['id'] ); ?>', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true" name="<?php echo esc_attr( $this->id ); ?>">
 			<label for="subbox" class="screenread"><?php echo esc_attr( $instance['input_text'] ); ?></label><input type="<?php echo current_theme_supports( 'html5' ) ? 'email' : 'text'; ?>" value="<?php echo esc_attr( $instance['input_text'] ); ?>" id="subbox" onfocus="if ( this.value == '<?php echo esc_js( $instance['input_text'] ); ?>') { this.value = ''; }" onblur="if ( this.value == '' ) { this.value = '<?php echo esc_js( $instance['input_text'] ); ?>'; }" name="email" <?php if ( current_theme_supports( 'html5' ) ) : ?>required="required"<?php endif; ?> />
 			<input type="hidden" name="uri" value="<?php echo esc_attr( $instance['id'] ); ?>" />
 			<input type="hidden" name="loc" value="<?php echo esc_attr( get_locale() ); ?>" />

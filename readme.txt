@@ -54,6 +54,7 @@ Questions can be asked at the [WordPress.org Support Forum](http://wordpress.org
 = x.x.x =
 * Add filters for text before and after form.
 * Fixed form name to be valid HTML 4.
+* Use https with Feedburner to prevent mixed content warnings on HTTPS sites.
 * Minor code fix when MailPoet is not present.
 
 = 1.4.1 =
