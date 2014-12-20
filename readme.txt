@@ -51,6 +51,11 @@ Questions can be asked at the [WordPress.org Support Forum](http://wordpress.org
 
 == Changelog ==
 
+= x.x.x =
+* Add filters for text before and after form.
+* Fixed form name to be valid HTML 4.
+* Minor code fix when MailPoet is not present.
+
 = 1.4.1 =
 * Add fieldset, legend, option, optgroup, select to allowed HTML for Hidden Fields area.
 * Update CSS for screenreaders. Props jwenerd.
