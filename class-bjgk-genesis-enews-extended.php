@@ -102,7 +102,7 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 		if ( ! empty( $instance['title'] ) )
 			echo $before_title . apply_filters( 'widget_title', $instance['title'], $instance, $this->id_base ) . $after_title;
 
-		echo wpautop( $instance['text'] ); // We run KSES on update
+		echo wpautop( apply_filters( 'gee_text', $instance['text'] ) ); // We run KSES on update
 
 		if ( ! empty( $instance['id'] ) ) : ?>
 		<form id="subscribe" action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open( 'http://feedburner.google.com/fb/a/mailverify?uri=<?php echo esc_js( $instance['id'] ); ?>', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true" name="<?php echo esc_attr( $this->id ); ?>">
@@ -138,7 +138,7 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 			<input type="submit" value="<?php echo esc_attr( $instance['button_text'] ); ?>" id="subbutton" />
 		</form>
 		<?php endif;
-		echo wpautop( $instance['after_text'] ); // We run KSES on update
+		echo wpautop( apply_filters( 'gee_after_text', $instance['after_text'] ) ); // We run KSES on update
 
 		echo '</div>' . $after_widget;
 
