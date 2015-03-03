@@ -69,6 +69,28 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 
 		// Merge with defaults
 		$instance = wp_parse_args( (array) $instance, $this->defaults );
+		/**
+		 * Filter the widget's instance arguments, in effect providing ability to override Appearance->Widget settings.
+		 *
+		 * @since 1.5.0
+		 *
+		 * @param array $instance {
+		 *     Associative array of the settings for the particular instance of the widget.
+	 	 *
+	 	 *     @type string $title             The widget's title.
+	 	 *     @type string $text              Text displayed before eNews form.
+	 	 *     @type string $after_text        Text displayed after eNews form.
+	 	 *     @type string $hidden_fields     Hidden input fields used with some mailing list services.
+	 	 *     @type int    $open_same_windows False bool on if a submittal should open a new window. 0 new window, 1 same window.
+	 	 *     @type string $fname-field       A form field name associated with the "First Name" label.
+	 	 *     @type string $lname-field       A form field name associated with the "Last Name" label.
+	 	 *     @type string $input_text        Placeholder text for the e-mail form field.
+	 	 *     @type string $button_text       The text displayed on the Submit button.
+	 	 *     @type string $id                The Feedburner mailing list ID.
+	 	 *     @type string $email-field       The form field name associated with the e-mail address being subscribed.
+	 	 *     @type string $action            The URL for the form action attrbiute. Must be a fully formed URL.
+	 	 * }
+		 */
 		$instance = apply_filters( 'genesis-enews-extended-args', $instance );
 
 		// Checks if MailPoet exists. If so, a check for form submission wil take place.
