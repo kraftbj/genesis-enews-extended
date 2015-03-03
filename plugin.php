@@ -68,3 +68,11 @@ function bjgk_genesis_enews_css() {
 }
 
 add_action('wp_head', 'bjgk_genesis_enews_css');
+
+/**
+ * Include third-party services
+ *
+ * @since 1.5.0
+ */
+
+include_once '3rd-party/wpml.php';
