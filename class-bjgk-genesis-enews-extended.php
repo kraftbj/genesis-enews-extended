@@ -69,6 +69,7 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 
 		// Merge with defaults
 		$instance = wp_parse_args( (array) $instance, $this->defaults );
+		$instance = apply_filters( 'genesis-enews-extended-args', $instance );
 
 		// Checks if MailPoet exists. If so, a check for form submission wil take place.
 		if ( class_exists( 'WYSIJA' ) && isset( $_POST['submission-type'] ) && 'mailpoet' == $_POST['submission-type'] && ! empty( $instance['mailpoet-list'] ) ) {
