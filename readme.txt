@@ -56,6 +56,8 @@ Questions can be asked at the [WordPress.org Support Forum](http://wordpress.org
 * Fixed form name to be valid HTML 4.
 * Use https with Feedburner to prevent mixed content warnings on HTTPS sites.
 * Minor code fix when MailPoet is not present.
+* Add WPML compatibility for multilingual sites.
+* Adds `genesis-enews-extended-args` filter to allow plugins to manipulate the widget settings prior to output.
 
 = 1.4.1 =
 * Add fieldset, legend, option, optgroup, select to allowed HTML for Hidden Fields area.
@@ -102,7 +104,7 @@ Questions can be asked at the [WordPress.org Support Forum](http://wordpress.org
 = 1.1.0 =
 * Allows for more HTML tags to be used in Text to Show field. Dropped genesis_allowed_tags in favor or wp_kses_post. Props to [John Levandowski](http://wpselect.com/).
 * eNews Extended now compatible with Catalyst theme (Catalyst not officially supported).
-* Fuzzy translations added for a wide number of langauges based on Genesis 1.8.2 translations of the original eNews Widget.
+* Fuzzy translations added for a wide number of languages based on Genesis 1.8.2 translations of the original eNews Widget.
 
 = 1.0.X =
 * Adds ability to edit "First Name" and "Last Name" displayed on front-end.
