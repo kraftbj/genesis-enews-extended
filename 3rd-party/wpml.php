@@ -20,8 +20,8 @@ add_filter( 'genesis-enews-extended-args' , 'gee_wpml_compat' );
  */
 function gee_wpml_compat( $instance ) {
 	if ( function_exists( 'icl_translate' ) ) {
-		foreach ( $instance as $field ) {
-			$field = icl_translate( 'genesis-enews-extended', $field );
+		foreach ( $instance as $field => $value) {
+			$instance[$field] = icl_translate( 'genesis-enews-extended', $value );
 		}
 	}
 	return $instance;
