@@ -46,7 +46,7 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 			'id'				=> '',
 			'email-field'		=> '',
 			'action'			=> '',
-			'mailpoet_check'	=> __( 'Check your inbox now to confirm your subscription.', 'wysija-newsletters' ),
+			'mailpoet_check'	=> __( 'Check your inbox or spam folder now to confirm your subscription.', 'wysija-newsletters' ),
 			'mailpoet_subbed'	=> __( "You've successfully subscribed.", 'wysija-newsletters' ),
 		);
 
@@ -162,11 +162,13 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 	 * @return array Settings to save or bool false to cancel saving
 	 */
 	function update( $new_instance, $old_instance ) {
-		$new_instance['title']         = strip_tags( $new_instance['title'], "<i>" );
-		$new_instance['text']          = wp_kses_post( $new_instance['text']);
-		$new_instance['hidden_fields'] = strip_tags( $new_instance['hidden_fields'], "<div>, <fieldset>, <input>, <label>, <legend>, <option>, <optgroup>, <select>, <textarea>" );
-		$new_instance['after_text']    = wp_kses_post( $new_instance['after_text']);
-		$new_instance['id']            = str_replace("http://feeds.feedburner.com/", "", $new_instance['id']);
+		$new_instance['title']           = strip_tags( $new_instance['title'], "<i>" );
+		$new_instance['text']            = wp_kses_post( $new_instance['text']);
+		$new_instance['hidden_fields']   = strip_tags( $new_instance['hidden_fields'], "<div>, <fieldset>, <input>, <label>, <legend>, <option>, <optgroup>, <select>, <textarea>" );
+		$new_instance['after_text']      = wp_kses_post( $new_instance['after_text']);
+		$new_instance['id']              = str_replace("http://feeds.feedburner.com/", "", $new_instance['id']);
+		$new_instance['mailpoet_check']  = wp_kses_post( $new_instance['mailpoet_check'] );
+		$new_instance['mailpoet_subbed'] = wp_kses_post( $new_instance['mailpoet_subbed'] );
 		return $new_instance;
 	}
 
@@ -228,6 +230,15 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 					</label>
 
 				</small>
+
+				<p>
+					<label for="<?php echo esc_attr( $this->get_field_id( 'mailpoet_check' ) ); ?>"><?php _e( 'Text Displayed If Confirmation Needed', 'genesis-enews-extended' ); ?>:</label><br />
+					<textarea id="<?php echo esc_attr( $this->get_field_id( 'mailpoet_check' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'mailpoet_check' ) ); ?>" class="widefat" rows="6" cols="4"><?php echo htmlspecialchars( $instance['mailpoet_check'] ); ?></textarea>
+				</p>
+				<p>
+					<label for="<?php echo esc_attr( $this->get_field_id( 'mailpoet_subbed' ) ); ?>"><?php _e( 'Text Displayed If Subscribed', 'genesis-enews-extended' ); ?>:</label><br />
+					<textarea id="<?php echo esc_attr( $this->get_field_id( 'mailpoet_subbed' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'mailpoet_subbed' ) ); ?>" class="widefat" rows="6" cols="4"><?php echo htmlspecialchars( $instance['mailpoet_subbed'] ); ?></textarea>
+				</p>
 			</fieldset>
 
 		<?php else : ?>
