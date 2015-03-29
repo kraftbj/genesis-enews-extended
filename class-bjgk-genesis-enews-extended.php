@@ -32,20 +32,22 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 	 */
 	function __construct() {
 		$this->defaults = array(
-			'title'            => '',
-			'text'             => '',
-			'after_text'       => '',
-			'hidden_fields'    => '',
-			'open_same_window' => 0,
-			'fname-field'      => '',
-			'lname-field'      => '',
-			'input_text'       => '',
-			'fname_text'       => '',
-			'lname_text'       => '',
-			'button_text'      => '',
-			'id'               => '',
-			'email-field'      => '',
-			'action'           => '',
+			'title'				=> '',
+			'text'				=> '',
+			'after_text'		=> '',
+			'hidden_fields'		=> '',
+			'open_same_window'	=> 0,
+			'fname-field'		=> '',
+			'lname-field'		=> '',
+			'input_text'		=> '',
+			'fname_text'		=> '',
+			'lname_text'		=> '',
+			'button_text'		=> '',
+			'id'				=> '',
+			'email-field'		=> '',
+			'action'			=> '',
+			'mailpoet_check'	=> __( 'Check your inbox or spam folder now to confirm your subscription.', 'wysija-newsletters' ),
+			'mailpoet_subbed'	=> __( "You've successfully subscribed.", 'wysija-newsletters' ),
 		);
 
 		$widget_ops = array(
@@ -125,10 +127,10 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 			<?php if ( ! empty( $mailpoet_subscriber_id ) && is_int( $mailpoet_subscriber_id ) ) :
 				// confirmation message phrasing depends on whether the user has to verify his subscription or not
 				$mailpoet_needs_confirmation = WYSIJA::get( 'config','model' )->getValue( 'confirm_dbleoptin' ); // bool
-				$success_message = $mailpoet_needs_confirmation ? __( 'Check your inbox now to confirm your subscription.', 'wysija-newsletters' ) : __( "You've successfully subscribed.", 'wysija-newsletters' );
+				$success_message = $mailpoet_needs_confirmation ? $instance['mailpoet_check'] : $instance['mailpoet_subbed'];
 				?>
 			<div class="mailpoet-message mailpoet-success <?php echo $mailpoet_needs_confirmation ? 'mailpoet-needs-confirmation' : 'mailpoet-confirmed'; ?>">
-				<?php echo $success_message; ?>
+				<?php echo esc_html( $success_message ); ?>
 			</div>
 			<?php endif; ?>
 			<?php if ( isset( $instance['mailpoet-show-fname'] ) ) : ?><label for="subbox1" class="screenread"><?php echo esc_attr( $instance['fname_text'] ); ?></label><input type="text" id="subbox1" class="enews-subbox" value="<?php echo esc_attr( $instance['fname_text'] ); ?>" onfocus="if ( this.value == '<?php echo esc_js( $instance['fname_text'] ); ?>') { this.value = ''; }" onblur="if ( this.value == '' ) { this.value = '<?php echo esc_js( $instance['fname_text'] ); ?>'; }" name="mailpoet-firstname" /><?php endif ?>
@@ -160,11 +162,13 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 	 * @return array Settings to save or bool false to cancel saving
 	 */
 	function update( $new_instance, $old_instance ) {
-		$new_instance['title']         = strip_tags( $new_instance['title'], "<i>" );
-		$new_instance['text']          = wp_kses_post( $new_instance['text']);
-		$new_instance['hidden_fields'] = strip_tags( $new_instance['hidden_fields'], "<div>, <fieldset>, <input>, <label>, <legend>, <option>, <optgroup>, <select>, <textarea>" );
-		$new_instance['after_text']    = wp_kses_post( $new_instance['after_text']);
-		$new_instance['id']            = str_replace("http://feeds.feedburner.com/", "", $new_instance['id']);
+		$new_instance['title']           = strip_tags( $new_instance['title'], "<i>" );
+		$new_instance['text']            = wp_kses_post( $new_instance['text']);
+		$new_instance['hidden_fields']   = strip_tags( $new_instance['hidden_fields'], "<div>, <fieldset>, <input>, <label>, <legend>, <option>, <optgroup>, <select>, <textarea>" );
+		$new_instance['after_text']      = wp_kses_post( $new_instance['after_text']);
+		$new_instance['id']              = str_replace("http://feeds.feedburner.com/", "", $new_instance['id']);
+		$new_instance['mailpoet_check']  = wp_kses_post( $new_instance['mailpoet_check'] );
+		$new_instance['mailpoet_subbed'] = wp_kses_post( $new_instance['mailpoet_subbed'] );
 		return $new_instance;
 	}
 
@@ -226,6 +230,15 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 					</label>
 
 				</small>
+
+				<p>
+					<label for="<?php echo esc_attr( $this->get_field_id( 'mailpoet_check' ) ); ?>"><?php _e( 'Text Displayed If Confirmation Needed', 'genesis-enews-extended' ); ?>:</label><br />
+					<textarea id="<?php echo esc_attr( $this->get_field_id( 'mailpoet_check' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'mailpoet_check' ) ); ?>" class="widefat" rows="6" cols="4"><?php echo htmlspecialchars( $instance['mailpoet_check'] ); ?></textarea>
+				</p>
+				<p>
+					<label for="<?php echo esc_attr( $this->get_field_id( 'mailpoet_subbed' ) ); ?>"><?php _e( 'Text Displayed If Subscribed', 'genesis-enews-extended' ); ?>:</label><br />
+					<textarea id="<?php echo esc_attr( $this->get_field_id( 'mailpoet_subbed' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'mailpoet_subbed' ) ); ?>" class="widefat" rows="6" cols="4"><?php echo htmlspecialchars( $instance['mailpoet_subbed'] ); ?></textarea>
+				</p>
 			</fieldset>
 
 		<?php else : ?>
