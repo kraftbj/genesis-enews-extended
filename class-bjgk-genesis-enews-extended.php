@@ -3,7 +3,7 @@
  * Genesis eNews Extended
  *
  * @package   BJGK\Genesis_enews_extended
- * @version   2.0.0
+ * @version   2.0.1
  * @author    Brandon Kraft <public@brandonkraft.com>
  * @link      http://www.brandonkraft.com/genesis-enews-extended/
  * @copyright Copyright (c) 2012-2015, Brandon Kraft
@@ -117,7 +117,7 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 		<?php elseif ( ! empty( $instance['action'] ) ) : ?>
 			<form id="subscribe<?php echo $this->id; ?>" action="<?php echo esc_attr( $instance['action'] ); ?>" method="post" <?php if ($instance['open_same_window'] == 0 ) : ?> target="_blank"<?php endif; ?> onsubmit="if ( subbox1.value == '<?php echo esc_js( $instance['fname_text'] ); ?>') { subbox1.value = ''; } if ( subbox2.value == '<?php echo esc_js( $instance['lname_text'] ); ?>') { subbox2.value = ''; }" name="<?php echo esc_attr( $this->id ); ?>">
 				<?php if ( ! empty($instance['fname-field'] ) ) : ?><label for="subbox1" class="screenread"><?php echo esc_attr( $instance['fname_text'] ); ?></label><input type="text" id="subbox1" class="enews-subbox" value="" placeholder="<?php echo esc_attr( $instance['fname_text'] ); ?>"name="<?php echo esc_attr( $instance['fname-field'] ); ?>" /><?php endif ?>
-				<?php if ( ! empty($instance['lname-field'] ) ) : ?><label for="subbox2" class="screenread"><?php echo esc_attr( $instance['lname_text'] ); ?></label><input type="text" id="subbox2" class="enews-subbox" value="" placeholder="<?php echo esc_attr( $instance['lname-field'] ); ?>" name="<?php echo esc_attr( $instance['lname-field'] ); ?>" /><?php endif ?>
+				<?php if ( ! empty($instance['lname-field'] ) ) : ?><label for="subbox2" class="screenread"><?php echo esc_attr( $instance['lname_text'] ); ?></label><input type="text" id="subbox2" class="enews-subbox" value="" placeholder="<?php echo esc_attr( $instance['lname_text'] ); ?>" name="<?php echo esc_attr( $instance['lname-field'] ); ?>" /><?php endif ?>
 				<label for="subbox" class="screenread"><?php echo esc_attr( $instance['input_text'] ); ?></label><input type="<?php echo current_theme_supports( 'html5' ) ? 'email' : 'text'; ?>" value="" id="subbox" placeholder="<?php echo esc_attr( $instance['input_text'] ); ?>" name="<?php echo esc_js( $instance['email-field'] ); ?>" <?php if ( current_theme_supports( 'html5' ) ) : ?>required="required"<?php endif; ?> />
 				<?php echo $instance['hidden_fields']; ?>
 				<input type="submit" value="<?php echo esc_attr( $instance['button_text'] ); ?>" id="subbutton" />

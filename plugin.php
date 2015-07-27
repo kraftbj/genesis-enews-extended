@@ -3,7 +3,7 @@
  * Genesis eNews Extended
  *
  * @package     BJGK\Genesis_enews_extended
- * @version     2.0.0
+ * @version     2.0.1
  * @author      Brandon Kraft <public@brandonkraft.com>
  * @copyright   Copyright (c) 2012-2015, Brandon Kraft
  * @link        https://kraft.im/genesis-enews-extended/
@@ -13,7 +13,7 @@
  * Plugin Name: Genesis eNews Extended
  * Plugin URI:  https://kraft.im/genesis-enews-extended/
  * Description: Replaces the Genesis eNews Widget to allow easier use of additional mailing services.
- * Version:     2.0.0
+ * Version:     2.0.1
  * Author:      Brandon Kraft
  * Author URI:  https://kraft.im
  * License:     GPL-2.0+
