@@ -1,10 +1,10 @@
 === Genesis eNews Extended ===
 Contributors: kraftbj, coffeaweb
-Donate link: http://www.brandonkraft.com/donate/
+Donate link: https://kraft.im/donate/
 Tags: genesis, genesiswp, mailchimp, aweber, studiopress, newsletter, subscribe, mailpoet, wysija
 Requires at least: 3.0
-Tested up to: 4.2
-Stable tag: 1.4.1
+Tested up to: 4.3
+Stable tag: 2.0.0
 
 Creates a new widget to easily add mailing lists integration to a Genesis website. Works with FeedBurner, MailChimp, AWeber, FeedBlitz and more.
 
@@ -37,11 +37,11 @@ That is a feature of the theme. If you want the button back, remove ".enews #sub
 
 = The first and last name fields look funky. =
 
-Read more on the [plugin's tutorial website](http://www.brandonkraft.com/genesis-enews-extended/tutorials).
+Read more on the [plugin's tutorial website](https://kraft.im/genesis-enews-extended/tutorials).
 
 = I need help! Where I can get it? =
 
-"Official" tutorials will be maintained on the [plugin's website](http://www.brandonkraft.com/genesis-enews-extended/).
+"Official" tutorials will be maintained on the [plugin's website](https://kraft.im/genesis-enews-extended/).
 
 Questions can be asked at the [WordPress.org Support Forum](http://wordpress.org/support/plugin/genesis-enews-extended) for this plugin.
 
@@ -51,7 +51,7 @@ Questions can be asked at the [WordPress.org Support Forum](http://wordpress.org
 
 == Changelog ==
 
-= x.x.x =
+= 2.0.0 =
 * Add filters for text before and after form.
 * Fixed form name to be valid HTML 4.
 * Use https with Feedburner to prevent mixed content warnings on HTTPS sites.
@@ -153,7 +153,6 @@ A special thanks to all who have contributed to Genesis eNews Extended.
 * Jennifer Jinright
 * Greg Ferro
 * Greg Young
-* [Maybe You?](http://www.brandonkraft.com/donate/)
 
 = Code Contributions =
 * Gary Jones (many, many times over)
@@ -179,8 +178,3 @@ A special thanks to all who have contributed to Genesis eNews Extended.
 * Special thanks to Brian Gardner and the team at StudioPress who wrote the original code that provided the foundation for the plugin.
 
 If you're not listed and think you should be, please drop me a note. Any omission is, in no way, intentional.
-
-== Upgrade Notice ==
-
-= 1.4.0 =
-* Added native support for MailPoet and added/improved translations.
