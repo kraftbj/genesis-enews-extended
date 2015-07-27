@@ -1,10 +1,10 @@
 === Genesis eNews Extended ===
 Contributors: kraftbj, coffeaweb
-Donate link: http://www.brandonkraft.com/donate/
+Donate link: https://kraft.im/donate/
 Tags: genesis, genesiswp, mailchimp, aweber, studiopress, newsletter, subscribe, mailpoet, wysija
 Requires at least: 3.0
-Tested up to: 3.9.1
-Stable tag: 1.4.1
+Tested up to: 4.3
+Stable tag: 2.0.0
 
 Creates a new widget to easily add mailing lists integration to a Genesis website. Works with FeedBurner, MailChimp, AWeber, FeedBlitz and more.
 
@@ -17,7 +17,7 @@ Creates a new widget to easily add mailing lists to a Genesis website. Recommend
 1. Upload contents of the directory to /wp-content/plugins/ (or use the automatic installer)
 1. Activate the plugin through the 'Plugins' menu in WordPress
 1. In Appearance->Widgets, add Genesis eNews Extended widget to any sidebar.
-1. Using the mailing list contact form code provided by your vendor, add the form action URL, the form field ID for the e-mail field and any hidden fields (not all services use them) into the widget options. See some tips for this on the [plugin's install page](http://www.brandonkraft.com/contrib/plugins/genesis-enews-extended/install).
+1. Using the mailing list contact form code provided by your vendor, add the form action URL, the form field ID for the e-mail field and any hidden fields (not all services use them) into the widget options. See some tips for this on the [plugin's install page](http://www.brandonkraft.com/genesis-enews-extended/install).
 1. If using name fields, read the [plugin's tutorial website](http://www.brandonkraft.com/genesis-enews-extended/tutorials).
 1. Verify it works!
 
@@ -37,11 +37,11 @@ That is a feature of the theme. If you want the button back, remove ".enews #sub
 
 = The first and last name fields look funky. =
 
-Read more on the [plugin's tutorial website](http://www.brandonkraft.com/genesis-enews-extended/tutorials).
+Read more on the [plugin's tutorial website](https://kraft.im/genesis-enews-extended/tutorials).
 
 = I need help! Where I can get it? =
 
-"Official" tutorials will be maintained on the [plugin's website](http://www.brandonkraft.com/genesis-enews-extended/).
+"Official" tutorials will be maintained on the [plugin's website](https://kraft.im/genesis-enews-extended/).
 
 Questions can be asked at the [WordPress.org Support Forum](http://wordpress.org/support/plugin/genesis-enews-extended) for this plugin.
 
@@ -50,6 +50,15 @@ Questions can be asked at the [WordPress.org Support Forum](http://wordpress.org
 2. Widget setting screen.
 
 == Changelog ==
+
+= 2.0.0 =
+* Add filters for text before and after form.
+* Fixed form name to be valid HTML 4.
+* Use https with Feedburner to prevent mixed content warnings on HTTPS sites.
+* Minor code fix when MailPoet is not present.
+* Adds `genesis-enews-extended-args` filter to allow plugins to manipulate the widget settings prior to output.
+* Uses HTML 5 placeholders instead of JavaScript.
+* Form ID now uses unique value.
 
 = 1.4.1 =
 * Add fieldset, legend, option, optgroup, select to allowed HTML for Hidden Fields area.
@@ -96,7 +105,7 @@ Questions can be asked at the [WordPress.org Support Forum](http://wordpress.org
 = 1.1.0 =
 * Allows for more HTML tags to be used in Text to Show field. Dropped genesis_allowed_tags in favor or wp_kses_post. Props to [John Levandowski](http://wpselect.com/).
 * eNews Extended now compatible with Catalyst theme (Catalyst not officially supported).
-* Fuzzy translations added for a wide number of langauges based on Genesis 1.8.2 translations of the original eNews Widget.
+* Fuzzy translations added for a wide number of languages based on Genesis 1.8.2 translations of the original eNews Widget.
 
 = 1.0.X =
 * Adds ability to edit "First Name" and "Last Name" displayed on front-end.
@@ -144,7 +153,6 @@ A special thanks to all who have contributed to Genesis eNews Extended.
 * Jennifer Jinright
 * Greg Ferro
 * Greg Young
-* [Maybe You?](http://www.brandonkraft.com/donate/)
 
 = Code Contributions =
 * Gary Jones (many, many times over)
@@ -170,8 +178,3 @@ A special thanks to all who have contributed to Genesis eNews Extended.
 * Special thanks to Brian Gardner and the team at StudioPress who wrote the original code that provided the foundation for the plugin.
 
 If you're not listed and think you should be, please drop me a note. Any omission is, in no way, intentional.
-
-== Upgrade Notice ==
-
-= 1.4.0 =
-* Added native support for MailPoet and added/improved translations.
