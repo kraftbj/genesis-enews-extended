@@ -3,8 +3,8 @@ Contributors: kraftbj, coffeaweb
 Donate link: http://www.brandonkraft.com/donate/
 Tags: genesis, genesiswp, mailchimp, aweber, studiopress, newsletter, subscribe, mailpoet, wysija
 Requires at least: 3.0
-Tested up to: 4.2
-Stable tag: 1.4.1
+Tested up to: 4.3
+Stable tag: 2.0.0
 
 Creates a new widget to easily add mailing lists integration to a Genesis website. Works with FeedBurner, MailChimp, AWeber, FeedBlitz and more.
 
@@ -51,7 +51,7 @@ Questions can be asked at the [WordPress.org Support Forum](http://wordpress.org
 
 == Changelog ==
 
-= x.x.x =
+= 2.0.0 =
 * Add filters for text before and after form.
 * Fixed form name to be valid HTML 4.
 * Use https with Feedburner to prevent mixed content warnings on HTTPS sites.
@@ -179,8 +179,3 @@ A special thanks to all who have contributed to Genesis eNews Extended.
 * Special thanks to Brian Gardner and the team at StudioPress who wrote the original code that provided the foundation for the plugin.
 
 If you're not listed and think you should be, please drop me a note. Any omission is, in no way, intentional.
-
-== Upgrade Notice ==
-
-= 1.4.0 =
-* Added native support for MailPoet and added/improved translations.
