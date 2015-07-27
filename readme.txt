@@ -57,6 +57,7 @@ Questions can be asked at the [WordPress.org Support Forum](http://wordpress.org
 * Use https with Feedburner to prevent mixed content warnings on HTTPS sites.
 * Minor code fix when MailPoet is not present.
 * Adds `genesis-enews-extended-args` filter to allow plugins to manipulate the widget settings prior to output.
+* Uses HTML 5 placeholders instead of JavaScript.
 
 = 1.4.1 =
 * Add fieldset, legend, option, optgroup, select to allowed HTML for Hidden Fields area.
