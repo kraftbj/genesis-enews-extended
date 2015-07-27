@@ -58,6 +58,7 @@ Questions can be asked at the [WordPress.org Support Forum](http://wordpress.org
 * Minor code fix when MailPoet is not present.
 * Adds `genesis-enews-extended-args` filter to allow plugins to manipulate the widget settings prior to output.
 * Uses HTML 5 placeholders instead of JavaScript.
+* Form ID now uses unique value.
 
 = 1.4.1 =
 * Add fieldset, legend, option, optgroup, select to allowed HTML for Hidden Fields area.
