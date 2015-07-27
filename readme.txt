@@ -1,6 +1,6 @@
 === Genesis eNews Extended ===
 Contributors: kraftbj, coffeaweb
-Donate link: http://www.brandonkraft.com/donate/
+Donate link: https://kraft.im/donate/
 Tags: genesis, genesiswp, mailchimp, aweber, studiopress, newsletter, subscribe, mailpoet, wysija
 Requires at least: 3.0
 Tested up to: 4.3
@@ -37,11 +37,11 @@ That is a feature of the theme. If you want the button back, remove ".enews #sub
 
 = The first and last name fields look funky. =
 
-Read more on the [plugin's tutorial website](http://www.brandonkraft.com/genesis-enews-extended/tutorials).
+Read more on the [plugin's tutorial website](https://kraft.im/genesis-enews-extended/tutorials).
 
 = I need help! Where I can get it? =
 
-"Official" tutorials will be maintained on the [plugin's website](http://www.brandonkraft.com/genesis-enews-extended/).
+"Official" tutorials will be maintained on the [plugin's website](https://kraft.im/genesis-enews-extended/).
 
 Questions can be asked at the [WordPress.org Support Forum](http://wordpress.org/support/plugin/genesis-enews-extended) for this plugin.
 
@@ -153,7 +153,6 @@ A special thanks to all who have contributed to Genesis eNews Extended.
 * Jennifer Jinright
 * Greg Ferro
 * Greg Young
-* [Maybe You?](http://www.brandonkraft.com/donate/)
 
 = Code Contributions =
 * Gary Jones (many, many times over)
