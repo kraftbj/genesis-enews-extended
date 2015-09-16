@@ -3,7 +3,8 @@ Contributors: kraftbj, coffeaweb
 Donate link: https://kraft.im/donate/
 Tags: genesis, genesiswp, mailchimp, aweber, studiopress, newsletter, subscribe, mailpoet, wysija
 Requires at least: 3.0
-Tested up to: 4.3
+Tested up to: 4.4
+Text Domain: genesis-enews-extended
 Stable tag: 2.0.1
 
 Creates a new widget to easily add mailing lists integration to a Genesis website. Works with FeedBurner, MailChimp, AWeber, FeedBlitz and more.
