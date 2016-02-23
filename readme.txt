@@ -54,6 +54,7 @@ Questions can be asked at the [WordPress.org Support Forum](http://wordpress.org
 
 = 2.0.2 =
 * Fixes minor issue that led to HTML validation issues.
+* Fixes PHP notice for checking non-existent variables in some cases.
 
 = 2.0.1 =
 * Corrects typo impacting Last Name field text placeholder.
