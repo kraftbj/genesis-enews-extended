@@ -52,6 +52,9 @@ Questions can be asked at the [WordPress.org Support Forum](http://wordpress.org
 
 == Changelog ==
 
+= 2.0.2 =
+* Fixes minor issue that led to HTML validation issues.
+
 = 2.0.1 =
 * Corrects typo impacting Last Name field text placeholder.
 
