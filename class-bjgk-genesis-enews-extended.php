@@ -204,14 +204,14 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 		</p>
 
 		<hr style="background-color: #ccc; border: 0; height: 1px; margin: 20px 0;">
-		<p>
-			<label for="<?php echo esc_attr( $this->get_field_id( 'mailpoet-list' ) ); ?>"><?php _e( 'MailPoet List', 'genesis-enews-extended' ); ?>:</label>
 		<?php if ( class_exists( 'WYSIJA' ) ) :
 			$mp_model_list = WYSIJA::get( 'list','model' );
 			$mp_lists = $mp_model_list->get( array( 'name','list_id' ), array(
 				'is_enabled' => 1,
 			) );
 		?>
+		<p>
+			<label for="<?php echo esc_attr( $this->get_field_id( 'mailpoet-list' ) ); ?>"><?php _e( 'MailPoet List', 'genesis-enews-extended' ); ?>:</label>
 			<fieldset>
 				<ul>
 					<?php foreach ( $mp_lists as $mp_list ) : ?>
@@ -246,10 +246,9 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 					<textarea id="<?php echo esc_attr( $this->get_field_id( 'mailpoet_subbed' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'mailpoet_subbed' ) ); ?>" class="widefat" rows="6" cols="4"><?php echo htmlspecialchars( $instance['mailpoet_subbed'] ); ?></textarea>
 				</p>
 			</fieldset>
-
-		<?php endif; ?>
 		</p>
 		<hr style="background: #ccc; border: 0; height: 1px; margin: 20px 0;">
+		<?php endif; ?>
 		<p>
 			<label for="<?php echo esc_attr( $this->get_field_id( 'id' ) ); ?>"><?php _e( 'Google/Feedburner ID', 'genesis-enews-extended' ); ?>:</label>
 			<input type="text" id="<?php echo esc_attr( $this->get_field_id( 'id' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'id' ) ); ?>" value="<?php echo esc_attr( $instance['id'] ); ?>" class="widefat" /><br />
