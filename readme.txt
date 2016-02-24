@@ -5,7 +5,7 @@ Tags: genesis, genesiswp, mailchimp, aweber, studiopress, newsletter, subscribe,
 Requires at least: 3.0
 Tested up to: 4.4
 Text Domain: genesis-enews-extended
-Stable tag: 2.0.1
+Stable tag: 2.0.2
 
 Creates a new widget to easily add mailing lists integration to a Genesis website. Works with FeedBurner, MailChimp, AWeber, FeedBlitz and more.
 
@@ -186,3 +186,9 @@ A special thanks to all who have contributed to Genesis eNews Extended.
 * Special thanks to Brian Gardner and the team at StudioPress who wrote the original code that provided the foundation for the plugin.
 
 If you're not listed and think you should be, please drop me a note. Any omission is, in no way, intentional.
+
+
+== Upgrade Notice ==
+
+= 2.0.2 =
+Fixes minor bugs, including one that causes HTML validation errors.
