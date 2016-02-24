@@ -3,7 +3,7 @@
  * Genesis eNews Extended
  *
  * @package   BJGK\Genesis_enews_extended
- * @version   2.0.1
+ * @version   2.0.2
  * @author    Brandon Kraft <public@brandonkraft.com>
  * @link      http://www.brandonkraft.com/genesis-enews-extended/
  * @copyright Copyright (c) 2012-2015, Brandon Kraft
@@ -116,7 +116,7 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 			</form>
 		<?php elseif ( ! empty( $instance['action'] ) ) : ?>
 			<form id="subscribe<?php echo $this->id; ?>" action="<?php echo esc_attr( $instance['action'] ); ?>" method="post" <?php if ($instance['open_same_window'] == 0 ) : ?> target="_blank"<?php endif; ?> onsubmit="if ( subbox1.value == '<?php echo esc_js( $instance['fname_text'] ); ?>') { subbox1.value = ''; } if ( subbox2.value == '<?php echo esc_js( $instance['lname_text'] ); ?>') { subbox2.value = ''; }" name="<?php echo esc_attr( $this->id ); ?>">
-				<?php if ( ! empty($instance['fname-field'] ) ) : ?><label for="subbox1" class="screenread"><?php echo esc_attr( $instance['fname_text'] ); ?></label><input type="text" id="subbox1" class="enews-subbox" value="" placeholder="<?php echo esc_attr( $instance['fname_text'] ); ?>"name="<?php echo esc_attr( $instance['fname-field'] ); ?>" /><?php endif ?>
+				<?php if ( ! empty($instance['fname-field'] ) ) : ?><label for="subbox1" class="screenread"><?php echo esc_attr( $instance['fname_text'] ); ?></label><input type="text" id="subbox1" class="enews-subbox" value="" placeholder="<?php echo esc_attr( $instance['fname_text'] ); ?>" name="<?php echo esc_attr( $instance['fname-field'] ); ?>" /><?php endif ?>
 				<?php if ( ! empty($instance['lname-field'] ) ) : ?><label for="subbox2" class="screenread"><?php echo esc_attr( $instance['lname_text'] ); ?></label><input type="text" id="subbox2" class="enews-subbox" value="" placeholder="<?php echo esc_attr( $instance['lname_text'] ); ?>" name="<?php echo esc_attr( $instance['lname-field'] ); ?>" /><?php endif ?>
 				<label for="subbox" class="screenread"><?php echo esc_attr( $instance['input_text'] ); ?></label><input type="<?php echo current_theme_supports( 'html5' ) ? 'email' : 'text'; ?>" value="" id="subbox" placeholder="<?php echo esc_attr( $instance['input_text'] ); ?>" name="<?php echo esc_js( $instance['email-field'] ); ?>" <?php if ( current_theme_supports( 'html5' ) ) : ?>required="required"<?php endif; ?> />
 				<?php echo $instance['hidden_fields']; ?>
@@ -133,8 +133,8 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 					<?php echo esc_html( $success_message ); ?>
 				</div>
 				<?php endif; ?>
-				<?php if ( isset( $instance['mailpoet-show-fname'] ) ) : ?><label for="subbox1" class="screenread"><?php echo esc_attr( $instance['fname_text'] ); ?></label><input type="text" id="subbox1" class="enews-subbox" value="" placeholder="<?php echo esc_attr( $instance['fname_text'] ); ?>"name="mailpoet-firstname" /><?php endif ?>
-				<?php if ( isset( $instance['mailpoet-show-lname'] ) ) : ?><label for="subbox2" class="screenread"><?php echo esc_attr( $instance['lname_text'] ); ?></label><input type="text" id="subbox2" class="enews-subbox" value="" placeholder="<?php echo esc_attr( $instance['lname_text'] ); ?>"name="mailpoet-lastname" /><?php endif ?>
+				<?php if ( isset( $instance['mailpoet-show-fname'] ) ) : ?><label for="subbox1" class="screenread"><?php echo esc_attr( $instance['fname_text'] ); ?></label><input type="text" id="subbox1" class="enews-subbox" value="" placeholder="<?php echo esc_attr( $instance['fname_text'] ); ?>" name="mailpoet-firstname" /><?php endif ?>
+				<?php if ( isset( $instance['mailpoet-show-lname'] ) ) : ?><label for="subbox2" class="screenread"><?php echo esc_attr( $instance['lname_text'] ); ?></label><input type="text" id="subbox2" class="enews-subbox" value="" placeholder="<?php echo esc_attr( $instance['lname_text'] ); ?>" name="mailpoet-lastname" /><?php endif ?>
 				<label for="subbox" class="screenread"><?php echo esc_attr( $instance['input_text'] ); ?></label><input type="<?php echo current_theme_supports( 'html5' ) ? 'email' : 'text'; ?>" value="" id="subbox" placeholder="<?php echo esc_attr( $instance['input_text'] ); ?>" name="mailpoet-email" <?php if ( current_theme_supports( 'html5' ) ) : ?>required="required"<?php endif; ?> />
 				<?php echo $instance['hidden_fields']; ?>
 				<input type="hidden" name="submission-type" value="mailpoet" />
@@ -167,8 +167,14 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 		$new_instance['hidden_fields']   = strip_tags( $new_instance['hidden_fields'], "<div>, <fieldset>, <input>, <label>, <legend>, <option>, <optgroup>, <select>, <textarea>" );
 		$new_instance['after_text']      = wp_kses_post( $new_instance['after_text']);
 		$new_instance['id']              = str_replace("http://feeds.feedburner.com/", "", $new_instance['id']);
-		$new_instance['mailpoet_check']  = wp_kses_post( $new_instance['mailpoet_check'] );
-		$new_instance['mailpoet_subbed'] = wp_kses_post( $new_instance['mailpoet_subbed'] );
+		if ( isset( $new_instance['mailpoet_check'] ) ) {
+			$new_instance['mailpoet_check']  = wp_kses_post( $new_instance['mailpoet_check'] );
+		}
+
+		if ( isset( $new_instance['mailpoet_subbed'] ) ) {
+			$new_instance['mailpoet_subbed']  = wp_kses_post( $new_instance['mailpoet_subbed'] );
+		}
+
 		return $new_instance;
 	}
 
@@ -198,14 +204,14 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 		</p>
 
 		<hr style="background-color: #ccc; border: 0; height: 1px; margin: 20px 0;">
-		<p>
-			<label for="<?php echo esc_attr( $this->get_field_id( 'mailpoet-list' ) ); ?>"><?php _e( 'MailPoet List', 'genesis-enews-extended' ); ?>:</label>
 		<?php if ( class_exists( 'WYSIJA' ) ) :
 			$mp_model_list = WYSIJA::get( 'list','model' );
 			$mp_lists = $mp_model_list->get( array( 'name','list_id' ), array(
 				'is_enabled' => 1,
 			) );
 		?>
+		<p>
+			<label for="<?php echo esc_attr( $this->get_field_id( 'mailpoet-list' ) ); ?>"><?php _e( 'MailPoet List', 'genesis-enews-extended' ); ?>:</label>
 			<fieldset>
 				<ul>
 					<?php foreach ( $mp_lists as $mp_list ) : ?>
@@ -240,14 +246,9 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 					<textarea id="<?php echo esc_attr( $this->get_field_id( 'mailpoet_subbed' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'mailpoet_subbed' ) ); ?>" class="widefat" rows="6" cols="4"><?php echo htmlspecialchars( $instance['mailpoet_subbed'] ); ?></textarea>
 				</p>
 			</fieldset>
-
-		<?php else : ?>
-			<br/>
-			<small><?php printf( __( "MailPoet is not currently activated. Genesis eNews Extended works with MailPoet, a free newsletter plugin. See <a href='%s' target='blank'>MailPoet's plugin page on WordPress.org</a>", 'genesis-enews-extended' ), 'http://wordpress.org/plugins/wysija-newsletters' ); ?></small>
-
-		<?php endif; ?>
 		</p>
 		<hr style="background: #ccc; border: 0; height: 1px; margin: 20px 0;">
+		<?php endif; ?>
 		<p>
 			<label for="<?php echo esc_attr( $this->get_field_id( 'id' ) ); ?>"><?php _e( 'Google/Feedburner ID', 'genesis-enews-extended' ); ?>:</label>
 			<input type="text" id="<?php echo esc_attr( $this->get_field_id( 'id' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'id' ) ); ?>" value="<?php echo esc_attr( $instance['id'] ); ?>" class="widefat" /><br />
