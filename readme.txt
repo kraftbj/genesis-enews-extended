@@ -26,7 +26,7 @@ Creates a new widget to easily add mailing lists to a Genesis website. Recommend
 
 = What services work with this plugin? =
 
-Feedburner, MailChimp, Aweber, FeedBlitz and Constant Contact are confirmed to work, but it should work with almost all services. If you have tested this with other services, please [contact me](http://brandonkraft.com/contact/)
+Feedburner, MailChimp, Aweber, FeedBlitz, ConvertKit, and Constant Contact are confirmed to work, but it should work with almost all services. If you have tested this with other services, please [contact me](https://kraft.im/contact/)
 
 = The "Opens in Same Tab" option doesn't work with FeedBurner. What's wrong? =
 
@@ -44,7 +44,7 @@ Read more on the [plugin's tutorial website](https://kraft.im/genesis-enews-exte
 
 "Official" tutorials will be maintained on the [plugin's website](https://kraft.im/genesis-enews-extended/).
 
-Questions can be asked at the [WordPress.org Support Forum](http://wordpress.org/support/plugin/genesis-enews-extended) for this plugin.
+Questions can be asked at the [WordPress.org Support Forum](https://wordpress.org/support/plugin/genesis-enews-extended) for this plugin.
 
 == Screenshots ==
 1. Example of the plugin in use on a site running Streamline 2.0.
