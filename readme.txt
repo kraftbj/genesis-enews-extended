@@ -7,7 +7,7 @@ Tested up to: 4.4
 Text Domain: genesis-enews-extended
 Stable tag: 2.0.2
 
-Creates a new widget to easily add mailing lists integration to a Genesis website. Works with FeedBurner, MailChimp, AWeber, FeedBlitz and more.
+Creates a new widget to easily add mailing lists integration to a Genesis website. Works with FeedBurner, MailChimp, AWeber, FeedBlitz, ConvertKit and more.
 
 == Description ==
 
