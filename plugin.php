@@ -5,7 +5,7 @@
  * @package     BJGK\Genesis_enews_extended
  * @version     2.0.2
  * @author      Brandon Kraft <public@brandonkraft.com>
- * @copyright   Copyright (c) 2012-2015, Brandon Kraft
+ * @copyright   Copyright (c) 2012-2016, Brandon Kraft
  * @link        https://kraft.im/genesis-enews-extended/
  * @license     GPL-2.0+
  *
@@ -15,7 +15,7 @@
  * Description: Replaces the Genesis eNews Widget to allow easier use of additional mailing services.
  * Version:     2.0.2
  * Author:      Brandon Kraft
- * Author URI:  https://kraft.im
+ * Author URI:  https://kraft.im/
  * License:     GPL-2.0+
  * License URI: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  * Text Domain: genesis-enews-extended
