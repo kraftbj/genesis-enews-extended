@@ -3,7 +3,7 @@ Contributors: kraftbj
 Donate link: https://kraft.im/donate/
 Tags: genesis, genesiswp, mailchimp, aweber, studiopress, newsletter, subscribe, mailpoet, wysija
 Requires at least: 3.0
-Tested up to: 4.4
+Tested up to: 4.6
 Text Domain: genesis-enews-extended
 Stable tag: 2.0.2
 
