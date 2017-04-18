@@ -1,9 +1,9 @@
 === Genesis eNews Extended ===
 Contributors: kraftbj
-Donate link: https://kraft.im/donate/
+Donate link: https://kraft.blog/donate/
 Tags: genesis, genesiswp, mailchimp, aweber, studiopress, newsletter, subscribe, mailpoet, wysija
 Requires at least: 3.0
-Tested up to: 4.7
+Tested up to: 4.8
 Text Domain: genesis-enews-extended
 Stable tag: 2.0.2
 
@@ -51,6 +51,9 @@ Questions can be asked at the [WordPress.org Support Forum](https://wordpress.or
 2. Widget setting screen.
 
 == Changelog ==
+
+= 2.0.3 =
+* Allow "a" HTML tags in the hidden fields settings field.
 
 = 2.0.2 =
 * Fixes minor issue that led to HTML validation issues.

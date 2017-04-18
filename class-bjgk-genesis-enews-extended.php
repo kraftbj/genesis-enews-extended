@@ -155,6 +155,7 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 	 * If false is returned, the instance won't be saved / updated.
 	 *
 	 * @since 0.1.0
+	 * @since 2.0.3 Allow "a" tags in the Hidden Fields setting.
 	 *
 	 * @param array $new_instance New settings for this instance as input by the user via form().
 	 * @param array $old_instance Old settings for this instance.
@@ -164,7 +165,7 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 	function update( $new_instance, $old_instance ) {
 		$new_instance['title']           = strip_tags( $new_instance['title'], "<i>" );
 		$new_instance['text']            = wp_kses_post( $new_instance['text']);
-		$new_instance['hidden_fields']   = strip_tags( $new_instance['hidden_fields'], "<div>, <fieldset>, <input>, <label>, <legend>, <option>, <optgroup>, <select>, <textarea>" );
+		$new_instance['hidden_fields']   = strip_tags( $new_instance['hidden_fields'], "<a>, <div>, <fieldset>, <input>, <label>, <legend>, <option>, <optgroup>, <select>, <textarea>" );
 		$new_instance['after_text']      = wp_kses_post( $new_instance['after_text']);
 		$new_instance['id']              = str_replace("http://feeds.feedburner.com/", "", $new_instance['id']);
 		if ( isset( $new_instance['mailpoet_check'] ) ) {
