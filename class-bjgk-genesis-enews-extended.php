@@ -5,8 +5,8 @@
  * @package   BJGK\Genesis_enews_extended
  * @version   2.0.2
  * @author    Brandon Kraft <public@brandonkraft.com>
- * @link      https://kraft.im/genesis-enews-extended/
- * @copyright Copyright (c) 2012-2016, Brandon Kraft
+ * @link      http://www.brandonkraft.com/genesis-enews-extended/
+ * @copyright Copyright (c) 2012-2015, Brandon Kraft
  * @license   GPL-2.0+
  */
 
@@ -107,23 +107,27 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 
 		echo wpautop( apply_filters( 'gee_text', $instance['text'] ) ); // We run KSES on update
 
+		//* JS friendly id
+		$this_id = str_replace('-', '_', $this->id );
+
 		if ( ! empty( $instance['id'] ) ) : ?>
-			<form id="subscribe-<?php echo $this->id; ?>" action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open( 'http://feedburner.google.com/fb/a/mailverify?uri=<?php echo esc_js( $instance['id'] ); ?>', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true" name="<?php echo esc_attr( $this->id ); ?>">
-				<label for="subbox" class="screenread"><?php echo esc_attr( $instance['input_text'] ); ?></label><input type="<?php echo current_theme_supports( 'html5' ) ? 'email' : 'text'; ?>" value="" id="subbox" placeholder="<?php echo esc_attr( $instance['input_text'] ); ?>" name="email" <?php if ( current_theme_supports( 'html5' ) ) : ?>required="required"<?php endif; ?> />
+			<form id="subscribe-<?php echo $this_id; ?>" action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open( 'http://feedburner.google.com/fb/a/mailverify?uri=<?php echo esc_js( $instance['id'] ); ?>', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true" name="<?php echo esc_attr( $this->id ); ?>">
+				<label for="subbox_<?php echo $this_id; ?>" class="screen-reader-text"><?php echo esc_attr( $instance['input_text'] ); ?></label>
+				<input type="<?php echo current_theme_supports( 'html5' ) ? 'email' : 'text'; ?>" value="" id="subbox_<?php echo $this_id; ?>" placeholder="<?php echo esc_attr( $instance['input_text'] ); ?>" name="email" <?php if ( current_theme_supports( 'html5' ) ) : ?>required="required"<?php endif; ?> />
 				<input type="hidden" name="uri" value="<?php echo esc_attr( $instance['id'] ); ?>" />
 				<input type="hidden" name="loc" value="<?php echo esc_attr( get_locale() ); ?>" />
-				<input type="submit" value="<?php echo esc_attr( $instance['button_text'] ); ?>" id="subbutton" />
+				<input type="submit" value="<?php echo esc_attr( $instance['button_text'] ); ?>" />
 			</form>
 		<?php elseif ( ! empty( $instance['action'] ) ) : ?>
-			<form id="subscribe<?php echo $this->id; ?>" action="<?php echo esc_attr( $instance['action'] ); ?>" method="post" <?php if ($instance['open_same_window'] == 0 ) : ?> target="_blank"<?php endif; ?> onsubmit="if ( subbox1.value == '<?php echo esc_js( $instance['fname_text'] ); ?>') { subbox1.value = ''; } if ( subbox2.value == '<?php echo esc_js( $instance['lname_text'] ); ?>') { subbox2.value = ''; }" name="<?php echo esc_attr( $this->id ); ?>">
-				<?php if ( ! empty($instance['fname-field'] ) ) : ?><label for="subbox1" class="screenread"><?php echo esc_attr( $instance['fname_text'] ); ?></label><input type="text" id="subbox1" class="enews-subbox" value="" placeholder="<?php echo esc_attr( $instance['fname_text'] ); ?>" name="<?php echo esc_attr( $instance['fname-field'] ); ?>" /><?php endif ?>
-				<?php if ( ! empty($instance['lname-field'] ) ) : ?><label for="subbox2" class="screenread"><?php echo esc_attr( $instance['lname_text'] ); ?></label><input type="text" id="subbox2" class="enews-subbox" value="" placeholder="<?php echo esc_attr( $instance['lname_text'] ); ?>" name="<?php echo esc_attr( $instance['lname-field'] ); ?>" /><?php endif ?>
-				<label for="subbox" class="screenread"><?php echo esc_attr( $instance['input_text'] ); ?></label><input type="<?php echo current_theme_supports( 'html5' ) ? 'email' : 'text'; ?>" value="" id="subbox" placeholder="<?php echo esc_attr( $instance['input_text'] ); ?>" name="<?php echo esc_js( $instance['email-field'] ); ?>" <?php if ( current_theme_supports( 'html5' ) ) : ?>required="required"<?php endif; ?> />
+			<form id="subscribe<?php echo $this_id; ?>" action="<?php echo esc_attr( $instance['action'] ); ?>" method="post" <?php if ($instance['open_same_window'] == 0 ) : ?> target="_blank"<?php endif; ?> onsubmit="if ( subbox1_<?php echo $this_id; ?>.value == '<?php echo esc_js( $instance['fname_text'] ); ?>') { subbox1_<?php echo $this_id; ?>.value = ''; } if ( subbox2_<?php echo $this_id; ?>.value == '<?php echo esc_js( $instance['lname_text'] ); ?>') { subbox2_<?php echo $this_id; ?>.value = ''; }" name="<?php echo esc_attr( $this->id ); ?>">
+				<?php if ( ! empty($instance['fname-field'] ) ) : ?><label for="subbox1_<?php echo $this_id; ?>" class="screen-reader-text"><?php echo esc_attr( $instance['fname_text'] ); ?></label><input type="text" id="subbox1_<?php echo $this_id; ?>" class="enews-subbox" value="" placeholder="<?php echo esc_attr( $instance['fname_text'] ); ?>" name="<?php echo esc_attr( $instance['fname-field'] ); ?>" /><?php endif ?>
+				<?php if ( ! empty($instance['lname-field'] ) ) : ?><label for="subbox2_<?php echo $this_id; ?>" class="screen-reader-text"><?php echo esc_attr( $instance['lname_text'] ); ?></label><input type="text" id="subbox2_<?php echo $this_id; ?>" class="enews-subbox" value="" placeholder="<?php echo esc_attr( $instance['lname_text'] ); ?>" name="<?php echo esc_attr( $instance['lname-field'] ); ?>" /><?php endif ?>
+				<label for="subbox_<?php echo $this_id; ?>" class="screen-reader-text"><?php echo esc_attr( $instance['input_text'] ); ?></label><input type="<?php echo current_theme_supports( 'html5' ) ? 'email' : 'text'; ?>" value="" id="subbox_<?php echo $this_id; ?>" placeholder="<?php echo esc_attr( $instance['input_text'] ); ?>" name="<?php echo esc_js( $instance['email-field'] ); ?>" <?php if ( current_theme_supports( 'html5' ) ) : ?>required="required"<?php endif; ?> />
 				<?php echo $instance['hidden_fields']; ?>
-				<input type="submit" value="<?php echo esc_attr( $instance['button_text'] ); ?>" id="subbutton" />
+				<input type="submit" class="button" value="<?php echo esc_attr( $instance['button_text'] ); ?>" />
 			</form>
 		<?php elseif ( ! empty( $instance['mailpoet-list'] ) && 'disabled' != $instance['mailpoet-list'] ) : ?>
-			<form id="subscribe<?php echo $this->id; ?>" action="<?php echo $current_url; ?>" method="post" onsubmit="if ( subbox1.value == '<?php echo esc_js( $instance['fname_text'] ); ?>') { subbox1.value = ''; } if ( subbox2.value == '<?php echo esc_js( $instance['lname_text'] ); ?>') { subbox2.value = ''; }" name="<?php echo esc_attr( $this->id ); ?>">
+			<form id="subscribe<?php echo $this_id; ?>" action="<?php echo $current_url; ?>" method="post" onsubmit="if ( subbox1_<?php echo $this_id; ?>.value == '<?php echo esc_js( $instance['fname_text'] ); ?>') { subbox1_<?php echo $this_id; ?>.value = ''; } if ( subbox2_<?php echo $this_id; ?>.value == '<?php echo esc_js( $instance['lname_text'] ); ?>') { subbox2_<?php echo $this_id; ?>.value = ''; }" name="<?php echo esc_attr( $this->id ); ?>">
 				<?php if ( ! empty( $mailpoet_subscriber_id ) && is_int( $mailpoet_subscriber_id ) ) :
 					// confirmation message phrasing depends on whether the user has to verify his subscription or not
 					$mailpoet_needs_confirmation = WYSIJA::get( 'config','model' )->getValue( 'confirm_dbleoptin' ); // bool
@@ -133,12 +137,12 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 					<?php echo esc_html( $success_message ); ?>
 				</div>
 				<?php endif; ?>
-				<?php if ( isset( $instance['mailpoet-show-fname'] ) ) : ?><label for="subbox1" class="screenread"><?php echo esc_attr( $instance['fname_text'] ); ?></label><input type="text" id="subbox1" class="enews-subbox" value="" placeholder="<?php echo esc_attr( $instance['fname_text'] ); ?>" name="mailpoet-firstname" /><?php endif ?>
-				<?php if ( isset( $instance['mailpoet-show-lname'] ) ) : ?><label for="subbox2" class="screenread"><?php echo esc_attr( $instance['lname_text'] ); ?></label><input type="text" id="subbox2" class="enews-subbox" value="" placeholder="<?php echo esc_attr( $instance['lname_text'] ); ?>" name="mailpoet-lastname" /><?php endif ?>
-				<label for="subbox" class="screenread"><?php echo esc_attr( $instance['input_text'] ); ?></label><input type="<?php echo current_theme_supports( 'html5' ) ? 'email' : 'text'; ?>" value="" id="subbox" placeholder="<?php echo esc_attr( $instance['input_text'] ); ?>" name="mailpoet-email" <?php if ( current_theme_supports( 'html5' ) ) : ?>required="required"<?php endif; ?> />
+				<?php if ( isset( $instance['mailpoet-show-fname'] ) ) : ?><label for="subbox1_<?php echo $this_id; ?>" class="screen-reader-text"><?php echo esc_attr( $instance['fname_text'] ); ?></label><input type="text" id="subbox1_<?php echo $this_id; ?>" class="enews-subbox" value="" placeholder="<?php echo esc_attr( $instance['fname_text'] ); ?>" name="mailpoet-firstname" /><?php endif ?>
+				<?php if ( isset( $instance['mailpoet-show-lname'] ) ) : ?><label for="subbox2_<?php echo $this_id; ?>" class="screen-reader-text"><?php echo esc_attr( $instance['lname_text'] ); ?></label><input type="text" id="subbox2_<?php echo $this_id; ?>" class="enews-subbox" value="" placeholder="<?php echo esc_attr( $instance['lname_text'] ); ?>" name="mailpoet-lastname" /><?php endif ?>
+				<label for="subbox_<?php echo $this_id; ?>" class="screen-reader-text"><?php echo esc_attr( $instance['input_text'] ); ?></label><input type="<?php echo current_theme_supports( 'html5' ) ? 'email' : 'text'; ?>" value="" id="subbox_<?php echo $this_id; ?>" placeholder="<?php echo esc_attr( $instance['input_text'] ); ?>" name="mailpoet-email" <?php if ( current_theme_supports( 'html5' ) ) : ?>required="required"<?php endif; ?> />
 				<?php echo $instance['hidden_fields']; ?>
 				<input type="hidden" name="submission-type" value="mailpoet" />
-				<input type="submit" value="<?php echo esc_attr( $instance['button_text'] ); ?>" id="subbutton" />
+				<input type="submit" class="button" value="<?php echo esc_attr( $instance['button_text'] ); ?>" />
 			</form>
 		<?php endif;
 		echo wpautop( apply_filters( 'gee_after_text', $instance['after_text'] ) ); // We run KSES on update
@@ -155,7 +159,6 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 	 * If false is returned, the instance won't be saved / updated.
 	 *
 	 * @since 0.1.0
-	 * @since 2.0.3 Allow "a" tags in the Hidden Fields setting.
 	 *
 	 * @param array $new_instance New settings for this instance as input by the user via form().
 	 * @param array $old_instance Old settings for this instance.
