@@ -55,7 +55,7 @@ add_action( 'widgets_init', 'bjgk_genesis_enews_load_widgets' );
  * @since 0.1.0
  */
 function bjgk_genesis_enews_load_widgets() {
-	register_widget( 'BJGK_Genesis_eNews_Extended' );
+	register_widget( 'BJGK_Genesis_ENews_Extended' );
 }
 
 /**
