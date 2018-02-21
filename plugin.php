@@ -21,7 +21,8 @@
  * Text Domain: genesis-enews-extended
  * Domain Path: /languages
  */
- /*
+
+/**
  * This program is free software; you can redistribute it and/or modify it under the terms of the GNU
  * General Public License version 2, as published by the Free Software Foundation.  You may NOT assume
  * that you can use any other version of the GPL.
@@ -45,7 +46,7 @@ function bjgk_genesis_enews_load_translations() {
 	load_plugin_textdomain( $domain, false, basename( dirname( __FILE__ ) ) . '/languages' );
 }
 
-include 'class-bjgk-genesis-enews-extended.php';
+require 'class-bjgk-genesis-enews-extended.php';
 
 add_action( 'widgets_init', 'bjgk_genesis_enews_load_widgets' );
 /**
@@ -57,6 +58,11 @@ function bjgk_genesis_enews_load_widgets() {
 	register_widget( 'BJGK_Genesis_eNews_Extended' );
 }
 
+/**
+ * Adds CSS for screenreaders.
+ *
+ * @since 0.1.0
+ */
 function bjgk_genesis_enews_css() {
 	echo '<style type="text/css"> .enews .screenread {
 	height: 1px;
@@ -67,4 +73,4 @@ function bjgk_genesis_enews_css() {
     width: 1px; } </style>';
 }
 
-add_action('wp_head', 'bjgk_genesis_enews_css');
+add_action( 'wp_head', 'bjgk_genesis_enews_css' );
