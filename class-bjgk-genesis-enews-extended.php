@@ -32,22 +32,22 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 	 */
 	function __construct() {
 		$this->defaults = array(
-			'title'				=> '',
-			'text'				=> '',
-			'after_text'		=> '',
-			'hidden_fields'		=> '',
-			'open_same_window'	=> 0,
-			'fname-field'		=> '',
-			'lname-field'		=> '',
-			'input_text'		=> '',
-			'fname_text'		=> '',
-			'lname_text'		=> '',
-			'button_text'		=> '',
-			'id'				=> '',
-			'email-field'		=> '',
-			'action'			=> '',
-			'mailpoet_check'	=> __( 'Check your inbox or spam folder now to confirm your subscription.', 'wysija-newsletters' ),
-			'mailpoet_subbed'	=> __( "You've successfully subscribed.", 'wysija-newsletters' ),
+			'title'            => '',
+			'text'             => '',
+			'after_text'       => '',
+			'hidden_fields'    => '',
+			'open_same_window' => 0,
+			'fname-field'      => '',
+			'lname-field'      => '',
+			'input_text'       => '',
+			'fname_text'       => '',
+			'lname_text'       => '',
+			'button_text'      => '',
+			'id'               => '',
+			'email-field'      => '',
+			'action'           => '',
+			'mailpoet_check'   => __( 'Check your inbox or spam folder now to confirm your subscription.', 'wysija-newsletters' ),
+			'mailpoet_subbed'  => __( "You've successfully subscribed.", 'wysija-newsletters' ),
 		);
 
 		$widget_ops = array(
@@ -76,25 +76,25 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 		// Checks if MailPoet exists. If so, a check for form submission wil take place.
 		if ( class_exists( 'WYSIJA' ) && isset( $_POST['submission-type'] ) && 'mailpoet' == $_POST['submission-type'] && ! empty( $instance['mailpoet-list'] ) ) {
 			$subscriber_data = array(
-				'user' => array(
+				'user'      => array(
 					'firstname' => isset( $_POST['mailpoet-firstname'] ) ? $_POST['mailpoet-firstname'] : '',
-					'lastname' 	=> isset( $_POST['mailpoet-lastname'] ) ? $_POST['mailpoet-lastname'] : '',
-					'email' 	=> isset( $_POST['mailpoet-email'] ) ? $_POST['mailpoet-email'] : '',
+					'lastname'  => isset( $_POST['mailpoet-lastname'] ) ? $_POST['mailpoet-lastname'] : '',
+					'email'     => isset( $_POST['mailpoet-email'] ) ? $_POST['mailpoet-email'] : '',
 				),
 				'user_list' => array(
-					'list_ids' => array_values( $instance['mailpoet-list'] )
+					'list_ids' => array_values( $instance['mailpoet-list'] ),
 				),
 			);
 
-    		$mailpoet_subscriber_id = WYSIJA::get( 'user', 'helper' )->addSubscriber( $subscriber_data );
+			$mailpoet_subscriber_id = WYSIJA::get( 'user', 'helper' )->addSubscriber( $subscriber_data );
 		}
 
-	 	// Set default fname_text, lname_text for backwards compat for installs upgraded from 0.1.6+ to 0.3.0+
-		if (empty($instance['fname_text'])) {
-			$instance['fname_text'] = "First Name";
+		// Set default fname_text, lname_text for backwards compat for installs upgraded from 0.1.6+ to 0.3.0+
+		if ( empty( $instance['fname_text'] ) ) {
+			$instance['fname_text'] = 'First Name';
 		}
-		if (empty($instance['lname_text'])) {
-			$instance['lname_text'] = "Last Name";
+		if ( empty( $instance['lname_text'] ) ) {
+			$instance['lname_text'] = 'Last Name';
 		}
 
 		// Establishes current URL for MailPoet action fields.
@@ -102,45 +102,76 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 
 		echo $before_widget . '<div class="enews">';
 
-		if ( ! empty( $instance['title'] ) )
+		if ( ! empty( $instance['title'] ) ) {
 			echo $before_title . apply_filters( 'widget_title', $instance['title'], $instance, $this->id_base ) . $after_title;
+		}
 
 		echo wpautop( apply_filters( 'gee_text', $instance['text'] ) ); // We run KSES on update
 
 		if ( ! empty( $instance['id'] ) ) : ?>
 			<form id="subscribe-<?php echo $this->id; ?>" action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open( 'http://feedburner.google.com/fb/a/mailverify?uri=<?php echo esc_js( $instance['id'] ); ?>', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true" name="<?php echo esc_attr( $this->id ); ?>">
-				<label for="subbox" class="screenread"><?php echo esc_attr( $instance['input_text'] ); ?></label><input type="<?php echo current_theme_supports( 'html5' ) ? 'email' : 'text'; ?>" value="" id="subbox" placeholder="<?php echo esc_attr( $instance['input_text'] ); ?>" name="email" <?php if ( current_theme_supports( 'html5' ) ) : ?>required="required"<?php endif; ?> />
+				<label for="subbox" class="screenread"><?php echo esc_attr( $instance['input_text'] ); ?></label><input type="<?php echo current_theme_supports( 'html5' ) ? 'email' : 'text'; ?>" value="" id="subbox" placeholder="<?php echo esc_attr( $instance['input_text'] ); ?>" name="email" 
+																	<?php
+																	if ( current_theme_supports( 'html5' ) ) :
+													?>
+													required="required"<?php endif; ?> />
 				<input type="hidden" name="uri" value="<?php echo esc_attr( $instance['id'] ); ?>" />
 				<input type="hidden" name="loc" value="<?php echo esc_attr( get_locale() ); ?>" />
 				<input type="submit" value="<?php echo esc_attr( $instance['button_text'] ); ?>" id="subbutton" />
 			</form>
 		<?php elseif ( ! empty( $instance['action'] ) ) : ?>
-			<form id="subscribe<?php echo $this->id; ?>" action="<?php echo esc_attr( $instance['action'] ); ?>" method="post" <?php if ($instance['open_same_window'] == 0 ) : ?> target="_blank"<?php endif; ?> onsubmit="if ( subbox1.value == '<?php echo esc_js( $instance['fname_text'] ); ?>') { subbox1.value = ''; } if ( subbox2.value == '<?php echo esc_js( $instance['lname_text'] ); ?>') { subbox2.value = ''; }" name="<?php echo esc_attr( $this->id ); ?>">
-				<?php if ( ! empty($instance['fname-field'] ) ) : ?><label for="subbox1" class="screenread"><?php echo esc_attr( $instance['fname_text'] ); ?></label><input type="text" id="subbox1" class="enews-subbox" value="" placeholder="<?php echo esc_attr( $instance['fname_text'] ); ?>" name="<?php echo esc_attr( $instance['fname-field'] ); ?>" /><?php endif ?>
-				<?php if ( ! empty($instance['lname-field'] ) ) : ?><label for="subbox2" class="screenread"><?php echo esc_attr( $instance['lname_text'] ); ?></label><input type="text" id="subbox2" class="enews-subbox" value="" placeholder="<?php echo esc_attr( $instance['lname_text'] ); ?>" name="<?php echo esc_attr( $instance['lname-field'] ); ?>" /><?php endif ?>
-				<label for="subbox" class="screenread"><?php echo esc_attr( $instance['input_text'] ); ?></label><input type="<?php echo current_theme_supports( 'html5' ) ? 'email' : 'text'; ?>" value="" id="subbox" placeholder="<?php echo esc_attr( $instance['input_text'] ); ?>" name="<?php echo esc_js( $instance['email-field'] ); ?>" <?php if ( current_theme_supports( 'html5' ) ) : ?>required="required"<?php endif; ?> />
+			<form id="subscribe<?php echo $this->id; ?>" action="<?php echo esc_attr( $instance['action'] ); ?>" method="post" 
+											<?php
+											if ( $instance['open_same_window'] == 0 ) :
+								?>
+								 target="_blank"<?php endif; ?> onsubmit="if ( subbox1.value == '<?php echo esc_js( $instance['fname_text'] ); ?>') { subbox1.value = ''; } if ( subbox2.value == '<?php echo esc_js( $instance['lname_text'] ); ?>') { subbox2.value = ''; }" name="<?php echo esc_attr( $this->id ); ?>">
+				<?php
+				if ( ! empty( $instance['fname-field'] ) ) :
+?>
+<label for="subbox1" class="screenread"><?php echo esc_attr( $instance['fname_text'] ); ?></label><input type="text" id="subbox1" class="enews-subbox" value="" placeholder="<?php echo esc_attr( $instance['fname_text'] ); ?>" name="<?php echo esc_attr( $instance['fname-field'] ); ?>" /><?php endif ?>
+				<?php
+				if ( ! empty( $instance['lname-field'] ) ) :
+?>
+<label for="subbox2" class="screenread"><?php echo esc_attr( $instance['lname_text'] ); ?></label><input type="text" id="subbox2" class="enews-subbox" value="" placeholder="<?php echo esc_attr( $instance['lname_text'] ); ?>" name="<?php echo esc_attr( $instance['lname-field'] ); ?>" /><?php endif ?>
+				<label for="subbox" class="screenread"><?php echo esc_attr( $instance['input_text'] ); ?></label><input type="<?php echo current_theme_supports( 'html5' ) ? 'email' : 'text'; ?>" value="" id="subbox" placeholder="<?php echo esc_attr( $instance['input_text'] ); ?>" name="<?php echo esc_js( $instance['email-field'] ); ?>" 
+																	<?php
+																	if ( current_theme_supports( 'html5' ) ) :
+													?>
+													required="required"<?php endif; ?> />
 				<?php echo $instance['hidden_fields']; ?>
 				<input type="submit" value="<?php echo esc_attr( $instance['button_text'] ); ?>" id="subbutton" />
 			</form>
 		<?php elseif ( ! empty( $instance['mailpoet-list'] ) && 'disabled' != $instance['mailpoet-list'] ) : ?>
 			<form id="subscribe<?php esc_attr_e( $this->id ); ?>" action="<?php esc_attr_e( $current_url ); ?>" method="post" onsubmit="if ( subbox1.value == '<?php echo esc_js( $instance['fname_text'] ); ?>') { subbox1.value = ''; } if ( subbox2.value == '<?php echo esc_js( $instance['lname_text'] ); ?>') { subbox2.value = ''; }" name="<?php echo esc_attr( $this->id ); ?>">
-				<?php if ( ! empty( $mailpoet_subscriber_id ) && is_int( $mailpoet_subscriber_id ) ) :
+				<?php
+				if ( ! empty( $mailpoet_subscriber_id ) && is_int( $mailpoet_subscriber_id ) ) :
 					// confirmation message phrasing depends on whether the user has to verify his subscription or not
-					$mailpoet_needs_confirmation = WYSIJA::get( 'config','model' )->getValue( 'confirm_dbleoptin' ); // bool
-					$success_message = $mailpoet_needs_confirmation ? $instance['mailpoet_check'] : $instance['mailpoet_subbed'];
+					$mailpoet_needs_confirmation = WYSIJA::get( 'config', 'model' )->getValue( 'confirm_dbleoptin' ); // bool
+					$success_message             = $mailpoet_needs_confirmation ? $instance['mailpoet_check'] : $instance['mailpoet_subbed'];
 					?>
 				<div class="mailpoet-message mailpoet-success <?php echo $mailpoet_needs_confirmation ? 'mailpoet-needs-confirmation' : 'mailpoet-confirmed'; ?>">
 					<?php echo esc_html( $success_message ); ?>
 				</div>
 				<?php endif; ?>
-				<?php if ( isset( $instance['mailpoet-show-fname'] ) ) : ?><label for="subbox1" class="screenread"><?php echo esc_attr( $instance['fname_text'] ); ?></label><input type="text" id="subbox1" class="enews-subbox" value="" placeholder="<?php echo esc_attr( $instance['fname_text'] ); ?>" name="mailpoet-firstname" /><?php endif ?>
-				<?php if ( isset( $instance['mailpoet-show-lname'] ) ) : ?><label for="subbox2" class="screenread"><?php echo esc_attr( $instance['lname_text'] ); ?></label><input type="text" id="subbox2" class="enews-subbox" value="" placeholder="<?php echo esc_attr( $instance['lname_text'] ); ?>" name="mailpoet-lastname" /><?php endif ?>
-				<label for="subbox" class="screenread"><?php echo esc_attr( $instance['input_text'] ); ?></label><input type="<?php echo current_theme_supports( 'html5' ) ? 'email' : 'text'; ?>" value="" id="subbox" placeholder="<?php echo esc_attr( $instance['input_text'] ); ?>" name="mailpoet-email" <?php if ( current_theme_supports( 'html5' ) ) : ?>required="required"<?php endif; ?> />
+				<?php
+				if ( isset( $instance['mailpoet-show-fname'] ) ) :
+?>
+<label for="subbox1" class="screenread"><?php echo esc_attr( $instance['fname_text'] ); ?></label><input type="text" id="subbox1" class="enews-subbox" value="" placeholder="<?php echo esc_attr( $instance['fname_text'] ); ?>" name="mailpoet-firstname" /><?php endif ?>
+				<?php
+				if ( isset( $instance['mailpoet-show-lname'] ) ) :
+?>
+<label for="subbox2" class="screenread"><?php echo esc_attr( $instance['lname_text'] ); ?></label><input type="text" id="subbox2" class="enews-subbox" value="" placeholder="<?php echo esc_attr( $instance['lname_text'] ); ?>" name="mailpoet-lastname" /><?php endif ?>
+				<label for="subbox" class="screenread"><?php echo esc_attr( $instance['input_text'] ); ?></label><input type="<?php echo current_theme_supports( 'html5' ) ? 'email' : 'text'; ?>" value="" id="subbox" placeholder="<?php echo esc_attr( $instance['input_text'] ); ?>" name="mailpoet-email" 
+																	<?php
+																	if ( current_theme_supports( 'html5' ) ) :
+													?>
+													required="required"<?php endif; ?> />
 				<?php echo $instance['hidden_fields']; ?>
 				<input type="hidden" name="submission-type" value="mailpoet" />
 				<input type="submit" value="<?php echo esc_attr( $instance['button_text'] ); ?>" id="subbutton" />
 			</form>
-		<?php endif;
+		<?php
+		endif;
 		echo wpautop( apply_filters( 'gee_after_text', $instance['after_text'] ) ); // We run KSES on update
 
 		echo '</div>' . $after_widget;
@@ -163,17 +194,17 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 	 * @return array Settings to save or bool false to cancel saving
 	 */
 	function update( $new_instance, $old_instance ) {
-		$new_instance['title']           = strip_tags( $new_instance['title'], "<i>" );
-		$new_instance['text']            = wp_kses_post( $new_instance['text']);
-		$new_instance['hidden_fields']   = strip_tags( $new_instance['hidden_fields'], "<a>, <div>, <fieldset>, <input>, <label>, <legend>, <option>, <optgroup>, <select>, <textarea>" );
-		$new_instance['after_text']      = wp_kses_post( $new_instance['after_text']);
-		$new_instance['id']              = str_replace("http://feeds.feedburner.com/", "", $new_instance['id']);
+		$new_instance['title']         = strip_tags( $new_instance['title'], '<i>' );
+		$new_instance['text']          = wp_kses_post( $new_instance['text'] );
+		$new_instance['hidden_fields'] = strip_tags( $new_instance['hidden_fields'], '<a>, <div>, <fieldset>, <input>, <label>, <legend>, <option>, <optgroup>, <select>, <textarea>' );
+		$new_instance['after_text']    = wp_kses_post( $new_instance['after_text'] );
+		$new_instance['id']            = str_replace( 'http://feeds.feedburner.com/', '', $new_instance['id'] );
 		if ( isset( $new_instance['mailpoet_check'] ) ) {
-			$new_instance['mailpoet_check']  = wp_kses_post( $new_instance['mailpoet_check'] );
+			$new_instance['mailpoet_check'] = wp_kses_post( $new_instance['mailpoet_check'] );
 		}
 
 		if ( isset( $new_instance['mailpoet_subbed'] ) ) {
-			$new_instance['mailpoet_subbed']  = wp_kses_post( $new_instance['mailpoet_subbed'] );
+			$new_instance['mailpoet_subbed'] = wp_kses_post( $new_instance['mailpoet_subbed'] );
 		}
 
 		return $new_instance;
@@ -205,11 +236,14 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 		</p>
 
 		<hr style="background-color: #ccc; border: 0; height: 1px; margin: 20px 0;">
-		<?php if ( class_exists( 'WYSIJA' ) ) :
-			$mp_model_list = WYSIJA::get( 'list','model' );
-			$mp_lists = $mp_model_list->get( array( 'name','list_id' ), array(
-				'is_enabled' => 1,
-			) );
+		<?php
+		if ( class_exists( 'WYSIJA' ) ) :
+			$mp_model_list = WYSIJA::get( 'list', 'model' );
+			$mp_lists      = $mp_model_list->get(
+				array( 'name', 'list_id' ), array(
+					'is_enabled' => 1,
+				)
+			);
 		?>
 		<p>
 			<label for="<?php echo esc_attr( $this->get_field_id( 'mailpoet-list' ) ); ?>"><?php _e( 'MailPoet List', 'genesis-enews-extended' ); ?>:</label>
@@ -218,7 +252,12 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 					<?php foreach ( $mp_lists as $mp_list ) : ?>
 					<li>
 						<label>
-							<input type="checkbox" name="<?php echo esc_attr( $this->get_field_name( 'mailpoet-list' ) ); ?>[]" value="<?php echo esc_attr( $mp_list['list_id'] ); ?>" <?php if ( isset( $instance['mailpoet-list'] ) ) { checked( in_array( $mp_list['list_id'], (array) $instance['mailpoet-list'] ) ); } ?> />
+							<input type="checkbox" name="<?php echo esc_attr( $this->get_field_name( 'mailpoet-list' ) ); ?>[]" value="<?php echo esc_attr( $mp_list['list_id'] ); ?>" 
+																	<?php
+																	if ( isset( $instance['mailpoet-list'] ) ) {
+																		checked( in_array( $mp_list['list_id'], (array) $instance['mailpoet-list'] ) ); }
+?>
+ />
 							<?php echo esc_html( $mp_list['name'] ); ?>
 						</label>
 					</li>
@@ -279,7 +318,7 @@ class BJGK_Genesis_eNews_Extended extends WP_Widget {
 		<p>
 			<label for="<?php echo esc_attr( $this->get_field_id( 'hidden_fields' ) ); ?>"><?php _e( 'Hidden Fields', 'genesis-enews-extended' ); ?>:</label>
 			<textarea id="<?php echo esc_attr( $this->get_field_id( 'hidden_fields' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'hidden_fields' ) ); ?>" class="widefat"><?php echo esc_attr( $instance['hidden_fields'] ); ?></textarea>
-			<br><small><?php _e( 'Not all services use hidden fields.', 'genesis-enews-extended'); ?></small>
+			<br><small><?php _e( 'Not all services use hidden fields.', 'genesis-enews-extended' ); ?></small>
 		</p>
 
 		<p>
