@@ -69,7 +69,7 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 	public function widget( $args, $instance ) {
 		extract( $args );
 
-		// Merge with defaults
+		// Merge with defaults.
 		$instance = wp_parse_args( (array) $instance, $this->defaults );
 		$instance = apply_filters( 'genesis-enews-extended-args', $instance );
 
@@ -100,16 +100,19 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 		// Establishes current URL for MailPoet action fields.
 		$current_url = ( is_ssl() ? 'https://' : 'http://' ) . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 
-		echo $before_widget . '<div class="enews">';
+		// We run KSES on update since we want to allow some HTML, so ignoring the ouput escape check.
+		echo $before_widget . '<div class="enews">'; // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped
 
 		if ( ! empty( $instance['title'] ) ) {
-			echo $before_title . apply_filters( 'widget_title', $instance['title'], $instance, $this->id_base ) . $after_title;
+			// We run KSES on update since we want to allow some HTML, so ignoring the ouput escape check.
+			echo $before_title . apply_filters( 'widget_title', $instance['title'], $instance, $this->id_base ) . $after_title; // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped
 		}
 
-		echo wpautop( apply_filters( 'gee_text', $instance['text'] ) ); // We run KSES on update
+		// We run KSES on update since we want to allow some HTML, so ignoring the ouput escape check.
+		echo wpautop( apply_filters( 'gee_text', $instance['text'] ) ); // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped
 
 		if ( ! empty( $instance['id'] ) ) : ?>
-			<form id="subscribe-<?php echo $this->id; ?>" action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open( 'http://feedburner.google.com/fb/a/mailverify?uri=<?php echo esc_js( $instance['id'] ); ?>', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true" name="<?php echo esc_attr( $this->id ); ?>">
+			<form id="subscribe-<?php echo esc_attr( $this->id ); ?>" action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open( 'http://feedburner.google.com/fb/a/mailverify?uri=<?php echo esc_js( $instance['id'] ); ?>', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true" name="<?php echo esc_attr( $this->id ); ?>">
 				<label for="subbox" class="screenread"><?php echo esc_attr( $instance['input_text'] ); ?></label><input type="<?php echo current_theme_supports( 'html5' ) ? 'email' : 'text'; ?>" value="" id="subbox" placeholder="<?php echo esc_attr( $instance['input_text'] ); ?>" name="email"
 																	<?php
 																	if ( current_theme_supports( 'html5' ) ) :
@@ -120,11 +123,11 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 				<input type="submit" value="<?php echo esc_attr( $instance['button_text'] ); ?>" id="subbutton" />
 			</form>
 		<?php elseif ( ! empty( $instance['action'] ) ) : ?>
-			<form id="subscribe<?php echo $this->id; ?>" action="<?php echo esc_attr( $instance['action'] ); ?>" method="post"
+			<form id="subscribe<?php echo esc_attr( $this->id ); ?>" action="<?php echo esc_attr( $instance['action'] ); ?>" method="post"
 											<?php
-											if ( $instance['open_same_window'] == 0 ) :
+											if ( 0 === $instance['open_same_window'] ) :
 								?>
-								 target="_blank"<?php endif; ?> onsubmit="if ( subbox1.value == '<?php echo esc_js( $instance['fname_text'] ); ?>') { subbox1.value = ''; } if ( subbox2.value == '<?php echo esc_js( $instance['lname_text'] ); ?>') { subbox2.value = ''; }" name="<?php echo esc_attr( $this->id ); ?>">
+								target="_blank"<?php endif; ?> onsubmit="if ( subbox1.value == '<?php echo esc_js( $instance['fname_text'] ); ?>') { subbox1.value = ''; } if ( subbox2.value == '<?php echo esc_js( $instance['lname_text'] ); ?>') { subbox2.value = ''; }" name="<?php echo esc_attr( $this->id ); ?>">
 				<?php
 				if ( ! empty( $instance['fname-field'] ) ) :
 ?>
@@ -138,15 +141,16 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 																	if ( current_theme_supports( 'html5' ) ) :
 													?>
 													required="required"<?php endif; ?> />
-				<?php echo $instance['hidden_fields']; ?>
+				// We run KSES on update since we want to allow some HTML, so ignoring the ouput escape check.
+				<?php echo $instance['hidden_fields']; // phpcs:ignore ?>
 				<input type="submit" value="<?php echo esc_attr( $instance['button_text'] ); ?>" id="subbutton" />
 			</form>
 		<?php elseif ( ! empty( $instance['mailpoet-list'] ) && 'disabled' != $instance['mailpoet-list'] ) : ?>
-			<form id="subscribe<?php esc_attr_e( $this->id ); ?>" action="<?php esc_attr_e( $current_url ); ?>" method="post" onsubmit="if ( subbox1.value == '<?php echo esc_js( $instance['fname_text'] ); ?>') { subbox1.value = ''; } if ( subbox2.value == '<?php echo esc_js( $instance['lname_text'] ); ?>') { subbox2.value = ''; }" name="<?php echo esc_attr( $this->id ); ?>">
+			<form id="subscribe<?php echo esc_attr( $this->id ); ?>" action="<?php echo esc_attr( $current_url ); ?>" method="post" onsubmit="if ( subbox1.value == '<?php echo esc_js( $instance['fname_text'] ); ?>') { subbox1.value = ''; } if ( subbox2.value == '<?php echo esc_js( $instance['lname_text'] ); ?>') { subbox2.value = ''; }" name="<?php echo esc_attr( $this->id ); ?>">
 				<?php
 				if ( ! empty( $mailpoet_subscriber_id ) && is_int( $mailpoet_subscriber_id ) ) :
-					// confirmation message phrasing depends on whether the user has to verify his subscription or not
-					$mailpoet_needs_confirmation = WYSIJA::get( 'config', 'model' )->getValue( 'confirm_dbleoptin' ); // bool
+					// confirmation message phrasing depends on whether the user has to verify his subscription or not.
+					$mailpoet_needs_confirmation = WYSIJA::get( 'config', 'model' )->getValue( 'confirm_dbleoptin' ); // bool.
 					$success_message             = $mailpoet_needs_confirmation ? $instance['mailpoet_check'] : $instance['mailpoet_subbed'];
 					?>
 				<div class="mailpoet-message mailpoet-success <?php echo $mailpoet_needs_confirmation ? 'mailpoet-needs-confirmation' : 'mailpoet-confirmed'; ?>">
@@ -166,15 +170,18 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 																	if ( current_theme_supports( 'html5' ) ) :
 													?>
 													required="required"<?php endif; ?> />
-				<?php echo $instance['hidden_fields']; ?>
+				// We run KSES on update since we want to allow some HTML, so ignoring the ouput escape check.
+				<?php echo $instance['hidden_fields']; // phpcs:ignore ?>
 				<input type="hidden" name="submission-type" value="mailpoet" />
 				<input type="submit" value="<?php echo esc_attr( $instance['button_text'] ); ?>" id="subbutton" />
 			</form>
 		<?php
 		endif;
-		echo wpautop( apply_filters( 'gee_after_text', $instance['after_text'] ) ); // We run KSES on update
+		// We run KSES on update since we want to allow some HTML, so ignoring the ouput escape check.
+		echo wpautop( apply_filters( 'gee_after_text', $instance['after_text'] ) ); // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped
 
-		echo '</div>' . $after_widget;
+// We run KSES on update since we want to allow some HTML, so ignoring the ouput escape check.
+		echo '</div>' . $after_widget; // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped
 
 	}
 
@@ -217,21 +224,21 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 	 *
 	 * @param array $instance Current settings.
 	 */
-	function form( $instance ) {
-		// Merge with defaults
+	public function form( $instance ) {
+		// Merge with defaults.
 		$instance = wp_parse_args( (array) $instance, $this->defaults );
 		?>
 		<p>
-			<label for="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"><?php _e( 'Title', 'genesis-enews-extended' ); ?>:</label><br />
+			<label for="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"><?php esc_html_e( 'Title', 'genesis-enews-extended' ); ?>:</label><br />
 			<input type="text" id="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'title' ) ); ?>" value="<?php echo esc_attr( $instance['title'] ); ?>" class="widefat" />
 		</p>
 
 		<p>
-			<label for="<?php echo esc_attr( $this->get_field_id( 'text' ) ); ?>"><?php _e( 'Text To Show Before Form', 'genesis-enews-extended' ); ?>:</label><br />
+			<label for="<?php echo esc_attr( $this->get_field_id( 'text' ) ); ?>"><?php esc_html_e( 'Text To Show Before Form', 'genesis-enews-extended' ); ?>:</label><br />
 			<textarea id="<?php echo esc_attr( $this->get_field_id( 'text' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'text' ) ); ?>" class="widefat" rows="6" cols="4"><?php echo htmlspecialchars( $instance['text'] ); ?></textarea>
 		</p>
 		<p>
-			<label for="<?php echo esc_attr( $this->get_field_id( 'after_text' ) ); ?>"><?php _e( 'Text To Show After Form', 'genesis-enews-extended' ); ?>:</label><br />
+			<label for="<?php echo esc_attr( $this->get_field_id( 'after_text' ) ); ?>"><?php esc_html_e( 'Text To Show After Form', 'genesis-enews-extended' ); ?>:</label><br />
 			<textarea id="<?php echo esc_attr( $this->get_field_id( 'after_text' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'after_text' ) ); ?>" class="widefat" rows="6" cols="4"><?php echo htmlspecialchars( $instance['after_text'] ); ?></textarea>
 		</p>
 
@@ -255,9 +262,9 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 							<input type="checkbox" name="<?php echo esc_attr( $this->get_field_name( 'mailpoet-list' ) ); ?>[]" value="<?php echo esc_attr( $mp_list['list_id'] ); ?>"
 																	<?php
 																	if ( isset( $instance['mailpoet-list'] ) ) {
-																		checked( in_array( $mp_list['list_id'], (array) $instance['mailpoet-list'] ) ); }
+																		checked( in_array( $mp_list['list_id'], (array) $instance['mailpoet-list'], true ) ); }
 ?>
- />
+/>
 							<?php echo esc_html( $mp_list['name'] ); ?>
 						</label>
 					</li>
@@ -265,20 +272,20 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 				</ul>
 
 				<small>
-					<?php _e( 'Show Fields:', 'genesis-enews-extended' ); ?><br/>
+					<?php esc_html_e( 'Show Fields:', 'genesis-enews-extended' ); ?><br/>
 					<label>
 						<input type="checkbox" name="<?php echo esc_attr( $this->get_field_name( 'mailpoet-show-fname' ) ); ?>" value="1" <?php checked( isset( $instance['mailpoet-show-fname'] ) ); ?> />
-						<?php _e( 'First Name', 'genesis-enews-extended' ); ?>
+						<?php esc_html_e( 'First Name', 'genesis-enews-extended' ); ?>
 					</label>
 					<label>
 						<input type="checkbox" name="<?php echo esc_attr( $this->get_field_name( 'mailpoet-show-lname' ) ); ?>" value="1" <?php checked( isset( $instance['mailpoet-show-lname'] ) ); ?> />
-						<?php _e( 'Last Name', 'genesis-enews-extended' ); ?>
+						<?php esc_html_e( 'Last Name', 'genesis-enews-extended' ); ?>
 					</label>
 
 				</small>
 
 				<p>
-					<label for="<?php echo esc_attr( $this->get_field_id( 'mailpoet_check' ) ); ?>"><?php _e( 'Text Displayed If Confirmation Needed', 'genesis-enews-extended' ); ?>:</label><br />
+					<label for="<?php echo esc_attr( $this->get_field_id( 'mailpoet_check' ) ); ?>"><?php esc_html_e( 'Text Displayed If Confirmation Needed', 'genesis-enews-extended' ); ?>:</label><br />
 					<textarea id="<?php echo esc_attr( $this->get_field_id( 'mailpoet_check' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'mailpoet_check' ) ); ?>" class="widefat" rows="6" cols="4"><?php echo htmlspecialchars( $instance['mailpoet_check'] ); ?></textarea>
 				</p>
 				<p>
