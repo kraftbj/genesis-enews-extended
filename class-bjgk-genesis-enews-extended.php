@@ -89,6 +89,15 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 			$mailpoet_subscriber_id = WYSIJA::get( 'user', 'helper' )->addSubscriber( $subscriber_data );
 		}
 
+		if ( isset( $_POST['no_service'] ) && 'no_service' === $_POST['no_service'] ) { // Input var okay.
+			// Add setup for an e-mail and use wp_mail()
+			echo $before_widget . '<div class="enews">'; // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped
+			_e( 'Thank you! You have been added.', 'genesis-enews-extended' );
+			echo '</div>' . $after_widget; // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped
+			// Add output to confirm submission
+			return;
+		}
+
 		// Set default fname_text, lname_text for backwards compat for installs upgraded from 0.1.6+ to 0.3.0+.
 		if ( empty( $instance['fname_text'] ) ) {
 			$instance['fname_text'] = 'First Name';
@@ -122,29 +131,6 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 				<input type="hidden" name="loc" value="<?php echo esc_attr( get_locale() ); ?>" />
 				<input type="submit" value="<?php echo esc_attr( $instance['button_text'] ); ?>" id="subbutton" />
 			</form>
-		<?php elseif ( ! empty( $instance['action'] ) ) : ?>
-			<form id="subscribe<?php echo esc_attr( $this->id ); ?>" action="<?php echo esc_attr( $instance['action'] ); ?>" method="post"
-											<?php
-											if ( 0 === $instance['open_same_window'] ) :
-								?>
-								target="_blank"<?php endif; ?> onsubmit="if ( subbox1.value == '<?php echo esc_js( $instance['fname_text'] ); ?>') { subbox1.value = ''; } if ( subbox2.value == '<?php echo esc_js( $instance['lname_text'] ); ?>') { subbox2.value = ''; }" name="<?php echo esc_attr( $this->id ); ?>">
-				<?php
-				if ( ! empty( $instance['fname-field'] ) ) :
-?>
-<label for="subbox1" class="screenread"><?php echo esc_attr( $instance['fname_text'] ); ?></label><input type="text" id="subbox1" class="enews-subbox" value="" placeholder="<?php echo esc_attr( $instance['fname_text'] ); ?>" name="<?php echo esc_attr( $instance['fname-field'] ); ?>" /><?php endif ?>
-				<?php
-				if ( ! empty( $instance['lname-field'] ) ) :
-?>
-<label for="subbox2" class="screenread"><?php echo esc_attr( $instance['lname_text'] ); ?></label><input type="text" id="subbox2" class="enews-subbox" value="" placeholder="<?php echo esc_attr( $instance['lname_text'] ); ?>" name="<?php echo esc_attr( $instance['lname-field'] ); ?>" /><?php endif ?>
-				<label for="subbox" class="screenread"><?php echo esc_attr( $instance['input_text'] ); ?></label><input type="<?php echo current_theme_supports( 'html5' ) ? 'email' : 'text'; ?>" value="" id="subbox" placeholder="<?php echo esc_attr( $instance['input_text'] ); ?>" name="<?php echo esc_js( $instance['email-field'] ); ?>"
-																	<?php
-																	if ( current_theme_supports( 'html5' ) ) :
-													?>
-													required="required"<?php endif; ?> />
-				// We run KSES on update since we want to allow some HTML, so ignoring the ouput escape check.
-				<?php echo $instance['hidden_fields']; // phpcs:ignore ?>
-				<input type="submit" value="<?php echo esc_attr( $instance['button_text'] ); ?>" id="subbutton" />
-			</form>
 		<?php elseif ( ! empty( $instance['mailpoet-list'] ) && 'disabled' != $instance['mailpoet-list'] ) : ?>
 			<form id="subscribe<?php echo esc_attr( $this->id ); ?>" action="<?php echo esc_attr( $current_url ); ?>" method="post" onsubmit="if ( subbox1.value == '<?php echo esc_js( $instance['fname_text'] ); ?>') { subbox1.value = ''; } if ( subbox2.value == '<?php echo esc_js( $instance['lname_text'] ); ?>') { subbox2.value = ''; }" name="<?php echo esc_attr( $this->id ); ?>">
 				<?php
@@ -173,6 +159,34 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 				// We run KSES on update since we want to allow some HTML, so ignoring the ouput escape check.
 				<?php echo $instance['hidden_fields']; // phpcs:ignore ?>
 				<input type="hidden" name="submission-type" value="mailpoet" />
+				<input type="submit" value="<?php echo esc_attr( $instance['button_text'] ); ?>" id="subbutton" />
+			</form>
+		<?php else : ?>
+			<?php $action = ! empty( $instance['action'] ) ? empty( $instance['action'] ) : '#'; ?>
+			<form id="subscribe<?php echo esc_attr( $this->id ); ?>" action="<?php echo esc_attr( $action ); ?>" method="post"
+											<?php
+											if ( 0 === $instance['open_same_window'] ) :
+								?>
+								target="_blank"<?php endif; ?> onsubmit="if ( subbox1.value == '<?php echo esc_js( $instance['fname_text'] ); ?>') { subbox1.value = ''; } if ( subbox2.value == '<?php echo esc_js( $instance['lname_text'] ); ?>') { subbox2.value = ''; }" name="<?php echo esc_attr( $this->id ); ?>">
+				<?php
+				if ( ! empty( $instance['fname-field'] ) ) :
+?>
+<label for="subbox1" class="screenread"><?php echo esc_attr( $instance['fname_text'] ); ?></label><input type="text" id="subbox1" class="enews-subbox" value="" placeholder="<?php echo esc_attr( $instance['fname_text'] ); ?>" name="<?php echo esc_attr( $instance['fname-field'] ); ?>" /><?php endif ?>
+				<?php
+				if ( ! empty( $instance['lname-field'] ) ) :
+?>
+<label for="subbox2" class="screenread"><?php echo esc_attr( $instance['lname_text'] ); ?></label><input type="text" id="subbox2" class="enews-subbox" value="" placeholder="<?php echo esc_attr( $instance['lname_text'] ); ?>" name="<?php echo esc_attr( $instance['lname-field'] ); ?>" /><?php endif ?>
+				<label for="subbox" class="screenread"><?php echo esc_attr( $instance['input_text'] ); ?></label><input type="<?php echo current_theme_supports( 'html5' ) ? 'email' : 'text'; ?>" value="" id="subbox" placeholder="<?php echo esc_attr( $instance['input_text'] ); ?>" name="<?php echo esc_js( $instance['email-field'] ); ?>"
+																	<?php
+																	if ( current_theme_supports( 'html5' ) ) :
+													?>
+													required="required"<?php endif; ?> />
+				// We run KSES on update since we want to allow some HTML, so ignoring the ouput escape check.
+				<?php echo $instance['hidden_fields']; // phpcs:ignore ?>
+				<?php if ( '#' === $action ) {
+					echo '<input type="hidden" name="no_service" value="no_service" />';
+				}
+				?>
 				<input type="submit" value="<?php echo esc_attr( $instance['button_text'] ); ?>" id="subbutton" />
 			</form>
 		<?php
