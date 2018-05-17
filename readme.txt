@@ -5,44 +5,39 @@ Tags: genesis, genesiswp, mailchimp, aweber, studiopress, newsletter, subscribe,
 Requires at least: 4.9.6
 Tested up to: 4.9.6
 Text Domain: genesis-enews-extended
-Stable tag: 2.0.2
+Stable tag: 2.1.0
 
 Creates a new widget to easily add mailing lists integration to a Genesis website. Works with FeedBurner, MailChimp, AWeber, FeedBlitz, ConvertKit and more.
 
 == Description ==
 
-Creates a new widget to easily add mailing lists to a Genesis website. Recommended plugin to replace the Genesis eNews Widget removed in Genesis 2.0. The widget allows the site administrator to set either the Feedburner ID or choose [MailPoet's](http://wordpress.org/plugins/wysija-newsletters) lists or form action, e-mail form field and hidden fields to mimic the subscribe form of other mailing list services.
+Creates a new widget to easily add mailing lists to a Genesis website. Recommended plugin in virtually all Genesis theme tutorials. The widget allows the site administrator to set either the Feedburner ID or form action, e-mail form field and hidden fields to mimic the subscribe form of other mailing list services.
 
 == Installation ==
 
-1. Upload contents of the directory to /wp-content/plugins/ (or use the automatic installer)
 1. Activate the plugin through the 'Plugins' menu in WordPress
 1. In Appearance->Widgets, add Genesis eNews Extended widget to any sidebar.
-1. Using the mailing list contact form code provided by your vendor, add the form action URL, the form field ID for the e-mail field and any hidden fields (not all services use them) into the widget options. See some tips for this on the [plugin's install page](http://www.brandonkraft.com/genesis-enews-extended/install).
-1. If using name fields, read the [plugin's tutorial website](http://www.brandonkraft.com/genesis-enews-extended/tutorials).
+1. Using the mailing list contact form code provided by your vendor, add the form action URL, the form field ID for the e-mail field and any hidden fields (not all services use them) into the widget options. See some tips for this on the [plugin's install page](https://kraft.blog/genesis-enews-extended/install).
+1. If using name fields, read the [plugin's tutorial website](https://kraft.blog/genesis-enews-extended/tutorials).
 1. Verify it works!
 
 == Frequently Asked Questions ==
 
 = What services work with this plugin? =
 
-Feedburner, MailChimp, Aweber, FeedBlitz, ConvertKit, and Constant Contact are confirmed to work, but it should work with almost all services. If you have tested this with other services, please [contact me](https://kraft.im/contact/)
+Feedburner, MailChimp, Aweber, FeedBlitz, ConvertKit, and Constant Contact are confirmed to work, but it should work with almost all services. If you have tested this with other services, please [contact me](https://kraft.blog/contact/)
 
 = The "Opens in Same Tab" option doesn't work with FeedBurner. What's wrong? =
 
 That is intentional. You don't want to knock people off your site and leave them on FeedBurner's.
 
-= I'm using Minimum 2.0. Where's the submit button? =
-
-That is a feature of the theme. If you want the button back, remove ".enews #subbutton," on line 1236 of style.css.
-
 = The first and last name fields look funky. =
 
-Read more on the [plugin's tutorial website](https://kraft.im/genesis-enews-extended/tutorials).
+Read more on the [plugin's tutorial website](https://kraft.blog/genesis-enews-extended/tutorials).
 
 = I need help! Where I can get it? =
 
-"Official" tutorials will be maintained on the [plugin's website](https://kraft.im/genesis-enews-extended/).
+"Official" tutorials will be maintained on the [plugin's website](https://kraft.blog/genesis-enews-extended/).
 
 Questions can be asked at the [WordPress.org Support Forum](https://wordpress.org/support/plugin/genesis-enews-extended) for this plugin.
 
@@ -52,8 +47,10 @@ Questions can be asked at the [WordPress.org Support Forum](https://wordpress.or
 
 == Changelog ==
 
-= 2.0.3 =
+= 2.1.0 =
+* Provide option to link to the site's Privacy Policy.
 * Allow "a" HTML tags in the hidden fields settings field.
+* Various improvements to match coding standards.
 
 = 2.0.2 =
 * Fixes minor issue that led to HTML validation issues.
@@ -193,5 +190,5 @@ If you're not listed and think you should be, please drop me a note. Any omissio
 
 == Upgrade Notice ==
 
-= 2.0.2 =
-Fixes minor bugs, including one that causes HTML validation errors.
+= 2.1.0 =
+Adds ability to link to site's privacy policy.

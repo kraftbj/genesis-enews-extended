@@ -3,10 +3,10 @@
  * Genesis eNews Extended
  *
  * @package   BJGK\Genesis_enews_extended
- * @version   2.0.2
+ * @version   2.1.0
  * @author    Brandon Kraft <public@brandonkraft.com>
- * @link      https://kraft.im/genesis-enews-extended/
- * @copyright Copyright (c) 2012-2016, Brandon Kraft
+ * @link      https://kraft.blog/genesis-enews-extended/
+ * @copyright Copyright (c) 2012-2018, Brandon Kraft
  * @license   GPL-2.0+
  */
 
