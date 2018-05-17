@@ -46,6 +46,7 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 			'id'               => '',
 			'email-field'      => '',
 			'action'           => '',
+			'display_privacy'  => 0,
 			'mailpoet_check'   => __( 'Check your inbox or spam folder now to confirm your subscription.', 'wysija-newsletters' ),
 			'mailpoet_subbed'  => __( "You've successfully subscribed.", 'wysija-newsletters' ),
 		);
@@ -183,10 +184,13 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 			</form>
 		<?php
 		endif;
+		if ( $instance['display_privacy'] && function_exists( 'the_privacy_policy_link' ) ) {
+			the_privacy_policy_link( '<small class="enews-privacy">', '</small>');
+
+		}
 		// We run KSES on update since we want to allow some HTML, so ignoring the ouput escape check.
 		echo wpautop( apply_filters( 'gee_after_text', $instance['after_text'] ) ); // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped
 
-// We run KSES on update since we want to allow some HTML, so ignoring the ouput escape check.
 		echo '</div>' . $after_widget; // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped
 
 		// phpcs:enable WordPress.CSRF.NonceVerification
@@ -208,11 +212,13 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 	 * @return array Settings to save or bool false to cancel saving
 	 */
 	public function update( $new_instance, $old_instance ) {
-		$new_instance['title']         = strip_tags( $new_instance['title'], '<i>' );
-		$new_instance['text']          = wp_kses_post( $new_instance['text'] );
-		$new_instance['hidden_fields'] = strip_tags( $new_instance['hidden_fields'], '<a>, <div>, <fieldset>, <input>, <label>, <legend>, <option>, <optgroup>, <select>, <textarea>' );
-		$new_instance['after_text']    = wp_kses_post( $new_instance['after_text'] );
-		$new_instance['id']            = str_replace( 'http://feeds.feedburner.com/', '', $new_instance['id'] );
+		$new_instance['title']           = strip_tags( $new_instance['title'], '<i>' );
+		$new_instance['text']            = wp_kses_post( $new_instance['text'] );
+		$new_instance['hidden_fields']   = strip_tags( $new_instance['hidden_fields'], '<a>, <div>, <fieldset>, <input>, <label>, <legend>, <option>, <optgroup>, <select>, <textarea>' );
+		$new_instance['after_text']      = wp_kses_post( $new_instance['after_text'] );
+		$new_instance['id']              = str_replace( 'http://feeds.feedburner.com/', '', $new_instance['id'] );
+		$new_instance['display_privacy'] = (int) $new_instance['display_privacy'];
+
 		if ( isset( $new_instance['mailpoet_check'] ) ) {
 			$new_instance['mailpoet_check'] = wp_kses_post( $new_instance['mailpoet_check'] );
 		}
@@ -360,6 +366,10 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 			<?php $button_text = empty( $instance['button_text'] ) ? __( 'Go', 'genesis-enews-extended' ) : $instance['button_text']; ?>
 			<label for="<?php echo esc_attr( $this->get_field_id( 'button_text' ) ); ?>"><?php esc_html_e( 'Button Text', 'genesis-enews-extended' ); ?>:</label>
 			<input type="text" id="<?php echo esc_attr( $this->get_field_id( 'button_text' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'button_text' ) ); ?>" value="<?php echo esc_attr( $button_text ); ?>" class="widefat" />
+		</p>
+		<p>
+			<input id="<?php echo esc_attr( $this->get_field_id( 'display_privacy' ) ); ?>" type="checkbox" name="<?php echo esc_attr( $this->get_field_name( 'display_privacy' ) ); ?>" value="1" <?php checked( $instance['display_privacy'] ); ?>/>
+			<label for="<?php echo esc_attr( $this->get_field_id( 'display_privacy' ) ); ?>"><?php _e( 'Display link to privacy policy?', 'genesis-enews-extended' ); ?></label>
 		</p>
 
 	<?php
