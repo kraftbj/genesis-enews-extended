@@ -148,7 +148,6 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 																	if ( current_theme_supports( 'html5' ) ) :
 													?>
 													required="required"<?php endif; ?> />
-				// We run KSES on update since we want to allow some HTML, so ignoring the ouput escape check.
 				<?php echo $instance['hidden_fields']; // phpcs:ignore ?>
 				<input type="submit" value="<?php echo esc_attr( $instance['button_text'] ); ?>" id="subbutton" />
 			</form>
@@ -177,7 +176,6 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 																	if ( current_theme_supports( 'html5' ) ) :
 													?>
 													required="required"<?php endif; ?> />
-				// We run KSES on update since we want to allow some HTML, so ignoring the ouput escape check.
 				<?php echo $instance['hidden_fields']; // phpcs:ignore ?>
 				<input type="hidden" name="submission-type" value="mailpoet" />
 				<input type="submit" value="<?php echo esc_attr( $instance['button_text'] ); ?>" id="subbutton" />
