@@ -27,6 +27,10 @@ Creates a new widget to easily add mailing lists to a Genesis website. Recommend
 
 Feedburner, MailChimp, Aweber, FeedBlitz, ConvertKit, and Constant Contact are confirmed to work, but it should work with almost all services. If you have tested this with other services, please [contact me](https://kraft.blog/contact/)
 
+= How do I get the privacy policy link to show? The checkbox isn't working. =
+
+Genesis eNews Extended uses WordPress' built-in privacy policy setting. Be sure you have a privacy page set at wp-admin/privacy.php .
+
 = The "Opens in Same Tab" option doesn't work with FeedBurner. What's wrong? =
 
 That is intentional. You don't want to knock people off your site and leave them on FeedBurner's.
