@@ -1,3 +1,4 @@
+.babelrc
 .cache/
 .idea/
 node_modules/
