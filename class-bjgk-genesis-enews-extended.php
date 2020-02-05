@@ -128,7 +128,18 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 		echo wpautop( apply_filters( 'gee_text', $instance['text'] ) ); // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped
 
 		if ( ! empty( $instance['id'] ) ) : ?>
-			<form id="subscribe-<?php echo esc_attr( $this->id ); ?>" action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open( 'http://feedburner.google.com/fb/a/mailverify?uri=<?php echo esc_js( $instance['id'] ); ?>', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true" name="<?php echo esc_attr( $this->id ); ?>">
+			<form
+				id="subscribe-<?php echo esc_attr( $this->id ); ?>"
+				action="https://feedburner.google.com/fb/a/mailverify"
+				method="post"
+				name="<?php echo esc_attr( $this->id ); ?>"
+				<?php if ( ! $this->is_amp() ) : ?>
+					target="popupwindow"
+					onsubmit="window.open( 'https://feedburner.google.com/fb/a/mailverify?uri=<?php echo esc_js( $instance['id'] ); ?>', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true"
+				<?php else: ?>
+					on="<?php echo esc_attr( sprintf( "submit-success:AMP.navigateTo( url=%s, target=_blank )", wp_json_encode( 'https://feedburner.google.com/fb/a/mailverify?uri=' . $instance['id'], JSON_UNESCAPED_SLASHES ) ) ); ?>"
+				<?php endif; ?>
+			>
 				<label for="subbox" class="screenread"><?php echo esc_attr( $instance['input_text'] ); ?></label><input type="<?php echo current_theme_supports( 'html5' ) ? 'email' : 'text'; ?>" value="" id="subbox" placeholder="<?php echo esc_attr( $instance['input_text'] ); ?>" name="email"
 																	<?php
 																	if ( current_theme_supports( 'html5' ) ) :
@@ -137,6 +148,10 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 				<input type="hidden" name="uri" value="<?php echo esc_attr( $instance['id'] ); ?>" />
 				<input type="hidden" name="loc" value="<?php echo esc_attr( get_locale() ); ?>" />
 				<input type="submit" value="<?php echo esc_attr( $instance['button_text'] ); ?>" id="subbutton" />
+
+				<?php if ( $this->is_amp() ) : ?>
+					<div submit-success><!-- Suppress the success message from the AMP plugin because the result is shown in the opened window. --></div>
+				<?php endif; ?>
 			</form>
 		<?php elseif ( ! empty( $instance['action'] ) ) : ?>
 			<form id="subscribe<?php echo esc_attr( $this->id ); ?>" action="<?php echo esc_attr( $instance['action'] ); ?>" method="post"
