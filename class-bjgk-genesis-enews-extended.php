@@ -60,6 +60,15 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 	}
 
 	/**
+	 * Returns whether it is an AMP page.
+	 *
+	 * @return bool
+	 */
+	protected function is_amp() {
+		return function_exists( 'is_amp_endpoint' ) && is_amp_endpoint();
+	}
+
+	/**
 	 * Echo the widget content.
 	 *
 	 * The WordPress.CSRF.NonceVerification sniff is disabled since we are dealing with intentionally logged-out submissions.
@@ -131,10 +140,14 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 			</form>
 		<?php elseif ( ! empty( $instance['action'] ) ) : ?>
 			<form id="subscribe<?php echo esc_attr( $this->id ); ?>" action="<?php echo esc_attr( $instance['action'] ); ?>" method="post"
-											<?php
-											if ( 0 === $instance['open_same_window'] ) :
-								?>
-								target="_blank"<?php endif; ?> onsubmit="if ( subbox1.value == '<?php echo esc_js( $instance['fname_text'] ); ?>') { subbox1.value = ''; } if ( subbox2.value == '<?php echo esc_js( $instance['lname_text'] ); ?>') { subbox2.value = ''; }" name="<?php echo esc_attr( $this->id ); ?>">
+				<?php
+				// The AMP condition is used here because if the form submission handler does a redirect, the amp-form component will error with:
+				// "Redirecting to target=_blank using AMP-Redirect-To is currently not supported, use target=_top instead".
+				if ( 0 === $instance['open_same_window'] && ! $this->is_amp() ) {
+					echo ' target="_blank" ';
+				}
+				?>
+				onsubmit="if ( subbox1.value == '<?php echo esc_js( $instance['fname_text'] ); ?>') { subbox1.value = ''; } if ( subbox2.value == '<?php echo esc_js( $instance['lname_text'] ); ?>') { subbox2.value = ''; }" name="<?php echo esc_attr( $this->id ); ?>">
 				<?php
 				if ( ! empty( $instance['fname-field'] ) ) :
 ?>
