@@ -147,7 +147,8 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 					echo ' target="_blank" ';
 				}
 				?>
-				onsubmit="if ( subbox1.value == '<?php echo esc_js( $instance['fname_text'] ); ?>') { subbox1.value = ''; } if ( subbox2.value == '<?php echo esc_js( $instance['lname_text'] ); ?>') { subbox2.value = ''; }" name="<?php echo esc_attr( $this->id ); ?>">
+				name="<?php echo esc_attr( $this->id ); ?>"
+			>
 				<?php
 				if ( ! empty( $instance['fname-field'] ) ) :
 ?>
@@ -165,7 +166,7 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 				<input type="submit" value="<?php echo esc_attr( $instance['button_text'] ); ?>" id="subbutton" />
 			</form>
 		<?php elseif ( ! empty( $instance['mailpoet-list'] ) && 'disabled' !== $instance['mailpoet-list'] ) : ?>
-			<form id="subscribe<?php echo esc_attr( $this->id ); ?>" action="<?php echo esc_attr( $current_url ); ?>" method="post" onsubmit="if ( subbox1.value == '<?php echo esc_js( $instance['fname_text'] ); ?>') { subbox1.value = ''; } if ( subbox2.value == '<?php echo esc_js( $instance['lname_text'] ); ?>') { subbox2.value = ''; }" name="<?php echo esc_attr( $this->id ); ?>">
+			<form id="subscribe<?php echo esc_attr( $this->id ); ?>" action="<?php echo esc_attr( $current_url ); ?>" method="post" name="<?php echo esc_attr( $this->id ); ?>">
 				<?php
 				if ( ! empty( $mailpoet_subscriber_id ) && is_int( $mailpoet_subscriber_id ) ) :
 					// confirmation message phrasing depends on whether the user has to verify his subscription or not.
