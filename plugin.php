@@ -64,7 +64,7 @@ function bjgk_genesis_enews_load_widgets() {
  * @since 0.1.0
  */
 function bjgk_genesis_enews_css() {
-	echo '<style type="text/css"> .enews .screenread {
+	echo '<style type="text/css"> .enews .screenread :not( input, textarea ){
 	height: 1px;
     left: -1000em;
     overflow: hidden;
