@@ -242,11 +242,11 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 	 * @return array Settings to save or bool false to cancel saving
 	 */
 	public function update( $new_instance, $old_instance ) { // phpcs:ignore VariableAnalysis.CodeAnalysis.VariableAnalysis.UnusedVariable
-		$new_instance['title']           = strip_tags( $new_instance['title'], '<i>' );
-		$new_instance['text']            = wp_kses_post( $new_instance['text'] );
+		$new_instance['title']           = trim( strip_tags( $new_instance['title'], '<i>' ) );
+		$new_instance['text']            = trim( wp_kses_post( $new_instance['text'] ) );
 		$new_instance['hidden_fields']   = strip_tags( $new_instance['hidden_fields'], '<a>, <div>, <fieldset>, <input>, <label>, <legend>, <option>, <optgroup>, <select>, <textarea>' );
-		$new_instance['after_text']      = wp_kses_post( $new_instance['after_text'] );
-		$new_instance['id']              = str_replace( 'http://feeds.feedburner.com/', '', $new_instance['id'] );
+		$new_instance['after_text']      = trim( wp_kses_post( $new_instance['after_text'] ) );
+		$new_instance['id']              = trim( str_replace( 'http://feeds.feedburner.com/', '', $new_instance['id'] ) );
 		$new_instance['display_privacy'] = ( isset( $new_instance['display_privacy'] ) ) ? (int) $new_instance['display_privacy'] : 0;
 
 		if ( isset( $new_instance['mailpoet_check'] ) ) {
