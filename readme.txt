@@ -6,7 +6,7 @@ Requires at least: 4.9.6
 Requires PHP: 5.4.0
 Tested up to: 5.6.0
 Text Domain: genesis-enews-extended
-Stable tag: 2.1.1
+Stable tag: 2.1.2
 
 Creates a new widget to easily add mailing lists integration to a Genesis website. Works with FeedBurner, MailChimp, AWeber, FeedBlitz, ConvertKit and more.
 
@@ -51,6 +51,12 @@ Questions can be asked at the [WordPress.org Support Forum](https://wordpress.or
 2. Widget setting screen.
 
 == Changelog ==
+= 2.1.2 =
+* Accessibility: Updates <label> to be implicit to eliminate duplication when multiple instances are used on a page.
+* Coding Standards: Implement WPCS.
+
+= 2.1.1 =
+* Remove comment that was displaying on the front end.
 
 = 2.1.0 =
 * Provide option to link to the site's Privacy Policy.
