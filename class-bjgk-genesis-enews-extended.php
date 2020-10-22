@@ -128,23 +128,23 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 		echo wpautop( apply_filters( 'gee_text', $instance['text'] ) ); // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped
 
 		if ( ! empty( $instance['id'] ) ) : ?>
-			<form
-				id="subscribe-<?php echo esc_attr( $this->id ); ?>"
-				action="https://feedburner.google.com/fb/a/mailverify"
-				method="post"
-				name="<?php echo esc_attr( $this->id ); ?>"
+            <form
+                    id="subscribe-<?php echo esc_attr( $this->id ); ?>"
+                    action="https://feedburner.google.com/fb/a/mailverify"
+                    method="post"
+                    name="<?php echo esc_attr( $this->id ); ?>"
 				<?php if ( ! $this->is_amp() ) : ?>
-					target="popupwindow"
-					onsubmit="window.open( 'https://feedburner.google.com/fb/a/mailverify?uri=<?php echo esc_js( $instance['id'] ); ?>', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true"
+                    target="popupwindow"
+                    onsubmit="window.open( 'https://feedburner.google.com/fb/a/mailverify?uri=<?php echo esc_js( $instance['id'] ); ?>', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true"
 				<?php else: ?>
-					on="<?php echo esc_attr( sprintf( "submit-success:AMP.navigateTo( url=%s, target=_blank )", wp_json_encode( 'https://feedburner.google.com/fb/a/mailverify?uri=' . $instance['id'], JSON_UNESCAPED_SLASHES ) ) ); ?>"
+                    on="<?php echo esc_attr( sprintf( "submit-success:AMP.navigateTo( url=%s, target=_blank )", wp_json_encode( 'https://feedburner.google.com/fb/a/mailverify?uri=' . $instance['id'], JSON_UNESCAPED_SLASHES ) ) ); ?>"
 				<?php endif; ?>
-			>
-				<label for="subbox" class="screenread"><?php echo esc_attr( $instance['input_text'] ); ?></label><input type="<?php echo current_theme_supports( 'html5' ) ? 'email' : 'text'; ?>" value="" id="subbox" placeholder="<?php echo esc_attr( $instance['input_text'] ); ?>" name="email"
+                    xmlns="http://www.w3.org/1999/html">
+				<label class="screenread"><?php echo esc_attr( $instance['input_text'] ); ?><input type="<?php echo current_theme_supports( 'html5' ) ? 'email' : 'text'; ?>" value="" id="subbox" placeholder="<?php echo esc_attr( $instance['input_text'] ); ?>" name="email"
 																	<?php
 																	if ( current_theme_supports( 'html5' ) ) :
 													?>
-													required="required"<?php endif; ?> />
+                                                                        required="required"<?php endif; ?> /></label>
 				<input type="hidden" name="uri" value="<?php echo esc_attr( $instance['id'] ); ?>" />
 				<input type="hidden" name="loc" value="<?php echo esc_attr( get_locale() ); ?>" />
 				<input type="submit" value="<?php echo esc_attr( $instance['button_text'] ); ?>" id="subbutton" />
@@ -167,16 +167,16 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 				<?php
 				if ( ! empty( $instance['fname-field'] ) ) :
 ?>
-<label for="subbox1" class="screenread"><?php echo esc_attr( $instance['fname_text'] ); ?></label><input type="text" id="subbox1" class="enews-subbox" value="" placeholder="<?php echo esc_attr( $instance['fname_text'] ); ?>" name="<?php echo esc_attr( $instance['fname-field'] ); ?>" /><?php endif ?>
+                    <label class="screenread"><?php echo esc_attr( $instance['fname_text'] ); ?><input type="text" id="subbox1" class="enews-subbox" value="" placeholder="<?php echo esc_attr( $instance['fname_text'] ); ?>" name="<?php echo esc_attr( $instance['fname-field'] ); ?>" /></label><?php endif ?>
 				<?php
 				if ( ! empty( $instance['lname-field'] ) ) :
 ?>
-<label for="subbox2" class="screenread"><?php echo esc_attr( $instance['lname_text'] ); ?></label><input type="text" id="subbox2" class="enews-subbox" value="" placeholder="<?php echo esc_attr( $instance['lname_text'] ); ?>" name="<?php echo esc_attr( $instance['lname-field'] ); ?>" /><?php endif ?>
-				<label for="subbox" class="screenread"><?php echo esc_attr( $instance['input_text'] ); ?></label><input type="<?php echo current_theme_supports( 'html5' ) ? 'email' : 'text'; ?>" value="" id="subbox" placeholder="<?php echo esc_attr( $instance['input_text'] ); ?>" name="<?php echo esc_js( $instance['email-field'] ); ?>"
+                    <label class="screenread"><?php echo esc_attr( $instance['lname_text'] ); ?><input type="text" id="subbox2" class="enews-subbox" value="" placeholder="<?php echo esc_attr( $instance['lname_text'] ); ?>" name="<?php echo esc_attr( $instance['lname-field'] ); ?>" /></label><?php endif ?>
+				<label class="screenread"><?php echo esc_attr( $instance['input_text'] ); ?><input type="<?php echo current_theme_supports( 'html5' ) ? 'email' : 'text'; ?>" value="" id="subbox" placeholder="<?php echo esc_attr( $instance['input_text'] ); ?>" name="<?php echo esc_js( $instance['email-field'] ); ?>"
 																	<?php
 																	if ( current_theme_supports( 'html5' ) ) :
 													?>
-													required="required"<?php endif; ?> />
+                                                                        required="required"<?php endif; ?> /></label>
 				<?php echo $instance['hidden_fields']; // phpcs:ignore ?>
 				<input type="submit" value="<?php echo esc_attr( $instance['button_text'] ); ?>" id="subbutton" />
 			</form>
@@ -195,16 +195,16 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 				<?php
 				if ( isset( $instance['mailpoet-show-fname'] ) ) :
 ?>
-<label for="subbox1" class="screenread"><?php echo esc_attr( $instance['fname_text'] ); ?></label><input type="text" id="subbox1" class="enews-subbox" value="" placeholder="<?php echo esc_attr( $instance['fname_text'] ); ?>" name="mailpoet-firstname" /><?php endif ?>
+                    <label class="screenread"><?php echo esc_attr( $instance['fname_text'] ); ?><input type="text" id="subbox1" class="enews-subbox" value="" placeholder="<?php echo esc_attr( $instance['fname_text'] ); ?>" name="mailpoet-firstname" /></label><?php endif ?>
 				<?php
 				if ( isset( $instance['mailpoet-show-lname'] ) ) :
 ?>
-<label for="subbox2" class="screenread"><?php echo esc_attr( $instance['lname_text'] ); ?></label><input type="text" id="subbox2" class="enews-subbox" value="" placeholder="<?php echo esc_attr( $instance['lname_text'] ); ?>" name="mailpoet-lastname" /><?php endif ?>
-				<label for="subbox" class="screenread"><?php echo esc_attr( $instance['input_text'] ); ?></label><input type="<?php echo current_theme_supports( 'html5' ) ? 'email' : 'text'; ?>" value="" id="subbox" placeholder="<?php echo esc_attr( $instance['input_text'] ); ?>" name="mailpoet-email"
+                    <label class="screenread"><?php echo esc_attr( $instance['lname_text'] ); ?><input type="text" id="subbox2" class="enews-subbox" value="" placeholder="<?php echo esc_attr( $instance['lname_text'] ); ?>" name="mailpoet-lastname" /></label><?php endif ?>
+				<label class="screenread"><?php echo esc_attr( $instance['input_text'] ); ?><input type="<?php echo current_theme_supports( 'html5' ) ? 'email' : 'text'; ?>" value="" id="subbox" placeholder="<?php echo esc_attr( $instance['input_text'] ); ?>" name="mailpoet-email"
 																	<?php
 																	if ( current_theme_supports( 'html5' ) ) :
 													?>
-													required="required"<?php endif; ?> />
+                                                                        required="required"<?php endif; ?> /></label>
 				<?php echo $instance['hidden_fields']; // phpcs:ignore ?>
 				<input type="hidden" name="submission-type" value="mailpoet" />
 				<input type="submit" value="<?php echo esc_attr( $instance['button_text'] ); ?>" id="subbutton" />
@@ -269,17 +269,20 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 		$instance = wp_parse_args( (array) $instance, $this->defaults );
 		?>
 		<p>
-			<label for="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"><?php esc_html_e( 'Title', 'genesis-enews-extended' ); ?>:</label><br />
+			<label><?php esc_html_e( 'Title', 'genesis-enews-extended' ); ?>:<br />
 			<input type="text" id="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'title' ) ); ?>" value="<?php echo esc_attr( $instance['title'] ); ?>" class="widefat" />
+            </label>
 		</p>
 
 		<p>
-			<label for="<?php echo esc_attr( $this->get_field_id( 'text' ) ); ?>"><?php esc_html_e( 'Text To Show Before Form', 'genesis-enews-extended' ); ?>:</label><br />
+			<label><?php esc_html_e( 'Text To Show Before Form', 'genesis-enews-extended' ); ?>:<br />
 			<textarea id="<?php echo esc_attr( $this->get_field_id( 'text' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'text' ) ); ?>" class="widefat" rows="6" cols="4"><?php echo esc_html( $instance['text'] ); ?></textarea>
+            </label>
 		</p>
 		<p>
-			<label for="<?php echo esc_attr( $this->get_field_id( 'after_text' ) ); ?>"><?php esc_html_e( 'Text To Show After Form', 'genesis-enews-extended' ); ?>:</label><br />
+			<label><?php esc_html_e( 'Text To Show After Form', 'genesis-enews-extended' ); ?>:<br />
 			<textarea id="<?php echo esc_attr( $this->get_field_id( 'after_text' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'after_text' ) ); ?>" class="widefat" rows="6" cols="4"><?php echo esc_html( $instance['after_text'] ); ?></textarea>
+            </label>
 		</p>
 
 		<hr style="background-color: #ccc; border: 0; height: 1px; margin: 20px 0;">
@@ -325,78 +328,92 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 				</small>
 
 				<p>
-					<label for="<?php echo esc_attr( $this->get_field_id( 'mailpoet_check' ) ); ?>"><?php esc_html_e( 'Text Displayed If Confirmation Needed', 'genesis-enews-extended' ); ?>:</label><br />
+					<label><?php esc_html_e( 'Text Displayed If Confirmation Needed', 'genesis-enews-extended' ); ?>:<br />
 					<textarea id="<?php echo esc_attr( $this->get_field_id( 'mailpoet_check' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'mailpoet_check' ) ); ?>" class="widefat" rows="6" cols="4"><?php echo esc_html( $instance['mailpoet_check'] ); ?></textarea>
+                    </label>
 				</p>
 				<p>
-					<label for="<?php echo esc_attr( $this->get_field_id( 'mailpoet_subbed' ) ); ?>"><?php esc_html_e( 'Text Displayed If Subscribed', 'genesis-enews-extended' ); ?>:</label><br />
+					<><?php esc_html_e( 'Text Displayed If Subscribed', 'genesis-enews-extended' ); ?>:<br />
 					<textarea id="<?php echo esc_attr( $this->get_field_id( 'mailpoet_subbed' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'mailpoet_subbed' ) ); ?>" class="widefat" rows="6" cols="4"><?php echo esc_html( $instance['mailpoet_subbed'] ); ?></textarea>
+                    </label>
 				</p>
 			</fieldset>
 		</p>
 		<hr style="background: #ccc; border: 0; height: 1px; margin: 20px 0;">
 		<?php endif; ?>
 		<p>
-			<label for="<?php echo esc_attr( $this->get_field_id( 'id' ) ); ?>"><?php esc_html_e( 'Google/Feedburner ID', 'genesis-enews-extended' ); ?>:</label>
+			<label><?php esc_html_e( 'Google/Feedburner ID', 'genesis-enews-extended' ); ?>:
 			<input type="text" id="<?php echo esc_attr( $this->get_field_id( 'id' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'id' ) ); ?>" value="<?php echo esc_attr( $instance['id'] ); ?>" class="widefat" /><br />
+            </label>
 			<small><?php esc_html_e( 'Entering your Feedburner ID here will deactivate the custom options below.', 'genesis-enews-extended' ); ?></small>
 		</p>
 		<hr style="background-color: #ccc; border: 0; height: 1px; margin: 20px 0;">
 		<p>
-			<label for="<?php echo esc_attr( $this->get_field_id( 'action' ) ); ?>"><?php esc_html_e( 'Form Action', 'genesis-enews-extended' ); ?>:</label>
+			<label><?php esc_html_e( 'Form Action', 'genesis-enews-extended' ); ?>:
 			<input type="text" id="<?php echo esc_attr( $this->get_field_id( 'action' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'action' ) ); ?>" value="<?php echo esc_attr( $instance['action'] ); ?>" class="widefat" />
+            </label>
 		</p>
 
 		<p>
-			<label for="<?php echo esc_attr( $this->get_field_id( 'email-field' ) ); ?>"><?php esc_html_e( 'E-Mail Field', 'genesis-enews-extended' ); ?>:</label>
+			<label><?php esc_html_e( 'E-Mail Field', 'genesis-enews-extended' ); ?>:
 			<input type="text" id="<?php echo esc_attr( $this->get_field_id( 'email-field' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'email-field' ) ); ?>" value="<?php echo esc_attr( $instance['email-field'] ); ?>" class="widefat" />
+            </label>
 		</p>
 
 		<p>
-			<label for="<?php echo esc_attr( $this->get_field_id( 'fname-field' ) ); ?>"><?php esc_html_e( 'First Name Field', 'genesis-enews-extended' ); ?>:</label>
+			<label><?php esc_html_e( 'First Name Field', 'genesis-enews-extended' ); ?>:
 			<input type="text" id="<?php echo esc_attr( $this->get_field_id( 'fname-field' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'fname-field' ) ); ?>" value="<?php echo esc_attr( $instance['fname-field'] ); ?>" class="widefat" />
+            </label>
 		</p>
 
 		<p>
-			<label for="<?php echo esc_attr( $this->get_field_id( 'lname-field' ) ); ?>"><?php esc_html_e( 'Last Name Field', 'genesis-enews-extended' ); ?>:</label>
+			<label><?php esc_html_e( 'Last Name Field', 'genesis-enews-extended' ); ?>:
 			<input type="text" id="<?php echo esc_attr( $this->get_field_id( 'lname-field' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'lname-field' ) ); ?>" value="<?php echo esc_attr( $instance['lname-field'] ); ?>" class="widefat" />
+            </label>
 		</p>
 
 		<p>
-			<label for="<?php echo esc_attr( $this->get_field_id( 'hidden_fields' ) ); ?>"><?php esc_html_e( 'Hidden Fields', 'genesis-enews-extended' ); ?>:</label>
+			<label><?php esc_html_e( 'Hidden Fields', 'genesis-enews-extended' ); ?>:
 			<textarea id="<?php echo esc_attr( $this->get_field_id( 'hidden_fields' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'hidden_fields' ) ); ?>" class="widefat"><?php echo esc_attr( $instance['hidden_fields'] ); ?></textarea>
+            </label>
 			<br><small><?php esc_html_e( 'Not all services use hidden fields.', 'genesis-enews-extended' ); ?></small>
 		</p>
 
-		<p>
+		<p><label>
 			<input id="<?php echo esc_attr( $this->get_field_id( 'open_same_window' ) ); ?>" type="checkbox" name="<?php echo esc_attr( $this->get_field_name( 'open_same_window' ) ); ?>" value="1" <?php checked( $instance['open_same_window'] ); ?>/>
-			<label for="<?php echo esc_attr( $this->get_field_id( 'open_same_window' ) ); ?>"><?php esc_html_e( 'Open confirmation page in same window?', 'genesis-enews-extended' ); ?></label>
+			<?php esc_html_e( 'Open confirmation page in same window?', 'genesis-enews-extended' ); ?>
+            </label>
 		</p>
 		<hr style="background-color: #ccc; border: 0; height: 1px; margin: 20px 0;">
 		<p>
 			<?php $fname_text = empty( $instance['fname_text'] ) ? __( 'First Name', 'genesis-enews-extended' ) : $instance['fname_text']; ?>
-			<label for="<?php echo esc_attr( $this->get_field_id( 'fname_text' ) ); ?>"><?php esc_html_e( 'First Name Input Text', 'genesis-enews-extended' ); ?>:</label>
+			<label><?php esc_html_e( 'First Name Input Text', 'genesis-enews-extended' ); ?>:
 			<input type="text" id="<?php echo esc_attr( $this->get_field_id( 'fname_text' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'fname_text' ) ); ?>" value="<?php echo esc_attr( $fname_text ); ?>" class="widefat" />
+            </label>
 		</p>
 		<p>
 			<?php $lname_text = empty( $instance['lname_text'] ) ? __( 'Last Name', 'genesis-enews-extended' ) : $instance['lname_text']; ?>
-			<label for="<?php echo esc_attr( $this->get_field_id( 'lname_text' ) ); ?>"><?php esc_html_e( 'Last Name Input Text', 'genesis-enews-extended' ); ?>:</label>
+			<label><?php esc_html_e( 'Last Name Input Text', 'genesis-enews-extended' ); ?>:
 			<input type="text" id="<?php echo esc_attr( $this->get_field_id( 'lname_text' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'lname_text' ) ); ?>" value="<?php echo esc_attr( $lname_text ); ?>" class="widefat" />
+            </label>
 		</p>
 		<p>
 			<?php $input_text = empty( $instance['input_text'] ) ? __( 'E-Mail Address', 'genesis-enews-extended' ) : $instance['input_text']; ?>
-			<label for="<?php echo esc_attr( $this->get_field_id( 'input_text' ) ); ?>"><?php esc_html_e( 'E-Mail Input Text', 'genesis-enews-extended' ); ?>:</label>
+			<label><?php esc_html_e( 'E-Mail Input Text', 'genesis-enews-extended' ); ?>:
 			<input type="text" id="<?php echo esc_attr( $this->get_field_id( 'input_text' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'input_text' ) ); ?>" value="<?php echo esc_attr( $input_text ); ?>" class="widefat" />
+            </label>
 		</p>
 
 		<p>
 			<?php $button_text = empty( $instance['button_text'] ) ? __( 'Go', 'genesis-enews-extended' ) : $instance['button_text']; ?>
-			<label for="<?php echo esc_attr( $this->get_field_id( 'button_text' ) ); ?>"><?php esc_html_e( 'Button Text', 'genesis-enews-extended' ); ?>:</label>
+			<label><?php esc_html_e( 'Button Text', 'genesis-enews-extended' ); ?>:
 			<input type="text" id="<?php echo esc_attr( $this->get_field_id( 'button_text' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'button_text' ) ); ?>" value="<?php echo esc_attr( $button_text ); ?>" class="widefat" />
+            </label>
 		</p>
 		<p>
+            <label>
 			<input id="<?php echo esc_attr( $this->get_field_id( 'display_privacy' ) ); ?>" type="checkbox" name="<?php echo esc_attr( $this->get_field_name( 'display_privacy' ) ); ?>" value="1" <?php checked( $instance['display_privacy'] ); ?>/>
-			<label for="<?php echo esc_attr( $this->get_field_id( 'display_privacy' ) ); ?>"><?php _e( 'Display link to privacy policy?', 'genesis-enews-extended' ); ?></label>
+			<?php _e( 'Display link to privacy policy?', 'genesis-enews-extended' ); ?></label>
 		</p>
 
 	<?php
