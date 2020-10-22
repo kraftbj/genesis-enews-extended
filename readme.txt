@@ -3,7 +3,8 @@ Contributors: kraftbj
 Donate link: https://kraft.blog/donate/
 Tags: genesis, genesiswp, mailchimp, aweber, studiopress, newsletter, subscribe
 Requires at least: 4.9.6
-Tested up to: 5.2.0
+Requires PHP: 5.4.0
+Tested up to: 5.6.0
 Text Domain: genesis-enews-extended
 Stable tag: 2.1.1
 
