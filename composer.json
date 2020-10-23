@@ -1,0 +1,16 @@
+{
+    "name": "kraftbj/genesis-enews-extended",
+    "description": "Mailing subscription form plugin for WordPress",
+    "type": "project",
+    "require-dev": {
+        "automattic/jetpack-codesniffer": "^1.0"
+    },
+    "license": "GPL2+",
+    "authors": [
+        {
+            "name": "Brandon Kraft",
+            "email": "public@brandonkraft.com"
+        }
+    ],
+    "require": {}
+}

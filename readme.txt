@@ -3,9 +3,10 @@ Contributors: kraftbj
 Donate link: https://kraft.blog/donate/
 Tags: genesis, genesiswp, mailchimp, aweber, studiopress, newsletter, subscribe
 Requires at least: 4.9.6
-Tested up to: 5.2.0
+Requires PHP: 5.4.0
+Tested up to: 5.6.0
 Text Domain: genesis-enews-extended
-Stable tag: 2.1.1
+Stable tag: 2.1.2
 
 Creates a new widget to easily add mailing lists integration to a Genesis website. Works with FeedBurner, MailChimp, AWeber, FeedBlitz, ConvertKit and more.
 
@@ -27,6 +28,10 @@ Creates a new widget to easily add mailing lists to a Genesis website. Recommend
 
 Feedburner, MailChimp, Aweber, FeedBlitz, ConvertKit, and Constant Contact are confirmed to work, but it should work with almost all services. If you have tested this with other services, please [contact me](https://kraft.blog/contact/)
 
+= How do I get the privacy policy link to show? The checkbox isn't working. =
+
+Genesis eNews Extended uses WordPress' built-in privacy policy setting. Be sure you have a privacy page set at wp-admin/privacy.php .
+
 = The "Opens in Same Tab" option doesn't work with FeedBurner. What's wrong? =
 
 That is intentional. You don't want to knock people off your site and leave them on FeedBurner's.
@@ -46,6 +51,12 @@ Questions can be asked at the [WordPress.org Support Forum](https://wordpress.or
 2. Widget setting screen.
 
 == Changelog ==
+= 2.1.2 =
+* Accessibility: Updates <label> to be implicit to eliminate duplication when multiple instances are used on a page.
+* Coding Standards: Implement WPCS.
+
+= 2.1.1 =
+* Remove comment that was displaying on the front end.
 
 = 2.1.0 =
 * Provide option to link to the site's Privacy Policy.
