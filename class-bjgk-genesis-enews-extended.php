@@ -3,7 +3,7 @@
  * Genesis eNews Extended
  *
  * @package   BJGK\Genesis_enews_extended
- * @version   2.1.3
+ * @version   2.1.4
  * @author    Brandon Kraft <public@brandonkraft.com>
  * @link      https://kraft.blog/genesis-enews-extended/
  * @copyright Copyright (c) 2012-2018, Brandon Kraft
@@ -143,11 +143,11 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 					on="<?php echo esc_attr( sprintf( 'submit-success:AMP.navigateTo( url=%s, target=_blank )', wp_json_encode( 'https://feedburner.google.com/fb/a/mailverify?uri=' . $instance['id'], JSON_UNESCAPED_SLASHES ) ) ); ?>"
 				<?php endif; ?>
 					xmlns="http://www.w3.org/1999/html">
-				<label class="screen-reader-text"><?php echo esc_attr( $instance['input_text'] ); ?><input type="<?php echo current_theme_supports( 'html5' ) ? 'email' : 'text'; ?>" value="" id="subbox" placeholder="<?php echo esc_attr( $instance['input_text'] ); ?>" name="email"
+				<<input type="<?php echo current_theme_supports( 'html5' ) ? 'email' : 'text'; ?>" value="" id="subbox" aria-label="<?php echo esc_attr( $instance['input_text'] ); ?>" placeholder="<?php echo esc_attr( $instance['input_text'] ); ?>" name="email"
 																	<?php
 																	if ( current_theme_supports( 'html5' ) ) :
 																		?>
-																		required="required"<?php endif; ?> /></label>
+																		required="required"<?php endif; ?> />
 				<input type="hidden" name="uri" value="<?php echo esc_attr( $instance['id'] ); ?>" />
 				<input type="hidden" name="loc" value="<?php echo esc_attr( get_locale() ); ?>" />
 				<input type="submit" value="<?php echo esc_attr( $instance['button_text'] ); ?>" id="subbutton" />
@@ -170,16 +170,16 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 				<?php
 				if ( ! empty( $instance['fname-field'] ) ) :
 					?>
-					<label class="screen-reader-text"><?php echo esc_attr( $instance['fname_text'] ); ?><input type="text" id="subbox1" class="enews-subbox" value="" placeholder="<?php echo esc_attr( $instance['fname_text'] ); ?>" name="<?php echo esc_attr( $instance['fname-field'] ); ?>" /></label><?php endif ?>
+					<input type="text" id="subbox1" class="enews-subbox" value="" aria-label="<?php echo esc_attr( $instance['fname_text'] ); ?>" placeholder="<?php echo esc_attr( $instance['fname_text'] ); ?>" name="<?php echo esc_attr( $instance['fname-field'] ); ?>" /><?php endif ?>
 				<?php
 				if ( ! empty( $instance['lname-field'] ) ) :
 					?>
-					<label class="screen-reader-text"><?php echo esc_attr( $instance['lname_text'] ); ?><input type="text" id="subbox2" class="enews-subbox" value="" placeholder="<?php echo esc_attr( $instance['lname_text'] ); ?>" name="<?php echo esc_attr( $instance['lname-field'] ); ?>" /></label><?php endif ?>
-				<label class="screen-reader-text"><?php echo esc_attr( $instance['input_text'] ); ?><input type="<?php echo current_theme_supports( 'html5' ) ? 'email' : 'text'; ?>" value="" id="subbox" placeholder="<?php echo esc_attr( $instance['input_text'] ); ?>" name="<?php echo esc_js( $instance['email-field'] ); ?>"
+					<input type="text" id="subbox2" class="enews-subbox" value="" aria-label="<?php echo esc_attr( $instance['lname_text'] ); ?>" placeholder="<?php echo esc_attr( $instance['lname_text'] ); ?>" name="<?php echo esc_attr( $instance['lname-field'] ); ?>" /><?php endif ?>
+				<input type="<?php echo current_theme_supports( 'html5' ) ? 'email' : 'text'; ?>" value="" id="subbox" aria-label="<?php echo esc_attr( $instance['input_text'] ); ?>" placeholder="<?php echo esc_attr( $instance['input_text'] ); ?>" name="<?php echo esc_js( $instance['email-field'] ); ?>"
 																	<?php
 																	if ( current_theme_supports( 'html5' ) ) :
 																		?>
-																		required="required"<?php endif; ?> /></label>
+																		required="required"<?php endif; ?> />
 				<?php echo $instance['hidden_fields']; // phpcs:ignore ?>
 				<input type="submit" value="<?php echo esc_attr( $instance['button_text'] ); ?>" id="subbutton" />
 			</form>
@@ -198,16 +198,16 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 				<?php
 				if ( isset( $instance['mailpoet-show-fname'] ) ) :
 					?>
-					<label class="screen-reader-text"><?php echo esc_attr( $instance['fname_text'] ); ?><input type="text" id="subbox1" class="enews-subbox" value="" placeholder="<?php echo esc_attr( $instance['fname_text'] ); ?>" name="mailpoet-firstname" /></label><?php endif ?>
+					<input type="text" id="subbox1" class="enews-subbox" value="" aria-label="<?php echo esc_attr( $instance['fname_text'] ); ?>" placeholder="<?php echo esc_attr( $instance['fname_text'] ); ?>" name="mailpoet-firstname" /><?php endif ?>
 				<?php
 				if ( isset( $instance['mailpoet-show-lname'] ) ) :
 					?>
-					<label class="screen-reader-text"><?php echo esc_attr( $instance['lname_text'] ); ?><input type="text" id="subbox2" class="enews-subbox" value="" placeholder="<?php echo esc_attr( $instance['lname_text'] ); ?>" name="mailpoet-lastname" /></label><?php endif ?>
-				<label class="screen-reader-text"><?php echo esc_attr( $instance['input_text'] ); ?><input type="<?php echo current_theme_supports( 'html5' ) ? 'email' : 'text'; ?>" value="" id="subbox" placeholder="<?php echo esc_attr( $instance['input_text'] ); ?>" name="mailpoet-email"
+					<input type="text" id="subbox2" class="enews-subbox" value="" aria-label="<?php echo esc_attr( $instance['lname_text'] ); ?>" placeholder="<?php echo esc_attr( $instance['lname_text'] ); ?>" name="mailpoet-lastname" /><?php endif ?>
+				<input type="<?php echo current_theme_supports( 'html5' ) ? 'email' : 'text'; ?>" value="" id="subbox" aria-label="<?php echo esc_attr( $instance['input_text'] ); ?>" placeholder="<?php echo esc_attr( $instance['input_text'] ); ?>" name="mailpoet-email"
 																	<?php
 																	if ( current_theme_supports( 'html5' ) ) :
 																		?>
-																		required="required"<?php endif; ?> /></label>
+																		required="required"<?php endif; ?> />
 				<?php echo $instance['hidden_fields']; // phpcs:ignore ?>
 				<input type="hidden" name="submission-type" value="mailpoet" />
 				<input type="submit" value="<?php echo esc_attr( $instance['button_text'] ); ?>" id="subbutton" />
