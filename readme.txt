@@ -51,6 +51,9 @@ Questions can be asked at the [WordPress.org Support Forum](https://wordpress.or
 2. Widget setting screen.
 
 == Changelog ==
+= 2.1.4 =
+* Accessibility: Use aria-label instead of <label> to prevent CSS being either over-agressive or not enough.
+
 = 2.1.2 =
 * Accessibility: Updates <label> to be implicit to eliminate duplication when multiple instances are used on a page.
 * Coding Standards: Implement WPCS.
