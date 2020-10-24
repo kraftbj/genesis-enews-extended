@@ -3,7 +3,7 @@
  * Genesis eNews Extended
  *
  * @package   BJGK\Genesis_enews_extended
- * @version   2.1.0
+ * @version   2.1.3
  * @author    Brandon Kraft <public@brandonkraft.com>
  * @link      https://kraft.blog/genesis-enews-extended/
  * @copyright Copyright (c) 2012-2018, Brandon Kraft
@@ -143,7 +143,7 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 					on="<?php echo esc_attr( sprintf( 'submit-success:AMP.navigateTo( url=%s, target=_blank )', wp_json_encode( 'https://feedburner.google.com/fb/a/mailverify?uri=' . $instance['id'], JSON_UNESCAPED_SLASHES ) ) ); ?>"
 				<?php endif; ?>
 					xmlns="http://www.w3.org/1999/html">
-				<label class="screenread"><?php echo esc_attr( $instance['input_text'] ); ?><input type="<?php echo current_theme_supports( 'html5' ) ? 'email' : 'text'; ?>" value="" id="subbox" placeholder="<?php echo esc_attr( $instance['input_text'] ); ?>" name="email"
+				<label class="screen-reader-text"><?php echo esc_attr( $instance['input_text'] ); ?><input type="<?php echo current_theme_supports( 'html5' ) ? 'email' : 'text'; ?>" value="" id="subbox" placeholder="<?php echo esc_attr( $instance['input_text'] ); ?>" name="email"
 																	<?php
 																	if ( current_theme_supports( 'html5' ) ) :
 																		?>
@@ -170,12 +170,12 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 				<?php
 				if ( ! empty( $instance['fname-field'] ) ) :
 					?>
-					<label class="screenread"><?php echo esc_attr( $instance['fname_text'] ); ?><input type="text" id="subbox1" class="enews-subbox" value="" placeholder="<?php echo esc_attr( $instance['fname_text'] ); ?>" name="<?php echo esc_attr( $instance['fname-field'] ); ?>" /></label><?php endif ?>
+					<label class="screen-reader-text"><?php echo esc_attr( $instance['fname_text'] ); ?><input type="text" id="subbox1" class="enews-subbox" value="" placeholder="<?php echo esc_attr( $instance['fname_text'] ); ?>" name="<?php echo esc_attr( $instance['fname-field'] ); ?>" /></label><?php endif ?>
 				<?php
 				if ( ! empty( $instance['lname-field'] ) ) :
 					?>
-					<label class="screenread"><?php echo esc_attr( $instance['lname_text'] ); ?><input type="text" id="subbox2" class="enews-subbox" value="" placeholder="<?php echo esc_attr( $instance['lname_text'] ); ?>" name="<?php echo esc_attr( $instance['lname-field'] ); ?>" /></label><?php endif ?>
-				<label class="screenread"><?php echo esc_attr( $instance['input_text'] ); ?><input type="<?php echo current_theme_supports( 'html5' ) ? 'email' : 'text'; ?>" value="" id="subbox" placeholder="<?php echo esc_attr( $instance['input_text'] ); ?>" name="<?php echo esc_js( $instance['email-field'] ); ?>"
+					<label class="screen-reader-text"><?php echo esc_attr( $instance['lname_text'] ); ?><input type="text" id="subbox2" class="enews-subbox" value="" placeholder="<?php echo esc_attr( $instance['lname_text'] ); ?>" name="<?php echo esc_attr( $instance['lname-field'] ); ?>" /></label><?php endif ?>
+				<label class="screen-reader-text"><?php echo esc_attr( $instance['input_text'] ); ?><input type="<?php echo current_theme_supports( 'html5' ) ? 'email' : 'text'; ?>" value="" id="subbox" placeholder="<?php echo esc_attr( $instance['input_text'] ); ?>" name="<?php echo esc_js( $instance['email-field'] ); ?>"
 																	<?php
 																	if ( current_theme_supports( 'html5' ) ) :
 																		?>
@@ -198,12 +198,12 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 				<?php
 				if ( isset( $instance['mailpoet-show-fname'] ) ) :
 					?>
-					<label class="screenread"><?php echo esc_attr( $instance['fname_text'] ); ?><input type="text" id="subbox1" class="enews-subbox" value="" placeholder="<?php echo esc_attr( $instance['fname_text'] ); ?>" name="mailpoet-firstname" /></label><?php endif ?>
+					<label class="screen-reader-text"><?php echo esc_attr( $instance['fname_text'] ); ?><input type="text" id="subbox1" class="enews-subbox" value="" placeholder="<?php echo esc_attr( $instance['fname_text'] ); ?>" name="mailpoet-firstname" /></label><?php endif ?>
 				<?php
 				if ( isset( $instance['mailpoet-show-lname'] ) ) :
 					?>
-					<label class="screenread"><?php echo esc_attr( $instance['lname_text'] ); ?><input type="text" id="subbox2" class="enews-subbox" value="" placeholder="<?php echo esc_attr( $instance['lname_text'] ); ?>" name="mailpoet-lastname" /></label><?php endif ?>
-				<label class="screenread"><?php echo esc_attr( $instance['input_text'] ); ?><input type="<?php echo current_theme_supports( 'html5' ) ? 'email' : 'text'; ?>" value="" id="subbox" placeholder="<?php echo esc_attr( $instance['input_text'] ); ?>" name="mailpoet-email"
+					<label class="screen-reader-text"><?php echo esc_attr( $instance['lname_text'] ); ?><input type="text" id="subbox2" class="enews-subbox" value="" placeholder="<?php echo esc_attr( $instance['lname_text'] ); ?>" name="mailpoet-lastname" /></label><?php endif ?>
+				<label class="screen-reader-text"><?php echo esc_attr( $instance['input_text'] ); ?><input type="<?php echo current_theme_supports( 'html5' ) ? 'email' : 'text'; ?>" value="" id="subbox" placeholder="<?php echo esc_attr( $instance['input_text'] ); ?>" name="mailpoet-email"
 																	<?php
 																	if ( current_theme_supports( 'html5' ) ) :
 																		?>
