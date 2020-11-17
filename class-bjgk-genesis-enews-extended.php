@@ -143,7 +143,7 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 					on="<?php echo esc_attr( sprintf( 'submit-success:AMP.navigateTo( url=%s, target=_blank )', wp_json_encode( 'https://feedburner.google.com/fb/a/mailverify?uri=' . $instance['id'], JSON_UNESCAPED_SLASHES ) ) ); ?>"
 				<?php endif; ?>
 					xmlns="http://www.w3.org/1999/html">
-				<<input type="<?php echo current_theme_supports( 'html5' ) ? 'email' : 'text'; ?>" value="" id="subbox" aria-label="<?php echo esc_attr( $instance['input_text'] ); ?>" placeholder="<?php echo esc_attr( $instance['input_text'] ); ?>" name="email"
+				<input type="<?php echo current_theme_supports( 'html5' ) ? 'email' : 'text'; ?>" value="" id="subbox" aria-label="<?php echo esc_attr( $instance['input_text'] ); ?>" placeholder="<?php echo esc_attr( $instance['input_text'] ); ?>" name="email"
 																	<?php
 																	if ( current_theme_supports( 'html5' ) ) :
 																		?>
