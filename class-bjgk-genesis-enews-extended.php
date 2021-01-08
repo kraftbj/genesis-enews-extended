@@ -190,7 +190,7 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 				<?php endif; ?>
 			</form>
 		<?php elseif ( ! empty( $instance['action'] ) ) : ?>
-			<form id="subscribe<?php echo esc_attr( $this->id ); ?>" action="<?php echo esc_attr( $instance['action'] ); ?>" method="post"
+			<form id="subscribe<?php echo esc_attr( $this->id ); ?>" class="enews-form" action="<?php echo esc_attr( $instance['action'] ); ?>" method="post"
 				<?php
 				// The AMP condition is used here because if the form submission handler does a redirect, the amp-form component will error with:
 				// "Redirecting to target=_blank using AMP-Redirect-To is currently not supported, use target=_top instead".
