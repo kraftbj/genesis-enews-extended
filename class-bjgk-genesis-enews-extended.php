@@ -203,18 +203,18 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 				<?php
 				if ( ! empty( $instance['fname-field'] ) ) :
 					?>
-					<input type="text" id="subbox1" class="enews-subbox" value="" aria-label="<?php echo esc_attr( $instance['fname_text'] ); ?>" placeholder="<?php echo esc_attr( $instance['fname_text'] ); ?>" name="<?php echo esc_attr( $instance['fname-field'] ); ?>" /><?php endif ?>
+					<input type="text" id="subbox1" class="enews-subbox enews-fname" value="" aria-label="<?php echo esc_attr( $instance['fname_text'] ); ?>" placeholder="<?php echo esc_attr( $instance['fname_text'] ); ?>" name="<?php echo esc_attr( $instance['fname-field'] ); ?>" /><?php endif ?>
 				<?php
 				if ( ! empty( $instance['lname-field'] ) ) :
 					?>
-					<input type="text" id="subbox2" class="enews-subbox" value="" aria-label="<?php echo esc_attr( $instance['lname_text'] ); ?>" placeholder="<?php echo esc_attr( $instance['lname_text'] ); ?>" name="<?php echo esc_attr( $instance['lname-field'] ); ?>" /><?php endif ?>
-				<input type="<?php echo current_theme_supports( 'html5' ) ? 'email' : 'text'; ?>" value="" id="subbox" aria-label="<?php echo esc_attr( $instance['input_text'] ); ?>" placeholder="<?php echo esc_attr( $instance['input_text'] ); ?>" name="<?php echo esc_js( $instance['email-field'] ); ?>"
+					<input type="text" id="subbox2" class="enews-subbox enews-lname" value="" aria-label="<?php echo esc_attr( $instance['lname_text'] ); ?>" placeholder="<?php echo esc_attr( $instance['lname_text'] ); ?>" name="<?php echo esc_attr( $instance['lname-field'] ); ?>" /><?php endif ?>
+				<input type="<?php echo current_theme_supports( 'html5' ) ? 'email' : 'text'; ?>" value="" id="subbox" class="enews-email" aria-label="<?php echo esc_attr( $instance['input_text'] ); ?>" placeholder="<?php echo esc_attr( $instance['input_text'] ); ?>" name="<?php echo esc_js( $instance['email-field'] ); ?>"
 																	<?php
 																	if ( current_theme_supports( 'html5' ) ) :
 																		?>
 																		required="required"<?php endif; ?> />
 				<?php echo $instance['hidden_fields']; // phpcs:ignore ?>
-				<input type="submit" value="<?php echo esc_attr( $instance['button_text'] ); ?>" id="subbutton" />
+				<input type="submit" value="<?php echo esc_attr( $instance['button_text'] ); ?>" id="subbutton" class="enews-submit" />
 			</form>
 		<?php elseif ( ! empty( $instance['mailpoet-list'] ) && 'disabled' !== $instance['mailpoet-list'] ) : ?>
 			<form id="subscribe<?php echo esc_attr( $this->id ); ?>" action="<?php echo esc_attr( $current_url ); ?>" method="post" name="<?php echo esc_attr( $this->id ); ?>">
