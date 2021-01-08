@@ -90,7 +90,7 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 		$instance = apply_filters( 'genesis-enews-extended-args', $instance ); //phpcs:ignore WordPress.NamingConventions.ValidHookName
 
 		// Checks if MailPoet exists. If so, a check for form submission will take place.
-        // phpcs:disable WordPress.Security.NonceVerification.Missing
+		// phpcs:disable WordPress.Security.NonceVerification.Missing
 		if ( class_exists( 'WYSIJA' ) && isset( $_POST['submission-type'] ) && 'mailpoet' === $_POST['submission-type'] && ! empty( $instance['mailpoet-list'] ) ) { // Input var okay.
 			$subscriber_data = array(
 				'user'      => array(
@@ -116,11 +116,44 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 			$instance['lname_text'] = 'Last Name';
 		}
 
+		// Get field count for wrapper class.
+		$field_count = 1;
+
+		if ( ! empty( $instance['fname-field'] ) ) {
+			$field_count++;
+		}
+
+		if ( ! empty( $instance['lname-field'] ) ) {
+			$field_count++;
+		}
+
+		// Adds classes, including field count classes.
+		$classes = 'enews ' . sprintf( _n( 'enews-%s-field', 'enews-%s-fields', $field_count ), $field_count );
+
 		// Establishes current URL for MailPoet action fields.
 		$current_url = ( is_ssl() ? 'https://' : 'http://' ) . wp_unslash( $_SERVER['HTTP_HOST'] ) . wp_unslash( $_SERVER['REQUEST_URI'] ); // Input var okay; sanitization okay.
 
 		// We run KSES on update since we want to allow some HTML, so ignoring the ouput escape check.
-		echo $before_widget . '<div class="enews">'; // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped
+		echo $before_widget; // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped
+
+		// If Genesis is the parent theme.
+		if ( function_exists( 'genesis_markup' ) ) {
+			genesis_markup(
+				[
+					'open'    => '<div %s>',
+					'context' => 'enews',
+					'echo'    => true,
+					'atts'    => [
+						'class' => $classes,
+					],
+					'params'  => [
+						'instance' => $instance,
+					],
+				]
+			);
+		} else {
+			printf( '<div class="%s">', $classes );
+		}
 
 		if ( ! empty( $instance['title'] ) ) {
 			// We run KSES on update since we want to allow some HTML, so ignoring the ouput escape check.
@@ -221,7 +254,23 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 		// We run KSES on update since we want to allow some HTML, so ignoring the ouput escape check.
 		echo wpautop( apply_filters( 'gee_after_text', $instance['after_text'] ) ); // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped
 
-		echo '</div>' . $after_widget; // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped
+		// If Genesis is the parent theme.
+		if ( function_exists( 'genesis_markup' ) ) {
+			genesis_markup(
+				[
+					'close'   => '</div>',
+					'context' => 'enews',
+					'echo'    => true,
+					'params'  => [
+						'instance' => $instance,
+					],
+				]
+			);
+		} else {
+			echo '</div>';
+		}
+
+		echo $after_widget; // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped
 
 		// phpcs:enable WordPress.CSRF.NonceVerification
 	}
