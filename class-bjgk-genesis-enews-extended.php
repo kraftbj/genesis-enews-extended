@@ -3,7 +3,7 @@
  * Genesis eNews Extended
  *
  * @package   BJGK\Genesis_enews_extended
- * @version   2.1.4
+ * @version   2.2.0
  * @author    Brandon Kraft <public@brandonkraft.com>
  * @link      https://kraft.blog/genesis-enews-extended/
  * @copyright Copyright (c) 2012-2018, Brandon Kraft
@@ -90,7 +90,7 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 		$instance = apply_filters( 'genesis-enews-extended-args', $instance ); //phpcs:ignore WordPress.NamingConventions.ValidHookName
 
 		// Checks if MailPoet exists. If so, a check for form submission will take place.
-        // phpcs:disable WordPress.Security.NonceVerification.Missing
+		// phpcs:disable WordPress.Security.NonceVerification.Missing
 		if ( class_exists( 'WYSIJA' ) && isset( $_POST['submission-type'] ) && 'mailpoet' === $_POST['submission-type'] && ! empty( $instance['mailpoet-list'] ) ) { // Input var okay.
 			$subscriber_data = array(
 				'user'      => array(
@@ -116,11 +116,44 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 			$instance['lname_text'] = 'Last Name';
 		}
 
+		// Get field count for wrapper class.
+		$field_count = 1;
+
+		if ( ! empty( $instance['fname-field'] ) ) {
+			$field_count++;
+		}
+
+		if ( ! empty( $instance['lname-field'] ) ) {
+			$field_count++;
+		}
+
+		// Adds classes, including field count classes.
+		$classes = 'enews ' . sprintf( _n( 'enews-%s-field', 'enews-%s-fields', $field_count ), $field_count );
+
 		// Establishes current URL for MailPoet action fields.
 		$current_url = ( is_ssl() ? 'https://' : 'http://' ) . wp_unslash( $_SERVER['HTTP_HOST'] ) . wp_unslash( $_SERVER['REQUEST_URI'] ); // Input var okay; sanitization okay.
 
 		// We run KSES on update since we want to allow some HTML, so ignoring the ouput escape check.
-		echo $before_widget . '<div class="enews">'; // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped
+		echo $before_widget; // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped
+
+		// If Genesis is the parent theme.
+		if ( function_exists( 'genesis_markup' ) ) {
+			genesis_markup(
+				[
+					'open'    => '<div %s>',
+					'context' => 'enews',
+					'echo'    => true,
+					'atts'    => [
+						'class' => $classes,
+					],
+					'params'  => [
+						'instance' => $instance,
+					],
+				]
+			);
+		} else {
+			printf( '<div class="%s">', $classes );
+		}
 
 		if ( ! empty( $instance['title'] ) ) {
 			// We run KSES on update since we want to allow some HTML, so ignoring the ouput escape check.
@@ -157,7 +190,7 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 				<?php endif; ?>
 			</form>
 		<?php elseif ( ! empty( $instance['action'] ) ) : ?>
-			<form id="subscribe<?php echo esc_attr( $this->id ); ?>" action="<?php echo esc_attr( $instance['action'] ); ?>" method="post"
+			<form id="subscribe<?php echo esc_attr( $this->id ); ?>" class="enews-form" action="<?php echo esc_attr( $instance['action'] ); ?>" method="post"
 				<?php
 				// The AMP condition is used here because if the form submission handler does a redirect, the amp-form component will error with:
 				// "Redirecting to target=_blank using AMP-Redirect-To is currently not supported, use target=_top instead".
@@ -170,18 +203,18 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 				<?php
 				if ( ! empty( $instance['fname-field'] ) ) :
 					?>
-					<input type="text" id="subbox1" class="enews-subbox" value="" aria-label="<?php echo esc_attr( $instance['fname_text'] ); ?>" placeholder="<?php echo esc_attr( $instance['fname_text'] ); ?>" name="<?php echo esc_attr( $instance['fname-field'] ); ?>" /><?php endif ?>
+					<input type="text" id="subbox1" class="enews-subbox enews-fname" value="" aria-label="<?php echo esc_attr( $instance['fname_text'] ); ?>" placeholder="<?php echo esc_attr( $instance['fname_text'] ); ?>" name="<?php echo esc_attr( $instance['fname-field'] ); ?>" /><?php endif ?>
 				<?php
 				if ( ! empty( $instance['lname-field'] ) ) :
 					?>
-					<input type="text" id="subbox2" class="enews-subbox" value="" aria-label="<?php echo esc_attr( $instance['lname_text'] ); ?>" placeholder="<?php echo esc_attr( $instance['lname_text'] ); ?>" name="<?php echo esc_attr( $instance['lname-field'] ); ?>" /><?php endif ?>
-				<input type="<?php echo current_theme_supports( 'html5' ) ? 'email' : 'text'; ?>" value="" id="subbox" aria-label="<?php echo esc_attr( $instance['input_text'] ); ?>" placeholder="<?php echo esc_attr( $instance['input_text'] ); ?>" name="<?php echo esc_js( $instance['email-field'] ); ?>"
+					<input type="text" id="subbox2" class="enews-subbox enews-lname" value="" aria-label="<?php echo esc_attr( $instance['lname_text'] ); ?>" placeholder="<?php echo esc_attr( $instance['lname_text'] ); ?>" name="<?php echo esc_attr( $instance['lname-field'] ); ?>" /><?php endif ?>
+				<input type="<?php echo current_theme_supports( 'html5' ) ? 'email' : 'text'; ?>" value="" id="subbox" class="enews-email" aria-label="<?php echo esc_attr( $instance['input_text'] ); ?>" placeholder="<?php echo esc_attr( $instance['input_text'] ); ?>" name="<?php echo esc_js( $instance['email-field'] ); ?>"
 																	<?php
 																	if ( current_theme_supports( 'html5' ) ) :
 																		?>
 																		required="required"<?php endif; ?> />
 				<?php echo $instance['hidden_fields']; // phpcs:ignore ?>
-				<input type="submit" value="<?php echo esc_attr( $instance['button_text'] ); ?>" id="subbutton" />
+				<input type="submit" value="<?php echo esc_attr( $instance['button_text'] ); ?>" id="subbutton" class="enews-submit" />
 			</form>
 		<?php elseif ( ! empty( $instance['mailpoet-list'] ) && 'disabled' !== $instance['mailpoet-list'] ) : ?>
 			<form id="subscribe<?php echo esc_attr( $this->id ); ?>" action="<?php echo esc_attr( $current_url ); ?>" method="post" name="<?php echo esc_attr( $this->id ); ?>">
@@ -221,7 +254,23 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 		// We run KSES on update since we want to allow some HTML, so ignoring the ouput escape check.
 		echo wpautop( apply_filters( 'gee_after_text', $instance['after_text'] ) ); // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped
 
-		echo '</div>' . $after_widget; // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped
+		// If Genesis is the parent theme.
+		if ( function_exists( 'genesis_markup' ) ) {
+			genesis_markup(
+				[
+					'close'   => '</div>',
+					'context' => 'enews',
+					'echo'    => true,
+					'params'  => [
+						'instance' => $instance,
+					],
+				]
+			);
+		} else {
+			echo '</div>';
+		}
+
+		echo $after_widget; // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped
 
 		// phpcs:enable WordPress.CSRF.NonceVerification
 	}
