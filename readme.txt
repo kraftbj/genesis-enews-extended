@@ -190,17 +190,6 @@ A special thanks to all who have contributed to Genesis eNews Extended.
 * Nick Davis
 * Maor Chasen
 
-= Translations =
-* David Decker (German)
-* Branco Radenovich (Slovak)
-* Marco Galasso (Italian)
-* Ryan Sullivan (Spanish)
-* Paul de Wouters (French)
-* Diane S (Serbian)
-* Daniel Bailey (Bulgarian)
-* Gary Jones (British English)
-* Fabiana Simões (Portuguese-Brazil)
-
 = StudioPress =
 * Special thanks to Brian Gardner and the team at StudioPress who wrote the original code that provided the foundation for the plugin.
 
