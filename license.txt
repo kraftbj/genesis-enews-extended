@@ -1,6 +1,6 @@
 Genesis eNews Extended is licensed under the GPL version 2 or any later version.
 
-Copyright 2012-2016 Brandon Kraft and other contributors.
+Copyright 2012-2021 Brandon Kraft and other contributors.
 --------------------------------------------------------------------------------
                     GNU GENERAL PUBLIC LICENSE
                        Version 2, June 1991
