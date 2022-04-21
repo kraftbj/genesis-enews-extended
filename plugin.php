@@ -33,7 +33,7 @@
  * Code based on original eNews Widget in the Genesis Framework by StudioPress - http://www.studiopress.com
  */
 
-require 'class-bjgk-genesis-enews-extended.php';
+require plugin_dir_path( __FILE__ ) . 'class-bjgk-genesis-enews-extended.php';
 
 add_action( 'widgets_init', 'bjgk_genesis_enews_load_widgets' );
 /**

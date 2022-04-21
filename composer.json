@@ -3,7 +3,7 @@
     "description": "Mailing subscription form plugin for WordPress",
     "type": "project",
     "require-dev": {
-        "automattic/jetpack-codesniffer": "^1.0"
+        "automattic/jetpack-codesniffer": "^2.5"
     },
     "license": "GPL2+",
     "authors": [
@@ -12,5 +12,9 @@
             "email": "public@brandonkraft.com"
         }
     ],
-    "require": {}
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    }
 }

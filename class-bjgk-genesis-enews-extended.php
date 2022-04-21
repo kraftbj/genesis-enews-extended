@@ -128,7 +128,8 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 		}
 
 		// Adds classes, including field count classes.
-		$classes = 'enews ' . sprintf( _n( 'enews-%s-field', 'enews-%s-fields', $field_count ), $field_count );
+		/* translators: %s: number of fields */
+		$classes = 'enews ' . sprintf( _n( 'enews-%s-field', 'enews-%s-fields', $field_count, 'genesis-enews-extended' ), $field_count );
 
 		// Establishes current URL for MailPoet action fields.
 		$current_url = ( is_ssl() ? 'https://' : 'http://' ) . wp_unslash( $_SERVER['HTTP_HOST'] ) . wp_unslash( $_SERVER['REQUEST_URI'] ); // Input var okay; sanitization okay.
@@ -139,20 +140,20 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 		// If Genesis is the parent theme.
 		if ( function_exists( 'genesis_markup' ) ) {
 			genesis_markup(
-				[
+				array(
 					'open'    => '<div %s>',
 					'context' => 'enews',
 					'echo'    => true,
-					'atts'    => [
+					'atts'    => array(
 						'class' => $classes,
-					],
-					'params'  => [
+					),
+					'params'  => array(
 						'instance' => $instance,
-					],
-				]
+					),
+				)
 			);
 		} else {
-			printf( '<div class="%s">', $classes );
+			printf( '<div class="%s">', esc_attr( $classes ) );
 		}
 
 		if ( ! empty( $instance['title'] ) ) {
@@ -257,14 +258,14 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 		// If Genesis is the parent theme.
 		if ( function_exists( 'genesis_markup' ) ) {
 			genesis_markup(
-				[
+				array(
 					'close'   => '</div>',
 					'context' => 'enews',
 					'echo'    => true,
-					'params'  => [
+					'params'  => array(
 						'instance' => $instance,
-					],
-				]
+					),
+				)
 			);
 		} else {
 			echo '</div>';
