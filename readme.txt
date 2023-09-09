@@ -4,7 +4,7 @@ Donate link: https://kraft.blog/donate/
 Tags: genesis, genesiswp, mailchimp, aweber, studiopress, newsletter, subscribe
 Requires at least: 4.9.6
 Requires PHP: 5.4.0
-Tested up to: 6.1
+Tested up to: 6.3
 Text Domain: genesis-enews-extended
 Stable tag: 2.2.0
 
@@ -84,12 +84,12 @@ Props to JiveDig for the contribution.
 * Minor code fix when MailPoet is not present.
 * Adds `genesis-enews-extended-args` filter to allow plugins to manipulate the widget settings prior to output.
 * Uses HTML 5 placeholders instead of JavaScript.
-* Form ID now uses unique value.
+* Form ID now uses a unique value.
 
 = 1.4.1 =
 * Add fieldset, legend, option, optgroup, select to allowed HTML for Hidden Fields area.
 * Update CSS for screenreaders. Props jwenerd.
-* Updated BG transations. Props Daniel Bailey.
+* Updated BG translations. Props Daniel Bailey.
 
 = 1.4.0 =
 * Adds MailPoet itegration. Props [Maor Chasen](http://maorchasen.com/).
@@ -129,12 +129,12 @@ Props to JiveDig for the contribution.
 * Fixed bug with some translations not working.
 
 = 1.1.0 =
-* Allows for more HTML tags to be used in Text to Show field. Dropped genesis_allowed_tags in favor or wp_kses_post. Props to [John Levandowski](http://wpselect.com/).
-* eNews Extended now compatible with Catalyst theme (Catalyst not officially supported).
-* Fuzzy translations added for a wide number of languages based on Genesis 1.8.2 translations of the original eNews Widget.
+* Allows for more HTML tags to be used in the Text to Show field. Dropped genesis_allowed_tags in favor or wp_kses_post. Props to [John Levandowski](http://wpselect.com/).
+* eNews Extended is now compatible with the Catalyst theme (Catalyst is not officially supported).
+* Fuzzy translations added for many languages based on Genesis 1.8.2 translations of the original eNews Widget.
 
 = 1.0.X =
-* Adds ability to edit "First Name" and "Last Name" displayed on front-end.
+* Adds the ability to edit "First Name" and "Last Name" displayed on front-end.
 * Security update and other code cleanup.
 * Version numbering now using semver.org rationale.
 
@@ -148,11 +148,11 @@ Props to JiveDig for the contribution.
 * Makes available first and last name fields.
 
 = 0.1.5 =
-* Adds option to open confirmation window in same tab.
+* Adds option to open confirmation window in the same tab.
 
 = 0.1.4 =
 * Adds l18n support for other languages, props to [David Decker!](http://deckerweb.de/)
-* Adds German translation , props to [David Decker!](http://deckerweb.de/)
+* Adds German translation, props to [David Decker!](http://deckerweb.de/)
 
 = 0.1.3 =
 * Adds Feedburner support in anticipation of Genesis 1.9
@@ -162,10 +162,10 @@ Props to JiveDig for the contribution.
 * Modifies class name to work with more StudioPress themes.
 
 = 0.1.1 =
-* Adds "Hidden Fields" widget setting to make widget compatible with more mailing services.
+* Adds "Hidden Fields" widget setting to make the widget compatible with more mailing services.
 
 = 0.1 =
-* Inital release.
+* Initial release.
 
 == Thanks ==
 
