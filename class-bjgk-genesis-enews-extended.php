@@ -164,33 +164,16 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 		// We run KSES on update since we want to allow some HTML, so ignoring the ouput escape check.
 		echo wpautop( apply_filters( 'gee_text', $instance['text'] ) ); // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped
 
-		if ( ! empty( $instance['id'] ) ) : ?>
-			<form
-					id="subscribe-<?php echo esc_attr( $this->id ); ?>"
-					action="https://feedburner.google.com/fb/a/mailverify"
-					method="post"
-					name="<?php echo esc_attr( $this->id ); ?>"
-				<?php if ( ! $this->is_amp() ) : ?>
-					target="popupwindow"
-					onsubmit="window.open( 'https://feedburner.google.com/fb/a/mailverify?uri=<?php echo esc_js( $instance['id'] ); ?>', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true"
-				<?php else : ?>
-					on="<?php echo esc_attr( sprintf( 'submit-success:AMP.navigateTo( url=%s, target=_blank )', wp_json_encode( 'https://feedburner.google.com/fb/a/mailverify?uri=' . $instance['id'], JSON_UNESCAPED_SLASHES ) ) ); ?>"
-				<?php endif; ?>
-					xmlns="http://www.w3.org/1999/html">
-				<input type="<?php echo current_theme_supports( 'html5' ) ? 'email' : 'text'; ?>" value="" id="subbox" aria-label="<?php echo esc_attr( $instance['input_text'] ); ?>" placeholder="<?php echo esc_attr( $instance['input_text'] ); ?>" name="email"
-																	<?php
-																	if ( current_theme_supports( 'html5' ) ) :
-																		?>
-																		required="required"<?php endif; ?> />
-				<input type="hidden" name="uri" value="<?php echo esc_attr( $instance['id'] ); ?>" />
-				<input type="hidden" name="loc" value="<?php echo esc_attr( get_locale() ); ?>" />
-				<input type="submit" value="<?php echo esc_attr( $instance['button_text'] ); ?>" id="subbutton" />
-
-				<?php if ( $this->is_amp() ) : ?>
-					<div submit-success><!-- Suppress the success message from the AMP plugin because the result is shown in the opened window. --></div>
-				<?php endif; ?>
-			</form>
-		<?php elseif ( ! empty( $instance['action'] ) ) : ?>
+		if ( ! empty( $instance['id'] ) ) :
+			// Feedburner is no longer supported. Display a specific notice for admins and a generic one for all others.
+			if ( current_user_can( 'manage_options' ) ) {
+				// We run KSES on update since we want to allow some HTML, so ignoring the ouput escape check.
+				echo '<p>' . esc_html( __( 'Feedburner is no longer supported. Please migrate to another RSS to E-mail providor.', 'genesis-enews-extended' ) ) . '</p>';
+			} else {
+				// We run KSES on update since we want to allow some HTML, so ignoring the ouput escape check.
+				echo '<p>' . esc_html( __( "This website's subscription form is not currently operational.", 'genesis-enews-extended' ) ) . '</p>';
+			}
+		elseif ( ! empty( $instance['action'] ) ) : ?>
 			<form id="subscribe<?php echo esc_attr( $this->id ); ?>" class="enews-form" action="<?php echo esc_attr( $instance['action'] ); ?>" method="post"
 				<?php
 				// The AMP condition is used here because if the form submission handler does a redirect, the amp-form component will error with:
@@ -399,7 +382,7 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 			<label><?php esc_html_e( 'Google/Feedburner ID', 'genesis-enews-extended' ); ?>:
 			<input type="text" id="<?php echo esc_attr( $this->get_field_id( 'id' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'id' ) ); ?>" value="<?php echo esc_attr( $instance['id'] ); ?>" class="widefat" /><br />
 			</label>
-			<small><?php esc_html_e( 'Entering your Feedburner ID here will deactivate the custom options below.', 'genesis-enews-extended' ); ?></small>
+			<small><?php esc_html_e( 'Feedburner is no longer operational. Do not use it and please update your widget to no longer use this option! Entering a value here will deactivate the custom options below.', 'genesis-enews-extended' ); ?></small>
 		</p>
 		<hr style="background-color: #ccc; border: 0; height: 1px; margin: 20px 0;">
 		<p>
