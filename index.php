@@ -6,7 +6,7 @@
  * @version   2.2.0
  * @author    Brandon Kraft <public@brandonkraft.com>
  * @link      https://kraft.blog/genesis-enews-extended/
- * @copyright Copyright (c) 2012-2018, Brandon Kraft
+ * @copyright Copyright (c) 2012-2025, Brandon Kraft
  * @license   GPL-2.0+
  */
 
