@@ -164,6 +164,16 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 				<input type="submit" value="<?php echo esc_attr( $instance['button_text'] ); ?>" class="enews-submit" />
 			</form>
 			<?php
+		else :
+			// Show admin-only warning when form action is empty.
+			if ( current_user_can( 'manage_options' ) ) :
+				?>
+				<div class="enews-admin-notice" role="alert" style="padding: 10px; background: #fff3cd; border: 1px solid #ffc107; border-radius: 4px; color: #856404;">
+					<strong><?php esc_html_e( 'Configuration Required', 'genesis-enews-extended' ); ?>:</strong>
+					<?php esc_html_e( 'This widget will not display a subscription form until you configure the Form Action URL in the widget settings.', 'genesis-enews-extended' ); ?>
+				</div>
+				<?php
+			endif;
 		endif;
 		if ( $instance['display_privacy'] && function_exists( 'the_privacy_policy_link' ) ) {
 			the_privacy_policy_link( '<small class="enews-privacy">', '</small>' );
