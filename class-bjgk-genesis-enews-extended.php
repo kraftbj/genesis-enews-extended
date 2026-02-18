@@ -168,7 +168,7 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 			// Show admin-only warning when form action is empty.
 			if ( current_user_can( 'manage_options' ) ) :
 				?>
-				<div class="enews-admin-notice" style="padding: 10px; background: #fff3cd; border: 1px solid #ffc107; border-radius: 4px; color: #856404;">
+				<div class="enews-admin-notice" role="alert" style="padding: 10px; background: #fff3cd; border: 1px solid #ffc107; border-radius: 4px; color: #856404;">
 					<strong><?php esc_html_e( 'Configuration Required', 'genesis-enews-extended' ); ?>:</strong>
 					<?php esc_html_e( 'This widget will not display a subscription form until you configure the Form Action URL in the widget settings.', 'genesis-enews-extended' ); ?>
 				</div>
