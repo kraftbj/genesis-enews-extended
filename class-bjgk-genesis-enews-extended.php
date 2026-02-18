@@ -43,12 +43,9 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 			'fname_text'       => '',
 			'lname_text'       => '',
 			'button_text'      => '',
-			'id'               => '',
 			'email-field'      => '',
 			'action'           => '',
 			'display_privacy'  => 0,
-			'mailpoet_check'   => __( 'Check your inbox or spam folder now to confirm your subscription.', 'genesis-enews-extended' ),
-			'mailpoet_subbed'  => __( "You've successfully subscribed.", 'genesis-enews-extended' ),
 		);
 
 		$widget_ops = array(
@@ -71,15 +68,12 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 	/**
 	 * Echo the widget content.
 	 *
-	 * The WordPress.CSRF.NonceVerification sniff is disabled since we are dealing with intentionally logged-out submissions.
-	 *
 	 * @since 0.1.0
 	 *
 	 * @param array $args     Display arguments including before_title, after_title, before_widget, and after_widget.
 	 * @param array $instance The settings for the particular instance of the widget.
 	 */
 	public function widget( $args, $instance ) {
-		// phpcs:disable WordPress.CSRF.NonceVerification
 		$before_widget = $args['before_widget'];
 		$before_title  = $args['before_title'];
 		$after_title   = $args['after_title'];
@@ -88,25 +82,6 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 		// Merge with defaults.
 		$instance = wp_parse_args( (array) $instance, $this->defaults );
 		$instance = apply_filters( 'genesis-enews-extended-args', $instance ); //phpcs:ignore WordPress.NamingConventions.ValidHookName
-
-		// Checks if MailPoet exists. If so, a check for form submission will take place.
-		// phpcs:disable WordPress.Security.NonceVerification.Missing
-		if ( class_exists( 'WYSIJA' ) && isset( $_POST['submission-type'] ) && 'mailpoet' === $_POST['submission-type'] && ! empty( $instance['mailpoet-list'] ) ) { // Input var okay.
-			$subscriber_data = array(
-				'user'      => array(
-					'firstname' => isset( $_POST['mailpoet-firstname'] ) ? sanitize_title( wp_unslash( $_POST['mailpoet-firstname'] ) ) : '', // Input var okay.
-					'lastname'  => isset( $_POST['mailpoet-lastname'] ) ? sanitize_title( wp_unslash( $_POST['mailpoet-lastname'] ) ) : '', // Input var okay.
-					'email'     => isset( $_POST['mailpoet-email'] ) ? sanitize_email( wp_unslash( $_POST['mailpoet-email'] ) ) : '', // Input var okay.
-				),
-				'user_list' => array(
-					'list_ids' => array_values( $instance['mailpoet-list'] ),
-				),
-			);
-
-			$mailpoet_subscriber_id = WYSIJA::get( 'user', 'helper' )->addSubscriber( $subscriber_data );
-		}
-
-		// phpcs:enable
 
 		// Set default fname_text, lname_text for backwards compat for installs upgraded from 0.1.6+ to 0.3.0+.
 		if ( empty( $instance['fname_text'] ) ) {
@@ -131,10 +106,7 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 		/* translators: %s: number of fields */
 		$classes = 'enews ' . sprintf( _n( 'enews-%s-field', 'enews-%s-fields', $field_count, 'genesis-enews-extended' ), $field_count );
 
-		// Establishes current URL for MailPoet action fields.
-		$current_url = ( is_ssl() ? 'https://' : 'http://' ) . wp_unslash( $_SERVER['HTTP_HOST'] ) . wp_unslash( $_SERVER['REQUEST_URI'] ); // Input var okay; sanitization okay.
-
-		// We run KSES on update since we want to allow some HTML, so ignoring the ouput escape check.
+		// We run KSES on update since we want to allow some HTML, so ignoring the output escape check.
 		echo $before_widget; // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped
 
 		// If Genesis is the parent theme.
@@ -157,24 +129,15 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 		}
 
 		if ( ! empty( $instance['title'] ) ) {
-			// We run KSES on update since we want to allow some HTML, so ignoring the ouput escape check.
+			// We run KSES on update since we want to allow some HTML, so ignoring the output escape check.
 			echo $before_title . apply_filters( 'widget_title', $instance['title'], $instance, $this->id_base ) . $after_title; // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped
 		}
 
-		// We run KSES on update since we want to allow some HTML, so ignoring the ouput escape check.
+		// We run KSES on update since we want to allow some HTML, so ignoring the output escape check.
 		echo wpautop( apply_filters( 'gee_text', $instance['text'] ) ); // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped
 
-		if ( ! empty( $instance['id'] ) ) :
-			// Feedburner is no longer supported. Display a specific notice for admins and a generic one for all others.
-			if ( current_user_can( 'manage_options' ) ) {
-				// We run KSES on update since we want to allow some HTML, so ignoring the ouput escape check.
-				echo '<p>' . esc_html( __( 'Feedburner is no longer supported. Please migrate to another RSS to E-mail providor.', 'genesis-enews-extended' ) ) . '</p>';
-			} else {
-				// We run KSES on update since we want to allow some HTML, so ignoring the ouput escape check.
-				echo '<p>' . esc_html( __( "This website's subscription form is not currently operational.", 'genesis-enews-extended' ) ) . '</p>';
-			}
-		elseif ( ! empty( $instance['action'] ) ) : ?>
-			<form id="subscribe<?php echo esc_attr( $this->id ); ?>" class="enews-form" action="<?php echo esc_attr( $instance['action'] ); ?>" method="post"
+		if ( ! empty( $instance['action'] ) ) : ?>
+			<form id="subscribe-<?php echo esc_attr( $this->id ); ?>" class="enews-form" action="<?php echo esc_url( $instance['action'] ); ?>" method="post"
 				<?php
 				// The AMP condition is used here because if the form submission handler does a redirect, the amp-form component will error with:
 				// "Redirecting to target=_blank using AMP-Redirect-To is currently not supported, use target=_top instead".
@@ -187,55 +150,35 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 				<?php
 				if ( ! empty( $instance['fname-field'] ) ) :
 					?>
-					<input type="text" id="subbox1" class="enews-subbox enews-fname" value="" aria-label="<?php echo esc_attr( $instance['fname_text'] ); ?>" placeholder="<?php echo esc_attr( $instance['fname_text'] ); ?>" name="<?php echo esc_attr( $instance['fname-field'] ); ?>" /><?php endif ?>
+					<input type="text" class="enews-subbox enews-fname" value="" aria-label="<?php echo esc_attr( $instance['fname_text'] ); ?>" placeholder="<?php echo esc_attr( $instance['fname_text'] ); ?>" name="<?php echo esc_attr( $instance['fname-field'] ); ?>" /><?php endif ?>
 				<?php
 				if ( ! empty( $instance['lname-field'] ) ) :
 					?>
-					<input type="text" id="subbox2" class="enews-subbox enews-lname" value="" aria-label="<?php echo esc_attr( $instance['lname_text'] ); ?>" placeholder="<?php echo esc_attr( $instance['lname_text'] ); ?>" name="<?php echo esc_attr( $instance['lname-field'] ); ?>" /><?php endif ?>
-				<input type="<?php echo current_theme_supports( 'html5' ) ? 'email' : 'text'; ?>" value="" id="subbox" class="enews-email" aria-label="<?php echo esc_attr( $instance['input_text'] ); ?>" placeholder="<?php echo esc_attr( $instance['input_text'] ); ?>" name="<?php echo esc_js( $instance['email-field'] ); ?>"
-																	<?php
-																	if ( current_theme_supports( 'html5' ) ) :
-																		?>
-																		required="required"<?php endif; ?> />
-				<?php echo $instance['hidden_fields']; // phpcs:ignore ?>
-				<input type="submit" value="<?php echo esc_attr( $instance['button_text'] ); ?>" id="subbutton" class="enews-submit" />
-			</form>
-		<?php elseif ( ! empty( $instance['mailpoet-list'] ) && 'disabled' !== $instance['mailpoet-list'] ) : ?>
-			<form id="subscribe<?php echo esc_attr( $this->id ); ?>" action="<?php echo esc_attr( $current_url ); ?>" method="post" name="<?php echo esc_attr( $this->id ); ?>">
-				<?php
-				if ( ! empty( $mailpoet_subscriber_id ) && is_int( $mailpoet_subscriber_id ) ) :
-					// confirmation message phrasing depends on whether the user has to verify his subscription or not.
-					$mailpoet_needs_confirmation = WYSIJA::get( 'config', 'model' )->getValue( 'confirm_dbleoptin' ); // bool.
-					$success_message             = $mailpoet_needs_confirmation ? $instance['mailpoet_check'] : $instance['mailpoet_subbed'];
-					?>
-				<div class="mailpoet-message mailpoet-success <?php echo $mailpoet_needs_confirmation ? 'mailpoet-needs-confirmation' : 'mailpoet-confirmed'; ?>">
-					<?php echo esc_html( $success_message ); ?>
-				</div>
-				<?php endif; ?>
-				<?php
-				if ( isset( $instance['mailpoet-show-fname'] ) ) :
-					?>
-					<input type="text" id="subbox1" class="enews-subbox" value="" aria-label="<?php echo esc_attr( $instance['fname_text'] ); ?>" placeholder="<?php echo esc_attr( $instance['fname_text'] ); ?>" name="mailpoet-firstname" /><?php endif ?>
-				<?php
-				if ( isset( $instance['mailpoet-show-lname'] ) ) :
-					?>
-					<input type="text" id="subbox2" class="enews-subbox" value="" aria-label="<?php echo esc_attr( $instance['lname_text'] ); ?>" placeholder="<?php echo esc_attr( $instance['lname_text'] ); ?>" name="mailpoet-lastname" /><?php endif ?>
-				<input type="<?php echo current_theme_supports( 'html5' ) ? 'email' : 'text'; ?>" value="" id="subbox" aria-label="<?php echo esc_attr( $instance['input_text'] ); ?>" placeholder="<?php echo esc_attr( $instance['input_text'] ); ?>" name="mailpoet-email"
-																	<?php
-																	if ( current_theme_supports( 'html5' ) ) :
-																		?>
-																		required="required"<?php endif; ?> />
-				<?php echo $instance['hidden_fields']; // phpcs:ignore ?>
-				<input type="hidden" name="submission-type" value="mailpoet" />
-				<input type="submit" value="<?php echo esc_attr( $instance['button_text'] ); ?>" id="subbutton" />
+					<input type="text" class="enews-subbox enews-lname" value="" aria-label="<?php echo esc_attr( $instance['lname_text'] ); ?>" placeholder="<?php echo esc_attr( $instance['lname_text'] ); ?>" name="<?php echo esc_attr( $instance['lname-field'] ); ?>" /><?php endif ?>
+				<input type="<?php echo current_theme_supports( 'html5' ) ? 'email' : 'text'; ?>" value="" class="enews-email" aria-label="<?php echo esc_attr( $instance['input_text'] ); ?>" placeholder="<?php echo esc_attr( $instance['input_text'] ); ?>" name="<?php echo esc_attr( $instance['email-field'] ); ?>"
+					<?php
+					if ( current_theme_supports( 'html5' ) ) :
+						?>
+						required="required"<?php endif; ?> />
+				<?php echo wp_kses( $instance['hidden_fields'], $this->get_hidden_fields_allowed_html() ); ?>
+				<input type="submit" value="<?php echo esc_attr( $instance['button_text'] ); ?>" class="enews-submit" />
 			</form>
 			<?php
+		else :
+			// Show admin-only warning when form action is empty.
+			if ( current_user_can( 'manage_options' ) ) :
+				?>
+				<div class="enews-admin-notice" role="alert" style="padding: 10px; background: #fff3cd; border: 1px solid #ffc107; border-radius: 4px; color: #856404;">
+					<strong><?php esc_html_e( 'Configuration Required', 'genesis-enews-extended' ); ?>:</strong>
+					<?php esc_html_e( 'This widget will not display a subscription form until you configure the Form Action URL in the widget settings.', 'genesis-enews-extended' ); ?>
+				</div>
+				<?php
+			endif;
 		endif;
 		if ( $instance['display_privacy'] && function_exists( 'the_privacy_policy_link' ) ) {
 			the_privacy_policy_link( '<small class="enews-privacy">', '</small>' );
-
 		}
-		// We run KSES on update since we want to allow some HTML, so ignoring the ouput escape check.
+		// We run KSES on update since we want to allow some HTML, so ignoring the output escape check.
 		echo wpautop( apply_filters( 'gee_after_text', $instance['after_text'] ) ); // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped
 
 		// If Genesis is the parent theme.
@@ -255,8 +198,6 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 		}
 
 		echo $after_widget; // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped
-
-		// phpcs:enable WordPress.CSRF.NonceVerification
 	}
 
 	/**
@@ -275,22 +216,69 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 	 * @return array Settings to save or bool false to cancel saving
 	 */
 	public function update( $new_instance, $old_instance ) { // phpcs:ignore VariableAnalysis.CodeAnalysis.VariableAnalysis.UnusedVariable
-		$new_instance['title']           = trim( strip_tags( $new_instance['title'], '<i>' ) );
+		$new_instance['title']           = trim( wp_kses( $new_instance['title'], array( 'i' => array() ) ) );
 		$new_instance['text']            = trim( wp_kses_post( $new_instance['text'] ) );
-		$new_instance['hidden_fields']   = strip_tags( $new_instance['hidden_fields'], '<a>, <div>, <fieldset>, <input>, <label>, <legend>, <option>, <optgroup>, <select>, <textarea>' );
+		$new_instance['hidden_fields']   = wp_kses( $new_instance['hidden_fields'], $this->get_hidden_fields_allowed_html() );
 		$new_instance['after_text']      = trim( wp_kses_post( $new_instance['after_text'] ) );
-		$new_instance['id']              = trim( str_replace( 'http://feeds.feedburner.com/', '', $new_instance['id'] ) );
+		$new_instance['action']          = esc_url_raw( trim( $new_instance['action'] ) );
 		$new_instance['display_privacy'] = ( isset( $new_instance['display_privacy'] ) ) ? (int) $new_instance['display_privacy'] : 0;
 
-		if ( isset( $new_instance['mailpoet_check'] ) ) {
-			$new_instance['mailpoet_check'] = wp_kses_post( $new_instance['mailpoet_check'] );
-		}
-
-		if ( isset( $new_instance['mailpoet_subbed'] ) ) {
-			$new_instance['mailpoet_subbed'] = wp_kses_post( $new_instance['mailpoet_subbed'] );
-		}
-
 		return $new_instance;
+	}
+
+	/**
+	 * Returns allowed HTML tags and attributes for the hidden fields setting.
+	 *
+	 * @since 2.3.0
+	 *
+	 * @return array Allowed HTML elements and their attributes.
+	 */
+	protected function get_hidden_fields_allowed_html() {
+		return array(
+			'a'        => array(
+				'href'   => array(),
+				'title'  => array(),
+				'target' => array(),
+				'rel'    => array(),
+			),
+			'div'      => array(
+				'class' => array(),
+				'id'    => array(),
+				'style' => array(),
+			),
+			'fieldset' => array(),
+			'input'    => array(
+				'type'  => array(),
+				'name'  => array(),
+				'value' => array(),
+				'id'    => array(),
+				'class' => array(),
+			),
+			'label'    => array(
+				'for'   => array(),
+				'class' => array(),
+			),
+			'legend'   => array(),
+			'option'   => array(
+				'value'    => array(),
+				'selected' => array(),
+			),
+			'optgroup' => array(
+				'label' => array(),
+			),
+			'select'   => array(
+				'name'  => array(),
+				'id'    => array(),
+				'class' => array(),
+			),
+			'textarea' => array(
+				'name'  => array(),
+				'id'    => array(),
+				'class' => array(),
+				'rows'  => array(),
+				'cols'  => array(),
+			),
+		);
 	}
 
 	/**
@@ -321,69 +309,6 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 			</label>
 		</p>
 
-		<hr style="background-color: #ccc; border: 0; height: 1px; margin: 20px 0;">
-		<?php
-		if ( class_exists( 'WYSIJA' ) ) :
-			$mp_model_list = WYSIJA::get( 'list', 'model' );
-			$mp_lists      = $mp_model_list->get(
-				array( 'name', 'list_id' ),
-				array(
-					'is_enabled' => 1,
-				)
-			);
-			?>
-		<p>
-			<label for="<?php echo esc_attr( $this->get_field_id( 'mailpoet-list' ) ); ?>"><?php esc_html_e( 'MailPoet List', 'genesis-enews-extended' ); ?>:</label>
-			<fieldset>
-				<ul>
-					<?php foreach ( $mp_lists as $mp_list ) : ?>
-					<li>
-						<label>
-							<input type="checkbox" name="<?php echo esc_attr( $this->get_field_name( 'mailpoet-list' ) ); ?>[]" value="<?php echo esc_attr( $mp_list['list_id'] ); ?>"
-																	<?php
-																	if ( isset( $instance['mailpoet-list'] ) ) {
-																		checked( in_array( $mp_list['list_id'], (array) $instance['mailpoet-list'], true ) ); }
-																	?>
-/>
-							<?php echo esc_html( $mp_list['name'] ); ?>
-						</label>
-					</li>
-					<?php endforeach; ?>
-				</ul>
-
-				<small>
-					<?php esc_html_e( 'Show Fields:', 'genesis-enews-extended' ); ?><br/>
-					<label>
-						<input type="checkbox" name="<?php echo esc_attr( $this->get_field_name( 'mailpoet-show-fname' ) ); ?>" value="1" <?php checked( isset( $instance['mailpoet-show-fname'] ) ); ?> />
-						<?php esc_html_e( 'First Name', 'genesis-enews-extended' ); ?>
-					</label>
-					<label>
-						<input type="checkbox" name="<?php echo esc_attr( $this->get_field_name( 'mailpoet-show-lname' ) ); ?>" value="1" <?php checked( isset( $instance['mailpoet-show-lname'] ) ); ?> />
-						<?php esc_html_e( 'Last Name', 'genesis-enews-extended' ); ?>
-					</label>
-
-				</small>
-
-				<p>
-					<label><?php esc_html_e( 'Text Displayed If Confirmation Needed', 'genesis-enews-extended' ); ?>:<br />
-					<textarea id="<?php echo esc_attr( $this->get_field_id( 'mailpoet_check' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'mailpoet_check' ) ); ?>" class="widefat" rows="6" cols="4"><?php echo esc_html( $instance['mailpoet_check'] ); ?></textarea>
-					</label>
-				</p>
-				<p>
-					<><?php esc_html_e( 'Text Displayed If Subscribed', 'genesis-enews-extended' ); ?>:<br />
-					<textarea id="<?php echo esc_attr( $this->get_field_id( 'mailpoet_subbed' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'mailpoet_subbed' ) ); ?>" class="widefat" rows="6" cols="4"><?php echo esc_html( $instance['mailpoet_subbed'] ); ?></textarea>
-					</label>
-				</p>
-			</fieldset>
-		</p>
-		<hr style="background: #ccc; border: 0; height: 1px; margin: 20px 0;">
-		<?php endif; ?>
-		<p>
-			<label><?php esc_html_e( 'Google/Feedburner ID', 'genesis-enews-extended' ); ?>:
-			<input type="text" id="<?php echo esc_attr( $this->get_field_id( 'id' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'id' ) ); ?>" value="<?php echo esc_attr( $instance['id'] ); ?>" class="widefat" /><br />
-			</label>
-			<small><?php esc_html_e( 'Feedburner is no longer operational. Do not use it and please update your widget to no longer use this option! Entering a value here will deactivate the custom options below.', 'genesis-enews-extended' ); ?></small>
-		</p>
 		<hr style="background-color: #ccc; border: 0; height: 1px; margin: 20px 0;">
 		<p>
 			<label><?php esc_html_e( 'Form Action', 'genesis-enews-extended' ); ?>:
