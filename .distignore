@@ -1,0 +1,18 @@
+# Directories
+/.git
+/.github
+/.claude
+/tests
+/node_modules
+/vendor
+
+# Files
+/.gitignore
+/.gitattributes
+/.DS_Store
+.DS_Store
+/.phpcs.xml.dist
+/phpunit.xml.dist
+/composer.json
+/composer.lock
+/.distignore
