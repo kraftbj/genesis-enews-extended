@@ -6,7 +6,7 @@ Requires at least: 4.9.6
 Requires PHP: 5.4.0
 Tested up to: 7.0
 Text Domain: genesis-enews-extended
-Stable tag: 2.2.0
+Stable tag: 2.3.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -45,6 +45,15 @@ Questions can be asked at the [WordPress.org Support Forum](https://wordpress.or
 2. Widget setting screen.
 
 == Changelog ==
+= 2.3.0 =
+* Removed defunct FeedBurner integration. Google discontinued email subscriptions in 2021.
+* Removed obsolete MailPoet 2 (WYSIJA) integration.
+* Security: tightened output escaping on the form action URL, hidden fields, and widget title.
+* Accessibility: added `role="alert"` to admin-facing configuration notices.
+* Added an admin notice when the widget is saved without a form action, to help new users spot misconfiguration.
+* Fixed duplicate hardcoded HTML IDs that could collide when multiple widget instances were placed on a page.
+* Bumped tested version to WordPress 7.0.
+
 = 2.2.0 =
 * Adds "enews-{$field_count}-field" classes to form to aid in additional styling. See https://github.com/kraftbj/genesis-enews-extended/pull/152
 Props to JiveDig for the contribution.
