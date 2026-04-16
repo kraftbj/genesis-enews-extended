@@ -6,7 +6,7 @@ Requires at least: 4.9.6
 Requires PHP: 5.4.0
 Tested up to: 7.0
 Text Domain: genesis-enews-extended
-Stable tag: 2.3.0
+Stable tag: 2.3.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -45,6 +45,9 @@ Questions can be asked at the [WordPress.org Support Forum](https://wordpress.or
 2. Widget setting screen.
 
 == Changelog ==
+= 2.3.1 =
+* Restored `subbox`, `subbox1`, `subbox2`, and `subbutton` as CSS class names on the form's input elements. These were removed in 2.3.0 along with the duplicate-ID fix; bringing them back as classes preserves backward-compatible style hooks while keeping the multi-instance fix intact.
+
 = 2.3.0 =
 * Removed defunct FeedBurner integration. Google discontinued email subscriptions in 2021.
 * Removed obsolete MailPoet 2 (WYSIJA) integration.
@@ -200,6 +203,9 @@ If you're not listed and think you should be, please drop me a note. Any omissio
 
 
 == Upgrade Notice ==
+
+= 2.3.1 =
+Restores `subbox`, `subbox1`, `subbox2`, and `subbutton` as CSS classes on the form inputs after they were removed (as IDs) in 2.3.0. CSS rules using `.subbox1` etc. will work again; rules using `#subbox1` ID selectors should be updated to use the class form.
 
 = 2.3.0 =
 Removes the defunct FeedBurner and obsolete MailPoet 2 integrations. If your widget was configured with either, reconfigure it with your current mailing list service's form action URL.
