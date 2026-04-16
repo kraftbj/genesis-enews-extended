@@ -3,7 +3,7 @@
  * Genesis eNews Extended
  *
  * @package   BJGK\Genesis_enews_extended
- * @version   2.3.0
+ * @version   2.3.1
  * @author    Brandon Kraft <public@brandonkraft.com>
  * @link      https://kraft.blog/genesis-enews-extended/
  * @copyright Copyright (c) 2012-2026, Brandon Kraft
@@ -150,18 +150,18 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 				<?php
 				if ( ! empty( $instance['fname-field'] ) ) :
 					?>
-					<input type="text" class="enews-subbox enews-fname" value="" aria-label="<?php echo esc_attr( $instance['fname_text'] ); ?>" placeholder="<?php echo esc_attr( $instance['fname_text'] ); ?>" name="<?php echo esc_attr( $instance['fname-field'] ); ?>" /><?php endif ?>
+					<input type="text" id="subbox1" class="enews-subbox enews-fname subbox1" value="" aria-label="<?php echo esc_attr( $instance['fname_text'] ); ?>" placeholder="<?php echo esc_attr( $instance['fname_text'] ); ?>" name="<?php echo esc_attr( $instance['fname-field'] ); ?>" /><?php endif ?>
 				<?php
 				if ( ! empty( $instance['lname-field'] ) ) :
 					?>
-					<input type="text" class="enews-subbox enews-lname" value="" aria-label="<?php echo esc_attr( $instance['lname_text'] ); ?>" placeholder="<?php echo esc_attr( $instance['lname_text'] ); ?>" name="<?php echo esc_attr( $instance['lname-field'] ); ?>" /><?php endif ?>
-				<input type="<?php echo current_theme_supports( 'html5' ) ? 'email' : 'text'; ?>" value="" class="enews-email" aria-label="<?php echo esc_attr( $instance['input_text'] ); ?>" placeholder="<?php echo esc_attr( $instance['input_text'] ); ?>" name="<?php echo esc_attr( $instance['email-field'] ); ?>"
+					<input type="text" id="subbox2" class="enews-subbox enews-lname subbox2" value="" aria-label="<?php echo esc_attr( $instance['lname_text'] ); ?>" placeholder="<?php echo esc_attr( $instance['lname_text'] ); ?>" name="<?php echo esc_attr( $instance['lname-field'] ); ?>" /><?php endif ?>
+				<input type="<?php echo current_theme_supports( 'html5' ) ? 'email' : 'text'; ?>" id="subbox" value="" class="enews-email subbox" aria-label="<?php echo esc_attr( $instance['input_text'] ); ?>" placeholder="<?php echo esc_attr( $instance['input_text'] ); ?>" name="<?php echo esc_attr( $instance['email-field'] ); ?>"
 					<?php
 					if ( current_theme_supports( 'html5' ) ) :
 						?>
 						required="required"<?php endif; ?> />
 				<?php echo wp_kses( $instance['hidden_fields'], $this->get_hidden_fields_allowed_html() ); ?>
-				<input type="submit" value="<?php echo esc_attr( $instance['button_text'] ); ?>" class="enews-submit" />
+				<input type="submit" id="subbutton" value="<?php echo esc_attr( $instance['button_text'] ); ?>" class="enews-submit subbutton" />
 			</form>
 			<?php
 		else :
