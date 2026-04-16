@@ -1,18 +1,20 @@
 === Genesis eNews Extended ===
 Contributors: kraftbj
 Donate link: https://kraft.blog/donate/
-Tags: genesis, genesiswp, mailchimp, aweber, studiopress, newsletter, subscribe
+Tags: genesis, genesiswp, newsletter, subscribe, mailchimp
 Requires at least: 4.9.6
 Requires PHP: 5.4.0
-Tested up to: 6.8
+Tested up to: 7.0
 Text Domain: genesis-enews-extended
 Stable tag: 2.2.0
+License: GPLv2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Creates a new widget to easily add mailing lists integration to a Genesis website. Works with FeedBurner, MailChimp, AWeber, FeedBlitz, ConvertKit and more.
+Genesis widget to add newsletter signup forms for MailChimp, AWeber, FeedBlitz, ConvertKit, and other mailing lists.
 
 == Description ==
 
-Creates a new widget to easily add mailing lists to a Genesis website. Recommended plugin in virtually all Genesis theme tutorials. The widget allows the site administrator to set either the Feedburner ID or form action, e-mail form field and hidden fields to mimic the subscribe form of other mailing list services.
+Creates a new widget to easily add mailing lists to a Genesis website. Recommended plugin in virtually all Genesis theme tutorials. The widget allows the site administrator to set the form action, e-mail form field, and hidden fields to mimic the subscribe form of other mailing list services.
 
 == Installation ==
 
