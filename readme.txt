@@ -203,6 +203,3 @@ If you're not listed and think you should be, please drop me a note. Any omissio
 
 = 2.3.0 =
 Removes the defunct FeedBurner and obsolete MailPoet 2 integrations. If your widget was configured with either, reconfigure it with your current mailing list service's form action URL.
-
-= 2.1.0 =
-Adds ability to link to site's privacy policy.
