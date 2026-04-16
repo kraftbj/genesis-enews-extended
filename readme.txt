@@ -1,18 +1,20 @@
 === Genesis eNews Extended ===
 Contributors: kraftbj
 Donate link: https://kraft.blog/donate/
-Tags: genesis, genesiswp, mailchimp, aweber, studiopress, newsletter, subscribe
+Tags: genesis, genesiswp, newsletter, subscribe, mailchimp
 Requires at least: 4.9.6
 Requires PHP: 5.4.0
-Tested up to: 5.6.0
+Tested up to: 7.0
 Text Domain: genesis-enews-extended
-Stable tag: 2.2.0
+Stable tag: 2.3.0
+License: GPLv2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Creates a new widget to easily add mailing lists integration to a Genesis website. Works with FeedBurner, MailChimp, AWeber, FeedBlitz, ConvertKit and more.
+Genesis widget to add newsletter signup forms for MailChimp, AWeber, FeedBlitz, ConvertKit, and other mailing lists.
 
 == Description ==
 
-Creates a new widget to easily add mailing lists to a Genesis website. Recommended plugin in virtually all Genesis theme tutorials. The widget allows the site administrator to set either the Feedburner ID or form action, e-mail form field and hidden fields to mimic the subscribe form of other mailing list services.
+Creates a new widget to easily add mailing lists to a Genesis website. Recommended plugin in virtually all Genesis theme tutorials. The widget allows the site administrator to set the form action, e-mail form field, and hidden fields to mimic the subscribe form of other mailing list services.
 
 == Installation ==
 
@@ -24,17 +26,9 @@ Creates a new widget to easily add mailing lists to a Genesis website. Recommend
 
 == Frequently Asked Questions ==
 
-= What services work with this plugin? =
-
-Feedburner, MailChimp, Aweber, FeedBlitz, ConvertKit, and Constant Contact are confirmed to work, but it should work with almost all services. If you have tested this with other services, please [contact me](https://kraft.blog/contact/)
-
 = How do I get the privacy policy link to show? The checkbox isn't working. =
 
 Genesis eNews Extended uses WordPress' built-in privacy policy setting. Be sure you have a privacy page set at wp-admin/privacy.php .
-
-= The "Opens in Same Tab" option doesn't work with FeedBurner. What's wrong? =
-
-That is intentional. You don't want to knock people off your site and leave them on FeedBurner's.
 
 = The first and last name fields look funky. =
 
@@ -51,6 +45,15 @@ Questions can be asked at the [WordPress.org Support Forum](https://wordpress.or
 2. Widget setting screen.
 
 == Changelog ==
+= 2.3.0 =
+* Removed defunct FeedBurner integration. Google discontinued email subscriptions in 2021.
+* Removed obsolete MailPoet 2 (WYSIJA) integration.
+* Security: tightened output escaping on the form action URL, hidden fields, and widget title.
+* Accessibility: added `role="alert"` to admin-facing configuration notices.
+* Added an admin notice when the widget is saved without a form action, to help new users spot misconfiguration.
+* Fixed duplicate hardcoded HTML IDs that could collide when multiple widget instances were placed on a page.
+* Bumped tested version to WordPress 7.0.
+
 = 2.2.0 =
 * Adds "enews-{$field_count}-field" classes to form to aid in additional styling. See https://github.com/kraftbj/genesis-enews-extended/pull/152
 Props to JiveDig for the contribution.
@@ -84,12 +87,12 @@ Props to JiveDig for the contribution.
 * Minor code fix when MailPoet is not present.
 * Adds `genesis-enews-extended-args` filter to allow plugins to manipulate the widget settings prior to output.
 * Uses HTML 5 placeholders instead of JavaScript.
-* Form ID now uses unique value.
+* Form ID now uses a unique value.
 
 = 1.4.1 =
 * Add fieldset, legend, option, optgroup, select to allowed HTML for Hidden Fields area.
 * Update CSS for screenreaders. Props jwenerd.
-* Updated BG transations. Props Daniel Bailey.
+* Updated BG translations. Props Daniel Bailey.
 
 = 1.4.0 =
 * Adds MailPoet itegration. Props [Maor Chasen](http://maorchasen.com/).
@@ -129,12 +132,12 @@ Props to JiveDig for the contribution.
 * Fixed bug with some translations not working.
 
 = 1.1.0 =
-* Allows for more HTML tags to be used in Text to Show field. Dropped genesis_allowed_tags in favor or wp_kses_post. Props to [John Levandowski](http://wpselect.com/).
-* eNews Extended now compatible with Catalyst theme (Catalyst not officially supported).
-* Fuzzy translations added for a wide number of languages based on Genesis 1.8.2 translations of the original eNews Widget.
+* Allows for more HTML tags to be used in the Text to Show field. Dropped genesis_allowed_tags in favor or wp_kses_post. Props to [John Levandowski](http://wpselect.com/).
+* eNews Extended is now compatible with the Catalyst theme (Catalyst is not officially supported).
+* Fuzzy translations added for many languages based on Genesis 1.8.2 translations of the original eNews Widget.
 
 = 1.0.X =
-* Adds ability to edit "First Name" and "Last Name" displayed on front-end.
+* Adds the ability to edit "First Name" and "Last Name" displayed on front-end.
 * Security update and other code cleanup.
 * Version numbering now using semver.org rationale.
 
@@ -148,11 +151,11 @@ Props to JiveDig for the contribution.
 * Makes available first and last name fields.
 
 = 0.1.5 =
-* Adds option to open confirmation window in same tab.
+* Adds option to open confirmation window in the same tab.
 
 = 0.1.4 =
 * Adds l18n support for other languages, props to [David Decker!](http://deckerweb.de/)
-* Adds German translation , props to [David Decker!](http://deckerweb.de/)
+* Adds German translation, props to [David Decker!](http://deckerweb.de/)
 
 = 0.1.3 =
 * Adds Feedburner support in anticipation of Genesis 1.9
@@ -162,10 +165,10 @@ Props to JiveDig for the contribution.
 * Modifies class name to work with more StudioPress themes.
 
 = 0.1.1 =
-* Adds "Hidden Fields" widget setting to make widget compatible with more mailing services.
+* Adds "Hidden Fields" widget setting to make the widget compatible with more mailing services.
 
 = 0.1 =
-* Inital release.
+* Initial release.
 
 == Thanks ==
 
@@ -190,17 +193,6 @@ A special thanks to all who have contributed to Genesis eNews Extended.
 * Nick Davis
 * Maor Chasen
 
-= Translations =
-* David Decker (German)
-* Branco Radenovich (Slovak)
-* Marco Galasso (Italian)
-* Ryan Sullivan (Spanish)
-* Paul de Wouters (French)
-* Diane S (Serbian)
-* Daniel Bailey (Bulgarian)
-* Gary Jones (British English)
-* Fabiana Simões (Portuguese-Brazil)
-
 = StudioPress =
 * Special thanks to Brian Gardner and the team at StudioPress who wrote the original code that provided the foundation for the plugin.
 
@@ -209,5 +201,5 @@ If you're not listed and think you should be, please drop me a note. Any omissio
 
 == Upgrade Notice ==
 
-= 2.1.0 =
-Adds ability to link to site's privacy policy.
+= 2.3.0 =
+Removes the defunct FeedBurner and obsolete MailPoet 2 integrations. If your widget was configured with either, reconfigure it with your current mailing list service's form action URL.

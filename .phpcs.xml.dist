@@ -11,6 +11,12 @@
 		</properties>
 	</rule>
 
+	<rule ref="Jetpack.Functions.I18n">
+    	<properties>
+    		<property name="text_domain" type="array" value="genesis-enews-extended" />
+    	</properties>
+    </rule>
+
 	<rule ref="WordPress.Utils.I18nTextDomainFixer">
 		<properties>
 			<property name="old_text_domain" type="array" />
@@ -30,5 +36,6 @@
 	<!-- Ignore external libraries -->
 	<exclude-pattern>/node_modules/*</exclude-pattern>
 	<exclude-pattern>/vendor/*</exclude-pattern>
+	<exclude-pattern>/tests/*</exclude-pattern>
 
 </ruleset>
