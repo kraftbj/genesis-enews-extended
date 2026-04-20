@@ -134,7 +134,8 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 		}
 
 		// We run KSES on update since we want to allow some HTML, so ignoring the output escape check.
-		echo wpautop( apply_filters( 'gee_text', $instance['text'] ) ); // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped
+		// gee_text_content runs after wpautop, matching core's widget_text/widget_text_content split, so block-level shortcode output isn't mangled by wpautop.
+		echo apply_filters( 'gee_text_content', wpautop( apply_filters( 'gee_text', $instance['text'] ) ) ); // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped
 
 		if ( ! empty( $instance['action'] ) ) : ?>
 			<form id="subscribe-<?php echo esc_attr( $this->id ); ?>" class="enews-form" action="<?php echo esc_url( $instance['action'] ); ?>" method="post"
@@ -179,7 +180,8 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 			the_privacy_policy_link( '<small class="enews-privacy">', '</small>' );
 		}
 		// We run KSES on update since we want to allow some HTML, so ignoring the output escape check.
-		echo wpautop( apply_filters( 'gee_after_text', $instance['after_text'] ) ); // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped
+		// gee_after_text_content runs after wpautop, matching core's widget_text/widget_text_content split, so block-level shortcode output isn't mangled by wpautop.
+		echo apply_filters( 'gee_after_text_content', wpautop( apply_filters( 'gee_after_text', $instance['after_text'] ) ) ); // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped
 
 		// If Genesis is the parent theme.
 		if ( function_exists( 'genesis_markup' ) ) {

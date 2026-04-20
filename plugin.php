@@ -46,5 +46,10 @@ function bjgk_genesis_enews_load_widgets() {
 }
 
 // Allow shortcodes in widget text areas by default. See #114.
-add_filter( 'gee_text', 'do_shortcode' );
-add_filter( 'gee_after_text', 'do_shortcode' );
+// Hooked on the *_content filters (post-wpautop) to match core's widget_text_content pattern, and guarded so sites that added do_shortcode themselves don't double-register.
+if ( ! has_filter( 'gee_text_content', 'do_shortcode' ) ) {
+	add_filter( 'gee_text_content', 'do_shortcode' );
+}
+if ( ! has_filter( 'gee_after_text_content', 'do_shortcode' ) ) {
+	add_filter( 'gee_after_text_content', 'do_shortcode' );
+}
