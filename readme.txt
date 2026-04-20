@@ -45,6 +45,10 @@ Questions can be asked at the [WordPress.org Support Forum](https://wordpress.or
 2. Widget setting screen.
 
 == Changelog ==
+= 2.4.0 =
+* Shortcodes now render by default in the widget's Text and After Text areas. Matches WordPress core's text widget behavior since 4.9.
+* Added new `gee_text_content` and `gee_after_text_content` filters that run after `wpautop`, mirroring core's `widget_text_content` split. Existing `gee_text` / `gee_after_text` hooks continue to receive raw user input. Sites that want to disable default shortcode processing can `remove_filter( 'gee_text_content', 'do_shortcode' )` (and the same for `gee_after_text_content`).
+
 = 2.3.1 =
 * Restored `subbox`, `subbox1`, `subbox2`, and `subbutton` on the form's input elements (as both `id` and class) for backward compatibility with sites that style off them. Note: when more than one widget instance is on the same page, the IDs will not be unique, which is technically invalid HTML but preserves long-standing behavior.
 
