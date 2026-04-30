@@ -3,7 +3,7 @@
  * Genesis eNews Extended
  *
  * @package   BJGK\Genesis_enews_extended
- * @version   2.3.1
+ * @version   2.4.0
  * @author    Brandon Kraft <public@brandonkraft.com>
  * @link      https://kraft.blog/genesis-enews-extended/
  * @copyright Copyright (c) 2012-2026, Brandon Kraft
@@ -138,7 +138,7 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 		echo apply_filters( 'gee_text_content', wpautop( apply_filters( 'gee_text', $instance['text'] ) ) ); // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped
 
 		if ( ! empty( $instance['action'] ) ) : ?>
-			<form id="subscribe-<?php echo esc_attr( $this->id ); ?>" class="enews-form" action="<?php echo esc_url( $instance['action'] ); ?>" method="post"
+			<form id="subscribe<?php echo esc_attr( $this->id ); ?>" class="enews-form" action="<?php echo esc_url( $instance['action'] ); ?>" method="post"
 				<?php
 				// The AMP condition is used here because if the form submission handler does a redirect, the amp-form component will error with:
 				// "Redirecting to target=_blank using AMP-Redirect-To is currently not supported, use target=_top instead".
@@ -231,54 +231,145 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 	/**
 	 * Returns allowed HTML tags and attributes for the hidden fields setting.
 	 *
+	 * Permits the attributes vendor newsletter snippets typically rely on
+	 * (placeholder, required, aria-*, data-*, validation/autocomplete hints,
+	 * etc.) while excluding event handlers and form-overriding attributes
+	 * (on*, formaction, formmethod, formtarget, formenctype, formnovalidate)
+	 * that could otherwise redirect submissions or execute JavaScript.
+	 *
 	 * @since 2.3.0
 	 *
 	 * @return array Allowed HTML elements and their attributes.
 	 */
 	protected function get_hidden_fields_allowed_html() {
+		$global = array(
+			'id'                => array(),
+			'class'             => array(),
+			'style'             => array(),
+			'title'             => array(),
+			'role'              => array(),
+			'tabindex'          => array(),
+			'hidden'            => array(),
+			'lang'              => array(),
+			'dir'               => array(),
+			'data-*'            => true,
+			// `aria-*` wildcards are not honored by wp_kses; common aria attributes are enumerated.
+			'aria-atomic'       => array(),
+			'aria-busy'         => array(),
+			'aria-controls'     => array(),
+			'aria-current'      => array(),
+			'aria-describedby'  => array(),
+			'aria-details'      => array(),
+			'aria-disabled'     => array(),
+			'aria-expanded'     => array(),
+			'aria-haspopup'     => array(),
+			'aria-hidden'       => array(),
+			'aria-invalid'      => array(),
+			'aria-label'        => array(),
+			'aria-labelledby'   => array(),
+			'aria-live'         => array(),
+			'aria-placeholder'  => array(),
+			'aria-pressed'      => array(),
+			'aria-readonly'     => array(),
+			'aria-required'     => array(),
+			'aria-valuetext'    => array(),
+		);
+
 		return array(
-			'a'        => array(
-				'href'   => array(),
-				'title'  => array(),
-				'target' => array(),
-				'rel'    => array(),
+			'a'        => array_merge(
+				$global,
+				array(
+					'href'     => array(),
+					'target'   => array(),
+					'rel'      => array(),
+					'download' => array(),
+				)
 			),
-			'div'      => array(
-				'class' => array(),
-				'id'    => array(),
-				'style' => array(),
+			'div'      => $global,
+			'fieldset' => array_merge(
+				$global,
+				array(
+					'name'     => array(),
+					'disabled' => array(),
+					'form'     => array(),
+				)
 			),
-			'fieldset' => array(),
-			'input'    => array(
-				'type'  => array(),
-				'name'  => array(),
-				'value' => array(),
-				'id'    => array(),
-				'class' => array(),
+			'input'    => array_merge(
+				$global,
+				array(
+					'type'           => array(),
+					'name'           => array(),
+					'value'          => array(),
+					'placeholder'    => array(),
+					'required'       => array(),
+					'readonly'       => array(),
+					'disabled'       => array(),
+					'checked'        => array(),
+					'autocomplete'   => array(),
+					'autocapitalize' => array(),
+					'autocorrect'    => array(),
+					'spellcheck'     => array(),
+					'inputmode'      => array(),
+					'pattern'        => array(),
+					'min'            => array(),
+					'max'            => array(),
+					'step'           => array(),
+					'minlength'      => array(),
+					'maxlength'      => array(),
+					'size'           => array(),
+					'list'           => array(),
+					'multiple'       => array(),
+					'form'           => array(),
+				)
 			),
-			'label'    => array(
-				'for'   => array(),
-				'class' => array(),
+			'label'    => array_merge( $global, array( 'for' => array() ) ),
+			'legend'   => $global,
+			'option'   => array_merge(
+				$global,
+				array(
+					'value'    => array(),
+					'selected' => array(),
+					'disabled' => array(),
+					'label'    => array(),
+				)
 			),
-			'legend'   => array(),
-			'option'   => array(
-				'value'    => array(),
-				'selected' => array(),
+			'optgroup' => array_merge(
+				$global,
+				array(
+					'label'    => array(),
+					'disabled' => array(),
+				)
 			),
-			'optgroup' => array(
-				'label' => array(),
+			'select'   => array_merge(
+				$global,
+				array(
+					'name'         => array(),
+					'required'     => array(),
+					'disabled'     => array(),
+					'multiple'     => array(),
+					'size'         => array(),
+					'autocomplete' => array(),
+					'form'         => array(),
+				)
 			),
-			'select'   => array(
-				'name'  => array(),
-				'id'    => array(),
-				'class' => array(),
-			),
-			'textarea' => array(
-				'name'  => array(),
-				'id'    => array(),
-				'class' => array(),
-				'rows'  => array(),
-				'cols'  => array(),
+			'textarea' => array_merge(
+				$global,
+				array(
+					'name'           => array(),
+					'rows'           => array(),
+					'cols'           => array(),
+					'placeholder'    => array(),
+					'required'       => array(),
+					'readonly'       => array(),
+					'disabled'       => array(),
+					'minlength'      => array(),
+					'maxlength'      => array(),
+					'autocomplete'   => array(),
+					'autocapitalize' => array(),
+					'spellcheck'     => array(),
+					'wrap'           => array(),
+					'form'           => array(),
+				)
 			),
 		);
 	}

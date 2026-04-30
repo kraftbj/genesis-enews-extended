@@ -48,6 +48,9 @@ Questions can be asked at the [WordPress.org Support Forum](https://wordpress.or
 = 2.4.0 =
 * Shortcodes now render by default in the widget's Text and After Text areas. Matches WordPress core's text widget behavior since 4.9.
 * Added new `gee_text_content` and `gee_after_text_content` filters that run after `wpautop`, mirroring core's `widget_text_content` split. Existing `gee_text` / `gee_after_text` hooks continue to receive raw user input. Sites that want to disable default shortcode processing can `remove_filter( 'gee_text_content', 'do_shortcode' )` (and the same for `gee_after_text_content`).
+* Fixed: inline `style` attributes are no longer stripped from `<input>` elements in the Hidden Fields box. This restores tracking pixels and visually-hidden honeypot fields used by Flodesk and similar services. Props 17thavenue for the report (issue 164).
+* Widened the Hidden Fields allowlist to permit common form attributes that vendor newsletter snippets rely on (`placeholder`, `required`, `autocomplete`, `pattern`, `min`/`max`/`step`, `aria-*`, `data-*`, `tabindex`, `role`, etc.) while continuing to strip event handlers (`on*`) and form-overriding attributes (`formaction`, `formmethod`).
+* Restored the pre-2.3.0 form `id` format (`subscribe<widget-id>`, no hyphen) after 2.3.0 inadvertently changed it to `subscribe-<widget-id>`.
 
 = 2.3.1 =
 * Restored `subbox`, `subbox1`, `subbox2`, and `subbutton` on the form's input elements (as both `id` and class) for backward compatibility with sites that style off them. Note: when more than one widget instance is on the same page, the IDs will not be unique, which is technically invalid HTML but preserves long-standing behavior.
@@ -207,6 +210,9 @@ If you're not listed and think you should be, please drop me a note. Any omissio
 
 
 == Upgrade Notice ==
+
+= 2.4.0 =
+Shortcodes now render in the widget's Text and After Text areas. Also fixes Hidden Fields losing inline `style` attributes (e.g. Flodesk tracking pixels) and restores common form attributes like `placeholder`, `required`, `aria-*`, and `data-*` that vendor signup snippets rely on.
 
 = 2.3.1 =
 Restores `subbox`, `subbox1`, `subbox2`, and `subbutton` on the form inputs (as both `id` and class) after they were removed in 2.3.0. Existing CSS using either `#subbox1` or `.subbox1` will work again.
