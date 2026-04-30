@@ -53,10 +53,12 @@ class Test_Hidden_Fields_Allowlist extends \WorDBless\BaseTestCase {
 		$input  = '<input type="text" name="confirm_email_address" style="display: none; background-image: url(https://example.com/p.gif)">';
 		$output = $this->sanitize( $input );
 
-		$this->assertStringContainsString( ' style=', $output, 'style attribute was stripped from <input>' );
-		$this->assertStringContainsString( 'display: none', $output, 'display: none declaration was lost' );
-		$this->assertStringContainsString( 'background-image', $output, 'background-image declaration was lost' );
-		$this->assertStringContainsString( 'url(https://example.com/p.gif)', $output, 'background-image url was lost' );
+		// `safecss_filter_attr` reserializes the value; the inter-declaration space after `;` is dropped.
+		$this->assertStringContainsString(
+			'style="display: none;background-image: url(https://example.com/p.gif)"',
+			$output,
+			'expected the full Flodesk-pixel style attribute to round-trip through sanitization intact'
+		);
 	}
 
 	/**
@@ -94,6 +96,9 @@ class Test_Hidden_Fields_Allowlist extends \WorDBless\BaseTestCase {
 		$input  = '<input type="text" name="x" style="background-image: url(javascript:alert(1))">';
 		$output = $this->sanitize( $input );
 
+		// Positive oracle: the input element itself must survive, so a regression
+		// that strips the whole tag fails this test rather than passing it.
+		$this->assertStringContainsString( 'name="x"', $output, 'the <input> tag was stripped entirely' );
 		$this->assertStringNotContainsString( 'javascript:', $output );
 		$this->assertStringNotContainsString( 'alert(', $output );
 	}
