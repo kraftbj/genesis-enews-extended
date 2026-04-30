@@ -11,7 +11,9 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        php: ['8.1']
+        # Pin to the PHP version composer.lock was generated against. Expand
+        # to a wider matrix once the lock and dev environment are decoupled.
+        php: ['8.5']
     steps:
       - name: Checkout
         uses: actions/checkout@v4
