@@ -3,7 +3,7 @@
  * Genesis eNews Extended
  *
  * @package   BJGK\Genesis_enews_extended
- * @version   2.3.1
+ * @version   2.4.0
  * @author    Brandon Kraft <public@brandonkraft.com>
  * @link      https://kraft.blog/genesis-enews-extended/
  * @copyright Copyright (c) 2012-2026, Brandon Kraft
@@ -134,10 +134,11 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 		}
 
 		// We run KSES on update since we want to allow some HTML, so ignoring the output escape check.
-		echo wpautop( apply_filters( 'gee_text', $instance['text'] ) ); // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped
+		// gee_text_content runs after wpautop, matching core's widget_text/widget_text_content split, so block-level shortcode output isn't mangled by wpautop.
+		echo apply_filters( 'gee_text_content', wpautop( apply_filters( 'gee_text', $instance['text'] ) ) ); // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped
 
 		if ( ! empty( $instance['action'] ) ) : ?>
-			<form id="subscribe-<?php echo esc_attr( $this->id ); ?>" class="enews-form" action="<?php echo esc_url( $instance['action'] ); ?>" method="post"
+			<form id="subscribe<?php echo esc_attr( $this->id ); ?>" class="enews-form" action="<?php echo esc_url( $instance['action'] ); ?>" method="post"
 				<?php
 				// The AMP condition is used here because if the form submission handler does a redirect, the amp-form component will error with:
 				// "Redirecting to target=_blank using AMP-Redirect-To is currently not supported, use target=_top instead".
@@ -160,7 +161,7 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 					if ( current_theme_supports( 'html5' ) ) :
 						?>
 						required="required"<?php endif; ?> />
-				<?php echo wp_kses( $instance['hidden_fields'], $this->get_hidden_fields_allowed_html() ); ?>
+				<?php echo $this->sanitize_hidden_fields( $instance['hidden_fields'] ); // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped ?>
 				<input type="submit" id="subbutton" value="<?php echo esc_attr( $instance['button_text'] ); ?>" class="enews-submit subbutton" />
 			</form>
 			<?php
@@ -179,7 +180,8 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 			the_privacy_policy_link( '<small class="enews-privacy">', '</small>' );
 		}
 		// We run KSES on update since we want to allow some HTML, so ignoring the output escape check.
-		echo wpautop( apply_filters( 'gee_after_text', $instance['after_text'] ) ); // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped
+		// gee_after_text_content runs after wpautop, matching core's widget_text/widget_text_content split, so block-level shortcode output isn't mangled by wpautop.
+		echo apply_filters( 'gee_after_text_content', wpautop( apply_filters( 'gee_after_text', $instance['after_text'] ) ) ); // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped
 
 		// If Genesis is the parent theme.
 		if ( function_exists( 'genesis_markup' ) ) {
@@ -218,7 +220,7 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 	public function update( $new_instance, $old_instance ) { // phpcs:ignore VariableAnalysis.CodeAnalysis.VariableAnalysis.UnusedVariable
 		$new_instance['title']           = trim( wp_kses( $new_instance['title'], array( 'i' => array() ) ) );
 		$new_instance['text']            = trim( wp_kses_post( $new_instance['text'] ) );
-		$new_instance['hidden_fields']   = wp_kses( $new_instance['hidden_fields'], $this->get_hidden_fields_allowed_html() );
+		$new_instance['hidden_fields']   = $this->sanitize_hidden_fields( $new_instance['hidden_fields'] );
 		$new_instance['after_text']      = trim( wp_kses_post( $new_instance['after_text'] ) );
 		$new_instance['action']          = esc_url_raw( trim( $new_instance['action'] ) );
 		$new_instance['display_privacy'] = ( isset( $new_instance['display_privacy'] ) ) ? (int) $new_instance['display_privacy'] : 0;
@@ -227,56 +229,205 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 	}
 
 	/**
+	 * Sanitize the Hidden Fields markup with the plugin's allowlist while
+	 * temporarily widening WordPress's CSS property allowlist so the inline
+	 * `display: none` and `background-image` declarations vendor newsletter
+	 * snippets rely on (e.g. Flodesk's tracking pixel) survive
+	 * `safecss_filter_attr`.
+	 *
+	 * `safe_style_css` is a global filter, so callers MUST keep the
+	 * `add_filter` / `remove_filter` pair tightly scoped — anything between
+	 * them runs with the widened allowlist for every `wp_kses` consumer on
+	 * the request, including unrelated content.
+	 *
+	 * The widened set is intentionally limited to declarations that hide an
+	 * element in place (`display`, `visibility`, `opacity`) plus
+	 * `background-image` (added to core's `safe_style_css` in WP 5.0; the
+	 * plugin still supports 4.9.6).
+	 *
+	 * @since 2.4.0
+	 *
+	 * @param string $value Raw Hidden Fields markup.
+	 * @return string Sanitized markup.
+	 */
+	protected function sanitize_hidden_fields( $value ) {
+		add_filter( 'safe_style_css', array( $this, 'extend_safe_style_css' ) );
+		$sanitized = wp_kses( $value, $this->get_hidden_fields_allowed_html() );
+		remove_filter( 'safe_style_css', array( $this, 'extend_safe_style_css' ) );
+
+		return $sanitized;
+	}
+
+	/**
+	 * Extend WordPress's `safe_style_css` allowlist with the declarations
+	 * needed to visually hide a Hidden Fields element in place.
+	 *
+	 * Deliberately narrow: nothing here can be combined with arbitrary
+	 * markup to overlay or reposition unrelated page content. See
+	 * `sanitize_hidden_fields()` for the full rationale.
+	 *
+	 * Public so it can be registered as a `safe_style_css` filter callback.
+	 * Callers are responsible for adding and removing it as a pair.
+	 *
+	 * @since 2.4.0
+	 *
+	 * @param string[] $properties CSS properties allowed in inline style attributes.
+	 * @return string[] Properties with hidden-field-friendly entries appended.
+	 */
+	public function extend_safe_style_css( $properties ) {
+		return array_merge(
+			$properties,
+			array(
+				'display',
+				'visibility',
+				'opacity',
+				'background-image',
+			)
+		);
+	}
+
+	/**
 	 * Returns allowed HTML tags and attributes for the hidden fields setting.
+	 *
+	 * Permits the attributes vendor newsletter snippets typically rely on
+	 * (placeholder, required, aria-*, data-*, validation/autocomplete hints,
+	 * etc.) while excluding event handlers and form-overriding attributes
+	 * (on*, formaction, formmethod, formtarget, formenctype, formnovalidate)
+	 * that could otherwise redirect submissions or execute JavaScript.
 	 *
 	 * @since 2.3.0
 	 *
 	 * @return array Allowed HTML elements and their attributes.
 	 */
 	protected function get_hidden_fields_allowed_html() {
+		$global = array(
+			'id'                => array(),
+			'class'             => array(),
+			'style'             => array(),
+			'title'             => array(),
+			'role'              => array(),
+			'tabindex'          => array(),
+			'hidden'            => array(),
+			'lang'              => array(),
+			'dir'               => array(),
+			'data-*'            => true,
+			// `aria-*` wildcards are not honored by wp_kses; common aria attributes are enumerated.
+			'aria-atomic'       => array(),
+			'aria-busy'         => array(),
+			'aria-controls'     => array(),
+			'aria-current'      => array(),
+			'aria-describedby'  => array(),
+			'aria-details'      => array(),
+			'aria-disabled'     => array(),
+			'aria-expanded'     => array(),
+			'aria-haspopup'     => array(),
+			'aria-hidden'       => array(),
+			'aria-invalid'      => array(),
+			'aria-label'        => array(),
+			'aria-labelledby'   => array(),
+			'aria-live'         => array(),
+			'aria-placeholder'  => array(),
+			'aria-pressed'      => array(),
+			'aria-readonly'     => array(),
+			'aria-required'     => array(),
+			'aria-valuetext'    => array(),
+		);
+
 		return array(
-			'a'        => array(
-				'href'   => array(),
-				'title'  => array(),
-				'target' => array(),
-				'rel'    => array(),
+			'a'        => array_merge(
+				$global,
+				array(
+					'href'     => array(),
+					'target'   => array(),
+					'rel'      => array(),
+					'download' => array(),
+				)
 			),
-			'div'      => array(
-				'class' => array(),
-				'id'    => array(),
-				'style' => array(),
+			'div'      => $global,
+			'fieldset' => array_merge(
+				$global,
+				array(
+					'name'     => array(),
+					'disabled' => array(),
+					'form'     => array(),
+				)
 			),
-			'fieldset' => array(),
-			'input'    => array(
-				'type'  => array(),
-				'name'  => array(),
-				'value' => array(),
-				'id'    => array(),
-				'class' => array(),
+			'input'    => array_merge(
+				$global,
+				array(
+					'type'           => array(),
+					'name'           => array(),
+					'value'          => array(),
+					'placeholder'    => array(),
+					'required'       => array(),
+					'readonly'       => array(),
+					'disabled'       => array(),
+					'checked'        => array(),
+					'autocomplete'   => array(),
+					'autocapitalize' => array(),
+					'autocorrect'    => array(),
+					'spellcheck'     => array(),
+					'inputmode'      => array(),
+					'pattern'        => array(),
+					'min'            => array(),
+					'max'            => array(),
+					'step'           => array(),
+					'minlength'      => array(),
+					'maxlength'      => array(),
+					'size'           => array(),
+					'list'           => array(),
+					'multiple'       => array(),
+					'form'           => array(),
+				)
 			),
-			'label'    => array(
-				'for'   => array(),
-				'class' => array(),
+			'label'    => array_merge( $global, array( 'for' => array() ) ),
+			'legend'   => $global,
+			'option'   => array_merge(
+				$global,
+				array(
+					'value'    => array(),
+					'selected' => array(),
+					'disabled' => array(),
+					'label'    => array(),
+				)
 			),
-			'legend'   => array(),
-			'option'   => array(
-				'value'    => array(),
-				'selected' => array(),
+			'optgroup' => array_merge(
+				$global,
+				array(
+					'label'    => array(),
+					'disabled' => array(),
+				)
 			),
-			'optgroup' => array(
-				'label' => array(),
+			'select'   => array_merge(
+				$global,
+				array(
+					'name'         => array(),
+					'required'     => array(),
+					'disabled'     => array(),
+					'multiple'     => array(),
+					'size'         => array(),
+					'autocomplete' => array(),
+					'form'         => array(),
+				)
 			),
-			'select'   => array(
-				'name'  => array(),
-				'id'    => array(),
-				'class' => array(),
-			),
-			'textarea' => array(
-				'name'  => array(),
-				'id'    => array(),
-				'class' => array(),
-				'rows'  => array(),
-				'cols'  => array(),
+			'textarea' => array_merge(
+				$global,
+				array(
+					'name'           => array(),
+					'rows'           => array(),
+					'cols'           => array(),
+					'placeholder'    => array(),
+					'required'       => array(),
+					'readonly'       => array(),
+					'disabled'       => array(),
+					'minlength'      => array(),
+					'maxlength'      => array(),
+					'autocomplete'   => array(),
+					'autocapitalize' => array(),
+					'spellcheck'     => array(),
+					'wrap'           => array(),
+					'form'           => array(),
+				)
 			),
 		);
 	}
