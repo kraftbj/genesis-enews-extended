@@ -252,7 +252,13 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 	 */
 	protected function sanitize_hidden_fields( $value ) {
 		add_filter( 'safe_style_css', array( $this, 'extend_safe_style_css' ) );
-		$sanitized = wp_kses( $value, $this->get_hidden_fields_allowed_html() );
+		try {
+			$sanitized = wp_kses( $value, $this->get_hidden_fields_allowed_html() );
+		} catch ( Exception $e ) {
+			// `try`/`finally` would be cleaner but is PHP 5.5+; the plugin's floor is 5.4.
+			remove_filter( 'safe_style_css', array( $this, 'extend_safe_style_css' ) );
+			throw $e;
+		}
 		remove_filter( 'safe_style_css', array( $this, 'extend_safe_style_css' ) );
 
 		return $sanitized;
