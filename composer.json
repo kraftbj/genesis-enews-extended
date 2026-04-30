@@ -3,7 +3,10 @@
     "description": "Mailing subscription form plugin for WordPress",
     "type": "project",
     "require-dev": {
-        "automattic/jetpack-codesniffer": "^2.5"
+        "automattic/jetpack-codesniffer": "^2.5",
+        "automattic/wordbless": "^0.6",
+        "phpunit/phpunit": "^9.5",
+        "yoast/phpunit-polyfills": "^1.1"
     },
     "license": "GPL2+",
     "authors": [
@@ -14,7 +17,17 @@
     ],
     "config": {
         "allow-plugins": {
-            "dealerdirect/phpcodesniffer-composer-installer": true
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "roots/wordpress-core-installer": true
         }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "WorDBless\\Composer\\InstallDropin::copy"
+        ],
+        "post-update-cmd": [
+            "WorDBless\\Composer\\InstallDropin::copy"
+        ],
+        "test": "phpunit"
     }
 }
