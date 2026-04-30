@@ -161,7 +161,7 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 					if ( current_theme_supports( 'html5' ) ) :
 						?>
 						required="required"<?php endif; ?> />
-				<?php echo wp_kses( $instance['hidden_fields'], $this->get_hidden_fields_allowed_html() ); ?>
+				<?php echo $this->sanitize_hidden_fields( $instance['hidden_fields'] ); // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped ?>
 				<input type="submit" id="subbutton" value="<?php echo esc_attr( $instance['button_text'] ); ?>" class="enews-submit subbutton" />
 			</form>
 			<?php
@@ -220,12 +220,70 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 	public function update( $new_instance, $old_instance ) { // phpcs:ignore VariableAnalysis.CodeAnalysis.VariableAnalysis.UnusedVariable
 		$new_instance['title']           = trim( wp_kses( $new_instance['title'], array( 'i' => array() ) ) );
 		$new_instance['text']            = trim( wp_kses_post( $new_instance['text'] ) );
-		$new_instance['hidden_fields']   = wp_kses( $new_instance['hidden_fields'], $this->get_hidden_fields_allowed_html() );
+		$new_instance['hidden_fields']   = $this->sanitize_hidden_fields( $new_instance['hidden_fields'] );
 		$new_instance['after_text']      = trim( wp_kses_post( $new_instance['after_text'] ) );
 		$new_instance['action']          = esc_url_raw( trim( $new_instance['action'] ) );
 		$new_instance['display_privacy'] = ( isset( $new_instance['display_privacy'] ) ) ? (int) $new_instance['display_privacy'] : 0;
 
 		return $new_instance;
+	}
+
+	/**
+	 * Sanitize the Hidden Fields markup with the plugin's allowlist while
+	 * temporarily widening WordPress's CSS property allowlist so the inline
+	 * `display: none` and `background-image` declarations vendor newsletter
+	 * snippets rely on (e.g. Flodesk's tracking pixel) survive
+	 * `safecss_filter_attr`.
+	 *
+	 * `safe_style_css` is a global filter, so callers MUST keep the
+	 * `add_filter` / `remove_filter` pair tightly scoped — anything between
+	 * them runs with the widened allowlist for every `wp_kses` consumer on
+	 * the request, including unrelated content.
+	 *
+	 * The widened set is intentionally limited to declarations that hide an
+	 * element in place (`display`, `visibility`, `opacity`) plus
+	 * `background-image` (added to core's `safe_style_css` in WP 5.0; the
+	 * plugin still supports 4.9.6).
+	 *
+	 * @since 2.4.0
+	 *
+	 * @param string $value Raw Hidden Fields markup.
+	 * @return string Sanitized markup.
+	 */
+	protected function sanitize_hidden_fields( $value ) {
+		add_filter( 'safe_style_css', array( $this, 'extend_safe_style_css' ) );
+		$sanitized = wp_kses( $value, $this->get_hidden_fields_allowed_html() );
+		remove_filter( 'safe_style_css', array( $this, 'extend_safe_style_css' ) );
+
+		return $sanitized;
+	}
+
+	/**
+	 * Extend WordPress's `safe_style_css` allowlist with the declarations
+	 * needed to visually hide a Hidden Fields element in place.
+	 *
+	 * Deliberately narrow: nothing here can be combined with arbitrary
+	 * markup to overlay or reposition unrelated page content. See
+	 * `sanitize_hidden_fields()` for the full rationale.
+	 *
+	 * Public so it can be registered as a `safe_style_css` filter callback.
+	 * Callers are responsible for adding and removing it as a pair.
+	 *
+	 * @since 2.4.0
+	 *
+	 * @param string[] $properties CSS properties allowed in inline style attributes.
+	 * @return string[] Properties with hidden-field-friendly entries appended.
+	 */
+	public function extend_safe_style_css( $properties ) {
+		return array_merge(
+			$properties,
+			array(
+				'display',
+				'visibility',
+				'opacity',
+				'background-image',
+			)
+		);
 	}
 
 	/**

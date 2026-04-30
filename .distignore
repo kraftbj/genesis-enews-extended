@@ -5,6 +5,8 @@
 /tests
 /node_modules
 /vendor
+/wordpress
+/.context
 
 # Files
 /.gitignore
@@ -13,6 +15,7 @@
 .DS_Store
 /.phpcs.xml.dist
 /phpunit.xml.dist
+/.phpunit.result.cache
 /composer.json
 /composer.lock
 /.distignore

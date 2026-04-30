@@ -1,23 +1,21 @@
 <?php
 /**
- * Bootstrap the plugin unit testing environment.
+ * Bootstrap the plugin testing environment using WorDBless.
  *
- * Edit 'active_plugins' setting below to point to your main plugin file.
- *
- * @package wordpress-plugin-tests
+ * @package kraftbj/genesis-enews-extended
  */
 
-// Activates this plugin in WordPress so it can be tested.
-$GLOBALS['wp_tests_options'] = array(
-	'active_plugins' => array( 'genesis-enews-extended/plugin.php' ),
-);
+$autoload = dirname( __DIR__ ) . '/vendor/autoload.php';
 
-// If the develop repo location is defined (as WP_DEVELOP_DIR), use that
-// location. Otherwise, we'll just assume that this plugin is installed in a
-// WordPress develop SVN checkout.
-
-if ( false !== getenv( 'WP_DEVELOP_DIR' ) ) {
-	require getenv( 'WP_DEVELOP_DIR' ) . '/tests/phpunit/includes/bootstrap.php';
-} else {
-	require '../../../../tests/phpunit/includes/bootstrap.php';
+if ( ! file_exists( $autoload ) ) {
+	fwrite( STDERR, "Composer dependencies not found. Run `composer install` first.\n" );
+	exit( 1 );
 }
+
+require_once $autoload;
+
+// Pass `persist=true` so WorDBless skips the SQLite cleanup call that
+// references ABSPATH before defining it (broken in 0.6.0 on PHP 8+).
+\WorDBless\Load::load( 'dbless', true );
+
+require_once dirname( __DIR__ ) . '/plugin.php';
