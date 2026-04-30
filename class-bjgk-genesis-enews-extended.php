@@ -231,13 +231,19 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 	/**
 	 * Sanitize the Hidden Fields markup with the plugin's allowlist while
 	 * temporarily widening WordPress's CSS property allowlist so the inline
-	 * style declarations vendor newsletter snippets rely on (Flodesk's
-	 * `display: none` tracking pixel, offscreen honeypots, etc.) survive
+	 * `display: none` and `background-image` declarations vendor newsletter
+	 * snippets rely on (e.g. Flodesk's tracking pixel) survive
 	 * `safecss_filter_attr`.
 	 *
-	 * `safe_style_css` is a global filter, so it is added immediately before
-	 * `wp_kses` and removed immediately after to avoid widening the allowlist
-	 * for any other content on the page.
+	 * `safe_style_css` is a global filter, so callers MUST keep the
+	 * `add_filter` / `remove_filter` pair tightly scoped — anything between
+	 * them runs with the widened allowlist for every `wp_kses` consumer on
+	 * the request, including unrelated content.
+	 *
+	 * The widened set is intentionally limited to declarations that hide an
+	 * element in place (`display`, `visibility`, `opacity`) plus
+	 * `background-image` (added to core's `safe_style_css` in WP 5.0; the
+	 * plugin still supports 4.9.6).
 	 *
 	 * @since 2.4.0
 	 *
@@ -254,11 +260,14 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 
 	/**
 	 * Extend WordPress's `safe_style_css` allowlist with the declarations
-	 * commonly used to visually hide Hidden Fields markup (tracking pixels,
-	 * honeypots, offscreen positioning).
+	 * needed to visually hide a Hidden Fields element in place.
 	 *
-	 * Public so it can be registered as a `safe_style_css` filter callback;
-	 * `sanitize_hidden_fields()` adds and removes it on every call.
+	 * Deliberately narrow: nothing here can be combined with arbitrary
+	 * markup to overlay or reposition unrelated page content. See
+	 * `sanitize_hidden_fields()` for the full rationale.
+	 *
+	 * Public so it can be registered as a `safe_style_css` filter callback.
+	 * Callers are responsible for adding and removing it as a pair.
 	 *
 	 * @since 2.4.0
 	 *
@@ -272,13 +281,7 @@ class BJGK_Genesis_ENews_Extended extends WP_Widget {
 				'display',
 				'visibility',
 				'opacity',
-				'position',
-				'top',
-				'right',
-				'bottom',
-				'left',
-				'z-index',
-				'pointer-events',
+				'background-image',
 			)
 		);
 	}

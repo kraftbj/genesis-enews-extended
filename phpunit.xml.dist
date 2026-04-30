@@ -1,4 +1,9 @@
-<phpunit bootstrap="tests/bootstrap.php" backupGlobals="false" colors="true">
+<phpunit
+	bootstrap="tests/bootstrap.php"
+	backupGlobals="false"
+	colors="true"
+	failOnWarning="true"
+	failOnRisky="true">
 	<testsuites>
 		<testsuite name="default">
 			<directory prefix="test-" suffix=".php">tests</directory>

@@ -84,4 +84,17 @@ class Test_Hidden_Fields_Allowlist extends \WorDBless\BaseTestCase {
 
 		$this->assertStringNotContainsString( 'display: none', $leaked, 'display: none should be stripped outside the Hidden Fields path' );
 	}
+
+	/**
+	 * `background-image: url(...)` is allowed for tracking pixels, but
+	 * the URL must still be filtered for safe protocols. A `javascript:`
+	 * scheme inside the url() must be stripped.
+	 */
+	public function test_background_image_javascript_protocol_is_stripped() {
+		$input  = '<input type="text" name="x" style="background-image: url(javascript:alert(1))">';
+		$output = $this->sanitize( $input );
+
+		$this->assertStringNotContainsString( 'javascript:', $output );
+		$this->assertStringNotContainsString( 'alert(', $output );
+	}
 }
