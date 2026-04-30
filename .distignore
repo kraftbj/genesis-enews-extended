@@ -16,3 +16,5 @@
 /composer.json
 /composer.lock
 /.distignore
+/AGENTS.md
+/CLAUDE.md
