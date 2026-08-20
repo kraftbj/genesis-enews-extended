@@ -4,7 +4,7 @@ Donate link: https://kraft.blog/donate/
 Tags: genesis, genesiswp, newsletter, subscribe, mailchimp
 Requires at least: 4.9.6
 Requires PHP: 5.4.0
-Tested up to: 7.0
+Tested up to: 7.1
 Text Domain: genesis-enews-extended
 Stable tag: 2.4.0
 License: GPLv2 or later
